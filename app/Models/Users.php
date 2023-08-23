@@ -4,7 +4,7 @@
 namespace App\Models;
 
 
-class Users extends BaseModel
+class Users extends BaseModels
 {
     protected $table = 'users';
     protected $hidden = [

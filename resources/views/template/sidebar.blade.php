@@ -27,7 +27,7 @@
                     <a href=""><i class="fa fa-fw fa-user"></i>Tài khoản</a>
                 </li>
                 <li>
-                    <a href=""><i class="fa fa-fw fa-power-off"></i>Thoát</a>
+                    <a href="{{route('admin.submit.logout')}}"><i class="fa fa-fw fa-power-off"></i>Thoát</a>
                 </li>
             </ul>
         </li>
@@ -66,10 +66,10 @@
             }
         </style>
         <ul class="nav navbar-nav side-nav" style="height: 963px;">
-            <li><a href="/"><i class="fa fa-fw fa-home"></i>Home</a></li>
+            <li><a href="{{route('admin.dashboard')}}"><i class="fa fa-fw fa-home"></i>Home</a></li>
             <li><a data-toggle="collapse" data-target="#pnsetting" href="javascript:void(0)" title="Cấu hình"><i class="fa fa-fw fa-gear"></i>Cấu hình<i class="fa fa-fw fa-caret-down"></i></a>
                 <ul id="pnsetting" class="collapse ">
-                    <li><a href="#" title="Cấu hình chung"><i class="fa fa-fw fa fa-caret-right"></i>Cấu hình chung</a>
+                    <li><a href="{{route('admin.generalConfig')}}" title="Cấu hình chung"><i class="fa fa-fw fa fa-caret-right"></i>Cấu hình chung</a>
                     </li>
                     <li><a href="#" title="Banner &amp; Hình nền"><i class="fa fa-fw fa fa-caret-right"></i>Banner &amp;
                             Logo - Chân trang</a></li>
@@ -255,7 +255,7 @@
 
             <li><a data-toggle="collapse" data-target="#pnaccounts" href="javascript:void(0)" title="Tài khoản"><i class="fa fa-fw fa-users"></i>Tài khoản<i class="fa fa-fw fa-caret-down"></i></a>
                 <ul id="pnaccounts" class="collapse ">
-                    <li><a href="#" title="Danh sách tài khoản"><i class="fa fa-fw fa fa-caret-right"></i>Danh sách tài
+                    <li><a href="{{route('admin.account')}}" title="Danh sách tài khoản"><i class="fa fa-fw fa fa-caret-right"></i>Danh sách tài
                             khoản</a></li>
                     <li><a href="#" title="Định nghĩa quyền"><i class="fa fa-fw fa fa-caret-right"></i>Định nghĩa
                             quyền</a></li>

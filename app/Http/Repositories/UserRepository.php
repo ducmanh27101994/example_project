@@ -15,6 +15,16 @@ class UserRepository extends BaseRepository
         return Users::class;
     }
 
+    public function get_all_employee($request)
+    {
+        $model = $this->model;
+
+        return $model
+            ->where('type', 1)
+            ->orderBy('created_at', 'DESC')
+            ->paginate(50);
+    }
+
 
 
 

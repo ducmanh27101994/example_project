@@ -4,7 +4,7 @@ namespace App\Models;
 use DateTimeInterface;
 use Illuminate\Database\Eloquent\Model;
 
-abstract class BaseModel extends Model
+abstract class BaseModels extends Model
 {
     //column
     const ID = 'id';

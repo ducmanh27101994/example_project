@@ -20,11 +20,11 @@
 <body>
     <!-- @include('/template/header') -->
     <div id="wrapper">
-        @if (!Request::is('template/login'))
+        @if (session()->get('employee'))
         @include('/template/sidebar')
         @endif
         @yield('content')
     </div>
 </body>
 
-</html>
+</html>á
