@@ -24,3 +24,22 @@ Route::prefix('/template')->group(function () {
     Route::get('/main-menu', 'App\Http\Controllers\TemplateController@mainmenu');
     Route::get('/them-menu', 'App\Http\Controllers\TemplateController@addmenu');
 });
+
+
+Route::get('/login', 'App\Http\Controllers\Admin\UserController@login')->name('admin.login');
+Route::post('/login', 'App\Http\Controllers\Admin\UserController@employee_login')->name('admin.submit.login');
+Route::get('/logout', 'App\Http\Controllers\Admin\UserController@logout')->name('admin.submit.logout');
+
+Route::group(['middleware' => 'auth_admin'], function () {
+    Route::prefix('/admin')->group(function () {
+        Route::get('/', 'App\Http\Controllers\Admin\DashboardController@indexDashboard')->name('admin.dashboard');
+        Route::get('/dashboard', 'App\Http\Controllers\Admin\DashboardController@indexDashboard')->name('admin.dashboard');
+        Route::get('/account', 'App\Http\Controllers\Admin\UserController@indexAccount')->name('admin.account');
+        Route::get('/createAccount', 'App\Http\Controllers\Admin\UserController@indexCreateAccount')->name('admin.createAccount');
+        Route::post('/createAccount', 'App\Http\Controllers\Admin\UserController@submitCreateAccount')->name('admin.submit.createAccount');
+        Route::get('/editAccount/{id}', 'App\Http\Controllers\Admin\UserController@edit_employee')->name('admin.editAccount');
+        Route::post('/editAccount/{id}', 'App\Http\Controllers\Admin\UserController@update_employee')->name('admin.submit.editAccount');
+
+        Route::get('/generalConfig', 'App\Http\Controllers\Admin\ConfigController@indexConfig')->name('admin.generalConfig');
+    });
+});
