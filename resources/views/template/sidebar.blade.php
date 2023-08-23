@@ -263,7 +263,7 @@
                             cập</a></li>
                 </ul>
             </li>
-            <li><a href="https://vntravelsimple.com/admin/?mod=report"><i class="fa fa-bar-chart"></i>Báo
+            <li><a href="#"><i class="fa fa-bar-chart"></i>Báo
                     cáo</a></li>
 
         </ul>
