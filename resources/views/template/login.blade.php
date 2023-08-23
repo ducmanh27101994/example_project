@@ -1,6 +1,7 @@
 @extends('/template/index')
 
 @section('content')
+<link rel="stylesheet" href="{{ asset('css/login.css') }}" type="text/css" />
 <div class="page-container login-container">
 
     <!-- Page content -->
@@ -60,8 +61,8 @@
                 </div>
 
 
-                <script src="/admin/js/particles.js"></script>
-                <script src="/admin/js/app1.js"></script>
+                <script src="{{ asset('js/particles.js') }}"></script>
+                <script src="{{ asset('js/app1.js') }}"></script>
 
 
                 <!-- /advanced login -->

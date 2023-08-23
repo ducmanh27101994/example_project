@@ -5,18 +5,26 @@
     <title>
         Quản trị website
     </title>
-    <link rel="stylesheet" href="/admin/css/bootstrap.css" type="text/css" />
-    <link rel="stylesheet" href="/admin/css/general.css" type="text/css" />
-    <link rel="stylesheet" href="/admin/css/style.css" type="text/css" />
-    <link rel="stylesheet" href="/admin/css/font-awesome.min.css" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="/admin/css/easy-responsive-tabs.css " />
-    <link rel="stylesheet" href="/admin/css/login.css" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('css/general.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}" type="text/css" />
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/easy-responsive-tabs.css') }}" />
+    <script type="text/javascript" src="{{ asset('js/jquery-1.11.1.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/ddaccordion.js') }}"></script>
+    <script src="{{ asset('js/easyResponsiveTabs.js') }}"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
 </head>
 
 <body>
     <!-- @include('/template/header') -->
-    @yield('content')
-
+    <div id="wrapper">
+        @if (!Request::is('template/login'))
+        @include('/template/sidebar')
+        @endif
+        @yield('content')
+    </div>
 </body>
 
 </html>
