@@ -15,4 +15,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('/template')->group(function () {
     Route::get('/', 'App\Http\Controllers\TemplateController@example');
+    Route::get('/login', 'App\Http\Controllers\TemplateController@login');
 });

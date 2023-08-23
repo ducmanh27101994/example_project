@@ -10,6 +10,8 @@ class TemplateController extends BaseController
     {
         return view('template.example');
     }
-
-
+    public function login()
+    {
+        return view('template.login');
+    }
 }
