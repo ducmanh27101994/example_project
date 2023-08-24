@@ -71,7 +71,7 @@
                 <ul id="pnsetting" class="collapse ">
                     <li><a href="{{route('admin.generalConfig')}}" title="Cấu hình chung"><i class="fa fa-fw fa fa-caret-right"></i>Cấu hình chung</a>
                     </li>
-                    <li><a href="#" title="Banner &amp; Hình nền"><i class="fa fa-fw fa fa-caret-right"></i>Banner &amp;
+                    <li><a href="{{route('admin.bannerAndFooter')}}" title="Banner &amp; Hình nền"><i class="fa fa-fw fa fa-caret-right"></i>Banner &amp;
                             Logo - Chân trang</a></li>
                     <li><a href="#" title="Cấu hình email hệ thống"><i class="fa fa-fw fa fa-caret-right"></i>Cấu hình
                             email hệ thống</a></li>
@@ -91,10 +91,8 @@
             </li>
             <li><a data-toggle="collapse" data-target="#pnmenu" href="javascript:void(0)" title="Menu"><i class="fa fa-fw fa-align-justify"></i>Menu<i class="fa fa-fw fa-caret-down"></i></a>
                 <ul id="pnmenu" class="collapse ">
-                    <li><a href="#" title="Menu chính"><i class="fa fa-fw fa fa-caret-right"></i>Menu chính</a></li>
-                    <li><a href="#" title="Menu trên"><i class="fa fa-fw fa fa-caret-right"></i>Menu trên cùng</a></li>
-                    <li><a href="#" title="Menu dưới"><i class="fa fa-fw fa fa-caret-right"></i>Menu dưới cùng</a></li>
-                    <li ><a href="#" title="Menu nội dung"><i class="fa fa-fw fa fa-caret-right"></i>Menu nội dung</a>
+                    <li><a href="{{route('admin.indexCreateMenu')}}" title="Menu chính"><i class="fa fa-fw fa fa-caret-right"></i>Tạo menu</a></li>
+                    <li><a href="{{route('admin.indexListMenu')}}" title="Menu trên"><i class="fa fa-fw fa fa-caret-right"></i>Danh sách menu</a></li>
                     </li>
                 </ul>
             </li>

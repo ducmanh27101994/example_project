@@ -15,6 +15,11 @@ class CreateTableConfigs extends Migration
     {
         Schema::create('table_configs', function (Blueprint $table) {
             $table->id();
+            $table->string('company_name')->nullable();
+            $table->string('slogan')->nullable();
+            $table->string('company_phone')->nullable();
+            $table->string('company_email')->nullable();
+            $table->string('company_address')->nullable();
             $table->timestamps();
         });
     }

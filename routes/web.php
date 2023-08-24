@@ -41,5 +41,14 @@ Route::group(['middleware' => 'auth_admin'], function () {
         Route::post('/editAccount/{id}', 'App\Http\Controllers\Admin\UserController@update_employee')->name('admin.submit.editAccount');
 
         Route::get('/generalConfig', 'App\Http\Controllers\Admin\ConfigController@indexConfig')->name('admin.generalConfig');
+        Route::post('/generalConfig', 'App\Http\Controllers\Admin\ConfigController@submitConfig')->name('admin.submit.generalConfig');
+        Route::get('/bannerAndFooter', 'App\Http\Controllers\Admin\ConfigController@indexConfigImages')->name('admin.bannerAndFooter');
+        Route::post('/bannerAndFooter', 'App\Http\Controllers\Admin\ConfigController@submitConfigImages')->name('admin.submit.bannerAndFooter');
+
+        Route::get('/listMenu', 'App\Http\Controllers\Admin\MenuController@indexListMenu')->name('admin.indexListMenu');
+        Route::get('/createMenu', 'App\Http\Controllers\Admin\MenuController@indexCreateMenu')->name('admin.indexCreateMenu');
+        Route::post('/createMenu', 'App\Http\Controllers\Admin\MenuController@createMenu')->name('admin.submit.indexCreateMenu');
+        Route::get('/editMenu/{id}', 'App\Http\Controllers\Admin\MenuController@editMenu')->name('admin.editMenu');
+        Route::post('/editMenu/{id}', 'App\Http\Controllers\Admin\MenuController@submitEditMenu')->name('admin.submit.editMenu');
     });
 });

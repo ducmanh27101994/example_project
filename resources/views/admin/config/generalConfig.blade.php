@@ -1,7 +1,8 @@
 @extends('/template/index')
 
 @section('content')
-
+    <form method="post" action="{{route('admin.submit.generalConfig')}}">
+        @csrf
     <div id="page-wrapper">
 
         <div class="widget">
@@ -21,10 +22,10 @@
                                     <tr>
 
                                         <td align="center">
-                                            <a onclick="return validation();" id="update" class="toolbar" href="javascript:__doPostBack('update','')">
+                                            <button type="submit" onclick="return validation();" id="update" class="toolbar">
                                                 <span class="icon-ok-update"></span>
                                                 Cập nhật
-                                            </a>
+                                            </button>
                                         </td>
                                     </tr>
                                     </tbody>
@@ -56,13 +57,16 @@
                                             <label for="txttitle">Tên công ty/cá nhân</label>
                                         </td>
                                         <td>
-                                            <input name="txtcompanyname" type="text" value="" id="txtcompanyname" class="inputbox" style="width:364px;">
+                                            <input  name="company_name" type="text"   value="{{!empty(old('company_name')) ? old('company_name') : $table_config->company_name}}" id="txtcompanyname" class="inputbox" style="width:364px;">
                                             <a href="#" class="tooltip">
                                                 <img src="{{ asset('images/help-icon.png') }}">
                                                 <span><b>Tên công ty/cá nhân</b><br>
                                                     Thông tin tên công ty hoặc cá nhân
                                                 </span>
                                             </a>
+                                            @if($errors->has('company_name'))
+                                                <p class="text-danger" style="margin-top: 10px;">{{ $errors->first('company_name') }}</p>
+                                            @endif
                                         </td>
                                     </tr>
                                     <tr>
@@ -70,13 +74,16 @@
                                             <label for="txttitle">Slogan</label>
                                         </td>
                                         <td>
-                                            <input name="txtslogan" type="text" id="txtslogan" class="inputbox" style="width:364px;">
+                                            <input value="{{!empty(old('slogan')) ? old('slogan') : $table_config->slogan}}" name="slogan" type="text" id="txtslogan" class="inputbox" style="width:364px;">
                                             <a href="#" class="tooltip">
                                                 <img src="{{ asset('images/help-icon.png') }}">
                                                 <span><b>Slogan</b><br>
                                                     Câu khẩu hiệu của công ty
                                                 </span>
                                             </a>
+                                            @if($errors->has('slogan'))
+                                                <p class="text-danger" style="margin-top: 10px;">{{ $errors->first('slogan') }}</p>
+                                            @endif
                                         </td>
                                     </tr>
                                     <tr>
@@ -84,13 +91,16 @@
                                             <label for="txttitle">Số điện thoại</label>
                                         </td>
                                         <td>
-                                            <input name="txtphone" type="text" value="" id="txtphone" class="inputbox" style="width:364px;">
+                                            <input value="{{!empty(old('company_phone')) ? old('company_phone') : $table_config->company_phone}}" name="company_phone" type="text" id="txtphone" class="inputbox" style="width:364px;">
                                             <a href="#" class="tooltip">
                                                 <img src="{{ asset('images/help-icon.png') }}">
                                                 <span><b>Số điện thoại</b><br>
                                                     Số điện thoại di động, điện thoại bàn hay hotline của công ty
                                                 </span>
                                             </a>
+                                            @if($errors->has('company_phone'))
+                                                <p class="text-danger" style="margin-top: 10px;">{{ $errors->first('company_phone') }}</p>
+                                            @endif
                                         </td>
                                     </tr>
 
@@ -99,13 +109,16 @@
                                             <label for="txttitle">Email quản trị</label>
                                         </td>
                                         <td>
-                                            <input name="txt_emailqt" type="text" value="" id="txt_emailqt" class="inputbox" style="width:364px;">
+                                            <input value="{{!empty(old('company_email')) ? old('company_email') : $table_config->company_email}}" name="company_email" type="text" id="txt_emailqt" class="inputbox" style="width:364px;">
                                             <a href="#" class="tooltip">
                                                 <img src="{{ asset('images/help-icon.png') }}">
                                                 <span><b>Email quản trị</b><br>
                                                     Tất cả các liên hệ hay đơn đặt hàng của khách hàng sẽ được gửi vào email quản trị
                                                 </span>
                                             </a>
+                                            @if($errors->has('company_email'))
+                                                <p class="text-danger" style="margin-top: 10px;">{{ $errors->first('company_email') }}</p>
+                                            @endif
                                         </td>
                                     </tr>
                                     <tr>
@@ -113,13 +126,16 @@
                                             <label for="txttitle">Địa chỉ</label>
                                         </td>
                                         <td>
-                                            <input name="txtaddress" type="text" value="" id="txtaddress" class="inputbox" style="width:500px;">
+                                            <input name="company_address" type="text" value="{{!empty(old('company_address')) ? old('company_address') : $table_config->company_address}}" id="txtaddress" class="inputbox" style="width:500px;">
                                             <a href="#" class="tooltip">
                                                 <img src="{{ asset('images/help-icon.png') }}">
                                                 <span><b>Địa chỉ</b><br>
                                                     Địa chỉ công ty / cá nhân
                                                 </span>
                                             </a>
+                                            @if($errors->has('company_address'))
+                                                <p class="text-danger" style="margin-top: 10px;">{{ $errors->first('company_address') }}</p>
+                                            @endif
                                         </td>
                                     </tr>
 
@@ -185,5 +201,5 @@
         </style>
 
     </div>
-
+    </form>
 @endsection
