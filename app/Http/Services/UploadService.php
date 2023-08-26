@@ -31,12 +31,12 @@ class UploadService
         }
 
         if (!empty($file) && $file->getSize() > 15000000) {
-            $message[] = __('validate.size_is_too_big');
+            $message[] = 'Kích thước quá lớn';
         }
 
         $acceptFormat = ["jpeg", "png", "jpg", "svg", 'mp3', 'mp4'];
         if (!empty($file) && !in_array($file->getClientOriginalExtension(), $acceptFormat)) {
-            $message[] = __('validate.format_not_allowed');
+            $message[] = 'Định dạng không cho phép';
         }
 
         return $message;

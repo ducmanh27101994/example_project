@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Models\Contact;
 use App\Models\Users;
 use Illuminate\Database\Seeder;
 
@@ -24,5 +25,17 @@ class DatabaseSeeder extends Seeder
             'type' => 1,
             'role' => 1
         ]);
+        for ($i=1; $i<=6;$i++){
+            Contact::create(
+                [
+                    'full_name' => "Manh$i",
+                    'email' => "Manh$@gmail.com",
+                    'phone' => "037899554$i",
+                    'status' => 'processed'
+                ],
+            );
+        }
+
+
     }
 }

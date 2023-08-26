@@ -124,11 +124,10 @@
 
         <li><a data-toggle="collapse" data-target="#pnnews" href="javascript:void(0)" title="Tin tức"><i class="fa fa-fw fa-file"></i>Tin tức<i class="fa fa-fw fa-caret-down"></i></a>
             <ul id="pnnews" class="collapse ">
-                <li><a href="#" title="Danh mục tin"><i class="fa fa-fw fa fa-caret-right"></i>Danh mục tin</a></li>
+                <li><a href="{{route('admin.indexListCategory')}}" title="Danh mục tin"><i class="fa fa-fw fa fa-caret-right"></i>Danh mục tin</a></li>
                 <li style="display:none"><a href="#" title="Nhóm tin"><i class="fa fa-fw fa fa-caret-right"></i>Nhóm tin</a></li>
-                <li><a href="#" title="Danh sách tin"><i class="fa fa-fw fa fa-caret-right"></i>Danh sách tin</a>
+                <li><a href="{{route('admin.indexListBlog')}}" title="Danh sách tin"><i class="fa fa-fw fa fa-caret-right"></i>Danh sách tin</a>
                 </li>
-                <li><a href="#" title="Cấu hình tin"><i class="fa fa-fw fa fa-caret-right"></i>Cấu hình tin</a></li>
             </ul>
         </li>
         <li><a data-toggle="collapse" data-target="#pncuahang" href="javascript:void(0)" title="Hỏi đáp"><i class="fa fa-fw fa-map"></i>Cửa hàng<i class="fa fa-fw fa-caret-down"></i></a>
@@ -208,7 +207,7 @@
         </li>
         <li><a data-toggle="collapse" data-target="#pncontacts" href="javascript:void(0)" title="Liên hệ"><i class="fa fa-fw fa-support"></i>Liên hệ<i class="fa fa-fw fa-caret-down"></i></a>
             <ul id="pncontacts" class="collapse ">
-                <li><a href="#" title="Danh sách liên hệ"><i class="fa fa-fw fa fa-caret-right"></i>Danh sách liên
+                <li><a href="{{route('admin.indexContact')}}" title="Danh sách liên hệ"><i class="fa fa-fw fa fa-caret-right"></i>Danh sách liên
                         hệ</a></li>
                 <li><a href="#" title="Thông tin liên hệ &amp; bản đồ"><i class="fa fa-fw fa fa-caret-right"></i>Thông tin liên hệ &amp; bản đồ</a></li>
             </ul>
