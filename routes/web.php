@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::prefix('/admin')->group(function () {
+Route::prefix('/template')->group(function () {
     Route::get('/', 'App\Http\Controllers\TemplateController@example');
     Route::get('/login', 'App\Http\Controllers\TemplateController@login');
     Route::get('/dashboard', 'App\Http\Controllers\TemplateController@dashboard');
@@ -75,5 +75,22 @@ Route::group(['middleware' => 'auth_admin'], function () {
         Route::post('/createMenu', 'App\Http\Controllers\Admin\MenuController@createMenu')->name('admin.submit.indexCreateMenu');
         Route::get('/editMenu/{id}', 'App\Http\Controllers\Admin\MenuController@editMenu')->name('admin.editMenu');
         Route::post('/editMenu/{id}', 'App\Http\Controllers\Admin\MenuController@submitEditMenu')->name('admin.submit.editMenu');
+
+        Route::get('/listCategory', 'App\Http\Controllers\Admin\CategoryController@indexListCategory')->name('admin.indexListCategory');
+        Route::get('/createCategory', 'App\Http\Controllers\Admin\CategoryController@indexCreateCategory')->name('admin.indexCreateCategory');
+        Route::post('/createCategory', 'App\Http\Controllers\Admin\CategoryController@createCategory')->name('admin.submit.indexCreateCategory');
+        Route::get('/editCategory/{id}', 'App\Http\Controllers\Admin\CategoryController@editCate')->name('admin.editCate');
+        Route::post('/editCategory/{id}', 'App\Http\Controllers\Admin\CategoryController@submitEditCate')->name('admin.submit.editCate');
+        Route::get('/listBlog', 'App\Http\Controllers\Admin\CategoryController@indexListBlog')->name('admin.indexListBlog');
+        Route::get('/createBlog', 'App\Http\Controllers\Admin\CategoryController@createBlog')->name('admin.createBlog');
+        Route::post('/createBlog', 'App\Http\Controllers\Admin\CategoryController@submitCreateBlog')->name('admin.submit.createBlog');
+        Route::get('/editBlog/{id}', 'App\Http\Controllers\Admin\CategoryController@editBlog')->name('admin.editBlog');
+        Route::post('/editBlog/{id}', 'App\Http\Controllers\Admin\CategoryController@submitEditBlog')->name('admin.submit.editBlog');
+
+        Route::get('/indexContact', 'App\Http\Controllers\Admin\ContactController@indexContact')->name('admin.indexContact');
+        Route::get('/indexContact/{id}', 'App\Http\Controllers\Admin\ContactController@editContact')->name('admin.editContact');
+
+
+
     });
 });

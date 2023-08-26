@@ -15,6 +15,7 @@
     <script type="text/javascript" src="{{ asset('js/ddaccordion.js') }}"></script>
     <script src="{{ asset('js/easyResponsiveTabs.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
+    <script src={{ url('ckeditor/ckeditor.js') }}></script>
 </head>
 
 <body>
@@ -25,6 +26,7 @@
         @endif
         @yield('content')
     </div>
+
 </body>
 
-</html>á
+</html>
