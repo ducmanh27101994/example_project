@@ -35,16 +35,14 @@ Route::prefix('/template')->group(function () {
 //    Route::get('/tich-hop-analytics', 'App\Http\Controllers\TemplateController@tichhopanalytics');
 //    Route::get('/tich-hop-fanpage', 'App\Http\Controllers\TemplateController@tichhopfanpage');
 //    Route::get('/tich-hop-livechat', 'App\Http\Controllers\TemplateController@tichhoplivechat');
-    Route::get('/tich-hop-mastertools', 'App\Http\Controllers\TemplateController@tichhopmastertools');
-    Route::get('/tich-hop-social', 'App\Http\Controllers\TemplateController@tichhopsocial');
+//    Route::get('/tich-hop-mastertools', 'App\Http\Controllers\TemplateController@tichhopmastertools');
+//    Route::get('/tich-hop-social', 'App\Http\Controllers\TemplateController@tichhopsocial');
     Route::get('/tich-hop-afterBody', 'App\Http\Controllers\TemplateController@tichhopAfterBody');
     Route::get('/tich-hop-beforeBody', 'App\Http\Controllers\TemplateController@tichhopBeforeBody');
     Route::get('/noi-dung-doc-lap', 'App\Http\Controllers\TemplateController@tienichSingleContent');
     Route::get('/them-noi-dung-doc-lap', 'App\Http\Controllers\TemplateController@tienichAddContentSingle');
     Route::get('/quan-ly-quang-cao', 'App\Http\Controllers\TemplateController@tienichAdvs');
     Route::get('/vi-tri-quang-cao', 'App\Http\Controllers\TemplateController@tienichAdvsPosition');
-    Route::get('/danh-muc-cua-hang', 'App\Http\Controllers\TemplateController@cuahangCate');
-    Route::get('/them-danh-muc-cua-hang', 'App\Http\Controllers\TemplateController@cuahangAddCate');
     Route::get('/danh-sach-cua-hang', 'App\Http\Controllers\TemplateController@cuahangItem');
     Route::get('/them-vi-tri-cua-hang', 'App\Http\Controllers\TemplateController@cuahangAddItem');
     /*******End*/
@@ -101,6 +99,10 @@ Route::group(['middleware' => 'auth_admin'], function () {
         Route::post('/indexFanpage', 'App\Http\Controllers\Admin\SettingController@submitConfigFanpage')->name('admin.submit.indexFanpage');
         Route::get('/indexLiveChat', 'App\Http\Controllers\Admin\SettingController@indexLiveChat')->name('admin.indexLiveChat');
         Route::post('/indexLiveChat', 'App\Http\Controllers\Admin\SettingController@submitConfigLiveChat')->name('admin.submit.indexLiveChat');
+        Route::get('/indexMastertools', 'App\Http\Controllers\Admin\SettingController@indexMastertools')->name('admin.indexMastertools');
+        Route::post('/indexMastertools', 'App\Http\Controllers\Admin\SettingController@submitConfigMastertools')->name('admin.submit.indexMastertools');
+        Route::get('/indexSocial', 'App\Http\Controllers\Admin\SettingController@indexSocial')->name('admin.indexSocial');
+        Route::post('/indexSocial', 'App\Http\Controllers\Admin\SettingController@submitConfigSocial')->name('admin.submit.indexSocial');
 
 
 
