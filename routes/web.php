@@ -24,17 +24,17 @@ Route::prefix('/template')->group(function () {
     Route::get('/main-menu', 'App\Http\Controllers\TemplateController@mainmenu');
     Route::get('/them-menu', 'App\Http\Controllers\TemplateController@addmenu');
     /*****new module*/
-    Route::get('/danh-muc-tin-tuc', 'App\Http\Controllers\TemplateController@categoryBlog');
-    Route::get('/them-danh-muc-tin-tuc', 'App\Http\Controllers\TemplateController@addNewCategoryBlog');
-    Route::get('/danh-sach-tin-tuc', 'App\Http\Controllers\TemplateController@item');
-    Route::get('/them-tin-tuc', 'App\Http\Controllers\TemplateController@addNewItemBlog');
-    Route::get('/danh-sach-lien-he', 'App\Http\Controllers\TemplateController@contact');
-    Route::get('/chi-tiet-lien-he', 'App\Http\Controllers\TemplateController@contactDetails');
-    Route::get('/map', 'App\Http\Controllers\TemplateController@map');
-    Route::get('/tich-hop-seo', 'App\Http\Controllers\TemplateController@tichhopseo');
-    Route::get('/tich-hop-analytics', 'App\Http\Controllers\TemplateController@tichhopanalytics');
-    Route::get('/tich-hop-fanpage', 'App\Http\Controllers\TemplateController@tichhopfanpage');
-    Route::get('/tich-hop-livechat', 'App\Http\Controllers\TemplateController@tichhoplivechat');
+//    Route::get('/danh-muc-tin-tuc', 'App\Http\Controllers\TemplateController@categoryBlog');
+//    Route::get('/them-danh-muc-tin-tuc', 'App\Http\Controllers\TemplateController@addNewCategoryBlog');
+//    Route::get('/danh-sach-tin-tuc', 'App\Http\Controllers\TemplateController@item');
+//    Route::get('/them-tin-tuc', 'App\Http\Controllers\TemplateController@addNewItemBlog');
+//    Route::get('/danh-sach-lien-he', 'App\Http\Controllers\TemplateController@contact');
+//    Route::get('/chi-tiet-lien-he', 'App\Http\Controllers\TemplateController@contactDetails');
+//    Route::get('/map', 'App\Http\Controllers\TemplateController@map');
+//    Route::get('/tich-hop-seo', 'App\Http\Controllers\TemplateController@tichhopseo');
+//    Route::get('/tich-hop-analytics', 'App\Http\Controllers\TemplateController@tichhopanalytics');
+//    Route::get('/tich-hop-fanpage', 'App\Http\Controllers\TemplateController@tichhopfanpage');
+//    Route::get('/tich-hop-livechat', 'App\Http\Controllers\TemplateController@tichhoplivechat');
     Route::get('/tich-hop-mastertools', 'App\Http\Controllers\TemplateController@tichhopmastertools');
     Route::get('/tich-hop-social', 'App\Http\Controllers\TemplateController@tichhopsocial');
     Route::get('/tich-hop-afterBody', 'App\Http\Controllers\TemplateController@tichhopAfterBody');
@@ -89,6 +89,18 @@ Route::group(['middleware' => 'auth_admin'], function () {
 
         Route::get('/indexContact', 'App\Http\Controllers\Admin\ContactController@indexContact')->name('admin.indexContact');
         Route::get('/indexContact/{id}', 'App\Http\Controllers\Admin\ContactController@editContact')->name('admin.editContact');
+        Route::post('/indexContact/{id}', 'App\Http\Controllers\Admin\ContactController@submitStatusContact')->name('admin.submit.editContact');
+
+        Route::get('/indexMap', 'App\Http\Controllers\Admin\SettingController@indexMap')->name('admin.indexMap');
+        Route::post('/indexMap', 'App\Http\Controllers\Admin\SettingController@submitConfigMap')->name('admin.submit.indexMap');
+        Route::get('/indexSeo', 'App\Http\Controllers\Admin\SettingController@indexSeo')->name('admin.indexSeo');
+        Route::post('/indexSeo', 'App\Http\Controllers\Admin\SettingController@submitConfigSeo')->name('admin.submit.indexSeo');
+        Route::get('/indexAnalytics', 'App\Http\Controllers\Admin\SettingController@indexAnalytics')->name('admin.indexAnalytics');
+        Route::post('/indexAnalytics', 'App\Http\Controllers\Admin\SettingController@submitConfigAnalytics')->name('admin.submit.indexAnalytics');
+        Route::get('/indexFanpage', 'App\Http\Controllers\Admin\SettingController@indexFanpage')->name('admin.indexFanpage');
+        Route::post('/indexFanpage', 'App\Http\Controllers\Admin\SettingController@submitConfigFanpage')->name('admin.submit.indexFanpage');
+        Route::get('/indexLiveChat', 'App\Http\Controllers\Admin\SettingController@indexLiveChat')->name('admin.indexLiveChat');
+        Route::post('/indexLiveChat', 'App\Http\Controllers\Admin\SettingController@submitConfigLiveChat')->name('admin.submit.indexLiveChat');
 
 
 

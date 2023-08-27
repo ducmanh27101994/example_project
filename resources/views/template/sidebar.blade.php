@@ -209,7 +209,7 @@
             <ul id="pncontacts" class="collapse ">
                 <li><a href="{{route('admin.indexContact')}}" title="Danh sách liên hệ"><i class="fa fa-fw fa fa-caret-right"></i>Danh sách liên
                         hệ</a></li>
-                <li><a href="#" title="Thông tin liên hệ &amp; bản đồ"><i class="fa fa-fw fa fa-caret-right"></i>Thông tin liên hệ &amp; bản đồ</a></li>
+                <li><a href="{{route('admin.indexMap')}}" title="Thông tin liên hệ &amp; bản đồ"><i class="fa fa-fw fa fa-caret-right"></i>Bản đồ</a></li>
             </ul>
         </li>
         <li style="display:none"><a data-toggle="collapse" data-target="#pncomment" href="javascript:void(0)" title="Liên hệ"><i class="fa fa-fw fa-support"></i>Bình luận<i class="fa fa-fw fa-caret-down"></i></a>
@@ -222,16 +222,16 @@
         <li style="display:none"><a href="#"><i class="fa  fa-user"></i>Thành viên</a></li>
         <li><a data-toggle="collapse" data-target="#pnintegrated" href="javascript:void(0)" title="Tích hợp"><i class="fa fa-tasks"></i>Tích hợp<i class="fa fa-fw fa-caret-down"></i></a>
             <ul id="pnintegrated" class="collapse ">
-                <li><a href="#" title="Tích hợp SEO"><i class="fa fa-fw fa fa-caret-right"></i>Tích hợp SEO</a></li>
-                <li><a href="#" title="Tích hợp Google Analytics"><i class="fa fa-fw fa fa-caret-right"></i>Tích hợp
+                <li><a href="{{route('admin.indexSeo')}}" title="Tích hợp SEO"><i class="fa fa-fw fa fa-caret-right"></i>Tích hợp SEO</a></li>
+                <li><a href="{{route('admin.indexAnalytics')}}" title="Tích hợp Google Analytics"><i class="fa fa-fw fa fa-caret-right"></i>Tích hợp
                         Google Analytics</a></li>
                 <li><a href="#" title="Tích hợp Google Master Tool"><i class="fa fa-fw fa fa-caret-right"></i>Tích
                         hợp Google Master Tool</a></li>
                 <li><a href="#" title="Chuyển hướng 301"><i class="fa fa-fw fa fa-caret-right"></i>Chuyển hướng
                         301</a></li>
-                <li><a href="#" title="Tích hợp Facebook"><i class="fa fa-fw fa fa-caret-right"></i>Tích hợp
+                <li><a href="{{route('admin.indexFanpage')}}" title="Tích hợp Facebook"><i class="fa fa-fw fa fa-caret-right"></i>Tích hợp
                         Facebook Fanpage</a></li>
-                <li><a href="#" title="Tích hợp Livechat"><i class="fa fa-fw fa fa-caret-right"></i>Tích hợp
+                <li><a href="{{route('admin.indexLiveChat')}}" title="Tích hợp Livechat"><i class="fa fa-fw fa fa-caret-right"></i>Tích hợp
                         Livechat</a></li>
                 <li><a href="#" title="Tích hợp mạng xã hội"><i class="fa fa-fw fa fa-caret-right"></i>Tích hợp mạng
                         xã hội</a></li>

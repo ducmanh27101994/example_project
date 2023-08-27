@@ -43,6 +43,12 @@ class ContactRepository extends BaseRepository
 
     }
 
+    public function update_contact($request, $id){
+
+
+
+    }
+
 
 
 }
