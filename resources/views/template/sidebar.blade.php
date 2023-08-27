@@ -225,7 +225,7 @@
                 <li><a href="{{route('admin.indexSeo')}}" title="Tích hợp SEO"><i class="fa fa-fw fa fa-caret-right"></i>Tích hợp SEO</a></li>
                 <li><a href="{{route('admin.indexAnalytics')}}" title="Tích hợp Google Analytics"><i class="fa fa-fw fa fa-caret-right"></i>Tích hợp
                         Google Analytics</a></li>
-                <li><a href="#" title="Tích hợp Google Master Tool"><i class="fa fa-fw fa fa-caret-right"></i>Tích
+                <li><a href="{{route('admin.indexMastertools')}}" title="Tích hợp Google Master Tool"><i class="fa fa-fw fa fa-caret-right"></i>Tích
                         hợp Google Master Tool</a></li>
                 <li><a href="#" title="Chuyển hướng 301"><i class="fa fa-fw fa fa-caret-right"></i>Chuyển hướng
                         301</a></li>
@@ -233,7 +233,7 @@
                         Facebook Fanpage</a></li>
                 <li><a href="{{route('admin.indexLiveChat')}}" title="Tích hợp Livechat"><i class="fa fa-fw fa fa-caret-right"></i>Tích hợp
                         Livechat</a></li>
-                <li><a href="#" title="Tích hợp mạng xã hội"><i class="fa fa-fw fa fa-caret-right"></i>Tích hợp mạng
+                <li><a href="{{route('admin.indexSocial')}}" title="Tích hợp mạng xã hội"><i class="fa fa-fw fa fa-caret-right"></i>Tích hợp mạng
                         xã hội</a></li>
                 <li><a href="#" title="Nội dung trang lỗi"><i class="fa fa-fw fa fa-caret-right"></i>Nội dung trang
                         lỗi</a></li>

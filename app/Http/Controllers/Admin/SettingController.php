@@ -8,7 +8,9 @@ use App\Http\Repositories\AnalyticsRepository;
 use App\Http\Repositories\FanpageRepository;
 use App\Http\Repositories\LivechatRepository;
 use App\Http\Repositories\MapRepository;
+use App\Http\Repositories\MastertoolsRepository;
 use App\Http\Repositories\SeoRepository;
+use App\Http\Repositories\SocialRepository;
 use Illuminate\Http\Request;
 
 class SettingController
@@ -19,16 +21,21 @@ class SettingController
     protected $analyticsRepository;
     protected $fanpageRepository;
     protected $livechatRepository;
+    protected $mastertoolsRepository;
+    protected $socialRepository;
 
 
     public function __construct(MapRepository $mapRepository, SeoRepository $settingSeoRepository, AnalyticsRepository $analyticsRepository,
-                                FanpageRepository $fanpageRepository, LivechatRepository $livechatRepository)
+                                FanpageRepository $fanpageRepository, LivechatRepository $livechatRepository, MastertoolsRepository $mastertoolsRepository,
+                                SocialRepository $socialRepository)
     {
         $this->mapRepository = $mapRepository;
         $this->settingSeoRepository = $settingSeoRepository;
         $this->analyticsRepository = $analyticsRepository;
         $this->fanpageRepository = $fanpageRepository;
         $this->livechatRepository = $livechatRepository;
+        $this->mastertoolsRepository = $mastertoolsRepository;
+        $this->socialRepository = $socialRepository;
     }
 
     public function indexMap(){
@@ -192,6 +199,78 @@ class SettingController
             if ($config) {
                 toastr()->success('Cập nhật thành công', 'Success');
                 return redirect()->route('admin.indexLiveChat');
+            }
+        }
+    }
+
+    public function indexMastertools(){
+        $config = $this->mastertoolsRepository->find(1);
+        if (empty($config)) {
+            $config = [
+                'id' => 1,
+                'embed_code' => '',
+            ];
+        }
+        return view('admin.tichhop.mastertools',['config' => (object)$config]);
+    }
+
+    public function submitConfigMastertools(Request $request)
+    {
+        $data = [
+            'embed_code' => $request->embed_code,
+        ];
+        if ($this->mastertoolsRepository->find(1)) {
+            $config = $this->mastertoolsRepository->update(1, $data);
+            if ($config) {
+                toastr()->success('Cập nhật thành công', 'Success');
+                return redirect()->route('admin.indexMastertools');
+            }
+        } else {
+            $config = $this->mastertoolsRepository->create($data);
+            if ($config) {
+                toastr()->success('Cập nhật thành công', 'Success');
+                return redirect()->route('admin.indexMastertools');
+            }
+        }
+    }
+
+    public function indexSocial(){
+        $config = $this->socialRepository->find(1);
+        if (empty($config)) {
+            $config = [
+                'id' => 1,
+                'facebook' => '',
+                'google' => '',
+                'twitter' => '',
+                'youtube' => '',
+                'intagram' => '',
+                'linkedin' => '',
+            ];
+        }
+        return view('admin.tichhop.social',['config' => (object)$config]);
+    }
+
+    public function submitConfigSocial(Request $request)
+    {
+        $data = [
+            'facebook' => $request->facebook,
+            'google' => $request->google,
+            'twitter' => $request->twitter,
+            'youtube' => $request->youtube,
+            'intagram' => $request->intagram,
+            'linkedin' => $request->linkedin,
+        ];
+        if ($this->socialRepository->find(1)) {
+            $config = $this->socialRepository->update(1, $data);
+            if ($config) {
+                toastr()->success('Cập nhật thành công', 'Success');
+                return redirect()->route('admin.indexSocial');
+            }
+        } else {
+            $config = $this->socialRepository->create($data);
+            if ($config) {
+                toastr()->success('Cập nhật thành công', 'Success');
+                return redirect()->route('admin.indexSocial');
             }
         }
     }
