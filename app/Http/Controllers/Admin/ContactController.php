@@ -29,8 +29,31 @@ class ContactController extends BaseController
     public function editContact($id){
 
         $contact = $this->contactRepository->find($id);
-
         return view('admin.contract.contactDetail', ['contact' => $contact]);
+    }
+
+    public function submitStatusContact(Request $request, $id){
+
+        if (!$this->contactRepository->find($id)) {
+            toastr()->error("Không tìm thấy contact", 'Fail');
+            return redirect()->route('admin.indexListBlog');
+        }
+        $data_old = $this->contactRepository->find($id);
+        $status = (!empty($request->status) && $request->status == 'on') ? 'process' : 'block';
+        $data = [
+            'full_name' => $data_old->full_name,
+            'email' => $data_old->email,
+            'phone' => $data_old->phone,
+            'status' => $status,
+        ];
+        $contact = $this->contactRepository->update($id, $data);
+        if ($contact) {
+            toastr()->success('Cập nhật thành công', 'Success');
+            return redirect()->route('admin.editContact', ['id' => $id]);
+        }
+        toastr()->error('Cập nhật thất bại', 'Fail');
+        return redirect()->route('admin.editContact', ['id' => $id]);
+
     }
 
 

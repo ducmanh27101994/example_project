@@ -16,14 +16,14 @@ class CreateBlogsTable extends Migration
         Schema::create('blogs', function (Blueprint $table) {
             $table->id();
             $table->string('news_headlines')->nullable();
-            $table->string('describe')->nullable();
-            $table->string('detail')->nullable();
+            $table->longText('describe')->nullable();
+            $table->longText('detail')->nullable();
             $table->string('representative_image')->nullable();
             $table->string('status')->nullable();
             $table->string('page_title_tag')->nullable();
             $table->string('path')->nullable();
-            $table->string('keyword_tags')->nullable();
-            $table->string('description_card')->nullable();
+            $table->longText('keyword_tags')->nullable();
+            $table->longText('description_card')->nullable();
             $table->unsignedBigInteger('category_id')->nullable();
             $table->timestamps();
         });
