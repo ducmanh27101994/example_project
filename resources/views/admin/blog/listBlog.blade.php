@@ -66,7 +66,6 @@
                                             <option selected="selected" value="-1">Tất cả trạng thái</option>
                                             <option value="active" {{request()->get('status') == 'active' ? 'selected' : ''}}>Active</option>
                                             <option value="block" {{request()->get('status') == 'block' ? 'selected' : ''}}>Block</option>
-
                                         </select>
 
                                         <input type="submit" name="controls1$ctl00$ctl00$ctl00$btnsearch"
