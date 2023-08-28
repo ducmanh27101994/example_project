@@ -37,12 +37,12 @@ Route::prefix('/template')->group(function () {
 //    Route::get('/tich-hop-livechat', 'App\Http\Controllers\TemplateController@tichhoplivechat');
 //    Route::get('/tich-hop-mastertools', 'App\Http\Controllers\TemplateController@tichhopmastertools');
 //    Route::get('/tich-hop-social', 'App\Http\Controllers\TemplateController@tichhopsocial');
-    Route::get('/tich-hop-afterBody', 'App\Http\Controllers\TemplateController@tichhopAfterBody');
-    Route::get('/tich-hop-beforeBody', 'App\Http\Controllers\TemplateController@tichhopBeforeBody');
-    Route::get('/noi-dung-doc-lap', 'App\Http\Controllers\TemplateController@tienichSingleContent');
-    Route::get('/them-noi-dung-doc-lap', 'App\Http\Controllers\TemplateController@tienichAddContentSingle');
-    Route::get('/quan-ly-quang-cao', 'App\Http\Controllers\TemplateController@tienichAdvs');
-    Route::get('/vi-tri-quang-cao', 'App\Http\Controllers\TemplateController@tienichAdvsPosition');
+//    Route::get('/tich-hop-afterBody', 'App\Http\Controllers\TemplateController@tichhopAfterBody');
+//    Route::get('/tich-hop-beforeBody', 'App\Http\Controllers\TemplateController@tichhopBeforeBody');
+//    Route::get('/noi-dung-doc-lap', 'App\Http\Controllers\TemplateController@tienichSingleContent');
+//    Route::get('/them-noi-dung-doc-lap', 'App\Http\Controllers\TemplateController@tienichAddContentSingle');
+//    Route::get('/quan-ly-quang-cao', 'App\Http\Controllers\TemplateController@tienichAdvs');
+//    Route::get('/vi-tri-quang-cao', 'App\Http\Controllers\TemplateController@tienichAdvsPosition');
     Route::get('/danh-sach-cua-hang', 'App\Http\Controllers\TemplateController@cuahangItem');
     Route::get('/them-vi-tri-cua-hang', 'App\Http\Controllers\TemplateController@cuahangAddItem');
     /*******End*/
@@ -103,7 +103,28 @@ Route::group(['middleware' => 'auth_admin'], function () {
         Route::post('/indexMastertools', 'App\Http\Controllers\Admin\SettingController@submitConfigMastertools')->name('admin.submit.indexMastertools');
         Route::get('/indexSocial', 'App\Http\Controllers\Admin\SettingController@indexSocial')->name('admin.indexSocial');
         Route::post('/indexSocial', 'App\Http\Controllers\Admin\SettingController@submitConfigSocial')->name('admin.submit.indexSocial');
+        Route::get('/indexAfterBody', 'App\Http\Controllers\Admin\SettingController@indexAfterBody')->name('admin.indexAfterBody');
+        Route::post('/indexAfterBody', 'App\Http\Controllers\Admin\SettingController@submitConfigAfterBody')->name('admin.submit.indexAfterBody');
+        Route::get('/indexBeforeBody', 'App\Http\Controllers\Admin\SettingController@indexBeforeBody')->name('admin.indexBeforeBody');
+        Route::post('/indexBeforeBody', 'App\Http\Controllers\Admin\SettingController@submitConfigBeforeBody')->name('admin.submit.indexBeforeBody');
 
+        Route::get('/indexStaticPage', 'App\Http\Controllers\Admin\IndependentContentController@indexStaticPage')->name('admin.indexStaticPage');
+        Route::get('/createStaticPage', 'App\Http\Controllers\Admin\IndependentContentController@createStaticPage')->name('admin.createStaticPage');
+        Route::post('/createStaticPage', 'App\Http\Controllers\Admin\IndependentContentController@submitStaticPage')->name('admin.submit.createStaticPage');
+        Route::get('/editStaticPage/{id}', 'App\Http\Controllers\Admin\IndependentContentController@editStaticPage')->name('admin.editStaticPage');
+        Route::post('/editStaticPage/{id}', 'App\Http\Controllers\Admin\IndependentContentController@submitEditStaticPage')->name('admin.submit.editStaticPage');
+
+        Route::get('/indexBannerAds', 'App\Http\Controllers\Admin\BannerAdsController@indexBannerAds')->name('admin.indexBannerAds');
+        Route::get('/createBannerAds', 'App\Http\Controllers\Admin\BannerAdsController@createBannerAds')->name('admin.createBannerAds');
+        Route::post('/createBannerAds', 'App\Http\Controllers\Admin\BannerAdsController@submitBannerAds')->name('admin.submit.createBannerAds');
+        Route::get('/editBannerAds/{id}', 'App\Http\Controllers\Admin\BannerAdsController@editBannerAds')->name('admin.editBannerAds');
+        Route::post('/editBannerAds/{id}', 'App\Http\Controllers\Admin\BannerAdsController@submitEditBannerAds')->name('admin.submit.editBannerAds');
+
+        Route::get('/indexStore', 'App\Http\Controllers\Admin\StoreController@indexStore')->name('admin.indexStore');
+        Route::get('/createStore', 'App\Http\Controllers\Admin\StoreController@createStore')->name('admin.createStore');
+        Route::post('/createStore', 'App\Http\Controllers\Admin\StoreController@submitStore')->name('admin.submitStore');
+        Route::get('/editStore/{id}', 'App\Http\Controllers\Admin\StoreController@editStore')->name('admin.editStore');
+        Route::post('/editStore/{id}', 'App\Http\Controllers\Admin\StoreController@submitEditStore')->name('admin.submit.editStore');
 
 
     });

@@ -4,7 +4,9 @@
 namespace App\Http\Controllers\Admin;
 
 
+use App\Http\Repositories\AfterBodyRepository;
 use App\Http\Repositories\AnalyticsRepository;
+use App\Http\Repositories\BeforeRepository;
 use App\Http\Repositories\FanpageRepository;
 use App\Http\Repositories\LivechatRepository;
 use App\Http\Repositories\MapRepository;
@@ -23,11 +25,13 @@ class SettingController
     protected $livechatRepository;
     protected $mastertoolsRepository;
     protected $socialRepository;
+    protected $afterBodyRepository;
+    protected $beforeRepository;
 
 
     public function __construct(MapRepository $mapRepository, SeoRepository $settingSeoRepository, AnalyticsRepository $analyticsRepository,
                                 FanpageRepository $fanpageRepository, LivechatRepository $livechatRepository, MastertoolsRepository $mastertoolsRepository,
-                                SocialRepository $socialRepository)
+                                SocialRepository $socialRepository, AfterBodyRepository $afterBodyRepository, BeforeRepository $beforeRepository)
     {
         $this->mapRepository = $mapRepository;
         $this->settingSeoRepository = $settingSeoRepository;
@@ -36,6 +40,8 @@ class SettingController
         $this->livechatRepository = $livechatRepository;
         $this->mastertoolsRepository = $mastertoolsRepository;
         $this->socialRepository = $socialRepository;
+        $this->afterBodyRepository = $afterBodyRepository;
+        $this->beforeRepository = $beforeRepository;
     }
 
     public function indexMap(){
@@ -271,6 +277,70 @@ class SettingController
             if ($config) {
                 toastr()->success('Cập nhật thành công', 'Success');
                 return redirect()->route('admin.indexSocial');
+            }
+        }
+    }
+
+    public function indexAfterBody(){
+        $config = $this->afterBodyRepository->find(1);
+        if (empty($config)) {
+            $config = [
+                'id' => 1,
+                'embed_code' => '',
+            ];
+        }
+        return view('admin.tichhop.afterBody',['config' => (object)$config]);
+    }
+
+    public function submitConfigAfterBody(Request $request)
+    {
+        $data = [
+            'embed_code' => $request->embed_code,
+        ];
+
+        if ($this->afterBodyRepository->find(1)) {
+            $config = $this->afterBodyRepository->update(1, $data);
+            if ($config) {
+                toastr()->success('Cập nhật thành công', 'Success');
+                return redirect()->route('admin.indexAfterBody');
+            }
+        } else {
+            $config = $this->afterBodyRepository->create($data);
+            if ($config) {
+                toastr()->success('Cập nhật thành công', 'Success');
+                return redirect()->route('admin.indexAfterBody');
+            }
+        }
+    }
+
+    public function indexBeforeBody(){
+        $config = $this->beforeRepository->find(1);
+        if (empty($config)) {
+            $config = [
+                'id' => 1,
+                'embed_code' => '',
+            ];
+        }
+        return view('admin.tichhop.beforeBody',['config' => (object)$config]);
+    }
+
+    public function submitConfigBeforeBody(Request $request)
+    {
+        $data = [
+            'embed_code' => $request->embed_code,
+        ];
+
+        if ($this->beforeRepository->find(1)) {
+            $config = $this->beforeRepository->update(1, $data);
+            if ($config) {
+                toastr()->success('Cập nhật thành công', 'Success');
+                return redirect()->route('admin.indexBeforeBody');
+            }
+        } else {
+            $config = $this->beforeRepository->create($data);
+            if ($config) {
+                toastr()->success('Cập nhật thành công', 'Success');
+                return redirect()->route('admin.indexBeforeBody');
             }
         }
     }

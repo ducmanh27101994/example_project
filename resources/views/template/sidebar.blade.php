@@ -132,9 +132,7 @@
         </li>
         <li><a data-toggle="collapse" data-target="#pncuahang" href="javascript:void(0)" title="Hỏi đáp"><i class="fa fa-fw fa-map"></i>Cửa hàng<i class="fa fa-fw fa-caret-down"></i></a>
             <ul id="pncuahang" class="collapse ">
-
-                <li><a href="#" title="Danh mục hỏi đáp"><i class="fa fa-fw fa fa-caret-right"></i>Danh mục cửa hàng</a></li>
-                <li><a href="#" title="Danh sách hỏi đáp"><i class="fa fa-fw fa fa-caret-right"></i>Danh sách cửa hàng</a></li>
+                <li><a href="{{route('admin.indexStore')}}" title="Danh sách hỏi đáp"><i class="fa fa-fw fa fa-caret-right"></i>Danh sách cửa hàng</a></li>
             </ul>
         </li>
         <li><a data-toggle="collapse" data-target="#pncontent" href="javascript:void(0)" title="Bài viết"><i class="fa fa-fw fa-folder-o"></i>Trang nội dung<i class="fa fa-fw fa-caret-down"></i></a>
@@ -237,23 +235,16 @@
                         xã hội</a></li>
                 <li><a href="#" title="Nội dung trang lỗi"><i class="fa fa-fw fa fa-caret-right"></i>Nội dung trang
                         lỗi</a></li>
-                <li><a href="#" title="Tích hợp mạng xã hội"><i class="fa fa-fw fa fa-caret-right"></i>Tích hợp script trước body</a></li>
-                <li><a href="#" title="Nội dung trang lỗi"><i class="fa fa-fw fa fa-caret-right"></i>Tích hợp script sau body</a></li>
+                <li><a href="{{route('admin.indexAfterBody')}}" title="Tích hợp mạng xã hội"><i class="fa fa-fw fa fa-caret-right"></i>Tích hợp script trước body</a></li>
+                <li><a href="{{route('admin.indexBeforeBody')}}" title="Nội dung trang lỗi"><i class="fa fa-fw fa fa-caret-right"></i>Tích hợp script sau body</a></li>
             </ul>
         </li>
         <li><a data-toggle="collapse" data-target="#pnutilities" href="javascript:void(0)" title="Tiện ích"><i class="fa fa-fw fa-globe"></i>Tiện ích<i class="fa fa-fw fa-caret-down"></i></a>
             <ul id="pnutilities" class="collapse ">
-                <li style="display:none"><a href="#" title="Hỗ trợ trực tuyến"><i class="fa fa-fw fa fa-caret-right"></i>Hỗ trợ trực
-                        tuyến</a></li>
-                <li style="display:none"><a href="#" title="Đăng ký nhận khuyến mại"><i class="fa fa-fw fa fa-caret-right"></i>Đăng ký
-                        email</a></li>
-
-                <li><a href="#" title="Quản lý quảng cáo"><i class="fa fa-fw fa fa-caret-right"></i>Quản lý quảng
+                <li><a href="{{route('admin.indexBannerAds')}}" title="Quản lý quảng cáo"><i class="fa fa-fw fa fa-caret-right"></i>Quản lý quảng
                         cáo</a></li>
-                <li style="display:none"><a href="#" title="Quản lý liên kết"><i class="fa fa-fw fa fa-caret-right"></i>Quản lý liên
-                        kết</a></li>
 
-                <li><a href="#" title="Nội dung độc lập"><i class="fa fa-fw fa fa-caret-right"></i>Nội dung độc
+                <li><a href="{{route('admin.indexStaticPage')}}" title="Nội dung độc lập"><i class="fa fa-fw fa fa-caret-right"></i>Nội dung độc
                         lập</a></li>
             </ul>
         </li>
