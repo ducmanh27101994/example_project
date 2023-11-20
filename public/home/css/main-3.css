@@ -1,0 +1,6469 @@
+.typography-section-intro {
+  font-size: 16px;
+  line-height: 1.37
+}
+
+@media(min-width: 768px) {
+  .typography-section-intro {
+    line-height: 1.44;
+    font-size: 18px
+  }
+}
+
+.typography-section-headline+.typography-section-intro {
+  margin: 16px 0 0 0
+}
+
+.typography-compare-section-headline {
+  font-size: 22px;
+  line-height: 1.2;
+  font-weight: 500
+}
+
+@media(min-width: 992px) {
+  .typography-compare-section-headline {
+    font-size: 30px
+  }
+}
+
+.typography-compare-headline {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.3;
+  white-space: nowrap
+}
+
+@media(min-width: 768px) {
+  .typography-compare-headline {
+    font-size: 18px
+  }
+}
+
+@media(min-width: 992px) {
+  .typography-compare-headline {
+    font-size: 20px
+  }
+}
+
+.typography-compare-tagline {
+  font-size: 16px;
+  line-height: 22px
+}
+
+.typography-feature-headline {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.3;
+  margin: 0 0 .5em 0
+}
+
+@media(min-width: 768px) {
+  .typography-feature-headline {
+    font-size: 18px
+  }
+}
+
+@media(min-width: 992px) {
+  .typography-feature-headline {
+    font-size: 20px
+  }
+}
+
+.typography-feature-intro {
+  font-size: 16px;
+  line-height: 1.375
+}
+
+.typography-eyebrow {
+  font-size: 16px;
+  line-height: 1.3;
+  font-weight: 600
+}
+
+@media(min-width: 768px) {
+  .typography-eyebrow {
+    font-size: 18px
+  }
+}
+
+@media(min-width: 992px) {
+  .typography-eyebrow {
+    font-size: 20px
+  }
+}
+
+.typography-hero-headline {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.125
+}
+
+@media(min-width: 576px) {
+  .typography-hero-headline {
+    font-size: 48px
+  }
+}
+
+@media(min-width: 768px) {
+  .typography-hero-headline {
+    font-size: 56px
+  }
+}
+
+@media(min-width: 992px) {
+  .typography-hero-headline {
+    font-size: 64px
+  }
+}
+
+.typography-eyebrow+.typography-hero-headline {
+  margin: 12px 0 0 0
+}
+
+.typography-ln-headline {
+  font-weight: 500;
+  font-size: 26px;
+  letter-spacing: -0.011em
+}
+
+@media(min-width: 992px) {
+  .typography-ln-headline {
+    font-size: 34px
+  }
+}
+
+.typography-leading-intro {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: -0.01em
+}
+
+.typography-leading-intro:lang(zh) {
+  line-height: 1.5
+}
+
+.typography-leading-intro em {
+  font-style: normal
+}
+
+@media(min-width: 576px) {
+  .typography-leading-intro {
+    font-size: 30px
+  }
+}
+
+@media(min-width: 768px) {
+  .typography-leading-intro {
+    font-size: 36px
+  }
+}
+
+@media(min-width: 992px) {
+  .typography-leading-intro {
+    font-size: 42px
+  }
+}
+
+@media(min-width: 1260px) {
+  .typography-leading-intro {
+    font-size: 50px
+  }
+}
+
+.typography-features-headline {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.5
+}
+
+@media(min-width: 768px) {
+  .typography-features-headline {
+    font-size: 26px
+  }
+}
+
+@media(min-width: 992px) {
+  .typography-features-headline {
+    font-size: 30px
+  }
+}
+
+.typography-features-intro {
+  font-size: 16px;
+  line-height: 1.5
+}
+
+.typography-feature-headline {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5
+}
+
+@media(min-width: 768px) {
+  .typography-feature-headline {
+    font-size: 18px
+  }
+}
+
+@media(min-width: 992px) {
+  .typography-feature-headline {
+    font-size: 20px
+  }
+}
+
+.typography-feature-intro {
+  font-size: 16px;
+  line-height: 1.5
+}
+
+.typography-slides-headline {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 1.5
+}
+
+@media(min-width: 768px) {
+  .typography-slides-headline {
+    font-size: 36px
+  }
+}
+
+@media(min-width: 992px) {
+  .typography-slides-headline {
+    font-size: 40px
+  }
+}
+
+.typography-slide-headline {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 600
+}
+
+.typography-slide-intro {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: .03125em
+}
+
+.typography-cta-headline {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.1875;
+  letter-spacing: -0.0125em
+}
+
+@media(min-width: 768px) {
+  .typography-cta-headline {
+    font-size: 32px
+  }
+}
+
+.typography-cta-intro {
+  font-size: 18px;
+  line-height: 1.44
+}
+
+.typography-compare-modal-headline {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.2
+}
+
+@media(min-width: 992px) {
+  .typography-compare-modal-headline {
+    font-size: 30px
+  }
+}
+
+.typography-stories-headline {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: -0.01em
+}
+
+@media(min-width: 768px) {
+  .typography-stories-headline {
+    font-size: 36px
+  }
+}
+
+@media(min-width: 992px) {
+  .typography-stories-headline {
+    font-size: 42px
+  }
+}
+
+@media(min-width: 1440px) {
+  .typography-stories-headline {
+    font-size: 50px
+  }
+}
+
+.typography-stories-intro {
+  font-weight: 500;
+  line-height: 1.3;
+  font-size: 20px;
+  letter-spacing: .008em
+}
+
+@media(min-width: 768px) {
+  .typography-stories-intro {
+    font-size: 22px
+  }
+}
+
+@media(min-width: 992px) {
+  .typography-stories-intro {
+    font-size: 24px
+  }
+}
+
+@media(min-width: 1440px) {
+  .typography-stories-intro {
+    font-size: 30px
+  }
+}
+
+.typography-story-headline {
+  font-weight: 500;
+  line-height: 1.11;
+  letter-spacing: -0.01em;
+  font-size: 20px
+}
+
+@media(min-width: 768px) {
+  .typography-story-headline {
+    font-size: 24px
+  }
+}
+
+@media(min-width: 1440px) {
+  .typography-story-headline {
+    font-size: 36px
+  }
+}
+
+.typography-story-intro {
+  font-size: 16px;
+  line-height: 1.44
+}
+
+@media(min-width: 768px) {
+  .typography-story-intro {
+    font-size: 18px
+  }
+}
+
+.typography-promo-headline {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 1.33
+}
+
+@media(min-width: 768px) {
+  .typography-promo-headline {
+    font-size: 30px
+  }
+}
+
+.typography-promo-intro {
+  font-size: 18px;
+  line-height: 1.44
+}
+
+.typography-promo-topic-number {
+  white-space: nowrap;
+  font-family: "flamasc-bold", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px
+}
+
+@media(min-width: 768px) {
+  .typography-promo-topic-number {
+    font-size: 36px
+  }
+}
+
+@media(min-width: 992px) {
+  .typography-promo-topic-number {
+    font-size: 42px
+  }
+}
+
+.typography-promo-topic-sub {
+  font-size: 16px
+}
+
+@media(min-width: 768px) {
+  .typography-promo-topic-sub {
+    font-size: 18px
+  }
+}
+
+.typography-promo-topic-label {
+  letter-spacing: .05em;
+  font-size: 16px;
+  margin: 0 0 6px 0;
+  white-space: nowrap
+}
+
+:root {
+  --local-nav-height: 120px;
+  --ln-header-bg-color: #f6f6f6;
+  --ln-border-bottom-color: #f0f0f0;
+  --ln-sticky-header-bg-color: #f6f6f6;
+  --ln-sticky-link-bg-color: #ffffff;
+  --ln-sticky-separator-color: rgba(0, 0, 0, .1);
+  --ln-link-color: #323237
+}
+
+html[dark] {
+  --ln-header-bg-color: #121215;
+  --ln-border-bottom-color: #323237;
+  --ln-sticky-header-bg-color: #121215;
+  --ln-sticky-link-bg-color: rgba(255, 255, 255, 0.1);
+  --ln-sticky-separator-color: rgba(255, 255, 255, 0.2);
+  --ln-link-color: #ffffff
+}
+
+.modal-open .local-nav--sticky {
+  padding-right: var(--scroll-bar-width, 0)
+}
+
+.local-nav {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: var(--local-nav-height)
+}
+
+.local-nav .cta-button {
+  width: 50%
+}
+
+.local-nav .cta-button+.cta-button {
+  margin: 0 0 0 16px
+}
+
+@media(min-width: 768px) {
+  .local-nav .cta-button {
+    width: 154px
+  }
+
+  .local-nav .cta-button+.cta-button {
+    margin: 0 0 0 24px
+  }
+}
+
+@media(min-width: 992px) {
+  .local-nav .cta-button+.cta-button {
+    margin: 0 0 0 32px
+  }
+}
+
+.local-nav--sticky {
+  position: fixed;
+  box-sizing: border-box;
+  z-index: 100;
+  bottom: 0;
+  height: 88px;
+  transform: translateY(100%);
+  transition: transform .5s, opacity 0s .5s;
+  opacity: 0;
+  border-top: 1px solid var(--ln-border-bottom-color)
+}
+
+@media(max-width: 767.98px) {
+  .local-nav--sticky .container {
+    padding: 0
+  }
+}
+
+@media(max-width: 767.98px) {
+  .local-nav--sticky:lang(en) {
+    display: none
+  }
+}
+
+.local-nav--sticky .local-nav-header {
+  text-align: center;
+  background-color: var(--ln-sticky-header-bg-color)
+}
+
+.local-nav--sticky .local-nav-cta-links {
+  display: flex;
+  justify-content: center;
+  margin: 14px auto 4px auto;
+  max-width: 380px
+}
+
+.local-nav--sticky .typography-ln-headline {
+  font-size: 14px
+}
+
+@media(min-width: 768px) {
+  .local-nav--sticky {
+    transform: translateY(-100%);
+    top: 0;
+    bottom: initial;
+    height: 48px;
+    border-top: none;
+    border-bottom: 1px solid var(--ln-border-bottom-color)
+  }
+
+  .local-nav--sticky .local-nav-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+  }
+
+  .local-nav--sticky .local-nav-cta-links {
+    margin: 0
+  }
+
+  .local-nav--sticky .typography-ln-headline {
+    font-size: 16px
+  }
+}
+
+.local-nav--sticky.stuck {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform .5s
+}
+
+.local-nav-header {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  background-color: var(--ln-header-bg-color)
+}
+
+@media(min-width: 768px) {
+  .local-nav-header .container {
+    align-items: center;
+    display: flex;
+    height: 100%
+  }
+}
+
+.local-nav-cta-link--sticky {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--ln-link-color);
+  height: 28px;
+  flex: 1;
+  box-sizing: border-box;
+  white-space: nowrap
+}
+
+.local-nav-cta-link--sticky:not(:only-child):not(:first-child)::before {
+  content: "";
+  display: block;
+  background-color: var(--ln-sticky-separator-color);
+  position: absolute;
+  left: 0;
+  width: 1px;
+  height: 100%;
+  pointer-events: none
+}
+
+@media(min-width: 768px) {
+  .local-nav-cta-link--sticky:not(:only-child):not(:first-child) {
+    margin-left: 8px
+  }
+
+  .local-nav-cta-link--sticky:not(:only-child):not(:first-child)::before {
+    content: none
+  }
+}
+
+@media(min-width: 768px) {
+  .local-nav-cta-link--sticky {
+    font-size: 14px;
+    border-radius: 100px;
+    padding: 0 16px;
+    height: 32px;
+    background-color: var(--ln-sticky-link-bg-color)
+  }
+
+  .local-nav-cta-link--sticky:nth-child(2) {
+    color: #fff;
+    background-color: #0074ff
+  }
+}
+
+.local-nav-cta-links {
+  display: flex;
+  margin: 12px 0 0 0
+}
+
+@media(min-width: 768px) {
+  .local-nav-cta-links {
+    margin: 0 0 0 auto
+  }
+}
+
+.local-nav-icon {
+  margin: 0 8px 0 0;
+  font-size: 1.8em;
+  background: center/contain no-repeat;
+  display: none;
+  font-style: normal;
+  font-family: "gogoro-icons"
+}
+
+@media(min-width: 768px) {
+  .local-nav-icon {
+    font-size: 1.5em;
+    margin: 0 6px 0 0
+  }
+}
+
+.local-nav--sticky .local-nav-icon {
+  display: flex;
+  align-items: center
+}
+
+.local-nav-icon--scooter::before {
+  content: "î¤„"
+}
+
+.local-nav-icon--contact::before {
+  content: "î¤ƒ"
+}
+
+.local-nav-icon--last-call {
+  position: relative;
+  width: 1em;
+  height: 1em;
+  background: center/contain no-repeat url("//cdn.gogoro.com/libs/ggr-components/images/icons/icon-lastcall-black-animation.png")
+}
+
+@media(min-width: 768px) {
+  .local-nav-icon--last-call {
+    background-image: url("//cdn.gogoro.com/libs/ggr-components/images/icons/icon-lastcall-animation.png")
+  }
+}
+
+.local-nav-floating-bar-padding {
+  height: 88px
+}
+
+@media(min-width: 768px) {
+  .local-nav-floating-bar-padding {
+    display: none
+  }
+}
+
+.section-faq {
+  color: #fff;
+  background-color: #002742;
+  text-align: center;
+  padding: 64px 0
+}
+
+.section-faq .cta-link {
+  margin: 24px 0 0 0;
+  letter-spacing: normal
+}
+
+@media(min-width: 992px) {
+  .section-faq .cta-link {
+    margin: 32px 0 0 0
+  }
+}
+
+@media(min-width: 768px) {
+  .section-faq {
+    padding: 96px 0
+  }
+}
+
+@media(min-width: 1260px) {
+  .section-faq {
+    padding: 128px 0
+  }
+}
+
+.faq-list {
+  display: flex;
+  flex-flow: row wrap;
+  --faq-gap: 32px;
+  list-style: none;
+  margin: 32px auto 0 auto;
+  padding: 0;
+  max-width: 330px
+}
+
+@media(min-width: 768px) {
+  .faq-list {
+    max-width: 400px;
+    margin: 64px auto 0 auto
+  }
+}
+
+@media(min-width: 992px) {
+  .faq-list {
+    max-width: initial;
+    --faq-gap: 24px;
+    justify-content: center
+  }
+}
+
+@media(min-width: 1260px) {
+  .faq-list {
+    margin: 80px 0 0 0
+  }
+}
+
+.faq-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 20px;
+  border-radius: 30px;
+  color: #002742;
+  background-color: #fff;
+  box-sizing: border-box;
+  margin: calc(var(--faq-gap)/2)
+}
+
+@media(min-width: 768px) {
+  .faq-item {
+    padding: 48px 56px
+  }
+}
+
+@media(min-width: 992px) {
+  .faq-item {
+    padding: 48px 36px;
+    flex: 0 0 calc(50% - var(--faq-gap))
+  }
+}
+
+@media(min-width: 1260px) {
+  .faq-item {
+    padding: 64px
+  }
+}
+
+.typography-faq-headline {
+  font-size: 24px;
+  margin: 0 0 16px 0
+}
+
+@media(min-width: 768px) {
+  .typography-faq-headline {
+    font-size: 22px
+  }
+}
+
+@media(min-width: 992px) {
+  .typography-faq-headline {
+    font-size: 28px
+  }
+}
+
+@media(min-width: 1260px) {
+  .typography-faq-headline {
+    font-size: 32px;
+    margin: 0 0 24px 0
+  }
+}
+
+.typography-faq-intro {
+  font-size: 14px;
+  color: #323237;
+  margin: 0 0 auto 0
+}
+
+@media(min-width: 768px) {
+  .typography-faq-intro {
+    font-size: 16px
+  }
+}
+
+@media(min-width: 992px) {
+  .typography-faq-intro {
+    font-size: 18px
+  }
+}
+
+.typography-faq-eyebrow {
+  font-weight: 500;
+  letter-spacing: 4px;
+  font-size: 14px;
+  margin: 0 0 24px 0
+}
+
+@media(min-width: 768px) {
+  .typography-faq-eyebrow {
+    letter-spacing: 5px;
+    font-size: 16px
+  }
+}
+
+@media(min-width: 992px) {
+  .typography-faq-eyebrow {
+    font-size: 20px;
+    margin: 0 0 32px 0
+  }
+}
+
+.section-compare {
+  text-align: center;
+  padding: 64px 0
+}
+
+@media(min-width: 768px) {
+  .section-compare {
+    padding: 96px 0
+  }
+}
+
+@media(min-width: 992px) {
+  .section-compare {
+    padding: 120px 0
+  }
+}
+
+.section-compare .typography-compare-section-headline {
+  margin: 0 0 20px 0
+}
+
+@media(min-width: 992px) {
+  .section-compare .typography-compare-section-headline {
+    margin: 0 0 32px 0
+  }
+}
+
+.section-compare .typography-compare-tagline {
+  max-width: 300px
+}
+
+.section-compare .typography-compare-section-headline+.cta-link {
+  margin: 0 0 48px 0
+}
+
+@media(min-width: 992px) {
+  .section-compare .typography-compare-section-headline+.cta-link {
+    margin: 0 0 64px 0
+  }
+}
+
+.compare-table {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-row-gap: 64px
+}
+
+@media(min-width: 1260px) {
+  .compare-table {
+    grid-row-gap: 80px
+  }
+}
+
+.compare {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  grid-column: span 12
+}
+
+@media(min-width: 992px) {
+  .compare {
+    grid-column: span 6
+  }
+}
+
+.compare-image-container {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  position: relative
+}
+
+.compare-image-container::before {
+  content: "";
+  display: block;
+  padding-bottom: 100%
+}
+
+.image-compare {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: center/contain no-repeat
+}
+
+.compare-badge {
+  font-weight: 700;
+  line-height: 1.625;
+  font-size: 16px;
+  color: var(--compare-badge-color, #c0c0c0);
+  margin: 8px 0 0 0
+}
+
+.typography-compare-tagline+.compare-brochure {
+  margin: 24px 0 0 0
+}
+
+.compare-new {
+  font-size: 14px;
+  line-height: 16px;
+  height: 16px;
+  margin: 0 0 16px 0
+}
+
+.compare-colors {
+  display: flex;
+  justify-content: center;
+  margin: 18px 0 22px 0
+}
+
+.compare-colors+.compare-cta-links {
+  margin: 6px 0 0 0
+}
+
+.compare-color {
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  background-color: #c4c4c4;
+  border-radius: 50%;
+  box-sizing: border-box
+}
+
+.compare-color[for] {
+  cursor: pointer
+}
+
+.compare-tags {
+  display: flex
+}
+
+.compare-cta-links {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0 0 0
+}
+
+@media(min-width: 768px) {
+  .compare-cta-links {
+    margin: 32px 0 0 0
+  }
+}
+
+.compare-cta-link {
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  box-sizing: border-box;
+  margin: 0 12px;
+  padding: 0 20px;
+  height: 32px;
+  font-size: 14px;
+  font-weight: 500
+}
+
+.compare-modal-inner {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%
+}
+
+.compare-modal-inner [data-modal-scrollable] {
+  flex: 1
+}
+
+@media(min-width: 768px) {
+  .compare-modal-inner {
+    height: 835px;
+    max-height: 80vh
+  }
+}
+
+.compare-modal {
+  height: 100%
+}
+
+.compare-modal .section-summary {
+  padding-bottom: 64px
+}
+
+.compare-modal .image-summary {
+  background: center/contain no-repeat
+}
+
+.compare-modal-bar {
+  display: flex;
+  align-items: center;
+  height: 104px;
+  padding-bottom: env(safe-area-inset-bottom)
+}
+
+.compare-modal-bar .cta-button {
+  width: 120px;
+  height: 36px
+}
+
+@media(min-width: 992px) {
+  .compare-modal-bar .cta-button {
+    width: 140px;
+    height: 40px
+  }
+}
+
+@media(max-width: 767.98px) {
+  .compare-modal-bar .cta-button {
+    width: 90px;
+    height: 24px;
+    font-size: 12px
+  }
+}
+
+@media(max-width: 767.98px)and (min-width: 576px) {
+  .compare-modal-bar .cta-button {
+    width: 100px
+  }
+}
+
+@media(max-width: 767.98px) {
+  .compare-modal-bar .typography-compare-modal-headline+.cta-link {
+    position: absolute;
+    right: 28px;
+    bottom: 4px
+  }
+
+  .compare-modal-bar .cta-button+.cta-button {
+    margin: 0 0 0 4px
+  }
+}
+
+@media(min-width: 768px) {
+  .compare-modal-bar .cta-button+.cta-button {
+    margin: 0 0 0 12px
+  }
+
+  .compare-modal-bar .typography-compare-modal-headline+.cta-link {
+    margin: 8px 0 0 0
+  }
+}
+
+@media(min-width: 1260px) {
+  .compare-modal-bar .cta-button+.cta-button {
+    margin: 0 0 0 18px
+  }
+}
+
+.compare-modal-cta-links {
+  margin: 8px 0 0 0;
+  white-space: nowrap
+}
+
+@media(min-width: 768px) {
+  .compare-modal-cta-links {
+    margin: 0
+  }
+}
+
+.compare-modal-bar-container {
+  position: relative;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 24px
+}
+
+@media(min-width: 576px) {
+  .compare-modal-bar-container {
+    max-width: 520px
+  }
+}
+
+@media(min-width: 768px) {
+  .compare-modal-bar-container {
+    max-width: initial;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 36px
+  }
+}
+
+@media(min-width: 992px) {
+  .compare-modal-bar-container {
+    padding: 0 48px
+  }
+}
+
+@media(min-width: 1260px) {
+  .compare-modal-bar-container {
+    padding: 0 64px
+  }
+}
+
+.compare-gallery-item {
+  background: center/cover no-repeat
+}
+
+@media(min-width: 768px) {
+  .compare-gallery-items {
+    display: flex;
+    flex-flow: row wrap
+  }
+}
+
+.compare-gallery-item::before {
+  content: "";
+  display: block
+}
+
+.compare-gallery-item:nth-child(1)::before,
+.compare-gallery-item:nth-child(2)::before {
+  padding-bottom: 85%
+}
+
+.compare-gallery-item:nth-child(3)::before,
+.compare-gallery-item:nth-child(4)::before,
+.compare-gallery-item:nth-child(5)::before {
+  padding-bottom: 140%
+}
+
+@media(min-width: 768px) {
+
+  .compare-gallery-item:nth-child(1),
+  .compare-gallery-item:nth-child(2) {
+    flex: 0 0 50%
+  }
+
+  .compare-gallery-item:nth-child(1)::before,
+  .compare-gallery-item:nth-child(2)::before {
+    padding-bottom: 80%
+  }
+
+  .compare-gallery-item:nth-child(3) {
+    flex: 0 0 100%
+  }
+
+  .compare-gallery-item:nth-child(3)::before {
+    padding-bottom: 40%
+  }
+
+  .compare-gallery-item:nth-child(4) {
+    flex: 0 0 40%
+  }
+
+  .compare-gallery-item:nth-child(4)::before {
+    padding-bottom: 100%
+  }
+
+  .compare-gallery-item:nth-child(5) {
+    flex: 0 0 60%
+  }
+
+  .compare-gallery-item:nth-child(5)::before {
+    padding-bottom: 67.5%
+  }
+}
+
+.image-compare {
+  opacity: 0;
+  z-index: 1;
+  transition: opacity .5s
+}
+
+.compare-color-toggle:checked:nth-child(1)~.compare-image-container .image-compare:nth-child(1) {
+  opacity: 1;
+  z-index: 2
+}
+
+.compare-color-toggle:checked:nth-child(2)~.compare-image-container .image-compare:nth-child(2) {
+  opacity: 1;
+  z-index: 2
+}
+
+.compare-color-toggle:checked:nth-child(3)~.compare-image-container .image-compare:nth-child(3) {
+  opacity: 1;
+  z-index: 2
+}
+
+.compare-color-toggle:checked:nth-child(4)~.compare-image-container .image-compare:nth-child(4) {
+  opacity: 1;
+  z-index: 2
+}
+
+.compare-color-toggle:checked:nth-child(5)~.compare-image-container .image-compare:nth-child(5) {
+  opacity: 1;
+  z-index: 2
+}
+
+.compare-color-toggle:checked:nth-child(6)~.compare-image-container .image-compare:nth-child(6) {
+  opacity: 1;
+  z-index: 2
+}
+
+.compare-color-toggle:checked:nth-child(7)~.compare-image-container .image-compare:nth-child(7) {
+  opacity: 1;
+  z-index: 2
+}
+
+:root {
+  --promo-bg-color: #eeeeee
+}
+
+html[dark] {
+  --promo-bg-color: #202023
+}
+
+.section-promo {
+  --promo-content-padding: 24px;
+  --promo-copy-color: #ffffff;
+  padding: 96px 0
+}
+
+.section-promo .cta-link {
+  color: var(--promo-link-color, #ffffff)
+}
+
+@media(min-width: 576px) {
+  .section-promo {
+    --promo-content-padding: 32px
+  }
+}
+
+@media(min-width: 768px) {
+  .section-promo {
+    --promo-content-padding: 48px
+  }
+}
+
+@media(min-width: 1260px) {
+  .section-promo {
+    --promo-content-padding: 64px
+  }
+}
+
+.section-promo .typography-promo-headline+.cta-link {
+  margin: 32px 0 0 0
+}
+
+.section-promo .typography-promo-topic-sub {
+  margin: 0 0 2px 4px;
+  text-transform: uppercase
+}
+
+.promos {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  grid-column-gap: 8px;
+  grid-row-gap: 8px
+}
+
+.promo {
+  grid-column: span 12
+}
+
+@media(min-width: 768px) {
+  .promo {
+    grid-column-start: 2;
+    grid-column-end: 12
+  }
+}
+
+@media(min-width: 992px) {
+  .promo {
+    grid-column: span 6
+  }
+
+  .promo:first-child {
+    grid-column: span 12
+  }
+}
+
+.image-promo {
+  display: flex;
+  align-items: center;
+  background: center/cover no-repeat;
+  height: 240px
+}
+
+@media(min-width: 576px) {
+  .image-promo {
+    height: 266px
+  }
+}
+
+@media(min-width: 768px) {
+  .image-promo {
+    height: 300px
+  }
+}
+
+@media(min-width: 992px) {
+  .image-promo {
+    height: 312px
+  }
+
+  .promo:first-child .image-promo {
+    height: 350px
+  }
+}
+
+.promo-copy {
+  padding: 0 0 0 var(--promo-content-padding);
+  color: var(--promo-copy-color)
+}
+
+.promo-topics {
+  display: flex;
+  align-items: center;
+  height: 110px;
+  background-color: var(--promo-bg-color);
+  padding: 0 0 0 var(--promo-content-padding)
+}
+
+@media(min-width: 768px) {
+  .promo-topics {
+    height: 126px
+  }
+}
+
+.promo-topic {
+  display: flex;
+  flex-direction: column
+}
+
+.promo-topic+.promo-topic {
+  margin: 0 0 0 28px
+}
+
+@media(min-width: 576px) {
+  .promo-topic+.promo-topic {
+    margin: 0 0 0 48px
+  }
+}
+
+@media(min-width: 992px) {
+  .promo-topic+.promo-topic {
+    margin: 0 0 0 64px
+  }
+}
+
+.promo-topic-content {
+  display: flex;
+  line-height: 1;
+  align-items: flex-end
+}
+
+html:lang(en) .section-promo {
+  background-color: #fff
+}
+
+html:lang(en) .section-promo+.section-sosumi {
+  padding-top: 0;
+  background-color: #fff
+}
+
+html:lang(en) .promo--other-scooter {
+  --promo-link-color: #ffffff
+}
+
+html:lang(en) .promo--other-scooter .typography-promo-headline {
+  color: #fff
+}
+
+html:lang(en)[dark] .section-promo {
+  background-color: #121215
+}
+
+html:lang(en)[dark] .section-promo+.section-sosumi {
+  background-color: #121215
+}
+
+.image-promo--other-scooter {
+  background-image: url(//cdn.gogoro.com/resources/pages/smartscooter/shared/promo/202203/img-series-promotion-banner-mobile@2x.jpg?v=2)
+}
+
+@media(min-width: 992px) {
+  .image-promo--other-scooter {
+    background-image: url(//cdn.gogoro.com/resources/pages/smartscooter/shared/promo/202203/img-series-promotion-banner@2x.jpg)
+  }
+}
+
+html[dark] :root {
+  --section-cta-bg-color: #000000
+}
+
+html[dark] .section-cta .cta-link--book-a-ride::before {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTMzLjU1OTkgMy4zNTU5NkgyLjVWMzMuOTk4NUgzMy41NTk5VjMuMzU1OTZaIiBzdHJva2U9IiNCOUJDQkYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+CjxwYXRoIGQ9Ik0yLjUgMTMuMTMwOUgzMy41NTk5IiBzdHJva2U9IiNCOUJDQkYiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNMjQuNDk5MiAxNy4zMDg2TDE1LjgzMjMgMjUuOTk4N0wxMi4wNzYyIDIyLjI1NjUiIHN0cm9rZT0iI0I5QkNCRiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz4KPHBhdGggZD0iTTI0Ljk5NjEgNy4yNDY5NVYtMC4wMDA5NzY1NjIiIHN0cm9rZT0iI0I5QkNCRiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz4KPHBhdGggZD0iTTExLjA2NDUgNy4yNDY5NVYtMC4wMDA5NzY1NjIiIHN0cm9rZT0iI0I5QkNCRiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz4KPC9zdmc+Cg==)
+}
+
+html[dark] .section-cta .cta-link--find-a-store::before {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwKSI+CjxwYXRoIGQ9Ik0zLjEyODkxIDkuNDcxMjRWMzAuMjI1OEwxMi44NzkgMjYuNTI5TDI0LjAxNjQgMzAuMjI1OEwzMy43NzA0IDI2LjUyOVY1Ljc3NDQxTDI0LjAxNjQgOS40NzEyNEwxMi44NzkgNS43NzQ0MUwzLjEyODkxIDkuNDcxMjRaIiBzdHJva2U9IiNCOUJDQkYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+CjxwYXRoIGQ9Ik0yNC4wMTk1IDMwLjIyNjhWOS40NzIxNyIgc3Ryb2tlPSIjQjlCQ0JGIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz4KPHBhdGggZD0iTTEyLjg3ODkgMjYuNTI5VjUuNzc0NDEiIHN0cm9rZT0iI0I5QkNCRiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+CjwvZz4KPGRlZnM+CjxjbGlwUGF0aCBpZD0iY2xpcDAiPgo8cmVjdCB3aWR0aD0iMzIuNCIgaGVpZ2h0PSIyNi45OTkzIiBmaWxsPSJ3aGl0ZSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMi4yNSA0LjUpIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==)
+}
+
+.section-cta {
+  text-align: center;
+  padding: 64px 0;
+  background-color: var(--section-cta-bg-color)
+}
+
+@media(min-width: 768px) {
+  .section-cta {
+    padding: 80px 0
+  }
+}
+
+@media(min-width: 992px) {
+  .section-cta {
+    padding: 96px 0
+  }
+}
+
+.section-cta .cta-button {
+  padding: 0 24px
+}
+
+.section-cta .cta-links--bottom {
+  margin: 32px 0 0 0
+}
+
+.section-cta .typography-cta-intro {
+  margin: 16px 0 0 0
+}
+
+.section-cta .cta-links--top {
+  border-bottom: 1px solid rgba(115, 125, 130, .15);
+  margin: 0 0 60px 0;
+  padding: 0 0 60px 0;
+  display: flex;
+  justify-content: space-around
+}
+
+.section-cta .cta-links--top .cta-link {
+  color: inherit
+}
+
+.section-cta .cta-link--book-a-ride::before,
+.section-cta .cta-link--find-a-store::before {
+  content: "";
+  display: block;
+  width: 2em;
+  height: 2em;
+  background: center/contain no-repeat;
+  margin: 0 1.2em 0 0
+}
+
+.section-cta .cta-link--book-a-ride::before {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTMzLjU1OTQgMy4zNTY0NUgyLjQ5OTUxVjMzLjk5OUgzMy41NTk0VjMuMzU2NDVaIiBzdHJva2U9IiMzMjMyMzciIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+CjxwYXRoIGQ9Ik0yLjQ5OTUxIDEzLjEzMDlIMzMuNTU5NCIgc3Ryb2tlPSIjMzIzMjM3IiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiLz4KPHBhdGggZD0iTTI0LjQ5OTcgMTcuMzA4NkwxNS44MzI4IDI1Ljk5ODdMMTIuMDc2NyAyMi4yNTY1IiBzdHJva2U9IiMzMjMyMzciIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+CjxwYXRoIGQ9Ik0yNC45OTQ2IDcuMjQ2OTVWLTAuMDAwOTc2NTYyIiBzdHJva2U9IiMzMjMyMzciIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+CjxwYXRoIGQ9Ik0xMS4wNjQ1IDcuMjQ2OTVWLTAuMDAwOTc2NTYyIiBzdHJva2U9IiMzMjMyMzciIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+Cjwvc3ZnPgo=)
+}
+
+.section-cta .cta-link--find-a-store::before {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzYiIGhlaWdodD0iMzYiIHZpZXdCb3g9IjAgMCAzNiAzNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwKSI+CjxwYXRoIGQ9Ik0zLjEyOTg4IDkuNDcxMjRWMzAuMjI1OEwxMi44OCAyNi41MjlMMjQuMDE3MyAzMC4yMjU4TDMzLjc3MTMgMjYuNTI5VjUuNzc0NDFMMjQuMDE3MyA5LjQ3MTI0TDEyLjg4IDUuNzc0NDFMMy4xMjk4OCA5LjQ3MTI0WiIgc3Ryb2tlPSIjMzIzMjM3IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8cGF0aCBkPSJNMjQuMDIwNSAzMC4yMjYzVjkuNDcxNjgiIHN0cm9rZT0iIzMyMzIzNyIgc3Ryb2tlLW1pdGVybGltaXQ9IjEwIi8+CjxwYXRoIGQ9Ik0xMi44Nzk5IDI2LjUyOVY1Ljc3NDQxIiBzdHJva2U9IiMzMjMyMzciIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIvPgo8L2c+CjxkZWZzPgo8Y2xpcFBhdGggaWQ9ImNsaXAwIj4KPHJlY3Qgd2lkdGg9IjMyLjQiIGhlaWdodD0iMjYuOTk5MyIgZmlsbD0id2hpdGUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDIuMjUgNC41KSIvPgo8L2NsaXBQYXRoPgo8L2RlZnM+Cjwvc3ZnPgo=)
+}
+
+.section-sosumi {
+  --sosumi-bg-color: #f6f6f6;
+  background-color: var(--sosumi-bg-color);
+  padding: 64px 0
+}
+
+html[dark] .section-sosumi {
+  --sosumi-bg-color: #121215
+}
+
+@media(min-width: 768px) {
+  .section-sosumi {
+    padding: 96px 0
+  }
+}
+
+@media(min-width: 992px) {
+  .section-sosumi {
+    padding: 120px 0
+  }
+}
+
+.sosumi-items {
+  font-size: 12px;
+  color: #737d82;
+  line-height: 1.33;
+  padding-left: 1.5em
+}
+
+.sosumi-items p {
+  margin: 0 0 2px 0
+}
+
+.sosumi-item+.sosumi-item {
+  margin: 8px 0 0 0
+}
+
+.cta-link {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 500;
+  color: #ED2025;
+  font-size: 14px;
+  line-height: 1.11
+}
+
+
+@media(min-width: 768px) {
+  .cta-link {
+    font-size: 16px
+  }
+}
+
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 40px;
+  border-radius: 100px;
+  box-sizing: border-box;
+  white-space: nowrap
+}
+
+.cta-button--secondary {
+  border: 2px solid #323237;
+  color: #323237
+}
+
+.cta-button--primary {
+  color: #fff;
+  background-color: #0074ff
+}
+
+.section-summary {
+  padding: 0 0 64px 0
+}
+
+.section-summary .cta-wrapper {
+  margin: 48px 0 0 0;
+  text-align: center
+}
+
+.section-summary .typography-summary-headline {
+  text-align: center;
+  margin: 0 0 32px 0
+}
+
+@media(min-width: 768px) {
+  .section-summary {
+    padding: 0 0 96px 0
+  }
+
+  .section-summary .typography-summary-headline {
+    margin: 0 0 48px 0
+  }
+}
+
+@media(min-width: 992px) {
+  .section-summary {
+    padding: 0 0 120px 0
+  }
+
+  .section-summary .typography-summary-headline {
+    margin: 0 0 60px 0
+  }
+
+  .section-summary .cta-wrapper {
+    margin: 64px 0 0 0
+  }
+}
+
+.typography-summary-headline {
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 26px
+}
+
+@media(min-width: 768px) {
+  .typography-summary-headline {
+    font-size: 34px
+  }
+}
+
+@media(min-width: 992px) {
+  .typography-summary-headline {
+    font-size: 42px
+  }
+}
+
+@media(min-width: 1260px) {
+  .typography-summary-headline {
+    font-size: 50px
+  }
+}
+
+.typography-summary-point-headline {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.3;
+  margin: 0 0 .5em 0
+}
+
+@media(min-width: 768px) {
+  .typography-summary-point-headline {
+    font-size: 18px
+  }
+}
+
+@media(min-width: 992px) {
+  .typography-summary-point-headline {
+    font-size: 20px
+  }
+}
+
+.typography-summary-point-intro {
+  font-size: 16px;
+  line-height: 1.375
+}
+
+.image-summary {
+  position: relative;
+  max-width: 1140px;
+  margin: auto;
+  background: center/cover no-repeat;
+  height: 330px
+}
+
+@media(min-width: 768px) {
+  .image-summary {
+    height: 480px
+  }
+}
+
+@media(min-width: 992px) {
+  .image-summary {
+    height: initial
+  }
+
+  .image-summary::before {
+    content: "";
+    display: block;
+    padding-bottom: 56%
+  }
+}
+
+.summary-points {
+  display: grid;
+  margin: 64px 0 0 0;
+  grid-row-gap: 48px;
+  grid-column-gap: 30px;
+  text-align: center
+}
+
+@media(min-width: 768px) {
+  .summary-points {
+    margin: 96px 0 0 0
+  }
+}
+
+@media(min-width: 992px) {
+  .summary-points {
+    margin: 48px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr))
+  }
+}
+
+@media(min-width: 992px) {
+  .summary-point {
+    grid-column: span 4
+  }
+}
+
+.section [data-modal-id] {
+  display: none
+}
+
+.modal-open {
+  padding-right: var(--scroll-bar-width)
+}
+
+.modal {
+  opacity: 0;
+  position: fixed;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: none
+}
+
+.modal--open {
+  display: block;
+  z-index: 10000;
+  animation: modal-fade-in .3s ease-in-out forwards
+}
+
+.modal--opened {
+  opacity: 1;
+  animation: none
+}
+
+@keyframes modal-fade-in {
+  100% {
+    opacity: 1
+  }
+}
+
+.modal-standard {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch
+}
+
+.modal-content-wrapper {
+  height: 100%
+}
+
+@media(min-width: 768px) {
+  .modal-content-wrapper {
+    display: flex;
+    height: initial;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center
+  }
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  min-height: 100%
+}
+
+.modal--compare .modal-content {
+  width: 100%;
+  height: 100%;
+  margin: 0
+}
+
+@media(min-width: 768px) {
+  .modal--compare .modal-content {
+    min-height: initial;
+    margin: 64px auto;
+    width: 640px
+  }
+}
+
+@media(min-width: 992px) {
+  .modal--compare .modal-content {
+    width: 800px
+  }
+}
+
+@media(min-width: 1260px) {
+  .modal--compare .modal-content {
+    width: 1030px
+  }
+}
+
+.modal-close {
+  position: absolute;
+  height: 100%;
+  right: 0
+}
+
+.modal-close-button {
+  --modal-close-button-size: 36px;
+  --modal-close-edge-margin: 9px;
+  --modal-close-clickable-padding: 12px;
+  position: sticky;
+  z-index: 10;
+  top: var(--modal-close-edge-margin);
+  margin: var(--modal-close-edge-margin) var(--modal-close-edge-margin) 0 0;
+  display: block;
+  padding: var(--modal-close-clickable-padding)
+}
+
+.modal-close-button::before {
+  content: "";
+  display: block;
+  width: var(--modal-close-button-size);
+  height: var(--modal-close-button-size);
+  background: center/contain no-repeat url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCA0MCA0MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIwIDQwQzMxLjA0NTcgNDAgNDAgMzEuMDQ1NyA0MCAyMEM0MCA4Ljk1NDMgMzEuMDQ1NyAwIDIwIDBDOC45NTQzIDAgMCA4Ljk1NDMgMCAyMEMwIDMxLjA0NTcgOC45NTQzIDQwIDIwIDQwWiIgZmlsbD0iYmxhY2siIGZpbGwtb3BhY2l0eT0iMC41Ii8+CjxwYXRoIGQ9Ik0xMy42MzY3IDEzLjYzNkwyNi4zNjQ3IDI2LjM2MzkiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPHBhdGggZD0iTTI2LjM2MzMgMTMuNjM2TDEzLjYzNTMgMjYuMzYzOSIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K")
+}
+
+@media(min-width: 576px) {
+  .modal-close-button {
+    --modal-close-edge-margin: 12px
+  }
+}
+
+@media(min-width: 768px) {
+  .modal-close-button {
+    --modal-close-edge-margin: 18px;
+    --modal-close-button-size: 40px
+  }
+}
+
+@media(min-width: 992px) {
+  .modal-close-button {
+    --modal-close-edge-margin: 24px;
+    --modal-close-button-size: 44px
+  }
+}
+
+.section [data-modal-id] *,
+.modal:not(.modal--open) * {
+  background-image: none !important
+}
+
+[data-modal-scrollable] {
+  overflow: auto;
+  -webkit-overflow-scrolling: touch
+}
+
+.section-slides {
+  color: #fff;
+  text-align: center
+}
+
+.section-slides .container {
+  position: relative;
+  z-index: 2
+}
+
+.section-slides .typography-slides-headline {
+  padding: 48px 0 0 0
+}
+
+@media(min-width: 768px) {
+  .section-slides .typography-slides-headline {
+    padding: 64px 0 0 0
+  }
+}
+
+.section-slides .typography-slide-headline {
+  margin: 0 0 16px 0
+}
+
+.section-slides .section-header {
+  padding: 64px 0 32px 0
+}
+
+@media(min-width: 768px) {
+  .section-slides .section-header {
+    padding: 96px 0 48px 0
+  }
+}
+
+@media(min-width: 992px) {
+  .section-slides .section-header {
+    padding: 120px 0 64px 0
+  }
+}
+
+.slides-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+  height: 600px
+}
+
+@media(min-width: 992px) {
+  .slides-wrapper {
+    height: 700px
+  }
+}
+
+.slides-wrapper:hover .slides-track {
+  will-change: transform
+}
+
+.slides {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden
+}
+
+.slides-track {
+  position: absolute;
+  display: flex;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform .5s
+}
+
+.slide {
+  position: relative;
+  flex: 0 0 100%;
+  height: 100%
+}
+
+.image-slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: center/cover no-repeat
+}
+
+.slide-copy {
+  position: absolute;
+  bottom: 64px;
+  width: 100%;
+  left: 0;
+  padding: 0 30px;
+  box-sizing: border-box
+}
+
+.slide-copy .typography-slide-intro {
+  max-width: 440px;
+  margin: 0 auto
+}
+
+@media(min-width: 992px) {
+  .slide-copy .typography-slide-intro {
+    max-width: 600px
+  }
+}
+
+.slides-triggers {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+  padding: 0 30px;
+  box-sizing: border-box
+}
+
+.slide-trigger {
+  max-width: 72px;
+  width: 100%;
+  padding: 8px 0;
+  opacity: .5;
+  transition: opacity .5s;
+  cursor: pointer
+}
+
+.slide-trigger::before {
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 10px
+}
+
+.slide-trigger+.slide-trigger {
+  margin: 0 0 0 8px
+}
+
+.slide-next,
+.slide-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+  width: 20%;
+  opacity: 0
+}
+
+.slide-next {
+  right: 0
+}
+
+.slide-prev {
+  left: 0
+}
+
+.slide-toggle:checked:nth-child(1)~.slides-triggers .slide-trigger:nth-child(1) {
+  opacity: 1
+}
+
+.slide-toggle:checked:nth-child(1)~.slides .slides-track {
+  transform: translateX(0%)
+}
+
+.slide-toggle:checked:nth-child(2)~.slides-triggers .slide-trigger:nth-child(2) {
+  opacity: 1
+}
+
+.slide-toggle:checked:nth-child(2)~.slides .slides-track {
+  transform: translateX(-100%)
+}
+
+.slide-toggle:checked:nth-child(3)~.slides-triggers .slide-trigger:nth-child(3) {
+  opacity: 1
+}
+
+.slide-toggle:checked:nth-child(3)~.slides .slides-track {
+  transform: translateX(-200%)
+}
+
+.slide-toggle:checked:nth-child(4)~.slides-triggers .slide-trigger:nth-child(4) {
+  opacity: 1
+}
+
+.slide-toggle:checked:nth-child(4)~.slides .slides-track {
+  transform: translateX(-300%)
+}
+
+.slide-toggle:checked:nth-child(5)~.slides-triggers .slide-trigger:nth-child(5) {
+  opacity: 1
+}
+
+.slide-toggle:checked:nth-child(5)~.slides .slides-track {
+  transform: translateX(-400%)
+}
+
+.slide-toggle:checked:nth-child(6)~.slides-triggers .slide-trigger:nth-child(6) {
+  opacity: 1
+}
+
+.slide-toggle:checked:nth-child(6)~.slides .slides-track {
+  transform: translateX(-500%)
+}
+
+.slide-toggle:checked:nth-child(7)~.slides-triggers .slide-trigger:nth-child(7) {
+  opacity: 1
+}
+
+.slide-toggle:checked:nth-child(7)~.slides .slides-track {
+  transform: translateX(-600%)
+}
+
+.slide-toggle:checked:nth-child(8)~.slides-triggers .slide-trigger:nth-child(8) {
+  opacity: 1
+}
+
+.slide-toggle:checked:nth-child(8)~.slides .slides-track {
+  transform: translateX(-700%)
+}
+
+.slide-toggle:checked:nth-child(9)~.slides-triggers .slide-trigger:nth-child(9) {
+  opacity: 1
+}
+
+.slide-toggle:checked:nth-child(9)~.slides .slides-track {
+  transform: translateX(-800%)
+}
+
+.slide-toggle:checked:nth-child(10)~.slides-triggers .slide-trigger:nth-child(10) {
+  opacity: 1
+}
+
+.slide-toggle:checked:nth-child(10)~.slides .slides-track {
+  transform: translateX(-900%)
+}
+
+.section-swap {
+  background-color: #f8f8f8
+}
+
+.section-swap .section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  padding: 32px 0 0 0;
+  background-image: linear-gradient(to bottom, rgba(96, 255, 142, 0) 12%, rgba(20, 60, 29, 0.4) 41%), linear-gradient(115deg, #26ee2c 0%, #40fdcb 100%)
+}
+
+@media(min-width: 768px) {
+  .section-swap .section-header {
+    padding: 48px 0 0 0
+  }
+}
+
+@media(min-width: 992px) {
+  .section-swap .section-header {
+    padding: 64px 0 0 0;
+    background-image: linear-gradient(to bottom, rgba(96, 255, 142, 0) 12%, rgba(20, 60, 29, 0.6) 50%), linear-gradient(63deg, #26ee2c 28%, #40fdcb 100%)
+  }
+}
+
+@media(min-width: 1260px) {
+  .section-swap .section-header {
+    padding: 72px 0 0 0
+  }
+}
+
+.section-swap .section-content {
+  padding: 64px 0
+}
+
+@media(min-width: 768px) {
+  .section-swap .section-content {
+    padding: 72px 0
+  }
+}
+
+@media(min-width: 1260px) {
+  .section-swap .section-content {
+    padding: 120px 0 96px 0
+  }
+}
+
+.section-swap .typography-swap-copy {
+  color: #57595c
+}
+
+.section-swap .typography-swap-headline {
+  margin: 0 0 4px 0
+}
+
+@media(min-width: 768px) {
+  .section-swap .typography-swap-headline {
+    margin: 0 0 8px 0
+  }
+}
+
+.section-swap .cta-link {
+  margin: 48px 0 0 0
+}
+
+@media(min-width: 768px) {
+  .section-swap .cta-link {
+    margin: 60px 0 0 0
+  }
+}
+
+.section-swap .typography-section-headline {
+  margin: 6px 0 32px 0
+}
+
+@media(min-width: 768px) {
+  .section-swap .typography-section-headline {
+    margin: 12px 0 48px 0
+  }
+}
+
+.section-swap .grid {
+  --grid-row-gap: 40px
+}
+
+@media(min-width: 768px) {
+  .section-swap .grid {
+    --grid-row-gap: 48px
+  }
+}
+
+.section-swap .grid-item {
+  height: initial
+}
+
+.icon-gostation {
+  flex: 0 0 auto;
+  width: 28px;
+  height: 32px;
+  background: url("//cdn.gogoro.com/resources/pages/smartscooter/shared/swap/icon-gostation.svg?v=v22") center/contain no-repeat
+}
+
+@media(min-width: 768px) {
+  .icon-gostation {
+    width: 42px;
+    height: 48px
+  }
+}
+
+@media(min-width: 992px) {
+  .icon-gostation {
+    width: 58px;
+    height: 66px
+  }
+}
+
+.image-swap-vm {
+  width: 100%;
+  height: 248px;
+  background: url("//cdn.gogoro.com/resources/pages/smartscooter/shared/swap/img-swap-go-vm-bg-mobile@2x.png?v=v22") calc(50% - 250px) center/auto 100% repeat-x
+}
+
+@media(min-width: 992px) {
+  .image-swap-vm {
+    height: 440px;
+    background: url("//cdn.gogoro.com/resources/pages/smartscooter/shared/swap/img-swap-go-vm-bg@2x.png?v=v22") center/auto 100% repeat-x
+  }
+}
+
+@media(min-width: 1260px) {
+  .image-swap-vm {
+    height: 584px;
+    background-position: calc(50% - 325px) center
+  }
+}
+
+.typography-swap-headline {
+  font-weight: 600;
+  line-height: 1.375;
+  font-size: 24px
+}
+
+@media(min-width: 768px) {
+  .typography-swap-headline {
+    font-size: 28px
+  }
+}
+
+@media(min-width: 1260px) {
+  .typography-swap-headline {
+    font-size: 32px
+  }
+}
+
+.typography-swap-copy {
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 16px
+}
+
+@media(min-width: 768px) {
+  .typography-swap-copy {
+    font-size: 18px
+  }
+}
+
+@media(min-width: 1260px) {
+  .typography-swap-copy {
+    font-size: 20px
+  }
+}
+
+.grid {
+  display: grid;
+  --grid-row-gap: 30px;
+  --grid-column-gap: 30px;
+  grid-row-gap: var(--grid-row-gap);
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  --tile-padding-x: 30px;
+  --tile-padding-y: 40px;
+  --tile-radius: 30px
+}
+
+@media(min-width: 768px) {
+  .grid {
+    grid-column-gap: var(--grid-column-gap)
+  }
+}
+
+@media(min-width: 992px) {
+  .grid {
+    --tile-radius: 40px;
+    --tile-padding-x: 40px;
+    --tile-padding-y: 48px
+  }
+}
+
+@media(min-width: 1260px) {
+  .grid {
+    --tile-radius: 40px;
+    --tile-padding-x: 60px;
+    --tile-padding-y: 60px
+  }
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  background: center/cover no-repeat
+}
+
+.grid-item--tile {
+  color: #fff;
+  background-color: #fff;
+  border-radius: var(--tile-radius);
+  box-shadow: 10px 10px 30px 0 rgba(0, 0, 0, .15)
+}
+
+.grid-item-eyebrow {
+  color: #fff;
+  padding: var(--tile-padding-y) var(--tile-padding-x);
+  padding-bottom: 0;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 16px 0
+}
+
+.grid-item-eyebrow:lang(en) {
+  line-height: 1.2;
+  font-size: 16px
+}
+
+@media(max-width: 350px) {
+  .grid-item-eyebrow {
+    font-size: 16px
+  }
+}
+
+@media(min-width: 992px) {
+  .grid-item-eyebrow {
+    font-size: 22px;
+    margin: 0 0 20px 0
+  }
+
+  .grid-item-eyebrow:lang(en) {
+    font-size: 20px
+  }
+}
+
+@media(min-width: 1260px) {
+  .grid-item-eyebrow {
+    font-size: 24px;
+    margin: 0 0 1.23em 0
+  }
+}
+
+.grid-item-copy {
+  color: var(--grid-item-headline-color, inherit);
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0 var(--tile-padding-x)
+}
+
+.grid-item-copy:lang(zh) {
+  letter-spacing: -0.022em
+}
+
+.grid-item-copy:lang(en) {
+  font-weight: 500;
+  line-height: 1.2
+}
+
+@media(max-width: 350px) {
+  .grid-item-copy {
+    font-size: clamp(20px, 6.28vw, 22px)
+  }
+}
+
+@media(min-width: 768px) {
+  .grid-item-copy {
+    font-size: 24px
+  }
+}
+
+@media(min-width: 992px) {
+  .grid-item-copy {
+    font-size: 30px
+  }
+}
+
+@media(min-width: 1260px) {
+  .grid-item-copy {
+    font-size: 34px
+  }
+}
+
+.grid-item-cta-wrapper {
+  padding: 0 var(--tile-padding-x);
+  margin: 18px 0 0 0
+}
+
+@media(min-width: 768px) {
+  .grid-item-cta-wrapper {
+    margin: 24px 0 0 0
+  }
+}
+
+.grid-item-modal-trigger-wrapper {
+  position: relative;
+  z-index: 1;
+  margin: auto 0 0 0;
+  padding: var(--tile-padding-y) var(--tile-padding-x);
+  padding-top: 0;
+  text-align: center
+}
+
+@media(min-width: 992px) {
+  .grid-item-modal-trigger-wrapper {
+    text-align: left
+  }
+}
+
+.grid-item-modal-trigger {
+  padding: 0 30px;
+  min-width: 176px;
+  box-sizing: border-box;
+  font-size: 14px;
+  font-weight: 600;
+  height: 40px;
+  border-radius: 22px;
+  color: #323237;
+  background-color: #fff
+}
+
+.grid-item-modal-trigger:lang(en) {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: var(--font-family-italic);
+  letter-spacing: 1px
+}
+
+@media(min-width: 992px) {
+  .grid-item-modal-trigger {
+    font-size: 16px;
+    height: 44px
+  }
+}
+
+.span-12 {
+  grid-column: span 12
+}
+
+.span-6 {
+  grid-column: span 6
+}
+
+@media(min-width: 768px) {
+  .span-md-12 {
+    grid-column: span 12
+  }
+
+  .span-md-6 {
+    grid-column: span 6
+  }
+
+  .span-md-4 {
+    grid-column: span 4
+  }
+}
+
+@media(min-width: 992px) {
+  .span-lg-12 {
+    grid-column: span 12
+  }
+
+  .span-lg-6 {
+    grid-column: span 6
+  }
+
+  .span-lg-4 {
+    grid-column: span 4
+  }
+
+  .span-lg-10 {
+    grid-column: span 10
+  }
+}
+
+.video-modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3000;
+  background-color: rgba(0, 0, 0, .95);
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 24px
+}
+
+@media(min-width: 768px) {
+  .video-modal {
+    padding: 0 60px
+  }
+}
+
+.video-close-btn {
+  position: absolute;
+  z-index: 2;
+  top: -48px;
+  right: 0;
+  cursor: pointer;
+  font-size: 32px;
+  font-family: "gogoro-icons", sans-serif;
+  color: #c1c1c3
+}
+
+.video-close-btn:before {
+  content: "î˜„"
+}
+
+@media(min-width: 768px) {
+  .video-close-btn {
+    font-size: 36px;
+    top: -56px
+  }
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 0
+}
+
+.video-wrapper:before {
+  padding-bottom: 56.25%;
+  content: "";
+  display: block
+}
+
+@media(min-aspect-ratio: 10/8) {
+  .video-wrapper {
+    width: calc(100% - 240px);
+    max-width: calc(170vh - 180px)
+  }
+}
+
+.video-iframe {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%
+}
+
+.popup-video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  height: 100%
+}
+
+.slick-grid {
+  position: relative;
+  overflow: hidden;
+  margin-top: -60px;
+  margin-bottom: -45px
+}
+
+.slick-grid .grid {
+  grid-template-columns: initial;
+  grid-column-gap: var(--grid-column-gap);
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  box-sizing: border-box
+}
+
+@media(min-width: 992px) {
+  .slick-grid .grid {
+    grid-auto-columns: calc(50% - var(--grid-column-gap)/2)
+  }
+}
+
+.slick-grid .grid::after {
+  content: "";
+  display: block;
+  width: 50px
+}
+
+@media(min-width: 992px) {
+  .slick-grid .grid::after {
+    width: calc((100vw - 960px)/2)
+  }
+}
+
+@media(min-width: 1260px) {
+  .slick-grid .grid::after {
+    width: calc((100vw - 1200px)/2)
+  }
+}
+
+.slick-grid .grid-item {
+  position: relative
+}
+
+.slick-grid .grid-item::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  border-radius: inherit;
+  background: rgba(0, 0, 0, .4);
+  transition: opacity .5s;
+  pointer-events: none
+}
+
+.slick-grid .grid-item--inview::before {
+  opacity: 0
+}
+
+.slick-grid-control {
+  display: flex;
+  position: absolute;
+  z-index: 4;
+  opacity: 1;
+  top: 50%;
+  justify-content: center;
+  align-items: center;
+  background: #323237;
+  transition: opacity .3s;
+  padding: 12px 8px 12px 12px
+}
+
+@media(min-width: 768px) {
+  .slick-grid-control {
+    padding: 30px
+  }
+}
+
+.slick-grid-control:disabled {
+  opacity: 0;
+  pointer-events: none
+}
+
+.slick-grid-control::before {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 30px;
+  background: center/contain no-repeat url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkiIGhlaWdodD0iMzMiIHZpZXdCb3g9IjAgMCAxOSAzMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTIgMS44ODY5MUwxNi44MTE0IDE2LjY5ODNMMiAzMS41MDk4IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJzcXVhcmUiLz4KPC9zdmc+Cg==)
+}
+
+@media(min-width: 768px) {
+  .slick-grid-control::before {
+    width: 16px;
+    height: 30px
+  }
+}
+
+.slick-grid-control--next {
+  right: 0;
+  transform: translateY(-50%)
+}
+
+.slick-grid-control--prev {
+  left: 0;
+  transform: scaleX(-1) translateY(-50%)
+}
+
+.slick-grid-wrapper {
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin-bottom: -15px
+}
+
+.slick-grid-wrapper::-webkit-scrollbar {
+  opacity: 0
+}
+
+.modal {
+  --modal-content-border-radius: 0
+}
+
+@media(min-width: 576px) {
+  .modal {
+    --modal-content-border-radius: 24px
+  }
+}
+
+@media(min-width: 768px) {
+  .modal {
+    --modal-content-border-radius: 32px
+  }
+}
+
+@media(min-width: 992px) {
+  .modal {
+    --modal-content-border-radius: 40px
+  }
+}
+
+.modal-header {
+  border-radius: var(--modal-content-border-radius) var(--modal-content-border-radius) 0 0
+}
+
+.modal-standard {
+  color: #323237;
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  background: rgba(0, 0, 0, .5)
+}
+
+.modal-content {
+  border-radius: var(--modal-content-border-radius)
+}
+
+@media(min-width: 576px) {
+  .modal-content {
+    min-height: initial;
+    margin: 48px auto;
+    width: 500px
+  }
+}
+
+@media(min-width: 768px) {
+  .modal-content {
+    margin: 64px auto;
+    width: 640px
+  }
+}
+
+@media(min-width: 992px) {
+  .modal-content {
+    width: 800px
+  }
+}
+
+@media(min-width: 1260px) {
+  .modal-content {
+    width: 1030px
+  }
+}
+
+.modal-content-container {
+  padding: 32px 30px 48px 30px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box
+}
+
+@media(min-width: 576px) {
+  .modal-content-container {
+    width: 460px
+  }
+
+  .modal-content-container:last-child {
+    padding-bottom: 54px
+  }
+}
+
+@media(min-width: 768px) {
+  .modal-content-container {
+    width: 540px;
+    padding: 48px 30px 54px 30px
+  }
+
+  .modal-content-container:last-child {
+    padding-bottom: 64px
+  }
+}
+
+@media(min-width: 992px) {
+  .modal-content-container {
+    width: 700px;
+    padding: 64px 30px
+  }
+
+  .modal-content-container:last-child {
+    padding-bottom: 64px
+  }
+}
+
+@media(min-width: 1260px) {
+  .modal-content-container {
+    width: 827px
+  }
+}
+
+.hero-switch {
+  position: absolute;
+  z-index: 99;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  margin: 0 auto;
+  text-align: center;
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: center
+}
+
+@media(min-width: 992px) {
+  .hero-switch {
+    bottom: 24px
+  }
+}
+
+.hero-switch:has([data-hero-switch-theme=dark].active) {
+  --hero-switch-theme-color: #323237;
+  --hero-switch-theme-hover-bg-color: rgba(50, 50, 55, 0.4);
+  --hero-switch-theme-active-bg-color: #323237;
+  --hero-switch-theme-active-color: #ffffff
+}
+
+.hero-switch:has([data-hero-switch-theme=light].active) {
+  --hero-switch-theme-color: #ffffff;
+  --hero-switch-theme-hover-bg-color: rgba(255, 255, 255, 0.4);
+  --hero-switch-theme-active-bg-color: rgba(255, 255, 255, 0.4);
+  --hero-switch-theme-active-color: #ffffff
+}
+
+.hero-switch:has([data-hero-switch-theme=red].active) {
+  --hero-switch-theme-color: #ffffff;
+  --hero-switch-theme-hover-bg-color: rgba(255, 255, 255, 0.4);
+  --hero-switch-theme-active-bg-color: rgba(255, 255, 255, 1);
+  --hero-switch-theme-active-color: #D52035
+}
+
+.hero-switch:has([data-hero-switch-theme=muji].active) {
+  --hero-switch-theme-color: #CECECE;
+  --hero-switch-theme-hover-bg-color: rgba(255, 255, 255, 0.4);
+  --hero-switch-theme-active-bg-color: rgba(255, 255, 255, 1);
+  --hero-switch-theme-active-color: #7F0019;
+  --hero-switch-theme-active-border-color: #7F0019
+}
+
+.hero-switch.hero-switch:has([data-hero-switch-theme=light]:hover:not(.active)) {
+  --hero-switch-theme-color: #ffffff;
+  --hero-switch-theme-hover-bg-color: rgba(255, 255, 255, 0.4);
+  --hero-switch-theme-active-bg-color: transparent;
+  --hero-switch-theme-active-color: #ffffff;
+  --hero-switch-theme-active-border-color: #ffffff
+}
+
+.hero-switch.hero-switch:has([data-hero-switch-theme=dark]:hover:not(.active)) {
+  --hero-switch-theme-color: #323237;
+  --hero-switch-theme-hover-bg-color: rgba(50, 50, 55, 0.4);
+  --hero-switch-theme-active-bg-color: transparent;
+  --hero-switch-theme-active-color: #323237
+}
+
+.hero-switch.hero-switch:has([data-hero-switch-theme=red]:hover:not(.active)) {
+  --hero-switch-theme-color: #ffffff;
+  --hero-switch-theme-hover-bg-color: rgba(255, 255, 255, 1);
+  --hero-switch-theme-hover-color: #D52035;
+  --hero-switch-theme-active-bg-color: transparent;
+  --hero-switch-theme-active-color: #ffffff
+}
+
+.hero-switch.hero-switch:has([data-hero-switch-theme=muji]:hover:not(.active)) {
+  --hero-switch-theme-color: #CECECE;
+  --hero-switch-theme-active-color: #CECECE;
+  --hero-switch-theme-hover-color: #7F0019;
+  --hero-switch-theme-hover-border-color: #7F0019
+}
+
+.hero-switch-model-link {
+  display: none;
+  padding: 0 8px
+}
+
+.hero-switch-model-link__button {
+  display: flex;
+  width: 200px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: var(--hero-switch-theme-color);
+  border-radius: 30px;
+  border: 2px solid var(--hero-switch-theme-color);
+  height: 42px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color .3s, color .3s, background-color .3s
+}
+
+.hero-switch-model-link__button:hover {
+  color: var(--hero-switch-theme-hover-color, var(--hero-switch-theme-color));
+  border-color: var(--hero-switch-theme-hover-border-color, var(--hero-switch-theme-color));
+  background-color: var(--hero-switch-theme-hover-bg-color)
+}
+
+.active .hero-switch-model-link__button {
+  color: var(--hero-switch-theme-active-color);
+  border-color: var(--hero-switch-theme-active-border-color, var(--hero-switch-theme-color));
+  background-color: var(--hero-switch-theme-active-bg-color)
+}
+
+@media(min-width: 992px) {
+  .hero-switch-model-link {
+    display: flex
+  }
+}
+
+.hero-switch-modal-trigger {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  color: #fff;
+  border-bottom: 2px solid rgba(255, 255, 255, .5);
+  padding: .4em 0
+}
+
+.hero-switch-modal-trigger::before {
+  content: ""
+}
+
+.hero-switch-modal-trigger::after {
+  font-family: "ggr-icons";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "î¤";
+  margin-left: .3em;
+  position: relative;
+  top: .05em
+}
+
+@media(min-width: 992px) {
+  .hero-switch-modal-trigger {
+    display: none
+  }
+}
+
+.hero-switch-modal {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, .7);
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  pointer-events: none;
+  opacity: 0;
+  align-items: center
+}
+
+.hero-switch-modal.active {
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity .5s
+}
+
+@media(min-width: 992px) {
+  .hero-switch-modal.active {
+    display: none
+  }
+}
+
+.hero-switch-modal-inner-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: clamp(380px, 110vw, 480px)
+}
+
+.hero-switch-modal-header {
+  position: relative;
+  padding: 12px 0 18px 0
+}
+
+.hero-switch-modal-headline {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.3125
+}
+
+.hero-switch-modal-close {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  right: 0;
+  padding: 0 16px
+}
+
+.hero-switch-modal-close::before {
+  font-family: "ggr-icons";
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  content: "î¤€"
+}
+
+.hero-switch-modal-scrollable {
+  flex: 1;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch
+}
+
+.hero-switch-modal-scrollable::-webkit-scrollbar {
+  opacity: 0;
+  display: none
+}
+
+.hero-switch-models {
+  display: grid;
+  grid-auto-flow: column;
+  overflow: hidden;
+  padding: 0 30px;
+  box-sizing: border-box;
+  height: 100%;
+  grid-gap: 8px;
+  width: -moz-fit-content;
+  width: fit-content;
+  grid-auto-columns: calc(clamp(0px, 100vw, 400px) - 60px)
+}
+
+.hero-switch-model {
+  display: flex;
+  flex-direction: column;
+  color: #fff
+}
+
+.hero-switch-model-headline {
+  margin: 16px 0 0 0;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 1.3
+}
+
+.hero-switch-model-image-container {
+  border-radius: 10px;
+  flex: 1;
+  isolation: isolate;
+  overflow: hidden;
+  position: relative
+}
+
+.hero-switch-model-image {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 120%;
+  height: 100%;
+  background: center/cover no-repeat
+}
+
+.active .hero-switch-model-image {
+  will-change: transform
+}
+
+.hero-switch-model-image--viva-mix-standard {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/shared/hero-switch/models/img-pp-model-viva-mix-std@2x.jpg?v=v22")
+}
+
+.hero-switch-model-image--viva-mix-superfast {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/shared/hero-switch/models/img-pp-model-viva-mix-sf-my23@2x.jpg?v=v22")
+}
+
+.hero-switch-model-image--viva-mix-purplesoul {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/shared/hero-switch/models/img-pp-model-viva-mix-purple@2x.jpg?v=v22")
+}
+
+.hero-switch-model-image--viva-mix-superfast-esc {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/shared/hero-switch/models/img-pp-model-viva-mix-sf-esc@2x.jpg?v=v22")
+}
+
+.hero-switch-model-image--viva-xl-superfast {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/shared/hero-switch/models/img-pp-model-viva-xl-sf-my23@2x.jpg?v=v22")
+}
+
+.hero-switch-model-image--viva-xl-standard {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/shared/hero-switch/models/img-pp-model-viva-xl-std@2x.jpg?v=v22")
+}
+
+.hero-switch-model-image--viva-me {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/shared/hero-switch/models/img-menu-viva-me-mobile.jpg?v=v22")
+}
+
+.hero-switch-model-image--viva-mix-me {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/shared/hero-switch/models/img-menu-viva-mix-me-mobile.jpg?v=v22")
+}
+
+.hero-switch-model-image--viva-standard {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/shared/hero-switch/models/img-menu-viva-standard-mobile.jpg?v=v22")
+}
+
+.hero-switch-cover {
+  position: absolute;
+  inset: 0;
+  z-index: 98;
+  pointer-events: none
+}
+
+.hero-switch-cover-image {
+  position: absolute;
+  inset: 0;
+  background: center/cover no-repeat;
+  opacity: 0;
+  transition: opacity .2s;
+  z-index: 1
+}
+
+.hero-switch-cover-image.active {
+  opacity: 1;
+  z-index: 2
+}
+
+.hero-switch-cover-image--viva-mix-standard {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/shared/hero-switch/cover/img-pp-model-mix@2x.jpg?v=v22")
+}
+
+.hero-switch-cover-image--viva-mix-superfast {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/shared/hero-switch/cover/img-pp-model-mix-sf-my23@2x.jpg?v=v22")
+}
+
+.hero-switch-cover-image--viva-mix-purplesoul {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/shared/hero-switch/cover/img-pp-model-mix-purple@2x.jpg?v=v22")
+}
+
+.hero-switch-cover-image--viva-mix-superfast-esc {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/shared/hero-switch/cover/img-pp-model-mix-esc@2x.jpg?v=v22")
+}
+
+.hero-switch-cover-image--viva-xl-superfast {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/shared/hero-switch/cover/img-pp-model-xl-sf-my23@2x.jpg?v=v22")
+}
+
+.hero-switch-cover-image--viva-xl-standard {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/shared/hero-switch/cover/img-pp-model-xl@2x.jpg?v=v22")
+}
+
+.hero-switch-cover-image--viva-me {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/shared/hero-switch/cover/img-menu-viva-me@2x.jpg?v=v22")
+}
+
+.hero-switch-cover-image--viva-mix-me {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/shared/hero-switch/cover/img-menu-viva-mix-me@2x.jpg?v=v22")
+}
+
+.hero-switch-cover-image--viva-standard {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/shared/hero-switch/cover/img-menu-viva@2x.jpg?v=v22")
+}
+
+.page-content {
+  padding-top: var(--nav-height, 50px)
+}
+
+@media(min-width: 992px) {
+  .page-content {
+    padding-top: var(--nav-height, 50px);
+  }
+}
+
+.progressive-image,
+.progressive-image figure,
+.progressive-image figure::before,
+.progressive-image figure::after,
+.progressive-image .spec-icon,
+.progressive-image .grid-item {
+  background-image: none !important
+}
+
+.typography-eyebrow {
+  font-size: 18px;
+  letter-spacing: .16em
+}
+
+@media(min-width: 768px) {
+  .typography-eyebrow {
+    font-size: 20px
+  }
+}
+
+@media(min-width: 992px) {
+  .typography-eyebrow {
+    font-size: 24px
+  }
+}
+
+.typography-section-headline {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.33
+}
+
+@media(min-width: 768px) {
+  .typography-section-headline {
+    font-size: 40px
+  }
+}
+
+@media(min-width: 992px) {
+  .typography-section-headline {
+    font-size: 48px;
+    letter-spacing: -0.012em
+  }
+}
+
+@media(min-width: 1260px) {
+  .typography-section-headline {
+    font-size: 56px
+  }
+}
+
+.typography-modal-headline {
+  font-size: 24px;
+  font-weight: 600
+}
+
+@media(max-width: 350px) {
+  .typography-modal-headline {
+    font-size: 22px
+  }
+}
+
+@media(min-width: 768px) {
+  .typography-modal-headline {
+    font-size: 28px
+  }
+}
+
+@media(min-width: 992px) {
+  .typography-modal-headline {
+    font-size: 30px
+  }
+}
+
+@media(min-width: 1260px) {
+  .typography-modal-headline {
+    font-size: 34px
+  }
+}
+
+.typography-modal-copy {
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 6px
+}
+
+.typography-modal-copy:lang(en) {
+  line-height: 1.5
+}
+
+@media(min-width: 768px) {
+  .typography-modal-copy {
+    font-size: 16px;
+    margin-top: 8px
+  }
+}
+
+@media(min-width: 992px) {
+  .typography-modal-copy {
+    font-size: 18px;
+    margin-top: 10px
+  }
+}
+
+.typography-modal-hint {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .04em
+}
+
+.section-content {
+  padding: 64px 0;
+  margin: auto;
+  max-width: 400px
+}
+
+@media(min-width: 768px) {
+  .section-content {
+    max-width: initial;
+    padding: 96px 0
+  }
+}
+
+@media(min-width: 992px) {
+  .section-content {
+    padding: 136px 0
+  }
+}
+
+@media(min-width: 1260px) {
+  .section-content {
+    padding: 160px 0
+  }
+}
+
+.section-content .typography-section-intro {
+  color: #ED2025
+}
+
+.typography-section-intro {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.375
+}
+
+.typography-section-intro+.grid {
+  margin: 36px 0 0 0
+}
+
+@media(min-width: 768px) {
+  .typography-section-intro {
+    font-size: 32px
+  }
+
+  .typography-section-intro+.grid {
+    margin: 48px 0 0 0
+  }
+}
+
+@media(min-width: 992px) {
+  .typography-section-intro {
+    font-size: 44px
+  }
+
+  .typography-section-intro+.grid {
+    margin: 68px 0 0 0
+  }
+}
+
+@media(min-width: 1260px) {
+  .typography-section-intro {
+    font-size: 56px
+  }
+
+  .typography-section-intro+.grid {
+    margin: 80px 0 0 0
+  }
+}
+
+.section-leading {
+  display: flex;
+  justify-content: center;
+  padding: 80px 0;
+  background-color: var(--leading-bg-color, #ffffff)
+}
+
+@media(min-width: 576px) {
+  .section-leading {
+    padding: 100px 0
+  }
+}
+
+@media(min-width: 768px) {
+  .section-leading {
+    padding: 120px 0
+  }
+}
+
+@media(min-width: 992px) {
+  .section-leading {
+    padding: 150px 0
+  }
+}
+
+@media(min-width: 1260px) {
+  .section-leading {
+    padding: 200px 0
+  }
+}
+
+.text-reveal {
+  will-change: scroll-position;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0)
+}
+
+.leading-copy {
+  color: #fff;
+  font-size: 7vw;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  background-image: linear-gradient(to bottom, white var(--gradient-progress-1), rgba(255, 255, 255, 0) var(--gradient-progress-2))
+}
+
+@media(max-width: 575.98px) {
+  .leading-copy:lang(en) {
+    font-size: 5.5vw
+  }
+}
+
+@media(min-width: 375px) {
+  .leading-copy {
+    font-size: 27px
+  }
+}
+
+@media(min-width: 576px) {
+  .leading-copy {
+    font-size: 36px
+  }
+}
+
+@media(min-width: 768px) {
+  .leading-copy {
+    font-size: 48px
+  }
+}
+
+@media(min-width: 992px) {
+  .leading-copy {
+    font-size: 64px
+  }
+}
+
+@media(min-width: 1260px) {
+  .leading-copy {
+    font-size: 82px
+  }
+
+  .leading-copy:lang(en) {
+    font-size: 72px
+  }
+}
+
+.section-experience {
+  --section-intro-color: #094eff
+}
+
+.grid-item--experience-dimension {
+  background-image: url("../images/img_qc_bottom.png")
+}
+
+@media(min-width: 768px) {
+  .grid-item--experience-dimension {
+    background-image: url("../images/img_qc_bottom.png")
+  }
+}
+
+.grid-item--experience-flodrive {
+  position: relative
+}
+
+.grid-item--experience-flodrive .grid-item-copy,
+.grid-item--experience-flodrive .grid-item-eyebrow {
+  position: relative;
+  z-index: 3
+}
+
+.grid-item--experience-mix {
+  background-image: url("../images/img_qc_right.png")
+}
+
+@media(min-width: 768px) {
+  .grid-item--experience-mix {
+    background-image: url("../images/img_qc_right.png")
+  }
+}
+
+.image-flodrive-loop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: center/cover no-repeat;
+  border-radius: var(--tile-radius)
+}
+
+.image-flodrive-loop--solid {
+  background-image: url("../images/img_qc_left.png")
+}
+
+.image-flodrive-loop--transparent {
+  background-image: url("../images/img_qc_left.png")
+}
+
+@media(min-width: 768px) {
+  .image-flodrive-loop--solid {
+    background-image: url("../images/img_qc_left.png")
+  }
+
+  .image-flodrive-loop--transparent {
+    background-image: url("../images/img_qc_left.png")
+  }
+}
+
+.image-experience-dimension-popup {
+  background: center/cover no-repeat;
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/experience/my23/img-experience-popup-1-mobile@2x.jpg?v=v22");
+  max-height: 600px
+}
+
+.image-experience-dimension-popup::after {
+  content: "";
+  display: block;
+  padding-bottom: 122%
+}
+
+@media(min-width: 768px) {
+  .image-experience-dimension-popup {
+    max-height: initial;
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/experience/my23/img-experience-popup-1@2x.jpg?v=v22")
+  }
+
+  .image-experience-dimension-popup::after {
+    padding-bottom: 58.25%
+  }
+}
+
+.experience-features {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  padding: 0 0 64px 0;
+  max-width: 600px
+}
+
+@media(min-width: 576px) {
+  .experience-features {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0
+  }
+}
+
+@media(min-width: 1260px) {
+  .experience-features {
+    max-width: 700px
+  }
+}
+
+.experience-feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center
+}
+
+@media(min-width: 576px) {
+  .experience-feature:lang(en) {
+    width: 100px;
+    white-space: nowrap
+  }
+}
+
+.experience-feature+.experience-feature {
+  margin: 40px 0 0 0
+}
+
+@media(min-width: 576px) {
+  .experience-feature+.experience-feature {
+    margin: 0
+  }
+}
+
+.experience-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: center/contain no-repeat
+}
+
+.experience-icon--width {
+  background: center/cover no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/experience/dimension/icon-width.svg?v=v22")
+}
+
+.experience-icon--height {
+  background: center/cover no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/experience/dimension/icon-height.svg?v=v22")
+}
+
+.experience-icon--power {
+  background: center/cover no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/experience/dimension/icon-power.svg?v=v22")
+}
+
+@media(min-width: 992px) {
+  .experience-icon {
+    width: 60px;
+    height: 60px
+  }
+}
+
+.typography-experience-feature-headline {
+  font-weight: 600;
+  line-height: 1.375;
+  font-size: 24px;
+  margin: 8px 0 4px 0
+}
+
+@media(min-width: 992px) {
+  .typography-experience-feature-headline {
+    font-size: 28px;
+    margin: 8px 0 10px 0
+  }
+}
+
+@media(min-width: 1260px) {
+  .typography-experience-feature-headline {
+    font-size: 32px
+  }
+}
+
+.typography-experience-feature-spec {
+  font-weight: 400;
+  line-height: 1.5625;
+  color: #57595c;
+  font-size: 14px
+}
+
+@media(min-width: 992px) {
+  .typography-experience-feature-spec {
+    font-size: 16px
+  }
+}
+
+.section-hardware {
+  --section-intro-color: #780034
+}
+
+.section-hardware .grid-item-copy {
+  padding-top: var(--tile-padding-y)
+}
+
+.section-hardware .section-content {
+  max-width: 100%
+}
+
+.section-hardware .slick-grid .grid {
+  width: calc(100vw - 100px);
+  max-width: 340px
+}
+
+@media(min-width: 992px) {
+  .section-hardware .slick-grid .grid {
+    max-width: initial;
+    width: initial
+  }
+}
+
+.grid-item--stylo {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/hardware/my23/img-hardware-detail-1-mobile@2x.jpg?v=v22")
+}
+
+@media(min-width: 768px) {
+  .grid-item--stylo {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/hardware/my23/img-hardware-detail-1@2x.jpg?v=v22")
+  }
+}
+
+.grid-item--pp {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/hardware/img-hardware-detail-2-mobile@2x.jpg?v=v22")
+}
+
+@media(min-width: 768px) {
+  .grid-item--pp {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/hardware/img-hardware-detail-2@2x.jpg?v=v22")
+  }
+}
+
+.grid-item--led {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/hardware/my23/img-hardware-detail-4-mobile@2x.jpg?v=v22")
+}
+
+@media(min-width: 768px) {
+  .grid-item--led {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/hardware/my23/img-hardware-detail-4@2x.jpg?v=v22")
+  }
+}
+
+.grid-item--stand {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/hardware/my23/img-hardware-detail-5-mobile@2x.jpg?v=v22")
+}
+
+@media(min-width: 768px) {
+  .grid-item--stand {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/hardware/my23/img-hardware-detail-5@2x.jpg?v=v22")
+  }
+}
+
+.grid-item--sbs {
+  position: relative
+}
+
+.grid-item--sbs .grid-item-copy {
+  position: relative;
+  z-index: 3
+}
+
+.image-sbs {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: center/cover no-repeat;
+  border-radius: var(--tile-radius)
+}
+
+.image-sbs--front {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/hardware/my23/img-hardware-detail-3-mobile@2x.jpg?v=v22")
+}
+
+.image-sbs--rear {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/hardware/my23/img-hardware-detail-3-2-mobile@2x.jpg?v=v22")
+}
+
+@media(min-width: 768px) {
+  .image-sbs--front {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/hardware/my23/img-hardware-detail-3@2x.jpg?v=v22")
+  }
+
+  .image-sbs--rear {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/hardware/my23/img-hardware-detail-3-2@2x.jpg?v=v22")
+  }
+}
+
+.section-design {
+  --section-intro-color: #cf1e30
+}
+
+.grid-item--design-headlight {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/design/my23/img-design-1-mobile@2x.jpg?v=v22")
+}
+
+@media(min-width: 768px) {
+  .grid-item--design-headlight {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/design/my23/img-design-1@2x.jpg?v=v22")
+  }
+}
+
+.grid-item--design-taillight {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/design/my23/img-design-2-mobile@2x.jpg?v=v22")
+}
+
+@media(min-width: 768px) {
+  .grid-item--design-taillight {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/design/my23/img-design-2@2x.jpg?v=v22")
+  }
+}
+
+.grid-item--design-color {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/design/my23/img-design-3-mobile@2x.jpg?v=v22")
+}
+
+@media(min-width: 768px) {
+  .grid-item--design-color {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/design/my23/img-design-3@2x.jpg?v=v22")
+  }
+}
+
+.grid-item--design-pop {
+  position: relative;
+  transform: translate3d(0, 0, 0);
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/purplesoul/design/img-design-4-bg-mobile@2x.jpg?v=v22")
+}
+
+.grid-item--design-pop .grid-item-eyebrow {
+  margin: 0 0 2em 0
+}
+
+.grid-item--design-pop .grid-item-copy {
+  font-size: 10vw
+}
+
+.grid-item--design-pop .grid-item-copy:lang(zh) {
+  line-height: 1.29
+}
+
+@media(min-width: 375px) {
+  .grid-item--design-pop .grid-item-copy {
+    font-size: 44px
+  }
+}
+
+@media(min-width: 768px) {
+  .grid-item--design-pop .grid-item-copy {
+    font-size: 40px
+  }
+
+  .grid-item--design-pop .grid-item-copy:lang(zh) {
+    font-size: 48px
+  }
+}
+
+@media(min-width: 992px) {
+  .grid-item--design-pop .grid-item-eyebrow {
+    margin: 0 0 2.4em 0
+  }
+
+  .grid-item--design-pop .grid-item-copy {
+    font-size: 56px
+  }
+
+  .grid-item--design-pop .grid-item-copy:lang(zh) {
+    line-height: 1.32;
+    font-size: 56px
+  }
+}
+
+@media(min-width: 1260px) {
+  .grid-item--design-pop .grid-item-eyebrow {
+    margin: 0 0 3em 0
+  }
+
+  .grid-item--design-pop .grid-item-copy {
+    font-size: 68px
+  }
+
+  .grid-item--design-pop .grid-item-copy:lang(zh) {
+    font-size: 68px
+  }
+}
+
+@media(max-width: 420px) {
+  .grid-item--design-pop .grid-item-copy:lang(en) {
+    font-size: 9.5vw
+  }
+}
+
+@media(min-width: 768px) {
+  .grid-item--design-pop {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/purplesoul/design/img-design-4-bg@2x.jpg?v=v22")
+  }
+}
+
+.pop-pattern {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 240px;
+  height: 240px;
+  margin: -60px 0 0 -120px
+}
+
+.pop-pattern svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100% !important;
+  height: 100% !important
+}
+
+@media(min-width: 768px) {
+  .pop-pattern {
+    width: 260px;
+    height: 260px;
+    margin: -90px 0 0 -130px
+  }
+}
+
+@media(min-width: 992px) {
+  .pop-pattern {
+    width: 420px;
+    height: 420px;
+    margin: -210px 0 0 -20px
+  }
+}
+
+@media(min-width: 1260px) {
+  .pop-pattern {
+    width: 540px;
+    height: 540px;
+    margin: -270px 0 0 -40px
+  }
+}
+
+#accessories .modal-content-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  pointer-events: none
+}
+
+#accessories .typography-modal-hint {
+  margin: 22px 0 0 0
+}
+
+.accessories-stage-container {
+  position: relative;
+  border-radius: var(--modal-content-border-radius);
+  overflow: hidden;
+  height: 100vh;
+  max-height: 100vh
+}
+
+@media(max-width: 350px) {
+  .accessories-stage-container {
+    min-height: 590px
+  }
+}
+
+@media(min-width: 576px) {
+  .accessories-stage-container {
+    height: 670px;
+    min-height: initial;
+    max-height: initial
+  }
+}
+
+@media(min-width: 768px) {
+  .accessories-stage-container {
+    height: 760px
+  }
+}
+
+@media(min-width: 1260px) {
+  .accessories-stage-container {
+    height: 800px
+  }
+}
+
+.accessories-stage {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100% !important;
+  height: 100% !important;
+  -o-object-fit: cover;
+  object-fit: cover
+}
+
+#mix-sound {
+  position: relative;
+  top: -36px
+}
+
+@media(min-width: 768px) {
+  #mix-sound {
+    top: -64px
+  }
+}
+
+.section-features {
+  --section-intro-color: #57595C
+}
+
+.grid-item--feature-flodrive,
+.grid-item--feature-keycard {
+  position: relative;
+  overflow: hidden;
+  transform: translateZ(0)
+}
+
+.grid-item--feature-iq {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/features/img-feature-3-mobile@2x.jpg?v=v22")
+}
+
+@media(min-width: 768px) {
+  .grid-item--feature-iq {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/features/img-feature-3@2x.jpg?v=v22")
+  }
+}
+
+.grid-item--feature-sound-effect {
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+  text-shadow: 0 0 20px rgba(0, 0, 0, .1);
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/features/img-sound-effect-bg-mobile@2x.jpg?v=v22")
+}
+
+.grid-item--feature-sound-effect .grid-item-eyebrow {
+  margin: 0 0 2em 0
+}
+
+.grid-item--feature-sound-effect .grid-item-copy {
+  font-size: 10vw
+}
+
+.grid-item--feature-sound-effect .grid-item-copy:lang(zh) {
+  line-height: 1.29
+}
+
+@media(min-width: 375px) {
+  .grid-item--feature-sound-effect .grid-item-copy {
+    font-size: 44px
+  }
+}
+
+@media(min-width: 768px) {
+  .grid-item--feature-sound-effect .grid-item-copy {
+    font-size: 40px
+  }
+
+  .grid-item--feature-sound-effect .grid-item-copy:lang(zh) {
+    font-size: 48px
+  }
+}
+
+@media(min-width: 992px) {
+  .grid-item--feature-sound-effect .grid-item-eyebrow {
+    margin: 0 0 2.4em 0
+  }
+
+  .grid-item--feature-sound-effect .grid-item-copy {
+    font-size: 56px
+  }
+
+  .grid-item--feature-sound-effect .grid-item-copy:lang(zh) {
+    line-height: 1.32;
+    font-size: 56px
+  }
+}
+
+@media(min-width: 1260px) {
+  .grid-item--feature-sound-effect .grid-item-eyebrow {
+    margin: 0 0 3em 0
+  }
+
+  .grid-item--feature-sound-effect .grid-item-copy {
+    font-size: 68px
+  }
+
+  .grid-item--feature-sound-effect .grid-item-copy:lang(zh) {
+    font-size: 68px
+  }
+}
+
+@media(min-width: 768px) {
+  .grid-item--feature-sound-effect {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/features/img-sound-effect-bg@2x.jpg?v=v22")
+  }
+}
+
+.sound-pattern {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%
+}
+
+.sound-pattern svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100% !important;
+  height: 100% !important
+}
+
+@media(min-width: 768px) {
+  .sound-pattern {
+    transform: scale(1.2) translateY(-7%)
+  }
+}
+
+@media(min-width: 992px) {
+  .sound-pattern {
+    left: 230px;
+    transform: scale(1.1) translateY(-16.4%)
+  }
+}
+
+@media(min-width: 1260px) {
+  .sound-pattern {
+    left: 280px;
+    transform: scale(1.2) translateY(-16.4%)
+  }
+}
+
+.fun-patterns {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 30px;
+  margin: 36px 0 48px 0
+}
+
+@media(min-width: 576px) {
+  .fun-patterns {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 34px
+  }
+}
+
+@media(min-width: 768px) {
+  .fun-patterns {
+    margin: 52px 0 0 0
+  }
+}
+
+@media(min-width: 992px) {
+  .fun-patterns {
+    margin: 64px 0 0 0;
+    grid-column-gap: 45px;
+    grid-row-gap: 50px
+  }
+}
+
+@media(min-width: 1260px) {
+  .fun-patterns {
+    margin: 70px 0 0 0
+  }
+}
+
+.fun-pattern {
+  cursor: pointer
+}
+
+.fun-pattern-thumb {
+  position: relative;
+  pointer-events: none
+}
+
+.fun-pattern-thumb::before {
+  content: "";
+  display: block;
+  padding-bottom: 100%
+}
+
+.fun-pattern-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  left: 0;
+  top: 0;
+  background: center/cover no-repeat
+}
+
+.fun-pattern-image--esc-desert {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/features/fun-pattern/img-popup-fun-pattern-deserteagle@2x.jpg?v=v22")
+}
+
+.fun-pattern-image--esc-night {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/features/fun-pattern/img-popup-fun-pattern-nightwatcher@2x.jpg?v=v22")
+}
+
+.fun-pattern-image--house-white {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/features/fun-pattern/img-popup-fun-pattern-house-white@2x.jpg?v=v22")
+}
+
+.fun-pattern-image--purplesoul {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/features/fun-pattern/img-popup-fun-pattern-purplesoul@2x.jpg?v=v22")
+}
+
+.fun-pattern-image--hazel {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/features/fun-pattern/img-popup-fun-pattern-hazel@2x.jpg?v=v22")
+}
+
+.fun-pattern-image--blue {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/features/fun-pattern/img-popup-fun-pattern-blue@2x.jpg?v=v22")
+}
+
+.fun-pattern-image--purple {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/features/fun-pattern/img-popup-fun-pattern-purple@2x.jpg?v=v22")
+}
+
+.fun-pattern-image--red {
+  border: 1px solid #dcdce1;
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/features/fun-pattern/img-popup-fun-pattern-red@2x.jpg?v=v22")
+}
+
+.fun-pattern-image--white {
+  border: 1px solid #b8bcbf;
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/features/fun-pattern/img-popup-fun-pattern-white@2x.jpg?v=v22")
+}
+
+.fun-pattern-image--grey {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/features/fun-pattern/img-popup-fun-pattern-grey@2x.jpg?v=v22")
+}
+
+.fun-pattern-image--acidblack {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/features/fun-pattern/img-popup-fun-pattern-acidblack@2x.jpg?v=v22")
+}
+
+@media(min-width: 992px) {
+  .fun-pattern-image {
+    border-radius: 40px
+  }
+}
+
+#fun-pattern .typography-modal-hint {
+  margin: 22px 0 0 0
+}
+
+.fun-pattern-name {
+  text-align: center;
+  font-size: 14px;
+  margin: 10px 0 0 0;
+  font-weight: 600;
+  color: #323237
+}
+
+.fun-pattern-name:lang(zh) {
+  letter-spacing: .2145em;
+  padding-left: .2145em
+}
+
+@media(min-width: 768px) {
+  .fun-pattern-name {
+    font-size: 16px;
+    margin: 14px 0 0 0
+  }
+}
+
+@media(min-width: 992px) {
+  .fun-pattern-name {
+    font-size: 18px;
+    margin: 18px 0 0 0
+  }
+}
+
+@media(min-width: 1260px) {
+  .fun-pattern-name {
+    font-size: 20px;
+    margin: 22px 0 0 0
+  }
+}
+
+.fun-pattern-state {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  bottom: 12px;
+  right: 12px;
+  background-color: rgba(0, 0, 0, .5);
+  border-radius: 50%
+}
+
+@media(min-width: 576px) {
+  .fun-pattern-state {
+    width: 36px;
+    height: 36px;
+    bottom: 8px;
+    right: 8px
+  }
+}
+
+@media(min-width: 992px) {
+  .fun-pattern-state {
+    width: 50px;
+    height: 50px;
+    bottom: 16px;
+    right: 16px
+  }
+}
+
+@media(min-width: 1260px) {
+  .fun-pattern-state {
+    width: 54px;
+    height: 54px
+  }
+}
+
+.fun-pattern-state__muted,
+.fun-pattern-state__playing {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: opacity .3s
+}
+
+.fun-pattern-state__muted {
+  z-index: 1;
+  background: center/cover no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/features/fun-pattern/icon-horn.svg?v=v22")
+}
+
+.fun-pattern-state__playing {
+  z-index: 2;
+  opacity: 0
+}
+
+.active .fun-pattern-state__muted {
+  opacity: 0
+}
+
+.active .fun-pattern-state__playing {
+  opacity: 1
+}
+
+.section-banner {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  align-items: flex-end;
+  height: 500px;
+  box-sizing: border-box;
+  padding-bottom: 48px;
+  background-color: #d7dbe2
+}
+
+@media(min-width: 768px) {
+  .section-banner {
+    padding-bottom: 0;
+    align-items: center;
+    height: 700px
+  }
+}
+
+@media(min-width: 992px) {
+  .section-banner {
+    height: 800px
+  }
+}
+
+@media(min-width: 1260px) {
+  .section-banner {
+    height: 1000px
+  }
+}
+
+.section-banner-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: center/cover no-repeat
+}
+
+.section-banner-background--experience {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/experience/img-banner-flexible-bg-mobile@2x.jpg?v=v22")
+}
+
+.section-banner-background--hardware {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/hardware/my23/img-banner-fun-bg-mobile@2x.jpg?v=v22")
+}
+
+.section-banner-background--design {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/design/my23/img-banner-durable-bg-mobile@2x.jpg?v=v22")
+}
+
+.section-banner-background--features {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/features/img-banner-smart-bg-mobile@2x.jpg?v=v22")
+}
+
+@media(min-width: 768px) {
+  .section-banner-background--experience {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/experience/img-banner-flexible-bg@2x.jpg?v=v22")
+  }
+
+  .section-banner-background--hardware {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/hardware/my23/img-banner-fun-bg@2x.jpg?v=v22")
+  }
+
+  .section-banner-background--design {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/design/my23/img-banner-durable-bg@2x.jpg?v=v22")
+  }
+
+  .section-banner-background--features {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/features/img-banner-smart-bg@2x.jpg?v=v22")
+  }
+}
+
+.section-banner-scooter {
+  position: absolute
+}
+
+.section-banner-scooter--experience {
+  width: 617px;
+  height: 429px;
+  left: 50%;
+  margin: 0 0 0 -308px;
+  background: center/617px 429px no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/experience/my23/img-banner-flexible-scooter-mobile@2x.png?v=v22")
+}
+
+.section-banner-scooter--hardware {
+  width: 900px;
+  height: 823px;
+  left: 50%;
+  top: 50%;
+  margin: -360px 0 0 -320px;
+  background: center/900px 823px no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/hardware/my23/img-banner-fun-scooter-mobile@2x.png?v=v22")
+}
+
+.section-banner-scooter--design {
+  width: 718px;
+  height: 532px;
+  left: 50%;
+  top: 50%;
+  margin: -380px 0 0 -460px;
+  background: center/718px 532px no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/design/my23/img-banner-durable-scooter-mobile@2x.png?v=v22")
+}
+
+.section-banner-scooter--features {
+  width: 769px;
+  height: 501px;
+  left: 50%;
+  margin: 0 0 0 -385px;
+  bottom: 0;
+  background: center/769px 501px no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/features/img-banner-smart-scooter@2x.png?v=v22")
+}
+
+@media(min-width: 768px) {
+  .section-banner-scooter--experience {
+    left: 50%;
+    top: 50%;
+    margin: -440px 0 0 -580px;
+    width: 1264px;
+    height: 800px;
+    background: center/1264px 800px no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/experience/my23/img-banner-flexible-scooter@2x.png?v=v22")
+  }
+
+  .section-banner-scooter--hardware {
+    width: 1642px;
+    height: 800px;
+    margin: -480px 0 0 -260px;
+    background: center/1642px 800px no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/hardware/my23/img-banner-fun-scooter@2x.png?v=v22")
+  }
+
+  .section-banner-scooter--design {
+    width: 1536px;
+    height: 860px;
+    top: 50%;
+    left: initial;
+    right: 50%;
+    margin: -460px -520px 0 0;
+    background: center/1536px 860px no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/design/my23/img-banner-durable-scooter@2x.png?v=v22")
+  }
+
+  .section-banner-scooter--features {
+    width: 1106px;
+    height: 700px;
+    left: 50%;
+    margin: 0 0 0 -553px;
+    background: center/1106px 700px no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/features/img-banner-smart-scooter@2x.png?v=v22")
+  }
+}
+
+@media(min-width: 992px) {
+  .section-banner-scooter--experience {
+    margin: -480px 0 0 -680px;
+    width: 1422px;
+    height: 900px;
+    background-size: 1422px 900px
+  }
+
+  .section-banner-scooter--hardware {
+    margin: -500px 0 0 -300px;
+    width: 1848px;
+    height: 900px;
+    background-size: 1848px 900px
+  }
+
+  .section-banner-scooter--design {
+    width: 1714px;
+    height: 960px;
+    margin: -500px -540px 0 0;
+    background-size: 1714px 960px
+  }
+
+  .section-banner-scooter--features {
+    width: 1264px;
+    height: 800px;
+    margin: 0 0 0 -632px;
+    background-size: 1264px 800px
+  }
+}
+
+@media(min-width: 1260px) {
+  .section-banner-scooter--experience {
+    width: 1580px;
+    height: 1000px;
+    margin: -540px 0 0 -770px;
+    background-size: 1580px 1000px
+  }
+
+  .section-banner-scooter--hardware {
+    width: 2464px;
+    height: 1200px;
+    margin: -600px 0 0 -380px;
+    background-size: 2464px 1200px
+  }
+
+  .section-banner-scooter--design {
+    width: 2142px;
+    height: 1200px;
+    margin: -600px -560px 0 0;
+    background-size: 2142px 1200px
+  }
+
+  .section-banner-scooter--features {
+    width: 1580px;
+    height: 1000px;
+    margin: 0 0 0 -790px;
+    background-size: 1580px 1000px
+  }
+}
+
+.section-banner-copy {
+  position: relative;
+  width: 100%;
+  color: #fff;
+  text-align: center
+}
+
+.section-banner-copy:lang(zh) {
+  font-family: "Noto Sans TC", sans-serif
+}
+
+@media(min-width: 768px) {
+  .section-banner-copy {
+    top: 80px;
+    text-align: left
+  }
+}
+
+@media(min-width: 992px) {
+  .section-banner-copy {
+    top: 80px
+  }
+}
+
+.section-banner-eyebrow {
+  text-shadow: 0 2px 8px rgba(0, 0, 0, .15);
+  font-weight: 700;
+  font-size: 16px;
+  margin: 0 0 8px 0
+}
+
+.section-banner-eyebrow:lang(zh) {
+  padding-left: .375em;
+  letter-spacing: .375em
+}
+
+@media(min-width: 768px) {
+  .section-banner-eyebrow {
+    padding-left: 0;
+    font-size: 20px;
+    margin: 0 0 12px 0
+  }
+}
+
+@media(min-width: 992px) {
+  .section-banner-eyebrow {
+    font-size: 22px;
+    margin: 0 0 16px 0
+  }
+}
+
+@media(min-width: 1260px) {
+  .section-banner-eyebrow {
+    font-size: 24px;
+    margin: 0 0 20px 0
+  }
+}
+
+.section-banner-headline {
+  font-size: 24px;
+  font-weight: 700;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, .15);
+  letter-spacing: .016em;
+  line-height: 1.2
+}
+
+.section-banner-headline:lang(en) {
+  font-weight: 600
+}
+
+@media(min-width: 350px) {
+  .section-banner-headline {
+    font-size: 28px
+  }
+}
+
+@media(min-width: 768px) {
+  .section-banner-headline {
+    font-size: 48px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, .15)
+  }
+
+  .section-banner-headline:lang(zh) {
+    line-height: 1.3
+  }
+}
+
+@media(min-width: 992px) {
+  .section-banner-headline {
+    font-size: 56px
+  }
+}
+
+@media(min-width: 1260px) {
+  .section-banner-headline {
+    font-size: 64px
+  }
+}
+
+.grid-item {
+  height: 560px
+}
+
+.section-hardware .grid-item {
+  height: 462px
+}
+
+@media(max-width: 440px) {
+  .section-hardware .grid-item-copy {
+    font-size: 22px
+  }
+}
+
+@media(min-width: 768px) {
+
+  .grid-item--experience-dimension,
+  .grid-item--design-color,
+  .grid-item--design-pop,
+  .grid-item--feature-flodrive,
+  .grid-item--feature-sound-effect {
+    height: 525px
+  }
+
+  .grid-item--experience-flodrive,
+  .grid-item--experience-mix,
+  .grid-item--design-headlight,
+  .grid-item--design-taillight,
+  .grid-item--feature-keycard,
+  .grid-item--feature-iq {
+    height: 600px
+  }
+
+  .section-hardware .grid-item {
+    height: 540px
+  }
+}
+
+@media(min-width: 1260px) {
+
+  .grid-item--experience-dimension,
+  .grid-item--design-color,
+  .grid-item--design-pop,
+  .grid-item--feature-flodrive,
+  .grid-item--feature-sound-effect {
+    height: 700px
+  }
+
+  .grid-item--experience-flodrive,
+  .grid-item--experience-mix,
+  .grid-item--design-headlight,
+  .grid-item--design-taillight,
+  .grid-item--feature-keycard,
+  .grid-item--feature-iq {
+    height: 800px
+  }
+
+  .section-hardware .grid-item {
+    height: 720px
+  }
+}
+
+.grid-item--experience-flodrive {
+  --grid-item-eyebrow-color: #002742
+}
+
+.grid-item--feature-flodrive {
+  --grid-item-eyebrow-color: #002742;
+  --grid-item-headline-color: #323237
+}
+
+.section-compare {
+  background-color: #f6f6f6
+}
+
+.section-compare :not(:lang(zh)) .compare:first-child {
+  grid-column: span 12
+}
+
+.image-compare--superfast-esc-desert {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/45d-viva-mix-superfast-esc-desert-eagle@3x.png?v=v22")
+}
+
+.image-compare--superfast-esc-night {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/45d-viva-mix-superfast-esc-night-watcher@3x.png?v=v22")
+}
+
+.image-compare--superfast-white {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/45d-viva-mix-superfast-house-white.png?v=v22")
+}
+
+.image-compare--superfast-grey {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/45d-viva-mix-superfast-acid-black.png?v=v22")
+}
+
+.image-compare--me-muji-brown {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/me/45d-viva-mix-belt-mujibrown.png?v=v22")
+}
+
+.image-compare--me-muji-grey {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/me/45d-viva-mix-belt-mujigrey.png?v=v22")
+}
+
+.image-compare--belt-purple-soul {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/45d-viva-mix-belt-purple-soul.png?v=v22")
+}
+
+.image-compare--belt-yellow {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/45d-viva-mix-belt-reggae-hazel.png?v=v22")
+}
+
+.image-compare--belt-blue {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/45d-viva-mix-belt-techno-blue.png?v=v22")
+}
+
+.image-compare--belt-purple {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/45d-viva-mix-belt-funk-purple.png?v=v22")
+}
+
+.image-compare--belt-red {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/45d-viva-mix-belt-rap-red.png?v=v22")
+}
+
+.image-compare--belt-grey {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/45d-viva-mix-belt-beatbox-grey.png?v=v22")
+}
+
+.image-compare--belt-white {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/45d-viva-mix-belt-acapella-white.png?v=v22")
+}
+
+.image-compare--keyless-blue {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/45d-viva-mix-keyless-modern-blue.png?v=v22")
+}
+
+.image-compare--keyless-grey {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/45d-viva-mix-keyless-beatbox-grey.png?v=v22")
+}
+
+.image-compare--keyless-white {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/45d-viva-mix-keyless-acappella-white.png?v=v22")
+}
+
+.image-compare--basic-white {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/45d-viva-mix-basic-white.png?v=v22")
+}
+
+.compare-modal {
+  background-color: #f6f6f6
+}
+
+.compare-modal-bar {
+  box-shadow: 0px -10px 20px rgba(0, 0, 0, .1)
+}
+
+.compare-cta-link {
+  border: 2px solid #323237;
+  color: #323237
+}
+
+.compare-cta-link:lang(en) {
+  font-family: var(--font-family-italic);
+  font-weight: 700;
+  text-transform: uppercase
+}
+
+.model-edition {
+  font-weight: 700;
+  color: silver;
+  margin: 0 0 0 2px;
+  font-size: 14px
+}
+
+@media(max-width: 767.98px) {
+  .model-edition:lang(en) {
+    display: block;
+    margin: 4px 0 4px 0
+  }
+}
+
+@media(min-width: 768px) {
+  .model-edition {
+    font-size: 16px
+  }
+}
+
+@media(min-width: 992px) {
+  .model-edition {
+    margin: 0 0 0 6px;
+    font-size: 20px
+  }
+}
+
+@media(min-width: 1260px) {
+  .model-edition {
+    font-size: 22px
+  }
+}
+
+.compare-color--superfast-esc-desert {
+  background-color: #d7c19a
+}
+
+.compare-color--superfast-esc-night {
+  background-color: #2c2c2c
+}
+
+.compare-color--superfast-white {
+  background-color: #eaeef1;
+  border: 1px solid #b4b4b4
+}
+
+.compare-color--me-muji-brown {
+  background-color: #e3d1bd
+}
+
+.compare-color--me-muji-grey {
+  background-color: #b2b3b7
+}
+
+.compare-color--superfast-grey {
+  background-color: #272c31
+}
+
+.compare-color--belt-purple-soul {
+  background-color: #d5c0ff
+}
+
+.compare-color--belt-yellow {
+  background-color: #f8e414
+}
+
+.compare-color--belt-blue {
+  background-color: #094eff
+}
+
+.compare-color--belt-purple {
+  background-color: #780034
+}
+
+.compare-color--belt-red {
+  background-color: #cf1e30
+}
+
+.compare-color--belt-grey {
+  background-color: #323237
+}
+
+.compare-color--belt-white {
+  background-color: #f4f4f4;
+  border: 1px solid #b4b4b4
+}
+
+.compare-color--keyless-blue {
+  background-color: #4b62ac
+}
+
+.compare-color--keyless-grey {
+  background-color: #323237
+}
+
+.compare-color--keyless-white {
+  background-color: #f4f4f4;
+  border: 1px solid #b4b4b4
+}
+
+.compare-color--basic-white {
+  background-color: #f4f4f4;
+  border: 1px solid #b4b4b4
+}
+
+.compare-modal--superfast .image-summary {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/superfast-white/img-db-scooter-main@2x.png?v=v22")
+}
+
+.compare-modal--belt .image-summary {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/belt/img-db-scooter-main@2x.png?v=v22")
+}
+
+.compare-modal--keyless .image-summary {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/keyless/img-db-scooter-main@2x.png?v=v22")
+}
+
+.compare-modal--basic .image-summary {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/basic/img-db-scooter-main@2x.png?v=v22")
+}
+
+.compare-modal--limited-edition .image-summary {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/purplesoul/compare/img-db-scooter-main@2x.png?v=v22")
+}
+
+.compare-gallery-item--superfast-1 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/superfast-white/img-db-gallery-1-mobile@2x.jpg?v=v22")
+}
+
+.compare-gallery-item--superfast-2 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/superfast-white/img-db-gallery-2-mobile@2x.jpg?v=v22")
+}
+
+.compare-gallery-item--superfast-3 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/superfast-white/img-db-gallery-3-mobile@2x.jpg?v=v22")
+}
+
+.compare-gallery-item--superfast-4 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/superfast-white/img-db-gallery-4-mobile@2x.jpg?v=v22")
+}
+
+.compare-gallery-item--superfast-5 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/superfast-white/img-db-gallery-5-mobile@2x.jpg?v=v22")
+}
+
+@media(min-width: 768px) {
+  .compare-gallery-item--superfast-1 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/superfast-white/img-db-gallery-1@2x.jpg?v=v22")
+  }
+
+  .compare-gallery-item--superfast-2 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/superfast-white/img-db-gallery-2@2x.jpg?v=v22")
+  }
+
+  .compare-gallery-item--superfast-3 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/superfast-white/img-db-gallery-3@2x.jpg?v=v22")
+  }
+
+  .compare-gallery-item--superfast-4 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/superfast-white/img-db-gallery-4@2x.jpg?v=v22")
+  }
+
+  .compare-gallery-item--superfast-5 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/superfast-white/img-db-gallery-5@2x.jpg?v=v22")
+  }
+}
+
+.compare-gallery-item--belt-1 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/belt/img-db-gallery-1-mobile@2x.jpg?v=v22")
+}
+
+.compare-gallery-item--belt-2 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/belt/202206/img-db-gallery-2-mobile@2x.jpg?v=v22")
+}
+
+.compare-gallery-item--belt-3 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/belt/img-db-gallery-3-mobile@2x.jpg?v=v22")
+}
+
+.compare-gallery-item--belt-4 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/belt/img-db-gallery-4-mobile@2x.jpg?v=v22")
+}
+
+.compare-gallery-item--belt-5 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/belt/img-db-gallery-5-mobile@2x.jpg?v=v22")
+}
+
+@media(min-width: 768px) {
+  .compare-gallery-item--belt-1 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/belt/img-db-gallery-1@2x.jpg?v=v22")
+  }
+
+  .compare-gallery-item--belt-2 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/belt/202206/img-db-gallery-2@2x.jpg?v=v22")
+  }
+
+  .compare-gallery-item--belt-3 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/belt/img-db-gallery-3@2x.jpg?v=v22")
+  }
+
+  .compare-gallery-item--belt-4 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/belt/img-db-gallery-4@2x.jpg?v=v22")
+  }
+
+  .compare-gallery-item--belt-5 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/belt/img-db-gallery-5@2x.jpg?v=v22")
+  }
+}
+
+.compare-gallery-item--keyless-1 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/keyless/img-db-gallery-1-mobile@2x.jpg?v=v22")
+}
+
+.compare-gallery-item--keyless-2 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/keyless/img-db-gallery-2-mobile@2x.jpg?v=v22")
+}
+
+.compare-gallery-item--keyless-3 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/keyless/img-db-gallery-3-mobile@2x.jpg?v=v22")
+}
+
+.compare-gallery-item--keyless-4 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/keyless/img-db-gallery-4-mobile@2x.jpg?v=v22")
+}
+
+.compare-gallery-item--keyless-5 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/keyless/img-db-gallery-5-mobile@2x.jpg?v=v22")
+}
+
+@media(min-width: 768px) {
+  .compare-gallery-item--keyless-1 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/keyless/img-db-gallery-1@2x.jpg?v=v22")
+  }
+
+  .compare-gallery-item--keyless-2 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/keyless/img-db-gallery-2@2x.jpg?v=v22")
+  }
+
+  .compare-gallery-item--keyless-3 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/keyless/img-db-gallery-3@2x.jpg?v=v22")
+  }
+
+  .compare-gallery-item--keyless-4 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/keyless/img-db-gallery-4@2x.jpg?v=v22")
+  }
+
+  .compare-gallery-item--keyless-5 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/keyless/img-db-gallery-5@2x.jpg?v=v22")
+  }
+}
+
+.compare-gallery-item--basic-1 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/basic/img-db-gallery-1-mobile@2x.jpg?v=v22")
+}
+
+.compare-gallery-item--basic-2 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/basic/img-db-gallery-2-mobile@2x.jpg?v=v22")
+}
+
+.compare-gallery-item--basic-3 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/basic/img-db-gallery-3-mobile@2x.jpg?v=v22")
+}
+
+.compare-gallery-item--basic-4 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/basic/img-db-gallery-4-mobile@2x.jpg?v=v22")
+}
+
+.compare-gallery-item--basic-5 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/basic/img-db-gallery-5-mobile@2x.jpg?v=v22")
+}
+
+@media(min-width: 768px) {
+  .compare-gallery-item--basic-1 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/basic/img-db-gallery-1@2x.jpg?v=v22")
+  }
+
+  .compare-gallery-item--basic-2 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/basic/img-db-gallery-2@2x.jpg?v=v22")
+  }
+
+  .compare-gallery-item--basic-3 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/basic/img-db-gallery-3@2x.jpg?v=v22")
+  }
+
+  .compare-gallery-item--basic-4 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/basic/img-db-gallery-4@2x.jpg?v=v22")
+  }
+
+  .compare-gallery-item--basic-5 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/compare/basic/img-db-gallery-5@2x.jpg?v=v22")
+  }
+}
+
+.compare-gallery-item--limited-edition-1 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/purplesoul/compare/img-db-gallery-1-mobile@2x.jpg?v=v22")
+}
+
+.compare-gallery-item--limited-edition-2 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/purplesoul/compare/img-db-gallery-2-mobile@2x.jpg?v=v22")
+}
+
+.compare-gallery-item--limited-edition-3 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/purplesoul/compare/img-db-gallery-3-mobile@2x.jpg?v=v22")
+}
+
+.compare-gallery-item--limited-edition-4 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/purplesoul/compare/img-db-gallery-4-mobile@2x.jpg?v=v22")
+}
+
+.compare-gallery-item--limited-edition-5 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/purplesoul/compare/img-db-gallery-5-mobile@2x.jpg?v=v22")
+}
+
+@media(min-width: 768px) {
+  .compare-gallery-item--limited-edition-1 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/purplesoul/compare/img-db-gallery-1@2x.jpg?v=v22")
+  }
+
+  .compare-gallery-item--limited-edition-2 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/purplesoul/compare/img-db-gallery-2@2x.jpg?v=v22")
+  }
+
+  .compare-gallery-item--limited-edition-3 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/purplesoul/compare/img-db-gallery-3@2x.jpg?v=v22")
+  }
+
+  .compare-gallery-item--limited-edition-4 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/purplesoul/compare/img-db-gallery-4@2x.jpg?v=v22")
+  }
+
+  .compare-gallery-item--limited-edition-5 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/purplesoul/compare/img-db-gallery-5@2x.jpg?v=v22")
+  }
+}
+
+.section-promo {
+  --promo-link-color: #ffffff;
+  --promo-copy-color: #ffffff;
+  padding: 48px 0
+}
+
+.image-promo {
+  height: 400px
+}
+
+.image-promo--latest {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/promo/202206/img-series-promotion-banner-mobile@2x.jpg?v=v22")
+}
+
+@media(min-width: 992px) {
+  .image-promo--latest {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/promo/202206/img-series-promotion-banner@2x.jpg?v=v22")
+  }
+}
+
+.typography-modal-copy {
+  color: #57595c
+}
+
+.modal-content-spacer {
+  height: 24px
+}
+
+.section-hero {
+  --kv-height: calc(var(--viewport-height) - var(--local-nav-height) - var(--nav-height));
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to bottom, rgba(200, 221, 235, 0.85), #c8ddeb);
+  height: var(--kv-height, 440px);
+  min-height: 440px
+}
+
+@media(min-width: 576px) {
+  .section-hero {
+    height: 700px
+  }
+}
+
+@media(min-width: 768px) {
+  .section-hero {
+    height: calc(100vh - 150px);
+    min-height: 560px
+  }
+}
+
+@media(min-width: 992px) {
+  .section-hero {
+    height: calc(100vh - 120px);
+    min-height: 700px;
+    max-height: initial
+  }
+}
+
+.hero-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 1
+}
+
+.hero-scooters {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 528px;
+  height: 420px;
+  margin: -146px 0 0 -286px;
+  z-index: 3;
+  pointer-events: none
+}
+
+@media(min-width: 576px) {
+  .hero-scooters {
+    margin: -234px 0 0 -428px;
+    width: 792px;
+    height: 630px
+  }
+}
+
+@media(min-width: 768px) {
+  .hero-scooters {
+    margin: -220px 0 0 -380px;
+    width: 645px;
+    height: 520px
+  }
+}
+
+@media(min-width: 992px) {
+  .hero-scooters {
+    margin: -280px 0 0 -490px;
+    width: 846px;
+    height: 682px
+  }
+}
+
+@media(min-width: 1260px) {
+  .hero-scooters {
+    margin: -304px 0 0 -540px;
+    width: 942px;
+    height: 760px
+  }
+}
+
+@media(min-width: 1440px) {
+  .hero-scooters {
+    margin: -304px 0 0 -540px
+  }
+}
+
+@media(min-width: 1440px)and (min-height: 1000px) {
+  .hero-scooters {
+    margin: -360px 0 0 -600px;
+    width: 1032px;
+    height: 832px
+  }
+}
+
+.hero-scooter {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: inherit;
+  height: inherit;
+  opacity: .001;
+  background: center no-repeat;
+  background-size: 528px 420px
+}
+
+.hero-scooter.active {
+  z-index: 10
+}
+
+.inview .hero-scooter {
+  will-change: transform, opacity
+}
+
+.hero-scooter--hazel {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/classic/hero/img-kv-scooter-hazel-mobile@2x.png?v=v22")
+}
+
+.hero-scooter--blue {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/classic/hero/img-kv-scooter-blue-mobile@2x.png?v=v22")
+}
+
+.hero-scooter--purple-soul {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/classic/hero/my23/img-kv-scooter-purplesoul-mobile@3x.png?v=v22")
+}
+
+.hero-scooter--grey {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/classic/hero/img-kv-scooter-grey-mobile@2x.png?v=v22")
+}
+
+.hero-scooter--white {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/classic/hero/img-kv-scooter-white-mobile@2x.png?v=v22")
+}
+
+@media(min-width: 576px) {
+  .hero-scooter {
+    background-size: 792px 630px
+  }
+
+  .hero-scooter--hazel {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/classic/hero/img-kv-scooter-hazel-mobile@3x.png?v=v22")
+  }
+
+  .hero-scooter--blue {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/classic/hero/img-kv-scooter-blue-mobile@3x.png?v=v22")
+  }
+
+  .hero-scooter--grey {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/classic/hero/img-kv-scooter-grey-mobile@3x.png?v=v22")
+  }
+
+  .hero-scooter--white {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/classic/hero/img-kv-scooter-white-mobile@3x.png?v=v22")
+  }
+}
+
+@media(min-width: 768px) {
+  .hero-scooter {
+    background-size: 645px 520px
+  }
+
+  .hero-scooter--hazel {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/classic/hero/img-kv-scooter-hazel-desktop@2x.png?v=v22")
+  }
+
+  .hero-scooter--blue {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/classic/hero/img-kv-scooter-blue-desktop@2x.png?v=v22")
+  }
+
+  .hero-scooter--purple-soul {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/classic/hero/my23/img-kv-scooter-purplrsoul-desktop@2x.png?v=v22")
+  }
+
+  .hero-scooter--grey {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/classic/hero/img-kv-scooter-grey-desktop@2x.png?v=v22")
+  }
+
+  .hero-scooter--white {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/classic/hero/img-kv-scooter-white-desktop@2x.png?v=v22")
+  }
+}
+
+@media(min-width: 992px) {
+  .hero-scooter {
+    background-size: 846px 682px
+  }
+}
+
+@media(min-width: 1260px) {
+  .hero-scooter {
+    background-size: 942px 760px
+  }
+}
+
+@media(min-width: 1440px)and (min-height: 1000px) {
+  .hero-scooter {
+    background-size: 1032px 832px
+  }
+}
+
+.hero-viva {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -216px 0 0 -384px;
+  width: 768px;
+  height: 436px;
+  background: center/768px 436px no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/classic/hero/img-kv-lockup-mobile@2x.png?v=v22");
+  z-index: 2;
+  pointer-events: none
+}
+
+@media(max-width: 350px) {
+  .hero-viva {
+    width: 614px;
+    height: 348px;
+    background-size: 614px 348px;
+    margin: -200px 0 0 -307px
+  }
+}
+
+@media(min-width: 576px) {
+  .hero-viva {
+    margin: -336px 0 0 -576px;
+    width: 1152px;
+    height: 654px;
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/classic/hero/img-kv-lockup-mobile@3x.png?v=v22");
+    background-size: 1152px 654px
+  }
+}
+
+@media(min-width: 768px) {
+  .hero-viva {
+    margin: -228px 0 0 -498px;
+    width: 996px;
+    height: 560px;
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/classic/hero/kv-shadow.png?v=v22");
+    background-size: 996px 560px
+  }
+}
+
+@media(min-width: 992px) {
+  .hero-viva {
+    margin: -308px 0 0 -658px;
+    width: 1316px;
+    height: 740px;
+    background-size: 1316px 740px
+  }
+}
+
+@media(min-width: 1260px) {
+  .hero-viva {
+    margin: -400px 0 0 -800px;
+    width: 1600px;
+    height: 900px;
+    background-size: 1600px 900px
+  }
+}
+
+@media(min-width: 1440px)and (min-height: 1000px) {
+  .hero-viva {
+    margin: -480px 0 0 -960px;
+    width: 1920px;
+    height: 1080px;
+    background-size: 1920px 1080px
+  }
+}
+
+.hero-viva svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none
+}
+
+@media(min-width: 768px) {
+  .hero-viva svg {
+    display: block
+  }
+}
+
+.section-slides {
+  position: relative;
+  height: 500px
+}
+
+@media(min-width: 576px) {
+  .section-slides {
+    height: 600px
+  }
+}
+
+@media(min-width: 768px) {
+  .section-slides {
+    height: 700px
+  }
+}
+
+@media(min-width: 992px) {
+  .section-slides {
+    height: 800px
+  }
+}
+
+@media(min-width: 1440px) {
+  .section-slides {
+    height: 1000px
+  }
+}
+
+.section-slides .slides-wrapper {
+  max-width: 100%;
+  height: 100%
+}
+
+.section-slides .slides-triggers {
+  bottom: 32px
+}
+
+@media(min-width: 768px) {
+  .section-slides .slides-triggers {
+    bottom: 8%
+  }
+}
+
+.section-slides .slide-trigger {
+  width: initial;
+  padding: 8px;
+  margin: 0
+}
+
+.section-slides .slide-trigger::before {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%
+}
+
+@media(min-width: 768px) {
+  .section-slides .slide-trigger::before {
+    width: 12px;
+    height: 12px
+  }
+}
+
+.section-slides .cta-button {
+  position: absolute;
+  left: 50%;
+  bottom: 64px;
+  transform: translateX(-50%);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color: #323237;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .0625em;
+  width: 142px;
+  height: 40px;
+  cursor: pointer
+}
+
+.section-slides .cta-button:lang(en) {
+  font-family: var(--font-family-italic);
+  font-weight: 700
+}
+
+.section-slides .cta-button--video::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  margin: 0 8px 0 0;
+  background: center/contain no-repeat url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMiIgaGVpZ2h0PSIyMyIgdmlld0JveD0iMCAwIDIyIDIzIj4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgc3Ryb2tlPSIjMzIzMjM3Ij4KICAgICAgICAgICAgPGNpcmNsZSBjeD0iMTEiIGN5PSIxMSIgcj0iMTAiIHN0cm9rZS13aWR0aD0iMS44MTgiLz4KICAgICAgICAgICAgPHBhdGggZmlsbD0iIzMyMzIzNyIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIuOTA5IiBkPSJNMTEuNjY3IDcuNjY3TDE1LjY2NyAxNSA3LjY2NyAxNXoiIHRyYW5zZm9ybT0icm90YXRlKDkwIDExLjY2NyAxMS4zMzMpIi8+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4KCg==)
+}
+
+@media(min-width: 768px) {
+  .section-slides .cta-button {
+    bottom: 14%;
+    font-size: 16px;
+    width: 192px;
+    height: 44px
+  }
+
+  .section-slides .cta-button--video::before {
+    margin: 0 12px 0 0;
+    width: 20px;
+    height: 20px
+  }
+}
+
+.slide--superfast {
+  background: center/cover no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/slides/superfast/img-video-placeholder-superfast-mobile@2x.jpg?v=v22")
+}
+
+@media(min-width: 768px) {
+  .slide--superfast {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/slides/superfast/img-video-placeholder-superfast@2x.jpg?v=v22")
+  }
+}
+
+.slide--video {
+  background: center/cover no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/slides/video/img-video-bg-0912-mobile@2x.jpg?v=v22")
+}
+
+.slide--video:lang(en) {
+  background: center/cover no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/slides/video/img-video-bg-en-mobile@2x.jpg?v=v22")
+}
+
+@media(min-width: 768px) {
+  .slide--video {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/slides/video/img-video-bg-0912@2x.jpg?v=v22")
+  }
+
+  .slide--video:lang(en) {
+    background: center/cover no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/slides/video/img-video-bg-en@2x.jpg?v=v22")
+  }
+}
+
+.image-sp {
+  margin: 24px 0 0 0
+}
+
+@media(min-width: 768px) {
+  .image-sp {
+    margin: 32px 0 0 0
+  }
+}
+
+.image-sp:first-child {
+  margin: 0
+}
+
+.image-sp::after {
+  content: "";
+  display: block;
+  padding-bottom: 122%
+}
+
+.image-sp--color {
+  background: center/cover url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/slides/superfast/img-superfact-popup-1-mobile@2x.jpg?v=v22")
+}
+
+.image-sp--dashboard {
+  background: center/cover url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/slides/superfast/img-superfact-popup-2-mobile@2x.jpg?v=v22")
+}
+
+.image-sp--id {
+  background: center/cover url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/slides/superfast/img-superfact-popup-3-mobile@2x.jpg?v=v22")
+}
+
+.image-sp--power {
+  background: center/cover url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/slides/superfast/img-superfact-popup-4-mobile@2x.jpg?v=v22")
+}
+
+.image-sp--sport-mode {
+  background: center/cover url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/slides/superfast/img-superfact-popup-5-mobile@2x.jpg?v=v22")
+}
+
+.image-sp--brake-1 {
+  background: center/cover url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/slides/superfast/img-superfact-popup-6-mobile@2x.jpg?v=v22")
+}
+
+.image-sp--brake-2 {
+  background: center/cover url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/slides/superfast/img-superfact-popup-6-2-mobile@2x.jpg?v=v22")
+}
+
+.image-sp-break-group {
+  position: relative
+}
+
+.image-sp-break-group .image-sp--brake-1,
+.image-sp-break-group .image-sp--brake-2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%
+}
+
+@media(min-width: 768px) {
+  .image-sp::after {
+    padding-bottom: 58.25%
+  }
+
+  .image-sp--color {
+    background: center/cover url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/slides/superfast/img-superfact-popup-1@2x.jpg?v=v22")
+  }
+
+  .image-sp--dashboard {
+    background: center/cover url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/slides/superfast/img-superfact-popup-2@2x.jpg?v=v22")
+  }
+
+  .image-sp--id {
+    background: center/cover url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/slides/superfast/img-superfact-popup-3@2x.jpg?v=v22")
+  }
+
+  .image-sp--power {
+    background: center/cover url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/slides/superfast/img-superfact-popup-4@2x.jpg?v=v22")
+  }
+
+  .image-sp--sport-mode {
+    background: center/cover url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/slides/superfast/img-superfact-popup-5@2x.jpg?v=v22")
+  }
+
+  .image-sp--brake-1 {
+    background: center/cover url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/slides/superfast/img-superfact-popup-6@2x.jpg?v=v22")
+  }
+
+  .image-sp--brake-2 {
+    background: center/cover url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/slides/superfast/img-superfact-popup-6-2@2x.jpg?v=v22")
+  }
+}
+
+.section-intro {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden
+}
+
+.intro-icon-group {
+  position: absolute;
+  width: 100%;
+  height: 100%
+}
+
+.intro-icon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: center/auto 100% no-repeat;
+  opacity: 0
+}
+
+.intro-icon.active {
+  opacity: 1
+}
+
+.intro-wrapper {
+  position: relative
+}
+
+.intro-content {
+  font-family: "Graphik", "Noto Sans TC", sans-serif;
+  line-height: 1.28;
+  font-weight: 700;
+  color: rgba(116, 116, 116, .8);
+  box-sizing: border-box
+}
+
+.intro-content:lang(zh) {
+  font-size: 9vw;
+  padding: 64px 30px
+}
+
+@media(min-width: 350px) {
+  .intro-content:lang(zh) {
+    font-size: 30px
+  }
+}
+
+@media(min-width: 576px) {
+  .intro-content:lang(zh) {
+    font-size: 48px;
+    padding: 148px 0
+  }
+}
+
+@media(min-width: 768px) {
+  .intro-content:lang(zh) {
+    font-size: 56px;
+    padding: 170px 0
+  }
+}
+
+@media(min-width: 992px) {
+  .intro-content:lang(zh) {
+    font-size: 80px;
+    padding: 148px 0
+  }
+}
+
+@media(min-width: 1440px) {
+  .intro-content:lang(zh) {
+    font-size: 112px
+  }
+}
+
+.intro-content:lang(en) {
+  font-size: 6vw;
+  padding: 64px 20px;
+  line-height: 1.2
+}
+
+@media(min-width: 350px) {
+  .intro-content:lang(en) {
+    font-size: 26px
+  }
+}
+
+@media(min-width: 576px) {
+  .intro-content:lang(en) {
+    font-size: 40px;
+    padding: 120px 40px
+  }
+}
+
+@media(min-width: 768px) {
+  .intro-content:lang(en) {
+    font-size: 50px;
+    padding: 170px 60px
+  }
+}
+
+@media(min-width: 992px) {
+  .intro-content:lang(en) {
+    font-size: 64px;
+    padding: 148px 60px
+  }
+}
+
+@media(min-width: 1440px) {
+  .intro-content:lang(en) {
+    line-height: 1.05;
+    font-size: 100px
+  }
+}
+
+.intro-content span {
+  display: block
+}
+
+.intro-content--gradient {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%
+}
+
+.intro-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start
+}
+
+.intro-group:not(:only-child):not(:first-child) {
+  margin-top: .65em
+}
+
+.intro-sentence {
+  white-space: nowrap;
+  --intro-progress-1: calc(var(--intro-progress) * 120%);
+  --intro-progress-2: calc(var(--intro-progress) * 100%)
+}
+
+.intro-content--gradient .intro-sentence {
+  -webkit-clip-path: polygon(0 0, var(--intro-progress-1) 0, var(--intro-progress-2) 100%, 0 100%);
+  clip-path: polygon(0 0, var(--intro-progress-1) 0, var(--intro-progress-2) 100%, 0 100%);
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+  text-fill-color: rgba(0, 0, 0, 0);
+  -webkit-background-clip: text;
+  background-image: var(--intro-gradient-image)
+}
+
+.section-ksp {
+  position: relative;
+  --ksp-viewport-height: 100vh
+}
+
+.ksp-duration {
+  height: calc(var(--ksp-viewport-height)*1.6)
+}
+
+.ksp-content-layer {
+  position: sticky;
+  top: 0;
+  height: var(--ksp-viewport-height)
+}
+
+.ksp-buffer {
+  height: calc(var(--ksp-viewport-height)*.3)
+}
+
+.ksp-bg-layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%
+}
+
+.ksp-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: center/cover no-repeat
+}
+
+.ksp-headline {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  line-height: 1.375;
+  color: #fff;
+  text-align: center;
+  font-size: 110px;
+  font-weight: 700;
+  pointer-events: none
+}
+
+.ksp-lockup {
+  --ksp-lockup-y: calc((0.1 - var(--ksp-lockup-progress) * 0.218) * var(--ksp-viewport-height));
+  width: 100%;
+  background: center/contain no-repeat;
+  will-change: transform;
+  transform: translateY(var(--ksp-lockup-y))
+}
+
+.ksp-lockup::before {
+  content: "";
+  display: block;
+  padding-bottom: var(--ksp-lockup-ratio-percent)
+}
+
+.ksp-sticky-scene {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  height: var(--ksp-viewport-height)
+}
+
+.ksp-bubble {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 6%
+}
+
+.ksp-bubble::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%
+}
+
+.ksp-image-wrapper {
+  position: relative;
+  overflow: hidden;
+  left: 0;
+  width: 100%;
+  max-width: 1364px;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none
+}
+
+.ksp-image-wrapper.active {
+  pointer-events: all
+}
+
+.image-ksp {
+  position: relative;
+  background: center/cover no-repeat;
+  border-radius: var(--modal-content-border-radius)
+}
+
+.image-ksp::before {
+  content: "";
+  display: block;
+  padding-bottom: 123.125%
+}
+
+@media(min-width: 768px) {
+  .image-ksp::before {
+    padding-bottom: 58.25%
+  }
+}
+
+.ksp-video-enter-buffer {
+  height: 480px
+}
+
+@media(min-width: 768px) {
+  .ksp-video-enter-buffer {
+    height: 400px
+  }
+}
+
+.ksp-video-duration {
+  height: calc(var(--ksp-viewport-height)*1.1)
+}
+
+.ksp-video-scene {
+  overflow: hidden;
+  --ksp-video-scale: calc(1 + var(--ksp-video-progress) * 0.08);
+  --ksp-video-mask-x: calc(var(--ksp-video-progress) * 8.4%);
+  --ksp-video-mask-y: calc(var(--ksp-video-progress) * 5%);
+  opacity: var(--ksp-video-progress);
+  -webkit-clip-path: inset(var(--ksp-video-mask-y) var(--ksp-video-mask-x) var(--ksp-video-mask-y) var(--ksp-video-mask-x));
+  clip-path: inset(var(--ksp-video-mask-y) var(--ksp-video-mask-x) var(--ksp-video-mask-y) var(--ksp-video-mask-x))
+}
+
+@media(min-width: 768px) {
+  .ksp-video-scene {
+    --ksp-video-scale: calc(1 + var(--ksp-video-progress) * 0.08);
+    --ksp-video-mask-x: calc(var(--ksp-video-progress) * 3.65%);
+    --ksp-video-mask-y: calc(var(--ksp-video-progress) * 6.5%)
+  }
+}
+
+.ksp-video-cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(var(--ksp-video-scale));
+  background: center/cover no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/ksp/img-video-cover.jpg?v=v22")
+}
+
+@media(min-width: 576px) {
+  .ksp-video-cover {
+    background: center/cover no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/ksp/img-video-cover@2x.jpg?v=v22")
+  }
+}
+
+.ksp-video-scene {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none
+}
+
+.ksp-video-scene.active {
+  pointer-events: all
+}
+
+.ksp-video-copy {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center
+}
+
+.ksp-video-lockup {
+  width: 76%;
+  max-width: 100vh;
+  background: center/contain no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/ksp/img-suerfast-squad-lockup.png?v=v22")
+}
+
+@media(min-width: 768px) {
+  .ksp-video-lockup {
+    width: 90%;
+    background: center/contain no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/ksp/img-suerfast-squad-lockup@2x.png?v=v22")
+  }
+}
+
+.ksp-video-lockup::after {
+  content: "";
+  display: block;
+  padding-bottom: 64.8%
+}
+
+.ksp-video-cta-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 100px;
+  border: 2px solid #fff;
+  width: 150px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  white-space: nowrap;
+  letter-spacing: .068em;
+  color: #fff;
+  margin-top: 64px
+}
+
+.ksp-video-cta-button:lang(en) {
+  font-family: "Graphik Italic", "sans-serif";
+  width: 200px
+}
+
+@media(min-width: 768px) {
+  .ksp-video-cta-button:lang(en) {
+    width: 260px
+  }
+}
+
+@media(min-width: 1440px) {
+  .ksp-video-cta-button:lang(en) {
+    width: 310px
+  }
+}
+
+@media(min-width: 768px) {
+  .ksp-video-cta-button {
+    font-size: 18px;
+    width: 200px;
+    height: 48px;
+    margin-top: 32px
+  }
+}
+
+@media(min-width: 1440px) {
+  .ksp-video-cta-button {
+    font-size: 22px;
+    width: 250px;
+    height: 52px;
+    margin-top: 32px
+  }
+}
+
+.typography-ksp-modal-headline {
+  position: absolute;
+  font-size: 20px;
+  left: 50%;
+  bottom: 6%;
+  font-weight: 500;
+  white-space: nowrap;
+  color: #fff;
+  z-index: 3;
+  transform: translateX(-50%)
+}
+
+@media(max-width: 450px) {
+  .typography-ksp-modal-headline:lang(en) {
+    font-size: 4.4vw
+  }
+}
+
+@media(max-width: 450px) {
+  .typography-ksp-modal-headline:lang(zh) {
+    font-size: 4.8vw
+  }
+}
+
+@media(min-width: 768px) {
+  .typography-ksp-modal-headline {
+    transform: none;
+    font-size: 24px;
+    left: 32px;
+    bottom: 28px
+  }
+}
+
+@media(min-width: 992px) {
+  .typography-ksp-modal-headline {
+    left: 40px;
+    bottom: 36px;
+    font-size: 28px
+  }
+}
+
+@media(min-width: 1260px) {
+  .typography-ksp-modal-headline {
+    font-size: 32px;
+    left: 48px;
+    bottom: 44px
+  }
+}
+
+.ksp-modal .modal-content {
+  background: rgba(0, 0, 0, 0)
+}
+
+@media(max-width: 575.98px) {
+  .ksp-modal {
+    --modal-content-border-radius: 24px
+  }
+
+  .ksp-modal .modal-content {
+    min-height: initial;
+    margin: 48px auto;
+    width: 90%
+  }
+
+  .ksp-modal .modal-content-wrapper {
+    display: flex;
+    height: initial;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center
+  }
+}
+
+.section-superfast-hero {
+  --kv-height: calc(var(--viewport-height) - var(--local-nav-height) - var(--nav-height));
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: var(--kv-height, 440px);
+  min-height: 440px;
+  overflow: hidden
+}
+
+@media(min-width: 576px) {
+  .section-superfast-hero {
+    height: 700px
+  }
+}
+
+@media(min-width: 768px) {
+  .section-superfast-hero {
+    height: calc(100vh - 170px);
+    min-height: 560px
+  }
+}
+
+@media(min-width: 992px) {
+  .section-superfast-hero {
+    height: calc(100vh - 120px);
+    min-height: 700px;
+    max-height: initial
+  }
+}
+
+.section-superfast-hero canvas {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  pointer-events: none
+}
+
+.superfast-hero-lockup {
+  position: absolute;
+  bottom: 48px;
+  left: 50%;
+  width: 90%;
+  max-width: 1120px;
+  background: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/hero/lockup.png?v=v22") center/contain no-repeat;
+  transform: translateX(-50%);
+  pointer-events: none
+}
+
+.superfast-hero-lockup::before {
+  content: "";
+  display: block;
+  padding-top: 14.2%
+}
+
+.section-intro {
+  --intro-gradient-image: linear-gradient(45deg, #FF7601, #E10501);
+  background: center/cover no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/intro/img-intro-bg@2x.jpg?v=v22")
+}
+
+.intro-icon--swipe {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/intro/img-icon-super-swipe-it@2x.png?v=v22")
+}
+
+.intro-icon--snap {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/intro/img-icon-super-snap-it@2x.png?v=v22")
+}
+
+.intro-icon--fast {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/intro/img-icon-super-fast@2x.png?v=v22")
+}
+
+.intro-icon--skip {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/intro/img-icon-skip-it@2x.png?v=v22")
+}
+
+.intro-icon--2x {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/intro/img-icon-2x-it@2x.png?v=v22")
+}
+
+.ksp-image-wrapper {
+  max-width: 1420px
+}
+
+.ksp-lockup:lang(zh) {
+  width: 160vh;
+  max-width: 90%;
+  --ksp-lockup-ratio-percent: 26%;
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/ksp/img-mix-font-lockup-ch.svg?v=v22")
+}
+
+.ksp-lockup:lang(en) {
+  width: 160vh;
+  max-width: 90%;
+  --ksp-lockup-ratio-percent: 36%;
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/ksp/img-mix-font-lockup-eng-mobile.svg?v=v22")
+}
+
+@media(min-width: 768px) {
+  .ksp-lockup:lang(en) {
+    --ksp-lockup-ratio-percent: 24.16%;
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/ksp/img-mix-font-lockup-eng.svg?v=v22")
+  }
+}
+
+.image-ksp-scooter {
+  position: relative;
+  width: 150%;
+  flex-shrink: 0;
+  max-width: 800px;
+  background: center/contain no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/ksp/img-ksp-scooter.png?v=v22")
+}
+
+@media(min-width: 768px) {
+  .image-ksp-scooter {
+    width: 100%;
+    max-width: calc(var(--ksp-viewport-height)*1.24);
+    background: center/contain no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/ksp/img-ksp-scooter@2x.png?v=v22")
+  }
+}
+
+.image-ksp-scooter::before {
+  content: "";
+  display: block;
+  padding-bottom: 73.2%
+}
+
+.ksp-bg--lockup {
+  background: linear-gradient(to bottom, #FF7900, #DF0000)
+}
+
+.image-ksp-6-group {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%
+}
+
+.image-ksp-6-group>* {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%
+}
+
+.image-ksp-6-group>*::before {
+  content: none
+}
+
+.image-ksp--ksp-1 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/ksp/img-ksp-popup-1-mobile@2x.jpg?v=v22")
+}
+
+.image-ksp--ksp-2 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/ksp/my23/img-ksp-popup-2-mobile@2x.jpg?v=v22")
+}
+
+.image-ksp--ksp-3 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/ksp/img-ksp-popup-3-mobile@2x.jpg?v=v22")
+}
+
+.image-ksp--ksp-4 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/ksp/img-ksp-popup-4-mobile@2x.jpg?v=v22")
+}
+
+.image-ksp--ksp-5 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/ksp/img-ksp-popup-5-mobile@2x.jpg?v=v22")
+}
+
+.image-ksp--ksp-6-1 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/ksp/img-ksp-popup-6-mobile@2x.jpg?v=v22")
+}
+
+.image-ksp--ksp-6-2 {
+  background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/ksp/img-ksp-popup-6-2-mobile@2x.jpg?v=v22")
+}
+
+@media(min-width: 768px) {
+  .image-ksp--ksp-1 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/ksp/img-ksp-popup-1@2x.jpg?v=v22")
+  }
+
+  .image-ksp--ksp-2 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/ksp/my23/img-ksp-popup-2@2x.jpg?v=v22")
+  }
+
+  .image-ksp--ksp-3 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/ksp/img-ksp-popup-3@2x.jpg?v=v22")
+  }
+
+  .image-ksp--ksp-4 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/ksp/img-ksp-popup-4@2x.jpg?v=v22")
+  }
+
+  .image-ksp--ksp-5 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/ksp/img-ksp-popup-5@2x.jpg?v=v22")
+  }
+
+  .image-ksp--ksp-6-1 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/ksp/img-ksp-popup-6@2x.jpg?v=v22")
+  }
+
+  .image-ksp--ksp-6-2 {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/ksp/img-ksp-popup-6-2@2x.jpg?v=v22")
+  }
+}
+
+.ksp-bg--thunder {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 768px;
+  height: 640px;
+  margin: -320px 0 0 -384px;
+  transform: scale(var(--thunder-scale, 1))
+}
+
+@media(min-width: 768px) {
+  .ksp-bg--thunder {
+    width: 1920px;
+    height: 1080px;
+    margin: -540px 0 0 -960px
+  }
+}
+
+.ksp-bubble {
+  width: 5.7%;
+  background: center/contain no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/ksp/bubble@2x.png?v=v22")
+}
+
+.ksp-bubble--1 {
+  left: 48.8%;
+  top: 13.4%
+}
+
+.ksp-bubble--2 {
+  left: 56.8%;
+  top: 20%
+}
+
+.ksp-bubble--3 {
+  left: 40.7%;
+  top: 46%
+}
+
+.ksp-bubble--4 {
+  left: 69.8%;
+  top: 40.7%
+}
+
+.ksp-bubble--5 {
+  left: 41.4%;
+  top: 69%
+}
+
+.ksp-bubble--6 {
+  left: 72%;
+  top: 69%
+}
+
+.section-superfast-hero {
+  background: center/cover no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/hero/img-kv-background-mobile.jpg?v=v22")
+}
+
+@media(min-width: 768px) {
+  .section-superfast-hero {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/hero/img-kv-background.jpg?v=v22")
+  }
+}
+
+.superfast-hero-en-lockup {
+  --hero-lockup-ratio: 28.2%;
+  position: absolute;
+  width: 92.9%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-48%, 116%);
+  background: center/contain no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/hero/img-kv-lockup-mobile.png?v=v22")
+}
+
+.superfast-hero-en-lockup::before {
+  content: "";
+  display: block;
+  padding-bottom: var(--hero-lockup-ratio)
+}
+
+@media(min-width: 768px) {
+  .superfast-hero-en-lockup {
+    --hero-lockup-ratio: 17%;
+    width: 100%;
+    background: center/contain no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/hero/img-kv-lockup.png?v=v22");
+    transform: translate(-50%, 168%)
+  }
+}
+
+.superfast-hero-scooter {
+  --hero-scooter-ratio: 82.9%;
+  position: absolute;
+  left: 50%;
+  top: 46%;
+  width: 124%;
+  min-width: 380px;
+  max-width: calc(var(--kv-height)*.9);
+  transform: translate(-50%, -50%)
+}
+
+.superfast-hero-scooter::before {
+  content: "";
+  display: block;
+  padding-bottom: var(--hero-scooter-ratio);
+  background: center/contain no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/hero/my23/img-kv-scooter-mobile.png?v=v22")
+}
+
+@media(min-width: 576px) {
+  .superfast-hero-scooter {
+    width: 600px;
+    max-width: initial
+  }
+}
+
+@media(min-width: 768px) {
+  .superfast-hero-scooter {
+    --hero-scooter-ratio: 83.6%;
+    transform: translate(-50%, -52%);
+    width: 540px
+  }
+
+  .superfast-hero-scooter::before {
+    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/mix/superfast/hero/my23/img-kv-scooter.png?v=v22")
+  }
+}
+
+@media(min-width: 992px) {
+  .superfast-hero-scooter {
+    width: 86vh;
+    min-width: 740px;
+    max-width: 960px;
+    top: 50%
+  }
+}
