@@ -1,3 +1,72 @@
+.top_bar_fixed {
+    position: fixed;
+    background: radial-gradient(50% 11102.76% at 43.04% 50%, #DB4931 0%, #ED2025 100%);
+    width: 100%;
+    height: 80px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_top_bar_fixed {
+    text-align: center;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center
+}
+
+.text_top_bar_fixed span:first-child {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    color: #FFFFFF
+}
+
+.text_top_bar_fixed span:last-child {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    text-align: left;
+}
+
+.text_top_bar_fixed span:last-child a {
+    color: #FFFFFF;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.text_top_bar_fixed span:last-child a img {
+    transition: all 0.5s ease;
+    position: relative;
+    right: 0;
+}
+
+
+.text_top_bar_fixed span:last-child a:hover img {
+    right: -10px;
+    transition: all 0.5s ease
+}
+
+.btn-button {
+    padding: 8px 16px !important;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 60px;
+    background: #ED2025;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 20px;
+}
+
 .section-gallery {
     text-align: center;
     padding: 30px 0px;
@@ -118,14 +187,14 @@
 
 .bikes .tab-content .bike-item {
     background-color: rgb(255, 255, 255);
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     border-radius: 20px;
 }
 
 @media (min-width: 1280px) and (max-height: 650px) {
     .bikes .tab-content .bike-item {
-        padding: 10px;
+        padding: 20px;
     }
 }
 
@@ -149,12 +218,14 @@
 
 .bikes .tab-content .bike-item-content .bike-name {
     text-transform: uppercase;
-    font-size: 32px;
-    line-height: 60.24px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 600;
     letter-spacing: -0.96px;
-    margin-bottom: 30px;
+    margin: 20px 0;
     text-align: left;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0.16px;
 }
 
 .bikes .tab-content .bike-item-content .bike-info {
@@ -258,17 +329,18 @@
 #block-newhome-escooter .deposit-buy-now {
     background: #343944;
     border-radius: 50px;
-    padding: 15px;
+    padding: 12px 20px;
     font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 14px;
     text-align: center;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    text-transform: inherit;
     transition: all 0.3s ease-in-out 0s;
     width: calc(50% - 10px);
     max-width: calc(50% - 10px);
     color: rgb(255, 255, 255) !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #block-newhome-escooter .view-detail,
@@ -277,11 +349,9 @@
     border: 1px solid #343944;
     border-radius: 50px;
     font-weight: 700;
-    font-size: 12px;
-    line-height: 15px;
+    font-size: 14px;
     text-align: center;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+    text-transform: inherit;
     color: #343944;
     width: calc(50% - 10px);
     max-width: calc(50% - 10px);
@@ -306,7 +376,7 @@ li {
 .cars-nav .nav-item span {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20.08px;
     letter-spacing: 1.2px;
     display: flex;
@@ -325,9 +395,10 @@ li {
     color: rgb(237, 32, 37);
     font-size: 16px;
     border: 1px solid;
-    padding: 20px 30px;
+    padding: 12px 20px;
     border-radius: 50px;
     background-color: unset !important;
+    line-height: 24px;
 }
 
 .cars-nav .nav-item span:hover {
@@ -372,6 +443,22 @@ li {
     overflow: hidden;
 }
 
+.ggr_form_contact {
+    background: url('../images/bg_form.png') no-repeat;
+    background-size: cover;
+    padding: 125px 0;
+    text-align: center;
+}
+
+.ggr_form_contact .ggr_head h2 {
+    margin-top: 0;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 46px;
+    letter-spacing: 0.54px;
+}
+
 @media (prefers-reduced-motion: reduce) {
     .fade {
         transition: none 0s ease 0s;
@@ -391,8 +478,4 @@ li {
         white-space: nowrap;
         margin-right: 16px;
     }
-}
-
-.section-hero {
-    height: auto;
 }

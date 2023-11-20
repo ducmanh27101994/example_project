@@ -219,8 +219,14 @@
 
 @media (min-width: 992px) {
     :root {
-        --nav-height: 60px
+        --nav-height: 140px
     }
+}
+
+.section-hero,
+.section-hero img {
+    height: calc(100vh - var(--nav-height));
+    object-fit: cover;
 }
 
 .nav-padding-top {
@@ -264,7 +270,7 @@
 }
 
 .ggr-nav-container[data-v-31312d37] {
-    top: var(--locale-switcher-height, 0);
+    top: var(--locale-switcher-height, 80px);
     left: 0;
     position: fixed;
     width: 100%;
@@ -736,7 +742,7 @@
 
     .ggr-nav-item--secondary[data-v-fae6e7a2] .ggr-nav-link {
         font-size: 14px;
-        padding: 0 10px
+        padding: 0 20px
     }
 }
 
@@ -1541,4 +1547,3 @@
     transform: translateY(100%);
     opacity: 0
 }
-

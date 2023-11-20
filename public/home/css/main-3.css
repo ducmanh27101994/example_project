@@ -2323,7 +2323,7 @@ html[dark] .section-sosumi {
   }
 
   .grid-item-eyebrow:lang(en) {
-    font-size: 20px
+    font-size: 16px
   }
 }
 
@@ -2364,13 +2364,13 @@ html[dark] .section-sosumi {
 
 @media(min-width: 992px) {
   .grid-item-copy {
-    font-size: 30px
+    font-size: 26px
   }
 }
 
 @media(min-width: 1260px) {
   .grid-item-copy {
-    font-size: 34px
+    font-size: 28px
   }
 }
 
@@ -3335,7 +3335,7 @@ html[dark] .section-sosumi {
 
 @media(min-width: 1260px) {
   .typography-section-intro {
-    font-size: 56px
+    font-size: 50px
   }
 
   .typography-section-intro+.grid {

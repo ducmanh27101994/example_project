@@ -22,9 +22,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&display=swap" rel="stylesheet">
     <script src="{{ asset('home/js/jquery-3.6.0.min.js') }}" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="{{ asset('home/css/main-64.css') }}">
@@ -37,6 +37,14 @@
 
 <body>
 
+    <div class="top_bar_fixed">
+        <div class="container">
+            <div class="text_top_bar_fixed">
+                <span>⭐️ Sống đậm chất - Live boldly</span>
+                <span><a href="/">Tìm hiểu ngay <img src="{{ asset('home/images/arrow-right.png') }}" alt="arrow-right"></a></span>
+            </div>
+        </div>
+    </div>
 
     <nav data-v-31312d37="" class="ggr-nav ggr-nav--dark ggr-nav--static-bg page-header">
         <style data-v-31312d37="">
@@ -91,10 +99,9 @@
                                     Us</span><!----></a>
                         </li>
                         <li data-v-fae6e7a2="" data-v-31312d37="" class="ggr-nav-item ggr-nav-item--divider gc-desktop-visible"></li>
-                        <li data-v-fae6e7a2="" data-v-31312d37="" class="ggr-nav-item ggr-nav-item--secondary"><a data-v-fae6e7a2="" href="https://investor.gogoro.com/" class="ggr-nav-link nav-list__link--dark"><span data-v-fae6e7a2="">Investor
-                                    Relations</span><!----></a>
+                        <li data-v-fae6e7a2="" data-v-31312d37="" class="ggr-nav-item ggr-nav-item--secondary"><a data-v-fae6e7a2="" href="https://investor.gogoro.com/" class="ggr-nav-link nav-list__link--dark btn btn-button btn-style-acc"><span data-v-fae6e7a2="">Tài Khoản</span><!----></a>
                         </li>
-                        <li data-v-fae6e7a2="" data-v-31312d37="" class="ggr-nav-item ggr-nav-item--secondary"><a data-v-fae6e7a2="" href="/media-center/" class="ggr-nav-link nav-list__link--dark"><span data-v-fae6e7a2="">Media Center</span><!----></a>
+                        <li data-v-fae6e7a2="" data-v-31312d37="" class="ggr-nav-item ggr-nav-item--secondary"><a data-v-fae6e7a2="" href="/media-center/" class="ggr-nav-link nav-list__link--dark"><span data-v-fae6e7a2="">VN</span><!----></a>
                         </li>
                         <!---->
                     </ul>
@@ -690,74 +697,28 @@
 
     </main>
 
-    <nav data-v-2063fe3e="" class="ggr-directory" lang="en-US">
-        <div data-v-2063fe3e="" class="gc-container">
-            <div data-v-2063fe3e="" class="dt-layout">
-                <div data-v-2063fe3e="" class="dt-socials"><a data-v-2063fe3e="" href="/" class="dt-icon dt-icon--logo"></a>
-                    <ul data-v-2063fe3e="" class="dt-social-links">
-                        <li data-v-2063fe3e="" class="dt-social-item"><a data-v-2063fe3e="" href="https://www.facebook.com/gogoro" target="_blank" class="dt-social-link"><i data-v-2063fe3e="" class="dt-icon dt-icon--facebook"></i>Facebook
-                            </a></li>
-                        <li data-v-2063fe3e="" class="dt-social-item"><a data-v-2063fe3e="" href="https://www.youtube.com/channel/UChbmd1freKXd0VY0Qi-ibZg" target="_blank" class="dt-social-link"><i data-v-2063fe3e="" class="dt-icon dt-icon--youtube"></i>Youtube
-                            </a></li>
-                        <li data-v-2063fe3e="" class="dt-social-item"><a data-v-2063fe3e="" href="https://twitter.com/WeAreGogoro" target="_blank" class="dt-social-link"><i data-v-2063fe3e="" class="dt-icon dt-icon--twitter"></i>Twitter
-                            </a></li>
-                        <li data-v-2063fe3e="" class="dt-social-item"><a data-v-2063fe3e="" href="https://www.instagram.com/gogoro_taiwan/" target="_blank" class="dt-social-link"><i data-v-2063fe3e="" class="dt-icon dt-icon--instagram"></i>Instagram
-                            </a></li>
-                        <li data-v-2063fe3e="" class="dt-social-item"><a data-v-2063fe3e="" href="https://www.linkedin.com/company/gogoro" target="_blank" class="dt-social-link"><i data-v-2063fe3e="" class="dt-icon dt-icon--linkedin"></i>Linkedin
-                            </a></li>
-                    </ul>
+    <div class="ggr_form_contact">
+        <div class="container">
+            <div class="ggr_wrapper_box_form">
+                <div class="ggr_head">
+                    <h2>Đăng ký nhận thông tin</h2>
+                    <p>Đăng ký nhận thông tin chương trình khuyến mãi, dịch vụ Osakar</p>
                 </div>
-                <div data-v-2063fe3e="" class="dt-sections">
-                    <div data-v-1091f1e9="" data-v-2063fe3e="" class="dt-section">
-                        <div data-v-1091f1e9="" class="dt-section-name">Smart Energy</div>
-                        <ul data-v-1091f1e9="" class="dt-section-links">
-                            <li data-v-1091f1e9="" class="dt-section-item"><a data-v-1091f1e9="" href="/gogoro-network/" class="dt-section-link">Swap &amp; Go</a></li>
-                        </ul>
+                <div class="ggr_form">
+                    <div class="ggr_form_input">
+                        <input type="text" class="form-control my-text-input" id="email" placeholder="Nhập email của bạn" name="email" />
+                        <button type="button" class="btn btn-button btn-reg-notion">
+                            Đăng ký
+                        </button>
                     </div>
-                    <div data-v-1091f1e9="" data-v-2063fe3e="" class="dt-section">
-                        <div data-v-1091f1e9="" class="dt-section-name">Smart Vehicles</div>
-                        <ul data-v-1091f1e9="" class="dt-section-links">
-                            <li data-v-1091f1e9="" class="dt-section-item"><a data-v-1091f1e9="" href="/smartscooter/supersport/" class="dt-section-link">Gogoro SuperSport</a></li>
-                            <li data-v-1091f1e9="" class="dt-section-item"><a data-v-1091f1e9="" href="/smartscooter/2-series/" class="dt-section-link">Gogoro 2 Series</a></li>
-                            <li data-v-1091f1e9="" class="dt-section-item"><a data-v-1091f1e9="" href="/smartscooter/delight/" class="dt-section-link">Gogoro Delight</a></li>
-                            <li data-v-1091f1e9="" class="dt-section-item"><a data-v-1091f1e9="" href="/smartscooter/viva/xl/" class="dt-section-link">Gogoro VIVA XL</a></li>
-                            <li data-v-1091f1e9="" class="dt-section-item"><a data-v-1091f1e9="" href="/smartscooter/viva/mix/" class="dt-section-link">Gogoro VIVA MIX</a></li>
-                            <li data-v-1091f1e9="" class="dt-section-item"><a data-v-1091f1e9="" href="/smartscooter/viva/" class="dt-section-link">Gogoro VIVA</a></li>
-                            <li data-v-1091f1e9="" class="dt-section-item"><a data-v-1091f1e9="" href="/smartscooter/s1/" class="dt-section-link">Gogoro S1</a></li>
-                            <li data-v-1091f1e9="" class="dt-section-item"><a data-v-1091f1e9="" href="/software/" class="dt-section-link">iQ System®</a></li>
-                            <li data-v-1091f1e9="" class="dt-section-item"><a data-v-1091f1e9="" href="/smartscooter/specs/" class="dt-section-link">Compare Specs</a></li>
-                        </ul>
-                    </div>
-                    <div data-v-1091f1e9="" data-v-2063fe3e="" class="dt-section">
-                        <div data-v-1091f1e9="" class="dt-section-name">GoShare</div>
-                        <ul data-v-1091f1e9="" class="dt-section-links">
-                            <li data-v-1091f1e9="" class="dt-section-item"><a data-v-1091f1e9="" target="_blank" href="https://www.ridegoshare.com/" class="dt-section-link">GoShare</a></li>
-                            <li data-v-1091f1e9="" class="dt-section-item"><a data-v-1091f1e9="" target="_blank" href="https://www.ridegoshare.com/partnerships" class="dt-section-link">GoShare for
-                                    Business</a></li>
-                        </ul>
-                    </div>
-                    <div data-v-1091f1e9="" data-v-2063fe3e="" class="dt-section">
-                        <div data-v-1091f1e9="" class="dt-section-name">About Us</div>
-                        <ul data-v-1091f1e9="" class="dt-section-links">
-                            <li data-v-1091f1e9="" class="dt-section-item"><a data-v-1091f1e9="" href="/about/" class="dt-section-link">Company</a></li>
-                            <li data-v-1091f1e9="" class="dt-section-item"><a data-v-1091f1e9="" href="/news/" class="dt-section-link">News</a></li>
-                            <li data-v-1091f1e9="" class="dt-section-item"><a data-v-1091f1e9="" href="/media-center/" class="dt-section-link">Media Center</a></li>
-                            <li data-v-1091f1e9="" class="dt-section-item"><a data-v-1091f1e9="" href="https://investor.gogoro.com/" class="dt-section-link">Investor Relations</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div data-v-1091f1e9="" data-v-2063fe3e="" class="dt-section">
-                        <div data-v-1091f1e9="" class="dt-section-name">Get Support</div>
-                        <ul data-v-1091f1e9="" class="dt-section-links">
-                            <li data-v-1091f1e9="" class="dt-section-item"><a data-v-1091f1e9="" href="https://support.gogoro.com/en/" class="dt-section-link">Tech Support</a></li>
-                            <li data-v-1091f1e9="" class="dt-section-item"><a data-v-1091f1e9="" href="/media-center/#section-contact" class="dt-section-link">Contact Us</a></li>
-                            <li data-v-1091f1e9="" class="dt-section-item"><a data-v-1091f1e9="" href="https://support.gogoro.com/en/faq/" class="dt-section-link">FAQ</a></li>
-                        </ul>
-                    </div>
+                </div>
+                <div class="ggr_note">
+                    <p>Bằng cách đăng ký, Quý khách xác nhận đã đọc, hiểu và đồng ý với <strong>Chính sách Quyền riêng tư</strong> của Osakar</p>
                 </div>
             </div>
         </div>
-    </nav>
+    </div>
+
     <footer data-v-194808ca="" class="ggr-footer">
         <div data-v-194808ca="" class="gc-container">
             <div data-v-194808ca="" class="ggr-footer-flex">
