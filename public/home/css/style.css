@@ -82,6 +82,11 @@ ul.language_choose li {
 
 ul.language_choose li a {
     color: #343944;
+    cursor: pointer;
+}
+
+ul.language_choose li a:hover {
+    color: #ED2025;
 }
 
 .btn-button {
