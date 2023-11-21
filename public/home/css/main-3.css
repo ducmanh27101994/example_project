@@ -1520,7 +1520,8 @@ html[dark] .section-sosumi {
   font-weight: 500;
   color: #ED2025;
   font-size: 14px;
-  line-height: 1.11
+  line-height: 1.11;
+  gap: 7px;
 }
 
 
@@ -3204,14 +3205,14 @@ html[dark] .section-sosumi {
 
 @media(min-width: 992px) {
   .typography-section-headline {
-    font-size: 48px;
+    font-size: 29px;
     letter-spacing: -0.012em
   }
 }
 
 @media(min-width: 1260px) {
   .typography-section-headline {
-    font-size: 56px
+    font-size: 36px
   }
 }
 
@@ -3289,13 +3290,13 @@ html[dark] .section-sosumi {
 
 @media(min-width: 992px) {
   .section-content {
-    padding: 136px 0
+    padding: 136px 0 80px
   }
 }
 
 @media(min-width: 1260px) {
   .section-content {
-    padding: 160px 0
+    padding: 160px 0 100px
   }
 }
 

@@ -1206,13 +1206,13 @@
     position: relative;
     font-size: 14px;
     padding: 30px 0;
-    background-color: #323237
+    background-color: #1A202C
 }
 
 @media (min-width: 992px) {
     .ggr-footer[data-v-194808ca] {
         font-size: 13px;
-        padding: 0
+        padding: 60px 0 0 0
     }
 }
 
@@ -1231,7 +1231,7 @@
 
 .legal-copyright[data-v-194808ca] {
     margin-bottom: 18px;
-    color: #888
+    color: #80838A
 }
 
 @media (min-width: 544px) {
@@ -1360,7 +1360,9 @@
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
-    flex-direction: column
+    flex-direction: column;
+    border-top: 1px solid #4D515B;
+    padding-top: 25px;
 }
 
 @media (min-width: 544px) {
@@ -1383,23 +1385,22 @@
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
-        height: 64px
+        padding-bottom: 20px;
     }
 }
 
 .gdpr[data-v-7e7da536] {
     position: fixed;
-    font-family: var(--font-family-base);
     left: 0;
     width: 100%;
     bottom: 0;
-    background-color: rgba(18, 18, 21, .95);
+    background-color: rgba(255, 255, 255, .95);
     border-top: 1px solid hsla(0, 0%, 100%, .15);
     z-index: 9999
 }
 
 .gdpr-message[data-v-7e7da536] {
-    color: #fff;
+    color: #000;
     font-size: 14px;
     margin: 0 0 10px;
     text-align: center;
@@ -1409,7 +1410,7 @@
 
 .gdpr-message a[data-v-7e7da536] {
     font-weight: 600;
-    color: #fff;
+    color: #000;
     display: inline-block;
     text-decoration: underline
 }
@@ -1436,21 +1437,21 @@
 }
 
 .gdpr-action[data-v-7e7da536] {
-    padding: 10px;
+    padding: 8px 36px;
     display: block;
-    font-size: 16px;
-    font-family: Graphik Italic, sans-serif;
+    font-size: 14px;
     font-weight: 800;
     background: none;
-    color: #fff;
-    border: none;
+    color: #000;
     letter-spacing: 1.1px;
     text-transform: uppercase;
-    cursor: pointer
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 60px;
 }
 
 .gdpr-action[data-v-7e7da536]:hover {
-    color: #fff
+    color: #000
 }
 
 .gdpr-action[data-v-7e7da536]:focus {
@@ -1463,18 +1464,19 @@
 
 .gdpr-action--accept[data-v-7e7da536],
 .gdpr-action--accept[data-v-7e7da536]:hover {
-    color: #1088ff
+    color: #fff;
+    background: #ED2025;
 }
 
 @media (min-width: 992px) {
     .gdpr-action[data-v-7e7da536] {
-        font-size: 18px
+        font-size: 14px;
     }
 }
 
 @media (min-width: 1200px) {
     .gdpr-action[data-v-7e7da536] {
-        font-size: 20px
+        font-size: 14px;
     }
 }
 
@@ -1496,7 +1498,7 @@
     flex-direction: column;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between
+    justify-content: center
 }
 
 @media (min-width: 544px) {
