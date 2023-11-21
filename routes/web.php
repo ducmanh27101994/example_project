@@ -17,6 +17,8 @@ Route::prefix('/template')->group(function () {
     Route::get('/', 'App\Http\Controllers\TemplateController@homepage');
 });
 
+Route::get('', 'App\Http\Controllers\HomePageController@indexHomePage');
+
 
 Route::get('/login', 'App\Http\Controllers\Admin\UserController@login')->name('admin.login');
 Route::post('/login', 'App\Http\Controllers\Admin\UserController@employee_login')->name('admin.submit.login');

@@ -63,7 +63,6 @@ class ConfigService
         if ($request->banner_images) {
             $banner_images = $this->uploadService->upload_param($request->banner_images);
         }
-
         if ($request->image_icon_right) {
             $image_icon_right = $this->uploadService->upload_param($request->image_icon_right);
         }
@@ -95,7 +94,6 @@ class ConfigService
         if ($request->favicon_image) {
             $favicon_image = $this->uploadService->upload_param($request->favicon_image);
         }
-
         $data = [
             'banner_images' => $banner_images ?? $dataOld->banner_images,
             'image_icon_right' => $image_icon_right ?? $dataOld->image_icon_right,
