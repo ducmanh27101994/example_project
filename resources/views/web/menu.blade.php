@@ -57,10 +57,10 @@
                                 <span class="name_language">Tiếng Việt</span>
                                 <ul class="language_choose">
                                     <li>
-                                        <a href="#" class="flag_link eng" data-lang="en">Tiếng Anh</a>
+                                        <a class="flag_link eng" data-lang="en">Tiếng Anh</a>
                                     </li>
                                     <li>
-                                        <a href="#" class="flag_link vi" data-lang="vi">Tiếng Việt</a>
+                                        <a class="flag_link vi" data-lang="vi">Tiếng Việt</a>
                                     </li>
                                 </ul>
 
