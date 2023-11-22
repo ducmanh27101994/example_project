@@ -36,15 +36,15 @@
 </head>
 
 <body>
-    @if(request()->is('template'))
+    @if(request()->is('/'))
     <header id="header" class="header sticky-jump">
-        @include('/web/topbar')
-        @include('/web/modal')
+        @include('/web/skinpart/topbar')
+        @include('/web/skinpart/modal')
     </header>
     @endif
-    @include('/web/menu')
+    @include('/web/skinpart/menu')
     @yield('content')
-    @include('/web/footer')
+    @include('/web/skinpart/footer')
 
     <link rel="stylesheet" href="{{ asset('home/css/aos.css') }}">
     <script src="{{ asset('home/js/aos.js') }}"></script>

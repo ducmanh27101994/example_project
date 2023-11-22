@@ -13,8 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::prefix('/template')->group(function () {
-    Route::get('/', 'App\Http\Controllers\TemplateController@homepage');
+Route::prefix('/')->group(function () {
+    Route::get('/lien-he', 'App\Http\Controllers\TemplateController@contact');
+    Route::get('/account/login', 'App\Http\Controllers\TemplateController@login');
+    Route::get('/account/register', 'App\Http\Controllers\TemplateController@register');
 });
 
 Route::get('', 'App\Http\Controllers\HomePageController@indexHomePage');
@@ -96,7 +98,5 @@ Route::group(['middleware' => 'auth_admin'], function () {
         Route::post('/createStore', 'App\Http\Controllers\Admin\StoreController@submitStore')->name('admin.submitStore');
         Route::get('/editStore/{id}', 'App\Http\Controllers\Admin\StoreController@editStore')->name('admin.editStore');
         Route::post('/editStore/{id}', 'App\Http\Controllers\Admin\StoreController@submitEditStore')->name('admin.submit.editStore');
-
-
     });
 });

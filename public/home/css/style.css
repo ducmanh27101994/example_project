@@ -668,6 +668,141 @@ li {
     padding-left: 20px;
 }
 
+.page-input-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.wrapper_input_fields {
+    max-width: 364px;
+    width: 100%;
+}
+
+.wrapper_input_fields h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.wrapper_input_fields .group_input {
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper_input_fields .group_input .form_ipnput {
+    margin-bottom: 12px;
+}
+
+.wrapper_input_fields .group_input .form_ipnput .input-authen {
+    box-shadow: unset;
+    height: 48px;
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #CCCDD0;
+    background: #FFF;
+}
+
+.wrapper_input_fields .group_input .forget_pass {
+    text-align: right;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: #80838A;
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
+.wrapper_input_fields .group_input .box_btn-button {
+    width: 100%;
+    background: transparent;
+    position: relative;
+}
+
+.wrapper_input_fields .group_input .box_btn-button .btn-login {
+    background: #CCCDD0;
+    width: -webkit-fill-available;
+    color: #999CA1;
+    margin-bottom: 36px;
+    padding: 12px 20px !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.wrapper_input_fields .group_input .box_btn-button .btn-login::after {
+    content: '';
+    width: 100%;
+    height: 0px;
+    background: #ED2025;
+    position: absolute;
+    top: -11%;
+    transition: 0.5s ease;
+    left: 0;
+}
+
+.wrapper_input_fields .group_input .box_btn-button .btn-login::before {
+    content: '';
+    width: 100%;
+    height: 0px;
+    background: #ED2025;
+    position: absolute;
+    top: 100%;
+    transition: 0.5s ease;
+    left: 0;
+}
+
+.wrapper_input_fields .group_input .box_btn-button .btn-login:hover::after {
+    height: 45px;
+    transition: 0.5s ease;
+}
+
+.wrapper_input_fields .group_input .box_btn-button .btn-login:hover::before {
+    top: 50%;
+    height: 90px;
+    transition: 0.5s ease;
+
+}
+
+.wrapper_input_fields .group_input .box_btn-button .btn-login .text {
+    position: relative;
+    z-index: 9;
+}
+
+.wrapper_input_fields .group_input .box_btn-button .btn-login:hover .text {
+    color: #fff;
+}
+
+.wrapper_input_fields .group_input .none_account_box {
+    text-align: center;
+    position: relative;
+    padding-top: 16px;
+}
+
+.wrapper_input_fields .group_input .none_account_box::before {
+    content: '';
+    width: 124px;
+    height: 1px;
+    background-color: #CCCDD0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+}
+
+.wrapper_input_fields .group_input .none_account_box p {
+    color: #80838A;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.wrapper_input_fields .group_input .none_account_box p strong {
+    color: #ED2025;
+}
+
 @media (prefers-reduced-motion: reduce) {
     .fade {
         transition: none 0s ease 0s;
