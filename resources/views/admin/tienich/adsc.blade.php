@@ -14,7 +14,7 @@
                             Quản lý quảng cáo</i></h4>
                     <div class="ui-widget-content ui-corner-top ui-corner-bottom">
                         <div id="toolbox">
-
+                            <a class="button" href="{{route('admin.createBannerAds')}}">Thêm</a>
                             <div style="float: right; margin-right: 10px;" class="toolbox-content">
 
                                 <table class="toolbar">
@@ -49,6 +49,8 @@
                                             </th>
                                             <th class="title">Tiêu đề
                                             </th>
+                                            <th class="title">Code
+                                            </th>
                                             <th style="text-align:center;" width="8%" class="title">Trạng thái
                                             </th>
                                             <th width="120px" style="text-align: center;" class="title">Ngày tạo
@@ -75,6 +77,10 @@
                                                     <td>
                                                         <a id="LinkButton1" title="Sửa"
                                                            >{{$item->title}}</a>
+                                                    </td>
+                                                    <td>
+                                                        <a id="LinkButton1" title="Sửa"
+                                                        >{{$item->code_ads}}</a>
                                                     </td>
 
                                                     <td align="center">

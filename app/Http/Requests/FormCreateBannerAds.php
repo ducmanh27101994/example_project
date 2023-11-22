@@ -27,8 +27,6 @@ class FormCreateBannerAds extends FormRequest
     {
         return [
             'title' => 'required',
-            'code_ads' => 'required|unique:banner_ads',
-
         ];
     }
 
@@ -37,7 +35,6 @@ class FormCreateBannerAds extends FormRequest
         return [
             "title.required" => 'Tiêu đề không được để trống',
             "code_ads.required" => 'Mã banner ads không được để trống',
-            "code_ads.unique" => 'Mã banner ads đã tồn tại',
         ];
 
     }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateTableConfigImages extends Migration
+class CreateBannerAds extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,13 @@ class CreateTableConfigImages extends Migration
      */
     public function up()
     {
-        Schema::create('table_config_images', function (Blueprint $table) {
+        Schema::create('banner_ads', function (Blueprint $table) {
             $table->id();
-            $table->string('banner_images')->nullable();
-            $table->string('image_icon_right')->nullable();
-            $table->string('favicon_image')->nullable();
-            $table->longText('footer_content')->nullable();
+            $table->string('image_banner')->nullable();
+            $table->string('status')->nullable();
+            $table->string('title')->nullable();
+            $table->string('code_ads')->nullable();
+            $table->longText('desc')->nullable();
             $table->timestamps();
         });
     }
@@ -30,6 +31,6 @@ class CreateTableConfigImages extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('table_config_images');
+        Schema::dropIfExists('banner_ads');
     }
 }

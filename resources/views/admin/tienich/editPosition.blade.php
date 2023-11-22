@@ -118,9 +118,9 @@
                                                                 <label for="txtuser">Mô tả</label>
                                                             </td>
                                                             <td>
-                                                            <textarea name="desc"
-                                                                      rows="2" cols="20" id="txt_mota" class="inputbox"
-                                                                      style="height:80px;width:500px;">{{!empty(old('desc')) ? old('desc') : $banner->desc}}</textarea>
+                                                            <textarea name="desc" id="desc"
+                                                                      rows="2" cols="50" id="txt_mota" class="inputbox"
+                                                                      style="height:80px;width:500px;">{!! $banner->desc !!}</textarea>
                                                                 <a href="#" class="tooltip">
                                                                     <img src="{{ asset('images/help-icon.png') }}">
                                                                     <span><b>Mô tả quảng cáo</b><br>
@@ -184,4 +184,15 @@
 
         </div>
     </form>
+
+    <script>
+        CKEDITOR.replace('desc', {
+            filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+            filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+            filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+            filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+            filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+            filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}'
+        });
+    </script>
 @endsection
