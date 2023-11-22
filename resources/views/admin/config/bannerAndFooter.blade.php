@@ -147,8 +147,8 @@
                                                 </a>
                                             </td>
                                             <td>
-                                                <textarea name="footer_content" rows="2" cols="20"
-                                                          id="txtcontent">{{$configImages->footer_content}}</textarea>
+                                                <textarea name="footer_content" id="footer_content" cols="50"
+                                                          rows="30">{{$configImages->footer_content}}</textarea>
                                             </td>
                                         </tr>
                                         </tbody>
@@ -163,4 +163,15 @@
             </div>
         </div>
     </form>
+
+    <script>
+        CKEDITOR.replace('footer_content', {
+            filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+            filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+            filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+            filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+            filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+            filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}'
+        });
+    </script>
 @endsection

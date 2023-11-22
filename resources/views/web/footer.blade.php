@@ -8,10 +8,9 @@
                             <img src="{{ asset('home/images/logo.png') }}" alt="logo">
                         </div>
                         <div class="text_infor">
-                            <h2>CÔNG TY TNHH SẢN XUẤT PHỤ TÙNG XE MÁY ĐỨC MINH</h2>
-                            <p>Địa chỉ: 315 Phố Huế, P. Phố Huế, Q. Hai Bà Trưng, TP. Hà Nội, Việt Nam</p>
-                            <p>Hotline: 098 644 6868</p>
-                            <p>Email: support@osakarvn.com</p>
+                            @if(isset($table_config_images->footer_content))
+                                {!! $table_config_images->footer_content !!}
+                            @endif
                         </div>
                         <div class="social">
                             <div class="item_social">
