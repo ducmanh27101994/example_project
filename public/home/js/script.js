@@ -118,6 +118,54 @@ $(document).ready(function () {
         $('.language_choose').toggle();
     });
 
+    $("#pwd_account").change(function () {
+        if ($(this).val().length >= 8) {
+            $('.min-8-character').css('color', '#04AA6D')
+        } else {
+            $('.min-8-character').css('color', '#ED2025')
+        }
+        if (containsNumberOrSpecialChar($(this).val())) {
+            $('.one-number--special').css('color', '#04AA6D')
+        } else {
+            $('.one-number--special').css('color', '#ED2025')
+        }
+    });
+
+    $('.form_ipnput .icon').click(function () {
+        if ($(this).prev().prop("type") === "text") {
+            $(this).removeClass('show_pass');
+            $(this).prev().attr("type", "password")
+        }
+        else {
+            $(this).addClass('show_pass');
+            $(this).prev().attr("type", "text")
+        }
+    });
+
+    $(".show").on("click", function () {
+        $(".mask").addClass("active");
+        $(".modal_form").addClass("active");
+    });
+
+    // Function for close the Modal
+
+    function closeModal() {
+        $(".mask").removeClass("active");
+        $(".modal_form").removeClass("active");
+    }
+
+    // Call the closeModal function on the clicks/keyboard
+
+    $(".close, .mask").on("click", function () {
+        closeModal();
+    });
+
+    $(document).keyup(function (e) {
+        if (e.keyCode == 27) {
+            closeModal();
+        }
+    });
+
     if ($('.top_bar_fixed').length) {
         var scrollTrigger = 100, // px
             headerfix = function () {
@@ -141,3 +189,9 @@ $(document).ready(function () {
     }
 
 })
+
+function containsNumberOrSpecialChar(inputString) {
+    var regex = /[0-9!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]/; // Có thể thay đổi regex tùy ý
+
+    return regex.test(inputString);
+}

@@ -692,6 +692,7 @@ li {
 
 .wrapper_input_fields .group_input .form_ipnput {
     margin-bottom: 12px;
+    position: relative;
 }
 
 .wrapper_input_fields .group_input .form_ipnput .input-authen {
@@ -701,6 +702,20 @@ li {
     border-radius: 8px;
     border: 1px solid #CCCDD0;
     background: #FFF;
+}
+
+.wrapper_input_fields .group_input .form_ipnput .icon {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.wrapper_input_fields .group_input .form_ipnput .icon.show_pass .fa::before {
+    content: "\f070" !important;
 }
 
 .wrapper_input_fields .group_input .forget_pass {
@@ -801,6 +816,61 @@ li {
 
 .wrapper_input_fields .group_input .none_account_box p strong {
     color: #ED2025;
+}
+
+.condition_pwd h3 {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18px;
+    color: #343944;
+    margin-bottom: 8;
+}
+
+.condition_pwd ul {
+    margin-bottom: 20px;
+}
+
+.condition_pwd ul li {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    color: #343944;
+    padding-bottom: 5px;
+}
+
+.condition_pwd .policy {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    color: #343944;
+    margin-bottom: 24px;
+}
+
+.modal_form_content img {
+    margin: auto;
+}
+
+.modal_form_content h2 {
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: 0.28px;
+    color: #343944;
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.modal_form_content p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    color: #343944;
+    margin-bottom: 16px;
 }
 
 @media (prefers-reduced-motion: reduce) {
