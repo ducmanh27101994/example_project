@@ -85,11 +85,7 @@
 
                                     <th width="2%" class="title">#</th>
 
-                                    <th class="title">Họ Tên
-                                    </th>
                                     <th width="200" class="title">Email
-                                    </th>
-                                    <th width="200" class="title">Số điện thoại
                                     </th>
                                     <th style="text-align: center;" width="10%" nowrap="nowrap" class="title">Ngày gửi
                                     </th>
@@ -113,12 +109,7 @@
 
                                             <td align="center">{{++$key}}</td>
 
-                                            <td>
-                                                <a id="LinkButton1" title="Sửa"
-                                                   href="">{{$value->full_name}}</a>
-                                            </td>
                                             <td align="left">{{$value->email}}</td>
-                                            <td align="left">{{$value->phone}}</td>
                                             <td align="center">{{$value->created_at}}</td>
                                             <td align="center">
                                                 <a id="LinkButton2" title="Thay đổi trạng thái"
@@ -134,16 +125,9 @@
                                         </tbody>
                                     @endforeach
                                 @endif
-
-
-
                             </table>
-
                             {{ $contact->links() }}
-
                         </div>
-
-
                     </div>
                     <div class="clr"></div>
                 </div>

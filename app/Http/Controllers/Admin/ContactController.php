@@ -6,6 +6,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\BaseController;
 use App\Http\Repositories\ContactRepository;
+use App\Jobs\SendEmail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -55,6 +56,36 @@ class ContactController extends BaseController
         return redirect()->route('admin.editContact', ['id' => $id]);
 
     }
+
+    public function submitEmailContact(Request  $request) {
+
+        $status = (!empty($request->status) && $request->status == 'on') ? 'process' : 'block';
+
+        $data = [
+            'full_name' => '',
+            'email' => $request->email,
+            'phone' => '',
+            'status' => $status,
+        ];
+        $contact = $this->contactRepository->create($data);
+        if ($contact) {
+
+            $config = DB::table('table_configs')->first();
+            if (!empty($config)) {
+                $message = [
+                    'content' => 'has been created!',
+                ];
+                SendEmail::dispatch($message, [$config->company_email]);
+            }
+
+            toastr()->success('Bạn đã đăng ký email thành công', 'Success');
+            return redirect()->back();
+        }
+    }
+
+
+
+
 
 
 

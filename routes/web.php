@@ -20,7 +20,7 @@ Route::prefix('/')->group(function () {
     Route::get('/about-us', 'App\Http\Controllers\TemplateController@register');
 });
 
-Route::get('', 'App\Http\Controllers\HomePageController@indexHomePage');
+Route::get('', 'App\Http\Controllers\HomePageController@indexHomePage')->name('home.page');
 
 
 Route::get('/login', 'App\Http\Controllers\Admin\UserController@login')->name('admin.login');
@@ -101,3 +101,13 @@ Route::group(['middleware' => 'auth_admin'], function () {
         Route::post('/editStore/{id}', 'App\Http\Controllers\Admin\StoreController@submitEditStore')->name('admin.submit.editStore');
     });
 });
+
+Route::get('/login_customer', 'App\Http\Controllers\Customer\AuthController@indexLogin')->name('customer.login');
+Route::post('/submit_register', 'App\Http\Controllers\Customer\AuthController@registerSubmit')->name('submit.register.customer');
+Route::post('/submitLogin', 'App\Http\Controllers\Customer\AuthController@submitLogin')->name('submit.login.customer');
+Route::get('/logoutCustomer', 'App\Http\Controllers\Customer\AuthController@logoutCustomer')->name('submit.logout.customer');
+Route::post('/indexContactSubmit', 'App\Http\Controllers\Admin\ContactController@submitEmailContact')->name('admin.contact.submit');
+
+
+
+

@@ -5,30 +5,35 @@
     <div class="page-input-form login">
         <div class="wrapper_input_fields">
             <h2>Đăng Nhập</h2>
-            <div class="group_input">
-                <div class="form_ipnput">
-                    <input type="text" class="form-control input-authen" name="name_account" id="name_account" placeholder="Email hoặc số điện thoại" />
-                </div>
-                <div class="form_ipnput">
-                    <input type="password" class="form-control input-authen" name="pwd_account" id="pwd_account" placeholder="Mật khẩu" />
-                    <div class="icon">
-                        <i class="fa fa-eye"></i>
+
+            <form method="post" action="{{route('submit.login.customer')}}">
+                @csrf
+                <div class="group_input">
+                    <div class="form_ipnput">
+                        <input type="email" required class="form-control input-authen" name="email" id="email" placeholder="Email" />
+                    </div>
+                    <div class="form_ipnput">
+                        <input type="password" required class="form-control input-authen" name="password" id="password" placeholder="Mật khẩu" />
+                        <div class="icon">
+                            <i class="fa fa-eye"></i>
+                        </div>
+                    </div>
+                    <div class="forget_pass show">
+                        <span>Quên mật khẩu?</span>
+                    </div>
+                    <div class="box_btn-button">
+                        <button class="btn btn-button btn-login btn_func_query_login" type="submit">
+                            <span class="text">Đăng nhập</span>
+                        </button>
+                    </div>
+                    <div class="none_account_box">
+                        <p>
+                            <span>Bạn chưa có tài khoản?</span><a href="/account/register"><strong> Đăng ký</strong></a>
+                        </p>
                     </div>
                 </div>
-                <div class="forget_pass show">
-                    <span>Quên mật khẩu?</span>
-                </div>
-                <div class="box_btn-button">
-                    <button class="btn btn-button btn-login btn_func_query_login" type="button">
-                        <span class="text">Đăng nhập</span>
-                    </button>
-                </div>
-                <div class="none_account_box">
-                    <p>
-                        <span>Bạn chưa có tài khoản?</span><a href="/account/register"><strong> Đăng ký</strong></a>
-                    </p>
-                </div>
-            </div>
+
+            </form>
         </div>
         <div class="mask" role="dialog"></div>
         <div class="modal_form wrapper_input_fields" role="alert">
