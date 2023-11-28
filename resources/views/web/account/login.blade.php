@@ -77,7 +77,7 @@
             right: 0;
             width: 35px;
             height: 30px;
-            color: #fff;
+            color: #000;
             cursor: pointer;
             border: 0;
         }
