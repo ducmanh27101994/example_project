@@ -108,3 +108,6 @@ Route::post('/submitLogin', 'App\Http\Controllers\Customer\AuthController@submit
 Route::get('/logoutCustomer', 'App\Http\Controllers\Customer\AuthController@logoutCustomer')->name('submit.logout.customer');
 Route::post('/indexContactSubmit', 'App\Http\Controllers\Admin\ContactController@submitEmailContact')->name('admin.contact.submit');
 
+
+
+
