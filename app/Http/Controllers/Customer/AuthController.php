@@ -98,6 +98,7 @@ class AuthController extends BaseController
 
 
         if ($user) {
+            Toastr::success('Đăng ký thành công');
             return view('web.account.login');
         } else {
             return redirect()->back()->withInput();
