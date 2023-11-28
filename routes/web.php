@@ -62,7 +62,6 @@ Route::group(['middleware' => 'auth_admin'], function () {
         Route::get('/indexContact', 'App\Http\Controllers\Admin\ContactController@indexContact')->name('admin.indexContact');
         Route::get('/indexContact/{id}', 'App\Http\Controllers\Admin\ContactController@editContact')->name('admin.editContact');
         Route::post('/indexContact/{id}', 'App\Http\Controllers\Admin\ContactController@submitStatusContact')->name('admin.submit.editContact');
-        Route::post('/indexContactSubmit', 'App\Http\Controllers\Admin\ContactController@submitEmailContact')->name('admin.contact.submit');
 
         Route::get('/indexMap', 'App\Http\Controllers\Admin\SettingController@indexMap')->name('admin.indexMap');
         Route::post('/indexMap', 'App\Http\Controllers\Admin\SettingController@submitConfigMap')->name('admin.submit.indexMap');
@@ -107,4 +106,8 @@ Route::get('/login_customer', 'App\Http\Controllers\Customer\AuthController@inde
 Route::post('/submit_register', 'App\Http\Controllers\Customer\AuthController@registerSubmit')->name('submit.register.customer');
 Route::post('/submitLogin', 'App\Http\Controllers\Customer\AuthController@submitLogin')->name('submit.login.customer');
 Route::get('/logoutCustomer', 'App\Http\Controllers\Customer\AuthController@logoutCustomer')->name('submit.logout.customer');
+Route::post('/indexContactSubmit', 'App\Http\Controllers\Admin\ContactController@submitEmailContact')->name('admin.contact.submit');
+
+
+
 
