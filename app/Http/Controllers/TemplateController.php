@@ -18,4 +18,8 @@ class TemplateController extends BaseController
     {
         return view('web.account.register');
     }
+    public function aboutus()
+    {
+        return view('web.aboutus.abouts');
+    }
 }
