@@ -46,10 +46,6 @@ class HomePageController extends BaseController
 
         $table_menu = DB::table('table_menu')->where('status', '=', 'active')->get();
 
-            ->where('status', '=', 'active')
-            ->where('code_ads', '=', 'pbgn-partner')
-            ->get();
-
         return view('web.skinpart.menu', compact('table_menu'));
     }
 
