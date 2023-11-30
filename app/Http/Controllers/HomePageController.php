@@ -40,7 +40,19 @@ class HomePageController extends BaseController
             ->where('code_ads', '=', 'pbgn-partner')
             ->get();
 
-        return view('web.home.trangchu', compact('table_config_images','table_menu','slide_banner','img_slider','gallery_items','pbgn_partner'));
+        return view('web.home.trangchu', compact('table_config_images','slide_banner','img_slider','gallery_items','pbgn_partner'));
+    }
+
+    public function menu()
+    {
+
+        $table_menu = DB::table('table_menu')->where('status', '=', 'active')->get();
+
+            ->where('status', '=', 'active')
+            ->where('code_ads', '=', 'pbgn-partner')
+            ->get();
+
+        return view('web.skinpart.menu', compact('table_menu'));
     }
 
 }

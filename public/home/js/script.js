@@ -26,18 +26,30 @@ $(document).ready(function () {
     });
 
     $('.tab-buttons-slider span').first().addClass('active');
-    $('.tab-content-slider>div').hide();
-    $('.tab-content-slider>div').first().slideDown();
+    $('.tab-content-slider>div').css({
+        'opacity': '0',
+        'height': '0'
+    });
+    $('.tab-content-slider>div').first().slideDown().css({
+        'opacity': '1',
+        'height': 'auto'
+    });
     $('.tab-buttons-slider span').click(function () {
         $('.tab-buttons-slider span').removeClass('active');
         var thisclass = $(this).attr('class');
         $(this).addClass('active');
         $('.tab-content-slider>div').each(function () {
             if ($(this).hasClass(thisclass)) {
-                $(this).fadeIn(800);
+                $(this).css({
+                    'opacity': '1',
+                    'height': 'auto'
+                });
             }
             else {
-                $(this).hide();
+                $(this).css({
+                    'opacity': '0',
+                    'height': '0'
+                });;
             }
         });
     });
