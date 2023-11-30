@@ -21,7 +21,6 @@ Route::prefix('/')->group(function () {
 });
 
 Route::get('', 'App\Http\Controllers\HomePageController@indexHomePage')->name('home.page');
-Route::get('', 'App\Http\Controllers\HomePageController@menu')->name('home.menu');
 
 
 Route::get('/login', 'App\Http\Controllers\Admin\UserController@login')->name('admin.login');
