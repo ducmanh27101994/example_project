@@ -43,11 +43,9 @@ class HomePageController extends BaseController
         return view('web.home.trangchu', compact('table_config_images', 'slide_banner', 'img_slider', 'gallery_items', 'pbgn_partner'));
     }
 
-    public function menu()
+    public function boot()
     {
-
         $table_menu = DB::table('table_menu')->where('status', '=', 'active')->get();
-
-        return View::share('web.index', compact('table_menu'));
+        View::share('table_menu', $table_menu);
     }
 }
