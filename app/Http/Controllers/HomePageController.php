@@ -18,8 +18,6 @@ class HomePageController extends BaseController
 
         $table_config_images = DB::table('table_config_images')->first();
 
-        $table_menu = DB::table('table_menu')->where('status', '=', 'active')->get();
-
         $slide_banner = DB::table('banner_ads')
             ->where('status', '=', 'active')
             ->where('code_ads', '=', 'SlideBanner')
