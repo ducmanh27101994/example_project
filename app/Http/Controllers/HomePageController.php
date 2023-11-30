@@ -1,11 +1,9 @@
 <?php
-
 namespace App\Http\Controllers;
 
 use App\Http\Repositories\BannerAdsRepository;
 use App\Http\Services\UploadService;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\View;
 
 
 class HomePageController extends BaseController
@@ -19,6 +17,8 @@ class HomePageController extends BaseController
     {
 
         $table_config_images = DB::table('table_config_images')->first();
+
+        $table_menu = DB::table('table_menu')->where('status', '=', 'active')->get();
 
         $slide_banner = DB::table('banner_ads')
             ->where('status', '=', 'active')
@@ -40,12 +40,7 @@ class HomePageController extends BaseController
             ->where('code_ads', '=', 'pbgn-partner')
             ->get();
 
-        return view('web.home.trangchu', compact('table_config_images', 'slide_banner', 'img_slider', 'gallery_items', 'pbgn_partner'));
+        return view('web.home.trangchu', compact('table_config_images','table_menu','slide_banner','img_slider','gallery_items','pbgn_partner'));
     }
 
-    public function boot()
-    {
-        $table_menu = DB::table('table_menu')->where('status', '=', 'active')->get();
-        View::share('table_menu', $table_menu);
-    }
 }
