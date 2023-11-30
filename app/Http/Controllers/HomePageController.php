@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use App\Http\Repositories\BannerAdsRepository;
@@ -38,7 +39,7 @@ class HomePageController extends BaseController
             ->where('code_ads', '=', 'pbgn-partner')
             ->get();
 
-        return view('web.home.trangchu', compact('table_config_images','slide_banner','img_slider','gallery_items','pbgn_partner'));
+        return view('web.home.trangchu', compact('table_config_images', 'slide_banner', 'img_slider', 'gallery_items', 'pbgn_partner'));
     }
 
     public function menu()
@@ -46,7 +47,6 @@ class HomePageController extends BaseController
 
         $table_menu = DB::table('table_menu')->where('status', '=', 'active')->get();
 
-        return view('web.skinpart.menu', compact('table_menu'));
+        return view('web.index', compact('table_menu'));
     }
-
 }
