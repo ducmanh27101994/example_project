@@ -18,6 +18,8 @@ Route::prefix('/')->group(function () {
     Route::get('/account/login', 'App\Http\Controllers\TemplateController@login');
     Route::get('/account/register', 'App\Http\Controllers\TemplateController@register');
     Route::get('/about-us', 'App\Http\Controllers\TemplateController@aboutus');
+    Route::get('/category-news', 'App\Http\Controllers\TemplateController@categoryNews');
+    Route::get('/details', 'App\Http\Controllers\TemplateController@detailsNews');
 });
 
 Route::get('', 'App\Http\Controllers\HomePageController@indexHomePage')->name('home.page');

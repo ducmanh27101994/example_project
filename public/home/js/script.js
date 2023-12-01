@@ -126,6 +126,36 @@ $(document).ready(function () {
         }
     });
 
+    $('.article-items--related').owlCarousel({
+        dots: true,
+        nav: false,
+        loop: true,
+        autoplay: false,
+        autoplaySpeed: 650,
+        smartSpeed: 650,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 2
+            },
+            1200: {
+                items: 3
+            },
+            1350: {
+                items: 3
+            },
+            1450: {
+                items: 3
+            }
+        }
+    });
+
     $('.counter').counterUp({
         delay: 15,
         time: 2000

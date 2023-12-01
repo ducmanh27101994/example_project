@@ -22,4 +22,12 @@ class TemplateController extends BaseController
     {
         return view('web.aboutus.abouts');
     }
+    public function categoryNews()
+    {
+        return view('web.news.category');
+    }
+    public function detailsNews()
+    {
+        return view('web.news.details');
+    }
 }
