@@ -30,4 +30,8 @@ class TemplateController extends BaseController
     {
         return view('web.news.details');
     }
+    public function options()
+    {
+        return view('admin.option.option');
+    }
 }

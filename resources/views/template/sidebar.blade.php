@@ -249,6 +249,7 @@
             </ul>
         </li>
 
+        <li><a href="#"><i class="fa fa-bar-chart"></i>Tùy chọn</a></li>
 
         <li><a data-toggle="collapse" data-target="#pnaccounts" href="javascript:void(0)" title="Tài khoản"><i class="fa fa-fw fa-users"></i>Tài khoản<i class="fa fa-fw fa-caret-down"></i></a>
             <ul id="pnaccounts" class="collapse ">

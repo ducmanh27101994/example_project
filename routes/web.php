@@ -22,6 +22,11 @@ Route::prefix('/')->group(function () {
     Route::get('/details', 'App\Http\Controllers\TemplateController@detailsNews');
 });
 
+Route::prefix('/templates')->group(function () {
+    Route::get('/options', 'App\Http\Controllers\TemplateController@options');
+});
+
+
 Route::get('', 'App\Http\Controllers\HomePageController@indexHomePage')->name('home.page');
 
 
@@ -109,7 +114,3 @@ Route::post('/submit_register', 'App\Http\Controllers\Customer\AuthController@re
 Route::post('/submitLogin', 'App\Http\Controllers\Customer\AuthController@submitLogin')->name('submit.login.customer');
 Route::get('/logoutCustomer', 'App\Http\Controllers\Customer\AuthController@logoutCustomer')->name('submit.logout.customer');
 Route::post('/indexContactSubmit', 'App\Http\Controllers\Admin\ContactController@submitEmailContact')->name('admin.contact.submit');
-
-
-
-
