@@ -156,6 +156,36 @@ $(document).ready(function () {
         }
     });
 
+    $('.products-items--related').owlCarousel({
+        dots: true,
+        nav: false,
+        loop: true,
+        autoplay: false,
+        autoplaySpeed: 650,
+        smartSpeed: 650,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 2
+            },
+            1200: {
+                items: 2
+            },
+            1350: {
+                items: 2
+            },
+            1450: {
+                items: 2
+            }
+        }
+    });
+
     $('.counter').counterUp({
         delay: 15,
         time: 2000

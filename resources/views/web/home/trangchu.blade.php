@@ -635,6 +635,6 @@
     </section>
 
 </main>
-@extends('/web/skinpart/formemail')
+@include('/web/skinpart/formemail')
 
 @endsection
