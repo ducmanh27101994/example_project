@@ -43,37 +43,45 @@
                             <div class="row-fluid">
                                 <div class="span3">
                                     <div style="margin-top: 4px; font-size: 12px; font-style: italic;">
-                                        Tổng số liên hệ: <span style="color: #A52A2A;">{{count($contact) > 0 ? $contact->total() : 0}}</span>
+                                        Tổng số liên hệ: <span
+                                                style="color: #A52A2A;">{{count($contact) > 0 ? $contact->total() : 0}}</span>
 
                                     </div>
 
                                 </div>
                                 <form method="get" action="{{route('admin.indexContact')}}">
                                     @csrf
-                                <div class="span9">
-                                    <div class="pagination pagination-small pagination-right">
-                                        <input name="full_name" type="text"
-                                               id="txtkeysearch" class="inputbox-top" style="width:150px;" value="{{ request()->get('full_name') }}" placeholder="Tên">
-                                        <input name="email" type="text"
-                                               id="txtkeysearch" class="inputbox-top" style="width:150px;" value="{{ request()->get('email') }}" placeholder="Email">
-                                        <input name="phone" type="text"
-                                               id="txtkeysearch" class="inputbox-top" style="width:150px;" value="{{ request()->get('phone') }}" placeholder="Số điện thoại">
+                                    <div class="span9">
+                                        <div class="pagination pagination-small pagination-right">
+                                            <input name="full_name" type="text"
+                                                   id="txtkeysearch" class="inputbox-top" style="width:150px;"
+                                                   value="{{ request()->get('full_name') }}" placeholder="Tên">
+                                            <input name="email" type="text"
+                                                   id="txtkeysearch" class="inputbox-top" style="width:150px;"
+                                                   value="{{ request()->get('email') }}" placeholder="Email">
+                                            <input name="phone" type="text"
+                                                   id="txtkeysearch" class="inputbox-top" style="width:150px;"
+                                                   value="{{ request()->get('phone') }}" placeholder="Số điện thoại">
 
-                                        <select name="status" id="ddlstatus"
-                                                class="inputbox-top-select" style="width:130px;">
-                                            <option selected="selected" value="-1">Tất cả trạng thái</option>
-                                            <option value="process" {{request()->get('status') == 'process' ? 'selected' : ''}}>Đã xử lý</option>
-                                            <option value="no_process" {{request()->get('status') == 'no_process' ? 'selected' : ''}}>Chưa xử lý</option>
+                                            <select name="status" id="ddlstatus"
+                                                    class="inputbox-top-select" style="width:130px;">
+                                                <option selected="selected" value="-1">Tất cả trạng thái</option>
+                                                <option value="process" {{request()->get('status') == 'process' ? 'selected' : ''}}>
+                                                    Đã xử lý
+                                                </option>
+                                                <option value="no_process" {{request()->get('status') == 'no_process' ? 'selected' : ''}}>
+                                                    Chưa xử lý
+                                                </option>
 
-                                        </select>
+                                            </select>
 
-                                        <input type="submit" name="controls1$ctl00$ctl00$ctl00$btnsearch"
-                                               value="Tìm kiếm" id="btnsearch" class="buton-css">
-                                        <a type="button" href="{{route('admin.indexContact')}}">Xóa</a>
+                                            <input type="submit" name="controls1$ctl00$ctl00$ctl00$btnsearch"
+                                                   value="Tìm kiếm" id="btnsearch" class="buton-css">
+                                            <a type="button" href="{{route('admin.indexContact')}}">Xóa</a>
+                                        </div>
+
                                     </div>
-
-                                </div>
-                               </form>
+                                </form>
                             </div>
                             <div class="page-items">
 
@@ -87,9 +95,15 @@
 
                                     <th width="200" class="title">Email
                                     </th>
-                                    <th style="text-align: center;" width="10%" nowrap="nowrap" class="title">Ngày gửi
+                                    <th class="title">Họ và tên
                                     </th>
-                                    <th width="8%" class="title">Trạng thái
+                                    <th class="title">Số điện thoại
+                                    </th>
+                                    <th class="title">Địa chỉ
+                                    </th>
+                                    <th class="title">Loại khách hàng
+                                    </th>
+                                    <th style="text-align: center;" width="10%" nowrap="nowrap" class="title">Ngày gửi
                                     </th>
                                     <th style="width: 100px;"></th>
 
@@ -110,15 +124,26 @@
                                             <td align="center">{{++$key}}</td>
 
                                             <td align="left">{{$value->email}}</td>
+                                            <td>{{$value->full_name}}</td>
+                                            <td>{{$value->phone}}</td>
+                                            <td>{{$value->address}}</td>
+                                            @php
+                                                $customer_type = "";
+                                                if (!empty($value->customer_type)) {
+                                                    if ($value->customer_type == 1) {
+                                                        $customer_type = "Khách hàng cá nhân";
+                                                    } else {
+                                                        $customer_type = "Đại lý";
+                                                    }
+                                                }
+                                            @endphp
+                                            <td>{{$customer_type}}</td>
                                             <td align="center">{{$value->created_at}}</td>
-                                            <td align="center">
-                                                <a id="LinkButton2" title="Thay đổi trạng thái"
-                                                   href="javascript:__doPostBack('controls1$ctl00$ctl00$ctl00$rpitems$ctl01$LinkButton2','')">{{$value->status}}</a>
-                                            </td>
+
                                             <td align="center">
                                                 <a id="LinkButton4" title="Xem chi tiết "
                                                    href="{{route('admin.editContact', $value->id)}}"><img
-                                                        src="https://vntravelsimple.com/templates/admin/images/view.png"></a>
+                                                            src="https://vntravelsimple.com/templates/admin/images/view.png"></a>
                                             </td>
 
                                         </tr>

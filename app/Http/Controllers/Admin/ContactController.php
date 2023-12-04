@@ -83,6 +83,35 @@ class ContactController extends BaseController
         }
     }
 
+    public function submitContactForm(Request  $request) {
+
+        $status = (!empty($request->status) && $request->status == 'on') ? 'process' : 'block';
+
+        $data = [
+            'full_name' => !empty($request->full_name) ? $request->full_name : '',
+            'email' => !empty($request->email) ? $request->email : "",
+            'phone' => !empty($request->phone) ? $request->phone : "",
+            'status' => $status,
+            'customer_type' => $request->customer_type,
+            'content' => !empty($request->contents) ? $request->contents : '',
+            'address' => !empty($request->address) ? $request->address : '',
+        ];
+        $contact = $this->contactRepository->create($data);
+        if ($contact) {
+
+            $config = DB::table('table_configs')->first();
+            if (!empty($config)) {
+                $message = [
+                    'content' => 'has been created!',
+                ];
+                SendEmail::dispatch($message, [$config->company_email]);
+            }
+
+            toastr()->success('Bạn đã đăng ký email thành công', 'Success');
+            return redirect()->back();
+        }
+    }
+
 
 
 

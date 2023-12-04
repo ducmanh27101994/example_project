@@ -101,7 +101,7 @@
                         @if(!empty($list_blog))
                             @foreach($list_blog as $value)
                                 <article class="article-item">
-                                    <a class="article-item-image-wrapper" href="{{route('page.blog',$value->id)}}">
+                                    <a class="article-item-image-wrapper" href="{{route('page.blog',$value->slug)}}">
                                         <img alt=""
                                              src="{{ $value->representative_image }}">
                                     </a>
@@ -115,7 +115,7 @@
                                         </time>
                                         <span class="article-item-badge">{{ $value->category_title }}</span>
                                     </div>
-                                    <a class="article-item-link" href="{{route('page.blog',$value->id)}}">
+                                    <a class="article-item-link" href="{{route('page.blog',$value->slug)}}">
                                         <h3 class="typography-article-title"> {!! $value->news_headlines !!}  </h3>
                                     </a>
                                     <p class="typography-article-summary">{!! $value->describe !!}</p>

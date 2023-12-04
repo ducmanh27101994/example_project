@@ -5,7 +5,7 @@ namespace App\Http\Services;
 
 
 use App\Http\Repositories\BlogRepository;
-
+use Illuminate\Support\Str;
 class BlogService
 {
     protected $blogRepository;
@@ -24,6 +24,9 @@ class BlogService
         }
 
         $status = (!empty($request->status) && $request->status == 'on') ? 'active' : 'block';
+
+        $slug = Str::slug($request->news_headlines);
+
         $data = [
             'news_headlines' => $request->news_headlines,
             'status' => $status,
@@ -36,6 +39,7 @@ class BlogService
             'category_id' => $request->category_id,
             'representative_image' => $representative_image ?? '',
             'created_by' => session()->get('employee')['email'] ?? '',
+            'slug' => $slug
         ];
         $result = $this->blogRepository->create($data);
         return $result;

@@ -12,6 +12,8 @@
                 </div>
                 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
                     <div class="wrapper_input_fields">
+                        <form method="post" action="{{route('submit.contact.form')}}">
+                            @csrf
                         <div class="group_input">
                             <div class="head_contact_content">
                                 <h2>Đăng ký nhận tư vấn trực tiếp</h2>
@@ -20,28 +22,28 @@
                             <div class="choose_type">
                                 <div class="radio_type">
                                     <label for="alone">Khách hàng cá nhân</label>
-                                    <input type="radio" name="customer" value="alone" id="alone" checked />
+                                    <input type="radio" name="customer_type" value="1" id="alone" checked />
                                 </div>
                                 <div class="radio_type">
                                     <label for="agency">Đại lý</label>
-                                    <input type="radio" name="customer" value="agency" id="agency" />
+                                    <input type="radio" name="customer_type" value="2" id="agency" />
                                 </div>
                             </div>
 
                             <div class="form_ipnput">
-                                <input type="email" required class="form-control input-authen" name="name" id="name" placeholder="Họ tên" />
+                                <input type="text" required class="form-control input-authen" name="full_name" id="name" placeholder="Họ tên" />
                             </div>
                             <div class="form_ipnput">
                                 <input type="number" required class="form-control input-authen" name="phone" id="phone" placeholder="Số điện thoại" />
                             </div>
                             <div class="form_ipnput">
-                                <input type="text" required class="form-control input-authen" name="email" id="email" placeholder="Email" />
+                                <input type="email" required class="form-control input-authen" name="email" id="email" placeholder="Email" />
                             </div>
                             <div class="form_ipnput">
-                                <input type="email" required class="form-control input-authen" name="address" id="address" placeholder="Địa chỉ" />
+                                <input type="text" required class="form-control input-authen" name="address" id="address" placeholder="Địa chỉ" />
                             </div>
                             <div class="form_ipnput">
-                                <textarea style="height: unset;" name="content" id="content" require class="form-control input-authen" placeholder="Nội dung" rows="4" cols="50"></textarea>
+                                <textarea style="height: unset;" name="contents" id="content" require class="form-control input-authen" placeholder="Nội dung" rows="4" cols="50"></textarea>
                             </div>
                             <div class="box_btn-button">
                                 <button class="btn btn-button btn-login btn_func_query_login" type="submit">
@@ -59,6 +61,7 @@
                                 </div>
                             </div>
                         </div>
+                        </form>
 
                     </div>
                 </div>
