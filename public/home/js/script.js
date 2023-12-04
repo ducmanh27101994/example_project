@@ -293,3 +293,43 @@ function containsNumberOrSpecialChar(inputString) {
 
     return regex.test(inputString);
 }
+
+function getLocation() {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+    } else {
+        console.log("Trình duyệt không hỗ trợ Geolocation.");
+    }
+}
+
+function showPosition(position) {
+    const latitude = position.coords.latitude;
+    const longitude = position.coords.longitude;
+
+    // Gửi yêu cầu đến OpenStreetMap Nominatim API bằng Ajax jQuery.
+    const apiUrl = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`;
+
+    $.ajax({
+        url: apiUrl,
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            // Trích xuất thông tin vị trí từ dữ liệu trả về.
+            const city = data.address.city;
+            const state = data.address.state;
+
+            // Hiển thị kết quả.
+            const locationResult = `${city}, ${state}`;
+            console.log(locationResult);
+
+            // Bạn cũng có thể thực hiện logic để xác định id của tỉnh/thành phố và thực hiện các hành động phù hợp.
+            // Ví dụ: nếu city === "Hanoi" thì thực hiện một hành động cụ thể.
+        },
+        error: function (error) {
+            console.error("Lỗi khi lấy thông tin địa lý: ", error);
+        }
+    });
+}
+
+// Gọi hàm để lấy vị trí khi trang web được tải.
+getLocation();
