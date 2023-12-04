@@ -299,11 +299,11 @@
                                                 <td>
                                                     <div class="next-input--stylized">
                                                                     <span
-                                                                        class="next-input-add-on next-input__add-on--before">{{ url()->to('/') . '/' }}</span>
+                                                                        class="next-input-add-on next-input__add-on--before">{{ url()->to('/') . '/detail-blog/' }}</span>
 
                                                         <input
-                                                            value="{{!empty(old('path')) ? old('path') : $editBlog->path}}"
-                                                            name="path"
+                                                            value="{{!empty(old('slug')) ? old('slug') : $editBlog->slug}}"
+                                                            name="slug"
                                                             type="text" id="txturl" class="txtpa"
                                                             style="width:335px;">
                                                     </div>
@@ -313,9 +313,9 @@
                                                                     Đường dẫn tới danh mục tin
                                                                 </span>
                                                     </a>
-                                                    @if($errors->has('path'))
+                                                    @if($errors->has('slug'))
                                                         <p class="text-danger"
-                                                           style="margin-top: 10px;">{{ $errors->first('path') }}</p>
+                                                           style="margin-top: 10px;">{{ $errors->first('slug') }}</p>
                                                     @endif
                                                 </td>
                                             </tr>

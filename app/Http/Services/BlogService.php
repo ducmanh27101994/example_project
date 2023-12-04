@@ -6,6 +6,7 @@ namespace App\Http\Services;
 
 use App\Http\Repositories\BlogRepository;
 use Illuminate\Support\Str;
+
 class BlogService
 {
     protected $blogRepository;
@@ -17,7 +18,8 @@ class BlogService
         $this->uploadService = $uploadService;
     }
 
-    public function create_blog($request) {
+    public function create_blog($request)
+    {
 
         if ($request->representative_image) {
             $representative_image = $this->uploadService->upload_param($request->representative_image);
@@ -43,8 +45,6 @@ class BlogService
         ];
         $result = $this->blogRepository->create($data);
         return $result;
-
-
     }
 
     public function find($id)
@@ -52,7 +52,8 @@ class BlogService
         return $this->blogRepository->find($id);
     }
 
-    public function update_blog($request, $id){
+    public function update_blog($request, $id)
+    {
 
         if ($request->representative_image) {
             $representative_image = $this->uploadService->upload_param($request->representative_image);
@@ -72,12 +73,14 @@ class BlogService
             'category_id' => $request->category_id,
             'representative_image' => $representative_image ?? '',
             'created_by' => session()->get('employee')['email'] ?? '',
+            'slug' => $request->slug
         ];
         $result = $this->blogRepository->update($id, $data);
         return $result;
     }
 
-    public function get_list($request){
+    public function get_list($request)
+    {
         $blogs = $this->blogRepository->get_list($request);
         return $blogs;
     }
