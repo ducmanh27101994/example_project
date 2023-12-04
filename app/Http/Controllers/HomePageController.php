@@ -18,10 +18,6 @@ class HomePageController extends BaseController
     public function indexHomePage()
     {
 
-        $table_config_images = DB::table('table_config_images')->first();
-
-        $table_menu = DB::table('table_menu')->where('status', '=', 'active')->get();
-
         $slide_banner = DB::table('banner_ads')
             ->where('status', '=', 'active')
             ->where('code_ads', '=', 'SlideBanner')
@@ -42,7 +38,7 @@ class HomePageController extends BaseController
             ->where('code_ads', '=', 'pbgn-partner')
             ->get();
 
-        return view('web.home.trangchu', compact('table_config_images', 'table_menu', 'slide_banner', 'img_slider', 'gallery_items', 'pbgn_partner'));
+        return view('web.home.trangchu', compact('slide_banner', 'img_slider', 'gallery_items', 'pbgn_partner'));
     }
 
     public function indexAboutUs()
