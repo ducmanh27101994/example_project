@@ -43,4 +43,24 @@ class HomePageController extends BaseController
         return view('web.home.trangchu', compact('table_config_images','table_menu','slide_banner','img_slider','gallery_items','pbgn_partner'));
     }
 
+    public function indexAboutUs() {
+
+        $pbgn_partner = DB::table('banner_ads')
+            ->where('status', '=', 'active')
+            ->where('code_ads', '=', 'pbgn-partner')
+            ->get();
+
+        $about_us_mission = DB::table('independent_content')
+            ->where('status', '=', 'active')
+            ->where('location', '=', 'about-us-mission')
+            ->get();
+
+        $about_us_image = DB::table('independent_content')
+            ->where('status','=','active')
+            ->where('location','=','about-us-image')
+            ->first();
+
+        return view('web.aboutus.abouts',compact('pbgn_partner','about_us_mission','about_us_image'));
+    }
+
 }

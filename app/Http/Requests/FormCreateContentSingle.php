@@ -27,8 +27,6 @@ class FormCreateContentSingle extends FormRequest
     {
         return [
             'title' => 'required',
-            'location' => 'required|unique:independent_content',
-            'link' => 'required|unique:independent_content',
         ];
     }
 
