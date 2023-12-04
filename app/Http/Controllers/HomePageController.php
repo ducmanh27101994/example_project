@@ -77,9 +77,6 @@ class HomePageController extends BaseController
     public function listCategory(Request $request)
     {
 
-        $categoryId = $request->input('category_id');
-        $allCategories = $request->input('all_categories');
-
         $listCategory = DB::table('category')
             ->where('status', '=', 'active')
             ->get();
@@ -109,6 +106,24 @@ class HomePageController extends BaseController
             ->get();
 
         return view('web.news.details', ['blog' => $blog, 'list_blog' => $list_blog]);
+    }
+
+    public function listCategoryDetail($id)
+    {
+
+
+        $listCategory = DB::table('category')
+            ->where('status', '=', 'active')
+            ->get();
+
+        $list_blog = DB::table('blogs')
+            ->join('category', 'blogs.category_id', '=', 'category.id')
+            ->where('category.id', '=', $id)
+            ->where('blogs.status', '=', 'active')
+            ->orderBy('blogs.created_at', 'desc')
+            ->get();
+
+        return view('web.news.category', compact('listCategory', 'list_blog'));
     }
 
 

@@ -122,8 +122,9 @@ Route::get('/category-news', 'App\Http\Controllers\HomePageController@listCatego
 Route::get('/detail-blog/{slug}', 'App\Http\Controllers\HomePageController@detailBlog')->name('page.blog');
 Route::post('/submit-contact-form','App\Http\Controllers\Admin\ContactController@submitContactForm')->name('submit.contact.form');
 
+Route::get('/category-list/{id}', 'App\Http\Controllers\HomePageController@listCategoryDetail')->name('page.category.list');
 
-//Route::get('/get-articles', 'YourController@getArticles')->name('get-articles');
+
 
 
 

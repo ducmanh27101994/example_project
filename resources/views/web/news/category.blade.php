@@ -29,11 +29,11 @@
                 <div class="article-category-links">
                     <input type="checkbox" name="story-collection-toggle" id="story-collection-toggle"
                            class="story-collection-toggle d-none">
-                    <a class="article-category-link article-category-link--active" href="#">Tất cả</a>
-                    @if(!empty($listCategory))
+                    <a class="article-category-link {{ request()->is('category-news') ? 'article-category-link--active' : '' }}" href="{{ route('page.category') }}">Tất cả</a>
+
+                @if(!empty($listCategory))
                         @foreach($listCategory as $value)
-                            <a class="article-category-link" href="{{ $value->id }}"
-                               data-category-id="{{ $value->id }}">{{ $value->category_title }}</a>
+                            <a class="article-category-link {{ request()->is('category-list/' . $value->id) ? 'article-category-link--active' : '' }}" href="{{ route('page.category.list', $value->id) }}">{{ $value->category_title }}</a>
                         @endforeach
                     @endif
 
@@ -65,7 +65,7 @@
                     @endif
                 </div>
                 <div class="text-center">
-                    <a class="cta-link cta-link--block" href="#">Xem tất cả </a>
+                    <a class="cta-link cta-link--block" href="{{route('page.category')}}">Xem tất cả </a>
                 </div>
             </div>
         </section>
