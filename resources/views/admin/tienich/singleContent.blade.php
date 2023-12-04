@@ -49,6 +49,8 @@
                                             <th width="2%" class="title">#</th>
                                             <th class="title">Tiêu đề
                                             </th>
+                                            <th class="title">Code
+                                            </th>
 
                                             <th style="text-align:center;" width="8%" class="title">Trạng thái
                                             </th>
@@ -74,6 +76,10 @@
                                                     <td>
                                                         <a id="LinkButton1" title="Sửa"
                                                            href="">{{$value->title}}</a>
+                                                    </td>
+                                                    <td>
+                                                        <a id="LinkButton1" title="Sửa"
+                                                           href="">{{$value->location}}</a>
                                                     </td>
                                                     <td style="text-align:center;">
                                                         <a id="LinkButton2" title="Thay đổi trạng thái"
