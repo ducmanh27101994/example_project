@@ -38,6 +38,7 @@ class HomePageController extends BaseController
             ->where('code_ads', '=', 'pbgn-partner')
             ->get();
 
+
         return view('web.home.trangchu', compact('slide_banner', 'img_slider', 'gallery_items', 'pbgn_partner'));
     }
 

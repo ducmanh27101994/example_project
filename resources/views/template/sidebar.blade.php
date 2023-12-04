@@ -81,8 +81,9 @@
                             chuyển</a></li>
                     <li style="display:none"><a href="#" title="Cấu hình thanh toán"><i class="fa fa-fw fa fa-caret-right"></i>Cấu hình thanh
                             toán</a></li>
-                    <li><a href="#" title="Cấu hình ngôn ngữ"><i class="fa fa-fw fa fa-caret-right"></i>Cấu hình ngôn
-                            ngữ</a></li>
+                    <li><a href="{{route('admin.config.option')}}" title=""><i class="fa fa-fw fa fa-caret-right"></i>Cấu hình hiển thị
+                            </a></li>
+
                     <li style="display:none"><a href="#" title="Quản lý tỉnh thành"><i class="fa fa-fw fa fa-caret-right"></i>Quản lý tỉnh
                             thành</a></li>
                     <li style="display:none"><a href="#" title="Quản lý quận huyện"><i class="fa fa-fw fa fa-caret-right"></i>Quản lý quận
