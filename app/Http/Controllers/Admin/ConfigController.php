@@ -7,7 +7,10 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\BaseController;
 use App\Http\Requests\FormGeneralConfig;
 use App\Http\Services\ConfigService;
+use App\Models\ConfigOption;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 class ConfigController extends BaseController
 {
     protected $configService;
@@ -88,6 +91,26 @@ class ConfigController extends BaseController
         }
 
 
+    }
+
+    public function indexConfigOption() {
+
+        $configOption = DB::table('config_option')
+            ->get();
+
+        return view('admin.option.option', compact('configOption'));
+    }
+
+    public function updateChecked(Request $request) {
+        $slug = $request->input('slug');
+        $status = $request->input('status');
+
+        $configOption = ConfigOption::where('slug', $slug)->first();
+        if ($configOption) {
+            $configOption->status = $status;
+            $configOption->save();
+            return response()->json(['message' => 'Update successful'], 200);
+        }
     }
 
 

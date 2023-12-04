@@ -48,6 +48,8 @@ Route::group(['middleware' => 'auth_admin'], function () {
         Route::post('/generalConfig', 'App\Http\Controllers\Admin\ConfigController@submitConfig')->name('admin.submit.generalConfig');
         Route::get('/bannerAndFooter', 'App\Http\Controllers\Admin\ConfigController@indexConfigImages')->name('admin.bannerAndFooter');
         Route::post('/bannerAndFooter', 'App\Http\Controllers\Admin\ConfigController@submitConfigImages')->name('admin.submit.bannerAndFooter');
+        Route::get('/configOption', 'App\Http\Controllers\Admin\ConfigController@indexConfigOption')->name('admin.config.option');
+        Route::post('/update-status', 'App\Http\Controllers\Admin\ConfigController@updateChecked');
 
         Route::get('/listMenu', 'App\Http\Controllers\Admin\MenuController@indexListMenu')->name('admin.indexListMenu');
         Route::get('/createMenu', 'App\Http\Controllers\Admin\MenuController@indexCreateMenu')->name('admin.indexCreateMenu');
