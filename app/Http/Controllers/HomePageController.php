@@ -60,7 +60,17 @@ class HomePageController extends BaseController
             ->where('location','=','about-us-image')
             ->first();
 
-        return view('web.aboutus.abouts',compact('pbgn_partner','about_us_mission','about_us_image'));
+        $history_content_box = DB::table('independent_content')
+            ->where('status','=','active')
+            ->where('location','=','history_content_box')
+            ->first();
+
+        $box_banner_sohoa = DB::table('independent_content')
+            ->where('status','=','active')
+            ->where('location','=','box-banner-sohoa')
+            ->first();
+
+        return view('web.aboutus.abouts',compact('pbgn_partner','about_us_mission','about_us_image','history_content_box','box_banner_sohoa'));
     }
 
 }

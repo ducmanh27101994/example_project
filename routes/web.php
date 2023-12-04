@@ -22,6 +22,11 @@ Route::prefix('/')->group(function () {
     Route::get('/details', 'App\Http\Controllers\TemplateController@detailsNews');
 });
 
+Route::prefix('/templates')->group(function () {
+    Route::get('/options', 'App\Http\Controllers\TemplateController@options');
+});
+
+
 Route::get('', 'App\Http\Controllers\HomePageController@indexHomePage')->name('home.page');
 
 

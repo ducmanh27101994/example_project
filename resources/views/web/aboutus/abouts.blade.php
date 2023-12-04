@@ -142,14 +142,16 @@
 
                                     <div class="history_content_box">
                                         <div class="image">
-                                            <img src="{{ asset('home/images/history_1.png') }}" alt="history_1">
+                                            @if(!empty($about_us_image))
+                                                <img src="{{ $about_us_image->avatar }}" alt="history_1">
+                                            @else
+                                                <img src="{{ asset('home/images/history_1.png') }}" alt="history_1">
+                                            @endif
                                         </div>
                                         <div class="content">
-                                            <p>Thành lập vào năm 2015, OSAKAR đã nhanh chóng phát triển thành nhà sản
-                                                xuất xe máy điện, tạo được tiếng vang và nổi tiếng trong nước. Là một
-                                                công ty công nghệ và đổi mới OSAKAR cam kết cách mạng hoá việc đi lại
-                                                trong đô thị bằng các phương tiện điện nhẹ và thông minh, có phong cách
-                                                giá cả phải chăng, thân thiện với môi trường.</p>
+                                            @if(!empty($history_content_box))
+                                                {!! $history_content_box->detail !!}
+                                            @endif
                                         </div>
                                     </div>
 
@@ -297,11 +299,9 @@
                 <div class="container">
                     <div class="box-banner-sohoa">
                         <div class="text-content">
-                            <h2> Số hoá để tạo ra sự
-                                <br/> thay đổi tích cực
-                            </h2>
-                            <p>Chúng tôi đang phát triển các công nghệ tiên tiến trong môi trường tương lai, đáp ứng nhu
-                                cầu đi lại, và đô thị hoá môi trường xanh tạo lối sống đô thị bền vững.</p>
+                            @if(!empty($box_banner_sohoa))
+                                {!! $box_banner_sohoa->detail !!}
+                            @endif
                         </div>
                     </div>
                 </div>
