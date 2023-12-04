@@ -18,7 +18,7 @@ Route::prefix('/')->group(function () {
     Route::get('/account/login', 'App\Http\Controllers\TemplateController@login');
     Route::get('/account/register', 'App\Http\Controllers\TemplateController@register');
 //    Route::get('/about-us', 'App\Http\Controllers\TemplateController@aboutus');
-    Route::get('/category-news', 'App\Http\Controllers\TemplateController@categoryNews');
+//    Route::get('/category-news', 'App\Http\Controllers\TemplateController@categoryNews');
     Route::get('/details', 'App\Http\Controllers\TemplateController@detailsNews');
 });
 
@@ -116,6 +116,8 @@ Route::get('/logoutCustomer', 'App\Http\Controllers\Customer\AuthController@logo
 Route::post('/indexContactSubmit', 'App\Http\Controllers\Admin\ContactController@submitEmailContact')->name('admin.contact.submit');
 
 Route::get('/about-us', 'App\Http\Controllers\HomePageController@indexAboutUs')->name('home.about-us');
+Route::get('/category-news', 'App\Http\Controllers\HomePageController@listCategory')->name('page.category');
+Route::get('/detail-blog/{id}', 'App\Http\Controllers\HomePageController@detailBlog')->name('page.blog');
 
 
 
