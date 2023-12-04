@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Repositories\BannerAdsRepository;
 use App\Http\Services\UploadService;
 use App\Models\Blog;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
 
@@ -73,8 +74,11 @@ class HomePageController extends BaseController
         return view('web.aboutus.abouts', compact('pbgn_partner', 'about_us_mission', 'about_us_image', 'history_content_box', 'box_banner_sohoa'));
     }
 
-    public function listCategory()
+    public function listCategory(Request $request)
     {
+
+        $categoryId = $request->input('category_id');
+        $allCategories = $request->input('all_categories');
 
         $listCategory = DB::table('category')
             ->where('status', '=', 'active')
@@ -89,10 +93,10 @@ class HomePageController extends BaseController
         return view('web.news.category', compact('listCategory', 'list_blog'));
     }
 
-    public function detailBlog($id)
+    public function detailBlog($slug)
     {
 
-        $blog = Blog::find($id);
+        $blog = Blog::where('slug', $slug)->firstOrFail();
 
         if (!$blog) {
             abort(404); // Hoặc thực hiện xử lý khi không tìm thấy
@@ -106,5 +110,6 @@ class HomePageController extends BaseController
 
         return view('web.news.details', ['blog' => $blog, 'list_blog' => $list_blog]);
     }
+
 
 }

@@ -32,15 +32,17 @@
                     <a class="article-category-link article-category-link--active" href="#">Tất cả</a>
                     @if(!empty($listCategory))
                         @foreach($listCategory as $value)
-                            <a class="article-category-link" href="{{$value->path}}">{{ $value->category_title }}</a>
+                            <a class="article-category-link" href="{{ $value->id }}"
+                               data-category-id="{{ $value->id }}">{{ $value->category_title }}</a>
                         @endforeach
                     @endif
+
                 </div>
                 <div class="article-items">
                     @if(!empty($list_blog))
                         @foreach($list_blog as $value)
                             <article class="article-item">
-                                <a class="article-item-image-wrapper" href="{{route('page.blog',$value->id)}}">
+                                <a class="article-item-image-wrapper" href="{{route('page.blog',$value->slug)}}">
                                     <img alt=""
                                          src="{{ $value->representative_image }}">
                                 </a>
@@ -54,7 +56,7 @@
                                     </time>
                                     <span class="article-item-badge">{{ $value->category_title }}</span>
                                 </div>
-                                <a class="article-item-link" href="{{route('page.blog',$value->id)}}">
+                                <a class="article-item-link" href="{{route('page.blog',$value->slug)}}">
                                     <h3 class="typography-article-title"> {!! $value->news_headlines !!}  </h3>
                                 </a>
                                 <p class="typography-article-summary">{!! $value->describe !!}</p>
@@ -69,4 +71,5 @@
         </section>
         @include('/web/skinpart/formemail')
     </main>
+
 @endsection
