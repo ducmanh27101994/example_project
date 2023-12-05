@@ -191,6 +191,11 @@ $(document).ready(function () {
         time: 2000
     });
 
+    $(".gdpr-action--accept").on("click", function () {
+        $(".gdpr_cookie").addClass('gdpr-leave-active gdpr-leave-to')
+        getLocation()
+    });
+
     $(".gdpr-action--reject").on("click", function () {
         $(".gdpr_cookie").addClass('gdpr-leave-active gdpr-leave-to')
     });
@@ -296,7 +301,7 @@ function containsNumberOrSpecialChar(inputString) {
 
 function getLocation() {
     if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
+        navigator.geolocation.getCurrentPosition(showPosition, handleLocationError);
     } else {
         console.log("Trình duyệt không hỗ trợ Geolocation.");
     }
@@ -306,7 +311,6 @@ function showPosition(position) {
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
 
-    // Gửi yêu cầu đến OpenStreetMap Nominatim API bằng Ajax jQuery.
     const apiUrl = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`;
 
     $.ajax({
@@ -314,16 +318,8 @@ function showPosition(position) {
         type: "GET",
         dataType: "json",
         success: function (data) {
-            // Trích xuất thông tin vị trí từ dữ liệu trả về.
-            const city = data.address.city;
-            const state = data.address.state;
-
-            // Hiển thị kết quả.
-            const locationResult = `${city}, ${state}`;
-            console.log(locationResult);
-
-            // Bạn cũng có thể thực hiện logic để xác định id của tỉnh/thành phố và thực hiện các hành động phù hợp.
-            // Ví dụ: nếu city === "Hanoi" thì thực hiện một hành động cụ thể.
+            const suburb = data.address.suburb;
+            console.log(`Vị trí của bạn là: ${suburb}`);
         },
         error: function (error) {
             console.error("Lỗi khi lấy thông tin địa lý: ", error);
@@ -331,5 +327,20 @@ function showPosition(position) {
     });
 }
 
-// Gọi hàm để lấy vị trí khi trang web được tải.
-getLocation();
+function handleLocationError(error) {
+    switch (error.code) {
+        case error.PERMISSION_DENIED:
+            console.log("Người dùng từ chối cung cấp vị trí. Hãy bật quyền truy cập trong cài đặt trình duyệt.");
+            break;
+        case error.POSITION_UNAVAILABLE:
+            console.log("Không thể xác định vị trí.");
+            break;
+        case error.TIMEOUT:
+            console.log("Yêu cầu vị trí đã hết thời gian.");
+            break;
+        case error.UNKNOWN_ERROR:
+            console.log("Đã xảy ra lỗi không xác định.");
+            break;
+    }
+    // Hiển thị thông báo cho người dùng về lỗi.
+}

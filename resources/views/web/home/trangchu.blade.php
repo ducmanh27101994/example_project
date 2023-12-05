@@ -15,7 +15,6 @@
         @endif
     </section>
 
-
     <div class="swiper homeSwiper">
         <div class="homepage-swiper-wrapper ">
 
@@ -633,7 +632,12 @@
             <label class="impact-slide-trigger"></label>
         </div>
     </section>
-
+    <div data-v-7e7da536="" class="gdpr gdpr_cookie">
+        <div data-v-7e7da536="" class="gdpr-container">
+            <p data-v-7e7da536="" class="gdpr-message">Chúng tôi sử dụng cookie để phục vụ tốt hơn.</p>
+            <div data-v-7e7da536="" class="gdpr-actions"><button data-v-7e7da536="" class="gdpr-action gdpr-action--reject">Từ chối</button><button data-v-7e7da536="" class="gdpr-action gdpr-action--accept">Chấp nhận</button></div>
+        </div>
+    </div>
 </main>
 @include('/web/skinpart/formemail')
 
