@@ -327,9 +327,9 @@ function showPosition(position) {
         dataType: "json",
         success: function (data) {
             let city = '';
-            if (data.address.postcode === "11622") {
+            if (data.address.city === "Hà Nội") {
                 city = 'Thành Phố Hà Nội'
-            } else if (data.address.postcode === "71821") {
+            } else if (data.address.city === "Hồ Chí Minh") {
                 city = 'Thành Phố Hồ Chí Minh'
             } else {
                 city = data.address.state;
