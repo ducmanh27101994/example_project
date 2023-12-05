@@ -15,15 +15,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('/')->group(function () {
     Route::get('/contact', 'App\Http\Controllers\TemplateController@contact');
-//    Route::get('/account/login', 'App\Http\Controllers\TemplateController@login');
-//    Route::get('/account/register', 'App\Http\Controllers\TemplateController@register');
-//    Route::get('/about-us', 'App\Http\Controllers\TemplateController@aboutus');
-//    Route::get('/category-news', 'App\Http\Controllers\TemplateController@categoryNews');
-//    Route::get('/details', 'App\Http\Controllers\TemplateController@detailsNews');
-});
-
-Route::prefix('/templates')->group(function () {
-    Route::get('/options', 'App\Http\Controllers\TemplateController@options');
+    Route::get('/list-store', 'App\Http\Controllers\TemplateController@listStore');
+    Route::get('/near-by-store', 'App\Http\Controllers\TemplateController@nearbyStore');
+    //    Route::get('/account/login', 'App\Http\Controllers\TemplateController@login');
+    //    Route::get('/account/register', 'App\Http\Controllers\TemplateController@register');
+    //    Route::get('/about-us', 'App\Http\Controllers\TemplateController@aboutus');
+    //    Route::get('/category-news', 'App\Http\Controllers\TemplateController@categoryNews');
+    //    Route::get('/details', 'App\Http\Controllers\TemplateController@detailsNews');
 });
 
 
@@ -120,13 +118,6 @@ Route::post('/indexContactSubmit', 'App\Http\Controllers\Admin\ContactController
 Route::get('/about-us', 'App\Http\Controllers\HomePageController@indexAboutUs')->name('home.about-us');
 Route::get('/category-news', 'App\Http\Controllers\HomePageController@listCategory')->name('page.category');
 Route::get('/detail-blog/{slug}', 'App\Http\Controllers\HomePageController@detailBlog')->name('page.blog');
-Route::post('/submit-contact-form','App\Http\Controllers\Admin\ContactController@submitContactForm')->name('submit.contact.form');
+Route::post('/submit-contact-form', 'App\Http\Controllers\Admin\ContactController@submitContactForm')->name('submit.contact.form');
 
 Route::get('/category-list/{id}', 'App\Http\Controllers\HomePageController@listCategoryDetail')->name('page.category.list');
-
-
-
-
-
-
-

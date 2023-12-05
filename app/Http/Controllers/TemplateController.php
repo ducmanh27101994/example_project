@@ -30,8 +30,12 @@ class TemplateController extends BaseController
     {
         return view('web.news.details');
     }
-    public function options()
+    public function listStore()
     {
-        return view('admin.option.option');
+        return view('web.store.listStore');
+    }
+    public function nearbyStore()
+    {
+        return view('web.store.nearbyStore');
     }
 }

@@ -318,8 +318,15 @@ function showPosition(position) {
         type: "GET",
         dataType: "json",
         success: function (data) {
-            const suburb = data.address.suburb;
-            console.log(`Vị trí của bạn là: ${suburb}`);
+            let city = '';
+            if (data.address.postcode === "11622") {
+                city = 'Thành Phố Hà Nội'
+            } else if (data.address.postcode === "71821") {
+                city = 'Thành Phố Hồ Chí Minh'
+            } else {
+                city = data.address.state;
+            }
+            setCookie('location', city, 10800)
         },
         error: function (error) {
             console.error("Lỗi khi lấy thông tin địa lý: ", error);
@@ -343,4 +350,23 @@ function handleLocationError(error) {
             break;
     }
     // Hiển thị thông báo cho người dùng về lỗi.
+}
+
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    var expires = "expires=" + d.toUTCString();
+    document.cookie = cname + "=" + cvalue + "; " + expires;
+}
+
+// Hàm lấy Cookie
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') c = c.substring(1);
+        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+    }
+    return "";
 }
