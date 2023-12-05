@@ -319,7 +319,7 @@ function showPosition(position) {
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
 
-    const apiUrl = `https://nominatim.openstreetmap.org/reverse?format=json&lat=10.797172&lon=106.747882`;
+    const apiUrl = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`;
 
     $.ajax({
         url: apiUrl,
@@ -331,13 +331,11 @@ function showPosition(position) {
                 city = 'Thành Phố Hà Nội'
             } else if (data.address.city === "Hồ Chí Minh") {
                 city = 'Thành Phố Hồ Chí Minh'
-            } else if (data.address.city === "Hồ Chí Minh") {
-                city = 'Thành Phố Hồ Chí Minh'
             } else {
                 city = data.address.state || data.address.city;
             }
             setCookie('location', city, 10800)
-            console.log(city)
+            console.log(data)
         },
         error: function (error) {
             console.error("Lỗi khi lấy thông tin địa lý: ", error);
