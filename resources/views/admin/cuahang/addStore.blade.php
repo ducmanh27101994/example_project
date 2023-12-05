@@ -166,19 +166,6 @@
                                                         <option value="An nam">Miền nam
                                                     </select>
                                                 </div>
-                                                <div class="form-group hidden">
-                                                    <label class="next-label">Nhóm cửa hàng</label>
-                                                    <div class="listgr">
-                                                        <ul>
-
-                                                            <li><input type="checkbox" name="chkgr" value="10362"> Nhóm
-                                                                cửa hàng 1
-                                                            </li>
-
-
-                                                        </ul>
-                                                    </div>
-                                                </div>
                                             </div>
                                             <div class="block_sp">
                                                 <p class="ttg">Tỉnh, thành phố cửa hàng<a href="#" class="tooltip">
