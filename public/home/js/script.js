@@ -335,6 +335,7 @@ function showPosition(position) {
                 city = data.address.state;
             }
             setCookie('location', city, 10800)
+            console.log(data)
         },
         error: function (error) {
             console.error("Lỗi khi lấy thông tin địa lý: ", error);
