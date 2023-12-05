@@ -200,6 +200,14 @@ $(document).ready(function () {
         $(".gdpr_cookie").addClass('gdpr-leave-active gdpr-leave-to')
     });
 
+    $("#nearbyStoreLink").on("click", function () {
+        if (getCookie('location')) {
+            window.location.href = '/near-by-store';
+        } else {
+            alert('Vui lòng cho phép chúng tôi sử dụng cookie để sử dụng tính năng này')
+        }
+    });
+
     $('#modal-container').removeAttr('class').addClass('six');
     $('body').addClass('modal-active');
 

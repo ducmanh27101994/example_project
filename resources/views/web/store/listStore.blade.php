@@ -12,7 +12,7 @@
     </div>
     <div class="sec_nearby_store">
         <div class="box">
-            <a href="/near-by-store">
+            <a href="javascript:void(0)" id="nearbyStoreLink">
                 <img src="{{ asset('home/images/position.png') }}" title="position" />
                 <span>Tìm cửa hàng gần nhất</span>
                 <img src="{{ asset('home/images/arrow-right.png') }}" title="arrow-right" />
