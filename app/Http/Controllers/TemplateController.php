@@ -38,4 +38,12 @@ class TemplateController extends BaseController
     {
         return view('web.store.nearbyStore');
     }
+    public function categoryProduct()
+    {
+        return view('web.product.category');
+    }
+    public function detailsBasic()
+    {
+        return view('web.product.detailsBasic');
+    }
 }

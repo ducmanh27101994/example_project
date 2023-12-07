@@ -77,7 +77,7 @@ $(document).ready(function () {
             }
         }
     });
-    $('.section-hero').owlCarousel({
+    $('.section-hero-slider').owlCarousel({
         animateOut: 'fadeOut',
         animateIn: 'fadeOut',
         items: 1,
@@ -87,6 +87,30 @@ $(document).ready(function () {
         autoplaySpeed: 650,
         smartSpeed: 650,
     });
+
+    $('.story-items-track').owlCarousel({
+        items: 1,
+        dots: false,
+        loop: false,
+        autoplay: false,
+        smartSpeed: 650,
+        stagePadding: parseInt($('#container').css('margin-left')?.replace('px', ''), 10),
+        // responsive: {
+        //     0: {
+        //         stagePadding: parseInt($('#container').css('margin-left').replace('px', ''), 10)
+        //     },
+        //     600: {
+        //         stagePadding: parseInt($('#container').css('margin-left').replace('px', ''), 10)
+        //     },
+        //     1000: {
+        //         stagePadding: parseInt($('#container').css('margin-left').replace('px', ''), 10)
+        //     },
+        //     1600: {
+        //         stagePadding: parseInt($('#container').css('margin-left').replace('px', ''), 10)
+        //     }
+        // }
+    });
+    
     $('.image-about-container').owlCarousel({
         items: 1,
         dots: true,
@@ -219,6 +243,8 @@ $(document).ready(function () {
     $('.name_language').click(function () {
         $('.language_choose').toggle();
     });
+
+    $('.family-nav-item:last-child').addClass('family-nav-item--s1');
 
     $("#pwd_account").change(function () {
         if ($(this).val().length >= 8) {

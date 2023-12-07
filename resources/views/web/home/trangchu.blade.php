@@ -2,12 +2,12 @@
 @section('content')
 <main class="page-content">
 
-    <section class="section-hero owl-carousel owl-theme">
+    <section class="section-hero section-hero-slider owl-carousel owl-theme">
         @if(!empty($slide_banner))
         @foreach($slide_banner as $value)
         <div class="slider_item">
             <img src="{{ $value->image_banner }}" />
-            <div class="hero-copy">
+            <div class="hero-copy hero-copy-slider">
                 {!! $value->desc !!}
             </div>
         </div>
