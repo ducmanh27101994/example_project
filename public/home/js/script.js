@@ -110,7 +110,30 @@ $(document).ready(function () {
         //     }
         // }
     });
-    
+
+    $('.parts-bike__list').owlCarousel({
+        items: 2,
+        dots: false,
+        loop: false,
+        autoplay: false,
+        smartSpeed: 650,
+        stagePadding: parseInt($('#pdp-img-360 .breaking-wrap').css('padding-left').replace('px', '') - 15, 10),
+        // responsive: {
+        //     0: {
+        //         stagePadding: parseInt($('#container').css('margin-left').replace('px', ''), 10)
+        //     },
+        //     600: {
+        //         stagePadding: parseInt($('#container').css('margin-left').replace('px', ''), 10)
+        //     },
+        //     1000: {
+        //         stagePadding: parseInt($('#container').css('margin-left').replace('px', ''), 10)
+        //     },
+        //     1600: {
+        //         stagePadding: parseInt($('#container').css('margin-left').replace('px', ''), 10)
+        //     }
+        // }
+    });
+
     $('.image-about-container').owlCarousel({
         items: 1,
         dots: true,
