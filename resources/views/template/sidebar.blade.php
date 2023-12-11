@@ -100,8 +100,7 @@
 
         <li><a data-toggle="collapse" data-target="#pnproduct" href="javascript:void(0)" title="Sản phẩm"><i class="fa fa-fw fa-list-alt"></i>Sản phẩm<i class="fa fa-fw fa-caret-down"></i></a>
             <ul id="pnproduct" class="collapse ">
-                <li><a href="#" title="Danh mục sản phẩm"><i class="fa fa-fw fa fa-caret-right"></i>Danh mục sản
-                        phẩm</a></li>
+                <li><a href="{{route('admin.list.cate.product')}}" title="Danh mục sản phẩm"><i class="fa fa-fw fa fa-caret-right"></i>Danh mục sản phẩm</a></li>
                 <li><a href="#" title="Danh sách sản phẩm"><i class="fa fa-fw fa fa-caret-right"></i>Danh sách sản
                         phẩm</a></li>
                 <li style="display:none"><a href="#" title="Nhóm sản phẩm"><i class="fa fa-fw fa fa-caret-right"></i>Nhóm sản phẩm</a>

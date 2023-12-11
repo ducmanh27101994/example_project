@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Repositories\BannerAdsRepository;
+use App\Http\Services\Import;
 use App\Http\Services\UploadService;
 use App\Models\Blog;
 use Illuminate\Http\Request;
@@ -11,9 +12,12 @@ use Illuminate\Support\Facades\DB;
 
 class HomePageController extends BaseController
 {
-    public function __construct(BannerAdsRepository $bannerAdsRepository)
+    protected $import;
+
+    public function __construct(BannerAdsRepository $bannerAdsRepository, Import $import)
     {
         $this->bannerAdsRepository = $bannerAdsRepository;
+        $this->import = $import;
     }
 
     public function indexHomePage()
@@ -124,6 +128,43 @@ class HomePageController extends BaseController
             ->get();
 
         return view('web.news.category', compact('listCategory', 'list_blog'));
+    }
+
+    public function importStore(Request $request)
+    {
+        if (!$request->hasFile('upload_file')) {
+            $response = [
+                'status' => 400,
+                'message' => "Không tìm thấy file"
+            ];
+            return response()->json($response);
+        } else {
+            $file = $request->upload_file;
+            $sheetData = $this->import->get_data_import($file);
+
+            $listFail = [];
+
+            foreach ($sheetData as $key => $value) {
+                if (empty($value[0]) && empty($value[1]) && empty($value[2]) && empty($value[3])) continue;
+                if ($key >= 1) {
+                    $data = array(
+                        "key" => ++$key,
+                        "email" => !empty($value[0]) ? (trim($value[0])) : "",
+                        "phone" => !empty($value[1]) ? (trim($value[1])) : "",
+                        "full_name" => !empty($value[2]) ? (trim($value[2])) : "",
+                        "cmt" => !empty($value[3]) ? (trim($value[3])) : "",
+                    );
+
+                    //create data
+
+                }
+            }
+            $response = [
+                'status' => 200,
+                'message' => 'success',
+            ];
+            return response()->json($response);
+        }
     }
 
 
