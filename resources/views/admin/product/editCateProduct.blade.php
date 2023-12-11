@@ -70,7 +70,6 @@
                                                     Thông tin chung
                                                 </li>
 
-
                                             </ul>
                                             <div class="resp-tabs-container hor_1"
                                                  style="border-color: rgb(193, 193, 193);">

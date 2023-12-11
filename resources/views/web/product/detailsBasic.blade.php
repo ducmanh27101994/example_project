@@ -200,7 +200,7 @@
         </section>
         <section class="page-block parts-bike section" id="pdp-parts-bike">
             <div class="parts-bike__head_text text-center block_center">
-                <h2>
+                <h2>  
                     Dẫn đầu phong cách thời thượng
                 </h2>
                 <p>

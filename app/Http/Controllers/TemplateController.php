@@ -46,4 +46,12 @@ class TemplateController extends BaseController
     {
         return view('web.product.detailsBasic');
     }
+    public function listProductAdmin()
+    {
+        return view('admin.product.details.listProduct');
+    }
+    public function createProductAdmin()
+    {
+        return view('admin.product.details.createProduct');
+    }
 }
