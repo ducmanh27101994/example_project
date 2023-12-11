@@ -288,6 +288,39 @@
                                     <div class="divFileProgressContainer1" style="display: none;"></div>
                                     <div class="droptext"></div>
                                 </div>
+                                <div class="prdthumbnails">
+
+                                    <div class="item-upload" id="7456">
+                                        <span class="item-upload-name">
+                                            <img class="img-responsive" src="http://dambaujiwoon.khoweb24h.com//uploads/products/relative/24-ahihi2.jpg">
+                                        </span>
+                                        <span class="imt">
+                                            <input type="text" placeholder="Tiêu đề ảnh" name="txtalt7456" id="txtalt7456" value="">
+                                        </span>
+                                        <span data="7456" class="item-upload-del" title="Xóa"></span>
+                                    </div>
+
+                                    <div class="item-upload" id="7457">
+                                        <span class="item-upload-name">
+                                            <img class="img-responsive" src="http://dambaujiwoon.khoweb24h.com//uploads/products/relative/24-ahihi1.jpg">
+                                        </span>
+                                        <span class="imt">
+                                            <input type="text" placeholder="Tiêu đề ảnh" name="txtalt7457" id="txtalt7457" value="">
+                                        </span>
+                                        <span data="7457" class="item-upload-del" title="Xóa"></span>
+                                    </div>
+
+                                    <div class="item-upload" id="7458">
+                                        <span class="item-upload-name">
+                                            <img class="img-responsive" src="http://dambaujiwoon.khoweb24h.com//uploads/products/relative/24-ahihi3.jpg">
+                                        </span>
+                                        <span class="imt">
+                                            <input type="text" placeholder="Tiêu đề ảnh" name="txtalt7458" id="txtalt7458" value="">
+                                        </span>
+                                        <span data="7458" class="item-upload-del" title="Xóa"></span>
+                                    </div>
+
+                                </div>
                             </div>
 
                             <div class="gallarey">
