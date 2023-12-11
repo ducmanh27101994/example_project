@@ -25,6 +25,24 @@ $(document).ready(function () {
         });
     });
 
+    $('.breaking-technology-bot .nav-tabs a').first().addClass('active');
+    $('.tab-content>div').hide();
+    $('.tab-content>div').first().slideDown();
+    $('.breaking-technology-bot .nav-tabs a').click(function () {
+        $('.breaking-technology-bot .nav-tabs a').removeClass('active');
+        var thisclass = $(this).attr('id');
+        console.log(thisclass)
+        $(this).addClass('active');
+        $('.tab-content>div').each(function () {
+            if ($(this).hasClass(thisclass)) {
+                $(this).fadeIn(800);
+            }
+            else {
+                $(this).hide();
+            }
+        });
+    });
+
     $('.tab-buttons-slider span').first().addClass('active');
     $('.tab-content-slider>div').css({
         'opacity': '0',
@@ -118,20 +136,22 @@ $(document).ready(function () {
         autoplay: false,
         smartSpeed: 650,
         stagePadding: parseInt($('#pdp-img-360 .breaking-wrap').css('padding-left').replace('px', '') - 15, 10),
-        // responsive: {
-        //     0: {
-        //         stagePadding: parseInt($('#container').css('margin-left').replace('px', ''), 10)
-        //     },
-        //     600: {
-        //         stagePadding: parseInt($('#container').css('margin-left').replace('px', ''), 10)
-        //     },
-        //     1000: {
-        //         stagePadding: parseInt($('#container').css('margin-left').replace('px', ''), 10)
-        //     },
-        //     1600: {
-        //         stagePadding: parseInt($('#container').css('margin-left').replace('px', ''), 10)
-        //     }
-        // }
+        responsive: {
+            0: {
+                items: 1,
+                stagePadding: 0
+            },
+            600: {
+                items: 1,
+                stagePadding: 0
+            },
+            1000: {
+                stagePadding: parseInt($('#pdp-img-360 .breaking-wrap').css('margin-left').replace('px', ''), 10)
+            },
+            1600: {
+                stagePadding: parseInt($('#pdp-img-360 .breaking-wrap').css('margin-left').replace('px', ''), 10)
+            }
+        }
     });
 
     $('.image-about-container').owlCarousel({

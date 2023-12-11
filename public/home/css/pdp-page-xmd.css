@@ -2166,7 +2166,12 @@ img {
 }
 
 #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .nav.nav-tabs {
-    border: none
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    gap: 40px;
 }
 
 @media only screen and (max-width:1199px) {
@@ -2185,23 +2190,20 @@ img {
     display: none
 }
 
-#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .nav-item:first-child {
-    margin-right: 64px
-}
-
-@media only screen and (max-width:1199px) {
-    #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .nav-item:first-child {
-        margin-right: 48px
-    }
-}
 
 #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .nav-link {
     padding: .5rem 0;
     font-weight: 600;
     font-size: 18px;
     line-height: 1.5;
-    color: #3c3c3c;
-    text-transform: uppercase
+    color: #999CA1;
+}
+
+#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .nav-link.active {
+    color: #ED2025;
+    border-bottom: 1px solid #ED2025;
+    padding-bottom: 10px;
+    display: block;
 }
 
 #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .nav-link .tab-title {
@@ -2209,10 +2211,6 @@ img {
     font-weight: inherit;
     color: inherit;
     margin: 0
-}
-
-#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .nav-link.active {
-    border-bottom-color: #1464f4
 }
 
 @media only screen and (max-width:1199px) {

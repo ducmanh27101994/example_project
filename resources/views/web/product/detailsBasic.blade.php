@@ -208,7 +208,7 @@
                 </p>
             </div>
             <div class="parts-bike__container padding-container">
-                <div class="parts-bike__list">
+                <div class="parts-bike__list parts-bike__list__gallarey">
                     <div class="parts-bike__item js-aos aos-init aos-animate" data-aos="fade-left" data-aos-delay="0" data-aos-duration="300">
                         <picture>
                             <source class="img-srcset" data-srcset="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw0a5fe1ca/images/PDP-XMD/evo200/img-part-1.webp" type="image/webp" srcset="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw0a5fe1ca/images/PDP-XMD/evo200/img-part-1.webp">
@@ -303,20 +303,30 @@
                     </div>
                 </div>
                 <div class="breaking-technology-bot">
+                    <div class="parts-bike__head_text text-center block_center">
+                        <h2>
+                            Thông số kỹ thuật
+                        </h2>
+                    </div>
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tabInfoProduct" role="tab" aria-controls="home" aria-selected="true">
-                                <h2 class="tab-title">THÔNG SỐ SẢN PHẨM</h2>
+                            <a class="nav-link active" id="tabInfoProduct" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="home" aria-selected="true">
+                                <h2 class="tab-title">Tổng quan</h2>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tabBatteryPackages" role="tab" aria-controls="profile" aria-selected="false">
-                                <h2 class="tab-title">DỊCH VỤ PIN</h2>
+                            <a class="nav-link" id="tabBatteryPackages" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="profile" aria-selected="false">
+                                <h2 class="tab-title">Khung xe</h2>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="tabdongcoPackages" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="profile" aria-selected="false">
+                                <h2 class="tab-title">Động cơ</h2>
                             </a>
                         </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="tabInfoProduct" role="tabpanel" aria-labelledby="info-tab">
+                        <div class="tabInfoProduct" id="tabInfoProduct" role="tabpanel" aria-labelledby="info-tab">
                             <div class="tab-pane-info d-flex justify-content-between">
                                 <ul>
                                     <li>
@@ -376,7 +386,7 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="tabBatteryPackages" role="tabpanel" aria-labelledby="battery-tab">
+                        <div class="tabBatteryPackages" id="tabBatteryPackages" role="tabpanel" aria-labelledby="battery-tab">
                             <div class="breaking-battery-tab d-flex justify-content-between">
                                 <div>
                                     <h3 class="pin-subtitle">Gói thuê PIN</h3>
