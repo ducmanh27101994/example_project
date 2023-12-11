@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 
 
 use App\Http\Controllers\BaseController;
+use App\Http\Repositories\CateProductRepository;
 use App\Http\Requests\FormCreateBlog;
 use App\Http\Requests\FormCreateCate;
 use App\Http\Requests\FormGeneralConfig;
@@ -13,17 +14,22 @@ use App\Http\Services\CategoryService;
 use App\Http\Services\ConfigService;
 use App\Models\Blog;
 use App\Models\Category;
+use App\Models\CateProduct;
 use Illuminate\Http\Request;
 class CategoryController extends BaseController
 {
     protected $categoryService;
     protected $blogService;
 
+    protected $repoCateProduct;
+
     public function __construct(CategoryService $categoryService,
-                                BlogService $blogService )
+                                BlogService $blogService,
+                                CateProductRepository $repoCateProduct)
     {
         $this->categoryService = $categoryService;
         $this->blogService = $blogService;
+        $this->repoCateProduct = $repoCateProduct;
 
     }
 
@@ -114,6 +120,59 @@ class CategoryController extends BaseController
         }
         toastr()->error('Cập nhật thất bại', 'Fail');
         return redirect()->route('admin.editBlog', ['id' => $id]);
+
+    }
+
+    public function indexListCategoryProduct() {
+        $category = CateProduct::all();
+        return view('admin.product.listCateProduct', ['category' => $category]);
+
+    }
+
+    public function createCategoryProduct() {
+
+        return view('admin.product.createCateProduct');
+    }
+
+    public function submitCreateCategoryProduct(Request $request) {
+
+        $status = (!empty($request->status) && $request->status == 'on') ? 'active' : 'block';
+        $data = [
+            'name' => $request->category_title,
+            'status' => $status,
+        ];
+        $result = $this->repoCateProduct->create($data);
+
+        if ($result) {
+            toastr()->success("Tạo mới thành công", 'Success');
+            return redirect()->route('admin.list.cate.product');
+        }
+        toastr()->error("Tạo mới thất bại", 'Fail');
+        return redirect()->route('admin.list.cate.product');
+
+
+    }
+
+    public function editCategoryProduct($id) {
+        $editCate = CateProduct::findOrFail($id);
+        return view('admin.product.editCateProduct', ['editCate' => $editCate]);
+    }
+
+    public function submitEditCategoryProduct(Request $request, $id) {
+
+        $status = (!empty($request->status) && $request->status == 'on') ? 'active' : 'block';
+        $data = [
+            'name' => $request->category_title,
+            'status' => $status,
+        ];
+        $cate = $this->repoCateProduct->update($id, $data);
+
+        if ($cate) {
+            toastr()->success('Cập nhật thành công', 'Success');
+            return redirect()->route('admin.list.cate.product', ['id' => $id]);
+        }
+        toastr()->error('Cập nhật thất bại', 'Fail');
+        return redirect()->route('admin.list.cate.product', ['id' => $id]);
 
     }
 
