@@ -111,7 +111,7 @@ $(document).ready(function () {
         // }
     });
 
-    $('.parts-bike__list').owlCarousel({
+    $('.parts-bike__list__owl').owlCarousel({
         items: 2,
         dots: false,
         loop: false,

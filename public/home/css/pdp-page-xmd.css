@@ -1156,7 +1156,6 @@ img {
 }
 
 .banner-info .banner-info-name {
-    padding-left: 37px;
     font-weight: 600;
     font-size: 1.04167vw;
     line-height: 1.25;
@@ -1266,7 +1265,7 @@ img {
     width: 100%;
     display: -ms-flexbox;
     display: flex;
-    padding-top: 84px
+    padding-top: 50px
 }
 
 @media only screen and (max-width:767px) {
@@ -1446,7 +1445,6 @@ img {
         bottom: 0;
         width: 57%;
         height: 100%;
-        background-color: #f7f9f9;
         z-index: 1
     }
 }
@@ -1465,7 +1463,7 @@ img {
 }
 
 .battery-technology__content {
-    width: 35%;
+    width: 36%;
     position: absolute;
     bottom: 2.77778%;
     z-index: 5
@@ -1526,6 +1524,10 @@ img {
 .battery-technology__item {
     width: 60%;
     z-index: 3
+}
+
+.battery-technology__item img {
+    border-radius: 60px;
 }
 
 @media only screen and (min-width:1200px) {
@@ -3558,7 +3560,12 @@ html {
     padding: 33px 0;
 }
 
-.page-block-image .breaking-wrap {
+#pdp-parts-bike {
+    padding-top: 64px;
+}
+
+.page-block-image .breaking-wrap,
+#pdp-parts-bike .breaking-wrap {
     padding: 0 9.6vw 0;
 }
 

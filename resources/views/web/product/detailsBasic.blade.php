@@ -110,11 +110,11 @@
                 <div class="banner-info-left">
                     <div class="banner-info-group">
                         <div class="banner-info-item js-aos" data-aos="fade-right" data-aos-delay="0" data-aos-duration="300">
-                            <h2 class="banner-info-name"><img class="img-lazy" data-src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw1a63bc7a/images/PDP-XMD/icon/icon-wheel.png" alt="Quãng đường">QUÃNG ĐƯỜNG</h2>
+                            <h2 class="banner-info-name">QUÃNG ĐƯỜNG</h2>
                             <p class="banner-info-desc">Chinh phục quãng đường lên tới khoảng 203 km chỉ với một lần sạc (theo điều kiện tiêu chuẩn của VinFast).</p>
                         </div>
                         <div class="banner-info-item js-aos" data-aos="fade-right" data-aos-delay="200" data-aos-duration="300">
-                            <h2 class="banner-info-name"><img class="img-lazy" data-src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw65d6e0d5/images/PDP-XMD/icon/icon-battery2.png" alt="Pin LFP">PIN LFP</h2>
+                            <h2 class="banner-info-name">PIN LFP</h2>
                             <p class="banner-info-desc">Công nghệ pin LFP vượt trội với công nghệ pack pin và phần mềm quản lý do VinFast tự nghiên cứu & phát triển đảm bảo pin hoạt động an toàn và ổn định.</p>
                         </div>
                     </div>
@@ -131,11 +131,11 @@
                 <div class="banner-info-right">
                     <div class="banner-info-group">
                         <div class="banner-info-item js-aos" data-aos="fade-left" data-aos-delay="0" data-aos-duration="300">
-                            <h2 class="banner-info-name"><img class="img-lazy" data-src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw11cf6632/images/PDP-XMD/icon/icon-pen.png" alt="Thiết kế">THIẾT KẾ</h2>
+                            <h2 class="banner-info-name">THIẾT KẾ</h2>
                             <p class="banner-info-desc">Trang nhã và hài hòa, thanh thoát đầy tinh tế trong từng đường nét.</p>
                         </div>
                         <div class="banner-info-item js-aos" data-aos="fade-left" data-aos-delay="200" data-aos-duration="300">
-                            <h2 class="banner-info-name"><img class="img-lazy" data-src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw2a7998a9/images/PDP-XMD/icon/icon-chip2.png" alt="Chống nước">CHỐNG NƯỚC</h2>
+                            <h2 class="banner-info-name">CHỐNG NƯỚC</h2>
                             <p class="banner-info-desc">Tiêu chuẩn chống nước IP67. Động cơ có khả năng chống nước vượt trội ở mức nước ngập sâu 0,5m trong thời gian 30 phút.</p>
                         </div>
                     </div>
@@ -153,41 +153,103 @@
             </div>
         </section>
         <section class="page-block parts-bike section" id="pdp-parts-bike">
+
+            <div class="breaking-wrap">
+                <div class="parts-bike__head_text">
+                    <h2>
+                        Không chỉ là phong cách thời thượng
+                    </h2>
+                    <p>
+                        Nâng chất lượng - Trải nghiệm lái xe êm ái. Bứt phá công nghệ hiện đại, được tính hợp nhiều tính năng thông minh.
+                    </p>
+                </div>
+            </div>
             <div class="parts-bike__container">
-                <div class="parts-bike__list owl-carousel owl-theme">
+
+                <div class="parts-bike__list parts-bike__list__owl owl-carousel owl-theme">
                     <div class="parts-bike__item js-aos container" data-aos="fade-left" data-aos-delay="0" data-aos-duration="300">
                         <picture class="image-story">
                             <source class="img-srcset" data-srcset="{{ asset('home/images/pr_album_1.png') }}" type="image/webp" />
                             <img data-src="{{ asset('home/images/pr_album_1.png') }}" title="Evo200" alt="Hệ thống đèn LED và đèn pha projector của xe máy điện VinFast Evo200" width="100%" class="img-lazy" />
+                            <p>Hệ thống đèn Full LED và đèn pha projector.</p>
                         </picture>
                     </div>
                     <div class="parts-bike__item js-aos container" data-aos="fade-left" data-aos-delay="150" data-aos-duration="300">
                         <picture class="image-story">
                             <source class="img-srcset" data-srcset="{{ asset('home/images/pr_album_2.png') }}" type="image/webp" />
                             <img data-src="{{ asset('home/images/pr_album_2.png') }}" title="Evo200" alt="Hệ thống đèn LED và đèn pha projector của xe máy điện VinFast Evo200" width="100%" class="img-lazy" />
+                            <p>Hệ thống đèn Full LED và đèn pha projector.</p>
                         </picture>
                     </div>
                     <div class="parts-bike__item js-aos container" data-aos="fade-left" data-aos-delay="300" data-aos-duration="300">
                         <picture class="image-story">
                             <source class="img-srcset" data-srcset="{{ asset('home/images/pr_album_3.png') }}" type="image/webp" />
                             <img data-src="{{ asset('home/images/pr_album_3.png') }}" title="Evo200" alt="Hệ thống đèn LED và đèn pha projector của xe máy điện VinFast Evo200" width="100%" class="img-lazy" />
+                            <p>Hệ thống đèn Full LED và đèn pha projector.</p>
                         </picture>
                     </div>
                     <div class="parts-bike__item js-aos container" data-aos="fade-left" data-aos-delay="450" data-aos-duration="300">
                         <picture class="image-story">
                             <source class="img-srcset" data-srcset="{{ asset('home/images/pr_album_4.png') }}" type="image/webp" />
                             <img data-src="{{ asset('home/images/pr_album_4.png') }}" title="Evo200" alt="Hệ thống đèn LED và đèn pha projector của xe máy điện VinFast Evo200" width="100%" class="img-lazy" />
+                            <p>Hệ thống đèn Full LED và đèn pha projector.</p>
                         </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="page-block parts-bike section" id="pdp-parts-bike">
+            <div class="parts-bike__head_text text-center block_center">
+                <h2>
+                    Dẫn đầu phong cách thời thượng
+                </h2>
+                <p>
+                    Nâng chất lượng - Trải nghiệm lái xe êm ái. Bứt phá công nghệ hiện đại, được tính hợp nhiều tính năng thông minh.
+                </p>
+            </div>
+            <div class="parts-bike__container padding-container">
+                <div class="parts-bike__list">
+                    <div class="parts-bike__item js-aos aos-init aos-animate" data-aos="fade-left" data-aos-delay="0" data-aos-duration="300">
+                        <picture>
+                            <source class="img-srcset" data-srcset="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw0a5fe1ca/images/PDP-XMD/evo200/img-part-1.webp" type="image/webp" srcset="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw0a5fe1ca/images/PDP-XMD/evo200/img-part-1.webp">
+                            <img data-src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw9b4f6530/images/PDP-XMD/evo200/img-part-1.jpg" title="Evo200" alt="Hệ thống đèn LED và đèn pha projector của xe máy điện VinFast Evo200" width="100%" class="img-lazy" src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw9b4f6530/images/PDP-XMD/evo200/img-part-1.jpg">
+                        </picture>
+                        <p>Hệ thống đèn Full LED và đèn pha projector.</p>
+                    </div>
+                    <div class="parts-bike__item js-aos aos-init aos-animate" data-aos="fade-left" data-aos-delay="150" data-aos-duration="300">
+                        <picture>
+                            <source class="img-srcset" data-srcset="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw7b656639/images/PDP-XMD/evo200/img-part-2.webp" type="image/webp" srcset="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw7b656639/images/PDP-XMD/evo200/img-part-2.webp">
+                            <img data-src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwc2954a26/images/PDP-XMD/evo200/img-part-2.jpg" title="Evo200" alt="Thiết kế cốp xe máy điện VinFast Evo200 rộng tới 22 lít" width="100%" class="img-lazy" src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwc2954a26/images/PDP-XMD/evo200/img-part-2.jpg">
+                        </picture>
+                        <p>Cốp xe rộng tới 22 Lít.</p>
+                    </div>
+                    <div class="parts-bike__item js-aos aos-init aos-animate" data-aos="fade-left" data-aos-delay="300" data-aos-duration="300">
+                        <picture>
+                            <source class="img-srcset" data-srcset="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw4e5548af/images/PDP-XMD/evo200/img-part-3.webp" type="image/webp" srcset="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw4e5548af/images/PDP-XMD/evo200/img-part-3.webp">
+                            <img data-src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw2e2a9340/images/PDP-XMD/evo200/img-part-3.jpg" title="Evo200" alt="Động cơ xe máy điện VinFast Evo200 mạnh mẽ cho quãng đường di chuyển 203km cho lần sạc tiêu chuẩn" width="100%" class="img-lazy" src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw2e2a9340/images/PDP-XMD/evo200/img-part-3.jpg">
+                        </picture>
+                        <p>Quãng đường di chuyển 203 km cho 01 lần sạc theo tiêu chuẩn.</p>
+                    </div>
+                    <div class="parts-bike__item js-aos aos-init aos-animate" data-aos="fade-left" data-aos-delay="450" data-aos-duration="300">
+                        <picture>
+                            <source class="img-srcset" data-srcset="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw4ce17f8e/images/PDP-XMD/evo200/img-part-4.webp" type="image/webp" srcset="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw4ce17f8e/images/PDP-XMD/evo200/img-part-4.webp">
+                            <img data-src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw1cb73bfd/images/PDP-XMD/evo200/img-part-4.jpg" title="Evo200" alt="Tốc độ tối đa của Evo200 lên đến 70Km/h" width="100%" class="img-lazy" src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw1cb73bfd/images/PDP-XMD/evo200/img-part-4.jpg">
+                        </picture>
+                        <p>Tốc độ tối đa 70 km/h.</p>
+                    </div>
+                    <div class="parts-bike__item js-aos aos-init aos-animate" data-aos="fade-left" data-aos-delay="600" data-aos-duration="300">
+                        <picture>
+                            <source class="img-srcset" data-srcset="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwfc9739e1/images/PDP-XMD/evo200/img-part-5.webp" type="image/webp" srcset="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwfc9739e1/images/PDP-XMD/evo200/img-part-5.webp">
+                            <img data-src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwb9048ba0/images/PDP-XMD/evo200/img-part-5.jpg" title="Evo200" alt="VinFast Evo200 vận hành êm ái, bền bỉ trên mọi địa hình" width="100%" class="img-lazy" src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwb9048ba0/images/PDP-XMD/evo200/img-part-5.jpg">
+                        </picture>
+                        <p>Vận hành êm ái, vươn xa mạnh mẽ trên mọi địa hình.</p>
                     </div>
                 </div>
             </div>
         </section>
         <section class="page-block battery-technology section" id="pdp-battery-technology">
             <div class="battery-technology__container">
-                <div class="title d-none d-lg-block">EVO<span class="title--light">200</span></div>
                 <div class="battery-technology__item js-aos" data-aos="fade-left" data-aos-delay="0" data-aos-duration="300">
-                    <div class="title d-block d-lg-none">EVO<span class="title--light">200</span></div>
-                    <source class="img-srcset" data-srcset="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw8e21d40a/images/PDP-XMD/evo200/img-pin.webp" type="image/webp" />
                     <img data-src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw91eed064/images/PDP-XMD/evo200/img-pin.png" title="Evo200" alt="Xe máy điện VinFast Evo200 ứng dụng công nghệ pin LFP tiên tiến" width="100%" class="img-lazy" />
                 </div>
                 <div class="battery-technology__content">
