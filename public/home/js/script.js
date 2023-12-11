@@ -130,7 +130,7 @@ $(document).ready(function () {
     });
 
     $('.parts-bike__list__owl').owlCarousel({
-        items: 2,
+        items: 3,
         dots: false,
         loop: false,
         autoplay: false,
@@ -146,10 +146,10 @@ $(document).ready(function () {
                 stagePadding: 0
             },
             1000: {
-                stagePadding: parseInt($('#pdp-img-360 .breaking-wrap').css('margin-left').replace('px', ''), 10)
+                stagePadding: parseInt($('#pdp-img-360 .breaking-wrap').css('padding-left').replace('px', '') - 15, 10)
             },
             1600: {
-                stagePadding: parseInt($('#pdp-img-360 .breaking-wrap').css('margin-left').replace('px', ''), 10)
+                stagePadding: parseInt($('#pdp-img-360 .breaking-wrap').css('padding-left').replace('px', '') - 15, 10)
             }
         }
     });
