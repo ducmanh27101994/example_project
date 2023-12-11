@@ -108,6 +108,12 @@ Route::group(['middleware' => 'auth_admin'], function () {
         Route::post('/createStore', 'App\Http\Controllers\Admin\StoreController@submitStore')->name('admin.submitStore');
         Route::get('/editStore/{id}', 'App\Http\Controllers\Admin\StoreController@editStore')->name('admin.editStore');
         Route::post('/editStore/{id}', 'App\Http\Controllers\Admin\StoreController@submitEditStore')->name('admin.submit.editStore');
+
+        Route::get('/indexListCateProduct','App\Http\Controllers\Admin\CategoryController@indexListCategoryProduct')->name('admin.list.cate.product');
+        Route::get('/createCateProduct','App\Http\Controllers\Admin\CategoryController@createCategoryProduct')->name('admin.create.cate.product');
+        Route::post('/createCateProduct','App\Http\Controllers\Admin\CategoryController@submitCreateCategoryProduct')->name('admin.submit.cate.product');
+        Route::get('/editCateProduct/{id}','App\Http\Controllers\Admin\CategoryController@editCategoryProduct')->name('admin.edit.cate.product');
+        Route::post('/editCateProduct/{id}','App\Http\Controllers\Admin\CategoryController@submitEditCategoryProduct')->name('admin.edit.submit.cate.product');
     });
 });
 
