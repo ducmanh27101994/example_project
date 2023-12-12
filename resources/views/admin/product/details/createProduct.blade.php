@@ -88,7 +88,7 @@
                                                 <div class="form-group">
                                                     <label class="next-label">Quãng đường di chuyển</label>
 
-                                                    <input name="distance_traveled" type="number" value=""
+                                                    <input name="distance_traveled" type="text" value=""
                                                            id="txtproductname" class="inputbox" placeholder=""
                                                            style="width:100%;">
                                                 </div>
@@ -177,43 +177,30 @@
                                                     <label class="next-label">Thông số kỹ thuật</label>
                                                     <h6>Tổng quan</h6>
                                                     <div class="tskt row">
-                                                        <div class="col-sm-6">
-                                                            <input name="overview" type="text" id="txtproductname"
+                                                        <div class="col-sm-12">
+                                                            <textarea name="overview" id="overview"
                                                                    class="inputbox" placeholder="Tên thông số tổng quan"
-                                                                   style="width:100%;">
+                                                                      style="width:100%;"></textarea>
                                                         </div>
-                                                        <div class="col-sm-6">
-                                                            <input name="overview_price" type="number"
-                                                                   id="txtproductname"
-                                                                   class="inputbox" placeholder="Giá trị tổng quan"
-                                                                   style="width:100%;">
-                                                        </div>
+
                                                     </div>
                                                     <h6>Khung xe</h6>
                                                     <div class="tskt row">
-                                                        <div class="col-sm-6">
-                                                            <input name="chassis" type="text" id="txtproductname"
+                                                        <div class="col-sm-12">
+                                                            <textarea name="chassis" id="chassis"
                                                                    class="inputbox" placeholder="Tên thông số khung xe"
-                                                                   style="width:100%;">
+                                                                      style="width:100%;"></textarea>
                                                         </div>
-                                                        <div class="col-sm-6">
-                                                            <input name="chassis_price" type="text" id="txtproductname"
-                                                                   class="inputbox" placeholder="Giá trị khung xe"
-                                                                   style="width:100%;">
-                                                        </div>
+
                                                     </div>
                                                     <h6>Động cơ</h6>
                                                     <div class="tskt row">
-                                                        <div class="col-sm-6">
-                                                            <input name="engine" type="text" id="txtproductname"
+                                                        <div class="col-sm-12">
+                                                            <textarea name="engine"  id="engine"
                                                                    class="inputbox" placeholder="Tên thông số dộng cơ"
-                                                                   style="width:100%;">
+                                                                      style="width:100%;"></textarea>
                                                         </div>
-                                                        <div class="col-sm-6">
-                                                            <input name="engine_price" type="text" id="txtproductname"
-                                                                   class="inputbox" placeholder="Giá trị dộng cơ"
-                                                                   style="width:100%;">
-                                                        </div>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -723,6 +710,34 @@
                     filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
                     filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
                     filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}'
+                    allowedContent: true
+                });
+                CKEDITOR.replace('overview', {
+                    filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                    filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                    filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                    filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                    filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                    filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}'
+                    allowedContent: true
+                });
+                CKEDITOR.replace('engine', {
+                    filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                    filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                    filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                    filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                    filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                    filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}'
+                    allowedContent: true
+                });
+                CKEDITOR.replace('chassis', {
+                    filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                    filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                    filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                    filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                    filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                    filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}'
+                    allowedContent: true
                 });
             </script>
 

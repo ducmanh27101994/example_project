@@ -167,5 +167,40 @@ class HomePageController extends BaseController
         }
     }
 
+    public function detailsBasic($id)
+    {
+        $product = DB::table('products')
+            ->where('id', '=', $id)
+            ->first();
+
+        $feature_description = DB::table('images_products')
+            ->where('product_id','=', $id)
+            ->where('code', '=', 'feature_description')
+            ->get();
+
+        $vehicle_detail_photos = DB::table('images_products')
+            ->where('product_id','=', $id)
+            ->where('code', '=', 'vehicle_detail_photos')
+            ->get();
+
+        $actual_photo = DB::table('images_products')
+            ->where('product_id','=', $id)
+            ->where('code', '=', 'actual_photo')
+            ->get();
+
+        $icon_images = DB::table('images_products')
+            ->where('product_id','=', $id)
+            ->where('code', '=', 'icon_images')
+            ->get();
+
+        $color_image = DB::table('images_products')
+            ->where('product_id','=', $id)
+            ->where('code', '=', 'color_image')
+            ->get();
+
+
+        return view('web.product.detailsBasic', compact('color_image','icon_images','product', 'feature_description', 'vehicle_detail_photos','actual_photo'));
+    }
+
 
 }

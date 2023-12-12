@@ -31,12 +31,12 @@ class CreateProducts extends Migration
 
             $table->text('detail')->nullable();
 
-            $table->string('overview')->nullable();
+            $table->text('overview')->nullable();
             $table->string('overview_price')->nullable();
 
-            $table->string('engine')->nullable();
+            $table->text('engine')->nullable();
             $table->string('engine_price')->nullable();
-            $table->string('chassis')->nullable();
+            $table->text('chassis')->nullable();
             $table->string('chassis_price')->nullable();
 
             $table->string('representative_image')->nullable();

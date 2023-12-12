@@ -89,7 +89,7 @@
                                                 <div class="form-group">
                                                     <label class="next-label">Quãng đường di chuyển</label>
 
-                                                    <input name="distance_traveled" type="number"
+                                                    <input name="distance_traveled" type="text"
                                                            value="{{$product->distance_traveled}}"
                                                            id="txtproductname" class="inputbox" placeholder=""
                                                            style="width:100%;">
@@ -177,7 +177,7 @@
                                                     <label class="next-label">Chi tiết</label>
 
                                                     <textarea name="detail" id="detail" cols="50"
-                                                              rows="30">{!! $product->detail !!}</textarea>
+                                                              rows="30">{!! html_entity_decode($product->detail) !!} </textarea>
                                                 </div>
                                             </div>
                                             <div class="block_sp">
@@ -185,46 +185,30 @@
                                                     <label class="next-label">Thông số kỹ thuật</label>
                                                     <h6>Tổng quan</h6>
                                                     <div class="tskt row">
-                                                        <div class="col-sm-6">
-                                                            <input name="overview" type="text" id="txtproductname"
+                                                        <div class="col-sm-12">
+                                                            <textarea name="overview" id="overview"
                                                                    class="inputbox" placeholder="Tên thông số tổng quan"
-                                                                   style="width:100%;" value="{{$product->overview}}">
+                                                                      style="width:100%;" >{!! $product->overview !!}</textarea>
                                                         </div>
-                                                        <div class="col-sm-6">
-                                                            <input name="overview_price" type="number"
-                                                                   id="txtproductname"
-                                                                   class="inputbox" placeholder="Giá trị tổng quan"
-                                                                   style="width:100%;"
-                                                                   value="{{$product->overview_price}}">
-                                                        </div>
+
                                                     </div>
                                                     <h6>Khung xe</h6>
                                                     <div class="tskt row">
-                                                        <div class="col-sm-6">
-                                                            <input name="chassis" type="text" id="txtproductname"
+                                                        <div class="col-sm-12">
+                                                            <textarea name="chassis" id="chassis"
                                                                    class="inputbox" placeholder="Tên thông số khung xe"
-                                                                   style="width:100%;" value="{{$product->chassis}}">
+                                                                      style="width:100%;" >{!! $product->chassis !!}</textarea>
                                                         </div>
-                                                        <div class="col-sm-6">
-                                                            <input name="chassis_price" type="text" id="txtproductname"
-                                                                   class="inputbox" placeholder="Giá trị khung xe"
-                                                                   style="width:100%;"
-                                                                   value="{{$product->chassis_price}}">
-                                                        </div>
+
                                                     </div>
                                                     <h6>Động cơ</h6>
                                                     <div class="tskt row">
-                                                        <div class="col-sm-6">
-                                                            <input name="engine" type="text" id="txtproductname"
+                                                        <div class="col-sm-12">
+                                                            <textarea name="engine" id="engine"
                                                                    class="inputbox" placeholder="Tên thông số dộng cơ"
-                                                                   style="width:100%;" value="{{$product->engine}}">
+                                                                      style="width:100%;" >{!! $product->engine !!}</textarea>
                                                         </div>
-                                                        <div class="col-sm-6">
-                                                            <input name="engine_price" type="text" id="txtproductname"
-                                                                   class="inputbox" placeholder="Giá trị dộng cơ"
-                                                                   style="width:100%;"
-                                                                   value="{{$product->engine_price}}">
-                                                        </div>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -697,7 +681,35 @@
                     filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
                     filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
                     filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
-                    filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}'
+                    filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                    allowedContent: true
+                });
+                CKEDITOR.replace('overview', {
+                    filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                    filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                    filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                    filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                    filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                    filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                    allowedContent: true
+                });
+                CKEDITOR.replace('engine', {
+                    filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                    filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                    filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                    filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                    filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                    filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                    allowedContent: true
+                });
+                CKEDITOR.replace('chassis', {
+                    filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                    filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                    filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                    filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                    filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                    filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                    allowedContent: true
                 });
             </script>
 

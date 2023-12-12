@@ -18,7 +18,7 @@ Route::prefix('/')->group(function () {
     Route::get('/list-store', 'App\Http\Controllers\TemplateController@listStore');
     Route::get('/near-by-store', 'App\Http\Controllers\TemplateController@nearbyStore');
     Route::get('/category-product', 'App\Http\Controllers\TemplateController@categoryProduct');
-    Route::get('/details-basic', 'App\Http\Controllers\TemplateController@detailsBasic');
+//    Route::get('/details-basic', 'App\Http\Controllers\TemplateController@detailsBasic');
     //    Route::get('/account/login', 'App\Http\Controllers\TemplateController@login');
     //    Route::get('/account/register', 'App\Http\Controllers\TemplateController@register');
     //    Route::get('/about-us', 'App\Http\Controllers\TemplateController@aboutus');
@@ -140,3 +140,5 @@ Route::get('/detail-blog/{slug}', 'App\Http\Controllers\HomePageController@detai
 Route::post('/submit-contact-form', 'App\Http\Controllers\Admin\ContactController@submitContactForm')->name('submit.contact.form');
 
 Route::get('/category-list/{id}', 'App\Http\Controllers\HomePageController@listCategoryDetail')->name('page.category.list');
+
+Route::get('/details-basic/{id}', 'App\Http\Controllers\HomePageController@detailsBasic')->name('details.basic');
