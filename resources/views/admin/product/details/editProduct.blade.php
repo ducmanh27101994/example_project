@@ -1,7 +1,7 @@
 @extends('/template/index')
 
 @section('content')
-    <form action="{{route('admin.submit.product')}}" method="post" enctype='multipart/form-data'>
+    <form action="{{route('admin.submit.edit.product', $product->id)}}" method="post" enctype='multipart/form-data'>
         @csrf
         <div id="page-wrapper">
 
@@ -18,7 +18,7 @@
                                         <button id="lnkupdate" class="toolbar" type="submit"
                                                 href="javascript:__doPostBack('controls1$ctl00$ctl00$ctl00$lnkupdate','')">
                                             <span class="icon-ok-update"></span>
-                                            Thêm
+                                            Cập nhật
                                         </button>
                                     </td>
                                     <td align="center">
@@ -79,7 +79,8 @@
                                             <div class="block_sp">
                                                 <div class="form-group">
                                                     <label class="next-label">Tên sản phẩm</label>
-                                                    <input required name="product_name" type="text" value=""
+                                                    <input required name="product_name" type="text"
+                                                           value="{{$product->product_name}}"
                                                            id="txtproductname" class="inputbox" placeholder=""
                                                            style="width:100%;">
                                                 </div>
@@ -88,7 +89,8 @@
                                                 <div class="form-group">
                                                     <label class="next-label">Quãng đường di chuyển</label>
 
-                                                    <input name="distance_traveled" type="number" value=""
+                                                    <input name="distance_traveled" type="number"
+                                                           value="{{$product->distance_traveled}}"
                                                            id="txtproductname" class="inputbox" placeholder=""
                                                            style="width:100%;">
                                                 </div>
@@ -97,7 +99,8 @@
                                                 <div class="form-group">
                                                     <label class="next-label">Vận tốc lớn nhất</label>
 
-                                                    <input name="maximum_speed" type="number" value=""
+                                                    <input name="maximum_speed" type="number"
+                                                           value="{{$product->maximum_speed}}"
                                                            id="txtproductname"
                                                            class="inputbox" placeholder="" style="width:100%;">
                                                 </div>
@@ -106,7 +109,8 @@
                                                 <div class="form-group">
                                                     <label class="next-label">Khối lượng cho phép chở</label>
 
-                                                    <input name="allowable_weight_to_carry" type="number" value=""
+                                                    <input name="allowable_weight_to_carry" type="number"
+                                                           value="{{$product->allowable_weight_to_carry}}"
                                                            id="txtproductname" class="inputbox" placeholder=""
                                                            style="width:100%;">
                                                 </div>
@@ -117,48 +121,52 @@
                                                     <div class="col-sm-6">
                                                         <div class="form-group">
                                                             <label class="next-label">Mô tả 1</label>
-                                                            <input name="describe_input_1" type="text" value=""
+                                                            <input name="describe_input_1" type="text"
+                                                                   value="{{$product->describe_input_1}}"
                                                                    id="txtproductname" class="inputbox"
                                                                    placeholder="Tiêu đề mô tả 1" style="width:100%;">
                                                             <textarea name="describe_textarea_1" rows="5" cols="70"
                                                                       id="txtkeyword" class="inputbox"
-                                                                      style="width: 100%; height:80px;"></textarea>
+                                                                      style="width: 100%; height:80px;">{{$product->describe_textarea_1}}</textarea>
 
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-6">
                                                         <div class="form-group">
                                                             <label class="next-label">Mô tả 2</label>
-                                                            <input name="describe_input_2" type="text" value=""
+                                                            <input name="describe_input_2" type="text"
+                                                                   value="{{$product->describe_input_2}}"
                                                                    id="txtproductname" class="inputbox"
                                                                    placeholder="Tiêu đề mô tả 2" style="width:100%;">
                                                             <textarea name="describe_textarea_2" rows="5" cols="70"
                                                                       id="txtkeyword" class="inputbox"
-                                                                      style="width: 100%; height:80px;"></textarea>
+                                                                      style="width: 100%; height:80px;">{{$product->describe_textarea_2}}</textarea>
 
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-6">
                                                         <div class="form-group">
                                                             <label class="next-label">Mô tả 3</label>
-                                                            <input name="describe_input_3" type="text" value=""
+                                                            <input name="describe_input_3" type="text"
+                                                                   value="{{$product->describe_input_3}}"
                                                                    id="txtproductname" class="inputbox"
                                                                    placeholder="Tiêu đề mô tả 3" style="width:100%;">
                                                             <textarea name="describe_textarea_3" rows="5" cols="70"
                                                                       id="txtkeyword" class="inputbox"
-                                                                      style="width: 100%; height:80px;"></textarea>
+                                                                      style="width: 100%; height:80px;">{{$product->describe_textarea_3}}</textarea>
 
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-6">
                                                         <div class="form-group">
                                                             <label class="next-label">Mô tả 4</label>
-                                                            <input name="describe_input_4" type="text" value=""
+                                                            <input name="describe_input_4" type="text"
+                                                                   value="{{$product->describe_input_4}}"
                                                                    id="txtproductname" class="inputbox"
                                                                    placeholder="Tiêu đề mô tả 4" style="width:100%;">
                                                             <textarea name="describe_textarea_4" rows="5" cols="70"
                                                                       id="txtkeyword" class="inputbox"
-                                                                      style="width: 100%; height:80px;"></textarea>
+                                                                      style="width: 100%; height:80px;">{{$product->describe_textarea_4}}</textarea>
 
                                                         </div>
                                                     </div>
@@ -169,7 +177,7 @@
                                                     <label class="next-label">Chi tiết</label>
 
                                                     <textarea name="detail" id="detail" cols="50"
-                                                              rows="30">{{old('detail')}}</textarea>
+                                                              rows="30">{!! $product->detail !!}</textarea>
                                                 </div>
                                             </div>
                                             <div class="block_sp">
@@ -180,13 +188,14 @@
                                                         <div class="col-sm-6">
                                                             <input name="overview" type="text" id="txtproductname"
                                                                    class="inputbox" placeholder="Tên thông số tổng quan"
-                                                                   style="width:100%;">
+                                                                   style="width:100%;" value="{{$product->overview}}">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <input name="overview_price" type="number"
                                                                    id="txtproductname"
                                                                    class="inputbox" placeholder="Giá trị tổng quan"
-                                                                   style="width:100%;">
+                                                                   style="width:100%;"
+                                                                   value="{{$product->overview_price}}">
                                                         </div>
                                                     </div>
                                                     <h6>Khung xe</h6>
@@ -194,12 +203,13 @@
                                                         <div class="col-sm-6">
                                                             <input name="chassis" type="text" id="txtproductname"
                                                                    class="inputbox" placeholder="Tên thông số khung xe"
-                                                                   style="width:100%;">
+                                                                   style="width:100%;" value="{{$product->chassis}}">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <input name="chassis_price" type="text" id="txtproductname"
                                                                    class="inputbox" placeholder="Giá trị khung xe"
-                                                                   style="width:100%;">
+                                                                   style="width:100%;"
+                                                                   value="{{$product->chassis_price}}">
                                                         </div>
                                                     </div>
                                                     <h6>Động cơ</h6>
@@ -207,12 +217,13 @@
                                                         <div class="col-sm-6">
                                                             <input name="engine" type="text" id="txtproductname"
                                                                    class="inputbox" placeholder="Tên thông số dộng cơ"
-                                                                   style="width:100%;">
+                                                                   style="width:100%;" value="{{$product->engine}}">
                                                         </div>
                                                         <div class="col-sm-6">
                                                             <input name="engine_price" type="text" id="txtproductname"
                                                                    class="inputbox" placeholder="Giá trị dộng cơ"
-                                                                   style="width:100%;">
+                                                                   style="width:100%;"
+                                                                   value="{{$product->engine_price}}">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -225,7 +236,10 @@
                                                         diện</label>
                                                     <input type="file" name="representative_image" id="flupload"
                                                            class="btn-change-link pull-right" style="width:180px;">
-
+                                                </div>
+                                                <div>
+                                                    <img style="width: 180px; height: auto"
+                                                         src="{{$product->representative_image}}">
                                                 </div>
                                             </div>
                                             <div class="block_sp">
@@ -235,13 +249,18 @@
                                                     <input type="file" name="images360" id="flupload"
                                                            class="btn-change-link pull-right" style="width:180px;">
                                                 </div>
+                                                <div>
+                                                    <img style="width: 180px; height: auto"
+                                                         src="{{$product->images360}}">
+                                                </div>
 
                                             </div>
                                             <div class="block_sp">
                                                 <div class="form-group">
                                                     <label class="next-label">Mã sản phẩm</label>
 
-                                                    <input name="product_code" type="text" value="" id="txtproductkey"
+                                                    <input name="product_code" type="text"
+                                                           value="{{$product->product_code}}" id="txtproductkey"
                                                            class="inputbox" placeholder="" style="width:100%;">
                                                 </div>
                                             </div>
@@ -253,7 +272,8 @@
                                                         <label class="next-label">Giá </label>
 
 
-                                                        <input name="product_price" type="number" value=""
+                                                        <input name="product_price" type="number"
+                                                               value="{{$product->product_price}}"
                                                                id="txtpricenew"
                                                                class="inputbox" onkeypress=" return isNumberKey(event)"
                                                                style="width:100%;" required>
@@ -263,7 +283,8 @@
                                                         <label class="next-label">Giá so sánh</label>
 
 
-                                                        <input name="price_comparison" type="number" value=""
+                                                        <input name="price_comparison" type="number"
+                                                               value="{{$product->price_comparison}}"
                                                                id="txtpriceold" class="inputbox"
                                                                onkeypress=" return isNumberKey(event)"
                                                                placeholder="Giá so sánh với giá thị trường (Không bắt buộc nhập)"
@@ -281,7 +302,8 @@
                                                             style="width:100%;">
                                                         @if(!empty($categoryProduct))
                                                             @foreach($categoryProduct as $value)
-                                                                <option value="{{$value->id}}">{{$value->name}}</option>
+                                                                <option value="{{$value->id}}"
+                                                                        @if($value->id == $product->product_portfolio) selected @endif>{{$value->name}}</option>
                                                             @endforeach
                                                         @endif
                                                     </select>
@@ -295,11 +317,26 @@
 
                                                     <select name="interface_type" id="ddlcate"
                                                             class="inputbox" style="width:100%;">
-                                                        <option value="1">Trang cơ bản</option>
-                                                        <option value="2">Trang Hot 1</option>
-                                                        <option value="3">Trang Hot 2</option>
-                                                        <option value="4">Trang Hot 3</option>
-                                                        <option value="5">Trang Hot 4</option>
+                                                        <option value="1"
+                                                                @if("1" == $product->interface_type) selected @endif>
+                                                            Trang cơ bản
+                                                        </option>
+                                                        <option value="2"
+                                                                @if("2" == $product->interface_type) selected @endif>
+                                                            Trang Hot 1
+                                                        </option>
+                                                        <option value="3"
+                                                                @if("3" == $product->interface_type) selected @endif>
+                                                            Trang Hot 2
+                                                        </option>
+                                                        <option value="4"
+                                                                @if("4" == $product->interface_type) selected @endif>
+                                                            Trang Hot 3
+                                                        </option>
+                                                        <option value="5"
+                                                                @if("5" == $product->interface_type) selected @endif>
+                                                            Trang Hot 4
+                                                        </option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -308,7 +345,10 @@
                                                 <div class="form-group">
                                                     <p class="ttg">Trạng thái</p>
                                                     <input id="chkstatus" type="checkbox"
-                                                           name="status" checked="checked">
+                                                           name="status"
+                                                           @if($product->status == 'active')
+                                                               checked="checked"
+                                                        @endif>
                                                     Hiển thị<br>
                                                 </div>
                                             </div>
@@ -346,7 +386,13 @@
                                             <div class="droptext"></div>
                                         </div>
 
-                                        <div id="image-preview"></div>
+                                        <div id="image-preview">
+                                            @if(!empty($feature_description))
+                                                @foreach($feature_description as $value)
+                                                    <img src="{{$value->images}}">
+                                                @endforeach
+                                            @endif
+                                        </div>
 
 
                                     </div>
@@ -373,7 +419,13 @@
                                             <div class="divFileProgressContainer1" style="display: none;"></div>
                                             <div class="droptext"></div>
                                         </div>
-                                        <div id="image-preview-1"></div>
+                                        <div id="image-preview-1">
+                                            @if(!empty($vehicle_detail_photos))
+                                                @foreach($vehicle_detail_photos as $value)
+                                                    <img src="{{$value->images}}">
+                                                @endforeach
+                                            @endif
+                                        </div>
                                     </div>
 
                                     <div class="gallarey">
@@ -399,7 +451,13 @@
                                             <div class="droptext"></div>
                                         </div>
 
-                                        <div id="image-preview-2"></div>
+                                        <div id="image-preview-2">
+                                            @if(!empty($actual_photo))
+                                                @foreach($actual_photo as $value)
+                                                    <img src="{{$value->images}}">
+                                                @endforeach
+                                            @endif
+                                        </div>
                                     </div>
 
 
@@ -423,6 +481,11 @@
 
                                                 </div>
                                                 <div id="image-preview-3">
+                                                    @if(!empty($icon_images))
+                                                        @foreach($icon_images as $value)
+                                                            <img src="{{$value->images}}">
+                                                        @endforeach
+                                                    @endif
                                                 </div>
                                             </div>
                                         </div>
@@ -437,6 +500,11 @@
                                                            style="width:180px;" multiple>
                                                 </div>
                                                 <div id="image-preview-4">
+                                                    @if(!empty($color_image))
+                                                        @foreach($color_image as $value)
+                                                            <img src="{{$value->images}}">
+                                                        @endforeach
+                                                    @endif
                                                 </div>
 
                                             </div>
@@ -451,97 +519,6 @@
                                 <div class="resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-2">
                                     <table width="100%" class="admintable">
                                         <tbody>
-                                        <tr id="pnvender" style="display: none">
-                                            <td class="key" style="width: 170px" valign="top">
-                                                <label for="txtphone">Hãng sản xuất</label>
-                                            </td>
-                                            <td>
-                                                <select name="controls1$ctl00$ctl00$ctl00$ddlvendor" id="ddlvendor"
-                                                        class="inputbox">
-                                                    <option selected="selected" value="-1">Chọn nhà sản xuất</option>
-                                                    <option value="11491">THAO FASHION</option>
-
-                                                </select>
-
-                                            </td>
-                                        </tr>
-
-                                        <tr style="display: none">
-                                            <td class="key" valign="top">
-                                                <label for="txtphone">Xuất xứ</label>
-                                            </td>
-                                            <td>
-                                                <input name="controls1$ctl00$ctl00$ctl00$txtxuatxu" type="text"
-                                                       id="txtxuatxu" class="inputbox" style="width:350px;">
-
-                                            </td>
-                                        </tr>
-                                        <tr style="display: none">
-                                            <td class="key" valign="top">
-                                                <label for="txtphone">Trọng lượng</label>
-                                            </td>
-                                            <td>
-                                                <input name="controls1$ctl00$ctl00$ctl00$txtweight" type="text"
-                                                       value="0"
-                                                       id="txtweight" class="inputbox"
-                                                       onkeypress=" return isNumberKey(event)">
-                                                gram
-
-                                            </td>
-                                        </tr>
-                                        <tr style="display: none">
-                                            <td class="key">
-                                                <label for="txtphone">Số lượng</label>
-                                            </td>
-                                            <td>
-                                                <table>
-                                                    <tbody>
-                                                    <tr>
-                                                        <td width="200">
-                                                            <input name="controls1$ctl00$ctl00$ctl00$txtnumber"
-                                                                   type="text"
-                                                                   value="1" id="txtnumber" class="inputbox"
-                                                                   style="width:100px;">
-
-                                                        </td>
-                                                        <td width="100"></td>
-                                                        <td></td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-
-                                            </td>
-                                        </tr>
-
-                                        <tr style="display: none">
-                                            <td width="90">
-                                                <label for="txtuser">Đơn vị</label>
-                                            </td>
-                                            <td>
-                                                <input name="controls1$ctl00$ctl00$ctl00$txtunit" type="text"
-                                                       id="txtunit"
-                                                       class="inputbox" style="width:100px;">
-
-                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-                                                <label for="txtphone">Giá đã bao gồm VAT</label>
-
-                                                <input id="chkvat" type="checkbox"
-                                                       name="controls1$ctl00$ctl00$ctl00$chkvat">
-
-
-                                            </td>
-                                        </tr>
-                                        <tr style="display: none">
-                                            <td class="key" valign="top">
-                                                <label for="txtphone">Bảo hành</label>
-                                            </td>
-                                            <td>
-                                            <textarea name="controls1$ctl00$ctl00$ctl00$txtbh" rows="5" cols="50"
-                                                      id="txtbh"></textarea>
-
-                                            </td>
-                                        </tr>
 
                                         <tr>
                                             <td class="key" valign="top">
@@ -551,12 +528,17 @@
                                                 <select name="status_product" id="ddltt"
                                                         class="inputbox"
                                                         style="width:170px;">
-                                                    <option selected="selected" value="1">Còn hàng</option>
-                                                    <option value="2">Hết hàng</option>
+                                                    <option value="1"
+                                                            @if("1" == $product->status_product) selected @endif>Còn
+                                                        hàng
+                                                    </option>
+                                                    <option value="2"
+                                                            @if("2" == $product->status_product) selected @endif>Hết
+                                                        hàng
+                                                    </option>
 
                                                 </select>
                                                 &nbsp;&nbsp;&nbsp;&nbsp;
-
 
                                             </td>
                                         </tr>
@@ -568,15 +550,21 @@
                                             <td>
                                                 <input id="chknew" type="checkbox"
                                                        name="new_product"
-                                                       checked="checked"><label for="chknew"> Sản phẩm mới</label>
+                                                       @if($product->new_product == 'active')
+                                                           checked="checked"
+                                                    @endif><label for="chknew"> Sản phẩm mới</label>
                                                 &nbsp;&nbsp;&nbsp;&nbsp;<br>
                                                 <input id="chkhot" type="checkbox"
                                                        name="selling_products"
-                                                       checked="checked"><label for="chkhot"> Sản phẩm bán chạy</label>
+                                                       @if($product->selling_products == 'active')
+                                                           checked="checked"
+                                                    @endif><label for="chkhot"> Sản phẩm bán chạy</label>
                                                 &nbsp;&nbsp;&nbsp;&nbsp;<br>
                                                 <input id="chksale" type="checkbox"
                                                        name="promotional_products"
-                                                       checked="checked"><label
+                                                       @if($product->promotional_products == 'active')
+                                                           checked="checked"
+                                                    @endif><label
                                                     for="chksale"> Sản phẩm khuyến mại</label>
 
                                             </td>
@@ -591,7 +579,7 @@
                                 <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-1"
                                     style="background-color: rgb(245, 245, 245); border-color: rgb(193, 193, 193);">
                                     <span class="resp-arrow"></span>Cấu hình SEO</h2>
-                                <div class="resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-1"
+                                <div class="resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-3"
                                      style="border-color: rgb(193, 193, 193);">
 
                                     <p>
@@ -602,12 +590,13 @@
                                             <td valign="top">Tối ưu SEO</td>
                                             <td>
                                                 <div>
-                                                    <span class="page-title-seo">Thẻ tiêu đề trang</span>
+                                                        <span
+                                                            class="page-title-seo">{{$product->page_title_tag}}</span>
                                                     <div class="page-description-seo ws-nm">
-                                                        <span>{{ url()->to('/') . '/' }}</span>
+                                                        <span>{{ url()->to('/') . '/' }}{{$product->path}}</span>
                                                     </div>
                                                     <div class="page-url-seo ws-nm">
-
+                                                        {{$product->description_card}}
                                                     </div>
                                                 </div>
                                             </td>
@@ -618,49 +607,35 @@
                                             </td>
                                             <td>
                                                 <input name="page_title_tag" type="text"
-                                                       id="txttitleweb" class="inputbox" style="width:460px;" value="{{old('page_title_tag')}}">
+                                                       id="txttitleweb" class="inputbox"
+                                                       style="width:460px;"
+                                                       value="{{!empty(old('page_title_tag')) ? old('page_title_tag') : $product->page_title_tag}}">
                                                 <a href="#" class="tooltip">
                                                     <img src="{{ asset('images/help-icon.png') }}">
                                                     <span><b>Tiêu đề trang</b><br>
-                                                        Nội dung được hiển thị dưới dạng tiêu đề trong kết quả tìm kiếm và trên trình duyệt của người dùng. <br><i>(Tiêu đề nên để dưới 70 ký tự)</i>
-                                                    </span>
+                                                                    Nội dung được hiển thị dưới dạng tiêu đề trong kết quả tìm kiếm và trên trình duyệt của người dùng. <br><i>(Tiêu đề nên để dưới 70 ký tự)</i>
+                                                                </span>
                                                 </a>
+                                                @if($errors->has('page_title_tag'))
+                                                    <p class="text-danger"
+                                                       style="margin-top: 10px;">{{ $errors->first('page_title_tag') }}</p>
+                                                @endif
                                             </td>
                                         </tr>
-                                        <tr>
-                                            <td width="150" class="key">
-                                                <label for="txttitle">Đường dẫn</label>
 
-                                            </td>
-                                            <td>
-                                                <div class="next-input--stylized">
-                                                    <span class="next-input-add-on next-input__add-on--before">{{ url()->to('/') . '/' }}</span>
-
-                                                    <input name="path" type="text"
-                                                           id="txturl" class="txtpa" style="width:335px;" value="{{old('path')}}">
-                                                </div>
-                                                <a href="#" class="tooltip">
-                                                    <img src="{{ asset('images/help-icon.png') }}">
-                                                    <span><b>Đường dẫn</b><br>
-                                                        Đường dẫn tới sản phẩm
-                                                    </span>
-                                                </a>
-
-                                            </td>
-                                        </tr>
                                         <tr>
                                             <td width="150" class="key">
                                                 <label for="txtkeyword">Thẻ từ khóa</label>
                                             </td>
                                             <td>
-                                                <textarea name="keyword_tags" rows="5"
-                                                          cols="70" id="txtkeyword" class="inputbox"
-                                                          style="height:80px;">{{old('keyword_tags')}}</textarea>
+                                                                <textarea name="keyword_tags" rows="5" cols="70"
+                                                                          id="txtkeyword" class="inputbox"
+                                                                          style="height:80px;">{{!empty(old('keyword_tags')) ? old('keyword_tags') : $product->keyword_tags}}</textarea>
                                                 <a href="#" class="tooltip">
                                                     <img src="{{ asset('images/help-icon.png') }}">
                                                     <span><b>Thẻ từ khóa</b><br>
-                                                        Mô tả các từ khóa chính của website
-                                                    </span>
+                                                                    Mô tả các từ khóa chính của website
+                                                                </span>
                                                 </a>
                                             </td>
                                         </tr>
@@ -669,14 +644,14 @@
                                                 <label for="txtdesciption">Thẻ mô tả</label>
                                             </td>
                                             <td>
-                                                <textarea name="description_card" rows="5"
-                                                          cols="70" id="txtmetadesc" class="inputbox"
-                                                          style="height:80px;">{{old('description_card')}}</textarea>
+                                                                <textarea name="description_card" rows="5" cols="70"
+                                                                          id="txtdesc" class="inputbox"
+                                                                          style="height:80px;">{{!empty(old('description_card')) ? old('description_card') : $product->description_card}}</textarea>
                                                 <a href="#" class="tooltip">
                                                     <img src="{{ asset('images/help-icon.png') }}">
                                                     <span><b>Thẻ mô tả</b><br>
-                                                        Cung cấp một mô tả ngắn của trang. Trong vài trường hợp, mô tả này được sử dụng như một phần của đoạn trích được hiển thị trong kết quả tìm kiếm. <br><i>(Mô tả nên để dưới 160 ký tự)</i>
-                                                    </span>
+                                                                    Cung cấp một mô tả ngắn của trang. Trong vài trường hợp, mô tả này được sử dụng như một phần của đoạn trích được hiển thị trong kết quả tìm kiếm. <br><i>(Mô tả nên để dưới 160 ký tự)</i>
+                                                                </span>
                                                 </a>
                                             </td>
                                         </tr>
