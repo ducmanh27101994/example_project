@@ -12,28 +12,35 @@
         <section class="page-block top-main section active" id="pdp-top-main">
             <div class="box-block box-top-main">
                 <div class="top-main-wrap">
+                    <!-- fixx -->
                     <h1 class="hidden-h1">Mua xe máy điện VinFast Evo200 - Có hỗ trợ trả góp - Thanh toán dễ dàng, nhanh chóng</h1>
                     <div class="top-bg"></div>
                     <div class="top-main-head">
+                        <!-- fixx -->
                         <h3 class="top-main-hsub show-pc js-aos" data-aos="fade-down" data-aos-delay="0" data-aos-duration="300">OSAKAR</h3>
+                        <!-- title -->
                         <h2 class="top-main-htitle">NISPA VIVA</h2>
                     </div>
                     <div class="top-main-info js-aos" data-aos="fade-right" data-aos-delay="100" data-aos-duration="300">
                         <ul class="top-main-list">
                             <li class="top-main-item">
                                 <p class="text">Quãng đường di chuyển</p>
+                                <!-- Quãng đường di chuyển -->
                                 <p class="no">70-90 km</p>
                             </li>
                             <li class="top-main-item">
                                 <p class="text">Vận tốc lớn nhất</p>
+                                <!-- Vận tốc lớn nhất -->
                                 <p class="no">45 km/h</p>
                             </li>
                             <li class="top-main-item">
                                 <p class="text">Khối lượng cho phép chở</p>
+                                <!-- Khối lượng cho phép chở -->
                                 <p class="no">130 kg</p>
                             </li>
                         </ul>
                     </div>
+                    <!-- giá -->
                     <p class="top-main-pt2 top-main-ptext top-main__price-text js-aos" data-aos="fade-left" data-aos-delay="0" data-aos-duration="300"><b>18.000.000 VNĐ</b>
 
                         <br class="show-pc"><span class="desc">(Giá đã bao gồm VAT, 01 bộ sạc)</span></span>
@@ -47,6 +54,7 @@
 
                     <div class="top-main-img">
                         <div class="mySliderTop">
+                            <!-- Màu sắc xe -->
                             <div class>
                                 <picture>
                                     <source srcset="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw203dd3db/images/PDP-XMD/evo200/img-evo-yellow.webp" type="image/webp" />
@@ -83,6 +91,7 @@
             </div>
             <div class="top-main-control js-aos" data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
                 <div class="myThumbSlider" data-showitem="7">
+                    <!-- icon màu sắc -->
                     <div class="item-myThumb">
                         <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwddfc1849/images/PDP-XMD/color/evo-yellow.png" alt="màu vàng">
                     </div>
@@ -109,10 +118,12 @@
             <div class="box-block box-banner-info">
                 <div class="banner-info-left">
                     <div class="banner-info-group">
+                        <!-- Mô tả 1 -->
                         <div class="banner-info-item js-aos" data-aos="fade-right" data-aos-delay="0" data-aos-duration="300">
                             <h2 class="banner-info-name">QUÃNG ĐƯỜNG</h2>
                             <p class="banner-info-desc">Chinh phục quãng đường lên tới khoảng 203 km chỉ với một lần sạc (theo điều kiện tiêu chuẩn của VinFast).</p>
                         </div>
+                        <!-- Mô tả 2 -->
                         <div class="banner-info-item js-aos" data-aos="fade-right" data-aos-delay="200" data-aos-duration="300">
                             <h2 class="banner-info-name">PIN LFP</h2>
                             <p class="banner-info-desc">Công nghệ pin LFP vượt trội với công nghệ pack pin và phần mềm quản lý do VinFast tự nghiên cứu & phát triển đảm bảo pin hoạt động an toàn và ổn định.</p>
@@ -121,19 +132,20 @@
                 </div>
                 <div class="banner-info-center">
                     <div class="banner-info-img">
+                        <!-- Ảnh slide mô tả tính năng -->
                         <picture>
-
-
                             <img data-src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw5b8cc72a/images/PDP-XMD/evo200/img-banner-info.webp" type="image/webp" alt="Xe máy điện VinFast Evo200 thiết kế sang trọng" width="100%" class="img-lazy" />
                         </picture>
                     </div>
                 </div>
                 <div class="banner-info-right">
                     <div class="banner-info-group">
+                        <!-- Mô tả 3 -->
                         <div class="banner-info-item js-aos" data-aos="fade-left" data-aos-delay="0" data-aos-duration="300">
                             <h2 class="banner-info-name">THIẾT KẾ</h2>
                             <p class="banner-info-desc">Trang nhã và hài hòa, thanh thoát đầy tinh tế trong từng đường nét.</p>
                         </div>
+                        <!-- Mô tả 4 -->
                         <div class="banner-info-item js-aos" data-aos="fade-left" data-aos-delay="200" data-aos-duration="300">
                             <h2 class="banner-info-name">CHỐNG NƯỚC</h2>
                             <p class="banner-info-desc">Tiêu chuẩn chống nước IP67. Động cơ có khả năng chống nước vượt trội ở mức nước ngập sâu 0,5m trong thời gian 30 phút.</p>
@@ -144,6 +156,7 @@
         </section>
         <section class="page-block-image page-block-image-360" id="pdp-img-360">
             <div class="breaking-wrap">
+                <!-- Ảnh 360 -->
                 <div class="wrap_image">
                     <img src="{{ asset('home/images/img360.png') }}" alt="img360">
                     <div class="top-btn">
@@ -165,7 +178,7 @@
                 </div>
             </div>
             <div class="parts-bike__container">
-
+                <!-- Ảnh chi tiết xe -->
                 <div class="parts-bike__list parts-bike__list__owl owl-carousel owl-theme">
                     <div class="parts-bike__item js-aos container" data-aos="fade-left" data-aos-delay="0" data-aos-duration="300">
                         <picture class="image-story">
@@ -200,7 +213,7 @@
         </section>
         <section class="page-block parts-bike section" id="pdp-parts-bike">
             <div class="parts-bike__head_text text-center block_center">
-                <h2>  
+                <h2>
                     Dẫn đầu phong cách thời thượng
                 </h2>
                 <p>
@@ -208,6 +221,7 @@
                 </p>
             </div>
             <div class="parts-bike__container padding-container">
+                <!-- Ảnh thực tế -->
                 <div class="parts-bike__list parts-bike__list__gallarey">
                     <div class="parts-bike__item js-aos aos-init aos-animate" data-aos="fade-left" data-aos-delay="0" data-aos-duration="300">
                         <picture>
@@ -250,9 +264,11 @@
         <section class="page-block battery-technology section" id="pdp-battery-technology">
             <div class="battery-technology__container">
                 <div class="battery-technology__item js-aos" data-aos="fade-left" data-aos-delay="0" data-aos-duration="300">
+                    <!-- Ảnh Đại diện -->
                     <img data-src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw91eed064/images/PDP-XMD/evo200/img-pin.png" title="Evo200" alt="Xe máy điện VinFast Evo200 ứng dụng công nghệ pin LFP tiên tiến" width="100%" class="img-lazy" />
                 </div>
                 <div class="battery-technology__content">
+                    <!-- Chi tiết -->
                     <h2 class="js-aos battery-technology-title" data-aos="fade-right" data-aos-delay="0" data-aos-duration="300">Công nghệ Pin tiên tiến</h2>
                     <div class="battery-technology__block js-aos" data-aos="fade-right" data-aos-delay="150" data-aos-duration="300">
                         <h3 class="battery-technology-iname">Công nghệ Pin LFP</h3>
@@ -286,8 +302,10 @@
                 <div class="breaking-top d-flex justify-content-between ">
                     <div class="breaking-top__title">
                         <h2 class="breaking-technology-banner breaking-top-decs">OSAKAR</h2>
+                        <!-- title -->
                         <h2 class="breaking-technology-name">NISPA VIVA</h2>
                         <div class="breaking-top__title-btn">
+                            <!-- giá -->
                             <span class>18.000.000 VNĐ</span>
                             <a href class="add-to-cart-v3s btn-pdp btn btn-primary effect-apollo" data-pid="VF-ZFG-ESNA5LHH-REQ"><span>Mua Ngay</span></a>
                         </div>
@@ -295,6 +313,7 @@
                     </div>
                     <div class="breaking-top__img breaking-slick">
                         <div class="slick-slide">
+                            <!-- Ảnh đại diện -->
                             <picture>
                                 <source class="img-srcset" data-srcset="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw203dd3db/images/PDP-XMD/evo200/img-evo-yellow.webp" type="image/webp" />
                                 <img class="img-lazy" data-src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwd2263d91/images/PDP-XMD/evo200/img-evo-yellow.png" title alt="Thiết kế xe máy điện VinFast Evo200 màu vàng" width="100%" />
@@ -308,6 +327,7 @@
                             Thông số kỹ thuật
                         </h2>
                     </div>
+                    <!-- tab thông số -->
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="tabInfoProduct" data-toggle="tab" href="javascript:void(0)" role="tab" aria-controls="home" aria-selected="true">
