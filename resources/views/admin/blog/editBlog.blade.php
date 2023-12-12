@@ -201,7 +201,7 @@
                                                 <p class="ttg">Tin trang danh mục sản phẩm </p>
                                                 <div class="form-group">
 
-                                                    <select name="category_id" id="ddlcate" class="inputbox" style="width:100%;">
+                                                    <select name="category_blogproduct" id="ddlblogproduct" class="inputbox" style="width:100%;">
 
                                                         <option value="1">Thông minh đạt tiêu chuẩn</option>
                                                         <option value="2">Dễ dàng hơn bao giờ hết</option>
