@@ -1,6 +1,6 @@
 #google_translate_element,
 .skiptranslate {
-    display: none;
+    display: none !important;
 }
 
 body {
