@@ -41,7 +41,7 @@
                     <div class="top-main-btn js-aos" data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
 
                         <div class="top-btn">
-                            <a href class="add-to-cart-v3s btn-pdp btn btn-primary effect-apollo" data-pid="VF-ZFG-ESNA5LHH-REQ"><span>Mua Ngay</span></a>
+                            <a href="/template/details-basic/" class="add-to-cart-v3s btn-pdp btn btn-primary effect-apollo" data-pid="VF-ZFG-ESNA5LHH-REQ"><span>Mua Ngay</span></a>
                         </div>
                     </div>
 
@@ -147,7 +147,7 @@
                 <div class="wrap_image">
                     <img src="{{ asset('home/images/img360.png') }}" alt="img360">
                     <div class="top-btn">
-                        <a href="" class="add-to-cart-v3s btn-pdp btn btn-primary effect-apollo" data-pid="VF-ZFG-ESNA5LHH-REQ"><span>Mua Ngay</span></a>
+                        <a href="/template/details-basic" class="add-to-cart-v3s btn-pdp btn btn-primary effect-apollo" data-pid="VF-ZFG-ESNA5LHH-REQ"><span>Mua Ngay</span></a>
                     </div>
                 </div>
             </div>
@@ -289,7 +289,7 @@
                         <h2 class="breaking-technology-name">NISPA VIVA</h2>
                         <div class="breaking-top__title-btn">
                             <span class>18.000.000 VNĐ</span>
-                            <a href class="add-to-cart-v3s btn-pdp btn btn-primary effect-apollo" data-pid="VF-ZFG-ESNA5LHH-REQ"><span>Mua Ngay</span></a>
+                            <a href="/template/details-basic/" class="add-to-cart-v3s btn-pdp btn btn-primary effect-apollo" data-pid="VF-ZFG-ESNA5LHH-REQ"><span>Mua Ngay</span></a>
                         </div>
                         <h6 class="breaking-top__title-vat">Giá đã bao gồm VAT, 01 bộ sạc 400W và không bao gồm pin.</h6>
                     </div>

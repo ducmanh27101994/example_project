@@ -123,7 +123,7 @@
                     <div class="family-item-copy">
                         <h4 class="typography-eyebrow">Gogoro SuperSport <span class="hot">Hot</span></h4>
                         <h3 class="typography-tagline">Ultra smart control.</h3>
-                        <a class="cta-link" href="/smartscooter/supersport/">Xem chi tiết</a>
+                        <a class="cta-link" href="/template/details-basic">Xem chi tiết</a>
                     </div>
                     <figure class="image-family image-family--supersport" style="background-image: url(' //cdn.gogoro.com/resources/pages/smartscooter/home/family/45d/supersport/45d-supersport-ace-polar-green.png?v=v14')"></figure>
                     <a href="#" class="deposit-buy-now ">Mua ngay</a>
@@ -132,7 +132,7 @@
                     <div class="family-item-copy">
                         <h4 class="typography-eyebrow">Gogoro SuperSport</h4>
                         <h3 class="typography-tagline">Ultra smart control.</h3>
-                        <a class="cta-link" href="/smartscooter/supersport/">Xem chi tiết</a>
+                        <a class="cta-link" href="/template/details-basic">Xem chi tiết</a>
                     </div>
                     <figure class="image-family image-family--supersport" style="background-image: url(' //cdn.gogoro.com/resources/pages/smartscooter/home/family/45d/supersport/45d-supersport-ace-polar-green.png?v=v14')"></figure>
                     <a href="#" class="deposit-buy-now ">Mua ngay</a>
@@ -141,7 +141,7 @@
                     <div class="family-item-copy">
                         <h4 class="typography-eyebrow">Gogoro SuperSport</h4>
                         <h3 class="typography-tagline">Ultra smart control.</h3>
-                        <a class="cta-link" href="/smartscooter/supersport/">Xem chi tiết</a>
+                        <a class="cta-link" href="/template/details-basic">Xem chi tiết</a>
                     </div>
                     <figure class="image-family image-family--supersport" style="background-image: url(' //cdn.gogoro.com/resources/pages/smartscooter/home/family/45d/supersport/45d-supersport-ace-polar-green.png?v=v14')"></figure>
                     <a href="#" class="deposit-buy-now ">Mua ngay</a>
@@ -150,7 +150,7 @@
                     <div class="family-item-copy">
                         <h4 class="typography-eyebrow">Gogoro SuperSport</h4>
                         <h3 class="typography-tagline">Ultra smart control.</h3>
-                        <a class="cta-link" href="/smartscooter/supersport/">Xem chi tiết</a>
+                        <a class="cta-link" href="/template/details-basic">Xem chi tiết</a>
                     </div>
                     <figure class="image-family image-family--supersport" style="background-image: url(' //cdn.gogoro.com/resources/pages/smartscooter/home/family/45d/supersport/45d-supersport-ace-polar-green.png?v=v14')"></figure>
                     <a href="#" class="deposit-buy-now ">Mua ngay</a>
@@ -159,7 +159,7 @@
                     <div class="family-item-copy">
                         <h4 class="typography-eyebrow">Gogoro SuperSport</h4>
                         <h3 class="typography-tagline">Ultra smart control.</h3>
-                        <a class="cta-link" href="/smartscooter/supersport/">Xem chi tiết</a>
+                        <a class="cta-link" href="/template/details-basic">Xem chi tiết</a>
                     </div>
                     <figure class="image-family image-family--supersport" style="background-image: url(' //cdn.gogoro.com/resources/pages/smartscooter/home/family/45d/supersport/45d-supersport-ace-polar-green.png?v=v14')"></figure>
                     <a href="#" class="deposit-buy-now ">Mua ngay</a>
@@ -168,7 +168,7 @@
                     <div class="family-item-copy">
                         <h4 class="typography-eyebrow">Gogoro SuperSport</h4>
                         <h3 class="typography-tagline">Ultra smart control.</h3>
-                        <a class="cta-link" href="/smartscooter/supersport/">Xem chi tiết</a>
+                        <a class="cta-link" href="/template/details-basic">Xem chi tiết</a>
                     </div>
                     <figure class="image-family image-family--supersport" style="background-image: url(' //cdn.gogoro.com/resources/pages/smartscooter/home/family/45d/supersport/45d-supersport-ace-polar-green.png?v=v14')"></figure>
                     <a href="#" class="deposit-buy-now ">Mua ngay</a>
