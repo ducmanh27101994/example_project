@@ -230,12 +230,20 @@
                                                 <div class="form-group">
                                                     <label class="text-no-bold" data-bind="text: Title">Hình ảnh
                                                         360</label>
-                                                    <input type="file" name="images360" id="flupload"
-                                                           class="btn-change-link pull-right" style="width:180px;">
+                                                    <input type="file" name="images360[]" id="images360"
+                                                           class="btn-change-link pull-right" style="width:180px;" multiple>
                                                 </div>
                                                 <div>
-                                                    <img style="width: 180px; height: auto"
-                                                         src="{{$product->images360}}">
+                                                    <div id="image-preview-5">
+                                                        @if(!empty($images360))
+                                                            @foreach($images360 as $value)
+                                                                <img style="width: 180px; height: auto"
+                                                                     src="{{$value->images}}">
+                                                            @endforeach
+                                                        @endif
+                                                    </div>
+
+
                                                 </div>
 
                                             </div>
@@ -840,6 +848,31 @@
                         }
                     }
                 });
+                document.getElementById('images360').addEventListener('change', function (e) {
+                    var previewContainer = document.getElementById('image-preview-5');
+                    previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
+
+                    if (e.target.files.length > 0) {
+                        for (var i = 0; i < e.target.files.length; i++) {
+                            var file = e.target.files[i];
+
+                            if (file.type.match(/^image\//)) {
+                                var reader = new FileReader();
+
+                                reader.onload = function (e) {
+                                    var img = document.createElement('img');
+                                    img.src = e.target.result;
+                                    img.className = 'preview-image-5';
+                                    previewContainer.appendChild(img);
+                                };
+
+                                reader.readAsDataURL(file);
+                            } else {
+                                alert('Vui lòng chọn một hình ảnh.');
+                            }
+                        }
+                    }
+                });
             </script>
             <style>
 
@@ -847,6 +880,7 @@
                 #image-preview-2,
                 #image-preview-3,
                 #image-preview-4,
+                #image-preview-5,
                 #image-preview {
                     display: flex;
                     flex-wrap: wrap;
@@ -856,6 +890,7 @@
                 .preview-image-2,
                 .preview-image-3,
                 .preview-image-4,
+                .preview-image-5,
                 .preview-image {
                     max-width: 100px;
                     height: auto;
