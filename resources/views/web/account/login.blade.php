@@ -28,7 +28,7 @@
                     </div>
                     <div class="none_account_box">
                         <p>
-                            <span>Bạn chưa có tài khoản?</span><a href="/account/register"><strong> Đăng ký</strong></a>
+                            <span>Bạn chưa có tài khoản?</span><a href="/register_customer"><strong> Đăng ký</strong></a>
                         </p>
                     </div>
                 </div>
