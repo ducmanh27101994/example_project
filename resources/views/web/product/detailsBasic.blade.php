@@ -155,8 +155,10 @@
                 <div class="breaking-wrap">
                     <!-- Ảnh 360 -->
                     <div class="wrap_image">
-                        @if(!empty($product->images360))
-                            <img src="{{ $product->images360 }}" alt="img360">
+                        @if(!empty($images360))
+                            @foreach($images360 as $value)
+                                <img src="{{ $product->images360 }}" alt="img360">
+                            @endforeach
                         @endif
                         <div class="top-btn">
                             <a href="" class="add-to-cart-v3s btn-pdp btn btn-primary effect-apollo"

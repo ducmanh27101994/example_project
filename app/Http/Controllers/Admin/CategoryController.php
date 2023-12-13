@@ -215,9 +215,6 @@ class CategoryController extends BaseController
         if ($request->representative_image) {
             $representative_image = $this->uploadService->upload_param($request->representative_image);
         }
-        if ($request->images360) {
-            $images360 = $this->uploadService->upload_param($request->images360);
-        }
 
         $data = [
             'product_name' => !empty($request->product_name) ? $request->product_name : '',
@@ -240,7 +237,6 @@ class CategoryController extends BaseController
             'engine' => !empty($request->engine) ? $request->engine : '',
             'engine_price' => !empty($request->engine_price) ? $request->engine_price : '',
             'representative_image' => !empty($representative_image) ? $representative_image : '',
-            'images360' => !empty($images360) ? $images360 : '',
             'product_code' => !empty($request->product_code) ? $request->product_code : '',
             'product_price' => !empty($request->product_price) ? $request->product_price : '',
             'price_comparison' => !empty($request->price_comparison) ? $request->price_comparison : '',
@@ -324,6 +320,19 @@ class CategoryController extends BaseController
                     $this->imagesRepositories->create($color_image);
                 }
             }
+            $images360 = [];
+            if (!empty($request->images360)) {
+                foreach ($request->images360 as $value) {
+                    $images = $this->uploadService->upload_param($value);
+                    $color_image = [
+                        'product_id' => $product->id,
+                        'code' => 'images360',
+                        'images' => $images
+                    ];
+                    $this->imagesRepositories->create($color_image);
+                }
+            }
+
         }
 
         toastr()->success('Thêm mới thành công', 'Success');
@@ -366,7 +375,12 @@ class CategoryController extends BaseController
             ->where('code', '=', 'color_image')
             ->get();
 
-        return view('admin.product.details.editProduct', compact('color_image','icon_images','product', 'categoryProduct', 'feature_description', 'vehicle_detail_photos','actual_photo'));
+        $images360 = DB::table('images_products')
+            ->where('product_id','=', $id)
+            ->where('code', '=', 'images360')
+            ->get();
+
+        return view('admin.product.details.editProduct', compact('images360','color_image','icon_images','product', 'categoryProduct', 'feature_description', 'vehicle_detail_photos','actual_photo'));
 
     }
 
@@ -381,11 +395,6 @@ class CategoryController extends BaseController
             $representative_image = $this->uploadService->upload_param($request->representative_image);
         } else {
             $representative_image = $this->productRepositories->find($id)->representative_image;
-        }
-        if ($request->images360) {
-            $images360 = $this->uploadService->upload_param($request->images360);
-        } else {
-            $images360 = $this->productRepositories->find($id)->images360;
         }
 
         $data = [
@@ -409,7 +418,6 @@ class CategoryController extends BaseController
             'engine' => !empty($request->engine) ? $request->engine : '',
             'engine_price' => !empty($request->engine_price) ? $request->engine_price : '',
             'representative_image' => !empty($representative_image) ? $representative_image : '',
-            'images360' => !empty($images360) ? $images360 : '',
             'product_code' => !empty($request->product_code) ? $request->product_code : '',
             'product_price' => !empty($request->product_price) ? $request->product_price : '',
             'price_comparison' => !empty($request->price_comparison) ? $request->price_comparison : '',
@@ -509,6 +517,22 @@ class CategoryController extends BaseController
                     $color_image = [
                         'product_id' => $product->id,
                         'code' => 'color_image',
+                        'images' => $images
+                    ];
+                    $this->imagesRepositories->create($color_image);
+                }
+            }
+            $images360 = [];
+            if (!empty($request->images360)) {
+                DB::table('images_products')
+                    ->where('product_id', '=', $id)
+                    ->where('code', '=', 'images360')
+                    ->delete();
+                foreach ($request->images360 as $value) {
+                    $images = $this->uploadService->upload_param($value);
+                    $color_image = [
+                        'product_id' => $product->id,
+                        'code' => 'images360',
                         'images' => $images
                     ];
                     $this->imagesRepositories->create($color_image);

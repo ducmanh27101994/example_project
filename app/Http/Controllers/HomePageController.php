@@ -204,8 +204,13 @@ class HomePageController extends BaseController
             ->where('code', '=', 'color_image')
             ->get();
 
+        $images360 = DB::table('images_products')
+            ->where('product_id','=', $id)
+            ->where('code', '=', 'images360')
+            ->get();
 
-        return view('web.product.detailsBasic', compact('color_image', 'icon_images', 'product', 'feature_description', 'vehicle_detail_photos', 'actual_photo'));
+
+        return view('web.product.detailsBasic', compact('images360','color_image', 'icon_images', 'product', 'feature_description', 'vehicle_detail_photos', 'actual_photo'));
     }
 
     public function categoryProduct()
