@@ -207,6 +207,7 @@ class HomePageController extends BaseController
         $images360 = DB::table('images_products')
             ->where('product_id','=', $id)
             ->where('code', '=', 'images360')
+            ->orderBy('created_at', 'asc')
             ->get();
 
 
