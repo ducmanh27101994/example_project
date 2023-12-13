@@ -17,20 +17,14 @@ Route::prefix('/')->group(function () {
     Route::get('/contact', 'App\Http\Controllers\TemplateController@contact');
     Route::get('/list-store', 'App\Http\Controllers\TemplateController@listStore');
     Route::get('/near-by-store', 'App\Http\Controllers\TemplateController@nearbyStore');
-//    Route::get('/category-product', 'App\Http\Controllers\TemplateController@categoryProduct');
-//    Route::get('/details-basic', 'App\Http\Controllers\TemplateController@detailsBasic');
+   Route::get('/template/category-product', 'App\Http\Controllers\TemplateController@categoryProduct');
+   Route::get('/template/details-basic', 'App\Http\Controllers\TemplateController@detailsBasic');
     //    Route::get('/account/login', 'App\Http\Controllers\TemplateController@login');
     //    Route::get('/account/register', 'App\Http\Controllers\TemplateController@register');
     //    Route::get('/about-us', 'App\Http\Controllers\TemplateController@aboutus');
     //    Route::get('/category-news', 'App\Http\Controllers\TemplateController@categoryNews');
     //    Route::get('/details', 'App\Http\Controllers\TemplateController@detailsNews');
 });
-
-Route::prefix('/template')->group(function () {
-    Route::get('/listItemProduct', 'App\Http\Controllers\TemplateController@listProductAdmin');
-    Route::get('/createItemProduct', 'App\Http\Controllers\TemplateController@createProductAdmin');
-});
-
 
 Route::get('', 'App\Http\Controllers\HomePageController@indexHomePage')->name('home.page');
 

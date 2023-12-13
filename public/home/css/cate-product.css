@@ -1323,7 +1323,9 @@ html[dark] .section-sosumi {
 .section-hero {
     position: relative;
     max-height: 600px;
-    background: center bottom/auto 140% no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/home/hero/img-scooter-home-banner-mobile@2x.jpg?v=v14") #efefef
+    background: center bottom / auto 140% no-repeat,
+        url("../images/img-scooter-home-banner.png"),
+        linear-gradient(180deg, rgba(236, 236, 236, 0) 0%, #ECECEC 100%);
 }
 
 .section-hero::after {
@@ -1340,11 +1342,14 @@ html[dark] .section-sosumi {
 
 @media(min-width: 768px) {
     .section-hero {
-        background-position: center;
-        background-size: auto 100%;
-        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/hero/img-scooter-home-banner@2x.jpg?v=v14");
+        background-position: bottom;
+        background: bottom bottom / auto,
+            url("../images/img-scooter-home-banner.png"),
+            linear-gradient(180deg, rgba(236, 236, 236, 0) 0%, #ECECEC 100%);
         height: 800px;
-        max-height: initial
+        max-height: initial;
+        background-repeat: no-repeat;
+        background-size: 100%;
     }
 
     .section-hero::after {
@@ -1542,6 +1547,74 @@ html[dark] .section-sosumi {
     }
 }
 
+@-webkit-keyframes glowing {
+    0% {
+        background-color: #ED2025;
+        -webkit-box-shadow: 0 0 3px #ED2025;
+    }
+
+    50% {
+        background-color: #f91218;
+        -webkit-box-shadow: 0 0 10px #f91218;
+    }
+
+    100% {
+        background-color: #ED2025;
+        -webkit-box-shadow: 0 0 3px #ED2025;
+    }
+}
+
+@-moz-keyframes glowing {
+    0% {
+        background-color: #ED2025;
+        -moz-box-shadow: 0 0 3px #ED2025;
+    }
+
+    50% {
+        background-color: #f91218;
+        -moz-box-shadow: 0 0 10px #f91218;
+    }
+
+    100% {
+        background-color: #ED2025;
+        -moz-box-shadow: 0 0 3px #ED2025;
+    }
+}
+
+@-o-keyframes glowing {
+    0% {
+        background-color: #ED2025;
+        box-shadow: 0 0 3px #ED2025;
+    }
+
+    50% {
+        background-color: #f91218;
+        box-shadow: 0 0 10px #f91218;
+    }
+
+    100% {
+        background-color: #ED2025;
+        box-shadow: 0 0 3px #ED2025;
+    }
+}
+
+@keyframes glowing {
+    0% {
+        background-color: #ED2025;
+        box-shadow: 0 0 3px #ED2025;
+    }
+
+    50% {
+        background-color: #f91218;
+        box-shadow: 0 0 10px #f91218;
+    }
+
+    100% {
+        background-color: #ED2025;
+        box-shadow: 0 0 3px #ED2025;
+    }
+}
+
 .image-story--smart-1 {
     background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/stories/img-scooter-slide1-photo1-mobile@2x.jpg?v=v14")
 }
@@ -1621,73 +1694,5 @@ html[dark] .section-sosumi {
 
     .image-story--experience-3 {
         background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/stories/img-scooter-slide3-photo3@2x.jpg?v=v14")
-    }
-}
-
-@-webkit-keyframes glowing {
-    0% {
-        background-color: #ED2025;
-        -webkit-box-shadow: 0 0 3px #ED2025;
-    }
-
-    50% {
-        background-color: #f91218;
-        -webkit-box-shadow: 0 0 10px #f91218;
-    }
-
-    100% {
-        background-color: #ED2025;
-        -webkit-box-shadow: 0 0 3px #ED2025;
-    }
-}
-
-@-moz-keyframes glowing {
-    0% {
-        background-color: #ED2025;
-        -moz-box-shadow: 0 0 3px #ED2025;
-    }
-
-    50% {
-        background-color: #f91218;
-        -moz-box-shadow: 0 0 10px #f91218;
-    }
-
-    100% {
-        background-color: #ED2025;
-        -moz-box-shadow: 0 0 3px #ED2025;
-    }
-}
-
-@-o-keyframes glowing {
-    0% {
-        background-color: #ED2025;
-        box-shadow: 0 0 3px #ED2025;
-    }
-
-    50% {
-        background-color: #f91218;
-        box-shadow: 0 0 10px #f91218;
-    }
-
-    100% {
-        background-color: #ED2025;
-        box-shadow: 0 0 3px #ED2025;
-    }
-}
-
-@keyframes glowing {
-    0% {
-        background-color: #ED2025;
-        box-shadow: 0 0 3px #ED2025;
-    }
-
-    50% {
-        background-color: #f91218;
-        box-shadow: 0 0 10px #f91218;
-    }
-
-    100% {
-        background-color: #ED2025;
-        box-shadow: 0 0 3px #ED2025;
     }
 }

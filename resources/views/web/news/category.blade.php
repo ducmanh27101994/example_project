@@ -13,10 +13,10 @@
                     <time datetime="2023-11-07" class="typography-article-time">November 7, 2023</time>
                     <h3 class="typography-article-title-enhanced">Gogoro Unveils Scooter Key in Apple Wallet for its
                         Smartscooters®</h3>
-                    <p class="typography-article-summary">Gogoro announces the scooter key in Apple Wallet feature
+                    <div class="typography-article-summary">Gogoro announces the scooter key in Apple Wallet feature
                         today. Smartscooter® riders can now seamlessly access and start their scooters with iPhone
                         and Apple Watch.
-                    </p>
+                    </div>
                     <a class="cta-link" href="/news/scooter-key-in-apple-wallet/">READ MORE</a>
                 </div>
             </div>
@@ -57,7 +57,7 @@
                     <a class="article-item-link" href="{{route('page.blog',$value->slug)}}">
                         <h3 class="typography-article-title"> {!! $value->news_headlines !!} </h3>
                     </a>
-                    <p class="typography-article-summary">{!! $value->describe !!}</p>
+                    <div class="typography-article-summary">{!! $value->describe !!}</div>
                 </article>
                 @endforeach
                 @endif

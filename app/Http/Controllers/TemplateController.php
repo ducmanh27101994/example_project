@@ -40,11 +40,11 @@ class TemplateController extends BaseController
     }
     public function categoryProduct()
     {
-        return view('web.product.category');
+        return view('template.category');
     }
     public function detailsBasic()
     {
-        return view('web.product.detailsBasic');
+        return view('template.detailsBasic');
     }
     public function listProductAdmin()
     {
