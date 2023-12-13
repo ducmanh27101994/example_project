@@ -50,6 +50,12 @@ class AuthController extends BaseController
         return view('web.account.login');
     }
 
+    public function indexRegister()
+    {
+
+        return view('web.account.register');
+    }
+
     public function registerSubmit(Request $request)
     {
 

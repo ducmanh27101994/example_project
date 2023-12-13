@@ -17,8 +17,8 @@ Route::prefix('/')->group(function () {
     Route::get('/contact', 'App\Http\Controllers\TemplateController@contact');
     Route::get('/list-store', 'App\Http\Controllers\TemplateController@listStore');
     Route::get('/near-by-store', 'App\Http\Controllers\TemplateController@nearbyStore');
-   Route::get('/template/category-product', 'App\Http\Controllers\TemplateController@categoryProduct');
-   Route::get('/template/details-basic', 'App\Http\Controllers\TemplateController@detailsBasic');
+    Route::get('/template/category-product', 'App\Http\Controllers\TemplateController@categoryProduct');
+    Route::get('/template/details-basic', 'App\Http\Controllers\TemplateController@detailsBasic');
     //    Route::get('/account/login', 'App\Http\Controllers\TemplateController@login');
     //    Route::get('/account/register', 'App\Http\Controllers\TemplateController@register');
     //    Route::get('/about-us', 'App\Http\Controllers\TemplateController@aboutus');
@@ -123,6 +123,7 @@ Route::group(['middleware' => 'auth_admin'], function () {
 });
 
 Route::get('/login_customer', 'App\Http\Controllers\Customer\AuthController@indexLogin')->name('customer.login');
+Route::get('/register_customer', 'App\Http\Controllers\Customer\AuthController@indexRegister')->name('customer.customer');
 Route::post('/submit_register', 'App\Http\Controllers\Customer\AuthController@registerSubmit')->name('submit.register.customer');
 Route::post('/submitLogin', 'App\Http\Controllers\Customer\AuthController@submitLogin')->name('submit.login.customer');
 Route::get('/logoutCustomer', 'App\Http\Controllers\Customer\AuthController@logoutCustomer')->name('submit.logout.customer');
