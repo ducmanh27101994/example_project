@@ -179,8 +179,16 @@
                                                     <div class="tskt row">
                                                         <div class="col-sm-12">
                                                             <textarea name="overview" id="overview"
-                                                                   class="inputbox" placeholder="Tên thông số tổng quan"
-                                                                      style="width:100%;"></textarea>
+                                                                      class="inputbox"
+                                                                      placeholder="Tên thông số tổng quan"
+                                                                      style="width:100%;">
+                                                                <ul>
+	<li>
+	<h3>...example</h3>
+	...</li>
+</ul>
+
+                                                            </textarea>
                                                         </div>
 
                                                     </div>
@@ -188,7 +196,8 @@
                                                     <div class="tskt row">
                                                         <div class="col-sm-12">
                                                             <textarea name="chassis" id="chassis"
-                                                                   class="inputbox" placeholder="Tên thông số khung xe"
+                                                                      class="inputbox"
+                                                                      placeholder="Tên thông số khung xe"
                                                                       style="width:100%;"></textarea>
                                                         </div>
 
@@ -196,8 +205,9 @@
                                                     <h6>Động cơ</h6>
                                                     <div class="tskt row">
                                                         <div class="col-sm-12">
-                                                            <textarea name="engine"  id="engine"
-                                                                   class="inputbox" placeholder="Tên thông số dộng cơ"
+                                                            <textarea name="engine" id="engine"
+                                                                      class="inputbox"
+                                                                      placeholder="Tên thông số dộng cơ"
                                                                       style="width:100%;"></textarea>
                                                         </div>
 
@@ -605,7 +615,8 @@
                                             </td>
                                             <td>
                                                 <input name="page_title_tag" type="text"
-                                                       id="txttitleweb" class="inputbox" style="width:460px;" value="{{old('page_title_tag')}}">
+                                                       id="txttitleweb" class="inputbox" style="width:460px;"
+                                                       value="{{old('page_title_tag')}}">
                                                 <a href="#" class="tooltip">
                                                     <img src="{{ asset('images/help-icon.png') }}">
                                                     <span><b>Tiêu đề trang</b><br>
@@ -621,10 +632,12 @@
                                             </td>
                                             <td>
                                                 <div class="next-input--stylized">
-                                                    <span class="next-input-add-on next-input__add-on--before">{{ url()->to('/') . '/' }}</span>
+                                                    <span
+                                                        class="next-input-add-on next-input__add-on--before">{{ url()->to('/') . '/' }}</span>
 
                                                     <input name="path" type="text"
-                                                           id="txturl" class="txtpa" style="width:335px;" value="{{old('path')}}">
+                                                           id="txturl" class="txtpa" style="width:335px;"
+                                                           value="{{old('path')}}">
                                                 </div>
                                                 <a href="#" class="tooltip">
                                                     <img src="{{ asset('images/help-icon.png') }}">

@@ -17,7 +17,7 @@ Route::prefix('/')->group(function () {
     Route::get('/contact', 'App\Http\Controllers\TemplateController@contact');
     Route::get('/list-store', 'App\Http\Controllers\TemplateController@listStore');
     Route::get('/near-by-store', 'App\Http\Controllers\TemplateController@nearbyStore');
-    Route::get('/category-product', 'App\Http\Controllers\TemplateController@categoryProduct');
+//    Route::get('/category-product', 'App\Http\Controllers\TemplateController@categoryProduct');
 //    Route::get('/details-basic', 'App\Http\Controllers\TemplateController@detailsBasic');
     //    Route::get('/account/login', 'App\Http\Controllers\TemplateController@login');
     //    Route::get('/account/register', 'App\Http\Controllers\TemplateController@register');
@@ -142,3 +142,6 @@ Route::post('/submit-contact-form', 'App\Http\Controllers\Admin\ContactControlle
 Route::get('/category-list/{id}', 'App\Http\Controllers\HomePageController@listCategoryDetail')->name('page.category.list');
 
 Route::get('/details-basic/{id}', 'App\Http\Controllers\HomePageController@detailsBasic')->name('details.basic');
+
+Route::get('/category-product', 'App\Http\Controllers\HomePageController@categoryProduct')->name('category.product');
+Route::get('/category-product/{id}', 'App\Http\Controllers\HomePageController@detailCategoryProduct')->name('category.product.detail');

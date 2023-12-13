@@ -41,7 +41,8 @@ class BlogService
             'category_id' => $request->category_id,
             'representative_image' => $representative_image ?? '',
             'created_by' => session()->get('employee')['email'] ?? '',
-            'slug' => $slug
+            'slug' => $slug,
+            'category_blogproduct' => $request->category_blogproduct
         ];
         $result = $this->blogRepository->create($data);
         return $result;
@@ -73,7 +74,8 @@ class BlogService
             'category_id' => $request->category_id,
             'representative_image' => $representative_image ?? '',
             'created_by' => session()->get('employee')['email'] ?? '',
-            'slug' => $request->slug
+            'slug' => $request->slug,
+            'category_blogproduct' => $request->category_blogproduct
         ];
         $result = $this->blogRepository->update($id, $data);
         return $result;
