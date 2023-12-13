@@ -544,7 +544,7 @@
                                                        name="new_product"
                                                        @if($product->new_product == 'active')
                                                            checked="checked"
-                                                    @endif><label for="chknew"> Sản phẩm mới</label>
+                                                    @endif><label for="chknew"> Sản phẩm Hot</label>
                                                 &nbsp;&nbsp;&nbsp;&nbsp;<br>
                                                 <input id="chkhot" type="checkbox"
                                                        name="selling_products"

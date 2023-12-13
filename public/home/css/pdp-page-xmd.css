@@ -1025,15 +1025,15 @@ img {
 
 @media only screen and (min-width:1200px) {
     .banner-info .box-banner-info {
-        -ms-flex-align: end;
-        align-items: flex-end
+        -ms-flex-align: center;
+        align-items: center
     }
 }
 
 @media print {
     .banner-info .box-banner-info {
-        -ms-flex-align: end;
-        align-items: flex-end
+        -ms-flex-align: center;
+        align-items: center
     }
 }
 
@@ -3609,7 +3609,7 @@ html {
 }
 
 .page-block-image-360 .top-btn {
-    margin: auto;
+    margin: 30px auto;
 }
 
 .image-story {
@@ -3635,4 +3635,239 @@ html {
 
 .active .image-story::after {
     opacity: 0
+}
+
+.product-360-views {
+    position: relative;
+    width: 100%;
+    padding: 0 0 0px;
+    margin-top: 20px;
+}
+
+.product-360-views .instruction {
+    position: absolute;
+    width: 100%;
+    color: black;
+    line-height: 2;
+    bottom: 100px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.product-360-views .instruction .rotating-360-ico {
+    width: 41px;
+    height: 41px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+}
+
+.product-360-views .instruction .rotating-360-ico .main-circle {
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    border: 3px solid black;
+}
+
+.product-360-views .instruction .rotating-360-ico .sub-circle {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+}
+
+.product-360-views .instruction .rotating-360-ico .sub-circle.horizontal {
+    animation: scaleHorizontal 2s 0.5s infinite linear;
+}
+
+.product-360-views .instruction .rotating-360-ico .sub-circle.vertical {
+    animation: scaleVertical 2s infinite linear;
+}
+
+.product-360-views .instruction .rotating-360-ico .context {
+    font-size: 11px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    z-index: 2;
+    text-align: center;
+    font-weight: 600;
+}
+
+.product-360-views .instruction p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.product-360-views .background-360-view {
+    position: absolute;
+    z-index: 1;
+    width: 1200px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.product-360-views .product-images-list {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    cursor: pointer;
+    transform: all ease-out 400ms;
+    z-index: 2;
+}
+
+.product-360-views .product-images-list .image-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.product-360-views .product-images-list .image-item img {
+    display: block;
+    width: 80%;
+}
+
+.product-360-views .product-images-list .image-item:first-child {
+    position: relative;
+}
+
+.product-360-views .product-images-list .image-item.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media screen and (max-width:1024px) {
+    .product-360-views {
+        padding: 8vw 0 20vw;
+        margin: 0 0px 8vw;
+        overflow: hidden;
+    }
+
+    .product-360-views .instruction {
+        padding: 0 30px;
+        bottom: 3vw;
+    }
+
+    .product-360-views .instruction .rotating-360-ico {
+        width: 36px;
+        height: 36px;
+    }
+
+    .product-360-views .instruction .rotating-360-ico .main-circle {
+        border: 2px solid black;
+    }
+
+    .product-360-views .instruction .rotating-360-ico .sub-circle {
+        border: 1px solid black;
+    }
+
+    .product-360-views .instruction .rotating-360-ico .context {
+        font-size: 10px;
+        height: 36px;
+        line-height: 36px;
+    }
+
+    .product-360-views .instruction p {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .product-360-views .background-360-view {
+        position: absolute;
+        z-index: 1;
+        width: 130vw;
+        top: 0;
+        left: -15vw;
+        transform: none;
+    }
+
+    .product-360-views .product-images-list {
+        width: 130vw;
+        max-width: none;
+        margin-left: -15vw;
+        padding: 0;
+        filter: brightness(1);
+    }
+}
+
+@media screen and (max-width:600px) {
+    .product-360-views {
+        padding: 7vw 0 20vw;
+    }
+
+    .product-360-views .instruction {
+        padding: 0 15px;
+        bottom: 3vw;
+    }
+
+    .product-360-views .instruction p {
+        font-size: 13px;
+    }
+
+    .product-360-views .product-images-list {
+        width: 140vw;
+        margin-left: -20vw;
+    }
+}
+
+@keyframes instructionOpacity {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.6;
+    }
+}
+
+@keyframes scaleHorizontal {
+
+    0%,
+    80%,
+    100% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+    }
+
+    40% {
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+    }
+}
+
+@keyframes scaleVertical {
+
+    0%,
+    80%,
+    100% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+    }
+
+    40% {
+        -webkit-transform: rotateX(180deg);
+        transform: rotateX(180deg);
+    }
 }

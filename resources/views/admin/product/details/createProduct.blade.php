@@ -566,16 +566,13 @@
                                             </td>
                                             <td>
                                                 <input id="chknew" type="checkbox"
-                                                       name="new_product"
-                                                       checked="checked"><label for="chknew"> Sản phẩm mới</label>
+                                                       name="new_product"><label for="chknew"> Sản phẩm Hot</label>
                                                 &nbsp;&nbsp;&nbsp;&nbsp;<br>
                                                 <input id="chkhot" type="checkbox"
-                                                       name="selling_products"
-                                                       checked="checked"><label for="chkhot"> Sản phẩm bán chạy</label>
+                                                       name="selling_products"><label for="chkhot"> Sản phẩm bán chạy</label>
                                                 &nbsp;&nbsp;&nbsp;&nbsp;<br>
                                                 <input id="chksale" type="checkbox"
-                                                       name="promotional_products"
-                                                       checked="checked"><label
+                                                       name="promotional_products"><label
                                                     for="chksale"> Sản phẩm khuyến mại</label>
 
                                             </td>

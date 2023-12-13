@@ -132,19 +132,21 @@
                 </div>
             </div>
         </section>
-        <section class="page-block-image page-block-image-360" id="pdp-img-360">
-            <div class="breaking-wrap">
+        <section class="page-block-image page-block-image-360 product-360-views" id="pdp-img-360">
+            <div class="breaking-wrap product-images-list">
                 <!-- Ảnh 360 -->
-                <div class="wrap_image">
-                    <div id="threesixty" class="cover"></div>
-                    @if(!empty($images360))
-                    @foreach($images360 as $value)
-                    <img src="{{ $value->images }}" alt="img360">
-                    @endforeach
-                    @endif
-                    <div class="top-btn">
-                        <a href="" class="add-to-cart-v3s btn-pdp btn btn-primary effect-apollo" data-pid="VF-ZFG-ESNA5LHH-REQ"><span>Mua Ngay</span></a>
+                <div id="threesixty" class="wrap_image"></div>
+                <div class="instruction">
+                    <div class="rotating-360-ico">
+                        <div class="main-circle"></div>
+                        <div class="sub-circle horizontal"></div>
+                        <div class="sub-circle vertical"></div>
+                        <div class="context">360</div>
                     </div>
+                    <p>Xoay để xem ảnh 360 toàn xe</p>
+                </div>
+                <div class="top-btn">
+                    <a href="" class="add-to-cart-v3s btn-pdp btn btn-primary effect-apollo" data-pid="VF-ZFG-ESNA5LHH-REQ"><span>Mua Ngay</span></a>
                 </div>
             </div>
         </section>
@@ -229,7 +231,7 @@
                         <h2 class="breaking-technology-name">{{$product->product_name}}</h2>
                         <div class="breaking-top__title-btn">
                             <!-- giá -->
-                            <span class>{{number_format($product->product_price)}}</span>
+                            <span class>{{number_format($product->product_price)}} VNĐ</span>
                             <a href class="add-to-cart-v3s btn-pdp btn btn-primary effect-apollo" data-pid="VF-ZFG-ESNA5LHH-REQ"><span>Mua Ngay</span></a>
                         </div>
                         <h6 class="breaking-top__title-vat">Giá đã bao gồm VAT, 01 bộ sạc 400W và không bao gồm
@@ -308,14 +310,24 @@
 <script defer type="text/javascript" src="{{ asset('home/js/slick.min.js') }}"></script>
 <script defer type="text/javascript" src="{{ asset('home/js/pdp-page-xmd.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/@mladenilic/threesixty.js/dist/threesixty.js"></script>
+@php
+$imageUrls = [];
+@endphp
+@if(!empty($images360))
+@foreach($images360 as $value)
+@php
+$imageUrls[] = $value->images;
+@endphp
+@endforeach
+@endif
 <script>
-    var img360 = ["public\/upload\/product\/8-ThrNDrGrkT.jpg", "public\/upload\/product\/7-rxCxUsib8J.jpg", "public\/upload\/product\/6-R3enAV8mYh.jpg", "public\/upload\/product\/5-v3StRFDDjn.jpg", "public\/upload\/product\/4-hRROYRp1KO.jpg", "public\/upload\/product\/3-ReFeUZAqw7.jpg", "public\/upload\/product\/2-cyIqX5AONV.jpg", "public\/upload\/product\/1-qtoQv7fVyq.jpg"];
+    var img360 = @json($imageUrls);
     if (img360 != '') {
         const threesixty = new ThreeSixty(document.getElementById('threesixty'), {
             image: img360,
             count: 31,
             perRow: 0,
-            width: 1080,
+            width: '100%',
             height: 680,
         });
     }
