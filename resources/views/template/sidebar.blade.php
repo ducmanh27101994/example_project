@@ -110,15 +110,12 @@
                         phẩm</a></li>
                 <li style="display:none"><a href="#" title="Quản lý kho hàng"><i class="fa fa-fw fa fa-caret-right"></i>Quản lý kho
                         hàng</a></li>
-                <li><a href="#" title="Quản lý khoảng giá"><i class="fa fa-fw fa fa-caret-right"></i>Quản lý khoảng
-                        giá</a></li>
-                <li style="display:none"><a href="#" title="Quản lý đơn hàng"><i class="fa fa-fw fa fa-caret-right"></i>Quản lý đơn
+
+                <li ><a href="#" title="Quản lý đơn hàng"><i class="fa fa-fw fa fa-caret-right"></i>Quản lý đơn
                         hàng</a></li>
-                <li style="display:none"><a href="#" title="Mã khuyến mại sản phẩm"><i class="fa fa-fw fa fa-caret-right"></i>Mã khuyến
-                        mại</a></li>
+
                 <li style="display:none"><a href="#" title="Nhập, xuất danh sách sản phẩm"><i class="fa fa-fw fa fa-caret-right"></i>Nhập, xuất danh sách sản phẩm</a></li>
-                <li><a href="#" title="Cấu hình sản phẩm"><i class="fa fa-fw fa fa-caret-right"></i>Cấu hình sản
-                        phẩm</a></li>
+
             </ul>
         </li>
 
