@@ -157,7 +157,7 @@
                     <div class="wrap_image">
                         @if(!empty($images360))
                             @foreach($images360 as $value)
-                                <img src="{{ $product->images360 }}" alt="img360">
+                                <img src="{{ $value->images }}" alt="img360">
                             @endforeach
                         @endif
                         <div class="top-btn">
