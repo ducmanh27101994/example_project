@@ -6,6 +6,7 @@ use App\Http\Repositories\BannerAdsRepository;
 use App\Http\Services\Import;
 use App\Http\Services\UploadService;
 use App\Models\Blog;
+use App\Models\CateProduct;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -43,8 +44,13 @@ class HomePageController extends BaseController
             ->where('code_ads', '=', 'pbgn-partner')
             ->get();
 
+        $products = DB::table('products')
+            ->where('status', '=', 'active')
+            ->orderBy('created_at', 'desc')
+            ->get();
 
-        return view('web.home.trangchu', compact('slide_banner', 'img_slider', 'gallery_items', 'pbgn_partner'));
+
+        return view('web.home.trangchu', compact('slide_banner', 'img_slider', 'gallery_items', 'pbgn_partner', 'products'));
     }
 
     public function indexAboutUs()
@@ -174,32 +180,96 @@ class HomePageController extends BaseController
             ->first();
 
         $feature_description = DB::table('images_products')
-            ->where('product_id','=', $id)
+            ->where('product_id', '=', $id)
             ->where('code', '=', 'feature_description')
             ->get();
 
         $vehicle_detail_photos = DB::table('images_products')
-            ->where('product_id','=', $id)
+            ->where('product_id', '=', $id)
             ->where('code', '=', 'vehicle_detail_photos')
             ->get();
 
         $actual_photo = DB::table('images_products')
-            ->where('product_id','=', $id)
+            ->where('product_id', '=', $id)
             ->where('code', '=', 'actual_photo')
             ->get();
 
         $icon_images = DB::table('images_products')
-            ->where('product_id','=', $id)
+            ->where('product_id', '=', $id)
             ->where('code', '=', 'icon_images')
             ->get();
 
         $color_image = DB::table('images_products')
-            ->where('product_id','=', $id)
+            ->where('product_id', '=', $id)
             ->where('code', '=', 'color_image')
             ->get();
 
 
-        return view('web.product.detailsBasic', compact('color_image','icon_images','product', 'feature_description', 'vehicle_detail_photos','actual_photo'));
+        return view('web.product.detailsBasic', compact('color_image', 'icon_images', 'product', 'feature_description', 'vehicle_detail_photos', 'actual_photo'));
+    }
+
+    public function categoryProduct()
+    {
+        $category = CateProduct::all();
+
+        if (!empty($category)){
+            $products = DB::table('products')
+                ->where('status', '=', 'active')
+                ->where('product_portfolio','=', $category[0]->id)
+                ->orderBy('created_at','desc')
+                ->get();
+        }
+
+        $blog1 = DB::table('blogs')
+            ->where('status', '=', 'active')
+            ->where('category_blogproduct','=', 2)
+            ->orderBy('created_at','desc')
+            ->get();
+
+        $blog2 = DB::table('blogs')
+            ->where('status', '=', 'active')
+            ->where('category_blogproduct','=', 3)
+            ->orderBy('created_at','desc')
+            ->get();
+
+        $blog3 = DB::table('blogs')
+            ->where('status', '=', 'active')
+            ->where('category_blogproduct','=', 4)
+            ->orderBy('created_at','desc')
+            ->get();
+
+        return view('web.product.category', compact('category','products','blog1','blog2','blog3'));
+    }
+
+    public function detailCategoryProduct($id)
+    {
+        $category = CateProduct::all();
+
+        $products = DB::table('products')
+            ->where('status', '=', 'active')
+            ->where('product_portfolio','=', $id)
+            ->orderBy('created_at','desc')
+            ->get();
+
+        $blog1 = DB::table('blogs')
+            ->where('status', '=', 'active')
+            ->where('category_blogproduct','=', 2)
+            ->orderBy('created_at','desc')
+            ->get();
+
+        $blog2 = DB::table('blogs')
+            ->where('status', '=', 'active')
+            ->where('category_blogproduct','=', 3)
+            ->orderBy('created_at','desc')
+            ->get();
+
+        $blog3 = DB::table('blogs')
+            ->where('status', '=', 'active')
+            ->where('category_blogproduct','=', 4)
+            ->orderBy('created_at','desc')
+            ->get();
+
+        return view('web.product.category', compact('category','products','blog1','blog2','blog3'));
     }
 
 

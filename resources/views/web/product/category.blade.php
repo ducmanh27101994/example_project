@@ -106,75 +106,34 @@
         <div class="container">
             <div class="regions_wrapper">
                 <div class="regions_wrapper_area">
-                    <div class="regions_wrapper_area_item active">
-                        <a href="#" title="XE ĐIỆN HOT HIT">XE ĐIỆN HOT HIT</a>
-                    </div>
-                    <div class="regions_wrapper_area_item">
-                        <a href="#" title="XE ĐIỆN XMEN">XE ĐIỆN XMEN</a>
-                    </div>
-                    <div class="regions_wrapper_area_item">
-                        <a href="#" title="XE ĐẠP ĐIỆN CAO CẤP">XE ĐẠP ĐIỆN CAO CẤP</a>
-                    </div>
+                    @if(!empty($category))
+                        @foreach($category as $key => $value)
+                            <div class="regions_wrapper_area_item {{ request()->is('category-product/' . $value->id) ? 'active' : '' }} @if($key == 0) {{ request()->is('category-product') ? 'active' : '' }} @endif">
+                                <a href="{{route('category.product.detail', $value->id)}}" title="XE ĐIỆN HOT HIT">{{$value->name}}</a>
+                            </div>
+                        @endforeach
+                    @endif
                 </div>
 
             </div>
             <div class="family-items">
-                <div class="family-item family-item--supersport ">
-                    <div class="family-item-copy">
-                        <h4 class="typography-eyebrow">Gogoro SuperSport <span class="hot">Hot</span></h4>
-                        <h3 class="typography-tagline">Ultra smart control.</h3>
-                        <a class="cta-link" href="/smartscooter/supersport/">Xem chi tiết</a>
-                    </div>
-                    <figure class="image-family image-family--supersport" style="background-image: url(' //cdn.gogoro.com/resources/pages/smartscooter/home/family/45d/supersport/45d-supersport-ace-polar-green.png?v=v14')"></figure>
-                    <a href="#" class="deposit-buy-now ">Mua ngay</a>
-                </div>
-                <div class="family-item family-item--supersport ">
-                    <div class="family-item-copy">
-                        <h4 class="typography-eyebrow">Gogoro SuperSport</h4>
-                        <h3 class="typography-tagline">Ultra smart control.</h3>
-                        <a class="cta-link" href="/smartscooter/supersport/">Xem chi tiết</a>
-                    </div>
-                    <figure class="image-family image-family--supersport" style="background-image: url(' //cdn.gogoro.com/resources/pages/smartscooter/home/family/45d/supersport/45d-supersport-ace-polar-green.png?v=v14')"></figure>
-                    <a href="#" class="deposit-buy-now ">Mua ngay</a>
-                </div>
-                <div class="family-item family-item--supersport ">
-                    <div class="family-item-copy">
-                        <h4 class="typography-eyebrow">Gogoro SuperSport</h4>
-                        <h3 class="typography-tagline">Ultra smart control.</h3>
-                        <a class="cta-link" href="/smartscooter/supersport/">Xem chi tiết</a>
-                    </div>
-                    <figure class="image-family image-family--supersport" style="background-image: url(' //cdn.gogoro.com/resources/pages/smartscooter/home/family/45d/supersport/45d-supersport-ace-polar-green.png?v=v14')"></figure>
-                    <a href="#" class="deposit-buy-now ">Mua ngay</a>
-                </div>
-                <div class="family-item family-item--supersport ">
-                    <div class="family-item-copy">
-                        <h4 class="typography-eyebrow">Gogoro SuperSport</h4>
-                        <h3 class="typography-tagline">Ultra smart control.</h3>
-                        <a class="cta-link" href="/smartscooter/supersport/">Xem chi tiết</a>
-                    </div>
-                    <figure class="image-family image-family--supersport" style="background-image: url(' //cdn.gogoro.com/resources/pages/smartscooter/home/family/45d/supersport/45d-supersport-ace-polar-green.png?v=v14')"></figure>
-                    <a href="#" class="deposit-buy-now ">Mua ngay</a>
-                </div>
-                <div class="family-item family-item--supersport ">
-                    <div class="family-item-copy">
-                        <h4 class="typography-eyebrow">Gogoro SuperSport</h4>
-                        <h3 class="typography-tagline">Ultra smart control.</h3>
-                        <a class="cta-link" href="/smartscooter/supersport/">Xem chi tiết</a>
-                    </div>
-                    <figure class="image-family image-family--supersport" style="background-image: url(' //cdn.gogoro.com/resources/pages/smartscooter/home/family/45d/supersport/45d-supersport-ace-polar-green.png?v=v14')"></figure>
-                    <a href="#" class="deposit-buy-now ">Mua ngay</a>
-                </div>
-                <div class="family-item family-item--supersport ">
-                    <div class="family-item-copy">
-                        <h4 class="typography-eyebrow">Gogoro SuperSport</h4>
-                        <h3 class="typography-tagline">Ultra smart control.</h3>
-                        <a class="cta-link" href="/smartscooter/supersport/">Xem chi tiết</a>
-                    </div>
-                    <figure class="image-family image-family--supersport" style="background-image: url(' //cdn.gogoro.com/resources/pages/smartscooter/home/family/45d/supersport/45d-supersport-ace-polar-green.png?v=v14')"></figure>
-                    <a href="#" class="deposit-buy-now ">Mua ngay</a>
-                </div>
+                @if(!empty($products))
+                    @foreach($products as $value)
+                        <div class="family-item family-item--supersport ">
+                            <div class="family-item-copy">
+                                <h4 class="typography-eyebrow">Gogoro SuperSport</h4>
+                                <h3 class="typography-tagline">Ultra smart control.</h3>
+                                <a class="cta-link" href="{{route('details.basic', $value->id)}}">Xem chi tiết</a>
+                            </div>
+                            <figure class="image-family image-family--supersport" style="background-image: url('{{$value->representative_image}}')"></figure>
+                            <a href="#" class="deposit-buy-now ">Mua ngay</a>
+                        </div>
+                    @endforeach
+                @endif
+
+
             </div>
-            <a class="cta-link" href="/">Xem thêm sản phẩm </a>
+
         </div>
     </section>
 
@@ -191,32 +150,22 @@
 
         <div class="story-items">
             <div data-story-track="" class="story-items-track owl-carousel owl-theme">
-                <div class="story-item container">
-                    <figure class="image-story image-story--smart-1"></figure>
-                    <div class="story-item-copy">
-                        <h4 class="typography-story-headline">Unstealable</h4>
-                        <p class="typography-story-intro">Smart batteries, Face-ID and digital-encrypted key cards make your vehicle truly secured. It’s not leaving without you.</p>
-                    </div>
-                </div>
-                <div class="story-item container">
-                    <figure class="image-story image-story--smart-2"></figure>
-                    <div class="story-item-copy">
-                        <h4 class="typography-story-headline">App connected</h4>
-                        <p class="typography-story-intro">Packed with intuitive, comfort and convenience features that help you get more out of every mile. Just the way you like.</p>
-                    </div>
-                </div>
-                <div class="story-item container">
-                    <figure class="image-story image-story--smart-3"></figure>
-                    <div class="story-item-copy">
-                        <h4 class="typography-story-headline">Always up-to-date</h4>
-                        <p class="typography-story-intro">Gogoro iQ System automatically keeps you up-to-date with the latest smart features. Ride safer. Enjoy more. Year after year.</p>
-                        <a target="_blank" class="cta-link" href="/software/">LEARN MORE ABOUT THE IQ SYSTEM</a>
-                    </div>
-                </div>
+                @if(!empty($blog1))
+                    @foreach($blog1 as $value)
+                        <div class="story-item container">
+                            <img src="{{$value->representative_image}}">
+                            <div class="story-item-copy">
+                                <h4 class="typography-story-headline">{{$value->news_headlines}}</h4>
+                                <p class="typography-story-intro">{!! $value->describe !!}</p>
+                            </div>
+                        </div>
+                    @endforeach
+                @endif
+
+
             </div>
 
-            <button class="story-prev" data-story-prev="" disabled=""></button>
-            <button class="story-next" data-story-next=""></button>
+
         </div>
     </section>
 
@@ -233,32 +182,21 @@
 
         <div class="story-items">
             <div data-story-track="" class="story-items-track owl-carousel owl-theme">
-                <div class="story-item container">
-                    <figure class="image-story image-story--easy-1"></figure>
-                    <div class="story-item-copy">
-                        <h4 class="typography-story-headline">Swap &amp; Go</h4>
-                        <p class="typography-story-intro">10x faster than filling with gas. This is the cashless, queue-less, fume-less way to refuel. Just stop, swap, and keep rolling.</p>
-                        <a target="_blank" class="cta-link" href="/gogoro-network/">LEARN MORE ABOUT SWAP &amp; GO</a>
-                    </div>
-                </div>
-                <div class="story-item container">
-                    <figure class="image-story image-story--easy-2"></figure>
-                    <div class="story-item-copy">
-                        <h4 class="typography-story-headline">Wireless key</h4>
-                        <p class="typography-story-intro">Unlock instantly with a tap of the keycard, or a press of your phone. When you’re ready, just go.</p>
-                    </div>
-                </div>
-                <div class="story-item container">
-                    <figure class="image-story image-story--easy-3"></figure>
-                    <div class="story-item-copy">
-                        <h4 class="typography-story-headline">Reverse mode</h4>
-                        <p class="typography-story-intro">One simple action, and your Smartscooter rolls out from tight parking spots all by itself. Nice.</p>
-                    </div>
-                </div>
+                @if(!empty($blog2))
+                    @foreach($blog2 as $value)
+                        <div class="story-item container">
+                            <img src="{{$value->representative_image}}">
+                            <div class="story-item-copy">
+                                <h4 class="typography-story-headline">{{$value->news_headlines}}</h4>
+                                <p class="typography-story-intro">{!! $value->describe !!}</p>
+                            </div>
+                        </div>
+                    @endforeach
+                @endif
+
             </div>
 
-            <button class="story-prev" data-story-prev="" disabled=""></button>
-            <button class="story-next" data-story-next=""></button>
+
         </div>
     </section>
 
@@ -275,31 +213,20 @@
 
         <div class="story-items">
             <div data-story-track="" class="story-items-track owl-carousel owl-theme">
-                <div class="story-item container">
-                    <figure class="image-story image-story--experience-1"></figure>
-                    <div class="story-item-copy">
-                        <h4 class="typography-story-headline">Cross town, or cross country</h4>
-                        <p class="typography-story-intro">Exceptional range makes commuting a breeze and road-trips a must. With the of GoStation Sites everywhere your range is virtually unlimited.</p>
-                    </div>
-                </div>
-                <div class="story-item container">
-                    <figure class="image-story image-story--experience-2"></figure>
-                    <div class="story-item-copy">
-                        <h4 class="typography-story-headline">Smoother, quicker, faster</h4>
-                        <p class="typography-story-intro">Control the performance you need. Unlease instant power, or retain energy for longer tripthrough cities. All tunable through the Gogoro App.</p>
-                    </div>
-                </div>
-                <div class="story-item container">
-                    <figure class="image-story image-story--experience-3"></figure>
-                    <div class="story-item-copy">
-                        <h4 class="typography-story-headline">Safety above all else</h4>
-                        <p class="typography-story-intro">Dual-disk brakes, all-LED lighting, and self-diagnostics on board. Smartscooter offers unparalleled safety for you and your vehicle.</p>
-                    </div>
-                </div>
+                @if(!empty($blog3))
+                    @foreach($blog3 as $value)
+                        <div class="story-item container">
+                            <img src="{{$value->representative_image}}">
+                            <div class="story-item-copy">
+                                <h4 class="typography-story-headline">{{$value->news_headlines}}</h4>
+                                <p class="typography-story-intro">{!! $value->describe !!}</p>
+                            </div>
+                        </div>
+                    @endforeach
+                @endif
             </div>
 
-            <button class="story-prev" data-story-prev="" disabled=""></button>
-            <button class="story-next" data-story-next=""></button>
+
         </div>
     </section>
     <link rel="stylesheet" href="{{ asset('home/css/cate-product.css') }}">

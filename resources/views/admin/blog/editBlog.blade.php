@@ -231,10 +231,10 @@
 
 
                                                         <select name="category_blogproduct" id="ddlblogproduct" class="inputbox" style="width:100%;">
-                                                        <option value="0">Không hiển thị</option>
-                                                        <option value="1">Thông minh đạt tiêu chuẩn</option>
-                                                        <option value="2">Dễ dàng hơn bao giờ hết</option>
-                                                        <option value="3">Yêu thích chuyến đi</option>
+                                                        <option value="1" @if($editBlog->category_blogproduct == "1") selected @endif>Không hiển thị</option>
+                                                        <option value="2" @if($editBlog->category_blogproduct == "2") selected @endif>Thông minh đạt tiêu chuẩn</option>
+                                                        <option value="3" @if($editBlog->category_blogproduct == "3") selected @endif>Dễ dàng hơn bao giờ hết</option>
+                                                        <option value="4" @if($editBlog->category_blogproduct == "4") selected @endif>Yêu thích chuyến đi</option>
 
                                                         </select>
 
