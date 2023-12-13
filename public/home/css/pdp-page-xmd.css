@@ -2063,6 +2063,7 @@ img {
     height: 436px;
     max-width: 600px;
     object-fit: contain;
+    margin: auto;
 }
 
 #pdp-breaking-technology .breaking-wrap .breaking-top .breaking-slick__button-next,
