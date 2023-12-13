@@ -378,6 +378,7 @@ class CategoryController extends BaseController
         $images360 = DB::table('images_products')
             ->where('product_id','=', $id)
             ->where('code', '=', 'images360')
+            ->orderBy('created_at', 'asc')
             ->get();
 
         return view('admin.product.details.editProduct', compact('images360','color_image','icon_images','product', 'categoryProduct', 'feature_description', 'vehicle_detail_photos','actual_photo'));
