@@ -171,29 +171,32 @@
                         <picture class="image-story">
                             <source class="img-srcset" data-srcset="{{ asset('home/images/pr_album_1.png') }}" type="image/webp" />
                             <img data-src="{{ asset('home/images/pr_album_1.png') }}" title="Evo200" alt="Hệ thống đèn LED và đèn pha projector của xe máy điện VinFast Evo200" width="100%" class="img-lazy" />
-                            <p>Hệ thống đèn Full LED và đèn pha projector.</p>
                         </picture>
+                        <p>Hệ thống đèn Full LED và đèn pha projector.</p>
                     </div>
                     <div class="parts-bike__item js-aos container" data-aos="fade-left" data-aos-delay="150" data-aos-duration="300">
                         <picture class="image-story">
                             <source class="img-srcset" data-srcset="{{ asset('home/images/pr_album_2.png') }}" type="image/webp" />
                             <img data-src="{{ asset('home/images/pr_album_2.png') }}" title="Evo200" alt="Hệ thống đèn LED và đèn pha projector của xe máy điện VinFast Evo200" width="100%" class="img-lazy" />
-                            <p>Hệ thống đèn Full LED và đèn pha projector.</p>
                         </picture>
+                        <p>Hệ thống đèn Full LED và đèn pha projector.</p>
+
                     </div>
                     <div class="parts-bike__item js-aos container" data-aos="fade-left" data-aos-delay="300" data-aos-duration="300">
                         <picture class="image-story">
                             <source class="img-srcset" data-srcset="{{ asset('home/images/pr_album_3.png') }}" type="image/webp" />
                             <img data-src="{{ asset('home/images/pr_album_3.png') }}" title="Evo200" alt="Hệ thống đèn LED và đèn pha projector của xe máy điện VinFast Evo200" width="100%" class="img-lazy" />
-                            <p>Hệ thống đèn Full LED và đèn pha projector.</p>
                         </picture>
+                        <p>Hệ thống đèn Full LED và đèn pha projector.</p>
+
                     </div>
                     <div class="parts-bike__item js-aos container" data-aos="fade-left" data-aos-delay="450" data-aos-duration="300">
                         <picture class="image-story">
                             <source class="img-srcset" data-srcset="{{ asset('home/images/pr_album_4.png') }}" type="image/webp" />
                             <img data-src="{{ asset('home/images/pr_album_4.png') }}" title="Evo200" alt="Hệ thống đèn LED và đèn pha projector của xe máy điện VinFast Evo200" width="100%" class="img-lazy" />
-                            <p>Hệ thống đèn Full LED và đèn pha projector.</p>
                         </picture>
+                        <p>Hệ thống đèn Full LED và đèn pha projector.</p>
+
                     </div>
                 </div>
             </div>
