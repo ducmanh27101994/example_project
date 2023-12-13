@@ -1595,17 +1595,27 @@ img {
     }
 }
 
+.battery-technology__block h2,
 .battery-technology__block h3,
-.battery-technology__block .battery-technology-iname {
+.battery-technology__block h4,
+.battery-technology__block h5,
+.battery-technology__block h6,
+.battery-technology__block p .battery-technology__block .battery-technology-iname {
     font-weight: 600;
     font-size: 1.04167vw;
     line-height: 1.5;
-    margin-bottom: 16px
+    margin-bottom: 16px;
+    color: #ED2025;
 }
 
 @media only screen and (min-width:768px) and (max-width:1199px) {
 
+    .battery-technology__block h2,
     .battery-technology__block h3,
+    .battery-technology__block h4,
+    .battery-technology__block h5,
+    .battery-technology__block h6,
+    .battery-technology__block p,
     .battery-technology__block .battery-technology-iname {
         font-size: 2.60417vw
     }
@@ -1613,7 +1623,12 @@ img {
 
 @media only screen and (max-width:767px) {
 
+    .battery-technology__block h2,
     .battery-technology__block h3,
+    .battery-technology__block h4,
+    .battery-technology__block h5,
+    .battery-technology__block h6,
+    .battery-technology__block p,
     .battery-technology__block .battery-technology-iname {
         font-size: 4.26667vw
     }
@@ -1621,7 +1636,12 @@ img {
 
 @media only screen and (min-width:1200px) and (max-width:1440px) {
 
+    .battery-technology__block h2,
     .battery-technology__block h3,
+    .battery-technology__block h4,
+    .battery-technology__block h5,
+    .battery-technology__block h6,
+    .battery-technology__block p,
     .battery-technology__block .battery-technology-iname {
         font-size: 1.1713vw
     }
@@ -1629,7 +1649,12 @@ img {
 
 @media only screen and (min-width:1200px) and (max-width:1440px) {
 
+    .battery-technology__block h2,
     .battery-technology__block h3,
+    .battery-technology__block h4,
+    .battery-technology__block h5,
+    .battery-technology__block h6,
+    .battery-technology__block p,
     .battery-technology__block .battery-technology-iname {
         margin-bottom: 8px
     }
