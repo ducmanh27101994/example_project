@@ -9,8 +9,6 @@ $(document).ready(function () {
     });
 
     $('.tab-buttons span').first().addClass('active');
-    $('.tab-content>div').hide();
-    $('.tab-content>div').first().slideDown();
     $('.tab-buttons span').click(function () {
         $('.tab-buttons span').removeClass('active');
         var thisclass = $(this).attr('class');
@@ -26,8 +24,6 @@ $(document).ready(function () {
     });
 
     $('.breaking-technology-bot .nav-tabs a').first().addClass('active');
-    $('.tab-content>div').hide();
-    $('.tab-content>div').first().slideDown();
     $('.breaking-technology-bot .nav-tabs a').click(function () {
         $('.breaking-technology-bot .nav-tabs a').removeClass('active');
         var thisclass = $(this).attr('id');

@@ -47,13 +47,17 @@
 
     <link rel="stylesheet" href="{{ asset('home/css/aos.css') }}">
     <script src="{{ asset('home/js/aos.js') }}"></script>
-    <script>
-        AOS.init();
-    </script>
+
+
     <script src="{{ asset('home/js/main-93e8e59e093022fa1d83.digested.js') }}"></script>
     <script defer src="{{ asset('home/js/waypoints.min.js') }}"></script>
     <script src="{{ asset('home/js/counterup.js') }}"></script>
     <script src="{{ asset('home/js/script.js') }}"></script>
+    <script>
+        $(document).ready(function() {
+            AOS.init();
+        })
+    </script>
     <div id="google_translate_element"></div>
     <script type="text/javascript">
         function googleTranslateElementInit() {
