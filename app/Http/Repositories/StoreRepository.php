@@ -30,12 +30,12 @@ class StoreRepository extends BaseRepository
 
         if ($request->type_query == 'get') {
             return $query->orderBy('created_at', 'DESC')
-                ->paginate(30);
+                ->paginate(500);
         } elseif ($request->type == 'count') {
             return $query->count();
         } else {
             return $query->orderBy('created_at', 'DESC')
-                ->paginate(30);
+                ->paginate(500);
         }
 
     }

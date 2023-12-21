@@ -38,7 +38,6 @@ class StoreController extends BaseController
     public function indexStore(Request $request)
     {
         $store = $this->storeRepository->get_list($request);
-
         return view('admin.cuahang.listStore', ['store' => $store]);
     }
 
