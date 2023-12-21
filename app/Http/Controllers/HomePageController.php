@@ -278,5 +278,32 @@ class HomePageController extends BaseController
         return view('web.product.category', compact('category','products','blog1','blog2','blog3'));
     }
 
+    public function listStore($desc, Request $request) {
+
+        $domain = NULL;
+        $flag = NULL;
+        if ($desc == 'mien-bac') {
+            $domain = 'Miền Bắc';
+            $flag = 1;
+        } elseif ($desc == 'mien-trung') {
+            $domain = 'Miền Trung';
+            $flag = 2;
+        } elseif ($desc == 'mien-nam') {
+            $domain = 'Miền Nam';
+            $flag = 3;
+        }
+
+        if (!empty($request->has('province')) && $request->get('province') != '') {
+            $province = $request->get('province');
+        }
+
+        $listStore = DB::table('store')
+            ->where('desc', '=', $domain)
+            ->get();
+
+        return view('web.store.listStore', compact('listStore','flag'));
+
+    }
+
 
 }
