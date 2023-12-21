@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::prefix('/')->group(function () {
     Route::get('/contact', 'App\Http\Controllers\TemplateController@contact');
-    Route::get('/list-store', 'App\Http\Controllers\TemplateController@listStore');
+//    Route::get('/list-store', 'App\Http\Controllers\TemplateController@listStore');
     Route::get('/near-by-store', 'App\Http\Controllers\TemplateController@nearbyStore');
     Route::get('/template/category-product', 'App\Http\Controllers\TemplateController@categoryProduct');
     Route::get('/template/details-basic', 'App\Http\Controllers\TemplateController@detailsBasic');
@@ -140,3 +140,5 @@ Route::get('/details-basic/{id}', 'App\Http\Controllers\HomePageController@detai
 
 Route::get('/category-product', 'App\Http\Controllers\HomePageController@categoryProduct')->name('category.product');
 Route::get('/category-product/{id}', 'App\Http\Controllers\HomePageController@detailCategoryProduct')->name('category.product.detail');
+
+Route::get('/list-store/{desc}', 'App\Http\Controllers\HomePageController@listStore')->name('list.store');
