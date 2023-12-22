@@ -332,11 +332,17 @@ class HomePageController extends BaseController
         return $text;
     }
 
-    public function nearbyStore()
+    public function nearbyStore(Request $request)
     {
-
-
-        return view('web.store.nearbyStore');
+        if (!empty($request->has('your_location')) && $request->get('your_location') != '') {
+            $your_location = $request->get('your_location');
+            $listStore = DB::table('store')
+                ->where('description_card', '=', $this->slugify($your_location))
+                ->get();
+        } else {
+            $listStore = [];
+        }
+        return view('web.store.nearbyStore', compact('listStore'));
     }
 
 

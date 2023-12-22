@@ -114,7 +114,7 @@ class StoreController extends BaseController
                     'page_title_tag' => $value[7],
                     'path' => $value[6],
                     'keyword_tags' => $this->slugify($value[4]),
-                    'description_card' => $this->slugify($value[5]),
+                    'description_card' => $this->slugify($value[3]),
                 );
                 $this->storeRepository->create($data);
             }
