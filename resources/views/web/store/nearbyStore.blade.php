@@ -226,6 +226,7 @@
         $(document).ready(function() {
             $('#your_location').text(getCookie('location'))
             $('#location').val(getCookie('location'))
+            console.log(getCookie('location'))
         });
     </script>
 </main>

@@ -293,16 +293,50 @@ class HomePageController extends BaseController
             $flag = 3;
         }
 
-        if (!empty($request->has('province')) && $request->get('province') != '') {
-            $province = $request->get('province');
+
+        if (!empty($request->has('district')) && $request->get('district') != '') {
+            $district = $request->get('district');
         }
 
-        $listStore = DB::table('store')
-            ->where('desc', '=', $domain)
+        if (!empty($district)) {
+            $listStore = DB::table('store')
+                ->where('keyword_tags', '=', $this->slugify($district))
+                ->get();
+        } else {
+            $listStore = DB::table('store')
+                ->where('desc', '=', $domain)
+                ->get();
+        }
+
+
+        $listProvince = DB::table('store')
+            ->select('latitude')
+            ->groupBy('latitude')
             ->get();
 
-        return view('web.store.listStore', compact('listStore','flag'));
+        $listDistrict = DB::table('store')
+            ->select('longitude')
+            ->groupBy('longitude')
+            ->get();
 
+        return view('web.store.listStore', compact('listStore','flag','listProvince','listDistrict'));
+
+    }
+
+    function slugify($text) {
+        $text = preg_replace('/[^a-zA-Z0-9\s]/', '', $text);
+        $text = strtolower($text);
+        $text = str_replace(' ', '-', $text);
+        $text = preg_replace('/-+/', '-', $text);
+
+        return $text;
+    }
+
+    public function nearbyStore()
+    {
+
+
+        return view('web.store.nearbyStore');
     }
 
 

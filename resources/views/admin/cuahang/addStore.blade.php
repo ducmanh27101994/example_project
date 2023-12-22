@@ -3,6 +3,7 @@
 @section('content')
 <form method="post" action="{{route('admin.submitStore')}}" enctype="multipart/form-data">
     @csrf
+
     <div id="page-wrapper">
         <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
         <script>
@@ -93,6 +94,12 @@
                                                     @if($errors->has('title_store'))
                                                     <p class="text-danger" style="margin-top: 10px;">{{ $errors->first('title_store') }}</p>
                                                     @endif
+
+
+                                                    <input type="file" name="upload_file" accept=".xlsx, .xls">
+                                                    <button type="submit">Import</button>
+
+
                                                 </div>
                                                 <div class="row">
                                                     <div class="col-sm-6 hidden">
