@@ -54,7 +54,7 @@
                                 </select>
                             </div>
                             <div class="district_select place_style_box">
-                                <select class="form-control-select" name="district" id="district">
+                                <select class="form-control-select" name="district" id="district" onchange="submitForm()">
                                     <option>Chọn Quận/Huyện</option>
                                 </select>
                             </div>
@@ -102,6 +102,7 @@
                     @endif
 
 
+
                 </div>
             </div>
         </div>
@@ -144,13 +145,21 @@
                             districtDropdown.empty();
                             $.each(result, function (index, district) {
                                 for (var i = 0; i < district.length; i++) {
-                                    districtDropdown.append('<option value="' + district[i].district_id + '">' + district[i].district_name + '</option>');
+                                    districtDropdown.append('<option value="' + district[i].district_name + '">' + district[i].district_name + '</option>');
                                 }
                             });
                         }
                     });
                 });
             });
+        </script>
+
+
+        <script>
+
+            function submitForm() {
+                document.getElementById("formSearch").submit();
+            }
         </script>
     </main>
 
