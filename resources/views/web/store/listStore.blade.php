@@ -79,7 +79,7 @@
                                                 <span>{{$value->address}}</span>
                                             </p>
                                             <p>
-                                                <a href="tel:0986 666 330" title="0986 666 330">
+                                                <a href="tel:{{$value->page_title_tag}}" title="{{$value->page_title_tag}}">
                                                     <img src="{{ asset('home/images/mobile.png') }}" alt="mobile">
                                                     <span>{{$value->page_title_tag}}</span>
                                                 </a>
@@ -100,9 +100,6 @@
                             </div>
                         @endforeach
                     @endif
-
-
-
                 </div>
             </div>
         </div>
@@ -156,7 +153,6 @@
 
 
         <script>
-
             function submitForm() {
                 document.getElementById("formSearch").submit();
             }

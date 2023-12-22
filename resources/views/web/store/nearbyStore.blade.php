@@ -10,7 +10,11 @@
             </div>
         </div>
     </div>
-    <input type="hidden" id="location" name="your_location" value="" />
+    <form method="get" action="{{route('nearbyStore')}}" id="formSearchLocation">
+        @csrf
+        <input type="hidden" id="location" name="your_location" value="" />
+    </form>
+
     <div class="grid_item_list_store" style="background: #F4F4F4;margin-bottom: 0">
 
         <div class="container">
@@ -20,201 +24,48 @@
                 </span>
             </div>
             <div class="result_store_near_by">
-                <h2>Có <span>6 cửa hàng</span> ở gần vị trí của bạn</h2>
+                <h2>Có <span>{{count($listStore) ?? 0}} cửa hàng</span> ở gần vị trí của bạn</h2>
             </div>
             <div class="row">
-                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
-                    <div class="item_store">
-                        <div class="image">
-                            <img src="{{ asset('home/images/store.png') }}" alt="store">
-                        </div>
-                        <div class="content">
-                            <div class="title">
-                                <h2>Osakar Hà Nội - Xe điện Thành Công</h2>
-                            </div>
-                            <div class="descreption">
-                                <p>
-                                    <img src="{{ asset('home/images/location.png') }}" alt="location">
-                                    <span>KDV Vĩnh Lộc - Phùng Xá - Thạch Thất - Hà Nội</span>
-                                </p>
-                                <p>
-                                    <a href="tel:0986 666 330" title="0986 666 330">
-                                        <img src="{{ asset('home/images/mobile.png') }}" alt="mobile">
-                                        <span>0986 666 330</span>
+                @if(!empty($listStore))
+                    @foreach($listStore as $value)
+                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                            <div class="item_store">
+                                <div class="image">
+                                    <img src="{{ asset('home/images/store.png') }}" alt="store">
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <h2>{{$value->title_store}}</h2>
+                                    </div>
+                                    <div class="descreption">
+                                        <p>
+                                            <img src="{{ asset('home/images/location.png') }}" alt="location">
+                                            <span>{{$value->address}}</span>
+                                        </p>
+                                        <p>
+                                            <a href="tel:{{$value->page_title_tag}}" title="{{$value->page_title_tag}}">
+                                                <img src="{{ asset('home/images/mobile.png') }}" alt="mobile">
+                                                <span>{{$value->page_title_tag}}</span>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="ridect_map-wrapper">
+                                    <a target="_blank" href="{{$value->path}}"
+                                       title="Osakar Hà Nội - Xe điện Thành Công">
+                                        <p>
+                                            <img src="{{ asset('home/images/material-symbols_directions.png') }}"
+                                                 alt="material-symbols_directions">
+                                            <span>Chỉ đường trên Google Map</span>
+                                        </p>
                                     </a>
-                                </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="ridect_map-wrapper">
-                            <a href="#" title="Osakar Hà Nội - Xe điện Thành Công">
-                                <p>
-                                    <img src="{{ asset('home/images/material-symbols_directions.png') }}" alt="material-symbols_directions">
-                                    <span>Chỉ đường trên Google Map</span>
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
-                    <div class="item_store">
-                        <div class="image">
-                            <img src="{{ asset('home/images/store.png') }}" alt="store">
-                        </div>
-                        <div class="content">
-                            <div class="title">
-                                <h2>Osakar Hà Nội - Xe điện Thành Công</h2>
-                            </div>
-                            <div class="descreption">
-                                <p>
-                                    <img src="{{ asset('home/images/location.png') }}" alt="location">
-                                    <span>KDV Vĩnh Lộc - Phùng Xá - Thạch Thất - Hà Nội</span>
-                                </p>
-                                <p>
-                                    <a href="tel:0986 666 330" title="0986 666 330">
-                                        <img src="{{ asset('home/images/mobile.png') }}" alt="mobile">
-                                        <span>0986 666 330</span>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="ridect_map-wrapper">
-                            <a href="#" title="Osakar Hà Nội - Xe điện Thành Công">
-                                <p>
-                                    <img src="{{ asset('home/images/material-symbols_directions.png') }}" alt="material-symbols_directions">
-                                    <span>Chỉ đường trên Google Map</span>
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
-                    <div class="item_store">
-                        <div class="image">
-                            <img src="{{ asset('home/images/store.png') }}" alt="store">
-                        </div>
-                        <div class="content">
-                            <div class="title">
-                                <h2>Osakar Hà Nội - Xe điện Thành Công</h2>
-                            </div>
-                            <div class="descreption">
-                                <p>
-                                    <img src="{{ asset('home/images/location.png') }}" alt="location">
-                                    <span>KDV Vĩnh Lộc - Phùng Xá - Thạch Thất - Hà Nội</span>
-                                </p>
-                                <p>
-                                    <a href="tel:0986 666 330" title="0986 666 330">
-                                        <img src="{{ asset('home/images/mobile.png') }}" alt="mobile">
-                                        <span>0986 666 330</span>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="ridect_map-wrapper">
-                            <a href="#" title="Osakar Hà Nội - Xe điện Thành Công">
-                                <p>
-                                    <img src="{{ asset('home/images/material-symbols_directions.png') }}" alt="material-symbols_directions">
-                                    <span>Chỉ đường trên Google Map</span>
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
-                    <div class="item_store">
-                        <div class="image">
-                            <img src="{{ asset('home/images/store.png') }}" alt="store">
-                        </div>
-                        <div class="content">
-                            <div class="title">
-                                <h2>Osakar Hà Nội - Xe điện Thành Công</h2>
-                            </div>
-                            <div class="descreption">
-                                <p>
-                                    <img src="{{ asset('home/images/location.png') }}" alt="location">
-                                    <span>KDV Vĩnh Lộc - Phùng Xá - Thạch Thất - Hà Nội</span>
-                                </p>
-                                <p>
-                                    <a href="tel:0986 666 330" title="0986 666 330">
-                                        <img src="{{ asset('home/images/mobile.png') }}" alt="mobile">
-                                        <span>0986 666 330</span>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="ridect_map-wrapper">
-                            <a href="#" title="Osakar Hà Nội - Xe điện Thành Công">
-                                <p>
-                                    <img src="{{ asset('home/images/material-symbols_directions.png') }}" alt="material-symbols_directions">
-                                    <span>Chỉ đường trên Google Map</span>
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
-                    <div class="item_store">
-                        <div class="image">
-                            <img src="{{ asset('home/images/store.png') }}" alt="store">
-                        </div>
-                        <div class="content">
-                            <div class="title">
-                                <h2>Osakar Hà Nội - Xe điện Thành Công</h2>
-                            </div>
-                            <div class="descreption">
-                                <p>
-                                    <img src="{{ asset('home/images/location.png') }}" alt="location">
-                                    <span>KDV Vĩnh Lộc - Phùng Xá - Thạch Thất - Hà Nội</span>
-                                </p>
-                                <p>
-                                    <a href="tel:0986 666 330" title="0986 666 330">
-                                        <img src="{{ asset('home/images/mobile.png') }}" alt="mobile">
-                                        <span>0986 666 330</span>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="ridect_map-wrapper">
-                            <a href="#" title="Osakar Hà Nội - Xe điện Thành Công">
-                                <p>
-                                    <img src="{{ asset('home/images/material-symbols_directions.png') }}" alt="material-symbols_directions">
-                                    <span>Chỉ đường trên Google Map</span>
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
-                    <div class="item_store">
-                        <div class="image">
-                            <img src="{{ asset('home/images/store.png') }}" alt="store">
-                        </div>
-                        <div class="content">
-                            <div class="title">
-                                <h2>Osakar Hà Nội - Xe điện Thành Công</h2>
-                            </div>
-                            <div class="descreption">
-                                <p>
-                                    <img src="{{ asset('home/images/location.png') }}" alt="location">
-                                    <span>KDV Vĩnh Lộc - Phùng Xá - Thạch Thất - Hà Nội</span>
-                                </p>
-                                <p>
-                                    <a href="tel:0986 666 330" title="0986 666 330">
-                                        <img src="{{ asset('home/images/mobile.png') }}" alt="mobile">
-                                        <span>0986 666 330</span>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="ridect_map-wrapper">
-                            <a href="#" title="Osakar Hà Nội - Xe điện Thành Công">
-                                <p>
-                                    <img src="{{ asset('home/images/material-symbols_directions.png') }}" alt="material-symbols_directions">
-                                    <span>Chỉ đường trên Google Map</span>
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                    @endforeach
+                @endif
+
 
             </div>
             <div class="return_back_store">
@@ -226,8 +77,15 @@
         $(document).ready(function() {
             $('#your_location').text(getCookie('location'))
             $('#location').val(getCookie('location'))
-            console.log(getCookie('location'))
+
+            var queryString = window.location.search;
+            var urlParams = new URLSearchParams(queryString);
+
+            if (!urlParams.has('your_location')) {
+                document.getElementById("formSearchLocation").submit();
+            }
         });
+
     </script>
 </main>
 
