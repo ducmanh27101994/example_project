@@ -51,7 +51,7 @@
                                                 @if(!empty($products))
                                                     @foreach($products as $value)
                                                         <div class="bike-item">
-                                                            <a href="{{route('details.basic', $value->id)}}"
+                                                            <a href="{{route('details.basic', $value->path)}}"
                                                                class="bike-img">
                                                                 <img class src="{{$value->representative_image}}"
                                                                      alt="Xe máy điện Vento"/>
@@ -79,7 +79,7 @@
                                                                 <div class="d-flex flex-wrap justify-content-between">
                                                                     <a href="#" class="deposit-buy-now col-lg-6">Mua
                                                                         ngay</a>
-                                                                    <a href="{{route('details.basic', $value->id)}}"
+                                                                    <a href="{{route('details.basic', $value->path)}}"
                                                                        class="view-detail col-lg-6">Xem chi tiết</a>
                                                                 </div>
                                                             </div>

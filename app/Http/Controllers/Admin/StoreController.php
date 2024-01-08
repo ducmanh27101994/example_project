@@ -54,71 +54,54 @@ class StoreController extends BaseController
     public function submitStore(Request $request)
     {
 
-//        $status = (!empty($request->status) && $request->status == 'on') ? 'active' : 'block';
-//        if ($request->image_store) {
-//            $image_store = $this->uploadService->upload_param($request->image_store);
-//        }
-//        $data = [
-//            'image_store' => $image_store ?? '',
-//            'status' => $status,
-//            'title_store' => $request->title_store,
-//            'latitude' => $request->latitude,
-//            'longitude' => $request->longitude,
-//            'desc' => $request->desc,
-//            'address' => $request->address,
-//            'page_title_tag' => $request->page_title_tag,
-//            'path' => $request->path,
-//            'keyword_tags' => $request->keyword_tags,
-//            'description_card' => $request->description_card,
-//        ];
-//        $store = $this->storeRepository->create($data);
-//        if ($store) {
-//            toastr()->success("Tạo mới thành công", 'Success');
-//            return redirect()->route('admin.indexStore');
-//        }
-//        toastr()->error("Tạo mới thất bại", 'Fail');
-//        return redirect()->route('admin.indexStore');
-
-
-//        $curl = curl_init();
-//
-//        curl_setopt_array($curl, array(
-//            CURLOPT_URL => 'https://vapi.vnappmob.com/api/province/',
-//            CURLOPT_RETURNTRANSFER => true,
-//            CURLOPT_ENCODING => '',
-//            CURLOPT_MAXREDIRS => 10,
-//            CURLOPT_TIMEOUT => 0,
-//            CURLOPT_FOLLOWLOCATION => true,
-//            CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
-//            CURLOPT_CUSTOMREQUEST => 'GET',
-//        ));
-//
-//        $response = curl_exec($curl);
-//        curl_close($curl);
-//        $response = json_decode($response, true);
-
-
-        $file = $request->upload_file;
-        $sheetData = $this->import->get_data_import($file);
-        $listFail = [];
-        foreach ($sheetData as $key => $value) {
-            if ($key >= 1) {
-                $data = array(
-                    'image_store' => NULL,
-                    'status' => 1,
-                    'title_store' => $value[1],
-                    'latitude' => $value[3],
-                    'longitude' => $value[4],
-                    'desc' => $value[5],
-                    'address' => $value[2],
-                    'page_title_tag' => $value[7],
-                    'path' => $value[6],
-                    'keyword_tags' => $this->slugify($value[4]),
-                    'description_card' => $this->slugify($value[3]),
-                );
-                $this->storeRepository->create($data);
-            }
+        $status = (!empty($request->status) && $request->status == 'on') ? 'active' : 'block';
+        if ($request->image_store) {
+            $image_store = $this->uploadService->upload_param($request->image_store);
         }
+        $data = [
+            'image_store' => $image_store ?? '',
+            'status' => $status,
+            'title_store' => $request->title_store,
+            'latitude' => $request->latitude,
+            'longitude' => $request->longitude,
+            'desc' => $request->desc,
+            'address' => $request->address,
+            'page_title_tag' => $request->page_title_tag,
+            'path' => $request->path,
+            'keyword_tags' => $request->keyword_tags,
+            'description_card' => $request->description_card,
+        ];
+        $store = $this->storeRepository->create($data);
+        if ($store) {
+            toastr()->success("Tạo mới thành công", 'Success');
+            return redirect()->route('admin.indexStore');
+        }
+        toastr()->error("Tạo mới thất bại", 'Fail');
+        return redirect()->route('admin.indexStore');
+
+
+
+//        $file = $request->upload_file;
+//        $sheetData = $this->import->get_data_import($file);
+//        $listFail = [];
+//        foreach ($sheetData as $key => $value) {
+//            if ($key >= 1) {
+//                $data = array(
+//                    'image_store' => NULL,
+//                    'status' => 1,
+//                    'title_store' => $value[1],
+//                    'latitude' => $value[3],
+//                    'longitude' => $value[4],
+//                    'desc' => $value[5],
+//                    'address' => $value[2],
+//                    'page_title_tag' => $value[7],
+//                    'path' => $value[6],
+//                    'keyword_tags' => $this->slugify($value[4]),
+//                    'description_card' => $this->slugify($value[3]),
+//                );
+//                $this->storeRepository->create($data);
+//            }
+//        }
 
     }
 

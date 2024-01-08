@@ -1,4 +1,7 @@
 @extends('/web/index')
+@section('page_name', $product->page_title_tag)
+@section('key_words', $product->keyword_tags)
+@section('description', $product->description_card)
 @section('content')
 <link rel="stylesheet" href="{{ asset('home/css/pdp-page-xmd.css') }}" />
 <link rel="stylesheet" href="{{ asset('home/css/slick.min.css') }}" />

@@ -320,7 +320,7 @@
                                                             value="{{!empty(old('slug')) ? old('slug') : $editBlog->slug}}"
                                                             name="slug"
                                                             type="text" id="txturl" class="txtpa"
-                                                            style="width:335px;">
+                                                            style="width:335px;" readonly>
                                                     </div>
                                                     <a href="#" class="tooltip">
                                                         <img src="{{ asset('images/help-icon.png') }}">

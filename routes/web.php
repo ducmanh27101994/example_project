@@ -136,7 +136,7 @@ Route::post('/submit-contact-form', 'App\Http\Controllers\Admin\ContactControlle
 
 Route::get('/category-list/{id}', 'App\Http\Controllers\HomePageController@listCategoryDetail')->name('page.category.list');
 
-Route::get('/details-basic/{id}', 'App\Http\Controllers\HomePageController@detailsBasic')->name('details.basic');
+Route::get('/details-basic/{slug}', 'App\Http\Controllers\HomePageController@detailsBasic')->name('details.basic');
 
 Route::get('/category-product', 'App\Http\Controllers\HomePageController@categoryProduct')->name('category.product');
 Route::get('/category-product/{id}', 'App\Http\Controllers\HomePageController@detailCategoryProduct')->name('category.product.detail');

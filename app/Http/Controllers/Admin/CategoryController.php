@@ -206,7 +206,6 @@ class CategoryController extends BaseController
     }
 
     public function submitCreateProduct(Request $request) {
-
         $status = (!empty($request->status) && $request->status == 'on') ? 'active' : 'block';
         $new_product = (!empty($request->new_product) && $request->new_product == 'on') ? 'active' : 'block';
         $selling_products = (!empty($request->selling_products) && $request->selling_products == 'on') ? 'active' : 'block';
@@ -244,7 +243,7 @@ class CategoryController extends BaseController
             'interface_type' => !empty($request->interface_type) ? $request->interface_type : '',
             'status_product' => !empty($request->status_product) ? $request->status_product : '',
             'page_title_tag' => !empty($request->page_title_tag) ? $request->page_title_tag : '',
-            'path' => !empty($request->path) ? $request->path : '',
+            'path' => !empty($request->product_name) ? $this->slugify($request->product_name) : '',
             'keyword_tags' => !empty($request->keyword_tags) ? $request->keyword_tags : '',
             'description_card' => !empty($request->description_card) ? $request->description_card : '',
             'status' => $status,
@@ -252,6 +251,15 @@ class CategoryController extends BaseController
             'selling_products' => $selling_products,
             'promotional_products' => $promotional_products,
         ];
+
+         function slugify($text) {
+             $text = preg_replace('/[^a-zA-Z0-9\s]/', '', $text);
+             $text = strtolower($text);
+             $text = str_replace(' ', '-', $text);
+             $text = preg_replace('/-+/', '-', $text);
+
+             return $text;
+         }
 
         $product = $this->productRepositories->create($data);
 
@@ -426,7 +434,6 @@ class CategoryController extends BaseController
             'interface_type' => !empty($request->interface_type) ? $request->interface_type : '',
             'status_product' => !empty($request->status_product) ? $request->status_product : '',
             'page_title_tag' => !empty($request->page_title_tag) ? $request->page_title_tag : '',
-            'path' => !empty($request->path) ? $request->path : '',
             'keyword_tags' => !empty($request->keyword_tags) ? $request->keyword_tags : '',
             'description_card' => !empty($request->description_card) ? $request->description_card : '',
             'status' => $status,

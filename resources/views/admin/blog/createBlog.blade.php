@@ -302,7 +302,7 @@
                                                         <span class="next-input-add-on next-input__add-on--before">{{ url()->to('/') . '/' }}</span>
 
                                                         <input name="path" type="text"
-                                                               id="txturl" class="txtpa" style="width:335px;" value="{{old('path')}}">
+                                                               id="txturl" class="txtpa" style="width:335px;" value="{{old('path')}}" readonly>
                                                     </div>
                                                     <a href="#" class="tooltip">
                                                         <img src="{{ asset('images/help-icon.png') }}">
