@@ -1,4 +1,7 @@
 @extends('/web/index')
+@section('page_name', $blog->page_title_tag)
+@section('key_words', $blog->keyword_tags)
+@section('description', $blog->description_card)
 @section('content')
     <link rel="stylesheet" href="{{ asset('home/css/news.css') }}">
     <main>

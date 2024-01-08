@@ -123,7 +123,7 @@
                             <div class="family-item-copy">
                                 <h4 class="typography-eyebrow">Gogoro SuperSport</h4>
                                 <h3 class="typography-tagline">Ultra smart control.</h3>
-                                <a class="cta-link" href="{{route('details.basic', $value->id)}}">Xem chi tiết</a>
+                                <a class="cta-link" href="{{route('details.basic', $value->path)}}">Xem chi tiết</a>
                             </div>
                             <figure class="image-family image-family--supersport" style="background-image: url('{{$value->representative_image}}')"></figure>
                             <a href="#" class="deposit-buy-now ">Mua ngay</a>

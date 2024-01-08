@@ -56,6 +56,7 @@ class HomePageController extends BaseController
     public function indexAboutUs()
     {
 
+
         $pbgn_partner = DB::table('banner_ads')
             ->where('status', '=', 'active')
             ->where('code_ads', '=', 'pbgn-partner')
@@ -173,39 +174,39 @@ class HomePageController extends BaseController
         }
     }
 
-    public function detailsBasic($id)
+    public function detailsBasic($slug)
     {
         $product = DB::table('products')
-            ->where('id', '=', $id)
+            ->where('path', '=', $slug)
             ->first();
 
         $feature_description = DB::table('images_products')
-            ->where('product_id', '=', $id)
+            ->where('product_id', '=', $product->id)
             ->where('code', '=', 'feature_description')
             ->get();
 
         $vehicle_detail_photos = DB::table('images_products')
-            ->where('product_id', '=', $id)
+            ->where('product_id', '=', $product->id)
             ->where('code', '=', 'vehicle_detail_photos')
             ->get();
 
         $actual_photo = DB::table('images_products')
-            ->where('product_id', '=', $id)
+            ->where('product_id', '=', $product->id)
             ->where('code', '=', 'actual_photo')
             ->get();
 
         $icon_images = DB::table('images_products')
-            ->where('product_id', '=', $id)
+            ->where('product_id', '=', $product->id)
             ->where('code', '=', 'icon_images')
             ->get();
 
         $color_image = DB::table('images_products')
-            ->where('product_id', '=', $id)
+            ->where('product_id', '=', $product->id)
             ->where('code', '=', 'color_image')
             ->get();
 
         $images360 = DB::table('images_products')
-            ->where('product_id','=', $id)
+            ->where('product_id','=', $product->id)
             ->where('code', '=', 'images360')
             ->orderBy('created_at', 'asc')
             ->get();

@@ -9,7 +9,9 @@
     <link rel="alternate" href="/" hreflang="vi">
     <link rel="alternate" href="/vi/" hreflang="en-ENG">
     <link rel="alternate" href="/vie/" hreflang="vie-VIE">
-    <title>Gogoro Global</title>
+    <title>@yield('page_name')</title>
+    <meta name="keywords" content="@yield('key_words')">
+    <meta name="description" content="@yield('description')">
     <meta property="og:site_name" content="">
     <meta property="og:type" content="website">
     <meta name="description" content="">
