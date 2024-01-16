@@ -227,11 +227,12 @@
                                                     <div class="form-group">
 
 
-                                                        <select name="category_blogproduct" id="ddlblogproduct" class="inputbox" style="width:100%;">
-                                                        <option value="1">Không hiển thị</option>
-                                                        <option value="2">Thông minh đạt tiêu chuẩn</option>
-                                                        <option value="3">Dễ dàng hơn bao giờ hết</option>
-                                                        <option value="4">Yêu thích chuyến đi</option>
+                                                        <select name="category_blogproduct" id="ddlblogproduct"
+                                                                class="inputbox" style="width:100%;">
+                                                            <option value="1">Không hiển thị</option>
+                                                            <option value="2">Thông minh đạt tiêu chuẩn</option>
+                                                            <option value="3">Dễ dàng hơn bao giờ hết</option>
+                                                            <option value="4">Yêu thích chuyến đi</option>
 
                                                         </select>
 
@@ -241,18 +242,13 @@
                                                 <div class="block_sp" style="height: 150px; overflow-x: auto;">
                                                     <div class="form-group">
                                                         <p class="ttg">Sản phẩm đề xuất</p>
-                                                        <input id="chknews" type="checkbox"
-                                                               name="chknews"
-                                                               checked="checked"> Sản phẩm 1<br>
-                                                               <input id="chknews" type="checkbox"
-                                                               name="chknews"
-                                                               checked="checked"> Sản phẩm 2<br>
-                                                               <input id="chknews" type="checkbox"
-                                                               name="chknews"
-                                                               checked="checked"> Sản phẩm 3<br>
-                                                               <input id="chknews" type="checkbox"
-                                                               name="chknews"
-                                                               checked="checked"> Sản phẩm 4<br>
+                                                        @if(!empty($listProduct))
+                                                            @foreach($listProduct as $value)
+                                                                <input id="chknews" type="checkbox"
+                                                                       name="recommended_products[]"
+                                                                       checked="checked" value="{{$value->id}}">{{$value->product_name}}<br>
+                                                            @endforeach
+                                                        @endif
                                                     </div>
                                                 </div>
                                                 <div class="block_sp">
@@ -308,7 +304,8 @@
                                                 </td>
                                                 <td>
                                                     <input name="page_title_tag" type="text"
-                                                           id="txttitleweb" class="inputbox" style="width:460px;" value="{{old('page_title_tag')}}">
+                                                           id="txttitleweb" class="inputbox" style="width:460px;"
+                                                           value="{{old('page_title_tag')}}">
                                                     <a href="#" class="tooltip">
                                                         <img src="{{ asset('images/help-icon.png') }}">
                                                         <span><b>Tiêu đề trang</b><br>
@@ -324,10 +321,12 @@
                                                 </td>
                                                 <td>
                                                     <div class="next-input--stylized">
-                                                        <span class="next-input-add-on next-input__add-on--before">{{ url()->to('/') . '/' }}</span>
+                                                        <span
+                                                            class="next-input-add-on next-input__add-on--before">{{ url()->to('/') . '/' }}</span>
 
                                                         <input name="path" type="text"
-                                                               id="txturl" class="txtpa" style="width:335px;" value="{{old('path')}}" readonly>
+                                                               id="txturl" class="txtpa" style="width:335px;"
+                                                               value="{{old('path')}}" readonly>
                                                     </div>
                                                     <a href="#" class="tooltip">
                                                         <img src="{{ asset('images/help-icon.png') }}">

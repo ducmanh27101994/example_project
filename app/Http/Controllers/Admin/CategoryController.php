@@ -32,12 +32,12 @@ class CategoryController extends BaseController
     protected $imagesRepositories;
     protected $uploadService;
 
-    public function __construct(CategoryService $categoryService,
-                                BlogService $blogService,
+    public function __construct(CategoryService       $categoryService,
+                                BlogService           $blogService,
                                 CateProductRepository $repoCateProduct,
-                                ProductRepository $productRepositories,
-                                ImageRepository $imagesRepositories,
-                                UploadService $uploadService)
+                                ProductRepository     $productRepositories,
+                                ImageRepository       $imagesRepositories,
+                                UploadService         $uploadService)
     {
         $this->categoryService = $categoryService;
         $this->blogService = $blogService;
@@ -48,18 +48,21 @@ class CategoryController extends BaseController
 
     }
 
-    public function indexListCategory() {
+    public function indexListCategory()
+    {
         $category = Category::all();
         return view('admin.blog.category', ['category' => $category]);
 
     }
 
-    public function indexCreateCategory() {
+    public function indexCreateCategory()
+    {
         $category = Category::orderBy('id', 'ASC')->get();
         return view('admin.blog.addNewCate', ['category' => $category]);
     }
 
-    public function createCategory(FormCreateCate $request) {
+    public function createCategory(FormCreateCate $request)
+    {
         $cate = $this->categoryService->create_category($request);
         if ($cate) {
             toastr()->success("Tạo mới thành công", 'Success');
@@ -69,13 +72,15 @@ class CategoryController extends BaseController
         return redirect()->route('admin.indexListCategory');
     }
 
-    public function editCate($id) {
+    public function editCate($id)
+    {
         $category = Category::orderBy('id', 'ASC')->get();
         $editCate = $this->categoryService->find($id);
         return view('admin.blog.editCate', ['category' => $category, 'editCate' => $editCate]);
     }
 
-    public function submitEditCate(FormCreateCate $request, $id) {
+    public function submitEditCate(FormCreateCate $request, $id)
+    {
 
         if (!$this->categoryService->find($id)) {
             toastr()->error("Không tìm thấy menu", 'Fail');
@@ -91,19 +96,27 @@ class CategoryController extends BaseController
 
     }
 
-    public function indexListBlog(Request $request) {
+    public function indexListBlog(Request $request)
+    {
         $request->type_query = 'get';
         $blogs = $this->blogService->get_list($request);
         $category = Category::orderBy('id', 'ASC')->get();
-        return view('admin.blog.listBlog',['blogs' => $blogs, 'category' => $category]);
+        return view('admin.blog.listBlog', ['blogs' => $blogs, 'category' => $category]);
     }
 
-    public function createBlog() {
+    public function createBlog()
+    {
         $category = Category::orderBy('id', 'ASC')->get();
-        return view('admin.blog.createBlog', ['category' => $category]);
+
+        $listProduct = DB::table('products')
+            ->where('status', '=', 'active')
+            ->get();
+
+        return view('admin.blog.createBlog', ['category' => $category, 'listProduct' => $listProduct]);
     }
 
-    public function submitCreateBlog(FormCreateBlog $request) {
+    public function submitCreateBlog(FormCreateBlog $request)
+    {
 
         $blog = $this->blogService->create_blog($request);
         if ($blog) {
@@ -116,13 +129,18 @@ class CategoryController extends BaseController
 
     }
 
-    public function editBlog($id) {
+    public function editBlog($id)
+    {
+        $listProduct = DB::table('products')
+            ->where('status', '=', 'active')
+            ->get();
         $category = Category::orderBy('id', 'ASC')->get();
         $editBlog = $this->blogService->find($id);
-        return view('admin.blog.editBlog', ['category' => $category, 'editBlog' => $editBlog]);
+        return view('admin.blog.editBlog', ['category' => $category, 'editBlog' => $editBlog, 'listProduct' => $listProduct]);
     }
 
-    public function submitEditBlog(FormCreateBlog $request, $id) {
+    public function submitEditBlog(FormCreateBlog $request, $id)
+    {
 
         if (!$this->blogService->find($id)) {
             toastr()->error("Không tìm thấy menu", 'Fail');
@@ -138,18 +156,21 @@ class CategoryController extends BaseController
 
     }
 
-    public function indexListCategoryProduct() {
+    public function indexListCategoryProduct()
+    {
         $category = CateProduct::all();
         return view('admin.product.listCateProduct', ['category' => $category]);
 
     }
 
-    public function createCategoryProduct() {
+    public function createCategoryProduct()
+    {
 
         return view('admin.product.createCateProduct');
     }
 
-    public function submitCreateCategoryProduct(Request $request) {
+    public function submitCreateCategoryProduct(Request $request)
+    {
 
         $status = (!empty($request->status) && $request->status == 'on') ? 'active' : 'block';
         $data = [
@@ -168,12 +189,14 @@ class CategoryController extends BaseController
 
     }
 
-    public function editCategoryProduct($id) {
+    public function editCategoryProduct($id)
+    {
         $editCate = CateProduct::findOrFail($id);
         return view('admin.product.editCateProduct', ['editCate' => $editCate]);
     }
 
-    public function submitEditCategoryProduct(Request $request, $id) {
+    public function submitEditCategoryProduct(Request $request, $id)
+    {
 
         $status = (!empty($request->status) && $request->status == 'on') ? 'active' : 'block';
         $data = [
@@ -194,9 +217,9 @@ class CategoryController extends BaseController
     public function listProductAdmin()
     {
 
-        $product = DB::table('products')->orderBy('created_at','desc')->get();
+        $product = DB::table('products')->orderBy('created_at', 'desc')->get();
 
-        return view('admin.product.details.listProduct',compact('product'));
+        return view('admin.product.details.listProduct', compact('product'));
     }
 
     public function createProductAdmin()
@@ -205,7 +228,8 @@ class CategoryController extends BaseController
         return view('admin.product.details.createProduct', compact('categoryProduct'));
     }
 
-    public function submitCreateProduct(Request $request) {
+    public function submitCreateProduct(Request $request)
+    {
         $status = (!empty($request->status) && $request->status == 'on') ? 'active' : 'block';
         $new_product = (!empty($request->new_product) && $request->new_product == 'on') ? 'active' : 'block';
         $selling_products = (!empty($request->selling_products) && $request->selling_products == 'on') ? 'active' : 'block';
@@ -251,15 +275,6 @@ class CategoryController extends BaseController
             'selling_products' => $selling_products,
             'promotional_products' => $promotional_products,
         ];
-
-         function slugify($text) {
-             $text = preg_replace('/[^a-zA-Z0-9\s]/', '', $text);
-             $text = strtolower($text);
-             $text = str_replace(' ', '-', $text);
-             $text = preg_replace('/-+/', '-', $text);
-
-             return $text;
-         }
 
         $product = $this->productRepositories->create($data);
 
@@ -347,10 +362,19 @@ class CategoryController extends BaseController
         return redirect()->route('admin.list.product');
 
 
-
     }
 
-    public function editProduct($id) {
+    function slugify($text)
+    {
+        $text = preg_replace('/[^a-zA-Z0-9\s]/', '', $text);
+        $text = strtolower($text);
+        $text = str_replace(' ', '-', $text);
+        $text = preg_replace('/-+/', '-', $text);
+
+        return $text;
+    }
+    public function editProduct($id)
+    {
 
         $product = DB::table('products')
             ->where('products.id', '=', $id)
@@ -359,41 +383,42 @@ class CategoryController extends BaseController
         $categoryProduct = CateProduct::all();
 
         $feature_description = DB::table('images_products')
-            ->where('product_id','=', $id)
+            ->where('product_id', '=', $id)
             ->where('code', '=', 'feature_description')
             ->get();
 
         $vehicle_detail_photos = DB::table('images_products')
-            ->where('product_id','=', $id)
+            ->where('product_id', '=', $id)
             ->where('code', '=', 'vehicle_detail_photos')
             ->get();
 
         $actual_photo = DB::table('images_products')
-            ->where('product_id','=', $id)
+            ->where('product_id', '=', $id)
             ->where('code', '=', 'actual_photo')
             ->get();
 
         $icon_images = DB::table('images_products')
-            ->where('product_id','=', $id)
+            ->where('product_id', '=', $id)
             ->where('code', '=', 'icon_images')
             ->get();
 
         $color_image = DB::table('images_products')
-            ->where('product_id','=', $id)
+            ->where('product_id', '=', $id)
             ->where('code', '=', 'color_image')
             ->get();
 
         $images360 = DB::table('images_products')
-            ->where('product_id','=', $id)
+            ->where('product_id', '=', $id)
             ->where('code', '=', 'images360')
             ->orderBy('created_at', 'asc')
             ->get();
 
-        return view('admin.product.details.editProduct', compact('images360','color_image','icon_images','product', 'categoryProduct', 'feature_description', 'vehicle_detail_photos','actual_photo'));
+        return view('admin.product.details.editProduct', compact('images360', 'color_image', 'icon_images', 'product', 'categoryProduct', 'feature_description', 'vehicle_detail_photos', 'actual_photo'));
 
     }
 
-    public function submitEditProduct($id, Request $request) {
+    public function submitEditProduct($id, Request $request)
+    {
 
         $status = (!empty($request->status) && $request->status == 'on') ? 'active' : 'block';
         $new_product = (!empty($request->new_product) && $request->new_product == 'on') ? 'active' : 'block';
@@ -552,12 +577,6 @@ class CategoryController extends BaseController
         return redirect()->route('admin.list.product');
 
     }
-
-
-
-
-
-
 
 
 }

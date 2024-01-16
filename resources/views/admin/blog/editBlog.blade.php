@@ -244,18 +244,13 @@
                                                 <div class="block_sp" style="height: 150px; overflow-x: auto;">
                                                     <div class="form-group">
                                                         <p class="ttg">Sản phẩm đề xuất</p>
-                                                        <input id="chknews" type="checkbox"
-                                                               name="chknews"
-                                                               checked="checked"> Sản phẩm 1<br>
-                                                               <input id="chknews" type="checkbox"
-                                                               name="chknews"
-                                                               checked="checked"> Sản phẩm 2<br>
-                                                               <input id="chknews" type="checkbox"
-                                                               name="chknews"
-                                                               checked="checked"> Sản phẩm 3<br>
-                                                               <input id="chknews" type="checkbox"
-                                                               name="chknews"
-                                                               checked="checked"> Sản phẩm 4<br>
+                                                        @if(!empty($listProduct))
+                                                            @foreach($listProduct as $value)
+                                                                <input id="chknews" type="checkbox"
+                                                                       name="recommended_products[]"
+                                                                       @if(in_array($value->id, explode(',', $editBlog->recommended_products))) checked @endif  value="{{$value->id}}">{{$value->product_name}}<br>
+                                                            @endforeach
+                                                        @endif
                                                     </div>
                                                 </div>
                                                 <div class="block_sp">

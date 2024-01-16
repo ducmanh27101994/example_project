@@ -28,7 +28,7 @@ class BlogService
         $status = (!empty($request->status) && $request->status == 'on') ? 'active' : 'block';
 
         $slug = Str::slug($request->news_headlines);
-
+        $recommendedProducts = $request->input('recommended_products', []);
         $data = [
             'news_headlines' => $request->news_headlines,
             'status' => $status,
@@ -42,7 +42,8 @@ class BlogService
             'representative_image' => $representative_image ?? '',
             'created_by' => session()->get('employee')['email'] ?? '',
             'slug' => $slug,
-            'category_blogproduct' => $request->category_blogproduct
+            'category_blogproduct' => $request->category_blogproduct,
+            'recommended_products' => implode(',', $recommendedProducts)
         ];
         $result = $this->blogRepository->create($data);
         return $result;
@@ -61,6 +62,9 @@ class BlogService
         } else {
             $representative_image = $this->blogRepository->find($id)->representative_image;
         }
+
+        $recommendedProducts = $request->input('recommended_products', []);
+
         $status = (!empty($request->status) && $request->status == 'on') ? 'active' : 'block';
         $data = [
             'news_headlines' => $request->news_headlines,
@@ -75,7 +79,8 @@ class BlogService
             'representative_image' => $representative_image ?? '',
             'created_by' => session()->get('employee')['email'] ?? '',
             'slug' => $request->slug,
-            'category_blogproduct' => $request->category_blogproduct
+            'category_blogproduct' => $request->category_blogproduct,
+            'recommended_products' => implode(',', $recommendedProducts)
         ];
         $result = $this->blogRepository->update($id, $data);
         return $result;
