@@ -114,18 +114,6 @@ ul.language_choose li a:hover {
     padding: 30px 0px;
 }
 
-.hero-copy {
-    position: absolute;
-    z-index: 2;
-    color: #fff;
-    inset: 0;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center
-}
-
 .hero-headline {
     font-size: clamp(56px, 16vw, 72px);
     font-weight: 500;

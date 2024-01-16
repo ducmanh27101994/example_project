@@ -238,6 +238,31 @@
 
                                                     </div>
                                                 </div>
+                                                <div class="block_sp" style="height: 150px; overflow-x: auto;">
+                                                    <div class="form-group">
+                                                        <p class="ttg">Sản phẩm đề xuất</p>
+                                                        <input id="chknews" type="checkbox"
+                                                               name="chknews"
+                                                               checked="checked"> Sản phẩm 1<br>
+                                                               <input id="chknews" type="checkbox"
+                                                               name="chknews"
+                                                               checked="checked"> Sản phẩm 2<br>
+                                                               <input id="chknews" type="checkbox"
+                                                               name="chknews"
+                                                               checked="checked"> Sản phẩm 3<br>
+                                                               <input id="chknews" type="checkbox"
+                                                               name="chknews"
+                                                               checked="checked"> Sản phẩm 4<br>
+                                                    </div>
+                                                </div>
+                                                <div class="block_sp">
+                                                    <div class="form-group">
+                                                        <p class="ttg">Tin mới</p>
+                                                        <input id="chknews" type="checkbox"
+                                                               name="chknews"
+                                                               checked="checked"> Tin mới<br>
+                                                    </div>
+                                                </div>
                                                 <div class="block_sp">
                                                     <div class="form-group">
                                                         <p class="ttg">Trạng thái</p>
