@@ -1,5 +1,8 @@
 @extends('/web/index')
 @section('content')
+    @php
+        include_once(app_path().'/helpers.php');
+    @endphp
     <main class="page-content">
 
         <section class="section-hero section-hero-slider owl-carousel owl-theme">
