@@ -126,7 +126,13 @@ class HomePageController extends BaseController
             ->inRandomOrder() // Thay đổi từ orderBy thành inRandomOrder
             ->get();
 
-        return view('web.news.details', ['blog' => $blog, 'list_blog' => $list_blog]);
+        $recommended_products = explode(',', $blog->recommended_products);
+
+        $list_product =  DB::table('products')
+            ->whereIn('id', $recommended_products)
+            ->get();
+
+        return view('web.news.details', ['blog' => $blog, 'list_blog' => $list_blog, 'list_product' => $list_product]);
     }
 
     public function listCategoryDetail($id)

@@ -38,62 +38,38 @@
                 <section class="section-related-products row">
                     <h4 class="typography-article-section-title">Xe điện được đề xuất</h4>
                     <div class="products-items--related owl-carousel owl-theme">
-                        <div class="bike-item">
-                            <a href="#" class="bike-img">
-                                <img class src="{{ asset('home/images/item3.png') }}" alt="Xe máy điện Theon"/>
-                            </a>
-                            <div class="bike-item-content">
-                                <h2 class="bike-name">Vento </h2>
-                                <div class="bike-info">
-                                    <div class="bike-info-item">
-                                        <span class="col-12 pl-0 title">Quãng đường</span>
-                                        <span class="col-12 subtitle">Lên tới 110 km/ 1 lần
+                        @if(!empty($list_product))
+                            @foreach($list_product as $value)
+                                <div class="bike-item">
+                                    <a href="{{route('details.basic', $value->path)}}" class="bike-img">
+                                        <img class src="{{$value->representative_image}}" alt="Xe máy điện Theon"/>
+                                    </a>
+                                    <div class="bike-item-content">
+                                        <h2 class="bike-name">{{$value->product_name}} </h2>
+                                        <div class="bike-info">
+                                            <div class="bike-info-item">
+                                                <span class="col-12 pl-0 title">Quãng đường</span>
+                                                <span class="col-12 subtitle">Lên tới {{$value->distance_traveled}} km/ 1 lần
                                         sạc</span>
-                                    </div>
-                                    <div class="bike-info-item">
-                                        <span class="col-12 pl-0 title">Tốc độ</span>
-                                        <span class="col-12 subtitle">Lên tới 80 km/h</span>
-                                    </div>
-                                </div>
-                                <div class="bike-price">Giá bán lẻ đề xuất
-                                    <p class="bike-price-sold">
-                                        <span class="new_price">56.350.000 VNĐ</span>
-                                        <span class="old_price">56.350.000 VNĐ</span>
-                                    </p>
-                                </div>
-                                <div class="d-flex flex-wrap justify-content-between">
-                                    <a href="#" class="view-detail col-lg-6">Xem chi tiết</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bike-item">
-                            <a href="#" class="bike-img">
-                                <img class src="{{ asset('home/images/item3.png') }}" alt="Xe máy điện Theon"/>
-                            </a>
-                            <div class="bike-item-content">
-                                <h2 class="bike-name">Vento </h2>
-                                <div class="bike-info">
-                                    <div class="bike-info-item">
-                                        <span class="col-12 pl-0 title">Quãng đường</span>
-                                        <span class="col-12 subtitle">Lên tới 110 km/ 1 lần
-                                        sạc</span>
-                                    </div>
-                                    <div class="bike-info-item">
-                                        <span class="col-12 pl-0 title">Tốc độ</span>
-                                        <span class="col-12 subtitle">Lên tới 80 km/h</span>
+                                            </div>
+                                            <div class="bike-info-item">
+                                                <span class="col-12 pl-0 title">Tốc độ</span>
+                                                <span class="col-12 subtitle">Lên tới {{$value->maximum_speed}} km/h</span>
+                                            </div>
+                                        </div>
+                                        <div class="bike-price">Giá bán lẻ đề xuất
+                                            <p class="bike-price-sold">
+                                                <span class="new_price">{{number_format($value->product_price)}} VNĐ</span>
+                                                <span class="old_price">{{number_format($value->price_comparison)}} VNĐ</span>
+                                            </p>
+                                        </div>
+                                        <div class="d-flex flex-wrap justify-content-between">
+                                            <a href="{{route('details.basic', $value->path)}}" class="view-detail col-lg-6">Xem chi tiết</a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="bike-price">Giá bán lẻ đề xuất
-                                    <p class="bike-price-sold">
-                                        <span class="new_price">56.350.000 VNĐ</span>
-                                        <span class="old_price">56.350.000 VNĐ</span>
-                                    </p>
-                                </div>
-                                <div class="d-flex flex-wrap justify-content-between">
-                                    <a href="#" class="view-detail col-lg-6">Xem chi tiết</a>
-                                </div>
-                            </div>
-                        </div>
+                            @endforeach
+                        @endif
                     </div>
                 </section>
             </div>
