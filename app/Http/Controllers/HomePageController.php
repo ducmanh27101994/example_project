@@ -44,13 +44,23 @@ class HomePageController extends BaseController
             ->where('code_ads', '=', 'pbgn-partner')
             ->get();
 
-        $products = DB::table('products')
+        $listCategory = DB::table('cate_product')
             ->where('status', '=', 'active')
-            ->orderBy('created_at', 'desc')
             ->get();
 
+        $data = [];
+        if (!empty($listCategory)) {
+            foreach ($listCategory as $value) {
+                $key = $value->name;
+                $productsCate = DB::table('cate_product')
+                    ->join('products', 'cate_product.id', '=', 'products.product_portfolio')
+                    ->where('products.product_portfolio', '=', $value->id)
+                    ->get();
+                $data["$key"] = $productsCate;
+            }
+        }
 
-        return view('web.home.trangchu', compact('slide_banner', 'img_slider', 'gallery_items', 'pbgn_partner', 'products'));
+        return view('web.home.trangchu', compact('slide_banner', 'img_slider', 'gallery_items', 'pbgn_partner','listCategory','data'));
     }
 
     public function indexAboutUs()
