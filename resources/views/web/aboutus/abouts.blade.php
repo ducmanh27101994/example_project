@@ -8,7 +8,7 @@
                 <div class="row">
                     <div class="col-xs-12 col-md-12">
                         <div class="video_intro">
-                            <iframe width="100%" height="570" src="https://www.youtube.com/embed/l44-kmEcKI4"
+                            <iframe width="100%" height="570" src="https://www.youtube.com/embed/yJG90zU3_ug"
                                     title="Livestream XE ĐIỆN OSAKAR NISPA VERA MỚI NHẤT ĐANG CÓ TẠI XE ĐẠP 107"
                                     frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

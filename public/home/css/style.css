@@ -125,7 +125,9 @@ ul.language_choose li a:hover {
     text-align: center;
     width: .05em
 }
-
+.center img {
+    margin: auto;
+}
 @media(min-width: 576px) {
     .hero-headline {
         font-size: 80px
