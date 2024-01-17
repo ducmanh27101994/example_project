@@ -60,7 +60,7 @@ class HomePageController extends BaseController
             }
         }
 
-        return view('web.home.trangchu', compact('slide_banner', 'img_slider', 'gallery_items', 'pbgn_partner','listCategory','data'));
+        return view('web.home.trangchu', compact('slide_banner', 'img_slider', 'gallery_items', 'pbgn_partner', 'listCategory', 'data'));
     }
 
     public function indexAboutUs()
@@ -108,7 +108,13 @@ class HomePageController extends BaseController
             ->orderBy('blogs.created_at', 'desc')
             ->get();
 
-        return view('web.news.category', compact('listCategory', 'list_blog'));
+        $list_blog_one_hot_news = DB::table('blogs')
+            ->where('blogs.status', '=', 'active')
+            ->where('blogs.new_hot', '=', 'active')
+            ->orderBy('blogs.created_at', 'desc')
+            ->first();
+
+        return view('web.news.category', compact('listCategory', 'list_blog', 'list_blog_one_hot_news'));
     }
 
     public function detailBlog($slug)
@@ -128,7 +134,7 @@ class HomePageController extends BaseController
 
         $recommended_products = explode(',', $blog->recommended_products);
 
-        $list_product =  DB::table('products')
+        $list_product = DB::table('products')
             ->whereIn('id', $recommended_products)
             ->get();
 
@@ -168,7 +174,8 @@ class HomePageController extends BaseController
             $listFail = [];
 
             foreach ($sheetData as $key => $value) {
-                if (empty($value[0]) && empty($value[1]) && empty($value[2]) && empty($value[3])) continue;
+                if (empty($value[0]) && empty($value[1]) && empty($value[2]) && empty($value[3]))
+                    continue;
                 if ($key >= 1) {
                     $data = array(
                         "key" => ++$key,
@@ -222,46 +229,46 @@ class HomePageController extends BaseController
             ->get();
 
         $images360 = DB::table('images_products')
-            ->where('product_id','=', $product->id)
+            ->where('product_id', '=', $product->id)
             ->where('code', '=', 'images360')
             ->orderBy('created_at', 'asc')
             ->get();
 
 
-        return view('web.product.detailsBasic', compact('images360','color_image', 'icon_images', 'product', 'feature_description', 'vehicle_detail_photos', 'actual_photo'));
+        return view('web.product.detailsBasic', compact('images360', 'color_image', 'icon_images', 'product', 'feature_description', 'vehicle_detail_photos', 'actual_photo'));
     }
 
     public function categoryProduct()
     {
         $category = CateProduct::all();
 
-        if (!empty($category)){
+        if (!empty($category)) {
             $products = DB::table('products')
                 ->where('status', '=', 'active')
-                ->where('product_portfolio','=', $category[0]->id)
-                ->orderBy('created_at','desc')
+                ->where('product_portfolio', '=', $category[0]->id)
+                ->orderBy('created_at', 'desc')
                 ->get();
         }
 
         $blog1 = DB::table('blogs')
             ->where('status', '=', 'active')
-            ->where('category_blogproduct','=', 2)
-            ->orderBy('created_at','desc')
+            ->where('category_blogproduct', '=', 2)
+            ->orderBy('created_at', 'desc')
             ->get();
 
         $blog2 = DB::table('blogs')
             ->where('status', '=', 'active')
-            ->where('category_blogproduct','=', 3)
-            ->orderBy('created_at','desc')
+            ->where('category_blogproduct', '=', 3)
+            ->orderBy('created_at', 'desc')
             ->get();
 
         $blog3 = DB::table('blogs')
             ->where('status', '=', 'active')
-            ->where('category_blogproduct','=', 4)
-            ->orderBy('created_at','desc')
+            ->where('category_blogproduct', '=', 4)
+            ->orderBy('created_at', 'desc')
             ->get();
 
-        return view('web.product.category', compact('category','products','blog1','blog2','blog3'));
+        return view('web.product.category', compact('category', 'products', 'blog1', 'blog2', 'blog3'));
     }
 
     public function detailCategoryProduct($id)
@@ -270,32 +277,33 @@ class HomePageController extends BaseController
 
         $products = DB::table('products')
             ->where('status', '=', 'active')
-            ->where('product_portfolio','=', $id)
-            ->orderBy('created_at','desc')
+            ->where('product_portfolio', '=', $id)
+            ->orderBy('created_at', 'desc')
             ->get();
 
         $blog1 = DB::table('blogs')
             ->where('status', '=', 'active')
-            ->where('category_blogproduct','=', 2)
-            ->orderBy('created_at','desc')
+            ->where('category_blogproduct', '=', 2)
+            ->orderBy('created_at', 'desc')
             ->get();
 
         $blog2 = DB::table('blogs')
             ->where('status', '=', 'active')
-            ->where('category_blogproduct','=', 3)
-            ->orderBy('created_at','desc')
+            ->where('category_blogproduct', '=', 3)
+            ->orderBy('created_at', 'desc')
             ->get();
 
         $blog3 = DB::table('blogs')
             ->where('status', '=', 'active')
-            ->where('category_blogproduct','=', 4)
-            ->orderBy('created_at','desc')
+            ->where('category_blogproduct', '=', 4)
+            ->orderBy('created_at', 'desc')
             ->get();
 
-        return view('web.product.category', compact('category','products','blog1','blog2','blog3'));
+        return view('web.product.category', compact('category', 'products', 'blog1', 'blog2', 'blog3'));
     }
 
-    public function listStore($desc, Request $request) {
+    public function listStore($desc, Request $request)
+    {
 
         $domain = NULL;
         $flag = NULL;
@@ -336,11 +344,12 @@ class HomePageController extends BaseController
             ->groupBy('longitude')
             ->get();
 
-        return view('web.store.listStore', compact('listStore','flag','listProvince','listDistrict'));
+        return view('web.store.listStore', compact('listStore', 'flag', 'listProvince', 'listDistrict'));
 
     }
 
-    function slugify($text) {
+    function slugify($text)
+    {
         $text = preg_replace('/[^a-zA-Z0-9\s]/', '', $text);
         $text = strtolower($text);
         $text = str_replace(' ', '-', $text);

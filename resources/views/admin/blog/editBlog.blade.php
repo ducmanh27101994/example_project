@@ -256,9 +256,12 @@
                                                 <div class="block_sp">
                                                     <div class="form-group">
                                                         <p class="ttg">Tin mới</p>
-                                                        <input id="chknews" type="checkbox"
-                                                               name="chknews"
-                                                               checked="checked"> Tin mới<br>
+                                                        <input id="chknewshot" type="checkbox"
+                                                               name="chknewshot"
+                                                               @if($editBlog->new_hot == 'active')
+                                                               checked="checked"
+                                                            @endif
+                                                        > Tin mới<br>
                                                     </div>
                                                 </div>
                                                 <div class="block_sp">
