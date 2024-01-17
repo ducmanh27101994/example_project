@@ -128,7 +128,7 @@ class StoreController extends BaseController
             return redirect()->route('admin.indexStore');
         }
 
-        $status = (!empty($request->status) && $request->status == 'on') ? 'active' : 'block';
+        $status = (!empty($request->status) && $request->status == 'on') ? '1' : 'block';
         if ($request->image_store) {
             $image_store = $this->uploadService->upload_param($request->image_store);
         }
