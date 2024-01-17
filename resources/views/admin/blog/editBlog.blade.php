@@ -472,9 +472,12 @@
             filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
             filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
             filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-            allowedContent: true
+            allowedContent: true,
         });
+
     </script>
+
+
     <?php
 
     function showCategory($category, $edit_parent_id, $parent_id = 0, $char = '')
