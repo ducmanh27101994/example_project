@@ -54,4 +54,8 @@ class TemplateController extends BaseController
     {
         return view('admin.product.details.createProduct');
     }
+    public function heidi()
+    {
+        return view('web.product.ladipage.heidi');
+    }
 }
