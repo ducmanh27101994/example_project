@@ -149,8 +149,8 @@
                                 <th width="20" class="title">
                                     #
                                 </th>
-                                <th width="80" class="title">Hình ảnh
-                                </th>
+{{--                                <th width="80" class="title">Hình ảnh--}}
+{{--                                </th>--}}
                                 <th class="title">Tên cửa hàng
                                 </th>
                                 <th class="title">Tỉnh, thành phố
@@ -175,11 +175,7 @@
                                     <tbody>
                                     <tr class="row0">
                                         <td align="center">{{++$key}}</td>
-                                        <td align="center">
-                                            <a id="LinkButton3" title="Sửa"><img
-                                                    height="40" style="max-width:300px"
-                                                    src="{{$value->image_store}}"></a>
-                                        </td>
+
                                         <td>
                                             <a id="LinkButton1" title="Sửa"
                                                href="javascript:__doPostBack('controls1$ctl00$ctl00$ctl00$rpitems$ctl01$LinkButton1','')">{{$value->title_store}}</a>
@@ -195,16 +191,12 @@
                                             </p>
                                         </td>
 
-{{--                                        <td align="center">--}}
-{{--                                            <a id="LinkButton2" title="Thay đổi trạng thái"--}}
-{{--                                            >{{$value->status}}</a>--}}
-{{--                                        </td>--}}
-{{--                                        <td align="center">--}}
-{{--                                            <a id="LinkButton4" title="Sửa"--}}
-{{--                                               href="{{route('admin.editStore', $value->id)}}"><img--}}
-{{--                                                    src="{{ asset('images/iconedit_c.png') }}"></a>--}}
+                                        <td align="center">
+                                            <a id="LinkButton4" title="Sửa"
+                                               href="{{route('admin.editStore', $value->id)}}"><img
+                                                    src="{{ asset('images/iconedit_c.png') }}"></a>
 
-{{--                                        </td>--}}
+                                        </td>
                                     </tr>
                                     </tbody>
                                 @endforeach
