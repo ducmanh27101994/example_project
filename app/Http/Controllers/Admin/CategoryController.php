@@ -578,5 +578,11 @@ class CategoryController extends BaseController
 
     }
 
+    public function deleteBlog($id) {
+        $blog = Blog::findOrFail($id);
+        $blog->delete();
+        return redirect()->back();
+    }
+
 
 }
