@@ -139,12 +139,12 @@
                                         </td>
 
                                         <td align="center">
-                                            <a href="" target="_blank" title="Xóa">
-                                                <img src="{{ asset('images/icondelete_c.png') }}"></a>&nbsp; &nbsp;
+
                                             <a id="LinkButton4" title="Sửa"
                                                href="{{route('admin.editBlog', $blog->id)}}"><img
                                                     src="{{ asset('images/iconedit_c.png') }}"></a>
-                                            &nbsp; &nbsp;
+                                            <a  href="{{route('admin.deleteBlog', $blog->id)}}" target="_blank" title="Xóa">
+                                                <img src="{{ asset('images/icondelete_c.png') }}" onclick="return confirmDelete()"></a>&nbsp; &nbsp;
 
                                         </td>
                                     </tr>
@@ -162,4 +162,9 @@
             </div>
         </div>
     </div>
+    <script>
+        function confirmDelete() {
+            return confirm('Bạn có chắc chắn muốn xóa bài viết này không?');
+        }
+    </script>
 @endsection
