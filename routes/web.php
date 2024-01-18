@@ -67,6 +67,7 @@ Route::group(['middleware' => 'auth_admin'], function () {
         Route::post('/createBlog', 'App\Http\Controllers\Admin\CategoryController@submitCreateBlog')->name('admin.submit.createBlog');
         Route::get('/editBlog/{id}', 'App\Http\Controllers\Admin\CategoryController@editBlog')->name('admin.editBlog');
         Route::post('/editBlog/{id}', 'App\Http\Controllers\Admin\CategoryController@submitEditBlog')->name('admin.submit.editBlog');
+        Route::get('/deleteBlog/{id}', 'App\Http\Controllers\Admin\CategoryController@deleteBlog')->name('admin.deleteBlog');
 
         Route::get('/indexContact', 'App\Http\Controllers\Admin\ContactController@indexContact')->name('admin.indexContact');
         Route::get('/indexContact/{id}', 'App\Http\Controllers\Admin\ContactController@editContact')->name('admin.editContact');
