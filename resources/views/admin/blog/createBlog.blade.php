@@ -256,9 +256,6 @@
                                                         <p class="ttg">Tin mới</p>
                                                         <input id="chknewshot" type="checkbox"
                                                                name="chknewshot"
-                                                               @if($editBlog->new_hot == 'active')
-                                                               checked="checked"
-                                                            @endif
                                                         > Tin mới<br>
                                                     </div>
                                                 </div>

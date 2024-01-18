@@ -140,7 +140,7 @@
 
                                         <td align="center">
                                             <a href="" target="_blank" title="Xóa">
-                                                <img src="{{ asset('images/icondelete_c.png') }}"></a>&nbsp; &nbsp;
+                                                <img src="{{ asset('images/icondelete_c.png') }}"></a>  
                                             <a id="LinkButton4" title="Sửa"
                                                href="{{route('admin.editBlog', $blog->id)}}"><img
                                                     src="{{ asset('images/iconedit_c.png') }}"></a>
