@@ -2,38 +2,38 @@
 @section('content')
 <main class="page-content">
     <nav class="family-nav" data-component-list="FamilyNav FamilyNavMenu">
-        <div class="family-nav-wrapper">
+        <div class="family-nav-wrapper" style="display: none">
             <ul class="family-nav-items">
                 <li class="family-nav-item">
-                    <a class="family-nav-link " href="/smartscooter/2-series/" data-family-menu-target="">
+                    <a class="family-nav-link " href="#" data-family-menu-target="">
                         <figure id="family-nav-image-2-series" class="family-nav-image family-nav-image--2-series family-nav-image--2-series-en"></figure>
                         <h4 class="family-nav-label" role="text">Gogoro 2 Series</h4>
                         <span class="family-nav-new">Hot</span>
                     </a>
                 </li>
                 <li class="family-nav-item">
-                    <a class="family-nav-link" href="/smartscooter/viva/xl/" data-family-menu-target="viva-xl">
+                    <a class="family-nav-link" href="#" data-family-menu-target="viva-xl">
                         <figure id="family-nav-image-viva-xl" class="family-nav-image family-nav-image--viva-xl family-nav-image--viva-xl-en"></figure>
                         <h4 class="family-nav-label" role="text">Gogoro VIVA XL</h4>
                         <span class="family-nav-new">Hot</span>
                     </a>
                 </li>
                 <li class="family-nav-item">
-                    <a class="family-nav-link" href="/smartscooter/viva/mix/" data-family-menu-target="viva-mix">
+                    <a class="family-nav-link" href="#" data-family-menu-target="viva-mix">
                         <figure id="family-nav-image-viva-mix" class="family-nav-image family-nav-image--viva-mix family-nav-image--viva-mix-en"></figure>
                         <h4 class="family-nav-label" role="text">Gogoro VIVA MIX</h4>
                         <span class="family-nav-new">Hot</span>
                     </a>
                 </li>
                 <li class="family-nav-item">
-                    <a class="family-nav-link " href="/smartscooter/viva/" data-family-menu-target="">
+                    <a class="family-nav-link " href="#" data-family-menu-target="">
                         <figure id="family-nav-image-viva" class="family-nav-image family-nav-image--viva family-nav-image--viva-en"></figure>
                         <h4 class="family-nav-label" role="text">Gogoro VIVA</h4>
                         <span class="family-nav-new">Hot</span>
                     </a>
                 </li>
                 <li class="family-nav-item">
-                    <a class="family-nav-link " href="/smartscooter/s1/" data-family-menu-target="">
+                    <a class="family-nav-link " href="#" data-family-menu-target="">
                         <figure id="family-nav-image-s1" class="family-nav-image family-nav-image--s1 family-nav-image--s1-en"></figure>
                         <h4 class="family-nav-label" role="text">Gogoro S1</h4>
                         <span class="family-nav-new">Hot</span>
