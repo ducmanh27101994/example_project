@@ -170,11 +170,11 @@
             </h2>
             <div class="pbgn-badges">
                 <div class="pbgn-badge">
-                    <div class="pbgn-badge-value counter">60</div>
+                    <div class="pbgn-badge-value counter">63</div>
                     <div class="pbgn-badge-label">Tỉnh thành</div>
                 </div>
                 <div class="pbgn-badge">
-                    <div class="pbgn-badge-value counter">345</div>
+                    <div class="pbgn-badge-value counter">+100</div>
                     <div class="pbgn-badge-label">Đại lý</div>
                 </div>
                 <div class="pbgn-badge">
