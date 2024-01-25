@@ -1610,12 +1610,12 @@
 .performance-bg--caliper {
     width: 80.2%;
     background: center top/contain no-repeat;
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/s1/performance/img-s-performance-caliper-highlight-mobile@2x.png?v=v7")
+    background-image: url("../images/cobandap-chitiet.png")
 }
 
 .performance-bg--caliper::before {
     padding-bottom: 113.84%;
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/s1/performance/img-s-performance-caliper-mobile@2x.png?v=v7")
+    background-image: url("../images/cobandap-fullsang.png")
 }
 
 @media(min-width: 768px) {
