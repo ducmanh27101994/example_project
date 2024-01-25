@@ -1,40 +1,35 @@
 @extends('/web/index')
 @section('content')
 
-<link rel="stylesheet"
-    href="{{ asset('home/css/ladiframe.css') }}" />
-<link rel="stylesheet"
-    href="{{ asset('home/css/style_ladi.css') }}" />
 
-
-
-
+<link rel="stylesheet" href="{{ asset('home/css/pdp-page-xmd.css') }}" />
+<link rel="stylesheet" href="{{ asset('home/css/ladiframe.css') }}" />
+<link rel="stylesheet" href="{{ asset('home/css/style_ladi.css') }}" />
 
 <main>
     <section class="hero-section">
         <div class="hero-main">
             <div class="hero-background"></div>
-            <div class="hero-kv">
-                <div class="kv-light"></div>
-                <div id="s-motion" class="kv-animation"></div>
-                <div class="kv-scooter"></div>
-            </div>
-        </div>
-        <div class="hero-copy">
-            <div>
-                <div class="subtitle">Built to Surpass</div>
-                <div class="title">Gogoro <span>S1</span></div>
-                <a href="/press/updates/" target="_blank" class="btn-cta">INTERESTED</a>
-            </div>
+
         </div>
     </section>
 
     <section class="section section-break-a progressive-image">
         <div class="break-a-duration"></div>
         <div class="animation-layer">
-            <div class="break-spotlight"></div>
-            <div class="break-scooter"></div>
-            <div class="break-words">
+            <div class="break-spotlight">
+
+            </div>
+            <div class="break-scooter">
+                <p class="heidi_text_head_line_top">
+                    <img src="{{ asset('home/images/HEIDI.png') }}" alt="HEIDI">
+                </p>
+                <p class="heidi_text_head_line_bottom">
+                    <span>TỐI ƯU TRẢI NGHIỆM</span>
+                    <span>TỰ DO KHÁM PHÁ</span>
+                </p>
+            </div>
+            <div class="break-words" style="display: none">
                 <canvas></canvas>
             </div>
         </div>
@@ -48,9 +43,9 @@
                         <div class="dash-line-top"></div>
                         <div class="dash-line-bottom"></div>
                     </div>
-                    <h3 class="section-title section-title--animation">Sensational</h3>
-                    <p class="section-description">Pure power in an instant. Super fast. Ultra smooth. Unbelievably
-                        nimble. Infinitely more refined. This is riding on an entirely new level.</p>
+                    <h3 class="section-title section-title--animation">Hiệu suất cao</h3>
+                    <p class="section-description">Khối động cơ điện hoạt động với hiệu suất cao, giúp xe có thể vận
+                        hành khỏe và êm trên mọi dạng địa hình.</p>
                 </div>
             </div>
         </div>
@@ -63,33 +58,33 @@
                 <div class="key-number-item">
                     <div class="key-number-sizer">
                         <div class="key-number d-flex flex-column justify-content-between">
-                            <div class="d-flex align-items-end">
-                                <div class="key-number__value">3.7</div>
-                                <div class="key-number__unit">SEC<br>0-50 KM/H<sup>*</sup></div>
+                            <div class="d-flex key-number_box">
+                                <div class="key-number__value">48V20Ah</div>
+                                <div class="key-number__unit">DUNG LƯỢNG</div>
                             </div>
-                            <div class="key-number__content">Max Acceleration</div>
+                            <div class="key-number__content">ACQUY</div>
                         </div>
                     </div>
                 </div>
                 <div class="key-number-item">
                     <div class="key-number-sizer">
                         <div class="key-number d-flex flex-column justify-content-between">
-                            <div class="d-flex align-items-end">
-                                <div class="key-number__value">7.2</div>
-                                <div class="key-number__unit">kW @<br>5,000 RPM</div>
+                            <div class="d-flex key-number_box">
+                                <div class="key-number__value">500W</div>
+                                <div class="key-number__unit">VẬN HÀNH KHOẺ, ÊM</div>
                             </div>
-                            <div class="key-number__content">Motor Output</div>
+                            <div class="key-number__content">ĐỘNG CƠ</div>
                         </div>
                     </div>
                 </div>
                 <div class="key-number-item">
                     <div class="key-number-sizer">
                         <div class="key-number d-flex flex-column justify-content-between">
-                            <div class="d-flex align-items-end">
-                                <div class="key-number__value">202</div>
-                                <div class="key-number__unit">NM<br>at the wheel</div>
+                            <div class="d-flex key-number_box">
+                                <div class="key-number__value">41KM/H</div>
+                                <div class="key-number__unit">DI CHUYỂN NHANH CHÓNG</div>
                             </div>
-                            <div class="key-number__content">Max Torque</div>
+                            <div class="key-number__content">VẬN TỐC</div>
                         </div>
                     </div>
                 </div>
@@ -97,43 +92,93 @@
         </div>
     </section>
 
-    <section class="section section-colors">
-        <input type="radio" id="color-gallery-ice" class="d-none" name="color-gallery" checked>
-        <input type="radio" id="color-gallery-grey" class="d-none" name="color-gallery">
-        <div class="section-colors-bg"></div>
-        <div class="section-content">
-            <div class="d-lg-flex justify-content-between align-items-center">
-                <div class="color-gallery-content">
-                    <h3 class="section-title section-title--animation">Simply Inspire</h3>
-                    <div class="section-description">
-                        <div class="color-gallery-captions">
-                            <div class="color-gallery-caption color-gallery-caption--ice">
-                                <p>Icy Grey breaks through the S Performance’s black tone, and it’s inspired by the
-                                    polishing process of glacier, every detail has been dressed to stun. It’s a
-                                    precision look that can’t be missed.</p>
-                            </div>
-                            <div class="color-gallery-caption color-gallery-caption--grey">
-                                <p>Graphite Grey is inspired by the coolness of shadow and graphite’s muted texture,
-                                    only for the most obvious reason. Enhance your cool look no matter which path you
-                                    choose to take on.</p>
-                            </div>
-                        </div>
-                        <div class="color-gallery-tabs">
-                            <label class="color-gallery-tabs__btn color-gallery-tabs__btn--ice"
-                                for="color-gallery-ice">Icy Grey</label>
-                            <label class="color-gallery-tabs__btn color-gallery-tabs__btn--grey"
-                                for="color-gallery-grey">Graphite Grey</label>
-                        </div>
-                    </div>
+    <section class="section section-color">
+
+        <div class="head_color_title">
+            <h2>Đa dạng màu sắc</h2>
+            <p>Mỗi màu sắc đều mang lại một phong cách riêng biệt cho người lái, thể hiện được cá tính và sở thích của
+                họ.</p>
+        </div>
+
+        <div class="top-main-img">
+            <div class="mySliderTop">
+                <div class>
+                    <picture>
+                        <source
+                            srcset="{{ asset('home/images/color_image_heidi.png') }}"
+                            type="image/webp" />
+                        <img data-lazy="{{ asset('home/images/color_image_heidi.png') }}"
+                            title alt="Xe máy điện VinFast Evo200 màu vàng" width="100%" />
+                    </picture>
                 </div>
-                <div class="color-gallery-images">
-                    <div class="color-gallery-image color-gallery-image--ice"></div>
-                    <div class="color-gallery-image color-gallery-image--grey"></div>
+                <div class>
+                    <picture>
+                        <source
+                            data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}"
+                            type="image/webp" />
+                        <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                            alt="Xe máy điện VinFast Evo200 màu đen" width="100%" />
+                    </picture>
+                </div>
+                <div class>
+                    <picture>
+                        <source
+                            data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}"
+                            type="image/webp" />
+                        <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                            alt="Xe máy điện VinFast Evo200 màu đỏ" width="100%" />
+                    </picture>
+                </div>
+                <div class>
+                    <picture>
+                        <source
+                            data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}"
+                            type="image/webp" />
+                        <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                            alt="Xe máy điện VinFast Evo200 màu xanh" width="100%" />
+                    </picture>
+                </div>
+                <div class>
+                    <picture>
+                        <source
+                            data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}"
+                            type="image/webp" />
+                        <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                            alt="Xe máy điện VinFast Evo200 màu trắng" width="100%" />
+                    </picture>
                 </div>
             </div>
-
+        </div>
+        <div class="top-main-control js-aos" data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
+            <div class="myThumbSlider" data-showitem="7">
+                <div class="item-myThumb">
+                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwddfc1849/images/PDP-XMD/color/evo-yellow.png"
+                        alt="màu vàng">
+                </div>
+                <div class="item-myThumb">
+                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw5b7d4ede/images/PDP-XMD/color/evo-black.png"
+                        alt="màu đen">
+                </div>
+                <div class="item-myThumb">
+                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
+                        alt="màu đỏ">
+                </div>
+                <div class="item-myThumb">
+                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw4c44a070/images/PDP-XMD/color/evo-blue.png"
+                        alt="màu xanh">
+                </div>
+                <div class="item-myThumb">
+                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwd52b0fb5/images/PDP-XMD/color/evo-white.png"
+                        alt="màu trắng">
+                </div>
+            </div>
+            <div class="box-control-nav">
+                <div class="btn-arrow button-prev"></div>
+                <div class="btn-arrow button-next"></div>
+            </div>
         </div>
     </section>
+
 
     <section class="section section-design progressive-image">
         <div class="design-bg"></div>
@@ -157,9 +202,10 @@
                     </div>
                     <div class="design-topic__content">
                         <div>
-                            <h4 class="subhead">Infinity Dashboard</h4>
-                            <p>By unifying every surface in a suite of all-black finishes, it delivers even greater
-                                focus on the brilliant full-spectrum display.</p>
+                            <h4 class="subhead">Màn hình LED đa sắc</h4>
+                            <p>Bằng cách đồng bộ thiết kế bề mặt màn hình màu đen, khiến người dùng tập trung hơn vào
+                                màn hình hiển thị với đầy đủ màu sắc tuyệt vời, tạo nên một trải nghiệm độc đáo và hấp
+                                dẫn..</p>
                         </div>
                     </div>
                 </div>
@@ -169,9 +215,10 @@
                     </div>
                     <div class="design-topic__content">
                         <div>
-                            <h4 class="subhead">S Performance Seat</h4>
-                            <p>Dual-texture design featuring high grip material gives you even greater control during
-                                the most aggressive racing maneuvers.</p>
+                            <h4 class="subhead">SOS Mode <br /> Tính năng cứu hộ hiện đại</h4>
+                            <p>Bằng cách đồng bộ thiết kế bề mặt màn hình màu đen, khiến người dùng tập trung hơn vào
+                                màn hình hiển thị với đầy đủ màu sắc tuyệt vời, tạo nên một trải nghiệm độc đáo và hấp
+                                dẫn..</p>
                         </div>
                     </div>
                 </div>
@@ -181,9 +228,10 @@
                     </div>
                     <div class="design-topic__content">
                         <div>
-                            <h4 class="subhead">S Performance Aluminum Floor Guard</h4>
-                            <p>Premium Titanium-Black aluminum floor guard provides extra traction during the most
-                                intense riding maneuvers.</p>
+                            <h4 class="subhead">Bàn đạp trợ lực khi lên dốc</h4>
+                            <p>Bằng cách đồng bộ thiết kế bề mặt màn hình màu đen, khiến người dùng tập trung hơn vào
+                                màn hình hiển thị với đầy đủ màu sắc tuyệt vời, tạo nên một trải nghiệm độc đáo và hấp
+                                dẫn..</p>
                         </div>
                     </div>
                 </div>
@@ -193,42 +241,79 @@
                     </div>
                     <div class="design-topic__content">
                         <div>
-                            <h4 class="subhead">Mirror Black Rims</h4>
-                            <p>6-spoke rims in high-gloss Mirror Black finish captures the fluid reflections of every
-                                streetlight it blurs past.</p>
+                            <h4 class="subhead">Thẻ NFC <br /> Một chạm mở khoá</h4>
+                            <p>Bằng cách đồng bộ thiết kế bề mặt màn hình màu đen, khiến người dùng tập trung hơn vào
+                                màn hình hiển thị với đầy đủ màu sắc tuyệt vời, tạo nên một trải nghiệm độc đáo và hấp
+                                dẫn..</p>
                         </div>
                     </div>
-                </div>
-                <div class="design-topic design-topic--full">
-                    <a target="_blank" href="https://shop.gogoro.com/collections/s-performance">You can build your own
-                        Gogoro S1 with S Performance accessory.</a>
                 </div>
             </div>
         </div>
 
     </section>
-  
-    <section class="section section-performance progressive-image">
-        <div class="section-content">
-            <div class="row justify-content-center text-center">
-                <div class="col-xl-6 col-lg-8 col-md-10">
-                    <h3 class="section-title section-title--animation">Be First</h3>
-                    <p class="section-description">We’ve performance-tuned our entire drive train to unleash torque like
-                        never before. Specialized G1-S Performance motor and racing-grade carbon belts make it faster,
-                        more efficient. Pure power just turn green lights into your launch pads.</p>
+
+    <section class="page-block-image page-block-image-360" id="pdp-img-360" style="background: #1B1B1E;">
+        <div class="breaking-wrap">
+            <div class="wrap_image">
+                <img src="{{ asset('home/images/360.png') }}" alt="img360">
+            </div>
+        </div>
+    </section>
+
+    <section class="page-block-image page-block-dong-co-xanh" id="dong-co-xanh">
+        <div class="breaking-wrap">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="dong-co-xanh_img">
+                        <div class="wrap_image">
+                            <img src="{{ asset('home/images/dongcoxanh.png') }}" alt="dongcoxanh">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="dong-co-xanh_text">
+                        <div class="text_head">
+                            <h2> ĐỘNG CƠ ĐỘC QUYỀN
+                                <br /> OSAKAR
+                            </h2>
+                        </div>
+                        <div class="text_mid">
+                            <h3> Mạnh mẽ hơn - Ổn định hơn - Êm ái hơn
+                            </h3>
+                        </div>
+                        <div class="text_descreption">
+                            <p>Trang bị động cơ công suất tối đa 2800W, hoạt động bền bỉ, công nghệ cuộn dây đơn dây
+                                cuộn mật độ dày cao gọn gàng phẳng khe hở ít, giúp hiệu suất của động cơ tăng 35 %. Bộ
+                                điều khiển thu hồi điện năng.</p>
+                        </div>
+                        <div class="infor_bottom">
+                            <div class="infor_box">
+                                <span>Tốc độ tối đa</span>
+                                <p>50km/h</p>
+                            </div>
+                            <div class="infor_box">
+                                <span>Tăng tốc độ trong</span>
+                                <p>0-50km/h</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="performance-header-bg"></div>
+    </section>
+
+    <section class="section section-performance progressive-image">
         <div class="performance-gallery">
             <div class="performance performance--caliper">
                 <div class="performance-bg performance-bg--caliper"></div>
                 <div class="performance-content">
                     <div class="section-content">
                         <div class="performance-content-sizer">
-                            <h4 class="subhead">Race-Level 4 Piston Calipers</h4>
-                            <p>With a bigger brake disk and a double-acting 4-piston front caliper to deliver unmatched
-                                stopping force for an even shorter braking distance. This is racing gear for the city.
+                            <h4 class="subhead">Bàn đạp trợ lực khi lên dốc</h4>
+                            <p>Bằng cách đồng bộ thiết kế bề mặt màn hình màu đen, khiến người dùng tập trung hơn vào
+                                màn hình hiển thị với đầy đủ màu sắc tuyệt vời, tạo nên một trải nghiệm độc đáo và hấp
+                                dẫn.
                             </p>
                         </div>
                     </div>
@@ -239,10 +324,10 @@
                 <div class="performance-content">
                     <div class="section-content">
                         <div class="performance-content-sizer">
-                            <h4 class="subhead">Adjustable Front Suspension</h4>
-                            <p>Inspired by aircraft landing gear, our aluminum Inverted Single Piston Front Suspension
-                                can be tuned to your exact specification. Giving you even greater confidence and control
-                                during the most demanding maneuvers.</p>
+                            <h4 class="subhead">Phanh đĩa đảm bảo an toàn</h4>
+                            <p>Bằng cách đồng bộ thiết kế bề mặt màn hình màu đen, khiến người dùng tập trung hơn vào
+                                màn hình hiển thị với đầy đủ màu sắc tuyệt vời, tạo nên một trải nghiệm độc đáo và hấp
+                                dẫn.</p>
                         </div>
                     </div>
                 </div>
@@ -252,10 +337,10 @@
                 <div class="performance-content">
                     <div class="section-content">
                         <div class="performance-content-sizer">
-                            <h4 class="subhead">Adjustable Rear Suspension</h4>
-                            <p>Inspired by race car, multi-link suspension design let you tune for both agility and
-                                control. This enables you stay in constant contact with the road, and perfectly on your
-                                line, no matter the conditions.</p>
+                            <h4 class="subhead">Giảm xóc êm ái</h4>
+                            <p>Bằng cách đồng bộ thiết kế bề mặt màn hình màu đen, khiến người dùng tập trung hơn vào
+                                màn hình hiển thị với đầy đủ màu sắc tuyệt vời, tạo nên một trải nghiệm độc đáo và hấp
+                                dẫn.</p>
                         </div>
                     </div>
                 </div>
@@ -263,126 +348,145 @@
         </div>
     </section>
 
-    <section class="section section-app progressive-image">
-        <input type="radio" name="app-slide" id="app-slide-update" class="d-none app-slide-radio" checked>
-        <input type="radio" name="app-slide" id="app-slide-security" class="d-none app-slide-radio">
-        <input type="radio" name="app-slide" id="app-slide-dashboard" class="d-none app-slide-radio">
-
-        <div class="section-content">
-            <div class="container">
-                <h3 class="section-title">Ready For What’s Next.</h3>
-                <p class="section-description">Use the Gogoro® App not only to luck up your bike, use it to tailor your
-                    Gogoro’s performance and look.</p>
-            </div>
-        </div>
-
-        <div class="app-slides">
-            <div class="app-slide">
-                <figure class="image-app image-app--update"></figure>
-                <label class="app-slide-dot" for="app-slide-update"></label>
-                <div class="app-slide__content">
-                    <h4 class="app-subhead">iQ System® Update</h4>
-                    <p>Gogoro continuously updates the firmware to keep your ride future-facing.</p>
-                </div>
-            </div>
-            <div class="app-slide">
-                <figure class="image-app image-app--security"></figure>
-                <label class="app-slide-dot" for="app-slide-security"></label>
-                <div class="app-slide__content">
-                    <h4 class="app-subhead">Theft-Proof<sup>*</sup></h4>
-                    <p>Keep your scooter secure with facial recognition, fingerprint sensors and a passcode. This is
-                        security redefined.</p>
-                </div>
-            </div>
-            <div class="app-slide">
-                <figure class="image-app image-app--dashboard"></figure>
-                <label class="app-slide-dot" for="app-slide-dashboard"></label>
-                <div class="app-slide__content">
-                    <h4 class="app-subhead">Personalized Style</h4>
-                    <p>Tweak the color of your Smart Dash and play with the sound your Gogoro makes when it turns
-                        on-there’s countless ways to make your Gogoro S1 your own.</p>
-                </div>
-            </div>
-        </div>
+    <section class="section section-gallarey">
+        <img src="{{ asset('home/images/section8_gallarey.png') }}" alt="section8_gallarey">
     </section>
 
-    <section class="section section-swap progressive-image">
-        <div class="section-content">
-            <div class="row justify-content-between align-items-center">
-                <div class="col-xl-7 col-md-8">
-                    <h2 class="section-title">Quick, Swap, Go!</h2>
-                    <p class="section-description"><span data-number="rackCount"></span> GoStation® racks<sup
-                            class="sosumi-mark">*</sup> at your service.</p>
-                </div>
-                <div class="col-md-auto">
-                    <a class="cta-btn cta-btn--hollow" href="/tw/findus" target="_blank">
-                        FIND US
-                    </a>
-                </div>
-            </div>
+    <section class="breaking-technology section" id="pdp-breaking-technology">
+        <div class="breaking-wrap">
 
-        </div>
-    </section>
-
-    <section class="section section-gallery">
-        <div class="easter-egg-layer">
-
-        </div>
-        <button class="gallery-btn gallery-btn--left"></button>
-        <button class="gallery-btn gallery-btn--right"></button>
-        <canvas class="gallery-canvas">
-        </canvas>
-    </section>
-
-    <section class="section section-build progressive-image">
-        <div class="section-content">
-            <input type="radio" name="model" class="d-none model-toggle" id="model-standard" checked>
-            <input type="radio" name="model" class="d-none model-toggle" id="model-lite">
-
-            <div class="models">
-                <div class="model-container">
-                    <input type="radio" name="model-color-ack" class="d-none model-color-toggle"
-                        id="model-color-ack-white" checked>
-                    <input type="radio" name="model-color-ack" class="d-none model-color-toggle"
-                        id="model-color-ack-black">
-
-                    <div class="model-images">
-                        <figure class="image-model image-model--white">
-                            <div class="model-color-badge model-color-badge--white">Icy Grey</div>
-                        </figure>
-                        <figure class="image-model image-model--black">
-                            <div class="model-color-badge model-color-badge--black">Graphite Grey</div>
-                        </figure>
-                    </div>
-
-
-                    <div class="model-product-name-wrapper">
-                        <label for="model-ack" class="model-product-name">
-                            Gogoro <span class="model-name">S1</span>
-                        </label>
-                    </div>
-
-                    <div class="model-body">
-
-                        <div class="model-color-picker">
-                            <label class="model-color-btn model-color-btn--white" for="model-color-ack-white"></label>
-                            <label class="model-color-btn model-color-btn--black" for="model-color-ack-black"></label>
+            <div class="breaking-technology-bot">
+                <h3 class="headline text-center">Thông số kỹ thuật</h3>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tabInfoProduct" role="tab"
+                            aria-controls="home" aria-selected="true">
+                            <h2 class="tab-title">THÔNG SỐ SẢN PHẨM</h2>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tabBatteryPackages" role="tab"
+                            aria-controls="profile" aria-selected="false">
+                            <h2 class="tab-title">DỊCH VỤ PIN</h2>
+                        </a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="tabInfoProduct" role="tabpanel"
+                        aria-labelledby="info-tab">
+                        <div class="tab-pane-info d-flex justify-content-between">
+                            <ul>
+                                <li>
+                                    <h3 class="fw-light">Màu sắc</h3>
+                                    <span>Đỏ tươi, Trắng ngọc trai,<br>
+                                        Xanh tím than, Vàng, Đen Nhám</span>
+                                </li>
+                                <li>
+                                    <h3 class="fw-light">Thời gian sạc tiêu chuẩn</h3>
+                                    <span>Sạc 400W - 10h</span>
+                                </li>
+                                <li>
+                                    <h3 class="fw-light">Loại động cơ</h3>
+                                    <span>Inhub</span>
+                                </li>
+                                <li>
+                                    <h3 class="fw-light">Công suất danh định</h3>
+                                    <span>1500 W</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h3 class="fw-light">Giảm xóc</h3>
+                                    <span>Ống lồng-giảm chấn thủy lực;<br>
+                                        giảm xóc đôi, giảm chấn thủy lực</span>
+                                </li>
+                                <li>
+                                    <h3 class="fw-light">PIN</h3>
+                                    <span>01 Pin LFP</span>
+                                </li>
+                                <li>
+                                    <h3 class="fw-light">Dung lượng PIN</h3>
+                                    <span>3,5 KWh</span>
+                                </li>
+                                <li>
+                                    <span class="fw-light">Tốc độ tối đa</span>
+                                    <span>70 km/h</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h3 class="fw-light">Công suất lớn nhất</h3>
+                                    <span>2500 W</span>
+                                </li>
+                                <li>
+                                    <h3 class="fw-light">Trọng lượng</h3>
+                                    <span>97 kg bao gồm pin LFP</span>
+                                </li>
+                                <li>
+                                    <h3 class="fw-light">Dài x Rộng x Cao</h3>
+                                    <span>1804 x 683 x 1127 mm</span>
+                                </li>
+                                <li>
+                                    <h3 class="fw-light">Phanh trước và sau</h3>
+                                    <span>Phanh đĩa/cơ</span>
+                                </li>
+                            </ul>
                         </div>
+                    </div>
+                    <div class="tab-pane fade" id="tabBatteryPackages" role="tabpanel" aria-labelledby="battery-tab">
+                        <div class="breaking-battery-tab d-flex justify-content-between">
+                            <div>
+                                <h3 class="pin-subtitle">Gói thuê PIN</h3>
+                                <p>Gói cước thuê pin:</p>
+                                <ul class="rental-list">
+                                    <li>Quãng đường di chuyển trong tháng dưới 2.000 km, cước thuê pin: 350.000
+                                        VNĐ/tháng.</li>
+                                    <li>Quãng đường di chuyển trong tháng trên 2.000 km trở lên, cước thuê pin: 990.000
+                                        VNĐ/tháng.</li>
+                                </ul>
+                                <div class="rental-note">*Phí đặt cọc thuê pin 2.000.000 VNĐ</div>
 
-                        <a class="cta-btn cta-btn--hollow" target="_blank" href="/press/updates/">INTERESTED</a>
+
+                                <p></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="node_text">
+                <p> *Độ dài quãng đường đi được và tốc độ tối đa đạt được trong phần giới thiệu này được thử nghiệm
+                    trong điều kiện tiêu chuẩn của OSAKAR, các yếu tố khác có thể làm ảnh hưởng đến quãng đường thực tế,
+                    ví dụ như tải trọng, nhiệt độ, tốc độ gió, điều kiện đường và thói quen di chuyển. Đồng thời dung
+                    lượng tối đa của ắc quy sẽ bị giảm sau một thời gian sử dụng do đặc tính của nó.
+                    *OSAKAR có quyền thay đổi hoặc sửa đổi bất kỳ thông số kỹ thuật nào mà không cần thông báo trước.
+                </p>
+            </div>
+        </div>
+    </section>
+    <div class="fixed_policy">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="menu_item_fixed">
+                        <p><a href="#" title="HỆ THỐNG CỬA HÀNG">
+                                <img src="{{ asset('home/images/shop.png') }}" alt="shop">HỆ THỐNG CỬA HÀNG</a></p>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                    <div class="menu_item_fixed_policy">
+                        <p><a href="#" title="ĐIỀU KHOẢN PHÁP LÝ"><img
+                                    src="{{ asset('home/images/akar-icons_question.png') }}" alt="akar-icons_question">
+                                ĐIỀU KHOẢN PHÁP LÝ</a></p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
+    </div>
 </main>
-
 
 <script src="//cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.4/lottie.min.js"></script>
 <script src="//cdn.jsdelivr.net/npm/binary-toolbox@1.3.0"></script>
 <script src="{{ asset('home/js/ladi_heidi.js') }}"></script>
-
-
+<script defer type="text/javascript" src="{{ asset('home/js/pdp-page-xmd.js') }}"></script>
 
 @endsection

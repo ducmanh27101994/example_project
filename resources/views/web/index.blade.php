@@ -24,7 +24,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script src="{{ asset('home/js/jquery-3.6.0.min.js') }}" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -56,7 +56,7 @@
     <script src="{{ asset('home/js/counterup.js') }}"></script>
     <script src="{{ asset('home/js/script.js') }}"></script>
     <script>
-        $(document).ready(function() {
+        $(document).ready(function () {
             AOS.init();
         })
     </script>
@@ -66,7 +66,8 @@
             new google.translate.TranslateElement({}, 'google_translate_element');
         }
     </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script>
         var flags = document.getElementsByClassName('flag_link');
         Array.prototype.forEach.call(flags, function(e) {

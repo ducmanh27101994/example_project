@@ -8036,12 +8036,7 @@ function() {
         })).on("mouseleave", (function() {
             s = !1
         }))
-    }(jQuery), BT.respondChildrenSize($(".color-gallery-captions")), BT.scrollAnimation($(".section-colors-bg"), {
-        factor: .1,
-        offset: 200,
-        style: "transform",
-        direction: "Y"
-    }),
+    }(jQuery), BT.respondChildrenSize($(".color-gallery-captions")),
     function(t) {
         t(".performance").each((function() {
             var e = t(this),
@@ -8067,15 +8062,6 @@ function() {
             }))
         }))
     }(jQuery),
-    function() {
-        var t = new Hammer($(".section-app").get(0)),
-            e = $(".app-slide-radio");
-        t.on("swipeleft swiperight", (function(t) {
-            var i = "swipeleft" === t.type ? 1 : -1,
-                n = (e.index(e.filter(":checked")) + i) % e.length;
-            e.eq(n).prop("checked", !0)
-        }))
-    }(),
     function() {
         var t = $(".easter-egg-layer"),
             e = new BT.ImageGallery($(".gallery-canvas").get(0), ["//cdn.gogoro.com/resources/pages/smartscooter/s1/gallery/ack-gallery-01@2x.jpg", "//cdn.gogoro.com/resources/pages/smartscooter/s1/gallery/ack-gallery-02@2x.jpg"], {
