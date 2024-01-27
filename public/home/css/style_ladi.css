@@ -267,13 +267,6 @@
     background-image: none !important
 }
 
-.ggr-nav {
-    z-index: 1
-}
-
-.ggr-nav-container {
-    background-color: rgba(0, 0, 0, 0) !important
-}
 
 @media(min-width: 768px) {
     .ggr-nav-container {
@@ -298,13 +291,11 @@
     position: relative;
     height: 100vh;
     min-height: 720px;
-    transform: scale(0.6)
+    transform: unset;
 }
 
 @media(min-width: 992px) {
-    .hero-main {
-        transform: scale(0.8)
-    }
+    .hero-main {}
 }
 
 @media(min-width: 1920px), (min-height: 900px) {
@@ -1888,6 +1879,7 @@
 
 #dong-co-xanh {
     background: linear-gradient(180deg, rgba(27, 27, 30, 0.10) 0%, rgba(0, 71, 71, 0.10) 100%), #1B1B1E;
+    position: relative;
 }
 
 .dong-co-xanh_text {
@@ -1979,6 +1971,7 @@
     background-size: 85%;
     padding: 50px 0;
     background-position: center left;
+    position: relative;
 }
 
 .head_color_title {
@@ -2028,4 +2021,85 @@
 .section-color .top-main-control .slick-initialized .item-myThumb {
     display: block;
     width: fit-content !important;
+}
+
+@media (max-width: 1400px) and (min-width: 1200px) {
+    .heidi_text_head_line_top {
+        top: -19%;
+    }
+}
+
+@media (max-width: 768px) {
+    .heidi_text_head_line_bottom {
+        font-size: 27px;
+    }
+
+    .section-content {
+        padding: 0px 0 0;
+    }
+
+    .head_color_title h2 {
+        font-size: 28px;
+    }
+
+    .head_color_title p {
+        font-size: 17px;
+    }
+
+    .page-block-image-360 {
+        position: relative;
+    }
+
+    br {
+        display: none;
+    }
+
+    .dong-co-xanh_text .text_head h2 {
+        font-size: 30px;
+    }
+
+    .dong-co-xanh_text .text_mid h3 {
+        font-size: 21px;
+    }
+
+    .text_descreption {
+        margin-bottom: 25px;
+    }
+
+    .infor_bottom {
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .section-performance {
+        padding: 0 0 0 0;
+    }
+
+    .performance-content {
+        padding-inline: 15px;
+    }
+
+    #pdp-breaking-technology {
+        position: relative;
+        background: #fff;
+    }
+
+    #pdp-breaking-technology .breaking-wrap .breaking-technology-bot {
+        margin-top: 0;
+    }
+
+    .breaking-technology-bot .headline {
+        font-size: 27px;
+    }
+
+    .nav-tabs .nav-item {
+        width: 50%;
+    }
+
+    #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .nav-link {
+        width: auto;
+    }
+    .menu_item_fixed::after {
+        display: none;
+    }
 }

@@ -197,10 +197,10 @@
 
             <div class="design-topics">
                 <div class="design-topic">
-                    <div class="design-topic__image">
+                    <div class="design-topic__image aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
                         <div class="image-design image-design--dashboard"></div>
                     </div>
-                    <div class="design-topic__content">
+                    <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-left" data-aos-duration="2000">
                         <div>
                             <h4 class="subhead">Màn hình LED đa sắc</h4>
                             <p>Bằng cách đồng bộ thiết kế bề mặt màn hình màu đen, khiến người dùng tập trung hơn vào
@@ -210,10 +210,10 @@
                     </div>
                 </div>
                 <div class="design-topic">
-                    <div class="design-topic__image">
-                        <div class="image-design image-design--seat"></div>
+                    <div class="design-topic__image aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="image-design image-design--seat" ></div>
                     </div>
-                    <div class="design-topic__content">
+                    <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-right" data-aos-duration="2000">
                         <div>
                             <h4 class="subhead">SOS Mode <br /> Tính năng cứu hộ hiện đại</h4>
                             <p>Bằng cách đồng bộ thiết kế bề mặt màn hình màu đen, khiến người dùng tập trung hơn vào
@@ -223,10 +223,10 @@
                     </div>
                 </div>
                 <div class="design-topic">
-                    <div class="design-topic__image">
-                        <div class="image-design image-design--floor"></div>
+                    <div class="design-topic__image aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="image-design image-design--floor" ></div>
                     </div>
-                    <div class="design-topic__content">
+                    <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-left" data-aos-duration="2000">
                         <div>
                             <h4 class="subhead">Bàn đạp trợ lực khi lên dốc</h4>
                             <p>Bằng cách đồng bộ thiết kế bề mặt màn hình màu đen, khiến người dùng tập trung hơn vào
@@ -236,10 +236,10 @@
                     </div>
                 </div>
                 <div class="design-topic">
-                    <div class="design-topic__image">
-                        <div class="image-design image-design--wheel"></div>
+                    <div class="design-topic__image aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
+                        <div class="image-design image-design--wheel" ></div>
                     </div>
-                    <div class="design-topic__content">
+                    <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-right" data-aos-duration="2000">
                         <div>
                             <h4 class="subhead">Thẻ NFC <br /> Một chạm mở khoá</h4>
                             <p>Bằng cách đồng bộ thiết kế bề mặt màn hình màu đen, khiến người dùng tập trung hơn vào
@@ -260,18 +260,18 @@
             </div>
         </div>
     </section>
-
+    
     <section class="page-block-image page-block-dong-co-xanh" id="dong-co-xanh">
         <div class="breaking-wrap">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <div class="dong-co-xanh_img">
-                        <div class="wrap_image">
+                    <div class="dong-co-xanh_img ">
+                        <div class="wrap_image aos-init aos-animate"  data-aos="zoom-out-down" data-aos-duration="10000">
                             <img src="{{ asset('home/images/dongcoxanh.png') }}" alt="dongcoxanh">
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
                     <div class="dong-co-xanh_text">
                         <div class="text_head">
                             <h2> ĐỘNG CƠ ĐỘC QUYỀN
