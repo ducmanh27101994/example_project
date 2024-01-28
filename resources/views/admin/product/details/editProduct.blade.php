@@ -68,6 +68,9 @@
                                     hình
                                     SEO
                                 </li>
+                                <li class="resp-tab-item hor_1 heidi_page" aria-controls="hor_1_tab_item-4" role="tab"
+                                    style="background-color: rgb(245, 245, 245); border-color: rgb(193, 193, 193);">Heidi
+                                </li>
                             </ul>
                             <div class="resp-tabs-container hor_1" style="border-color: rgb(193, 193, 193);">
                                 <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-0"
@@ -305,9 +308,9 @@
                                             <div class="block_sp">
                                                 <p class="ttg">Giao diện</p>
                                                 <div class="form-group">
-                                                    <label class="next-label">Loại giao diện</label>
+                                                    <label class="next-label">Loại giao diện (tabs thêm nội dung giao diện tương ứng của ladipage xuất hiện bên cạnh cầu hình seo khi chọn giao diện)</label>
 
-                                                    <select name="interface_type" id="ddlcate"
+                                                    <select name="interface_type" id="ddlcate_page"
                                                             class="inputbox" style="width:100%;">
                                                         <option value="1"
                                                                 @if("1" == $product->interface_type) selected @endif>
@@ -315,7 +318,7 @@
                                                         </option>
                                                         <option value="2"
                                                                 @if("2" == $product->interface_type) selected @endif>
-                                                            Trang Hot 1
+                                                            Trang Hot 1 (Phiên bản Heidi)
                                                         </option>
                                                         <option value="3"
                                                                 @if("3" == $product->interface_type) selected @endif>
@@ -653,7 +656,222 @@
 
                                 </div>
 
+                                <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-1"
+                                    style="background-color: rgb(245, 245, 245); border-color: rgb(193, 193, 193);">
+                                    <span class="resp-arrow"></span>Heidi</h2>
+                                <div class="resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-3"
+                                     style="border-color: rgb(193, 193, 193);">
 
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <div class="block_sp">
+                                                <div class="form-group">
+                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh banner(section 1)</label>
+                                                    <input type="file" name="representative_image" id="flupload" class="btn-change-link pull-right" style="width:180px;">
+                                                </div>
+                                                <div>
+                                                    <img style="width: 180px; height: auto" src="{{ asset('home/images/sec_1_banner.png') }}">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="block_sp">
+                                                <div class="form-group">
+                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh tên xe(section 2)</label>
+                                                    <input type="file" name="representative_image" id="flupload" class="btn-change-link pull-right" style="width:180px;">
+                                                </div>
+                                                <div style="background: #000;">
+                                                    <img style="width: 180px; height: auto" src="{{ asset('home/images/HEIDI.png') }}">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="block_sp">
+                                                <div class="form-group">
+                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh xe(section 2)</label>
+                                                    <input type="file" name="representative_image" id="flupload" class="btn-change-link pull-right" style="width:180px;">
+                                                </div>
+                                                <div>
+                                                    <img style="width: 180px; height: auto" src="{{ asset('home/images/hedi-dauxe.png') }}">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="block_sp">
+                                                <div class="form-group">
+                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh xe(section 3)</label>
+                                                    <input type="file" name="representative_image" id="flupload" class="btn-change-link pull-right" style="width:180px;">
+                                                </div>
+                                                <div>
+                                                    <img style="width: 180px; height: auto" src="{{ asset('home/images/OSK_7822.png') }}">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="block_sp">
+                                                <div class="form-group">
+                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh xe da dạng màu sắc(section 4)</label>
+                                                    <input type="file" name="representative_image" id="flupload" class="btn-change-link pull-right" style="width:180px;">
+                                                </div>
+                                                <div>
+                                                    <img style="width: 180px; height: auto" src="{{ asset('home/images/Banner_color.png') }}">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="col-sm-12 ">
+                                            <p class="ttg">Section Perfectly Stealth</p>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                    <div class="form-group">
+                                                        <label class="text-no-bold" data-bind="text: Title">Hình ảnh 1</label>
+                                                        <input type="file" name="representative_image" id="flupload" class="btn-change-link pull-right" style="width:180px;">
+                                                    </div>
+                                                        <div>
+                                                            <img style="width: 180px; height: auto" src="{{ asset('home/images/item_1.png') }}">
+                                                        </div>
+                                                        <label class="next-label">Mô tả 1</label>
+                                                        <input name="describe_input_1" type="text" value="Màn hình LED đa sắc" id="txtproductname" class="inputbox" placeholder="Perfectly Stealth 1" style="width:100%;">
+                                                        <textarea name="describe_textarea_1" rows="5" cols="70" id="txtkeyword" class="inputbox" style="width: 100%; height:80px;">Bằng cách đồng bộ thiết kế bề mặt màn hình màu đen, khiến người dùng tập trung hơn vào màn hình hiển thị với đầy đủ màu sắc tuyệt vời, tạo nên một trải nghiệm độc đáo và hấp dẫn..</textarea>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                    <div class="form-group">
+                                                        <label class="text-no-bold" data-bind="text: Title">Hình ảnh 2</label>
+                                                        <input type="file" name="representative_image" id="flupload" class="btn-change-link pull-right" style="width:180px;">
+                                                    </div>
+                                                        <div>
+                                                            <img style="width: 180px; height: auto" src="{{ asset('home/images/item_2.png') }}">
+                                                        </div>
+                                                        <label class="next-label">Mô tả 2</label>
+                                                        <input name="describe_input_1" type="text" value="SOS Mode Tính năng cứu hộ hiện đại" id="txtproductname" class="inputbox" placeholder="Perfectly Stealth 2" style="width:100%;">
+                                                        <textarea name="describe_textarea_1" rows="5" cols="70" id="txtkeyword" class="inputbox" style="width: 100%; height:80px;">Bằng cách đồng bộ thiết kế bề mặt màn hình màu đen, khiến người dùng tập trung hơn vào màn hình hiển thị với đầy đủ màu sắc tuyệt vời, tạo nên một trải nghiệm độc đáo và hấp dẫn..</textarea>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                    <div class="form-group">
+                                                        <label class="text-no-bold" data-bind="text: Title">Hình ảnh 3</label>
+                                                        <input type="file" name="representative_image" id="flupload" class="btn-change-link pull-right" style="width:180px;">
+                                                    </div>
+                                                        <div>
+                                                            <img style="width: 180px; height: auto" src="{{ asset('home/images/item_3.png') }}">
+                                                        </div>
+                                                        <label class="next-label">Mô tả 3</label>
+                                                        <input name="describe_input_1" type="text" value="Bàn đạp trợ lực khi lên dốc" id="txtproductname" class="inputbox" placeholder="Perfectly Stealth 3" style="width:100%;">
+                                                        <textarea name="describe_textarea_1" rows="5" cols="70" id="txtkeyword" class="inputbox" style="width: 100%; height:80px;">Bằng cách đồng bộ thiết kế bề mặt màn hình màu đen, khiến người dùng tập trung hơn vào màn hình hiển thị với đầy đủ màu sắc tuyệt vời, tạo nên một trải nghiệm độc đáo và hấp dẫn..</textarea>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                    <div class="form-group">
+                                                        <label class="text-no-bold" data-bind="text: Title">Hình ảnh 4</label>
+                                                        <input type="file" name="representative_image" id="flupload" class="btn-change-link pull-right" style="width:180px;">
+                                                    </div>
+                                                        <div>
+                                                            <img style="width: 180px; height: auto" src="{{ asset('home/images/item_4.png') }}">
+                                                        </div>
+                                                        <label class="next-label">Mô tả 4</label>
+                                                        <input name="describe_input_1" type="text" value="Thẻ NFC Một chạm mở khoá" id="txtproductname" class="inputbox" placeholder="Perfectly Stealth 1" style="width:100%;">
+                                                        <textarea name="describe_textarea_1" rows="5" cols="70" id="txtkeyword" class="inputbox" style="width: 100%; height:80px;">Bằng cách đồng bộ thiết kế bề mặt màn hình màu đen, khiến người dùng tập trung hơn vào màn hình hiển thị với đầy đủ màu sắc tuyệt vời, tạo nên một trải nghiệm độc đáo và hấp dẫn..</textarea>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 ">
+                                            <p class="ttg">Section chi tiết nổi bật xe</p>
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh 1</label>
+                                                                    <input type="file" name="representative_image" id="flupload" class="btn-change-link pull-right" style="width:180px;">
+                                                                </div>
+                                                                <div>
+                                                                    <img style="width: 180px; height: auto" src="{{ asset('home/images/cobandap-fullsang.png') }}">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh 2</label>
+                                                                    <input type="file" name="representative_image" id="flupload" class="btn-change-link pull-right" style="width:180px;">
+                                                                </div>
+                                                                <div>
+                                                                    <img style="width: 180px; height: auto" src="{{ asset('home/images/cobandap-chitiet.png') }}">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <label class="next-label">Mô tả 1</label>
+                                                        <input name="describe_input_1" type="text" value="Bàn đạp trợ lực khi lên dốc" id="txtproductname" class="inputbox" placeholder="Perfectly Stealth 1" style="width:100%;">
+                                                        <textarea name="describe_textarea_1" rows="5" cols="70" id="txtkeyword" class="inputbox" style="width: 100%; height:80px;">Bằng cách đồng bộ thiết kế bề mặt màn hình màu đen, khiến người dùng tập trung hơn vào màn hình hiển thị với đầy đủ màu sắc tuyệt vời, tạo nên một trải nghiệm độc đáo và hấp dẫn..</textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                        <div class="row">
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <label class="text-no-bold" data-bind="text: Title">Hình ảnh 1</label>
+                                                                        <input type="file" name="representative_image" id="flupload" class="btn-change-link pull-right" style="width:180px;">
+                                                                    </div>
+                                                                    <div>
+                                                                        <img style="width: 180px; height: auto" src="{{ asset('home/images/cobandap-fullsang.png') }}">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-group">
+                                                                        <label class="text-no-bold" data-bind="text: Title">Hình ảnh 2</label>
+                                                                        <input type="file" name="representative_image" id="flupload" class="btn-change-link pull-right" style="width:180px;">
+                                                                    </div>
+                                                                    <div>
+                                                                        <img style="width: 180px; height: auto" src="{{ asset('home/images/cobandap-chitiet.png') }}">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        <label class="next-label">Mô tả 2</label>
+                                                        <input name="describe_input_1" type="text" value="Phanh đĩa đảm bảo an toàn" id="txtproductname" class="inputbox" placeholder="Perfectly Stealth 2" style="width:100%;">
+                                                        <textarea name="describe_textarea_1" rows="5" cols="70" id="txtkeyword" class="inputbox" style="width: 100%; height:80px;">Bằng cách đồng bộ thiết kế bề mặt màn hình màu đen, khiến người dùng tập trung hơn vào màn hình hiển thị với đầy đủ màu sắc tuyệt vời, tạo nên một trải nghiệm độc đáo và hấp dẫn..</textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh 1</label>
+                                                                    <input type="file" name="representative_image" id="flupload" class="btn-change-link pull-right" style="width:180px;">
+                                                                </div>
+                                                                <div>
+                                                                    <img style="width: 180px; height: auto" src="{{ asset('home/images/cobandap-fullsang.png') }}">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh 2</label>
+                                                                    <input type="file" name="representative_image" id="flupload" class="btn-change-link pull-right" style="width:180px;">
+                                                                </div>
+                                                                <div>
+                                                                    <img style="width: 180px; height: auto" src="{{ asset('home/images/cobandap-chitiet.png') }}">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <label class="next-label">Mô tả 3</label>
+                                                        <input name="describe_input_1" type="text" value="Giảm xóc êm ái" id="txtproductname" class="inputbox" placeholder="Perfectly Stealth 3" style="width:100%;">
+                                                        <textarea name="describe_textarea_1" rows="5" cols="70" id="txtkeyword" class="inputbox" style="width: 100%; height:80px;">Bằng cách đồng bộ thiết kế bề mặt màn hình màu đen, khiến người dùng tập trung hơn vào màn hình hiển thị với đầy đủ màu sắc tuyệt vời, tạo nên một trải nghiệm độc đáo và hấp dẫn..</textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
@@ -873,6 +1091,11 @@
                         }
                     }
                 });
+                $('#ddlcate_page').on('change', function() {
+                    if($(this).val() === '2') {
+                        $('.resp-tab-item.hor_1').removeClass('heidi_page')
+                    }   
+                });
             </script>
             <style>
 
@@ -896,7 +1119,9 @@
                     height: auto;
                     margin: 5px;
                 }
-
+                .heidi_page {
+                    display: none !important
+                }
 
             </style>
 
