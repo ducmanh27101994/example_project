@@ -2099,7 +2099,13 @@
     #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .nav-link {
         width: auto;
     }
+
     .menu_item_fixed::after {
         display: none;
     }
+
+    .hero-section {
+        position: relative;
+    }
+
 }

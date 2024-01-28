@@ -371,5 +371,9 @@ class HomePageController extends BaseController
         return view('web.store.nearbyStore', compact('listStore'));
     }
 
+    public function policy(Request $request)
+    {
+        return view('web.contentpage.policy');
+    }
 
 }

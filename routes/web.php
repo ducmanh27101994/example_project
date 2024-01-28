@@ -146,3 +146,5 @@ Route::get('/category-product/{id}', 'App\Http\Controllers\HomePageController@de
 Route::get('/list-store/{desc}', 'App\Http\Controllers\HomePageController@listStore')->name('list.store');
 
 Route::get('/near-by-store', 'App\Http\Controllers\HomePageController@nearbyStore')->name('nearbyStore');
+Route::get('/dieu-khoan-chinh-sach', 'App\Http\Controllers\HomePageController@policy')->name('policy');
+

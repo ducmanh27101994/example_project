@@ -359,21 +359,21 @@
                 <h3 class="headline text-center">Thông số kỹ thuật</h3>
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#tabInfoProduct" role="tab"
+                        <a class="nav-link active" id="tabInfoProduct" data-toggle="tab" href="javascript:void(0)" role="tab"
                             aria-controls="home" aria-selected="true">
                             <h2 class="tab-title">THÔNG SỐ SẢN PHẨM</h2>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#tabBatteryPackages" role="tab"
+                        <a class="nav-link" id="tabBatteryPackages" data-toggle="tab" href="javascript:void(0)" role="tab"
                             aria-controls="profile" aria-selected="false">
                             <h2 class="tab-title">DỊCH VỤ PIN</h2>
                         </a>
                     </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="tabInfoProduct" role="tabpanel"
-                        aria-labelledby="info-tab">
+                    <div class="tab-pane fade show active tabInfoProduct" id="tabInfoProduct" role="tabpanel"
+                        aria-labelledby="tabInfoProduct">
                         <div class="tab-pane-info d-flex justify-content-between">
                             <ul>
                                 <li>
@@ -433,7 +433,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="tabBatteryPackages" role="tabpanel" aria-labelledby="battery-tab">
+                    <div class="tab-pane fade tabBatteryPackages" id="tabBatteryPackages" role="tabpanel" aria-labelledby="tabBatteryPackages">
                         <div class="breaking-battery-tab d-flex justify-content-between">
                             <div>
                                 <h3 class="pin-subtitle">Gói thuê PIN</h3>
@@ -468,7 +468,7 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                     <div class="menu_item_fixed">
-                        <p><a href="#" title="HỆ THỐNG CỬA HÀNG">
+                        <p><a href="/list-store/mien-bac" title="HỆ THỐNG CỬA HÀNG">
                                 <img src="{{ asset('home/images/shop.png') }}" alt="shop">HỆ THỐNG CỬA HÀNG</a></p>
                     </div>
                 </div>

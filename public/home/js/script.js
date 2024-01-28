@@ -323,6 +323,13 @@ $(document).ready(function () {
 
     // Call the closeModal function on the clicks/keyboard
 
+    $(".arrco_block-element_single").on("click", function () {
+        $(".arrco_block-element_single").children().removeClass('active')
+        $(".arrco_block-element_single").children().next().removeClass('active')
+        $(this).children().addClass('active')
+        $(this).children().next().addClass('active')
+    });
+
     $(".close, .mask").on("click", function () {
         closeModal();
     });
