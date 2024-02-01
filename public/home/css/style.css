@@ -1735,8 +1735,8 @@ table tbody tr th:nth-child(4) {
 
 .close_modal {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: -10px;
+    right: -10px;
     background: #F4F4F4;
     border-radius: 50%;
     width: 25px;
@@ -1869,6 +1869,7 @@ table tbody tr th:nth-child(4) {
     background: rgba(0, 0, 0, 0.8);
     text-align: center;
     vertical-align: middle;
+    padding: 0 15px;
 }
 
 #modal-container .modal-background .modal {
