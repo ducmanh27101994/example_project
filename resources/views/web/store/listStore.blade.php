@@ -1,7 +1,7 @@
 @extends('/web/index')
 @section('content')
 
-<main class="page-content">
+<main>
     <h1 class="hidden">Cửa Hàng - Osakar.vn</h1>
     <div class="banner_store_top">
         <div class="container">
@@ -16,7 +16,7 @@
                                 <div class="pbgn-badge-label">Tỉnh thành</div>
                             </div>
                             <div class="pbgn-badge">
-                                <div class="pbgn-badge-value "><span class="counter">100</span><span>+</span></div>
+                                <div class="pbgn-badge-value "><span>+</span><span class="counter">100</span></div>
                                 <div class="pbgn-badge-label">Đại lý</div>
                             </div>
                         </div>
@@ -42,7 +42,7 @@
         <div class="container">
             <div class="regions_wrapper">
 
-                <div class="regions_wrapper_area">
+                <div class="regions_wrapper_area hidden-xs">
                     <div class="regions_wrapper_area_item @if($flag == 1) active @endif ">
                         <a href="{{route('list.store', 'mien-bac')}}" title="Miền bắc">Miền bắc</a>
                     </div>
@@ -63,6 +63,14 @@
                 $checkFlag = 'mien-nam';
                 }
                 @endphp
+                <div class="regions_wrapper_area hidden-md hidden-lg hidden-sm">
+                    <select id="regionDropdown" onchange="navigateToRegion()">
+                        <option value="/list-store/mien-bac">Đang lọc theo: @if($flag == 1) Miền Bắc @endif @if($flag == 2) Miền Trung @endif @if($flag == 3) Miền Nam @endif</option>
+                        <option value="/list-store/mien-bac">Miền Bắc</option>
+                        <option value="/list-store/mien-trung">Miền Trung</option>
+                        <option value="/list-store/mien-nam">Miền Nam</option>
+                    </select>
+                </div>
                 <form action="{{route('list.store', $checkFlag)}}" method="get" id="formSearch">
                     @csrf
                     <div class="regions_wrapper_province">
@@ -172,6 +180,11 @@
     <script>
         function submitForm() {
             document.getElementById("formSearch").submit();
+        }
+        function navigateToRegion() {
+            var dropdown = document.getElementById("regionDropdown");
+            var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+            window.location.href = selectedValue;
         }
     </script>
 </main>

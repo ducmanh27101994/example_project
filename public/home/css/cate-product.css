@@ -318,19 +318,19 @@
 
 @media(min-width: 768px) {
     .typography-stories-headline {
-        font-size: 36px
+        font-size: 34px;
     }
 }
 
 @media(min-width: 992px) {
     .typography-stories-headline {
-        font-size: 42px
+        font-size: 38px;
     }
 }
 
 @media(min-width: 1440px) {
     .typography-stories-headline {
-        font-size: 50px
+        font-size: 43px;
     }
 }
 
@@ -343,19 +343,19 @@
 
 @media(min-width: 768px) {
     .typography-stories-intro {
-        font-size: 22px
+        font-size: 16px;
     }
 }
 
 @media(min-width: 992px) {
     .typography-stories-intro {
-        font-size: 24px
+        font-size: 21px;
     }
 }
 
 @media(min-width: 1440px) {
     .typography-stories-intro {
-        font-size: 30px
+        font-size: 25px;
     }
 }
 
@@ -1375,7 +1375,7 @@ html[dark] .section-sosumi {
 }
 
 .hero-copy .typography-hero-headline {
-    white-space: nowrap
+    color: #323237;
 }
 
 .hero-copy-position {
@@ -1694,5 +1694,26 @@ html[dark] .section-sosumi {
 
     .image-story--experience-3 {
         background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/stories/img-scooter-slide3-photo3@2x.jpg?v=v14")
+    }
+}
+
+@media (max-width: 768px) {
+    .section-hero {
+        background: url('../images/img-scooter-home-banner.png'), linear-gradient(180deg, rgba(236, 236, 236, 0) 0%, #ECECEC 100%);
+        background-size: 200%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        height: 520px !important;
+    }
+
+    .hero-copy-position {
+        padding: 32px 0 0 0;
+    }
+
+    .typography-hero-headline {
+        font-size: 24px;
+    }
+    .typography-stories-intro {
+        font-size: 16px;
     }
 }

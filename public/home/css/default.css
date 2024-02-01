@@ -290,7 +290,7 @@
 
 @media (min-width: 992px) {
     .ggr-nav-container[data-v-31312d37] {
-        height: 60px;
+        height: 70px;
         overflow: initial;
         -webkit-transition: none;
         transition: none
@@ -350,7 +350,7 @@
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        height: 60px;
+        height: 70px;
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;

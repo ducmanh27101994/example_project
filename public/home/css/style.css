@@ -1409,7 +1409,7 @@ li {
 }
 
 .item_store .content .title h2 {
-    font-size: 20px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: 28px;
@@ -1885,6 +1885,63 @@ table tbody tr th:nth-child(4) {
     width: 100%;
 }
 
+.text_box_image {
+    padding: 30px 30px;
+    max-width: 536px;
+}
+
+.text_box_image h2 {
+    color: #000;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 46px;
+    letter-spacing: 0.54px;
+    margin-bottom: 16px;
+}
+
+.text_box_image p {
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.text_box_image .pbgn-badge-value {
+    font-size: 48px;
+}
+
+.text_box_image .pbgn-badge-label {
+    font-size: 19px;
+}
+
+.text_box_image .pbgn-badges {
+    justify-content: flex-start;
+}
+
+.text_box_image .pbgn-badge {
+    flex: 0 0 0;
+    min-width: 150px;
+}
+
+#regionDropdown {
+    padding: 12px 16px;
+    border-radius: 8px;
+    border: 1px solid #CCCDD0;
+    background: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    font-family: var(--font-family-base);
+    width: 100%;
+}
+
+.u_locate_box span:first-child {
+    display: flex;
+}
+
 @keyframes fadeIn {
     0% {
         background: rgba(0, 0, 0, 0);
@@ -2072,6 +2129,76 @@ table tbody tr th:nth-child(4) {
 
     .section-experience {
         padding-bottom: 30px;
+    }
+
+    .banner_store_top {
+        padding-top: 0;
+    }
+
+    .place_style_box .form-control-select {
+        width: 100%;
+    }
+
+    .sec_nearby_store .box a {
+        font-size: 18px;
+    }
+
+    .u_locate_box {
+        display: block;
+        font-size: 19px;
+    }
+
+    .result_store_near_by h2 {
+        font-size: 17px;
+    }
+
+    .u_locate_box span:first-child {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .grid_item_list_store {
+        margin-top: 0;
+    }
+
+    .section-news {
+        padding: 0 0px 40px;
+    }
+
+    .section-news .typography-page-headline {
+        margin: 24px 0 24px 0;
+    }
+
+    .article-category-link {
+        font-size: 15px !important;
+    }
+
+    .article-category-links>* {
+        margin-right: 4px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .hidden-xs {
+        display: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .hidden-sm {
+        display: none !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hidden-md {
+        display: none !important;
+    }
+}
+
+@media (min-width: 1200px) {
+    .hidden-lg {
+        display: none !important;
     }
 }
 

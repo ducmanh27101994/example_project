@@ -297,9 +297,13 @@
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
-    line-height: 36px;
+    line-height: 25px;
     /* 150% */
     letter-spacing: 0.24px;
+}
+
+.bike-item a img {
+    max-width: 364px;
 }
 
 .typography-article-title:lang(en) {

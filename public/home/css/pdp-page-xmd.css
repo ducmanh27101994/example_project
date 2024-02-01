@@ -1756,7 +1756,7 @@ img {
 
 @media only screen and (max-width:767px) {
     #pdp-breaking-technology .breaking-wrap {
-        padding: 64px 4vw
+        padding: 0 4vw
     }
 }
 
@@ -2910,7 +2910,7 @@ img {
 
 @media only screen and (max-width:767px) {
     .pdp-evo200 .top-main .top-main-wrap {
-        padding-bottom: 30vw
+        padding-bottom: 5vw;
     }
 }
 
@@ -3833,6 +3833,31 @@ html {
     .product-360-views .product-images-list {
         width: 140vw;
         margin-left: -20vw;
+    }
+}
+
+@media(max-width:767px) {
+    .page-block-image-360 img {
+        border-radius: 10px;
+        margin-bottom: 0;
+    }
+
+    #pdp-parts-bike {
+        padding-top: 0;
+    }
+
+    .parts-bike__head_text h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .parts-bike__head_text p {
+        font-size: 15px;
+        line-height: 28px;
+    }
+
+    .page-block-image {
+        padding-top: 0;
     }
 }
 
