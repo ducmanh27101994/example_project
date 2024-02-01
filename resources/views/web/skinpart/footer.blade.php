@@ -33,7 +33,7 @@
                             <div class="menu_footer">
                                 <h3>Sản phẩm</h3>
                                 <ul>
-                                    <li>Xe điện hot hit
+                                    <li><a href="/category-product" title="Xe điện hot hit">Xe điện hot hit</a>
                                         <ul class="child-menu">
                                             <li>
                                                 Xe điện hot hit
@@ -43,8 +43,8 @@
                                             <li>Gogo Stella</li>
                                         </ul>
                                     </li>
-                                    <li>Xe máy điện Xmen</li>
-                                    <li>Xe điện cao cấp</li>
+                                    <li><a href="/category-product" title="Xe máy điện Xmen">Xe máy điện Xmen</a></li>
+                                    <li><a href="/category-product" title="Xe điện cao cấp">Xe điện cao cấp</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -52,10 +52,10 @@
                             <div class="menu_footer">
                                 <h3>Hỗ trợ</h3>
                                 <ul>
-                                    <li>Chính sách bảo hành
+                                    <li><a href="/dieu-khoan-chinh-sach" title="Chính sách bảo hành">Chính sách bảo hành</a>
                                     </li>
-                                    <li>Chính sách bảo mật</li>
-                                    <li>Điều khoản, pháp lý</li>
+                                    <li><a href="/dieu-khoan-chinh-sach" title="Chính sách bảo mật">Chính sách bảo mật</li>
+                                    <li><a href="/dieu-khoan-chinh-sach" title="Điều khoản, pháp lý">Điều khoản, pháp lý</li>
                                 </ul>
                             </div>
                         </div>

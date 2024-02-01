@@ -3276,7 +3276,7 @@ html[dark] .section-sosumi {
 }
 
 .section-content {
-  padding: 64px 0;
+  padding: 0 0;
   margin: auto;
   max-width: 400px
 }
@@ -3284,19 +3284,19 @@ html[dark] .section-sosumi {
 @media(min-width: 768px) {
   .section-content {
     max-width: initial;
-    padding: 96px 0
+    padding: 0 0;
   }
 }
 
 @media(min-width: 992px) {
   .section-content {
-    padding: 136px 0 80px
+    padding: 0 0 80px;
   }
 }
 
 @media(min-width: 1260px) {
   .section-content {
-    padding: 160px 0 100px
+    padding: 0 0 100px;
   }
 }
 
@@ -3311,7 +3311,7 @@ html[dark] .section-sosumi {
 }
 
 .typography-section-intro+.grid {
-  margin: 36px 0 0 0
+  margin: 30px 0 0 0;
 }
 
 @media(min-width: 768px) {
@@ -3320,7 +3320,7 @@ html[dark] .section-sosumi {
   }
 
   .typography-section-intro+.grid {
-    margin: 48px 0 0 0
+    margin: 30px 0 0 0;
   }
 }
 
@@ -3330,7 +3330,7 @@ html[dark] .section-sosumi {
   }
 
   .typography-section-intro+.grid {
-    margin: 68px 0 0 0
+    margin: 30px 0 0 0;
   }
 }
 
@@ -3340,7 +3340,7 @@ html[dark] .section-sosumi {
   }
 
   .typography-section-intro+.grid {
-    margin: 80px 0 0 0
+    margin: 30px 0 0 0;
   }
 }
 
@@ -5131,14 +5131,12 @@ html[dark] .section-sosumi {
 @media(min-width: 768px) {
   .section-hero {
     height: calc(100vh - 150px);
-    min-height: 560px
   }
 }
 
 @media(min-width: 992px) {
   .section-hero {
     height: calc(100vh - 120px);
-    min-height: 700px;
     max-height: initial
   }
 }

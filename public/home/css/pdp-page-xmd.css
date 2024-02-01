@@ -3319,12 +3319,12 @@ html {
 
 @media only screen and (min-width:1200px) and (max-width:1600px) and (max-height:1000px) {
     .pdp-page.pdp-evo200 .top-main .top-main-ptext {
-        top: 12vw
+        top: 15vw;
     }
 
     .pdp-page.pdp-evo200 .top-main .top-main-info,
     .pdp-page.pdp-evo200 .top-main .top-main-btn {
-        top: 16vw
+        top: 21vw;
     }
 
     .pdp-page.pdp-evo200 .top-main .top-main-control {

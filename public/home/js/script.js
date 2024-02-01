@@ -250,8 +250,8 @@ $(document).ready(function () {
     });
 
     $('.counter').counterUp({
-        delay: 15,
-        time: 2000
+        delay: 10,
+        time: 1000
     });
 
     $(".gdpr-action--accept").on("click", function () {

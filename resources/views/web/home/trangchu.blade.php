@@ -174,13 +174,13 @@
                     <div class="pbgn-badge-label">Tỉnh thành</div>
                 </div>
                 <div class="pbgn-badge">
-                    <div class="pbgn-badge-value counter">+100</div>
+                    <div class="pbgn-badge-value"><span class="counter">100</span><span>+</span></div>
                     <div class="pbgn-badge-label">Đại lý</div>
                 </div>
                 <div class="pbgn-badge">
                     <div class="pbgn-badge-value"><span class="counter">20</span><sup>+</sup>
                     </div>
-                    <div class="pbgn-badge-label">Loại xe</div>
+                    <div class="pbgn-badge-label">Mẫu xe</div>
                 </div>
             </div>
             <figure class="image-avengers"></figure>

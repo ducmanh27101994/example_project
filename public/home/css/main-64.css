@@ -6,7 +6,7 @@
  * Gogoro Fonts
  * Copyright 2018-2021 Yi Feng Xie <yfxie@me.com>
  */
-:root {
+ :root {
     --color-charcoal: #323237;
     --color-light-grey: #f1f3f3;
     --color-grey: #b9bcbf;
@@ -3030,18 +3030,18 @@ html[dark] .section-sosumi {
 .section-pbgn {
     text-align: center;
     overflow: hidden;
-    padding: 64px 30px
+    padding: 0 30px;
 }
 
 @media(min-width: 768px) {
     .section-pbgn {
-        padding: 66px 30px 38px
+        padding: 0 30px 38px;
     }
 }
 
 @media(min-width: 1260px) {
     .section-pbgn {
-        padding: 80px 0 48px;
+        padding: 0 0 48px;
         max-width: unset;
     }
 }
@@ -3112,7 +3112,7 @@ html[dark] .section-sosumi {
 
 .pbgn-badge-label {
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 1.2
 }
 
@@ -3204,18 +3204,18 @@ html[dark] .section-sosumi {
 }
 
 .section-about {
-    padding: 0 0 64px 0
+    padding: 0 0 24px 0;
 }
 
 @media(min-width: 768px) {
     .section-about {
-        padding: 0 0 96px 0
+        padding: 0 0 20px 0;
     }
 }
 
 @media(min-width: 1260px) {
     .section-about {
-        padding: 0 0 120px 0
+        padding: 0 0 10px 0;
     }
 }
 

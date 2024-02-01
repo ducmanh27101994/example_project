@@ -21,13 +21,14 @@
 
     <meta http-equiv="x-dns-prefetch-control" content="on">
     <link rel="dns-prefetch" href="/">
-
+    <link rel="icon" href="{{ asset('home/images/logo.png') }}" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <script src="{{ asset('home/js/jquery-3.6.0.min.js') }}" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}" type="text/css" />
     <link rel="stylesheet" href="{{ asset('home/css/main-64.css') }}">
     <link rel="stylesheet" href="{{ asset('home/css/main-3.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ asset('home/css/w_ajbo.css') }}" />
@@ -76,12 +77,20 @@
                 var languageSelect = document.querySelector("select.goog-te-combo");
                 languageSelect.value = lang;
                 languageSelect.dispatchEvent(new Event("change"));
-                var languageSelectShow = document.querySelector(".name_language");
-                languageSelectShow.innerHTML = e.text;
-                document.querySelector(".language_choose").style.display = "none"
             });
         });
     </script>
+    <a href="tel:0986446868" title="098 644 6868" class="suntory-alo-phone suntory-alo-green" id="suntory-alo-phoneIcon" style="bottom: 10%; left: 0;">
+        <div class="suntory-alo-ph-circle"></div>
+        <div class="suntory-alo-ph-circle-fill"></div>
+        <div class="suntory-alo-ph-img-circle"><i class="fa fa-phone"></i></div>
+    </a>
+    <a href="https://zalo.me/0986446868">
+        <i class="button-zalo" id="button-zalo-m">
+            <div class="button-zalo-main"></div>
+            <em></em>
+        </i>
+    </a>
 </body>
 
 </html>

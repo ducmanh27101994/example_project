@@ -1,7 +1,7 @@
 @extends('/web/index')
 @section('content')
 <main class="page-content">
-    <nav class="family-nav" data-component-list="FamilyNav FamilyNavMenu">
+    <nav class="family-nav" data-component-list="FamilyNav FamilyNavMenu" style="display: none">
         <div class="family-nav-wrapper">
             <ul class="family-nav-items">
                 <li class="family-nav-item">
