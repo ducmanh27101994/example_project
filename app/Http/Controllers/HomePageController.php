@@ -103,10 +103,12 @@ class HomePageController extends BaseController
             ->get();
 
         $list_blog = DB::table('blogs')
-            ->join('category', 'blogs.category_id', '=', 'category.id')
+            ->leftJoin('category', 'blogs.category_id', '=', 'category.id')
             ->where('blogs.status', '=', 'active')
             ->orderBy('blogs.created_at', 'desc')
+            ->select('blogs.created_at', 'blogs.slug', 'blogs.representative_image','category.category_title','blogs.news_headlines','blogs.describe')
             ->get();
+
 
         $list_blog_one_hot_news = DB::table('blogs')
             ->where('blogs.status', '=', 'active')
