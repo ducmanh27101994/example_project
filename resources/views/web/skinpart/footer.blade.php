@@ -54,8 +54,8 @@
                                 <ul>
                                     <li><a href="/dieu-khoan-chinh-sach" title="Chính sách bảo hành">Chính sách bảo hành</a>
                                     </li>
-                                    <li><a href="/dieu-khoan-chinh-sach" title="Chính sách bảo mật">Chính sách bảo mật</li>
-                                    <li><a href="/dieu-khoan-chinh-sach" title="Điều khoản, pháp lý">Điều khoản, pháp lý</li>
+                                    <li><a href="/dieu-khoan-chinh-sach" title="Chính sách bảo mật">Chính sách bảo mật</a></li>
+                                    <li><a href="/dieu-khoan-chinh-sach" title="Điều khoản, pháp lý">Điều khoản, pháp lý</a></li>
                                 </ul>
                             </div>
                         </div>

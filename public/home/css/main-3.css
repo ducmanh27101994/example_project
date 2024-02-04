@@ -3194,6 +3194,7 @@ html[dark] .section-sosumi {
 .typography-section-headline {
   font-size: 30px;
   font-weight: 600;
+  text-transform: uppercase;
   line-height: 1.33
 }
 
@@ -3307,7 +3308,7 @@ html[dark] .section-sosumi {
 .typography-section-intro {
   font-size: 30px;
   font-weight: 600;
-  line-height: 1.375
+  line-height: 115%
 }
 
 .typography-section-intro+.grid {
@@ -3340,7 +3341,7 @@ html[dark] .section-sosumi {
   }
 
   .typography-section-intro+.grid {
-    margin: 30px 0 0 0;
+    margin: 46px 0 0 0;
   }
 }
 
@@ -4638,11 +4639,11 @@ html[dark] .section-sosumi {
   .grid-item--design-taillight,
   .grid-item--feature-keycard,
   .grid-item--feature-iq {
-    height: 800px
+    height: 700px
   }
 
   .section-hardware .grid-item {
-    height: 720px
+    height: 620px
   }
 }
 

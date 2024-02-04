@@ -3084,6 +3084,7 @@ html[dark] .section-sosumi {
     font-size: 36px;
     font-family: "Flama Semicondensed", sans-serif;
     font-weight: 700;
+    -webkit-font-smoothing: antialiased;
     line-height: 1.125
 }
 
@@ -3231,7 +3232,8 @@ html[dark] .section-sosumi {
 
 @media(min-width: 1260px) {
     .section-about .cta-link {
-        font-size: 18px
+        font-size: 18px;
+        font-weight: 500;
     }
 }
 
@@ -3296,7 +3298,7 @@ html[dark] .section-sosumi {
         font-weight: 600;
         line-height: 28px;
         letter-spacing: 0.2px;
-        width: 55%;
+        width: 72%;
         margin: 12px auto;
     }
 }

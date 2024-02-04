@@ -359,7 +359,7 @@ $(document).ready(function () {
     } else {
         $('.ggr-nav-container[data-v-31312d37]').css('top', '0')
         $('.page-content').css('padding-top', '70px')
-        $('.section-hero, .section-hero img').css('height', '100vh')
+        $('.section-hero, .section-hero img').css('height', 'calc(100vh - 70px)')
     }
 
     $("input[type='radio']").click(function () {
