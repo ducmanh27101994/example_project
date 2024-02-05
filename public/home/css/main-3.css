@@ -1517,7 +1517,7 @@ html[dark] .section-sosumi {
 .cta-link {
   display: inline-flex;
   align-items: center;
-  font-weight: 500;
+  font-weight: 700;
   color: #ED2025;
   font-size: 14px;
   line-height: 1.11;
@@ -3308,7 +3308,8 @@ html[dark] .section-sosumi {
 .typography-section-intro {
   font-size: 30px;
   font-weight: 600;
-  line-height: 115%
+  line-height: 115%;
+  padding-top: 50px;
 }
 
 .typography-section-intro+.grid {

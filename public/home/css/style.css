@@ -2052,6 +2052,7 @@ table tbody tr th:nth-child(4) {
 
     .typography-section-intro {
         font-size: 24px;
+        margin-bottom: 40px;
     }
 
     .typography-section-headline {
@@ -2178,6 +2179,12 @@ table tbody tr th:nth-child(4) {
 
     .article-category-links>* {
         margin-right: 4px !important;
+    }
+    #block-newhome-escooter {
+        padding: 60px 0px 40px;
+    }
+    .typography-section-intro {
+        padding-top: 30px;
     }
 }
 

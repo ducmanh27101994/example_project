@@ -274,7 +274,7 @@
     left: 0;
     position: fixed;
     width: 100%;
-    height: 50px;
+    height: 70px;
     -webkit-transition: height .6s, background-color 0s .6s;
     transition: height .6s, background-color 0s .6s;
     overflow: hidden;
@@ -311,7 +311,9 @@
 .ggr-header[data-v-31312d37] {
     position: relative;
     z-index: 1;
-    height: 50px
+    height: 70px;
+    display: flex;
+    align-items: center;
 }
 
 .ggr-header-item[data-v-31312d37] {
@@ -482,9 +484,7 @@
 .nav-menuicon[data-v-67f16422] {
     position: absolute;
     left: 0;
-    top: 0;
-    width: 50px;
-    height: 50px
+    top: 10px;
 }
 
 @media (min-width: 992px) {
@@ -594,7 +594,7 @@
 .nav-list__link--login[data-v-893155ac] {
     display: block;
     width: 50px;
-    height: 50px;
+    height: 70px;
     overflow: hidden;
     text-indent: 101%;
     white-space: nowrap;

@@ -79,13 +79,8 @@
                             class="ggr-nav-link nav-list__link--dark btn btn-button btn-style-acc"><span
                                 data-v-fae6e7a2="">Đăng xuất</span><!----></a>
                     </li>
-                    @else
-                    <li data-v-fae6e7a2="" data-v-31312d37="" class="ggr-nav-item ggr-nav-item--secondary"><a
-                            data-v-fae6e7a2="" href="{{route('customer.login')}}"
-                            class="ggr-nav-link nav-list__link--dark btn btn-button btn-style-acc"><span
-                                data-v-fae6e7a2="">Tài Khoản</span><!----></a>
-                    </li>
                     @endif
+                    
 
                     <li data-v-fae6e7a2="" data-v-31312d37="" class="ggr-nav-item ggr-nav-item--secondary">
 

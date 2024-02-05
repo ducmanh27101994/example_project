@@ -734,7 +734,7 @@
     width: 100%;
     max-width: 770px;
     margin: 60px auto auto auto;
-    padding: 0 15px
+    padding: 0 15px 60px
 }
 
 .key-number-list {
@@ -1106,13 +1106,13 @@
 
 @media(min-width: 768px) {
     .section-design {
-        padding: 96px 0
+        padding: 0 0 96px
     }
 }
 
 @media(min-width: 992px) {
     .section-design {
-        padding: 128px 0
+        padding: 0 0 128px
     }
 }
 
@@ -1811,6 +1811,7 @@
     display: flex;
     align-items: center;
     gap: 8px;
+    justify-content: center;
 }
 
 .menu_item_fixed::after {
@@ -1867,7 +1868,7 @@
 }
 
 .section-content {
-    padding: 160px 0 0;
+    padding: 100px 0 0;
 }
 
 .page-block-image img,
@@ -1949,7 +1950,7 @@
     text-align: center;
     font-size: 16px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 20px;
     letter-spacing: -0.32px;
     margin-bottom: 7px;
