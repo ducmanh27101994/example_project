@@ -58,4 +58,8 @@ class TemplateController extends BaseController
     {
         return view('web.product.ladipage.heidi');
     }
+    public function gogo()
+    {
+        return view('web.product.ladipage.gogo');
+    }
 }

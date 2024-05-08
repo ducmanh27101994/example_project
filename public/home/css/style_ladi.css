@@ -2024,6 +2024,313 @@
     width: fit-content !important;
 }
 
+.buy-wrapper-box {
+    background: rgba(244, 244, 244, 0.50);
+    padding: 38px 0;
+}
+
+.buy-wrapper-box .row>* {
+    margin-top: 0;
+}
+
+.section-tinhnang {
+    padding: 64px 0px 48px 0px;
+}
+
+.section-tinhnang .title-box-head h2 {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115%;
+    letter-spacing: -0.72px;
+    margin-bottom: 6px;
+}
+
+.section-tinhnang .title-box-head p {
+    color: #000;
+    text-align: center;
+    /* Heading/T24/T24R */
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 133.333% */
+    letter-spacing: -0.48px;
+}
+
+.tinhnang-owl {
+    padding: 48px 0px 48px 0px;
+}
+
+.group-wrapper-func {
+    padding: 0 64px;
+}
+
+.group-wrapper-func .func-item {
+    position: relative;
+}
+
+.group-wrapper-func .func-item::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background: #D4D4D4;
+    top: 0;
+    right: -100%;
+}
+
+.group-wrapper-func .func-item:last-child:after {
+    content: unset;
+}
+
+.group-wrapper-func .func-item span {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.32px;
+}
+
+.group-wrapper-func .func-item h3 {
+    color: #F14D50;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: -0.6px;
+}
+
+.section-feature {
+    background: linear-gradient(164deg, #FFF 19.39%, #FDEEEE 48.69%, #FFF 86.56%);
+}
+
+.feature-box-top-1-left-image {
+    width: 60%;
+}
+
+.feature-box-top-1-left-image img {
+    width: auto;
+    max-width: -webkit-fill-available;
+}
+
+.feature-box-top-1-left-content {
+    width: 40%;
+}
+
+.feature-box-top-1-left-box-content {
+    max-width: 444px;
+}
+
+.feature-box-top-1-left-content h3 {
+    color: #ED2025;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    /* 133.333% */
+    letter-spacing: -0.48px;
+    margin-bottom: 6px;
+}
+
+.feature-box-top-1-left-content p {
+    color: #1A202C;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    /* 125% */
+    letter-spacing: -0.32px;
+}
+
+.flex-roate {
+    flex-direction: row-reverse;
+}
+
+.feature-box-top-2-left-image-style img {
+    float: right;
+}
+
+.feature-box-top-2-left-content-style {
+    padding-left: 150px;
+}
+
+.product-360-views {
+    margin-top: 0;
+    padding: 66px;
+}
+
+.product-360-views .instruction {
+    bottom: 20px;
+}
+
+.section-experience {
+    padding: 86px 64px;
+    background: linear-gradient(172deg, #FFF 4.44%, #FDEEEE 59.32%, #FFF 94.42%);
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.breaking-experience-tabs {
+    margin-top: 40px;
+}
+
+.breaking-experience-tabs .nav-tabs {
+    border-bottom: 2px solid #E5E5E5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 56px;
+}
+
+.breaking-experience-tabs .nav-tabs .nav-link {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.4px;
+    text-transform: uppercase;
+    padding: 8px;
+    color: #999CA1;
+    display: block;
+}
+
+.breaking-experience-tabs .nav-tabs .nav-link.active {
+    color: #ED2025;
+    border-bottom: 2px solid
+}
+
+.breaking-experience-tabs .tab-content {
+    margin-top: 24px;
+}
+
+.mx-auto {
+    margin: auto;
+}
+
+.block-tabs {
+    max-width: 908px;
+    margin: auto;
+}
+
+.block-tabs img {
+    margin-top: 20px;
+}
+
+.btn-button a {
+    color: #fff;
+}
+
+.page-block-upgrade {
+    padding-top: 66px;
+}
+
+.page-block-upgrade-text {
+    max-width: 700px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding-left: 150px;
+}
+
+.page-block-upgrade-text h2 {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115%;
+    letter-spacing: -0.72px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.page-block-upgrade-text p {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.4px;
+    margin-bottom: 36px;
+}
+
+
+.section-page-block-upgrade img {
+    width: 100%;
+}
+
+.section-tienich {
+    padding: 48px 64px 0 64px;
+}
+
+.tab-pane .img {
+    width: 100%;
+}
+
+.tabs-ck-editor {
+    height: 100%;
+    background: #F3F3F3;
+    padding-left: 100px;
+}
+
+.tabs-ck-editor h2 {
+    color: #1A202C;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 115%;
+    letter-spacing: -0.72px;
+    margin-bottom: 10px;
+}
+
+.tabs-ck-editor ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.tabs-ck-editor ul li {
+    color: #1A202C;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.4px;
+    margin-bottom: 12px;
+}
+
+.tabs-ck-editor ul li::marker {
+    color: #ED2025;
+}
+
+.title h1 {
+    color: #000;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 38px;
+    /* 135.714% */
+    letter-spacing: 0.28px;
+}
+
 @media (max-width: 1400px) and (min-width: 1200px) {
     .heidi_text_head_line_top {
         top: -19%;
@@ -2040,11 +2347,11 @@
     }
 
     .head_color_title h2 {
-        font-size: 28px;
+        font-size: 18px;
     }
 
     .head_color_title p {
-        font-size: 17px;
+        font-size: 14px;
     }
 
     .page-block-image-360 {
@@ -2056,11 +2363,19 @@
     }
 
     .dong-co-xanh_text .text_head h2 {
-        font-size: 30px;
+        font-size: 18px;
     }
 
     .dong-co-xanh_text .text_mid h3 {
-        font-size: 21px;
+        font-size: 15px;
+    }
+
+    .infor_bottom .infor_box p {
+        font-size: 25px;
+    }
+
+    .text_descreption {
+        font-size: 14px;
     }
 
     .text_descreption {
@@ -2093,10 +2408,6 @@
         font-size: 27px;
     }
 
-    .nav-tabs .nav-item {
-        width: 50%;
-    }
-
     #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .nav-link {
         width: auto;
     }
@@ -2109,4 +2420,160 @@
         position: relative;
     }
 
+    .title h1 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+
+    .section-tinhnang .title-box-head p {
+        font-size: 20px;
+    }
+
+    .group-wrapper-func {
+        padding: 0 15px;
+    }
+
+    .group-wrapper-func .func-item h3 {
+        font-size: 18px;
+    }
+
+    .group-wrapper-func .func-item span {
+        font-size: 14px;
+    }
+
+    .group-wrapper-func .d-flex {
+        white-space: nowrap;
+        overflow-x: scroll;
+    }
+
+    .group-wrapper-func .func-item {
+        padding-right: 50px;
+    }
+
+    .group-wrapper-func .func-item::after {
+        right: 25px;
+    }
+
+    .feature-bot-top-1.d-flex {
+        display: block;
+    }
+
+    .feature-box-top-1-left-image {
+        width: 100%;
+    }
+
+    .feature-box-top-1-left-content {
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .feature-box-top-1-left-content h3 {
+        font-size: 20px;
+    }
+
+    .feature-box-top-1-left-content p {
+        font-size: 14px;
+    }
+
+    .feature-box-top-2-left-image-style img {
+        float: none;
+        margin-bottom: 15px;
+    }
+
+    .section-experience {
+        padding: 40px 15px;
+    }
+
+    .title-box-head h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .title-box-head p {
+        font-size: 13.5px;
+    }
+
+    .section-tinhnang .title-box-head h2 {
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    .section-tinhnang .title-box-head p {
+        font-size: 14px;
+        line-height: normal;
+    }
+
+    .breaking-experience-tabs .nav-tabs .nav-link {
+        font-size: 14px;
+    }
+
+    .breaking-experience-tabs .nav-tabs {
+        gap: 15px;
+        white-space: nowrap;
+        overflow: scroll;
+        padding-right: 0;
+    }
+
+    .tab-content {
+        font-size: 14px;
+    }
+
+    .tab-content .row>* {
+        margin-top: 0;
+    }
+
+    .page-block-image img,
+    .dong-co-xanh_img img {
+        width: 150px;
+    }
+
+    .page-block-upgrade-text {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .product-360-views-gogo {
+        margin-bottom: 0;
+    }
+
+    .page-block-upgrade-text h2 {
+        font-size: 18px;
+    }
+
+    .page-block-upgrade-text p {
+        font-size: 14px;
+    }
+
+    .section-tienich {
+        padding: 38px 15px 0 15px;
+    }
+
+    .tabs-ck-editor {
+        padding: 15px;
+    }
+
+    .tabs-ck-editor h2 {
+        font-size: 18px;
+    }
+
+    .tabs-ck-editor ul li {
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+
+    #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .nav-link {
+        font-size: 14px;
+    }
+
+    #pdp-breaking-technology .breaking-wrap {
+        padding: 60px 9.6vw 50px;
+    }
+
+    .section-tinhnang {
+        padding: 48px 0px 48px 0px;
+    }
+
+    .fixed_policy p a {
+        font-size: 16px;
+    }
 }

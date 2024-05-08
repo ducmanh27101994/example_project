@@ -1352,7 +1352,7 @@ li {
 }
 
 .banner_store_top {
-    padding: 64px 0;
+    padding: 128px 0 64px;
 }
 
 .banner_store_top .banner-image img {
@@ -2136,7 +2136,7 @@ table tbody tr th:nth-child(4) {
     }
 
     .banner_store_top {
-        padding-top: 0;
+        padding-top: 128px;
     }
 
     .place_style_box .form-control-select {

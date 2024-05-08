@@ -91,6 +91,29 @@ $(document).ready(function () {
             }
         }
     });
+    $('.tinhnang-items-track').owlCarousel({
+        items: 1,
+        margin: 30,
+        stagePadding: 0,
+        loop: true,
+        autoplay: true,
+        smartSpeed: 650,
+        responsive: {
+            0: {
+                stagePadding: 0,
+            },
+            600: {
+                stagePadding: 150,
+            },
+            1000: {
+                stagePadding: 250,
+            },
+            1600: {
+                stagePadding: 450,
+                margin: 70,
+            }
+        }
+    });
     $('.section-hero-slider').owlCarousel({
         animateOut: 'fadeOut',
         animateIn: 'fadeOut',
