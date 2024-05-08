@@ -2574,6 +2574,10 @@
     }
 
     .fixed_policy p a {
-        font-size: 16px;
+        font-size: 15px;
+    }
+
+    .fixed_policy {
+        padding: 15px 0;
     }
 }
