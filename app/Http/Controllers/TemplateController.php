@@ -66,4 +66,8 @@ class TemplateController extends BaseController
     {
         return view('web.product.ladipage.nispaviva');
     }
+    public function x3()
+    {
+        return view('web.product.ladipage.x3');
+    }
 }

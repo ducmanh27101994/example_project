@@ -2555,6 +2555,17 @@
         width: 100% !important;
         height: 300px !important;
     }
+    .hero-gogo {
+        height: 320px;
+        min-height: 320px;
+    }
+    .hero-gogo .hero-main {
+        height: 320px;
+        min-height: 320px;
+    }
+    .hero-gogo .hero-background {
+        height: 320px;
+    }
 }
 
 
