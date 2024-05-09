@@ -384,7 +384,7 @@
                                         <div id="image-preview">
                                             @if(!empty($feature_description))
                                                 @foreach($feature_description as $value)
-                                                    <img src="{{$value->images}}">
+                                                    <img style="width: 200px;height: auto;object-fit: contain;" src="{{$value->images}}">
                                                 @endforeach
                                             @endif
                                         </div>
@@ -417,7 +417,7 @@
                                         <div id="image-preview-1">
                                             @if(!empty($vehicle_detail_photos))
                                                 @foreach($vehicle_detail_photos as $value)
-                                                    <img src="{{$value->images}}">
+                                                    <img style="width: 200px;height: auto;object-fit: contain;" src="{{$value->images}}">
                                                 @endforeach
                                             @endif
                                         </div>
@@ -449,7 +449,7 @@
                                         <div id="image-preview-2">
                                             @if(!empty($actual_photo))
                                                 @foreach($actual_photo as $value)
-                                                    <img src="{{$value->images}}">
+                                                    <img style="width: 200px;height: auto;object-fit: contain;" src="{{$value->images}}">
                                                 @endforeach
                                             @endif
                                         </div>
