@@ -141,7 +141,7 @@
                                             <a href="{{route('admin.edit.product', $value->id)}}"
                                                style="display:inline-block"
                                                title="Chỉnh sửa"><img
-                                                    src="http://dambaujiwoon.khoweb24h.com/templates/admin/images/iconedit_c.png"></a>&nbsp;
+                                                    src="{{ asset('/images/iconedit_c.png') }}"></a>&nbsp;
                                             &nbsp;
 
 
