@@ -353,7 +353,9 @@
                                         </div>
 
                                         <div id="image-preview"></div>
-
+                                        <br>
+                                        <hr>
+                                        <br>
 
                                     </div>
 
@@ -380,6 +382,9 @@
                                             <div class="droptext"></div>
                                         </div>
                                         <div id="image-preview-1"></div>
+                                        <br>
+                                        <hr>
+                                        <br>
                                     </div>
 
                                     <div class="gallarey">
@@ -785,6 +790,7 @@
                                     var img = document.createElement('img');
                                     img.src = e.target.result;
                                     img.className = 'preview-image';
+                                    img.width = 150;
                                     previewContainer.appendChild(img);
                                 };
 
@@ -810,6 +816,8 @@
                                     var img = document.createElement('img');
                                     img.src = e.target.result;
                                     img.className = 'preview-image-1';
+                                    img.width = 150;
+                                    img.style.marginLeft = 15;
                                     previewContainer.appendChild(img);
                                 };
 
@@ -835,6 +843,8 @@
                                     var img = document.createElement('img');
                                     img.src = e.target.result;
                                     img.className = 'preview-image-2';
+                                    img.width = 150;
+                                    img.style.marginLeft = 15;
                                     previewContainer.appendChild(img);
                                 };
 

@@ -388,7 +388,9 @@
                                                 @endforeach
                                             @endif
                                         </div>
-
+                                        <br>
+                                        <hr>
+                                        <br>
 
                                     </div>
 
@@ -421,6 +423,9 @@
                                                 @endforeach
                                             @endif
                                         </div>
+                                        <br>
+                                        <hr>
+                                        <br>
                                     </div>
 
                                     <div class="gallarey">
