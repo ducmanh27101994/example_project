@@ -348,7 +348,7 @@ table.toolbar {
         padding-left: 18px;
     }
 
-    table.toolbar a {
+    table.toolbar a, table.toolbar button {
         display: block;
         cursor: pointer;
         background: #4b77be;
@@ -360,9 +360,11 @@ table.toolbar {
         font-family: Arial, Helvetica, sans-serif;
         white-space: nowrap;
         font-size: 12px;
+        border: none;
+        outline: none;
     }
 
-        table.toolbar a:hover {
+        table.toolbar a:hover, table.toolbar button:hover {
             display: block;
             background: #F58220;
             -webkit-border-radius: 3px;
