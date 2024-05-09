@@ -223,7 +223,7 @@
                                             <div class="block_sp">
                                                 <div class="form-group">
                                                     <label class="text-no-bold" data-bind="text: Title">Hình ảnh đại
-                                                        diện</label>
+                                                        diện (1230 × 700 px)</label>
                                                     <input type="file" name="representative_image" id="flupload"
                                                            class="btn-change-link pull-right" style="width:180px;">
 
@@ -330,7 +330,7 @@
                                 <div class="resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-1">
 
                                     <div class="gallarey">
-                                        <label for="album">Ảnh slide mô tả tính năng</label>
+                                        <label for="album">Ảnh slide mô tả tính năng (722 × 783 px)</label>
                                         <div id="uploadfiles" maxcount="16" input="ctl33_ctl00_FileServer2_ctl00"
                                              class="uploadfdfile upload-create-form">
                                             <div class="droptext textUploadNotice"></div>
@@ -358,7 +358,7 @@
                                     </div>
 
                                     <div class="gallarey">
-                                        <label for="album">Ảnh chi tiết xe</label>
+                                        <label for="album">Ảnh chi tiết xe(up nhiều ảnh một lúc, 494 × 636 px)</label>
                                         <div id="uploadfiles" maxcount="16" input="ctl33_ctl00_FileServer2_ctl00"
                                              class="uploadfdfile upload-create-form">
                                             <div class="droptext textUploadNotice"></div>
@@ -383,7 +383,7 @@
                                     </div>
 
                                     <div class="gallarey">
-                                        <label for="album">Ảnh thực tế</label>
+                                        <label for="album">Ảnh thực tế (up nhiều ảnh một lúc, 346 × 597 px)</label>
                                         <div id="uploadfiles" maxcount="16" input="ctl33_ctl00_FileServer2_ctl00"
                                              class="uploadfdfile upload-create-form">
                                             <div class="droptext textUploadNotice"></div>
@@ -437,7 +437,7 @@
                                                 <div class="form-group">
                                                     <label class="text-no-bold" data-bind="text: Title">Hình ảnh màu sắc
                                                         của
-                                                        xe</label>
+                                                        xe (1230 × 700 px)</label>
                                                     <input type="file" name="color_image[]"
                                                            id="color_image" class="btn-change-link pull-right"
                                                            style="width:180px;" multiple>
