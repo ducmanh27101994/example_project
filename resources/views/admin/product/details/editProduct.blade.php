@@ -220,7 +220,7 @@
                                             <div class="block_sp">
                                                 <div class="form-group">
                                                     <label class="text-no-bold" data-bind="text: Title">Hình ảnh đại
-                                                        diện</label>
+                                                        diện (1230 × 700 px)</label>
                                                     <input type="file" name="representative_image" id="flupload"
                                                            class="btn-change-link pull-right" style="width:180px;">
                                                 </div>
