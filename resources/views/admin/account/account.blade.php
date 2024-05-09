@@ -109,7 +109,7 @@
                                                     <td align="center">
                                                         <a id="LinkButton4" title="Sửa"
                                                            href="{{route('admin.editAccount', $employee->id)}}"><img
-                                                                src="https://vntravelsimple.com/templates/admin/images/iconedit_c.png"></a>
+                                                                src="{{ asset('/images/iconedit_c.png') }}"></a>
                                                     </td>
                                                 </tr>
                                                 </tbody>

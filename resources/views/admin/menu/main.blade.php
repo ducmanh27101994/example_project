@@ -95,7 +95,7 @@
                 echo '<td><a id="LinkButton1">'.$char. $item->menu_title .'</a></td>';
                 echo '<td align="center"><a id="LinkButton2" >'. $item->status .'</a></td>';
                 echo '<td align="center">'. $item->updated_at .'</td>';
-                echo '<td align="center"><a id="LinkButton4" href="'. route('admin.editMenu', $item->id) .'"><img src="https://vntravelsimple.com/templates/admin/images/iconedit_c.png"></a></td>';
+                echo '<td align="center"><a id="LinkButton4" href="'. route('admin.editMenu', $item->id) .'"><img src="'. asset('/images/iconedit_c.png')  .'"></a></td>';
                 echo '</tr>';
                 echo '</tbody>';
                 showMenus($menuChils, $item->id, $char. '--- ');
