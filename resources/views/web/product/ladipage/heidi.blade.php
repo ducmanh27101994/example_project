@@ -9,8 +9,7 @@
 <main>
     <section class="hero-section">
         <div class="hero-main">
-            <div class="hero-background"></div>
-
+            <div class="hero-background" style="background: url({{ asset('home/images/sec_1_banner.png') }}) center / cover no-repeat;"></div>
         </div>
     </section>
 

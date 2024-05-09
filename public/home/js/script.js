@@ -29,7 +29,7 @@ $(document).ready(function () {
         var thisclass = $(this).attr('id');
         console.log(thisclass)
         $(this).addClass('active');
-        $('.tab-content>div').each(function () {
+        $('.breaking-technology-bot .tab-content>div').each(function () {
             if ($(this).hasClass(thisclass)) {
                 $(this).fadeIn(800);
             }
@@ -38,6 +38,23 @@ $(document).ready(function () {
             }
         });
     });
+
+    $('.breaking-experience-tabs .nav-tabs a').first().addClass('active');
+    $('.breaking-experience-tabs .nav-tabs a').click(function () {
+        $('.breaking-experience-tabs .nav-tabs a').removeClass('active');
+        var thisclass = $(this).attr('id');
+        console.log(thisclass)
+        $(this).addClass('active');
+        $('.tab-content-experience>div').each(function () {
+            if ($(this).hasClass(thisclass)) {
+                $(this).fadeIn(800);
+            }
+            else {
+                $(this).hide();
+            }
+        });
+    });
+
 
     $('.tab-buttons-slider span').first().addClass('active');
     $('.tab-content-slider>div').css({
@@ -169,6 +186,34 @@ $(document).ready(function () {
             },
             1600: {
                 stagePadding: parseInt($('#pdp-img-360 .breaking-wrap').css('padding-left')?.replace('px', '') - 15, 10)
+            }
+        }
+    });
+
+    $('.parts-bike__list_type__owl').owlCarousel({
+        items: 5,
+        dots: false,
+        loop: false,
+        autoplay: false,
+        smartSpeed: 650,
+        stagePadding: 0,
+        margin: 30,
+        responsive: {
+            0: {
+                items: 2,
+                stagePadding: 15,
+                dots: true,
+            },
+            600: {
+                items: 3,
+                dots: true,
+                stagePadding: 15
+            },
+            1000: {
+                items: 4,
+                dots: true,
+            },
+            1600: {
             }
         }
     });

@@ -1571,7 +1571,7 @@ li {
 }
 
 .parts-bike__head_text p {
-    font-size: 24px;
+    font-size: 23px;
     font-style: normal;
     font-weight: 400;
     line-height: 36px;
@@ -1754,6 +1754,10 @@ table tbody tr th:nth-child(4) {
 
 .flag_link {
     cursor: pointer;
+}
+
+.image-preview img {
+    width: 200px;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -2035,6 +2039,12 @@ table tbody tr th:nth-child(4) {
 }
 
 @media(max-width: 768px) {
+
+    body,
+    html {
+        overflow-x: hidden;
+    }
+
     .text_top_bar_fixed {
         flex-direction: column;
         gap: 10px;
@@ -2180,9 +2190,11 @@ table tbody tr th:nth-child(4) {
     .article-category-links>* {
         margin-right: 4px !important;
     }
+
     #block-newhome-escooter {
         padding: 60px 0px 40px;
     }
+
     .typography-section-intro {
         padding-top: 30px;
     }

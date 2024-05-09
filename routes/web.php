@@ -21,6 +21,7 @@ Route::prefix('/')->group(function () {
     Route::get('/template/details-basic', 'App\Http\Controllers\TemplateController@detailsBasic');
     Route::get('/template/ladipage/heidi', 'App\Http\Controllers\TemplateController@heidi');
     Route::get('/template/ladipage/gogo', 'App\Http\Controllers\TemplateController@gogo');
+    Route::get('/template/ladipage/nispaviva', 'App\Http\Controllers\TemplateController@nispaviva');
     //    Route::get('/account/login', 'App\Http\Controllers\TemplateController@login');
     //    Route::get('/account/register', 'App\Http\Controllers\TemplateController@register');
     //    Route::get('/about-us', 'App\Http\Controllers\TemplateController@aboutus');

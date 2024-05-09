@@ -258,10 +258,8 @@
     }
 }
 
-.progressive-image,
 .progressive-image::before,
 .progressive-image::after,
-.progressive-image *,
 .progressive-image *::before,
 .progressive-image *::after {
     background-image: none !important
@@ -310,17 +308,10 @@
     /* left: 50%; */
     width: 100%;
     height: 100vh;
-    background: url("../images/sec_1_banner.png") center/cover no-repeat;
     /* transform: translateX(-50%); */
 }
 
 .hero-background::before {
-    /* content: ""; */
-    /* position: absolute; */
-    /* top: -10%; */
-    /* left: 0; */
-    /* right: 0; */
-    /* height: 580px; */
     background: url("//cdn.gogoro.com/resources/pages/smartscooter/s1/hero/hero-bg-light@2x.jpg?v=v7") center top/contain no-repeat
 }
 
@@ -2235,47 +2226,6 @@
     color: #fff;
 }
 
-.page-block-upgrade {
-    padding-top: 66px;
-}
-
-.page-block-upgrade-text {
-    max-width: 700px;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    height: 100%;
-    padding-left: 150px;
-}
-
-.page-block-upgrade-text h2 {
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 115%;
-    letter-spacing: -0.72px;
-    text-transform: uppercase;
-    margin-bottom: 6px;
-}
-
-.page-block-upgrade-text p {
-    color: #FFF;
-    font-family: Montserrat;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: -0.4px;
-    margin-bottom: 36px;
-}
-
-
-.section-page-block-upgrade img {
-    width: 100%;
-}
-
 .section-tienich {
     padding: 48px 64px 0 64px;
 }
@@ -2331,13 +2281,25 @@
     letter-spacing: 0.28px;
 }
 
+
+.w-100 {
+    width: 100%;
+}
+
 @media (max-width: 1400px) and (min-width: 1200px) {
     .heidi_text_head_line_top {
         top: -19%;
     }
 }
 
+/********mobile - 768px*********/
 @media (max-width: 768px) {
+
+    body,
+    html {
+        overflow-x: hidden !important;
+    }
+
     .heidi_text_head_line_bottom {
         font-size: 27px;
     }
@@ -2356,6 +2318,8 @@
 
     .page-block-image-360 {
         position: relative;
+        margin-bottom: 0;
+        padding: 0;
     }
 
     br {
@@ -2398,6 +2362,7 @@
     #pdp-breaking-technology {
         position: relative;
         background: #fff;
+        margin-top: 15px;
     }
 
     #pdp-breaking-technology .breaking-wrap .breaking-technology-bot {
@@ -2421,8 +2386,7 @@
     }
 
     .title h1 {
-        font-size: 25px;
-        margin-bottom: 20px;
+        font-size: 24px;
     }
 
     .section-tinhnang .title-box-head p {
@@ -2505,6 +2469,7 @@
 
     .breaking-experience-tabs .nav-tabs .nav-link {
         font-size: 14px;
+        padding-left: 0;
     }
 
     .breaking-experience-tabs .nav-tabs {
@@ -2525,23 +2490,6 @@
     .page-block-image img,
     .dong-co-xanh_img img {
         width: 150px;
-    }
-
-    .page-block-upgrade-text {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .product-360-views-gogo {
-        margin-bottom: 0;
-    }
-
-    .page-block-upgrade-text h2 {
-        font-size: 18px;
-    }
-
-    .page-block-upgrade-text p {
-        font-size: 14px;
     }
 
     .section-tienich {
@@ -2579,5 +2527,503 @@
 
     .fixed_policy {
         padding: 15px 0;
+    }
+
+    .wrapper-image-itelligent {
+        margin-bottom: 40px;
+    }
+
+    .parts-bike__head_text {
+        padding: 0 15px;
+    }
+
+    .parts-bike__head_text h2 {
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+
+    .parts-bike__head_text p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .gallery-header-content {
+        margin: 0 15px !important;
+    }
+    #threesixty {
+        max-width: unset;
+        width: 100% !important;
+        height: 300px !important;
+    }
+}
+
+
+/********section-gallery*********/
+
+.section-gallery {
+    position: relative;
+    height: 160vw;
+    max-height: 200vw;
+    overflow: hidden
+}
+
+@media(min-width: 576px) {
+    .section-gallery {
+        max-height: initial;
+        min-height: 40vw;
+        height: calc(100vh - 81px)
+    }
+}
+
+@media(min-aspect-ratio: 1/1) {
+    .section-gallery {
+        height: 44.4vw
+    }
+}
+
+.section-gallery:hover .gallery-container,
+.section-gallery:hover .gallery-header,
+.section-gallery:hover .gallery-images,
+.section-gallery.active .gallery-container,
+.section-gallery.active .gallery-header,
+.section-gallery.active .gallery-images {
+    will-change: transform
+}
+
+.gallery-header {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    padding: 48px 0;
+    transition: transform .5s
+}
+
+.active .gallery-header {
+    transform: translateY(100%)
+}
+
+@media(min-aspect-ratio: 1/1) {
+    .gallery-header {
+        min-height: initial;
+        transition: transform 1s;
+        width: 43.5%;
+        height: 100%;
+        top: 0
+    }
+
+    .gallery-header .gallery-header-content {
+        max-width: 700px;
+    }
+
+    .active .gallery-header {
+        transform: translateX(-100%)
+    }
+}
+
+.gallery-title {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: .022em;
+    line-height: 1.2;
+    margin: 0 0 .5em 0
+}
+
+@media(min-width: 768px) {
+    .gallery-title {
+        font-size: 30px
+    }
+}
+
+@media(min-aspect-ratio: 1/1)and (min-width: 992px) {
+    .gallery-title {
+        font-size: 36px
+    }
+}
+
+@media(min-aspect-ratio: 1/1)and (min-width: 1260px) {
+    .gallery-title {
+        font-size: 42px
+    }
+}
+
+.gallery-copy {
+    font-size: 14px;
+    margin: 0 0 2.2em 0
+}
+
+.gallery-copy:lang(en) {
+    line-height: 1.3
+}
+
+@media(min-width: 768px) {
+    .gallery-copy {
+        font-size: 16px
+    }
+}
+
+@media(min-aspect-ratio: 1/1)and (min-width: 1260px) {
+    .gallery-copy {
+        font-size: 18px
+    }
+}
+
+.nispaviva-block-gallery {
+    margin-top: 70px;
+}
+
+.gallery-header-content {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 30px;
+    width: 100%;
+    max-width: 480px;
+    text-align: left;
+}
+
+.nispaviva-block-gallery .gallery-header-content {
+    background: var(--Style, linear-gradient(269deg, #FB9835 13%, #ED442D 100%));
+    border-radius: 16px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+@media(min-aspect-ratio: 1/1) {
+    .gallery-header-content {
+        width: initial;
+        max-width: initial;
+        margin-right: initial
+    }
+
+    .nispaviva-block-gallery .gallery-header-content {
+        margin-right: auto
+    }
+}
+
+@media(min-aspect-ratio: 1/1)and (min-width: 1440px) {
+    .gallery-header-content {
+        padding: 0 60px
+    }
+}
+
+.gallery-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform .5s;
+    transform: translateY(-12%)
+}
+
+.active .gallery-container {
+    transform: none
+}
+
+@media(min-aspect-ratio: 1/1) {
+    .gallery-container {
+        transition: transform 1s;
+        transform: translateX(21.75%)
+    }
+}
+
+.gallery-images {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform .5s;
+    cursor: pointer
+}
+
+@media(min-aspect-ratio: 1/1) {
+    .gallery-images {
+        transition: transform 1s
+    }
+}
+
+.gallery-image {
+    position: relative;
+    flex: 0 0 100%;
+    height: inherit;
+    background: center/cover no-repeat
+}
+
+.gallery-dots {
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    opacity: 0;
+    transition: .5s
+}
+
+@media(min-aspect-ratio: 1/1) {
+    .gallery-dots {
+        bottom: 60px
+    }
+}
+
+.active .gallery-dots {
+    pointer-events: auto;
+    opacity: 1
+}
+
+.gallery-dot {
+    margin: 0;
+    padding: 0 5px;
+    display: block;
+    opacity: .5;
+    cursor: pointer
+}
+
+.gallery-dot::before {
+    content: "";
+    display: block;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px
+}
+
+@media(min-aspect-ratio: 1/1) {
+    .gallery-dot {
+        padding: 0 10px
+    }
+
+    .gallery-dot::before {
+        width: 12px;
+        height: 12px
+    }
+}
+
+.gallery-next,
+.gallery-prev {
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    padding: 0;
+    display: none
+}
+
+@media(min-aspect-ratio: 1/1) {
+
+    .gallery-next,
+    .gallery-prev {
+        display: block;
+        opacity: 0;
+        transition: .3s
+    }
+
+    .active .gallery-next,
+    .active .gallery-prev {
+        opacity: 1;
+        transition: .3s .2s
+    }
+}
+
+.gallery-next:focus,
+.gallery-prev:focus {
+    outline: none
+}
+
+.gallery-next::before,
+.gallery-next::after,
+.gallery-prev::before,
+.gallery-prev::after {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -1px 0 0 -16px;
+    background-color: #fff
+}
+
+.gallery-next::before,
+.gallery-prev::before {
+    transform: rotate(45deg)
+}
+
+.gallery-next::after,
+.gallery-prev::after {
+    transform: rotate(-45deg)
+}
+
+.gallery-next {
+    right: 0
+}
+
+.gallery-next::before,
+.gallery-next::after {
+    transform-origin: right
+}
+
+.gallery-prev::before,
+.gallery-prev::after {
+    transform-origin: left
+}
+
+.gallery-close {
+    position: absolute;
+    right: 6px;
+    top: 14px;
+    padding: 0;
+    background: rgba(0, 0, 0, 0);
+    border: none;
+    width: 36px;
+    height: 36px;
+    opacity: 0;
+    z-index: 1
+}
+
+.gallery-close,
+.gallery-close::before,
+.gallery-close::after {
+    transition: .3s
+}
+
+.gallery-close::before,
+.gallery-close::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+    left: 50%;
+    top: 50%;
+    margin: -1px 0 0 -23px
+}
+
+.gallery-close::before {
+    transform: rotate(45deg)
+}
+
+.gallery-close::after {
+    transform: rotate(-45deg)
+}
+
+.active .gallery-close {
+    opacity: 1
+}
+
+.active .gallery-close,
+.active .gallery-close::before,
+.active .gallery-close::after {
+    transition: .3s .2s
+}
+
+@media(min-aspect-ratio: 1/1) {
+    .gallery-close {
+        right: 32px;
+        top: 32px;
+        width: 50px;
+        height: 50px
+    }
+
+    .gallery-close::before,
+    .gallery-close::after {
+        width: 46px
+    }
+}
+
+.gallery-close:focus {
+    outline: none
+}
+
+.gallery-toggle:checked:nth-child(1)~.gallery-container .gallery-images {
+    transform: translateX(0%)
+}
+
+.gallery-toggle:checked:nth-child(1)~.gallery-container .gallery-dot:nth-child(1) {
+    opacity: 1
+}
+
+.gallery-toggle:checked:nth-child(2)~.gallery-container .gallery-images {
+    transform: translateX(-100%)
+}
+
+.gallery-toggle:checked:nth-child(2)~.gallery-container .gallery-dot:nth-child(2) {
+    opacity: 1
+}
+
+.gallery-toggle:checked:nth-child(3)~.gallery-container .gallery-images {
+    transform: translateX(-200%)
+}
+
+.gallery-toggle:checked:nth-child(3)~.gallery-container .gallery-dot:nth-child(3) {
+    opacity: 1
+}
+
+.gallery-toggle:checked:nth-child(4)~.gallery-container .gallery-images {
+    transform: translateX(-300%)
+}
+
+.gallery-toggle:checked:nth-child(4)~.gallery-container .gallery-dot:nth-child(4) {
+    opacity: 1
+}
+
+.gallery-toggle:checked:nth-child(5)~.gallery-container .gallery-images {
+    transform: translateX(-400%)
+}
+
+.gallery-toggle:checked:nth-child(5)~.gallery-container .gallery-dot:nth-child(5) {
+    opacity: 1
+}
+
+.gallery-toggle:checked:nth-child(6)~.gallery-container .gallery-images {
+    transform: translateX(-500%)
+}
+
+.gallery-toggle:checked:nth-child(6)~.gallery-container .gallery-dot:nth-child(6) {
+    opacity: 1
+}
+
+.section-gallery .cta-button {
+    padding: 0 30px;
+    min-width: 176px;
+    color: #323237;
+    background-color: #ED2025;
+}
+
+.section-gallery .cta-button:lang(en) {
+    font-family: var(--font-family-italic);
+    font-weight: 700
+}
+
+.gallery-container {
+    transform: none
+}
+
+@media(min-aspect-ratio: 1/1) {
+    .gallery-container {
+        transform: translateX(21.75%)
+    }
+}
+
+.gallery-header {
+    color: #fff;
+    background-color: #1B1B1E;
+}
+
+.nispaviva-block-gallery .gallery-header {
+    color: #fff;
+    background: url('../images/nispaviva/starbrust.png') center/cover no-repeat #1B1B1E;
+}
+
+@media(min-aspect-ratio: 1/1) {
+    .gallery-header-content:lang(en) {
+        min-width: 300px
     }
 }
