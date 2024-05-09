@@ -478,7 +478,7 @@
                                                 <div id="image-preview-3">
                                                     @if(!empty($icon_images))
                                                         @foreach($icon_images as $value)
-                                                            <img src="{{$value->images}}">
+                                                            <img style="width: 150px" src="{{$value->images}}">
                                                         @endforeach
                                                     @endif
                                                 </div>
@@ -497,7 +497,7 @@
                                                 <div id="image-preview-4">
                                                     @if(!empty($color_image))
                                                         @foreach($color_image as $value)
-                                                            <img src="{{$value->images}}">
+                                                            <img style="width: 250px" src="{{$value->images}}">
                                                         @endforeach
                                                     @endif
                                                 </div>
