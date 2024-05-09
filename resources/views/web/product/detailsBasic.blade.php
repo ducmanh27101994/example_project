@@ -63,7 +63,6 @@
                             @foreach($color_image as $value)
                             <div class>
                                 <picture>
-                                    <source srcset="{{$value->images}}" type="image/webp" />
                                     <img data-lazy="{{$value->images}}" title alt="Xe máy điện VinFast Evo200 màu vàng" width="100%" />
                                 </picture>
                             </div>
