@@ -9,62 +9,36 @@
 
 
 <main>
-    <section class="hero-section hero-gogo">
+    <section class="hero-section" style="min-height: unset">
         <div class="hero-main">
             <div class="hero-background"
-                style="background: url({{ asset('home/images/gogo/gogo_banner.png') }}) center / cover no-repeat;">
+                style="background: url({{ asset('home/images/x3/banner.png') }}) center / cover no-repeat;">
             </div>
         </div>
     </section>
 
-    <div class="buy-wrapper-box">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <div class="title d-flex align-items-center aos-init aos-animate" data-aos="fade-left"
-                    data-aos-duration="1000" style="height: 100%">
-                        <h1>GOGO FIONA - ĐÓN ĐẦU THỜI ĐẠI</h1>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                    <div class="breaking-technology section" id="pdp-breaking-technology">
-                        <div class="breaking-wrap" style="padding: 0">
-                            <div class="breaking-top d-flex justify-content-end">
-                                <div class="breaking-top__title-btn" style="margin-top: 0">
-                                    <span class="">18.000.000 VNĐ</span>
-                                    <a href="#" class="add-to-cart-v3s btn-pdp btn btn-primary effect-apollo"
-                                        data-pid="VF-ZFG-ESNA5LHH-REQ"><span>Mua Ngay</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section class="section section-tinhnang">
+    <section class="section section-tinhnang" style="background: #040406;">
         <div class="title-box-head">
-            <h2>TÍNH NĂNG</h2>
-            <p>Tính năng hiện đại, thân thiện với người dùng, bảo mật an toàn</p>
+            <h2 style="color: #fff;">TÍNH NĂNG</h2>
+            <p style="color: #fff;">Tính năng hiện đại, thân thiện với người dùng, bảo mật an toàn</p>
         </div>
         <div class="tinhnang-owl story-items">
             <div data-story-track="" class="tinhnang-items-track owl-carousel owl-theme">
                 <div class="story-item container">
                     <figure class="image-story image-story--smart-1">
-                        <img src="{{ asset('home/images/gogo/tn_1.png') }}" alt="tn_1">
+                        <img src="{{ asset('home/images/x3/tinhnang_1.png') }}" alt="tinhnang_1">
                     </figure>
 
                 </div>
                 <div class="story-item container">
                     <figure class="image-story image-story--smart-2">
-                        <img src="{{ asset('home/images/gogo/tn_2.png') }}" alt="tn_2">
+                        <img src="{{ asset('home/images/x3/tinhnang_2.png') }}" alt="tinhnang_2">
                     </figure>
 
                 </div>
                 <div class="story-item container">
                     <figure class="image-story image-story--smart-3">
-                        <img src="{{ asset('home/images/gogo/tn_3.png') }}" alt="tn_3">
+                        <img src="{{ asset('home/images/x3/tinhnang_3.png') }}" alt="tinhnang_3">
                     </figure>
 
                 </div>
@@ -77,127 +51,28 @@
             <div class="d-flex align-items-center justify-content-between">
                 <div class="func-item aos-init aos-animate" data-aos="fade-up"
                     data-aos-duration="1000">
-                    <span>Giảm xóc</span>
+                    <span style="color: #AFAFAF">Giảm xóc</span>
                     <h3>Đài Loan</h3>
                 </div>
                 <div class="func-item aos-init aos-animate" data-aos="fade-up"
                     data-aos-duration="1300">
-                    <span>Đèn led</span>
+                    <span style="color: #AFAFAF">Đèn led</span>
                     <h3>Toàn xe</h3>
                 </div>
                 <div class="func-item aos-init aos-animate" data-aos="fade-up"
                     data-aos-duration="1500">
-                    <span>Mặt đồng hồ</span>
+                    <span style="color: #AFAFAF">Mặt đồng hồ</span>
                     <h3>Led mở rộng</h3>
                 </div>
                 <div class="func-item aos-init aos-animate" data-aos="fade-up"
                     data-aos-duration="1700">
-                    <span>Chiều cao xe</span>
+                    <span style="color: #AFAFAF">Chiều cao xe</span>
                     <h3>1045 mm</h3>
                 </div>
                 <div class="func-item aos-init aos-animate" data-aos="fade-up"
                     data-aos-duration="2000">
-                    <span>Mở khoá</span>
+                    <span style="color: #AFAFAF">Mở khoá</span>
                     <h3>Smartkey</h3>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section class="section section-feature">
-        <div class="feature-bot-top-1 d-flex align-items-center">
-            <div class="feature-box-top-1-left-image">
-                <div class="image">
-                    <img src="{{ asset('home/images/gogo/feature1_1.png') }}" alt="feature1_1">
-                </div>
-            </div>
-            <div class="feature-box-top-1-left-content">
-                <div class="feature-box-top-1-left-box-content aos-init aos-animate" data-aos="fade-up"
-                    data-aos-duration="2000">
-                    <h3>HỆ THỐNG PHANH E-ABS</h3>
-                    <p>Nispa Vera đã kết hợp nhiều sắc thái màu sắc vào bảng điều khiển, ghế ngồi và thân xe, nổi bật
-                        bằng các điểm nhấn mạ crôm, mang lại vẻ ngoài vừa êm dịu vừa uyển chuyển khi di chuyển.</p>
-                </div>
-            </div>
-        </div>
-        <div class="feature-bot-top-1 d-flex align-items-center flex-roate">
-            <div class="feature-box-top-1-left-image feature-box-top-2-left-image-style">
-                <div class="image">
-                    <img src="{{ asset('home/images/gogo/feature1_2.png') }}" alt="feature1_2">
-                </div>
-            </div>
-            <div class="feature-box-top-1-left-content feature-box-top-2-left-content-style aos-init aos-animate" data-aos="fade-up"
-                    data-aos-duration="2000">
-                <div class="feature-box-top-1-left-box-content">
-                    <h3>CỤM ĐÈN NỔI BẬT</h3>
-                    <p>Nispa Vera đã kết hợp nhiều sắc thái màu sắc vào bảng điều khiển, ghế ngồi và thân xe, nổi bật
-                        bằng các điểm nhấn mạ crôm, mang lại vẻ ngoài vừa êm dịu vừa uyển chuyển khi di chuyển.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="section section-experience">
-        <div class="container">
-            <div class="title-box-head text-center ">
-                <h2 class="text-uppercase">Trải nghiệm niềm vui, cảm nhận sự an toàn</h2>
-                <p>Cảm nhận sự an toàn qua những tính năng và thông báo chủ động, luôn bảo vệ bạn.</p>
-                <p>Công nghệ Osakar là những người bạn hiểu rõ nhất, như những người đồng hành đồng tâm.</p>
-            </div>
-        </div>
-
-        <div class="breaking-experience-tabs breaking-technology-bot">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="tabexperience1" data-toggle="tab" href="javascript:void(0)"
-                        role="tab" aria-controls="home" aria-selected="true">DỪNG LẠI NHANH CHÓNG, ĐẢM BẢO AN TOÀN
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="tabexperience2" data-toggle="tab" href="javascript:void(0)" role="tab"
-                        aria-controls="profile" aria-selected="false">CAN ĐẢM GIỮA NHỮNG CƠN MƯA
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="tabexperience3" data-toggle="tab" href="javascript:void(0)" role="tab"
-                        aria-controls="profile" aria-selected="false">ÁP SUẤT LỐP
-                    </a>
-                </li>
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane show active tabexperience1" id="tabexperience1" role="tabpanel"
-                    aria-labelledby="tabexperience1">
-                    <div class="tab-pane-info d-flex justify-content-center">
-
-                        <div class="block-tabs text-center">
-                            <p>Phanh đĩa trước và sau cung cấp hiệu suất phanh hiệu quả và ổn định. Tăng tốc và cấu trúc
-                                mô-men xoắn linh hoạt, giúp xe dễ dàng xử lý cấp độ tăng tốc và giảm tốc một cách mượt
-                                mà</p>
-
-                            <img class="mx-auto" src="{{ asset('home/images/gogo/image-exp-tabs.png') }}"
-                                alt="image-exp-tabs">
-                        </div>
-
-                    </div>
-                </div>
-                <div class="tab-pane tabexperience2" id="tabexperience2" role="tabpanel"
-                    aria-labelledby="tabexperience2">
-                    <div class="breaking-battery-tab d-flex justify-content-between">
-                        <div class="block-tabs text-center">
-                            <h3 class="pin-subtitle">CAN ĐẢM GIỮA NHỮNG CƠN MƯA</h3>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane tabexperience3" id="tabexperience3" role="tabpanel"
-                    aria-labelledby="tabexperience3">
-                    <div class="breaking-battery-tab d-flex justify-content-between">
-                        <div class="block-tabs text-center">
-                            <h3 class="pin-subtitle">ÁP SUẤT LỐP</h3>
-
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
