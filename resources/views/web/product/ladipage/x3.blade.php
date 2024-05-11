@@ -1,15 +1,13 @@
 @extends('/web/index')
 @section('content')
-
+<link href="{{ asset('home/css/jquery.fancybox.css') }}" rel="stylesheet" />
 <link rel="stylesheet" href="{{ asset('home/css/pdp-page-xmd.css') }}" />
 <link rel="stylesheet" href="{{ asset('home/css/ladiframe.css') }}" />
 <link rel="stylesheet" href="{{ asset('home/css/style_ladi.css') }}" />
 
 
-
-
 <main>
-    <section class="hero-section" style="min-height: unset">
+    <section class="hero-section hero-gogo" style="min-height: unset">
         <div class="hero-main">
             <div class="hero-background"
                 style="background: url({{ asset('home/images/x3/banner.png') }}) center / cover no-repeat;">
@@ -49,32 +47,44 @@
         </div>
         <div class="group-wrapper-func">
             <div class="d-flex align-items-center justify-content-between">
-                <div class="func-item aos-init aos-animate" data-aos="fade-up"
-                    data-aos-duration="1000">
+                <div class="func-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
                     <span style="color: #AFAFAF">Giảm xóc</span>
                     <h3>Đài Loan</h3>
                 </div>
-                <div class="func-item aos-init aos-animate" data-aos="fade-up"
-                    data-aos-duration="1300">
+                <div class="func-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1300">
                     <span style="color: #AFAFAF">Đèn led</span>
                     <h3>Toàn xe</h3>
                 </div>
-                <div class="func-item aos-init aos-animate" data-aos="fade-up"
-                    data-aos-duration="1500">
+                <div class="func-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500">
                     <span style="color: #AFAFAF">Mặt đồng hồ</span>
                     <h3>Led mở rộng</h3>
                 </div>
-                <div class="func-item aos-init aos-animate" data-aos="fade-up"
-                    data-aos-duration="1700">
+                <div class="func-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1700">
                     <span style="color: #AFAFAF">Chiều cao xe</span>
                     <h3>1045 mm</h3>
                 </div>
-                <div class="func-item aos-init aos-animate" data-aos="fade-up"
-                    data-aos-duration="2000">
+                <div class="func-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
                     <span style="color: #AFAFAF">Mở khoá</span>
                     <h3>Smartkey</h3>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section class="section section-video" data-component-list="Video">
+        <div class="video-copy">
+            <a data-fancybox data-width="auto" data-height="auto" href="https://www.youtube.com/embed/yJG90zU3_ug"
+                title="video">
+                <figure class="image-video-crossover">
+                    <img class="w-100" src="{{ asset('home/images/x3/thumbnailvideo1.png') }}" alt="thumbnailvideo1">
+                </figure>
+                <svg xmlns="http://www.w3.org/2000/svg" width="132" height="132" viewBox="0 0 132 132" fill="none">
+                    <circle cx="66.0019" cy="66" r="55.2558" fill="white" />
+                    <path
+                        d="M66.0019 10.7441C35.5007 10.7441 10.7461 35.4987 10.7461 66C10.7461 96.5012 35.5007 121.256 66.0019 121.256C96.5031 121.256 121.258 96.5012 121.258 66C121.258 35.4987 96.5584 10.7441 66.0019 10.7441ZM82.5787 78.322L66.5545 87.5497C64.5653 88.7101 62.355 89.2626 60.2 89.2626C57.9898 89.2626 55.8348 88.7101 53.8456 87.5497C49.8672 85.229 47.4912 81.14 47.4912 76.4986V57.9879C47.4912 53.4016 49.8672 49.2574 53.8456 46.9367C57.824 44.616 62.576 44.616 66.6097 46.9367L82.6339 56.1644C86.6123 58.4852 88.9883 62.5741 88.9883 67.2156C88.9883 71.8571 86.6123 76.0013 82.5787 78.322Z"
+                        fill="#ED2025" />
+                </svg>
+            </a>
         </div>
     </section>
 
@@ -121,7 +131,8 @@
         </div>
     </section>
 
-    <section class="section section-color">
+    <section class="section section-color"
+        style="background: #000 url({{ asset('home/images/x3/bg-color.png') }}) no-repeat;">
 
         <div class="head_color_title">
             <h2>Đa dạng màu sắc</h2>
@@ -133,36 +144,36 @@
             <div class="mySliderTop">
                 <div class>
                     <picture>
-                        <source srcset="{{ asset('home/images/color_image_heidi.png') }}" type="image/webp" />
-                        <img data-lazy="{{ asset('home/images/color_image_heidi.png') }}" title
+                        <source srcset="{{ asset('home/images/x3/color.png') }}" type="image/webp" />
+                        <img data-lazy="{{ asset('home/images/x3/color.png') }}" title
                             alt="Xe máy điện VinFast Evo200 màu vàng" width="100%" />
                     </picture>
                 </div>
                 <div class>
                     <picture>
-                        <source data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}" type="image/webp" />
-                        <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                        <source data-lazy-srcset="{{ asset('home/images/x3/color.png') }}" type="image/webp" />
+                        <img data-lazy-src="{{ asset('home/images/x3/color.png') }}"
                             alt="Xe máy điện VinFast Evo200 màu đen" width="100%" />
                     </picture>
                 </div>
                 <div class>
                     <picture>
-                        <source data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}" type="image/webp" />
-                        <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                        <source data-lazy-srcset="{{ asset('home/images/x3/color.png') }}" type="image/webp" />
+                        <img data-lazy-src="{{ asset('home/images/x3/color.png') }}"
                             alt="Xe máy điện VinFast Evo200 màu đỏ" width="100%" />
                     </picture>
                 </div>
                 <div class>
                     <picture>
-                        <source data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}" type="image/webp" />
-                        <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                        <source data-lazy-srcset="{{ asset('home/images/x3/color.png') }}" type="image/webp" />
+                        <img data-lazy-src="{{ asset('home/images/x3/color.png') }}"
                             alt="Xe máy điện VinFast Evo200 màu xanh" width="100%" />
                     </picture>
                 </div>
                 <div class>
                     <picture>
-                        <source data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}" type="image/webp" />
-                        <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                        <source data-lazy-srcset="{{ asset('home/images/x3/color.png') }}" type="image/webp" />
+                        <img data-lazy-src="{{ asset('home/images/x3/color.png') }}"
                             alt="Xe máy điện VinFast Evo200 màu trắng" width="100%" />
                     </picture>
                 </div>
@@ -198,8 +209,37 @@
         </div>
     </section>
 
-    <section class="page-block-image page-block-image-360 product-360-views product-360-views-gogo" id="pdp-img-360"
-        style="background: #1B1B1E;">
+
+    <section class="page-block-details">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="page-block-details-img aos-init aos-animate" data-aos="fade-up"
+                    data-aos-duration="2000">
+                    <img src="{{ asset('home/images/x3/dongcoxanh2.png') }}" alt="dongcoxanh2">
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 aos-init aos-animate" data-aos="zoom-in"
+                    data-aos-duration="2000">
+                <div class="page-block-details-content">
+                    <div class="content">
+                        <h2>Giảm xóc đài loan êm ái</h2>
+                        <div class="descp">
+                            <p>Công suất trung bình (W)</p>
+                            <h3>500</h3>
+                            <p>Công suất trung bình (W)</p>
+                            <h3>1000</h3>
+                            <p>Thời gian bảo hành (năm)</p>
+                            <h3>03</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="page-block-image page-block-image-360 product-360-views" id="pdp-img-360"
+        style="background: #040406;">
         <div class="breaking-wrap product-images-list">
             <!-- Ảnh 360 -->
             <div id="threesixty" class="wrap_image"></div>
@@ -242,31 +282,31 @@
                 </figure>
 
                 <style>
-                .gallery-image--01 {
-                    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-01-mobile@2x.jpg?v=v1")
-                }
-
-                .gallery-image--02 {
-                    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-02-mobile@2x.jpg?v=v1")
-                }
-
-                .gallery-image--03 {
-                    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-03-mobile@2x.jpg?v=v1")
-                }
-
-                @media(min-aspect-ratio: 1/1) {
                     .gallery-image--01 {
-                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-01@2x.jpg?v=v1")
+                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-01-mobile@2x.jpg?v=v1")
                     }
 
                     .gallery-image--02 {
-                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-02@2x.jpg?v=v1")
+                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-02-mobile@2x.jpg?v=v1")
                     }
 
                     .gallery-image--03 {
-                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-03@2x.jpg?v=v1")
+                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-03-mobile@2x.jpg?v=v1")
                     }
-                }
+
+                    @media(min-aspect-ratio: 1/1) {
+                        .gallery-image--01 {
+                            background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-01@2x.jpg?v=v1")
+                        }
+
+                        .gallery-image--02 {
+                            background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-02@2x.jpg?v=v1")
+                        }
+
+                        .gallery-image--03 {
+                            background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-03@2x.jpg?v=v1")
+                        }
+                    }
                 </style>
 
             </div>
@@ -280,100 +320,6 @@
             <button class="gallery-next"></button>
         </div>
     </section>
-
-
-    <section class="section section-tienich">
-        <div class="container">
-            <div class="title-box-head text-center ">
-                <h2 class="text-uppercase">TIỆN ÍCH</h2>
-            </div>
-        </div>
-
-        <div class="breaking-experience-tabs breaking-technology-bot">
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="tienich1" data-toggle="tab" href="javascript:void(0)" role="tab"
-                        aria-controls="home" aria-selected="true">CỐP RỘNG BAO LA
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="tienich2" data-toggle="tab" href="javascript:void(0)" role="tab"
-                        aria-controls="profile" aria-selected="false">CỔNG SẠC USB
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="tienich3" data-toggle="tab" href="javascript:void(0)" role="tab"
-                        aria-controls="profile" aria-selected="false">Móc treo đồ
-                    </a>
-                </li>
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane show active tienich1" id="tienich1" role="tabpanel" aria-labelledby="tienich1">
-                    <div class="tab-pane-info d-flex justify-content-center">
-
-                        <div class="row" style="width: 100%">
-                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
-                                <img class="img" src="{{ asset('home/images/gogo/tienich_1.png') }}" alt="tienich_1">
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
-                                <div class="tabs-ck-editor d-flex align-items-center">
-                                    <div>
-                                        <h2>Cốp rộng bao la</h2>
-                                        <ul>
-                                            <li>Để đồ thả ga với dung tích 20</li>
-                                            <li>Tăng tính tiện lợi</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="tab-pane tienich2" id="tienich2" role="tabpanel" aria-labelledby="tienich2">
-                    <div class="breaking-battery-tab d-flex justify-content-between">
-                        <div class="row" style="width: 100%">
-                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
-                                <img class="img" src="{{ asset('home/images/gogo/tienich_2.png') }}" alt="tienich_1">
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
-                                <div class="tabs-ck-editor d-flex align-items-center">
-                                    <div>
-                                        <h2>Cổng sạc USB</h2>
-                                        <ul>
-                                            <li>Phía trước tiện lợi</li>
-                                            <li>Móc treo đồ dạng gập tiện lợi</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane tienich3" id="tienich3" role="tabpanel" aria-labelledby="tienich3">
-                    <div class="breaking-battery-tab d-flex justify-content-between">
-                        <div class="row" style="width: 100%">
-                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
-                                <img class="img" src="{{ asset('home/images/gogo/tienich_3.png') }}" alt="tienich_1">
-                            </div>
-                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
-                                <div class="tabs-ck-editor d-flex align-items-center">
-                                    <div>
-                                        <h2>Móc treo đồ</h2>
-                                        <ul>
-                                            <li>Móc treo đồ dạng gập tiện lợi</li>
-                                            <li>Móc treo đồ dạng gập tiện lợi</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
 
 
     <section class="breaking-technology section" id="pdp-breaking-technology">
@@ -515,26 +461,27 @@
 <script defer type="text/javascript" src="{{ asset('home/js/pdp-page-xmd.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/@mladenilic/threesixty.js/dist/threesixty.js"></script>
 <script src="{{ asset('home/js/gallarey.js') }}"></script>
+<script defer src="{{ asset('home/js/jquery.fancybox.min.js') }}"></script>
 @php
-$imageUrls = [asset('home/images/360.png')];
+    $imageUrls = [asset('home/images/x3/img-360.png')];
 @endphp
 @if(!empty($images360))
-@foreach($images360 as $value)
-@php
-$imageUrls[] = $value->images;
-@endphp
-@endforeach
+    @foreach($images360 as $value)
+        @php
+            $imageUrls[] = $value->images;
+        @endphp
+    @endforeach
 @endif
 <script>
-var img360 = @json($imageUrls);
-if (img360 != '') {
-    const threesixty = new ThreeSixty(document.getElementById('threesixty'), {
-        image: img360,
-        count: 31,
-        perRow: 0,
-        width: '100%',
-        height: 680,
-    });
-}
+    var img360 = @json($imageUrls);
+    if (img360 != '') {
+        const threesixty = new ThreeSixty(document.getElementById('threesixty'), {
+            image: img360,
+            count: 31,
+            perRow: 0,
+            width: '100%',
+            height: 680,
+        });
+    }
 </script>
 @endsection

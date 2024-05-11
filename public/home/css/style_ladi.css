@@ -1870,7 +1870,7 @@
 }
 
 #dong-co-xanh {
-    background: linear-gradient(180deg, rgba(27, 27, 30, 0.10) 0%, rgba(0, 71, 71, 0.10) 100%), #1B1B1E;
+    background: linear-gradient(180deg, rgba(27, 27, 30, 0.10) 0%, rgba(0, 71, 71, 0.10) 100%), #040406;
     position: relative;
 }
 
@@ -2286,6 +2286,83 @@
     width: 100%;
 }
 
+.section-video {
+    position: relative;
+}
+
+.section-video svg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+.page-block-details {
+    background: #040406;
+}
+
+.page-block-details-content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.page-block-details-content .content {
+    max-width: 577px;
+    text-align: center;
+}
+
+.page-block-details-content .content h2 {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 125%;
+    text-transform: uppercase;
+    margin-bottom: 48px;
+
+}
+
+.page-block-details-content .content .descp,
+.page-block-details-content .content .descp p {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.4px;
+
+}
+
+.page-block-details-content .content .descp h3 {
+    color: #F14D50;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: -2.4px;
+    margin-bottom: 24px;
+
+}
+
+.page-block-details-img {
+    overflow: hidden;
+}
+
+.page-block-details-img img {
+    width: auto;
+    max-width: max-content;
+}
+
 @media (max-width: 1400px) and (min-width: 1200px) {
     .heidi_text_head_line_top {
         top: -19%;
@@ -2550,21 +2627,45 @@
     .gallery-header-content {
         margin: 0 15px !important;
     }
+
     #threesixty {
         max-width: unset;
         width: 100% !important;
         height: 300px !important;
     }
+
     .hero-gogo {
         height: 320px;
         min-height: 320px;
     }
+
     .hero-gogo .hero-main {
         height: 320px;
         min-height: 320px;
     }
+
     .hero-gogo .hero-background {
         height: 320px;
+    }
+
+    .page-block-details-img img {
+        width: 100%;
+        max-width: max-content;
+        margin: auto;
+    }
+
+    .page-block-details-content .content h2 {
+        font-size: 21px;
+    }
+
+    .page-block-details-content .content .descp h3 {
+        font-size: 30px;
+    }
+
+    .page-block-details-content .content {
+        max-width: unset;
+        width: 100%;
+        padding: 0 15px;
     }
 }
 
@@ -3025,12 +3126,12 @@
 
 .gallery-header {
     color: #fff;
-    background-color: #1B1B1E;
+    background-color: #040406;
 }
 
 .nispaviva-block-gallery .gallery-header {
     color: #fff;
-    background: url('../images/nispaviva/starbrust.png') center/cover no-repeat #1B1B1E;
+    background: url('../images/nispaviva/starbrust.png') center/cover no-repeat #040406;
 }
 
 @media(min-aspect-ratio: 1/1) {
