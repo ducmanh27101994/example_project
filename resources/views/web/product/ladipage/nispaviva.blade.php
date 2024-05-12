@@ -13,6 +13,7 @@
 
         <div class="hero-scooters-svg">
             <div class="viva-svg">
+                <!-- Hình ảnh logo xe(section 1) -->
                 <img src="{{ asset('home/images/nispaviva/titlenispabanner.png') }}" alt="titlenispabanner">
                 <div class="name_title-banner d-flex align-items-center justify-content-between">
                     <span>
@@ -29,22 +30,26 @@
         </div>
 
         <div class="hero-scooters">
-            <figure class="hero-scooter hero-scooter--hazel"
+            <!-- ảnh màu sắc xe-->
+            <figure class="hero-scooter"
                 style="background-image: url('{{ asset('home/images/nispaviva/nispaviva.png') }}')">
             </figure>
-            <figure class="hero-scooter hero-scooter--blue"
+            <figure class="hero-scooter"
                 style='background-image: url("{{ asset('home/images/nispaviva/nispaviva.png') }}")'>
             </figure>
-            <figure class="hero-scooter hero-scooter--purple-soul"
+            <figure class="hero-scooter"
                 style='background-image: url("{{ asset('home/images/nispaviva/nispaviva.png') }}")'>
             </figure>
-            <figure class="hero-scooter hero-scooter--grey"
+            <figure class="hero-scooter"
                 style='background-image: url("{{ asset('home/images/nispaviva/nispaviva.png') }}")'>
             </figure>
-            <figure class="hero-scooter hero-scooter--white"
+            <figure class="hero-scooter"
                 style='background-image: url("{{ asset('home/images/nispaviva/nispaviva.png') }}")'>
             </figure>
         </div>
+
+
+        <!-- video nền section 1 -->
         <video class="d-none" playsinline preload autoplay muted
             data-src="{{ asset('home/images/nispaviva/X-Rotation-A.mp4') }}"></video>
         <video class="d-none" playsinline preload autoplay muted
@@ -56,13 +61,14 @@
         <video class="d-none" playsinline preload autoplay muted
             data-src="{{ asset('home/images/nispaviva/X-Rotation-E.mp4') }}"></video>
     </section>
-    
+
 
     <div class="buy-wrapper-box">
         <div class="container">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                     <div class="title d-flex align-items-center" style="height: 100%">
+                        <!-- Tiêu đề, slogan xe -->
                         <h1>NISPA VIVA - LƯỚT PHONG CÁCH THỜI TRANG</h1>
                     </div>
                 </div>
@@ -71,6 +77,7 @@
     </div>
 
     <div class="wrapper-image-itelligent">
+        <!-- Hình ảnh (section 2) (kt: 1910 × 1035 px) -->
         <img class="w-100" src="{{ asset('home/images/nispaviva/section1.png') }}" alt="section1">
     </div>
 
@@ -86,6 +93,7 @@
         </div>
         <div class="parts-bike__container padding-container">
             <div class="parts-bike__list parts-bike__list_type__owl owl-carousel owl-theme">
+                <!-- Ảnh chi tiết xe trong tabs hình ảnh chi tiết -->
                 <div class="parts-bike__item js-aos aos-init aos-animate" data-aos="fade-left" data-aos-delay="0"
                     data-aos-duration="300">
                     <picture>
@@ -142,9 +150,10 @@
 
     <section class="section section-video" data-component-list="Video">
         <div class="video-copy">
-            <a data-fancybox data-width="auto" data-height="auto"
-                href="https://www.youtube.com/embed/yJG90zU3_ug"
+            <!-- url video youtube -->
+            <a data-fancybox data-width="auto" data-height="auto" href="https://www.youtube.com/embed/yJG90zU3_ug"
                 title="video">
+                <!-- ảnh nền section video -->
                 <figure class="image-video-crossover">
                     <img class="w-100" src="{{ asset('home/images/nispaviva/thumbnailvideo1.png') }}"
                         alt="thumbnailvideo1">
@@ -159,6 +168,7 @@
         </div>
     </section>
 
+    <!-- phần chung cho vô nội dung độc lập -->
     <section class="page-block-image page-block-dong-co-xanh" id="dong-co-xanh">
         <div class="breaking-wrap">
             <div class="row">
@@ -202,6 +212,7 @@
         </div>
     </section>
 
+    <!-- màu sắc -->
     <section class="section section-color"
         style="background: #000 url({{ asset('home/images/nispaviva/bg-360.png') }}) center / cover no-repeat;">
 
@@ -285,7 +296,7 @@
     </section>
 
 
-
+    <!-- ảnh 360  -->
     <section class="page-block-image page-block-image-360 product-360-views product-360-views-gogo" id="pdp-img-360">
         <div class="breaking-wrap product-images-list">
             <!-- Ảnh 360 -->
@@ -302,6 +313,7 @@
         </div>
     </section>
 
+    <!-- tiện ích -->
     <section class="section section-tienich">
         <div class="container">
             <div class="title-box-head text-center ">
@@ -401,6 +413,7 @@
         <input id="gallery-toggle-03" type="radio" class="gallery-toggle d-none" name="gallery">
 
         <div class="gallery-header">
+            <!-- Nâng cấp chính bạn -->
             <div class="gallery-header-content">
                 <h3 class="gallery-title">Nâng cấp chính bạn</h3>
                 <p class="gallery-copy">Mỗi màu sắc đều mang lại một phong cách riêng biệt cho người lái, thể hiện được
@@ -414,6 +427,7 @@
 
         <div class="gallery-container">
             <div class="gallery-images">
+                <!-- Hình ảnh gallery -->
                 <figure class="gallery-image gallery-image--01">
                 </figure>
                 <figure class="gallery-image gallery-image--02">
@@ -461,8 +475,7 @@
         </div>
     </section>
 
-
-
+    <!-- thông số kỹ thuật -->
     <section class="breaking-technology section" id="pdp-breaking-technology">
         <div class="breaking-wrap">
 

@@ -9,6 +9,7 @@
 <main>
     <section class="hero-section hero-gogo" style="min-height: unset">
         <div class="hero-main">
+            <!-- Hình ảnh banner xe (section 1) -->
             <div class="hero-background"
                 style="background: url({{ asset('home/images/x3/banner.png') }}) center / cover no-repeat;">
             </div>
@@ -22,6 +23,7 @@
         </div>
         <div class="tinhnang-owl story-items">
             <div data-story-track="" class="tinhnang-items-track owl-carousel owl-theme">
+                <!-- Hình ảnh tính năng(section 2)s -->
                 <div class="story-item container">
                     <figure class="image-story image-story--smart-1">
                         <img src="{{ asset('home/images/x3/tinhnang_1.png') }}" alt="tinhnang_1">
@@ -47,6 +49,7 @@
         </div>
         <div class="group-wrapper-func">
             <div class="d-flex align-items-center justify-content-between">
+                <!-- Thông tin chi tiết xe -->
                 <div class="func-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
                     <span style="color: #AFAFAF">Giảm xóc</span>
                     <h3>Đài Loan</h3>
@@ -73,8 +76,10 @@
 
     <section class="section section-video" data-component-list="Video">
         <div class="video-copy">
+            <!-- url video youtube -->
             <a data-fancybox data-width="auto" data-height="auto" href="https://www.youtube.com/embed/yJG90zU3_ug"
                 title="video">
+                <!-- ảnh nền section video -->
                 <figure class="image-video-crossover">
                     <img class="w-100" src="{{ asset('home/images/x3/thumbnailvideo1.png') }}" alt="thumbnailvideo1">
                 </figure>
@@ -88,6 +93,7 @@
         </div>
     </section>
 
+    <!-- phần chung cho vô nội dung độc lập -->
     <section class="page-block-image page-block-dong-co-xanh" id="dong-co-xanh">
         <div class="breaking-wrap">
             <div class="row">
@@ -131,6 +137,7 @@
         </div>
     </section>
 
+    <!-- ảnh màu xe -->
     <section class="section section-color"
         style="background: #000 url({{ asset('home/images/x3/bg-color.png') }}) no-repeat;">
 
@@ -209,17 +216,17 @@
         </div>
     </section>
 
-
+    <!-- Thông tin Công suất & Thời gian bảo hành -->
     <section class="page-block-details">
         <div class="row">
+            <!-- Thông tin Công suất & Thời gian bảo hành -->
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <div class="page-block-details-img aos-init aos-animate" data-aos="fade-up"
-                    data-aos-duration="2000">
+                <div class="page-block-details-img aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
                     <img src="{{ asset('home/images/x3/dongcoxanh2.png') }}" alt="dongcoxanh2">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 aos-init aos-animate" data-aos="zoom-in"
-                    data-aos-duration="2000">
+                data-aos-duration="2000">
                 <div class="page-block-details-content">
                     <div class="content">
                         <h2>Giảm xóc đài loan êm ái</h2>
@@ -260,6 +267,7 @@
         <input id="gallery-toggle-02" type="radio" class="gallery-toggle d-none" name="gallery">
         <input id="gallery-toggle-03" type="radio" class="gallery-toggle d-none" name="gallery">
 
+        <!-- Nâng cấp chính bạn -->
         <div class="gallery-header">
             <div class="gallery-header-content">
                 <h3 class="gallery-title">Nâng cấp chính bạn</h3>
@@ -272,6 +280,7 @@
             </div>
         </div>
 
+        <!-- Hình ảnh gallery -->
         <div class="gallery-container">
             <div class="gallery-images">
                 <figure class="gallery-image gallery-image--01">
@@ -321,7 +330,7 @@
         </div>
     </section>
 
-
+    <!-- thông số kỹ thuật -->
     <section class="breaking-technology section" id="pdp-breaking-technology">
         <div class="breaking-wrap">
 

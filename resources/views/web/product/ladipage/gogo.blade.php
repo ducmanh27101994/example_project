@@ -11,6 +11,7 @@
 <main>
     <section class="hero-section hero-gogo">
         <div class="hero-main">
+            <!-- Hình ảnh banner(section 1) -->
             <div class="hero-background"
                 style="background: url({{ asset('home/images/gogo/gogo_banner.png') }}) center / cover no-repeat;">
             </div>
@@ -22,7 +23,8 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                     <div class="title d-flex align-items-center aos-init aos-animate" data-aos="fade-left"
-                    data-aos-duration="1000" style="height: 100%">
+                        data-aos-duration="1000" style="height: 100%">
+                        <!-- Tiêu đề, slogan xe -->
                         <h1>GOGO FIONA - ĐÓN ĐẦU THỜI ĐẠI</h1>
                     </div>
                 </div>
@@ -50,6 +52,7 @@
         </div>
         <div class="tinhnang-owl story-items">
             <div data-story-track="" class="tinhnang-items-track owl-carousel owl-theme">
+                <!-- Hình ảnh tính năng(section 2) -->
                 <div class="story-item container">
                     <figure class="image-story image-story--smart-1">
                         <img src="{{ asset('home/images/gogo/tn_1.png') }}" alt="tn_1">
@@ -75,37 +78,35 @@
         </div>
         <div class="group-wrapper-func">
             <div class="d-flex align-items-center justify-content-between">
-                <div class="func-item aos-init aos-animate" data-aos="fade-up"
-                    data-aos-duration="1000">
+                <!-- Thông tin chi tiết xe -->
+                <div class="func-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
                     <span>Giảm xóc</span>
                     <h3>Đài Loan</h3>
                 </div>
-                <div class="func-item aos-init aos-animate" data-aos="fade-up"
-                    data-aos-duration="1300">
+                <div class="func-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1300">
                     <span>Đèn led</span>
                     <h3>Toàn xe</h3>
                 </div>
-                <div class="func-item aos-init aos-animate" data-aos="fade-up"
-                    data-aos-duration="1500">
+                <div class="func-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500">
                     <span>Mặt đồng hồ</span>
                     <h3>Led mở rộng</h3>
                 </div>
-                <div class="func-item aos-init aos-animate" data-aos="fade-up"
-                    data-aos-duration="1700">
+                <div class="func-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1700">
                     <span>Chiều cao xe</span>
                     <h3>1045 mm</h3>
                 </div>
-                <div class="func-item aos-init aos-animate" data-aos="fade-up"
-                    data-aos-duration="2000">
+                <div class="func-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
                     <span>Mở khoá</span>
                     <h3>Smartkey</h3>
                 </div>
             </div>
         </div>
-
     </section>
 
+
+    
     <section class="section section-feature">
+        <!-- Section 3 mô tả xe -->
         <div class="feature-bot-top-1 d-flex align-items-center">
             <div class="feature-box-top-1-left-image">
                 <div class="image">
@@ -127,8 +128,8 @@
                     <img src="{{ asset('home/images/gogo/feature1_2.png') }}" alt="feature1_2">
                 </div>
             </div>
-            <div class="feature-box-top-1-left-content feature-box-top-2-left-content-style aos-init aos-animate" data-aos="fade-up"
-                    data-aos-duration="2000">
+            <div class="feature-box-top-1-left-content feature-box-top-2-left-content-style aos-init aos-animate"
+                data-aos="fade-up" data-aos-duration="2000">
                 <div class="feature-box-top-1-left-box-content">
                     <h3>CỤM ĐÈN NỔI BẬT</h3>
                     <p>Nispa Vera đã kết hợp nhiều sắc thái màu sắc vào bảng điều khiển, ghế ngồi và thân xe, nổi bật
@@ -147,8 +148,13 @@
             </div>
         </div>
 
+        <!-- Section trải nghiệm niềm vui, cảm nhận sự an toàn -->
+
         <div class="breaking-experience-tabs breaking-technology-bot">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+                <!-- tiêu đề mô tả -->
+
                 <li class="nav-item">
                     <a class="nav-link active" id="tabexperience1" data-toggle="tab" href="javascript:void(0)"
                         role="tab" aria-controls="home" aria-selected="true">DỪNG LẠI NHANH CHÓNG, ĐẢM BẢO AN TOÀN
@@ -166,6 +172,7 @@
                 </li>
             </ul>
             <div class="tab-content">
+                <!-- nội dung mô tả & ảnh -->
                 <div class="tab-pane show active tabexperience1" id="tabexperience1" role="tabpanel"
                     aria-labelledby="tabexperience1">
                     <div class="tab-pane-info d-flex justify-content-center">
@@ -203,6 +210,7 @@
         </div>
     </section>
 
+    <!-- phần này chung chắc cho vào nội dung độc lập -->
     <section class="page-block-image page-block-dong-co-xanh" id="dong-co-xanh">
         <div class="breaking-wrap">
             <div class="row">
@@ -246,6 +254,7 @@
         </div>
     </section>
 
+    <!-- màu sắc -->
     <section class="section section-color">
 
         <div class="head_color_title">
@@ -323,6 +332,7 @@
         </div>
     </section>
 
+    <!-- ảnh 360 -->
     <section class="page-block-image page-block-image-360 product-360-views product-360-views-gogo" id="pdp-img-360"
         style="background: #040406;">
         <div class="breaking-wrap product-images-list">
@@ -345,6 +355,7 @@
         <input id="gallery-toggle-02" type="radio" class="gallery-toggle d-none" name="gallery">
         <input id="gallery-toggle-03" type="radio" class="gallery-toggle d-none" name="gallery">
 
+        <!-- Nâng cấp chính bạn -->
         <div class="gallery-header">
             <div class="gallery-header-content">
                 <h3 class="gallery-title">Nâng cấp chính bạn</h3>
@@ -357,6 +368,7 @@
             </div>
         </div>
 
+        <!-- gallery -->
         <div class="gallery-container">
             <div class="gallery-images">
                 <figure class="gallery-image gallery-image--01">
@@ -367,31 +379,31 @@
                 </figure>
 
                 <style>
-                .gallery-image--01 {
-                    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-01-mobile@2x.jpg?v=v1")
-                }
-
-                .gallery-image--02 {
-                    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-02-mobile@2x.jpg?v=v1")
-                }
-
-                .gallery-image--03 {
-                    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-03-mobile@2x.jpg?v=v1")
-                }
-
-                @media(min-aspect-ratio: 1/1) {
                     .gallery-image--01 {
-                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-01@2x.jpg?v=v1")
+                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-01-mobile@2x.jpg?v=v1")
                     }
 
                     .gallery-image--02 {
-                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-02@2x.jpg?v=v1")
+                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-02-mobile@2x.jpg?v=v1")
                     }
 
                     .gallery-image--03 {
-                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-03@2x.jpg?v=v1")
+                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-03-mobile@2x.jpg?v=v1")
                     }
-                }
+
+                    @media(min-aspect-ratio: 1/1) {
+                        .gallery-image--01 {
+                            background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-01@2x.jpg?v=v1")
+                        }
+
+                        .gallery-image--02 {
+                            background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-02@2x.jpg?v=v1")
+                        }
+
+                        .gallery-image--03 {
+                            background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-03@2x.jpg?v=v1")
+                        }
+                    }
                 </style>
 
             </div>
@@ -641,25 +653,25 @@
 <script src="https://cdn.jsdelivr.net/npm/@mladenilic/threesixty.js/dist/threesixty.js"></script>
 <script src="{{ asset('home/js/gallarey.js') }}"></script>
 @php
-$imageUrls = [asset('home/images/360.png')];
+    $imageUrls = [asset('home/images/360.png')];
 @endphp
 @if(!empty($images360))
-@foreach($images360 as $value)
-@php
-$imageUrls[] = $value->images;
-@endphp
-@endforeach
+    @foreach($images360 as $value)
+        @php
+            $imageUrls[] = $value->images;
+        @endphp
+    @endforeach
 @endif
 <script>
-var img360 = @json($imageUrls);
-if (img360 != '') {
-    const threesixty = new ThreeSixty(document.getElementById('threesixty'), {
-        image: img360,
-        count: 31,
-        perRow: 0,
-        width: '100%',
-        height: 680,
-    });
-}
+    var img360 = @json($imageUrls);
+    if (img360 != '') {
+        const threesixty = new ThreeSixty(document.getElementById('threesixty'), {
+            image: img360,
+            count: 31,
+            perRow: 0,
+            width: '100%',
+            height: 680,
+        });
+    }
 </script>
 @endsection

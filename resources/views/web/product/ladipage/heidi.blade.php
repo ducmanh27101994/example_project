@@ -7,9 +7,12 @@
 <link rel="stylesheet" href="{{ asset('home/css/style_ladi.css') }}" />
 
 <main>
+
+    <!-- Hình ảnh banner(section 1): sec_1_banner.png -->
     <section class="hero-section">
         <div class="hero-main">
-            <div class="hero-background" style="background: url({{ asset('home/images/sec_1_banner.png') }}) center / cover no-repeat;"></div>
+            <div class="hero-background"
+                style="background: url({{ asset('home/images/sec_1_banner.png') }}) center / cover no-repeat;"></div>
         </div>
     </section>
 
@@ -21,6 +24,7 @@
             </div>
             <div class="break-scooter">
                 <p class="heidi_text_head_line_top">
+                    <!-- Hình ảnh tên xe(section 2): HEIDI.png -->
                     <img src="{{ asset('home/images/HEIDI.png') }}" alt="HEIDI">
                 </p>
                 <p class="heidi_text_head_line_bottom">
@@ -32,6 +36,12 @@
                 <canvas></canvas>
             </div>
         </div>
+        <style>
+            /* Hình ảnh xe(section 2): hedi-dauxe.png */
+            .break-scooter::before {
+                background-image: url('{{ asset('home/images/hedi-dauxe.png') }}');
+            }
+        </style>
     </section>
 
     <section class="section section-fast progressive-image">
@@ -47,6 +57,18 @@
                         hành khỏe và êm trên mọi dạng địa hình.</p>
                 </div>
             </div>
+            <style>
+                /* Hình ảnh xe(section 3): OSK_7822.png */
+                .section-fast::after {
+                    background: url('{{ asset('home/images/OSK_7822.png') }}') center bottom / auto 100% no-repeat;
+                }
+
+                @media (min-width: 768px) {
+                    .section-fast::after {
+                        background-size: 65%;
+                    }
+                }
+            </style>
         </div>
 
         <div class="key-number-wrapper">
@@ -91,7 +113,9 @@
         </div>
     </section>
 
-    <section class="section section-color">
+    <!-- Hình ảnh xe da dạng màu sắc(section 4): Banner_color.png -->
+    <section class="section section-color"
+        style="background: #000 url({{ asset('home/images/Banner_color.png') }}) no-repeat;">
 
         <div class="head_color_title">
             <h2>Đa dạng màu sắc</h2>
@@ -99,49 +123,40 @@
                 họ.</p>
         </div>
 
+        <!-- load icon màu sắc và hình ảnh -->
         <div class="top-main-img">
             <div class="mySliderTop">
                 <div class>
                     <picture>
-                        <source
-                            srcset="{{ asset('home/images/color_image_heidi.png') }}"
-                            type="image/webp" />
-                        <img data-lazy="{{ asset('home/images/color_image_heidi.png') }}"
-                            title alt="Xe máy điện VinFast Evo200 màu vàng" width="100%" />
+                        <source srcset="{{ asset('home/images/color_image_heidi.png') }}" type="image/webp" />
+                        <img data-lazy="{{ asset('home/images/color_image_heidi.png') }}" title
+                            alt="Xe máy điện VinFast Evo200 màu vàng" width="100%" />
                     </picture>
                 </div>
                 <div class>
                     <picture>
-                        <source
-                            data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}"
-                            type="image/webp" />
+                        <source data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}" type="image/webp" />
                         <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
                             alt="Xe máy điện VinFast Evo200 màu đen" width="100%" />
                     </picture>
                 </div>
                 <div class>
                     <picture>
-                        <source
-                            data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}"
-                            type="image/webp" />
+                        <source data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}" type="image/webp" />
                         <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
                             alt="Xe máy điện VinFast Evo200 màu đỏ" width="100%" />
                     </picture>
                 </div>
                 <div class>
                     <picture>
-                        <source
-                            data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}"
-                            type="image/webp" />
+                        <source data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}" type="image/webp" />
                         <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
                             alt="Xe máy điện VinFast Evo200 màu xanh" width="100%" />
                     </picture>
                 </div>
                 <div class>
                     <picture>
-                        <source
-                            data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}"
-                            type="image/webp" />
+                        <source data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}" type="image/webp" />
                         <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
                             alt="Xe máy điện VinFast Evo200 màu trắng" width="100%" />
                     </picture>
@@ -194,12 +209,15 @@
                 </div>
             </div>
 
+            <!-- Section Perfectly Stealth -->
+
             <div class="design-topics">
                 <div class="design-topic">
                     <div class="design-topic__image aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
                         <div class="image-design image-design--dashboard"></div>
                     </div>
-                    <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-left" data-aos-duration="2000">
+                    <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-left"
+                        data-aos-duration="2000">
                         <div>
                             <h4 class="subhead">Màn hình LED đa sắc</h4>
                             <p>Bằng cách đồng bộ thiết kế bề mặt màn hình màu đen, khiến người dùng tập trung hơn vào
@@ -210,9 +228,10 @@
                 </div>
                 <div class="design-topic">
                     <div class="design-topic__image aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
-                        <div class="image-design image-design--seat" ></div>
+                        <div class="image-design image-design--seat"></div>
                     </div>
-                    <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-right" data-aos-duration="2000">
+                    <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-right"
+                        data-aos-duration="2000">
                         <div>
                             <h4 class="subhead">SOS Mode <br /> Tính năng cứu hộ hiện đại</h4>
                             <p>Bằng cách đồng bộ thiết kế bề mặt màn hình màu đen, khiến người dùng tập trung hơn vào
@@ -223,9 +242,10 @@
                 </div>
                 <div class="design-topic">
                     <div class="design-topic__image aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
-                        <div class="image-design image-design--floor" ></div>
+                        <div class="image-design image-design--floor"></div>
                     </div>
-                    <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-left" data-aos-duration="2000">
+                    <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-left"
+                        data-aos-duration="2000">
                         <div>
                             <h4 class="subhead">Bàn đạp trợ lực khi lên dốc</h4>
                             <p>Bằng cách đồng bộ thiết kế bề mặt màn hình màu đen, khiến người dùng tập trung hơn vào
@@ -236,9 +256,10 @@
                 </div>
                 <div class="design-topic">
                     <div class="design-topic__image aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
-                        <div class="image-design image-design--wheel" ></div>
+                        <div class="image-design image-design--wheel"></div>
                     </div>
-                    <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-right" data-aos-duration="2000">
+                    <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-right"
+                        data-aos-duration="2000">
                         <div>
                             <h4 class="subhead">Thẻ NFC <br /> Một chạm mở khoá</h4>
                             <p>Bằng cách đồng bộ thiết kế bề mặt màn hình màu đen, khiến người dùng tập trung hơn vào
@@ -252,6 +273,7 @@
 
     </section>
 
+    <!-- ảnh 360 -->
     <section class="page-block-image page-block-image-360" id="pdp-img-360" style="background: #1B1B1E;">
         <div class="breaking-wrap">
             <div class="wrap_image">
@@ -259,18 +281,20 @@
             </div>
         </div>
     </section>
-    
+
+    <!-- phần này chung chắc cho vào nội dung độc lập -->
     <section class="page-block-image page-block-dong-co-xanh" id="dong-co-xanh">
         <div class="breaking-wrap">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                     <div class="dong-co-xanh_img ">
-                        <div class="wrap_image aos-init aos-animate"  data-aos="zoom-out-down" data-aos-duration="10000">
+                        <div class="wrap_image aos-init aos-animate" data-aos="zoom-out-down" data-aos-duration="10000">
                             <img src="{{ asset('home/images/dongcoxanh.png') }}" alt="dongcoxanh">
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 aos-init aos-animate" data-aos="fade-up"
+                    data-aos-duration="2000">
                     <div class="dong-co-xanh_text">
                         <div class="text_head">
                             <h2> ĐỘNG CƠ ĐỘC QUYỀN
@@ -302,11 +326,24 @@
         </div>
     </section>
 
+    <!-- Section chi tiết nổi bật xe -->
     <section class="section section-performance progressive-image">
         <div class="performance-gallery">
             <div class="performance performance--caliper">
                 <div class="performance-bg performance-bg--caliper"></div>
+                <style>
+                    /* Hình ảnh 2 */
+                    .performance-bg--caliper {
+                        background-image: url({{ asset('home/images/cobandap-chitiet.png') }});
+                    }
+
+                    /* Hình ảnh 1 */
+                    .performance-bg--caliper::before {
+                        background-image: url({{ asset('home/images/cobandap-fullsang.png') }});
+                    }
+                </style>
                 <div class="performance-content">
+                    <!-- nội dung từng phần -->
                     <div class="section-content">
                         <div class="performance-content-sizer">
                             <h4 class="subhead">Bàn đạp trợ lực khi lên dốc</h4>
@@ -320,7 +357,19 @@
             </div>
             <div class="performance performance--f-suspension">
                 <div class="performance-bg performance-bg--f-suspension"></div>
+                <style>
+                    /* Hình ảnh 2 */
+                    .performance-bg--f-suspension {
+                        background-image: url({{ asset('home/images/phanhdia-chitiet.png') }});
+                    }
+
+                    /* Hình ảnh 1 */
+                    .performance-bg--f-suspension::before {
+                        background-image: url({{ asset('home/images/phanhdia-fullsang.png') }});
+                    }
+                </style>
                 <div class="performance-content">
+                    <!-- nội dung từng phần -->
                     <div class="section-content">
                         <div class="performance-content-sizer">
                             <h4 class="subhead">Phanh đĩa đảm bảo an toàn</h4>
@@ -333,7 +382,19 @@
             </div>
             <div class="performance performance--r-suspension">
                 <div class="performance-bg performance-bg--r-suspension"></div>
+                <style>
+                    /* Hình ảnh 2 */
+                    .performance-bg--r-suspension {
+                        background-image: url({{ asset('home/images/giamxoc-chitiet.png') }});
+                    }
+
+                    /* Hình ảnh 1 */
+                    .performance-bg--r-suspension::before {
+                        background-image: url({{ asset('home/images/giamxoc-fullsang.png') }});
+                    }
+                </style>
                 <div class="performance-content">
+                    <!-- nội dung từng phần -->
                     <div class="section-content">
                         <div class="performance-content-sizer">
                             <h4 class="subhead">Giảm xóc êm ái</h4>
@@ -351,6 +412,7 @@
         <img src="{{ asset('home/images/section8_gallarey.png') }}" alt="section8_gallarey">
     </section>
 
+    <!-- thông số kỹ thuật -->
     <section class="breaking-technology section" id="pdp-breaking-technology">
         <div class="breaking-wrap">
 
@@ -358,14 +420,14 @@
                 <h3 class="headline text-center">Thông số kỹ thuật</h3>
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="tabInfoProduct" data-toggle="tab" href="javascript:void(0)" role="tab"
-                            aria-controls="home" aria-selected="true">
+                        <a class="nav-link active" id="tabInfoProduct" data-toggle="tab" href="javascript:void(0)"
+                            role="tab" aria-controls="home" aria-selected="true">
                             <h2 class="tab-title">THÔNG SỐ SẢN PHẨM</h2>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="tabBatteryPackages" data-toggle="tab" href="javascript:void(0)" role="tab"
-                            aria-controls="profile" aria-selected="false">
+                        <a class="nav-link" id="tabBatteryPackages" data-toggle="tab" href="javascript:void(0)"
+                            role="tab" aria-controls="profile" aria-selected="false">
                             <h2 class="tab-title">DỊCH VỤ PIN</h2>
                         </a>
                     </li>
@@ -432,7 +494,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="tab-pane fade tabBatteryPackages" id="tabBatteryPackages" role="tabpanel" aria-labelledby="tabBatteryPackages">
+                    <div class="tab-pane fade tabBatteryPackages" id="tabBatteryPackages" role="tabpanel"
+                        aria-labelledby="tabBatteryPackages">
                         <div class="breaking-battery-tab d-flex justify-content-between">
                             <div>
                                 <h3 class="pin-subtitle">Gói thuê PIN</h3>
