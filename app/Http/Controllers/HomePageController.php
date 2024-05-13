@@ -106,7 +106,7 @@ class HomePageController extends BaseController
             ->leftJoin('category', 'blogs.category_id', '=', 'category.id')
             ->where('blogs.status', '=', 'active')
             ->orderBy('blogs.created_at', 'desc')
-            ->select('blogs.created_at', 'blogs.slug', 'blogs.representative_image','category.category_title','blogs.news_headlines','blogs.describe')
+            ->select('blogs.created_at', 'blogs.slug', 'blogs.representative_image', 'category.category_title', 'blogs.news_headlines', 'blogs.describe')
             ->get();
 
 
@@ -236,8 +236,31 @@ class HomePageController extends BaseController
             ->orderBy('created_at', 'asc')
             ->get();
 
+        $gogo_images_banner2_multi = DB::table('images_products')
+            ->where('product_id', '=', $product->id)
+            ->where('code', '=', 'gogo_images_banner2_multi')
+            ->orderBy('created_at', 'asc')
+            ->get();
 
-        return view('web.product.detailsBasic', compact('images360', 'color_image', 'icon_images', 'product', 'feature_description', 'vehicle_detail_photos', 'actual_photo'));
+        $gogo_images_banner13 = DB::table('images_products')
+            ->where('product_id', '=', $product->id)
+            ->where('code', '=', 'gogo_images_banner13')
+            ->orderBy('created_at', 'asc')
+            ->get();
+
+        $gogo_tinhnang_image = DB::table('images_products')
+            ->where('product_id', '=', $product->id)
+            ->where('code', '=', 'gogo_tinhnang_image')
+            ->orderBy('created_at', 'asc')
+            ->get();
+
+        if ($product->interface_type == 2) {
+            return view('web.product.ladipage.heidi', compact('product', 'color_image', 'icon_images', 'images360'));
+        } elseif ($product->interface_type == 3) {
+            return view('web.product.ladipage.gogo', compact('images360', 'color_image', 'icon_images','product','gogo_tinhnang_image','gogo_images_banner13','gogo_images_banner2_multi'));
+        } else {
+            return view('web.product.detailsBasic', compact('images360', 'color_image', 'icon_images', 'product', 'feature_description', 'vehicle_detail_photos', 'actual_photo'));
+        }
     }
 
     public function categoryProduct()

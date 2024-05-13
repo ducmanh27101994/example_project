@@ -274,6 +274,70 @@ class CategoryController extends BaseController
             'new_product' => $new_product,
             'selling_products' => $selling_products,
             'promotional_products' => $promotional_products,
+
+            //Hedi
+            'heidi_images_banner1' => !empty($request->heidi_images_banner1) ? $this->uploadService->upload_param($request->heidi_images_banner1) : '',
+            'heidi_images_banner2' => !empty($request->heidi_images_banner2) ? $this->uploadService->upload_param($request->heidi_images_banner2) : '',
+            'heidi_images_banner3' => !empty($request->heidi_images_banner3) ? $this->uploadService->upload_param($request->heidi_images_banner3) : '',
+            'heidi_images_banner4' => !empty($request->heidi_images_banner4) ? $this->uploadService->upload_param($request->heidi_images_banner4) : '',
+            'heidi_images_banner5' => !empty($request->heidi_images_banner5) ? $this->uploadService->upload_param($request->heidi_images_banner5) : '',
+            'heidi_images_banner6' => !empty($request->heidi_images_banner6) ? $this->uploadService->upload_param($request->heidi_images_banner6) : '',
+            'heidi_title_banner6' => $request->heidi_title_banner6 ?? '',
+            'heidi_desc_banner6' => $request->heidi_desc_banner6 ?? '',
+            'heidi_images_banner7' => !empty($request->heidi_images_banner7) ? $this->uploadService->upload_param($request->heidi_images_banner7) : '',
+            'heidi_title_banner7' => $request->heidi_title_banner7 ?? '',
+            'heidi_desc_banner7' => $request->heidi_desc_banner7 ?? '',
+            'heidi_images_banner8' => !empty($request->heidi_images_banner8) ? $this->uploadService->upload_param($request->heidi_images_banner8) : '',
+            'heidi_title_banner8' => $request->heidi_title_banner8 ?? '',
+            'heidi_desc_banner8' => $request->heidi_desc_banner8 ?? '',
+            'heidi_images_banner9' => !empty($request->heidi_images_banner9) ? $this->uploadService->upload_param($request->heidi_images_banner9) : '',
+            'heidi_title_banner9' => $request->heidi_title_banner9 ?? '',
+            'heidi_desc_banner9' => $request->heidi_desc_banner9 ?? '',
+            'heidi_images_banner10' => !empty($request->heidi_images_banner10) ? $this->uploadService->upload_param($request->heidi_images_banner10) : '',
+            'heidi_images_banner10_1' => !empty($request->heidi_images_banner10_1) ? $this->uploadService->upload_param($request->heidi_images_banner10_1) : '',
+            'heidi_title_banner10' => $request->heidi_title_banner10 ?? '',
+            'heidi_desc_banner10' => $request->heidi_desc_banner10 ?? '',
+            'heidi_images_banner11' => !empty($request->heidi_images_banner11) ? $this->uploadService->upload_param($request->heidi_images_banner11) : '',
+            'heidi_images_banner11_1' => !empty($request->heidi_images_banner11_1) ? $this->uploadService->upload_param($request->heidi_images_banner11_1) : '',
+            'heidi_title_banner11' => $request->heidi_title_banner11 ?? '',
+            'heidi_desc_banner11' => $request->heidi_desc_banner11 ?? '',
+            'heidi_images_banner12' => !empty($request->heidi_images_banner12) ? $this->uploadService->upload_param($request->heidi_images_banner12) : '',
+            'heidi_images_banner12_1' => !empty($request->heidi_images_banner12_1) ? $this->uploadService->upload_param($request->heidi_images_banner12_1) : '',
+            'heidi_title_banner12' => $request->heidi_title_banner12 ?? '',
+            'heidi_desc_banner12' => $request->heidi_desc_banner12 ?? '',
+            'heidi_images_banner13' => !empty($request->heidi_images_banner13) ? $this->uploadService->upload_param($request->heidi_images_banner13) : '',
+
+            //Gogo
+            'gogo_slogan' => $request->gogo_slogan ?? '',
+            'gogo_images_banner1' => !empty($request->gogo_images_banner1) ? $this->uploadService->upload_param($request->gogo_images_banner1) : '',
+            'gogo_images_banner4' => !empty($request->gogo_images_banner4) ? $this->uploadService->upload_param($request->gogo_images_banner4) : '',
+            'gogo_images_banner5' => !empty($request->gogo_images_banner5) ? $this->uploadService->upload_param($request->gogo_images_banner5) : '',
+            'gogo_images_banner6' => !empty($request->gogo_images_banner6) ? $this->uploadService->upload_param($request->gogo_images_banner6) : '',
+            'gogo_images_banner7' => !empty($request->gogo_images_banner7) ? $this->uploadService->upload_param($request->gogo_images_banner7) : '',
+            'gogo_images_banner8' => !empty($request->gogo_images_banner8) ? $this->uploadService->upload_param($request->gogo_images_banner8) : '',
+            'gogo_images_banner9' => !empty($request->gogo_images_banner9) ? $this->uploadService->upload_param($request->gogo_images_banner9) : '',
+            'gogo_images_banner10' => !empty($request->gogo_images_banner10) ? $this->uploadService->upload_param($request->gogo_images_banner10) : '',
+            'gogo_images_banner11' => !empty($request->gogo_images_banner11) ? $this->uploadService->upload_param($request->gogo_images_banner11) : '',
+            'gogo_desc_3' => $request->gogo_desc_3 ?? '',
+            'gogo_title_banner4' => $request->gogo_title_banner4 ?? '',
+            'gogo_desc_banner4' => $request->gogo_desc_banner4 ?? '',
+            'gogo_title_banner5' => $request->gogo_title_banner5 ?? '',
+            'gogo_desc_banner5' => $request->gogo_desc_banner5 ?? '',
+            'gogo_title_banner6' => $request->gogo_title_banner6 ?? '',
+            'gogo_desc_banner6' => $request->gogo_desc_banner6 ?? '',
+            'gogo_title_banner7' => $request->gogo_title_banner7 ?? '',
+            'gogo_desc_banner7' => $request->gogo_desc_banner7 ?? '',
+            'gogo_title_banner8' => $request->gogo_title_banner8 ?? '',
+            'gogo_desc_banner8' => $request->gogo_desc_banner8 ?? '',
+            'gogo_title_banner9' => $request->gogo_title_banner9 ?? '',
+            'gogo_desc_banner9' => $request->gogo_desc_banner9 ?? '',
+            'gogo_title_banner10' => $request->gogo_title_banner10 ?? '',
+            'gogo_desc_banner10' => $request->gogo_desc_banner10 ?? '',
+            'gogo_title_banner11' => $request->gogo_title_banner11 ?? '',
+            'gogo_desc_banner11' => $request->gogo_desc_banner11 ?? '',
+            'gogo_title_banner12' => $request->gogo_title_banner12 ?? '',
+            'gogo_desc_banner12' => $request->gogo_desc_banner12 ?? '',
+
         ];
 
         $product = $this->productRepositories->create($data);
@@ -355,12 +419,44 @@ class CategoryController extends BaseController
                     $this->imagesRepositories->create($color_image);
                 }
             }
+            if (!empty($request->gogo_images_banner2_multi)) {
+                foreach ($request->gogo_images_banner2_multi as $value) {
+                    $images = $this->uploadService->upload_param($value);
+                    $color_image = [
+                        'product_id' => $product->id,
+                        'code' => 'gogo_images_banner2_multi',
+                        'images' => $images
+                    ];
+                    $this->imagesRepositories->create($color_image);
+                }
+            }
+            if (!empty($request->gogo_images_banner13)) {
+                foreach ($request->gogo_images_banner13 as $value) {
+                    $images = $this->uploadService->upload_param($value);
+                    $color_image = [
+                        'product_id' => $product->id,
+                        'code' => 'gogo_images_banner13',
+                        'images' => $images
+                    ];
+                    $this->imagesRepositories->create($color_image);
+                }
+            }
+            if (!empty($request->gogo_tinhnang_image)) {
+                foreach ($request->gogo_tinhnang_image as $value) {
+                    $images = $this->uploadService->upload_param($value);
+                    $color_image = [
+                        'product_id' => $product->id,
+                        'code' => 'gogo_tinhnang_image',
+                        'images' => $images
+                    ];
+                    $this->imagesRepositories->create($color_image);
+                }
+            }
 
         }
 
         toastr()->success('Thêm mới thành công', 'Success');
         return redirect()->route('admin.list.product');
-
 
     }
 
@@ -373,6 +469,7 @@ class CategoryController extends BaseController
 
         return $text;
     }
+
     public function editProduct($id)
     {
 
@@ -413,7 +510,25 @@ class CategoryController extends BaseController
             ->orderBy('created_at', 'asc')
             ->get();
 
-        return view('admin.product.details.editProduct', compact('images360', 'color_image', 'icon_images', 'product', 'categoryProduct', 'feature_description', 'vehicle_detail_photos', 'actual_photo'));
+        $gogo_images_banner2_multi = DB::table('images_products')
+            ->where('product_id', '=', $id)
+            ->where('code', '=', 'gogo_images_banner2_multi')
+            ->orderBy('created_at', 'asc')
+            ->get();
+
+        $gogo_images_banner13 = DB::table('images_products')
+            ->where('product_id', '=', $id)
+            ->where('code', '=', 'gogo_images_banner13')
+            ->orderBy('created_at', 'asc')
+            ->get();
+
+        $gogo_tinhnang_image = DB::table('images_products')
+            ->where('product_id', '=', $id)
+            ->where('code', '=', 'gogo_tinhnang_image')
+            ->orderBy('created_at', 'asc')
+            ->get();
+
+        return view('admin.product.details.editProduct', compact('gogo_tinhnang_image','gogo_images_banner13','gogo_images_banner2_multi','images360', 'color_image', 'icon_images', 'product', 'categoryProduct', 'feature_description', 'vehicle_detail_photos', 'actual_photo'));
 
     }
 
@@ -465,6 +580,38 @@ class CategoryController extends BaseController
             'new_product' => $new_product,
             'selling_products' => $selling_products,
             'promotional_products' => $promotional_products,
+
+            //Hedi
+            'heidi_images_banner1' => !empty($request->heidi_images_banner1) ? $this->uploadService->upload_param($request->heidi_images_banner1) : $this->productRepositories->find($id)->heidi_images_banner1,
+            'heidi_images_banner2' => !empty($request->heidi_images_banner2) ? $this->uploadService->upload_param($request->heidi_images_banner2) : $this->productRepositories->find($id)->heidi_images_banner2,
+            'heidi_images_banner3' => !empty($request->heidi_images_banner3) ? $this->uploadService->upload_param($request->heidi_images_banner3) : $this->productRepositories->find($id)->heidi_images_banner3,
+            'heidi_images_banner4' => !empty($request->heidi_images_banner4) ? $this->uploadService->upload_param($request->heidi_images_banner4) : $this->productRepositories->find($id)->heidi_images_banner4,
+            'heidi_images_banner5' => !empty($request->heidi_images_banner5) ? $this->uploadService->upload_param($request->heidi_images_banner5) : $this->productRepositories->find($id)->heidi_images_banner5,
+            'heidi_images_banner6' => !empty($request->heidi_images_banner6) ? $this->uploadService->upload_param($request->heidi_images_banner6) : $this->productRepositories->find($id)->heidi_images_banner6,
+            'heidi_title_banner6' => $request->heidi_title_banner6 ?? '',
+            'heidi_desc_banner6' => $request->heidi_desc_banner6 ?? '',
+            'heidi_images_banner7' => !empty($request->heidi_images_banner7) ? $this->uploadService->upload_param($request->heidi_images_banner7) : $this->productRepositories->find($id)->heidi_images_banner7,
+            'heidi_title_banner7' => $request->heidi_title_banner7 ?? '',
+            'heidi_desc_banner7' => $request->heidi_desc_banner7 ?? '',
+            'heidi_images_banner8' => !empty($request->heidi_images_banner8) ? $this->uploadService->upload_param($request->heidi_images_banner8) : $this->productRepositories->find($id)->heidi_images_banner8,
+            'heidi_title_banner8' => $request->heidi_title_banner8 ?? '',
+            'heidi_desc_banner8' => $request->heidi_desc_banner8 ?? '',
+            'heidi_images_banner9' => !empty($request->heidi_images_banner9) ? $this->uploadService->upload_param($request->heidi_images_banner9) : $this->productRepositories->find($id)->heidi_images_banner9,
+            'heidi_title_banner9' => $request->heidi_title_banner9 ?? '',
+            'heidi_desc_banner9' => $request->heidi_desc_banner9 ?? '',
+            'heidi_images_banner10' => !empty($request->heidi_images_banner10) ? $this->uploadService->upload_param($request->heidi_images_banner10) : $this->productRepositories->find($id)->heidi_images_banner10,
+            'heidi_images_banner10_1' => !empty($request->heidi_images_banner10_1) ? $this->uploadService->upload_param($request->heidi_images_banner10_1) : $this->productRepositories->find($id)->heidi_images_banner10_1,
+            'heidi_title_banner10' => $request->heidi_title_banner10 ?? '',
+            'heidi_desc_banner10' => $request->heidi_desc_banner10 ?? '',
+            'heidi_images_banner11' => !empty($request->heidi_images_banner11) ? $this->uploadService->upload_param($request->heidi_images_banner11) : $this->productRepositories->find($id)->heidi_images_banner11,
+            'heidi_images_banner11_1' => !empty($request->heidi_images_banner11_1) ? $this->uploadService->upload_param($request->heidi_images_banner11_1) : $this->productRepositories->find($id)->heidi_images_banner11_1,
+            'heidi_title_banner11' => $request->heidi_title_banner11 ?? '',
+            'heidi_desc_banner11' => $request->heidi_desc_banner11 ?? '',
+            'heidi_images_banner12' => !empty($request->heidi_images_banner12) ? $this->uploadService->upload_param($request->heidi_images_banner12) : $this->productRepositories->find($id)->heidi_images_banner12,
+            'heidi_images_banner12_1' => !empty($request->heidi_images_banner12_1) ? $this->uploadService->upload_param($request->heidi_images_banner12_1) : $this->productRepositories->find($id)->heidi_images_banner12_1,
+            'heidi_title_banner12' => $request->heidi_title_banner12 ?? '',
+            'heidi_desc_banner12' => $request->heidi_desc_banner12 ?? '',
+            'heidi_images_banner13' => !empty($request->heidi_images_banner13) ? $this->uploadService->upload_param($request->heidi_images_banner13) : $this->productRepositories->find($id)->heidi_images_banner13,
         ];
 
         $product = $this->productRepositories->update($id, $data);
@@ -578,7 +725,8 @@ class CategoryController extends BaseController
 
     }
 
-    public function deleteBlog($id) {
+    public function deleteBlog($id)
+    {
         $blog = Blog::findOrFail($id);
         $blog->delete();
         return redirect()->back();
