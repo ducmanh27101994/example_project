@@ -1452,68 +1452,18 @@
                                 <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-1"
                                     style="background-color: rgb(245, 245, 245); border-color: rgb(193, 193, 193);">
                                     <span class="resp-arrow"></span>x3</h2>
-                                <div class="resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-3"
+                                    <div class="resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-3"
                                      style="border-color: rgb(193, 193, 193);">
 
                                     <div class="row">
-                                        <div class="col-sm-12">
-                                            <div class="block_sp">
-                                                <div class="form-group">
-                                                    <label class="text-no-bold" data-bind="text: Title">Tiêu đề, slogan xe</label>
-                                                    <input type="text" name="" id="" value="NISPA VIVA - LƯỚT PHONG CÁCH THỜI TRANG" placeholder="NISPA VIVA - LƯỚT PHONG CÁCH THỜI TRANG" class="form-control" style="width:100%;">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <hr>
-
-                                        <div class="col-sm-12 ">
-                                            <p class="ttg">video nền section 1</p>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
-                                                    <div class="form-group">
-                                                        <!-- upload mutil video ngắn  -->
-                                                        <label class="text-no-bold" data-bind="text: Title">upload video nền</label>
-                                                        <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
-                                                    </div>
-                                                        <div style="display: flex;align-items: center;gap: 10px;">
-                                                        <video style="width: 300px;" playsinline preload autoplay muted
-                                                            src="{{ asset('home/images/nispaviva/X-Rotation-A.mp4') }}"></video>
-                                                        <video style="width: 300px;" playsinline preload autoplay muted
-                                                            src="{{ asset('home/images/nispaviva/X-Rotation-B.mp4') }}"></video>
-                                                        <video style="width: 300px;" playsinline preload autoplay muted
-                                                            src="{{ asset('home/images/nispaviva/X-Rotation-C.mp4') }}"></video>
-                                                        <video style="width: 300px;" playsinline preload autoplay muted
-                                                            src="{{ asset('home/images/nispaviva/X-Rotation-D.mp4') }}"></video>
-                                                        <video style="width: 300px;" playsinline preload autoplay muted
-                                                            src="{{ asset('home/images/nispaviva/X-Rotation-E.mp4') }}"></video>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <hr>
-
                                         <div class="col-sm-4">
                                             <div class="block_sp">
                                                 <div class="form-group">
-                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh logo xe(section 1)</label>
-                                                    <input type="file" name="" id="" class="pull-right" style="width:180px;">
-                                                </div>
-                                                <div style="background: black">
-                                                    <img style="width: 180px; height: auto" src="{{ asset('home/images/nispaviva/titlenispabanner.png') }}">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="block_sp">
-                                                <div class="form-group">
-                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh (section 2) (kt: 1910 × 1035 px)</label>
+                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh banner xe (section 1)</label>
                                                     <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
                                                 </div>
                                                 <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;">
-                                                    <img style="width: 155px; height: auto" src="{{ asset('home/images/nispaviva/section1.png') }}">
+                                                    <img style="width: 155px; height: auto" src="{{ asset('home/images/x3/banner.png') }}">
                                                 </div>
                                             </div>
                                         </div>
@@ -1527,91 +1477,102 @@
                                                     <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
                                                 </div>
                                                 <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;">
-                                                    <img style="width: 155px; height: auto" src="{{ asset('home/images/nispaviva/thumbnailvideo1.png') }}">
+                                                    <img style="width: 155px; height: auto" src="{{ asset('home/images/x3/thumbnailvideo1.png') }}">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-4">
+                                            <div class="block_sp">
+                                                <div class="form-group">
+                                                    <!-- multi ảnh -->
+                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh tính năng(section 2) (kt: 980 × 564 px)</label>
+                                                    <input type="file" name="gogo_tinhnang_image" id="flupload" class="pull-right" style="width:180px;">
+                                                </div>
+                                                <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;">
+                                                    <img style="width: 155px; height: auto" src="{{ asset('home/images/x3/tinhnang_1.png') }}">
+                                                    <img style="width: 155px; height: auto" src="{{ asset('home/images/x3/tinhnang_2.png') }}">
+                                                    <img style="width: 155px; height: auto" src="{{ asset('home/images/x3/tinhnang_3.png') }}">
                                                 </div>
                                             </div>
                                         </div>
 
                                         <hr>
-
-                                        <div class="col-sm-12 ">
-                                            <p class="ttg">Section tiện ích</p>
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
-                                                    <div class="form-group">
-                                                        <label class="text-no-bold" data-bind="text: Title">tabs 1</label>
-                                                        <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
-                                                    </div>
-                                                        <div>
-                                                            <img style="width: 180px; height: auto" src="{{ asset('home/images/gogo/tienich_1.png') }}">
-                                                        </div>
-                                                        <label class="next-label">Mô tả 1</label>
-                                                        <input name="" type="text" value="CỐP RỘNG BAO LA" id="" class="inputbox" placeholder="CỐP RỘNG BAO LA" style="width:100%;">
-                                                        <textarea name="" rows="5" cols="70" id="" class="inputbox" style="width: 100%; height:80px;">
-                                                            <!-- nội dung html -->
-                                                            <div>
-                                                                <h2>Cốp rộng bao la</h2>
-                                                                <ul>
-                                                                    <li>Để đồ thả ga với dung tích 20</li>
-                                                                    <li>Tăng tính tiện lợi</li>
-                                                                </ul>
-                                                            </div>
-                                                        </textarea>
-
-                                                    </div>
+                                        <div class="col-sm-12">
+                                            <div class="block_sp">
+                                                <div class="form-group">
+                                                    <label class="text-no-bold" data-bind="text: Title">Thông tin chi tiết xe</label>
                                                 </div>
-                                                <div class="col-sm-4">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
-                                                    <div class="form-group">
-                                                        <label class="text-no-bold" data-bind="text: Title">tabs 2</label>
-                                                        <input type="file" name="representative_image" id="flupload" class="pull-right" style="width:180px;">
-                                                    </div>
-                                                        <div>
-                                                            <img style="width: 180px; height: auto" src="{{ asset('home/images/gogo/tienich_1.png') }}">
-                                                        </div>
-                                                        <label class="next-label">Mô tả 2</label>
-                                                        <input name="" type="text" value="CỔNG SẠC USB" id="" class="inputbox" placeholder="CỔNG SẠC USB" style="width:100%;">
-                                                        <textarea name="" rows="5" cols="70" id="" class="inputbox" style="width: 100%; height:80px;">
-                                                            <!-- nội dung html -->
-                                                            <div>
-                                                                <h2>Cốp rộng bao la</h2>
-                                                                <ul>
-                                                                    <li>Để đồ thả ga với dung tích 20</li>
-                                                                    <li>Tăng tính tiện lợi</li>
-                                                                </ul>
-                                                            </div>
-                                                        </textarea>
+                                                <div>
+                                                    <textarea name="" rows="12" col="12" id="" class="form-control">
 
+                                                    <!-- html nội dung chi tiết xe -->
+                                                    <!-- <div class="func-item aos-init aos-animate" data-aos="fade-up"
+                                                        data-aos-duration="1000">
+                                                        <span>Giảm xóc</span>
+                                                        <h3>Đài Loan</h3>
                                                     </div>
+                                                    <div class="func-item aos-init aos-animate" data-aos="fade-up"
+                                                        data-aos-duration="1300">
+                                                        <span>Đèn led</span>
+                                                        <h3>Toàn xe</h3>
+                                                    </div>
+                                                    <div class="func-item aos-init aos-animate" data-aos="fade-up"
+                                                        data-aos-duration="1500">
+                                                        <span>Mặt đồng hồ</span>
+                                                        <h3>Led mở rộng</h3>
+                                                    </div>
+                                                    <div class="func-item aos-init aos-animate" data-aos="fade-up"
+                                                        data-aos-duration="1700">
+                                                        <span>Chiều cao xe</span>
+                                                        <h3>1045 mm</h3>
+                                                    </div>
+                                                    <div class="func-item aos-init aos-animate" data-aos="fade-up"
+                                                        data-aos-duration="2000">
+                                                        <span>Mở khoá</span>
+                                                        <h3>Smartkey</h3>
+                                                    </div> -->
+
+                                                    </textarea>
                                                 </div>
-                                                <div class="col-sm-4">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
-                                                    <div class="form-group">
-                                                        <label class="text-no-bold" data-bind="text: Title">tabs 3</label>
-                                                        <input type="file" name="representative_image" id="flupload" class="pull-right" style="width:180px;">
-                                                    </div>
-                                                        <div>
-                                                            <img style="width: 180px; height: auto" src="{{ asset('home/images/gogo/tienich_1.png') }}">
-                                                        </div>
-                                                        <label class="next-label">Mô tả 3</label>
-                                                        <input name="" type="text" value="Móc treo đồ" id="" class="inputbox" placeholder="Móc treo đồ" style="width:100%;">
-                                                        <textarea name="" rows="5" cols="70" id="" class="inputbox" style="width: 100%; height:80px;">
-                                                            <!-- nội dung html -->
-                                                            <div>
-                                                                <h2>Cốp rộng bao la</h2>
-                                                                <ul>
-                                                                    <li>Để đồ thả ga với dung tích 20</li>
-                                                                    <li>Tăng tính tiện lợi</li>
-                                                                </ul>
+                                            </div>
+                                        </div>
+                                        <hr>
+
+                                        <hr>
+                                        <div class="col-sm-12">
+                                            <div class="block_sp">
+                                                <div class="form-group">
+                                                    <label class="text-no-bold" data-bind="text: Title">Thông tin Công suất & Thời gian bảo hành</label>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                            <input type="file" name="gogo_tinhnang_image" id="flupload" style="width:180px;">
+                                                            <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;">
+                                                                <img style="width: 155px; height: auto" src="{{ asset('home/images/x3/dongcoxanh2.png') }}">
                                                             </div>
-                                                        </textarea>                                                    
+                                                        </div>
+                                                    <div class="col-md-6">
+                                                        <textarea name="" rows="12" col="12" id="" class="form-control">
+
+                                                        <!-- html nội dung chi tiết xe -->
+                                                        <!-- <h2>Giảm xóc đài loan êm ái</h2>
+                                                            <div class="descp">
+                                                                <p>Công suất trung bình (W)</p>
+                                                                <h3>500</h3>
+                                                                <p>Công suất trung bình (W)</p>
+                                                                <h3>1000</h3>
+                                                                <p>Thời gian bảo hành (năm)</p>
+                                                                <h3>03</h3>
+                                                            </div> -->
+
+                                                        </textarea>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-
                                         <hr>
+
                                         <div class="col-sm-12 ">
                                             <p class="ttg">Section gallery</p>
                                             <div class="row">
@@ -1652,9 +1613,6 @@
 
                                     </div>
                                     </div>
-
-
-                                </div>
 
                             </div>
                         </div>
