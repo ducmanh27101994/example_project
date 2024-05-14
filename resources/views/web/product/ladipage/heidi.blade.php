@@ -397,17 +397,15 @@
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active tabInfoProduct" id="tabInfoProduct" role="tabpanel"
                              aria-labelledby="tabInfoProduct">
-                            <div class="tab-pane-info d-flex justify-content-between">
+
                                 {!! $product->overview !!}
-                            </div>
+
                         </div>
                         <div class="tab-pane fade tabBatteryPackages" id="tabBatteryPackages" role="tabpanel"
                              aria-labelledby="tabBatteryPackages">
-                            <div class="breaking-battery-tab d-flex justify-content-between">
-                               <div>
+
                                    {!! $product->chassis !!}
-                               </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>

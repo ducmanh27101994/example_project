@@ -464,9 +464,7 @@
                         </div>
                         <div class="tab-pane  tabBatteryPackages" id="tabBatteryPackages" role="tabpanel"
                              aria-labelledby="tabBatteryPackages">
-                            <div class="breaking-battery-tab d-flex justify-content-between">
-                                {!! $product->engine !!}
-                            </div>
+                            {!! $product->engine !!}
                         </div>
                     </div>
                 </div>
