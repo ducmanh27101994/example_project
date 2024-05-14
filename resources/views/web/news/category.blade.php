@@ -72,6 +72,7 @@
                 </article>
                 @endforeach
                 @endif
+                {{$list_blog->links()}}
             </div>
             <div class="text-center">
                 <a class="cta-link cta-link--block" href="{{route('page.category')}}">Xem tất cả </a>

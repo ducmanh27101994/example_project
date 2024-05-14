@@ -107,7 +107,7 @@ class HomePageController extends BaseController
             ->where('blogs.status', '=', 'active')
             ->orderBy('blogs.created_at', 'desc')
             ->select('blogs.created_at', 'blogs.slug', 'blogs.representative_image', 'category.category_title', 'blogs.news_headlines', 'blogs.describe')
-            ->get();
+            ->paginate(5);
 
 
         $list_blog_one_hot_news = DB::table('blogs')
@@ -156,7 +156,7 @@ class HomePageController extends BaseController
             ->where('category.id', '=', $id)
             ->where('blogs.status', '=', 'active')
             ->orderBy('blogs.created_at', 'desc')
-            ->get();
+            ->paginate(5);
 
         return view('web.news.category', compact('listCategory', 'list_blog'));
     }
@@ -299,7 +299,7 @@ class HomePageController extends BaseController
                 ->where('status', '=', 'active')
                 ->where('product_portfolio', '=', $category[0]->id)
                 ->orderBy('created_at', 'desc')
-                ->get();
+                ->paginate(6);
         }
 
         $blog1 = DB::table('blogs')
@@ -378,11 +378,11 @@ class HomePageController extends BaseController
         if (!empty($district)) {
             $listStore = DB::table('store')
                 ->where('keyword_tags', '=', $this->slugify($district))
-                ->get();
+                ->paginate(10);
         } else {
             $listStore = DB::table('store')
                 ->where('desc', '=', $domain)
-                ->get();
+                ->paginate(10);
         }
 
 

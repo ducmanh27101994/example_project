@@ -125,6 +125,7 @@
                 </div>
                 @endforeach
                 @endif
+                {{$listStore->links()}}
             </div>
         </div>
     </div>
