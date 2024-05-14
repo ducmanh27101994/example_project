@@ -703,7 +703,7 @@
                                                 </div>
                                                 <div>
                                                     <img style="width: 180px; height: auto"
-                                                         src="{{$product->heidi_images_banner1}}">
+                                                         src="{{$product->heidi_images_banner1 ?? ''}}">
                                                 </div>
                                             </div>
                                         </div>
