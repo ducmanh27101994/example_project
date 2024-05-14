@@ -88,7 +88,7 @@
                             <div class="resp-tabs-container hor_1" style="border-color: rgb(193, 193, 193);">
                                 <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-0"
                                     style="background: none rgb(245, 245, 245); border-color: rgb(193, 193, 193);"><span
-                                        class="resp-arrow"></span>Thông tin chi tiết</h2>
+                                            class="resp-arrow"></span>Thông tin chi tiết</h2>
                                 <div class="resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-0">
                                     <div class="row">
                                         <div class="col-sm-8">
@@ -203,8 +203,9 @@
                                                     <div class="tskt row">
                                                         <div class="col-sm-12">
                                                             <textarea name="overview" id="overview"
-                                                                   class="inputbox" placeholder="Tên thông số tổng quan"
-                                                                      style="width:100%;" >{!! $product->overview !!}</textarea>
+                                                                      class="inputbox"
+                                                                      placeholder="Tên thông số tổng quan"
+                                                                      style="width:100%;">{!! $product->overview !!}</textarea>
                                                         </div>
 
                                                     </div>
@@ -212,8 +213,9 @@
                                                     <div class="tskt row">
                                                         <div class="col-sm-12">
                                                             <textarea name="chassis" id="chassis"
-                                                                   class="inputbox" placeholder="Tên thông số khung xe"
-                                                                      style="width:100%;" >{!! $product->chassis !!}</textarea>
+                                                                      class="inputbox"
+                                                                      placeholder="Tên thông số khung xe"
+                                                                      style="width:100%;">{!! $product->chassis !!}</textarea>
                                                         </div>
 
                                                     </div>
@@ -221,8 +223,9 @@
                                                     <div class="tskt row">
                                                         <div class="col-sm-12">
                                                             <textarea name="engine" id="engine"
-                                                                   class="inputbox" placeholder="Tên thông số dộng cơ"
-                                                                      style="width:100%;" >{!! $product->engine !!}</textarea>
+                                                                      class="inputbox"
+                                                                      placeholder="Tên thông số dộng cơ"
+                                                                      style="width:100%;">{!! $product->engine !!}</textarea>
                                                         </div>
 
                                                     </div>
@@ -247,7 +250,8 @@
                                                     <label class="text-no-bold" data-bind="text: Title">Hình ảnh
                                                         360</label>
                                                     <input type="file" name="images360[]" id="images360"
-                                                           class="btn-change-link pull-right" style="width:180px;" multiple>
+                                                           class="btn-change-link pull-right" style="width:180px;"
+                                                           multiple>
                                                 </div>
                                                 <div>
                                                     <div id="image-preview-5">
@@ -321,7 +325,9 @@
                                             <div class="block_sp">
                                                 <p class="ttg">Giao diện</p>
                                                 <div class="form-group">
-                                                    <label class="next-label">Loại giao diện (tabs thêm nội dung giao diện tương ứng của ladipage xuất hiện bên cạnh cầu hình seo khi chọn giao diện)</label>
+                                                    <label class="next-label">Loại giao diện (tabs thêm nội dung giao
+                                                        diện tương ứng của ladipage xuất hiện bên cạnh cầu hình seo khi
+                                                        chọn giao diện)</label>
 
                                                     <select name="interface_type" id="ddlcate_page"
                                                             class="inputbox" style="width:100%;">
@@ -356,7 +362,7 @@
                                                            name="status"
                                                            @if($product->status == 'active')
                                                                checked="checked"
-                                                        @endif>
+                                                            @endif>
                                                     Hiển thị<br>
                                                 </div>
                                             </div>
@@ -368,7 +374,7 @@
                                 </div>
                                 <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-1"
                                     style="background-color: rgb(245, 245, 245); border-color: rgb(193, 193, 193);"><span
-                                        class="resp-arrow"></span>Hình ảnh liên quan</h2>
+                                            class="resp-arrow"></span>Hình ảnh liên quan</h2>
                                 <div class="resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-1">
 
                                     <div class="gallarey">
@@ -397,7 +403,8 @@
                                         <div id="image-preview">
                                             @if(!empty($feature_description))
                                                 @foreach($feature_description as $value)
-                                                    <img style="width: 200px;height: auto;object-fit: contain;" src="{{$value->images}}">
+                                                    <img style="width: 200px;height: auto;object-fit: contain;"
+                                                         src="{{$value->images}}">
                                                 @endforeach
                                             @endif
                                         </div>
@@ -432,7 +439,8 @@
                                         <div id="image-preview-1">
                                             @if(!empty($vehicle_detail_photos))
                                                 @foreach($vehicle_detail_photos as $value)
-                                                    <img style="width: 200px;height: auto;object-fit: contain;" src="{{$value->images}}">
+                                                    <img style="width: 200px;height: auto;object-fit: contain;"
+                                                         src="{{$value->images}}">
                                                 @endforeach
                                             @endif
                                         </div>
@@ -467,7 +475,8 @@
                                         <div id="image-preview-2">
                                             @if(!empty($actual_photo))
                                                 @foreach($actual_photo as $value)
-                                                    <img style="width: 200px;height: auto;object-fit: contain;" src="{{$value->images}}">
+                                                    <img style="width: 200px;height: auto;object-fit: contain;"
+                                                         src="{{$value->images}}">
                                                 @endforeach
                                             @endif
                                         </div>
@@ -478,7 +487,7 @@
 
                                 <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-4"
                                     style="background-color: rgb(245, 245, 245); border-color: rgb(193, 193, 193);"><span
-                                        class="resp-arrow"></span>Cấu hình SEO</h2>
+                                            class="resp-arrow"></span>Cấu hình SEO</h2>
                                 <div class="resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-4">
 
                                     <div class="row">
@@ -496,7 +505,8 @@
                                                 <div id="image-preview-3">
                                                     @if(!empty($icon_images))
                                                         @foreach($icon_images as $value)
-                                                            <img style="width: 100px;height: auto;object-fit: contain;" src="{{$value->images}}">
+                                                            <img style="width: 100px;height: auto;object-fit: contain;"
+                                                                 src="{{$value->images}}">
                                                         @endforeach
                                                     @endif
                                                 </div>
@@ -505,7 +515,8 @@
                                         <div class="col-sm-6">
                                             <div class="block_sp">
                                                 <div class="form-group">
-                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh màu sắc (1230 × 700 px)
+                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh màu sắc
+                                                        (1230 × 700 px)
                                                         của
                                                         xe</label>
                                                     <input type="file" name="color_image[]"
@@ -515,7 +526,8 @@
                                                 <div id="image-preview-4">
                                                     @if(!empty($color_image))
                                                         @foreach($color_image as $value)
-                                                            <img style="width: 250px;object-fit: contain;" src="{{$value->images}}">
+                                                            <img style="width: 250px;object-fit: contain;"
+                                                                 src="{{$value->images}}">
                                                         @endforeach
                                                     @endif
                                                 </div>
@@ -528,7 +540,7 @@
 
                                 <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-2"
                                     style="background-color: rgb(245, 245, 245); border-color: rgb(193, 193, 193);"><span
-                                        class="resp-arrow"></span>Thông tin khác</h2>
+                                            class="resp-arrow"></span>Thông tin khác</h2>
                                 <div class="resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-2">
                                     <table width="100%" class="admintable">
                                         <tbody>
@@ -565,20 +577,20 @@
                                                        name="new_product"
                                                        @if($product->new_product == 'active')
                                                            checked="checked"
-                                                    @endif><label for="chknew"> Sản phẩm Hot</label>
+                                                        @endif><label for="chknew"> Sản phẩm Hot</label>
                                                 &nbsp;&nbsp;&nbsp;&nbsp;<br>
                                                 <input id="chkhot" type="checkbox"
                                                        name="selling_products"
                                                        @if($product->selling_products == 'active')
                                                            checked="checked"
-                                                    @endif><label for="chkhot"> Sản phẩm bán chạy</label>
+                                                        @endif><label for="chkhot"> Sản phẩm bán chạy</label>
                                                 &nbsp;&nbsp;&nbsp;&nbsp;<br>
                                                 <input id="chksale" type="checkbox"
                                                        name="promotional_products"
                                                        @if($product->promotional_products == 'active')
                                                            checked="checked"
-                                                    @endif><label
-                                                    for="chksale"> Sản phẩm khuyến mại</label>
+                                                        @endif><label
+                                                        for="chksale"> Sản phẩm khuyến mại</label>
 
                                             </td>
                                         </tr>
@@ -604,7 +616,7 @@
                                             <td>
                                                 <div>
                                                         <span
-                                                            class="page-title-seo">{{$product->page_title_tag}}</span>
+                                                                class="page-title-seo">{{$product->page_title_tag}}</span>
                                                     <div class="page-description-seo ws-nm">
                                                         <span>{{ url()->to('/') . '/' }}{{$product->path}}</span>
                                                     </div>
@@ -684,55 +696,70 @@
                                         <div class="col-sm-4">
                                             <div class="block_sp">
                                                 <div class="form-group">
-                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh banner(section 1)</label>
-                                                    <input type="file" name="heidi_images_banner1" id="flupload" class="btn-change-link pull-right" style="width:180px;">
+                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh
+                                                        banner(section 1)</label>
+                                                    <input type="file" name="heidi_images_banner1" id="flupload"
+                                                           class="btn-change-link pull-right" style="width:180px;">
                                                 </div>
                                                 <div>
-                                                    <img style="width: 180px; height: auto" src="{{$product->heidi_images_banner1}}">
+                                                    <img style="width: 180px; height: auto"
+                                                         src="{{$product->heidi_images_banner1}}">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
                                             <div class="block_sp">
                                                 <div class="form-group">
-                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh tên xe(section 2)</label>
-                                                    <input type="file" name="heidi_images_banner2" id="flupload" class="pull-right" style="width:180px;">
+                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh tên
+                                                        xe(section 2)</label>
+                                                    <input type="file" name="heidi_images_banner2" id="flupload"
+                                                           class="pull-right" style="width:180px;">
                                                 </div>
                                                 <div style="background: #000;">
-                                                    <img style="width: 180px; height: auto" src="{{$product->heidi_images_banner2}}">
+                                                    <img style="width: 180px; height: auto"
+                                                         src="{{$product->heidi_images_banner2}}">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
                                             <div class="block_sp">
                                                 <div class="form-group">
-                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh xe(section 2)</label>
-                                                    <input type="file" name="heidi_images_banner3" id="flupload" class="pull-right" style="width:180px;">
+                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh
+                                                        xe(section 2)</label>
+                                                    <input type="file" name="heidi_images_banner3" id="flupload"
+                                                           class="pull-right" style="width:180px;">
                                                 </div>
                                                 <div>
-                                                    <img style="width: 180px; height: auto" src="{{$product->heidi_images_banner3}}">
+                                                    <img style="width: 180px; height: auto"
+                                                         src="{{$product->heidi_images_banner3}}">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
                                             <div class="block_sp">
                                                 <div class="form-group">
-                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh xe(section 3) (kt ảnh: 1440 × 1015 px)</label>
-                                                    <input type="file" name="heidi_images_banner4" id="flupload" class="pull-right" style="width:180px;">
+                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh
+                                                        xe(section 3) (kt ảnh: 1440 × 1015 px)</label>
+                                                    <input type="file" name="heidi_images_banner4" id="flupload"
+                                                           class="pull-right" style="width:180px;">
                                                 </div>
                                                 <div>
-                                                    <img style="width: 180px; height: auto" src="{{$product->heidi_images_banner4}}">
+                                                    <img style="width: 180px; height: auto"
+                                                         src="{{$product->heidi_images_banner4}}">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
                                             <div class="block_sp">
                                                 <div class="form-group">
-                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh xe da dạng màu sắc(section 4)</label>
-                                                    <input type="file" name="heidi_images_banner5" id="flupload" class="pull-right" style="width:180px;">
+                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh xe da
+                                                        dạng màu sắc(section 4)</label>
+                                                    <input type="file" name="heidi_images_banner5" id="flupload"
+                                                           class="pull-right" style="width:180px;">
                                                 </div>
                                                 <div>
-                                                    <img style="width: 180px; height: auto" src="{{$product->heidi_images_banner5}}">
+                                                    <img style="width: 180px; height: auto"
+                                                         src="{{$product->heidi_images_banner5}}">
                                                 </div>
                                             </div>
                                         </div>
@@ -741,62 +768,98 @@
                                             <p class="ttg">Section Perfectly Stealth (kt ảnh: 570 × 386 px)</p>
                                             <div class="row">
                                                 <div class="col-sm-6">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
-                                                    <div class="form-group">
-                                                        <label class="text-no-bold" data-bind="text: Title">Hình ảnh 1</label>
-                                                        <input type="file" name="heidi_images_banner6" id="flupload" class="pull-right" style="width:180px;">
-                                                    </div>
+                                                    <div class="form-group"
+                                                         style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                        <div class="form-group">
+                                                            <label class="text-no-bold" data-bind="text: Title">Hình ảnh
+                                                                1</label>
+                                                            <input type="file" name="heidi_images_banner6" id="flupload"
+                                                                   class="pull-right" style="width:180px;">
+                                                        </div>
                                                         <div>
-                                                            <img style="width: 180px; height: auto" src="{{$product->heidi_images_banner6}}">
+                                                            <img style="width: 180px; height: auto"
+                                                                 src="{{$product->heidi_images_banner6}}">
                                                         </div>
                                                         <label class="next-label">Mô tả 1</label>
-                                                        <input name="heidi_title_banner6" type="text" value="{{$product->heidi_title_banner6}}" id="txtproductname" class="inputbox" placeholder="Perfectly Stealth 1" style="width:100%;">
-                                                        <textarea name="heidi_desc_banner6" rows="5" cols="70" id="txtkeyword" class="inputbox" style="width: 100%; height:80px;">{{$product->heidi_desc_banner6}}</textarea>
+                                                        <input name="heidi_title_banner6" type="text"
+                                                               value="{{$product->heidi_title_banner6}}"
+                                                               id="txtproductname" class="inputbox"
+                                                               placeholder="Perfectly Stealth 1" style="width:100%;">
+                                                        <textarea name="heidi_desc_banner6" rows="5" cols="70"
+                                                                  id="txtkeyword" class="inputbox"
+                                                                  style="width: 100%; height:80px;">{{$product->heidi_desc_banner6}}</textarea>
 
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
-                                                    <div class="form-group">
-                                                        <label class="text-no-bold" data-bind="text: Title">Hình ảnh 2</label>
-                                                        <input type="file" name="heidi_title_banner7" id="flupload" class="pull-right" style="width:180px;">
-                                                    </div>
+                                                    <div class="form-group"
+                                                         style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                        <div class="form-group">
+                                                            <label class="text-no-bold" data-bind="text: Title">Hình ảnh
+                                                                2</label>
+                                                            <input type="file" name="heidi_title_banner7" id="flupload"
+                                                                   class="pull-right" style="width:180px;">
+                                                        </div>
                                                         <div>
-                                                            <img style="width: 180px; height: auto" src="{{$product->heidi_images_banner7}}">
+                                                            <img style="width: 180px; height: auto"
+                                                                 src="{{$product->heidi_images_banner7}}">
                                                         </div>
                                                         <label class="next-label">Mô tả 2</label>
-                                                        <input name="heidi_title_banner7" type="text" value="{{$product->heidi_title_banner7}}" id="txtproductname" class="inputbox" placeholder="Perfectly Stealth 2" style="width:100%;">
-                                                        <textarea name="heidi_desc_banner7" rows="5" cols="70" id="txtkeyword" class="inputbox" style="width: 100%; height:80px;">{{$product->heidi_desc_banner7}}</textarea>
+                                                        <input name="heidi_title_banner7" type="text"
+                                                               value="{{$product->heidi_title_banner7}}"
+                                                               id="txtproductname" class="inputbox"
+                                                               placeholder="Perfectly Stealth 2" style="width:100%;">
+                                                        <textarea name="heidi_desc_banner7" rows="5" cols="70"
+                                                                  id="txtkeyword" class="inputbox"
+                                                                  style="width: 100%; height:80px;">{{$product->heidi_desc_banner7}}</textarea>
 
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
-                                                    <div class="form-group">
-                                                        <label class="text-no-bold" data-bind="text: Title">Hình ảnh 3</label>
-                                                        <input type="file" name="heidi_images_banner8" id="flupload" class="pull-right" style="width:180px;">
-                                                    </div>
+                                                    <div class="form-group"
+                                                         style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                        <div class="form-group">
+                                                            <label class="text-no-bold" data-bind="text: Title">Hình ảnh
+                                                                3</label>
+                                                            <input type="file" name="heidi_images_banner8" id="flupload"
+                                                                   class="pull-right" style="width:180px;">
+                                                        </div>
                                                         <div>
-                                                            <img style="width: 180px; height: auto" src="{{$product->heidi_images_banner8}}">
+                                                            <img style="width: 180px; height: auto"
+                                                                 src="{{$product->heidi_images_banner8}}">
                                                         </div>
                                                         <label class="next-label">Mô tả 3</label>
-                                                        <input name="heidi_title_banner8" type="text" value="{{$product->heidi_title_banner8}}" id="txtproductname" class="inputbox" placeholder="Perfectly Stealth 3" style="width:100%;">
-                                                        <textarea name="heidi_desc_banner8" rows="5" cols="70" id="txtkeyword" class="inputbox" style="width: 100%; height:80px;">{{$product->heidi_desc_banner8}}</textarea>
+                                                        <input name="heidi_title_banner8" type="text"
+                                                               value="{{$product->heidi_title_banner8}}"
+                                                               id="txtproductname" class="inputbox"
+                                                               placeholder="Perfectly Stealth 3" style="width:100%;">
+                                                        <textarea name="heidi_desc_banner8" rows="5" cols="70"
+                                                                  id="txtkeyword" class="inputbox"
+                                                                  style="width: 100%; height:80px;">{{$product->heidi_desc_banner8}}</textarea>
 
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
-                                                    <div class="form-group">
-                                                        <label class="text-no-bold" data-bind="text: Title">Hình ảnh 4</label>
-                                                        <input type="file" name="heidi_images_banner9" id="flupload" class="pull-right" style="width:180px;">
-                                                    </div>
+                                                    <div class="form-group"
+                                                         style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                        <div class="form-group">
+                                                            <label class="text-no-bold" data-bind="text: Title">Hình ảnh
+                                                                4</label>
+                                                            <input type="file" name="heidi_images_banner9" id="flupload"
+                                                                   class="pull-right" style="width:180px;">
+                                                        </div>
                                                         <div>
-                                                            <img style="width: 180px; height: auto" src="{{$product->heidi_images_banner9}}">
+                                                            <img style="width: 180px; height: auto"
+                                                                 src="{{$product->heidi_images_banner9}}">
                                                         </div>
                                                         <label class="next-label">Mô tả 4</label>
-                                                        <input name="heidi_title_banner9" type="text" value="{{$product->heidi_title_banner9}}" id="txtproductname" class="inputbox" placeholder="Perfectly Stealth 1" style="width:100%;">
-                                                        <textarea name="heidi_desc_banner9" rows="5" cols="70" id="txtkeyword" class="inputbox" style="width: 100%; height:80px;">{{$product->heidi_desc_banner9}}</textarea>
+                                                        <input name="heidi_title_banner9" type="text"
+                                                               value="{{$product->heidi_title_banner9}}"
+                                                               id="txtproductname" class="inputbox"
+                                                               placeholder="Perfectly Stealth 1" style="width:100%;">
+                                                        <textarea name="heidi_desc_banner9" rows="5" cols="70"
+                                                                  id="txtkeyword" class="inputbox"
+                                                                  style="width: 100%; height:80px;">{{$product->heidi_desc_banner9}}</textarea>
 
                                                     </div>
                                                 </div>
@@ -806,84 +869,126 @@
                                             <p class="ttg">Section chi tiết nổi bật xe (kt ảnh: 2880 × 3346 px)</p>
                                             <div class="row">
                                                 <div class="col-sm-6">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                    <div class="form-group"
+                                                         style="padding: 10px 10px;border: 1px solid #d4d4d4;">
                                                         <div class="row">
                                                             <div class="col-sm-6">
                                                                 <div class="form-group">
-                                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh 1</label>
-                                                                    <input type="file" name="heidi_images_banner10" id="flupload" class="pull-right" style="width:180px;">
+                                                                    <label class="text-no-bold" data-bind="text: Title">Hình
+                                                                        ảnh 1</label>
+                                                                    <input type="file" name="heidi_images_banner10"
+                                                                           id="flupload" class="pull-right"
+                                                                           style="width:180px;">
                                                                 </div>
                                                                 <div>
-                                                                    <img style="width: 180px; height: auto" src="{{$product->heidi_images_banner10}}">
+                                                                    <img style="width: 180px; height: auto"
+                                                                         src="{{$product->heidi_images_banner10}}">
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-6">
                                                                 <div class="form-group">
-                                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh 2</label>
-                                                                    <input type="file" name="heidi_images_banner10_1" id="flupload" class="pull-right" style="width:180px;">
+                                                                    <label class="text-no-bold" data-bind="text: Title">Hình
+                                                                        ảnh 2</label>
+                                                                    <input type="file" name="heidi_images_banner10_1"
+                                                                           id="flupload" class="pull-right"
+                                                                           style="width:180px;">
                                                                 </div>
                                                                 <div>
-                                                                    <img style="width: 180px; height: auto" src="{{$product->heidi_images_banner10_1}}">
+                                                                    <img style="width: 180px; height: auto"
+                                                                         src="{{$product->heidi_images_banner10_1}}">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <label class="next-label">Mô tả 1</label>
-                                                        <input name="heidi_title_banner10" type="text" value="{{$product->heidi_title_banner10}}}" id="txtproductname" class="inputbox" placeholder="Perfectly Stealth 1" style="width:100%;">
-                                                        <textarea name="heidi_desc_banner10" rows="5" cols="70" id="txtkeyword" class="inputbox" style="width: 100%; height:80px;">{{$product->heidi_desc_banner10}}</textarea>
+                                                        <input name="heidi_title_banner10" type="text"
+                                                               value="{{$product->heidi_title_banner10}}}"
+                                                               id="txtproductname" class="inputbox"
+                                                               placeholder="Perfectly Stealth 1" style="width:100%;">
+                                                        <textarea name="heidi_desc_banner10" rows="5" cols="70"
+                                                                  id="txtkeyword" class="inputbox"
+                                                                  style="width: 100%; height:80px;">{{$product->heidi_desc_banner10}}</textarea>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                    <div class="form-group"
+                                                         style="padding: 10px 10px;border: 1px solid #d4d4d4;">
                                                         <div class="row">
-                                                                <div class="col-sm-6">
-                                                                    <div class="form-group">
-                                                                        <label class="text-no-bold" data-bind="text: Title">Hình ảnh 1</label>
-                                                                        <input type="file" name="heidi_images_banner11" id="flupload" class="pull-right" style="width:180px;">
-                                                                    </div>
-                                                                    <div>
-                                                                        <img style="width: 180px; height: auto" src="{{$product->heidi_images_banner11}}">
-                                                                    </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label class="text-no-bold" data-bind="text: Title">Hình
+                                                                        ảnh 1</label>
+                                                                    <input type="file" name="heidi_images_banner11"
+                                                                           id="flupload" class="pull-right"
+                                                                           style="width:180px;">
                                                                 </div>
-                                                                <div class="col-sm-6">
-                                                                    <div class="form-group">
-                                                                        <label class="text-no-bold" data-bind="text: Title">Hình ảnh 2</label>
-                                                                        <input type="file" name="heidi_images_banner11_1" id="flupload" class="pull-right" style="width:180px;">
-                                                                    </div>
-                                                                    <div>
-                                                                        <img style="width: 180px; height: auto" src="{{$product->heidi_images_banner11_1}}">
-                                                                    </div>
+                                                                <div>
+                                                                    <img style="width: 180px; height: auto"
+                                                                         src="{{$product->heidi_images_banner11}}">
                                                                 </div>
                                                             </div>
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <label class="text-no-bold" data-bind="text: Title">Hình
+                                                                        ảnh 2</label>
+                                                                    <input type="file" name="heidi_images_banner11_1"
+                                                                           id="flupload" class="pull-right"
+                                                                           style="width:180px;">
+                                                                </div>
+                                                                <div>
+                                                                    <img style="width: 180px; height: auto"
+                                                                         src="{{$product->heidi_images_banner11_1}}">
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                         <label class="next-label">Mô tả 2</label>
-                                                        <input name="heidi_title_banner11" type="text" value="{{$product->heidi_title_banner11}}" id="txtproductname" class="inputbox" placeholder="Perfectly Stealth 2" style="width:100%;">
-                                                        <textarea name="heidi_desc_banner11" rows="5" cols="70" id="txtkeyword" class="inputbox" style="width: 100%; height:80px;">{{$product->heidi_desc_banner11}}</textarea>
+                                                        <input name="heidi_title_banner11" type="text"
+                                                               value="{{$product->heidi_title_banner11}}"
+                                                               id="txtproductname" class="inputbox"
+                                                               placeholder="Perfectly Stealth 2" style="width:100%;">
+                                                        <textarea name="heidi_desc_banner11" rows="5" cols="70"
+                                                                  id="txtkeyword" class="inputbox"
+                                                                  style="width: 100%; height:80px;">{{$product->heidi_desc_banner11}}</textarea>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                    <div class="form-group"
+                                                         style="padding: 10px 10px;border: 1px solid #d4d4d4;">
                                                         <div class="row">
                                                             <div class="col-sm-6">
                                                                 <div class="form-group">
-                                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh 1</label>
-                                                                    <input type="file" name="heidi_images_banner12" id="flupload" class="pull-right" style="width:180px;">
+                                                                    <label class="text-no-bold" data-bind="text: Title">Hình
+                                                                        ảnh 1</label>
+                                                                    <input type="file" name="heidi_images_banner12"
+                                                                           id="flupload" class="pull-right"
+                                                                           style="width:180px;">
                                                                 </div>
                                                                 <div>
-                                                                    <img style="width: 180px; height: auto" src="{{$product->heidi_images_banner12}}">
+                                                                    <img style="width: 180px; height: auto"
+                                                                         src="{{$product->heidi_images_banner12}}">
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-6">
                                                                 <div class="form-group">
-                                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh 2</label>
-                                                                    <input type="file" name="heidi_images_banner12_1" id="flupload" class="pull-right" style="width:180px;">
+                                                                    <label class="text-no-bold" data-bind="text: Title">Hình
+                                                                        ảnh 2</label>
+                                                                    <input type="file" name="heidi_images_banner12_1"
+                                                                           id="flupload" class="pull-right"
+                                                                           style="width:180px;">
                                                                 </div>
                                                                 <div>
-                                                                    <img style="width: 180px; height: auto" src="{{$product->heidi_images_banner12_1}}">
+                                                                    <img style="width: 180px; height: auto"
+                                                                         src="{{$product->heidi_images_banner12_1}}">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <label class="next-label">Mô tả 3</label>
-                                                        <input name="heidi_title_banner12" type="text" value="{{$product->heidi_title_banner12}}" id="txtproductname" class="inputbox" placeholder="Perfectly Stealth 3" style="width:100%;">
-                                                        <textarea name="heidi_desc_banner12" rows="5" cols="70" id="txtkeyword" class="inputbox" style="width: 100%; height:80px;">{{$product->heidi_desc_banner12}}</textarea>
+                                                        <input name="heidi_title_banner12" type="text"
+                                                               value="{{$product->heidi_title_banner12}}"
+                                                               id="txtproductname" class="inputbox"
+                                                               placeholder="Perfectly Stealth 3" style="width:100%;">
+                                                        <textarea name="heidi_desc_banner12" rows="5" cols="70"
+                                                                  id="txtkeyword" class="inputbox"
+                                                                  style="width: 100%; height:80px;">{{$product->heidi_desc_banner12}}</textarea>
                                                     </div>
                                                 </div>
                                             </div>
@@ -893,16 +998,21 @@
                                             <p class="ttg">Section gallery</p>
                                             <div class="row">
                                                 <div class="col-sm-12">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                    <div class="form-group"
+                                                         style="padding: 10px 10px;border: 1px solid #d4d4d4;">
                                                         <div class="row">
                                                             <div class="col-sm-6">
                                                                 <div class="form-group">
                                                                     <!-- nhiều ảnh -->
-                                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh gallery</label>
-                                                                    <input type="file" name="heidi_images_banner13" id="flupload" class="pull-right" style="width:180px;">
+                                                                    <label class="text-no-bold" data-bind="text: Title">Hình
+                                                                        ảnh gallery</label>
+                                                                    <input type="file" name="heidi_images_banner13"
+                                                                           id="flupload" class="pull-right"
+                                                                           style="width:180px;">
                                                                 </div>
                                                                 <div>
-                                                                    <img style="width: 180px; height: auto" src="{{$product->heidi_images_banner13}}">
+                                                                    <img style="width: 180px; height: auto"
+                                                                         src="{{$product->heidi_images_banner13}}">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -921,22 +1031,28 @@
                                      style="border-color: rgb(193, 193, 193);">
 
                                     <div class="row">
-                                    <div class="col-sm-12">
+                                        <div class="col-sm-12">
                                             <div class="block_sp">
                                                 <div class="form-group">
-                                                    <label class="text-no-bold" data-bind="text: Title">Tiêu đề, slogan xe</label>
-                                                    <input type="text" name="gogo_slogan" id="" placeholder="" value="{{$product->gogo_slogan}}" class="form-control" style="width:100%;">
+                                                    <label class="text-no-bold" data-bind="text: Title">Tiêu đề, slogan
+                                                        xe</label>
+                                                    <input type="text" name="gogo_slogan" id="" placeholder=""
+                                                           value="{{$product->gogo_slogan}}" class="form-control"
+                                                           style="width:100%;">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
                                             <div class="block_sp">
                                                 <div class="form-group">
-                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh banner(section 1)</label>
-                                                    <input type="file" name="gogo_images_banner1" id="" class="pull-right" style="width:180px;">
+                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh
+                                                        banner(section 1)</label>
+                                                    <input type="file" name="gogo_images_banner1" id=""
+                                                           class="pull-right" style="width:180px;">
                                                 </div>
                                                 <div>
-                                                    <img style="width: 180px; height: auto" src="{{$product->gogo_images_banner1}}">
+                                                    <img style="width: 180px; height: auto"
+                                                         src="{{$product->gogo_images_banner1}}">
                                                 </div>
                                             </div>
                                         </div>
@@ -944,13 +1060,17 @@
                                             <div class="block_sp">
                                                 <div class="form-group">
                                                     <!-- multi ảnh -->
-                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh tính năng(section 2) (kt: 980 × 564 px)</label>
-                                                    <input type="file" name="gogo_images_banner2_multi[]" id="gogo_images_banner2_multi" class="pull-right" style="width:180px;" multiple>
+                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh tính
+                                                        năng(section 2) (kt: 980 × 564 px)</label>
+                                                    <input type="file" name="gogo_images_banner2_multi[]"
+                                                           id="gogo_images_banner2_multi" class="pull-right"
+                                                           style="width:180px;" multiple>
                                                 </div>
                                                 <div id="image-preview-6">
                                                     @if(!empty($gogo_images_banner2_multi))
                                                         @foreach($gogo_images_banner2_multi as $value)
-                                                            <img style="width: 155px; height: auto" src="{{ $value->images }}">
+                                                            <img style="width: 155px; height: auto"
+                                                                 src="{{ $value->images }}">
                                                         @endforeach
                                                     @endif
                                                 </div>
@@ -959,12 +1079,16 @@
                                         <div class="col-sm-4">
                                             <div class="block_sp">
                                                 <div class="form-group">
-                                                    <label class="text-no-bold" data-bind="text: Title">Thông tin chi tiết xe</label>
-                                                    <input type="file" name="gogo_tinhnang_image[]" id="gogo_tinhnang_image" class="pull-right" style="width:180px;" multiple>
+                                                    <label class="text-no-bold" data-bind="text: Title">Thông tin chi
+                                                        tiết xe</label>
+                                                    <input type="file" name="gogo_tinhnang_image[]"
+                                                           id="gogo_tinhnang_image" class="pull-right"
+                                                           style="width:180px;" multiple>
                                                     <div id="image-preview-7">
                                                         @if(!empty($gogo_tinhnang_image))
                                                             @foreach($gogo_tinhnang_image as $value)
-                                                                <img style="width: 155px; height: auto" src="{{ $value->images }}">
+                                                                <img style="width: 155px; height: auto"
+                                                                     src="{{ $value->images }}">
                                                             @endforeach
                                                         @endif
                                                     </div>
@@ -983,29 +1107,45 @@
                                             <p class="ttg">Section 3 mô tả xe</p>
                                             <div class="row">
                                                 <div class="col-sm-6">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
-                                                    <div class="form-group">
-                                                        <input type="file" name="gogo_images_banner4" id="flupload" class="pull-right" style="width:180px;">
-                                                    </div>
+                                                    <div class="form-group"
+                                                         style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                        <div class="form-group">
+                                                            <input type="file" name="gogo_images_banner4" id="flupload"
+                                                                   class="pull-right" style="width:180px;">
+                                                        </div>
                                                         <div>
-                                                            <img style="width: 180px; height: auto" src="{{ $product->gogo_images_banner4 }}">
+                                                            <img style="width: 180px; height: auto"
+                                                                 src="{{ $product->gogo_images_banner4 }}">
                                                         </div>
                                                         <label class="next-label">Mô tả 1</label>
-                                                        <input name="gogo_title_banner4" type="text" value="{{$product->gogo_title_banner4}}}" id="" class="inputbox" placeholder="HỆ THỐNG PHANH E-ABS" style="width:100%;">
-                                                        <textarea name="gogo_desc_banner4" rows="5" cols="70" id="" class="inputbox" style="width: 100%; height:80px;">{{$product->gogo_desc_banner4}}</textarea>
+                                                        <input name="gogo_title_banner4" type="text"
+                                                               value="{{$product->gogo_title_banner4}}}" id=""
+                                                               class="inputbox" placeholder="HỆ THỐNG PHANH E-ABS"
+                                                               style="width:100%;">
+                                                        <textarea name="gogo_desc_banner4" rows="5" cols="70" id=""
+                                                                  class="inputbox"
+                                                                  style="width: 100%; height:80px;">{{$product->gogo_desc_banner4}}</textarea>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
-                                                    <div class="form-group">
-                                                        <input type="file" name="gogo_images_banner5" id="flupload" class="pull-right" style="width:180px;">
-                                                    </div>
+                                                    <div class="form-group"
+                                                         style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                        <div class="form-group">
+                                                            <input type="file" name="gogo_images_banner5" id="flupload"
+                                                                   class="pull-right" style="width:180px;">
+                                                        </div>
                                                         <div>
-                                                            <img style="width: 180px; height: auto" src="{{ $product->gogo_images_banner5 }}">
+                                                            <img style="width: 180px; height: auto"
+                                                                 src="{{ $product->gogo_images_banner5 }}">
                                                         </div>
                                                         <label class="next-label">Mô tả 2</label>
-                                                        <input name="gogo_title_banner5" type="text" value="{{$product->gogo_title_banner5}}" id="" class="inputbox" placeholder="CỤM ĐÈN NỔI BẬT" style="width:100%;">
-                                                        <textarea name="gogo_desc_banner5" rows="5" cols="70" id="" class="inputbox" style="width: 100%; height:80px;">{{$product->gogo_desc_banner5}}</textarea>
+                                                        <input name="gogo_title_banner5" type="text"
+                                                               value="{{$product->gogo_title_banner5}}" id=""
+                                                               class="inputbox" placeholder="CỤM ĐÈN NỔI BẬT"
+                                                               style="width:100%;">
+                                                        <textarea name="gogo_desc_banner5" rows="5" cols="70" id=""
+                                                                  class="inputbox"
+                                                                  style="width: 100%; height:80px;">{{$product->gogo_desc_banner5}}</textarea>
 
                                                     </div>
                                                 </div>
@@ -1018,47 +1158,73 @@
                                             <p class="ttg">Section trải nghiệm niềm vui, cảm nhận sự an toàn</p>
                                             <div class="row">
                                                 <div class="col-sm-4">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
-                                                    <div class="form-group">
-                                                        <label class="text-no-bold" data-bind="text: Title">tabs 1</label>
-                                                        <input type="file" name="gogo_images_banner6" id="flupload" class="pull-right" style="width:180px;">
-                                                    </div>
+                                                    <div class="form-group"
+                                                         style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                        <div class="form-group">
+                                                            <label class="text-no-bold" data-bind="text: Title">tabs
+                                                                1</label>
+                                                            <input type="file" name="gogo_images_banner6" id="flupload"
+                                                                   class="pull-right" style="width:180px;">
+                                                        </div>
                                                         <div>
-                                                            <img style="width: 180px; height: auto" src="{{ $product->gogo_images_banner6 }}">
+                                                            <img style="width: 180px; height: auto"
+                                                                 src="{{ $product->gogo_images_banner6 }}">
                                                         </div>
                                                         <label class="next-label">Mô tả 1</label>
-                                                        <input name="gogo_title_banner6" type="text" value="{{$product->gogo_title_banner6}}" id="" class="inputbox" placeholder="" style="width:100%;">
-                                                        <textarea name="gogo_desc_banner6" rows="5" cols="70" id="" class="inputbox" style="width: 100%; height:80px;">{{$product->gogo_desc_banner6}}</textarea>
+                                                        <input name="gogo_title_banner6" type="text"
+                                                               value="{{$product->gogo_title_banner6}}" id=""
+                                                               class="inputbox" placeholder="" style="width:100%;">
+                                                        <textarea name="gogo_desc_banner6" rows="5" cols="70" id=""
+                                                                  class="inputbox"
+                                                                  style="width: 100%; height:80px;">{{$product->gogo_desc_banner6}}</textarea>
 
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-4">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
-                                                    <div class="form-group">
-                                                        <label class="text-no-bold" data-bind="text: Title">tabs 2</label>
-                                                        <input type="file" name="gogo_images_banner7" id="flupload" class="pull-right" style="width:180px;">
-                                                    </div>
+                                                    <div class="form-group"
+                                                         style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                        <div class="form-group">
+                                                            <label class="text-no-bold" data-bind="text: Title">tabs
+                                                                2</label>
+                                                            <input type="file" name="gogo_images_banner7" id="flupload"
+                                                                   class="pull-right" style="width:180px;">
+                                                        </div>
                                                         <div>
-                                                            <img style="width: 180px; height: auto" src="{{ $product->gogo_images_banner7 }}">
+                                                            <img style="width: 180px; height: auto"
+                                                                 src="{{ $product->gogo_images_banner7 }}">
                                                         </div>
                                                         <label class="next-label">Mô tả 2</label>
-                                                        <input name="gogo_title_banner7" type="text" value="{{$product->gogo_title_banner7}}" id="" class="inputbox" placeholder="CAN ĐẢM GIỮA NHỮNG CƠN MƯA" style="width:100%;">
-                                                        <textarea name="gogo_desc_banner7" rows="5" cols="70" id="" class="inputbox" style="width: 100%; height:80px;">{{$product->gogo_desc_banner7}}</textarea>
+                                                        <input name="gogo_title_banner7" type="text"
+                                                               value="{{$product->gogo_title_banner7}}" id=""
+                                                               class="inputbox" placeholder="CAN ĐẢM GIỮA NHỮNG CƠN MƯA"
+                                                               style="width:100%;">
+                                                        <textarea name="gogo_desc_banner7" rows="5" cols="70" id=""
+                                                                  class="inputbox"
+                                                                  style="width: 100%; height:80px;">{{$product->gogo_desc_banner7}}</textarea>
 
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-4">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
-                                                    <div class="form-group">
-                                                        <label class="text-no-bold" data-bind="text: Title">tabs 3</label>
-                                                        <input type="file" name="gogo_images_banner8" id="flupload" class="pull-right" style="width:180px;">
-                                                    </div>
+                                                    <div class="form-group"
+                                                         style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                        <div class="form-group">
+                                                            <label class="text-no-bold" data-bind="text: Title">tabs
+                                                                3</label>
+                                                            <input type="file" name="gogo_images_banner8" id="flupload"
+                                                                   class="pull-right" style="width:180px;">
+                                                        </div>
                                                         <div>
-                                                            <img style="width: 180px; height: auto" src="{{ $product->gogo_images_banner8 }}">
+                                                            <img style="width: 180px; height: auto"
+                                                                 src="{{ $product->gogo_images_banner8 }}">
                                                         </div>
                                                         <label class="next-label">Mô tả 3</label>
-                                                        <input name="gogo_title_banner8" type="text" value="{{$product->gogo_title_banner8}}" id="" class="inputbox" placeholder="ÁP SUẤT LỐP" style="width:100%;">
-                                                        <textarea name="gogo_desc_banner8" rows="5" cols="70" id="" class="inputbox" style="width: 100%; height:80px;">{{$product->gogo_desc_banner8}}</textarea>
+                                                        <input name="gogo_title_banner8" type="text"
+                                                               value="{{$product->gogo_title_banner8}}" id=""
+                                                               class="inputbox" placeholder="ÁP SUẤT LỐP"
+                                                               style="width:100%;">
+                                                        <textarea name="gogo_desc_banner8" rows="5" cols="70" id=""
+                                                                  class="inputbox"
+                                                                  style="width: 100%; height:80px;">{{$product->gogo_desc_banner8}}</textarea>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1070,51 +1236,75 @@
                                             <p class="ttg">Section tiện ích</p>
                                             <div class="row">
                                                 <div class="col-sm-4">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
-                                                    <div class="form-group">
-                                                        <label class="text-no-bold" data-bind="text: Title">tabs 1</label>
-                                                        <input type="file" name="gogo_images_banner9" id="flupload" class="pull-right" style="width:180px;">
-                                                    </div>
+                                                    <div class="form-group"
+                                                         style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                        <div class="form-group">
+                                                            <label class="text-no-bold" data-bind="text: Title">tabs
+                                                                1</label>
+                                                            <input type="file" name="gogo_images_banner9" id="flupload"
+                                                                   class="pull-right" style="width:180px;">
+                                                        </div>
                                                         <div>
-                                                            <img style="width: 180px; height: auto" src="{{ $product->gogo_images_banner9 }}">
+                                                            <img style="width: 180px; height: auto"
+                                                                 src="{{ $product->gogo_images_banner9 }}">
                                                         </div>
                                                         <label class="next-label">Mô tả 1</label>
-                                                        <input name="gogo_title_banner9" type="text" value="{{$product->gogo_title_banner9}}" id="" class="inputbox" placeholder="CỐP RỘNG BAO LA" style="width:100%;">
-                                                        <textarea name="gogo_desc_banner9" rows="5" cols="70" id="" class="inputbox" style="width: 100%; height:80px;">
+                                                        <input name="gogo_title_banner9" type="text"
+                                                               value="{{$product->gogo_title_banner9}}" id=""
+                                                               class="inputbox" placeholder="CỐP RỘNG BAO LA"
+                                                               style="width:100%;">
+                                                        <textarea name="gogo_desc_banner9" rows="5" cols="70" id=""
+                                                                  class="inputbox" style="width: 100%; height:80px;">
                                                             {!! $product->gogo_desc_banner9 !!}
                                                         </textarea>
 
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-4">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
-                                                    <div class="form-group">
-                                                        <label class="text-no-bold" data-bind="text: Title">tabs 2</label>
-                                                        <input type="file" name="gogo_images_banner10" id="flupload" class="pull-right" style="width:180px;">
-                                                    </div>
+                                                    <div class="form-group"
+                                                         style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                        <div class="form-group">
+                                                            <label class="text-no-bold" data-bind="text: Title">tabs
+                                                                2</label>
+                                                            <input type="file" name="gogo_images_banner10" id="flupload"
+                                                                   class="pull-right" style="width:180px;">
+                                                        </div>
                                                         <div>
-                                                            <img style="width: 180px; height: auto" src="{{ $product->gogo_images_banner10 }}">
+                                                            <img style="width: 180px; height: auto"
+                                                                 src="{{ $product->gogo_images_banner10 }}">
                                                         </div>
                                                         <label class="next-label">Mô tả 2</label>
-                                                        <input name="gogo_title_banner10" type="text" value="{{$product->gogo_title_banner10}}" id="" class="inputbox" placeholder="CỔNG SẠC USB" style="width:100%;">
-                                                        <textarea name="gogo_desc_banner10" rows="5" cols="70" id="" class="inputbox" style="width: 100%; height:80px;">
+                                                        <input name="gogo_title_banner10" type="text"
+                                                               value="{{$product->gogo_title_banner10}}" id=""
+                                                               class="inputbox" placeholder="CỔNG SẠC USB"
+                                                               style="width:100%;">
+                                                        <textarea name="gogo_desc_banner10" rows="5" cols="70" id=""
+                                                                  class="inputbox" style="width: 100%; height:80px;">
                                                             {!! $product->gogo_desc_banner10 !!}
                                                         </textarea>
 
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-4">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
-                                                    <div class="form-group">
-                                                        <label class="text-no-bold" data-bind="text: Title">tabs 3</label>
-                                                        <input type="file" name="gogo_images_banner11" id="flupload" class="pull-right" style="width:180px;">
-                                                    </div>
+                                                    <div class="form-group"
+                                                         style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                        <div class="form-group">
+                                                            <label class="text-no-bold" data-bind="text: Title">tabs
+                                                                3</label>
+                                                            <input type="file" name="gogo_images_banner11" id="flupload"
+                                                                   class="pull-right" style="width:180px;">
+                                                        </div>
                                                         <div>
-                                                            <img style="width: 180px; height: auto" src="{{ $product->gogo_images_banner11 }}">
+                                                            <img style="width: 180px; height: auto"
+                                                                 src="{{ $product->gogo_images_banner11 }}">
                                                         </div>
                                                         <label class="next-label">Mô tả 3</label>
-                                                        <input name="gogo_title_banner11" type="text" value="{{$product->gogo_title_banner11}}" id="" class="inputbox" placeholder="Móc treo đồ" style="width:100%;">
-                                                        <textarea name="gogo_desc_banner11" rows="5" cols="70" id="" class="inputbox" style="width: 100%; height:80px;">
+                                                        <input name="gogo_title_banner11" type="text"
+                                                               value="{{$product->gogo_title_banner11}}" id=""
+                                                               class="inputbox" placeholder="Móc treo đồ"
+                                                               style="width:100%;">
+                                                        <textarea name="gogo_desc_banner11" rows="5" cols="70" id=""
+                                                                  class="inputbox" style="width: 100%; height:80px;">
                                                             {!! $product->gogo_desc_banner11 !!}
                                                         </textarea>
                                                     </div>
@@ -1127,14 +1317,21 @@
                                             <p class="ttg">Section gallery</p>
                                             <div class="row">
                                                 <div class="col-sm-12">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                    <div class="form-group"
+                                                         style="padding: 10px 10px;border: 1px solid #d4d4d4;">
                                                         <div class="row">
                                                             <div class="col-sm-12">
                                                                 <div class="form-group">
                                                                     <!-- nhiều ảnh -->
-                                                                    <label class="text-no-bold" data-bind="text: Title">Nâng cấp chính bạn</label>
-                                                                    <input type="text" name="gogo_title_banner12" id="" value="{{$product->gogo_title_banner12}}" placeholder="Nâng cấp chính bạn" class="form-control pull-right" style="width:100%;margin-bottom: 20px">
-                                                                    <textarea name="gogo_desc_banner12" id="" class="form-control" style="width:100%;">
+                                                                    <label class="text-no-bold" data-bind="text: Title">Nâng
+                                                                        cấp chính bạn</label>
+                                                                    <input type="text" name="gogo_title_banner12" id=""
+                                                                           value="{{$product->gogo_title_banner12}}"
+                                                                           placeholder="Nâng cấp chính bạn"
+                                                                           class="form-control pull-right"
+                                                                           style="width:100%;margin-bottom: 20px">
+                                                                    <textarea name="gogo_desc_banner12" id=""
+                                                                              class="form-control" style="width:100%;">
                                                                         {!! $product->gogo_desc_banner12 !!}
                                                                     </textarea>
                                                                 </div>
@@ -1143,18 +1340,23 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-12">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                    <div class="form-group"
+                                                         style="padding: 10px 10px;border: 1px solid #d4d4d4;">
                                                         <div class="row">
                                                             <div class="col-sm-6">
                                                                 <div class="form-group">
                                                                     <!-- nhiều ảnh -->
-                                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh gallery</label>
-                                                                    <input type="file" name="gogo_images_banner13[]" id="gogo_images_banner13" class="pull-right" style="width:180px;" multiple>
+                                                                    <label class="text-no-bold" data-bind="text: Title">Hình
+                                                                        ảnh gallery</label>
+                                                                    <input type="file" name="gogo_images_banner13[]"
+                                                                           id="gogo_images_banner13" class="pull-right"
+                                                                           style="width:180px;" multiple>
                                                                 </div>
                                                                 <div>
                                                                     @if(!empty($gogo_images_banner13))
                                                                         @foreach($gogo_images_banner13 as $value)
-                                                                            <img style="width: 180px; height: auto" src="{{ $value->images }}">
+                                                                            <img style="width: 180px; height: auto"
+                                                                                 src="{{ $value->images }}">
                                                                         @endforeach
                                                                     @endif
                                                                 </div>
@@ -1178,8 +1380,11 @@
                                         <div class="col-sm-12">
                                             <div class="block_sp">
                                                 <div class="form-group">
-                                                    <label class="text-no-bold" data-bind="text: Title">Tiêu đề, slogan xe</label>
-                                                    <input type="text" name="" id="" value="NISPA VIVA - LƯỚT PHONG CÁCH THỜI TRANG" placeholder="NISPA VIVA - LƯỚT PHONG CÁCH THỜI TRANG" class="form-control" style="width:100%;">
+                                                    <label class="text-no-bold" data-bind="text: Title">Tiêu đề, slogan
+                                                        xe</label>
+                                                    <input type="text" name="viva_slogan" id=""
+                                                           value="{{$product->viva_slogan}}" placeholder=""
+                                                           class="form-control" style="width:100%;">
                                                 </div>
                                             </div>
                                         </div>
@@ -1190,23 +1395,24 @@
                                             <p class="ttg">video nền section 1</p>
                                             <div class="row">
                                                 <div class="col-sm-12">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
-                                                    <div class="form-group">
-                                                        <!-- upload mutil video ngắn  -->
-                                                        <label class="text-no-bold" data-bind="text: Title">upload video nền</label>
-                                                        <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
-                                                    </div>
+                                                    <div class="form-group"
+                                                         style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                        <div class="form-group">
+                                                            <!-- upload mutil video ngắn  -->
+                                                            <label class="text-no-bold" data-bind="text: Title">upload
+                                                                video nền</label>
+                                                            <input type="file" name="viva_upload_video[]" id="flupload"
+                                                                   class="pull-right" style="width:180px;" multiple>
+                                                        </div>
                                                         <div style="display: flex;align-items: center;gap: 10px;">
-                                                        <video style="width: 300px;" playsinline preload autoplay muted
-                                                            src="{{ asset('home/images/nispaviva/X-Rotation-A.mp4') }}"></video>
-                                                        <video style="width: 300px;" playsinline preload autoplay muted
-                                                            src="{{ asset('home/images/nispaviva/X-Rotation-B.mp4') }}"></video>
-                                                        <video style="width: 300px;" playsinline preload autoplay muted
-                                                            src="{{ asset('home/images/nispaviva/X-Rotation-C.mp4') }}"></video>
-                                                        <video style="width: 300px;" playsinline preload autoplay muted
-                                                            src="{{ asset('home/images/nispaviva/X-Rotation-D.mp4') }}"></video>
-                                                        <video style="width: 300px;" playsinline preload autoplay muted
-                                                            src="{{ asset('home/images/nispaviva/X-Rotation-E.mp4') }}"></video>
+                                                            @if(!empty($viva_upload_video))
+                                                                @foreach($viva_upload_video as $value)
+                                                                    <video style="width: 300px;" playsinline preload
+                                                                           autoplay muted
+                                                                           src="{{ $value->images }}"></video>
+                                                                @endforeach
+                                                            @endif
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1217,36 +1423,47 @@
                                         <div class="col-sm-4">
                                             <div class="block_sp">
                                                 <div class="form-group">
-                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh logo xe(section 1)</label>
-                                                    <input type="file" name="" id="" class="pull-right" style="width:180px;">
+                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh logo
+                                                        xe(section 1)</label>
+                                                    <input type="file" name="viva_images_banner1" id="" class="pull-right"
+                                                           style="width:180px;">
                                                 </div>
                                                 <div style="background: black">
-                                                    <img style="width: 180px; height: auto" src="{{ asset('home/images/nispaviva/titlenispabanner.png') }}">
+                                                    <img style="width: 180px; height: auto"
+                                                         src="{{ $product->viva_images_banner1 }}">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
                                             <div class="block_sp">
                                                 <div class="form-group">
-                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh (section 2) (kt: 1910 × 1035 px)</label>
-                                                    <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
+                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh
+                                                        (section 2) (kt: 1910 × 1035 px)</label>
+                                                    <input type="file" name="viva_images_banner2" id="flupload" class="pull-right"
+                                                           style="width:180px;">
                                                 </div>
                                                 <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;">
-                                                    <img style="width: 155px; height: auto" src="{{ asset('home/images/nispaviva/section1.png') }}">
+                                                    <img style="width: 155px; height: auto"
+                                                         src="{{ $product->viva_images_banner2 }}">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-sm-4">
                                             <div class="block_sp">
                                                 <div class="form-group">
-                                                    <label class="text-no-bold" data-bind="text: Title">url video youtube</label>
-                                                    <input type="text" name="" id="" class="form-control " style="width:100%;">
+                                                    <label class="text-no-bold" data-bind="text: Title">url video
+                                                        youtube</label>
+                                                    <input type="text" name="viva_youtube_banner3" id="" class="form-control "
+                                                           style="width:100%;" value="{{ $product->viva_youtube_banner3 }}">
                                                     <br>
-                                                    <label class="text-no-bold" data-bind="text: Title">ảnh nền section video</label>
-                                                    <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
+                                                    <label class="text-no-bold" data-bind="text: Title">ảnh nền section
+                                                        video</label>
+                                                    <input type="file" name="viva_images_banner3" id="flupload" class="pull-right"
+                                                           style="width:180px;">
                                                 </div>
                                                 <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;">
-                                                    <img style="width: 155px; height: auto" src="{{ asset('home/images/nispaviva/thumbnailvideo1.png') }}">
+                                                    <img style="width: 155px; height: auto"
+                                                         src="{{ $product->viva_images_banner3 }}">
                                                 </div>
                                             </div>
                                         </div>
@@ -1257,73 +1474,73 @@
                                             <p class="ttg">Section tiện ích</p>
                                             <div class="row">
                                                 <div class="col-sm-4">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
-                                                    <div class="form-group">
-                                                        <label class="text-no-bold" data-bind="text: Title">tabs 1</label>
-                                                        <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
-                                                    </div>
+                                                    <div class="form-group"
+                                                         style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                        <div class="form-group">
+                                                            <label class="text-no-bold" data-bind="text: Title">tabs
+                                                                1</label>
+                                                            <input type="file" name="viva_images_banner4" id="flupload" class="pull-right"
+                                                                   style="width:180px;">
+                                                        </div>
                                                         <div>
-                                                            <img style="width: 180px; height: auto" src="{{ asset('home/images/gogo/tienich_1.png') }}">
+                                                            <img style="width: 180px; height: auto"
+                                                                 src="{{ $product->viva_images_banner4 }}">
                                                         </div>
                                                         <label class="next-label">Mô tả 1</label>
-                                                        <input name="" type="text" value="CỐP RỘNG BAO LA" id="" class="inputbox" placeholder="CỐP RỘNG BAO LA" style="width:100%;">
-                                                        <textarea name="" rows="5" cols="70" id="" class="inputbox" style="width: 100%; height:80px;">
-                                                            <!-- nội dung html -->
-                                                            <div>
-                                                                <h2>Cốp rộng bao la</h2>
-                                                                <ul>
-                                                                    <li>Để đồ thả ga với dung tích 20</li>
-                                                                    <li>Tăng tính tiện lợi</li>
-                                                                </ul>
-                                                            </div>
+                                                        <input name="viva_title_banner4" type="text" value="{{$product->viva_title_banner4}}" id=""
+                                                               class="inputbox" placeholder=""
+                                                               style="width:100%;">
+                                                        <textarea name="viva_desc_banner4" rows="5" cols="70" id="" class="inputbox"
+                                                                  style="width: 100%; height:80px;">
+                                                            {!! $product->viva_desc_banner4 !!}
                                                         </textarea>
 
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-4">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
-                                                    <div class="form-group">
-                                                        <label class="text-no-bold" data-bind="text: Title">tabs 2</label>
-                                                        <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
-                                                    </div>
+                                                    <div class="form-group"
+                                                         style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                        <div class="form-group">
+                                                            <label class="text-no-bold" data-bind="text: Title">tabs
+                                                                2</label>
+                                                            <input type="file" name="viva_images_banner5" id="flupload" class="pull-right"
+                                                                   style="width:180px;">
+                                                        </div>
                                                         <div>
-                                                            <img style="width: 180px; height: auto" src="{{ asset('home/images/gogo/tienich_1.png') }}">
+                                                            <img style="width: 180px; height: auto"
+                                                                 src="{{ $product->viva_images_banner5 }}">
                                                         </div>
                                                         <label class="next-label">Mô tả 2</label>
-                                                        <input name="" type="text" value="CỔNG SẠC USB" id="" class="inputbox" placeholder="CỔNG SẠC USB" style="width:100%;">
-                                                        <textarea name="" rows="5" cols="70" id="" class="inputbox" style="width: 100%; height:80px;">
-                                                            <!-- nội dung html -->
-                                                            <div>
-                                                                <h2>Cốp rộng bao la</h2>
-                                                                <ul>
-                                                                    <li>Để đồ thả ga với dung tích 20</li>
-                                                                    <li>Tăng tính tiện lợi</li>
-                                                                </ul>
-                                                            </div>
+                                                        <input name="viva_title_banner5" type="text" value="{{$product->viva_title_banner5}}" id=""
+                                                               class="inputbox" placeholder=""
+                                                               style="width:100%;">
+                                                        <textarea name="viva_desc_banner5" rows="5" cols="70" id="" class="inputbox"
+                                                                  style="width: 100%; height:80px;">
+                                                            {!! $product->viva_desc_banner5 !!}
                                                         </textarea>
 
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-4">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
-                                                    <div class="form-group">
-                                                        <label class="text-no-bold" data-bind="text: Title">tabs 3</label>
-                                                        <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
-                                                    </div>
+                                                    <div class="form-group"
+                                                         style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                        <div class="form-group">
+                                                            <label class="text-no-bold" data-bind="text: Title">tabs
+                                                                3</label>
+                                                            <input type="file" name="viva_images_banner6" id="flupload" class="pull-right"
+                                                                   style="width:180px;">
+                                                        </div>
                                                         <div>
-                                                            <img style="width: 180px; height: auto" src="{{ asset('home/images/gogo/tienich_1.png') }}">
+                                                            <img style="width: 180px; height: auto"
+                                                                 src="{{ $product->viva_images_banner6 }}">
                                                         </div>
                                                         <label class="next-label">Mô tả 3</label>
-                                                        <input name="" type="text" value="Móc treo đồ" id="" class="inputbox" placeholder="Móc treo đồ" style="width:100%;">
-                                                        <textarea name="" rows="5" cols="70" id="" class="inputbox" style="width: 100%; height:80px;">
-                                                            <!-- nội dung html -->
-                                                            <div>
-                                                                <h2>Cốp rộng bao la</h2>
-                                                                <ul>
-                                                                    <li>Để đồ thả ga với dung tích 20</li>
-                                                                    <li>Tăng tính tiện lợi</li>
-                                                                </ul>
-                                                            </div>
+                                                        <input name="viva_title_banner6" type="text" value="{{$product->viva_title_banner6}}" id=""
+                                                               class="inputbox" placeholder=""
+                                                               style="width:100%;">
+                                                        <textarea name="viva_desc_banner6" rows="5" cols="70" id="" class="inputbox"
+                                                                  style="width: 100%; height:80px;">
+                                                            {!! $product->viva_desc_banner6 !!}
                                                         </textarea>
                                                     </div>
                                                 </div>
@@ -1335,15 +1552,22 @@
                                             <p class="ttg">Section gallery</p>
                                             <div class="row">
                                                 <div class="col-sm-12">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                    <div class="form-group"
+                                                         style="padding: 10px 10px;border: 1px solid #d4d4d4;">
                                                         <div class="row">
                                                             <div class="col-sm-12">
                                                                 <div class="form-group">
                                                                     <!-- nhiều ảnh -->
-                                                                    <label class="text-no-bold" data-bind="text: Title">Nâng cấp chính bạn</label>
-                                                                    <input type="text" name="" id="" value="Nâng cấp chính bạn" placeholder="Nâng cấp chính bạn" class="form-control pull-right" style="width:100%;margin-bottom: 20px">
-                                                                    <textarea name="" id="" class="form-control" style="width:100%;">
-                                                                        Mỗi màu sắc đều mang lại một phong cách riêng biệt cho người lái, thể hiện được cá tính và sở thích của họ.
+                                                                    <label class="text-no-bold" data-bind="text: Title">Nâng
+                                                                        cấp chính bạn</label>
+                                                                    <input type="text" name="viva_title_banner7" id=""
+                                                                           value="{{$product->viva_title_banner7}}"
+                                                                           placeholder=""
+                                                                           class="form-control pull-right"
+                                                                           style="width:100%;margin-bottom: 20px">
+                                                                    <textarea name="viva_desc_banner7" id="" class="form-control"
+                                                                              style="width:100%;">
+                                                                       {!! $product->viva_desc_banner7 !!}
                                                                     </textarea>
                                                                 </div>
                                                             </div>
@@ -1351,16 +1575,24 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-12">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                    <div class="form-group"
+                                                         style="padding: 10px 10px;border: 1px solid #d4d4d4;">
                                                         <div class="row">
                                                             <div class="col-sm-6">
                                                                 <div class="form-group">
                                                                     <!-- nhiều ảnh -->
-                                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh gallery</label>
-                                                                    <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
+                                                                    <label class="text-no-bold" data-bind="text: Title">Hình
+                                                                        ảnh gallery</label>
+                                                                    <input type="file" name="viva_gallery[]" id="viva_gallery"
+                                                                           class="pull-right" style="width:180px;" multiple>
                                                                 </div>
-                                                                <div>
-                                                                    <img style="width: 180px; height: auto" src="{{ asset('home/images/section8_gallarey.png') }}">
+                                                                <div id="image-preview-9">
+                                                                    @if(!empty($viva_gallery))
+                                                                        @foreach($viva_gallery as $value)
+                                                                            <img style="width: 180px; height: auto"
+                                                                                 src="{{ $value->images }}">
+                                                                        @endforeach
+                                                                    @endif
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1370,543 +1602,664 @@
                                         </div>
 
                                     </div>
-                                    </div>
-
-
                                 </div>
 
 
-                                <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-1"
-                                    style="background-color: rgb(245, 245, 245); border-color: rgb(193, 193, 193);">
-                                    <span class="resp-arrow"></span>x3</h2>
-                                <div class="resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-3"
-                                     style="border-color: rgb(193, 193, 193);">
+                            </div>
 
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <div class="block_sp">
-                                                <div class="form-group">
-                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh banner xe (section 1)</label>
-                                                    <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
-                                                </div>
-                                                <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;">
-                                                    <img style="width: 155px; height: auto" src="{{ asset('home/images/x3/banner.png') }}">
-                                                </div>
+
+                            <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-1"
+                                style="background-color: rgb(245, 245, 245); border-color: rgb(193, 193, 193);">
+                                <span class="resp-arrow"></span>x3</h2>
+                            <div class="resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-3"
+                                 style="border-color: rgb(193, 193, 193);">
+
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="block_sp">
+                                            <div class="form-group">
+                                                <label class="text-no-bold" data-bind="text: Title">Hình ảnh banner xe
+                                                    (section 1)</label>
+                                                <input type="file" name="nispa_images_banner1" id="flupload" class="pull-right"
+                                                       style="width:180px;">
+                                            </div>
+                                            <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;">
+                                                <img style="width: 155px; height: auto"
+                                                     src="{{ $product->nispa_images_banner1 }}">
                                             </div>
                                         </div>
-                                        <div class="col-sm-4">
-                                            <div class="block_sp">
-                                                <div class="form-group">
-                                                    <label class="text-no-bold" data-bind="text: Title">url video youtube</label>
-                                                    <input type="text" name="" id="" class="form-control " style="width:100%;">
-                                                    <br>
-                                                    <label class="text-no-bold" data-bind="text: Title">ảnh nền section video</label>
-                                                    <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
-                                                </div>
-                                                <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;">
-                                                    <img style="width: 155px; height: auto" src="{{ asset('home/images/x3/thumbnailvideo1.png') }}">
-                                                </div>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="block_sp">
+                                            <div class="form-group">
+                                                <label class="text-no-bold" data-bind="text: Title">url video
+                                                    youtube</label>
+                                                <input type="text" name="nispa_youtube_banner2" id="" class="form-control "
+                                                       style="width:100%;" value="{{$product->nispa_youtube_banner2}}">
+                                                <br>
+                                                <label class="text-no-bold" data-bind="text: Title">ảnh nền section
+                                                    video</label>
+                                                <input type="file" name="nispa_images_banner2" id="flupload" class="pull-right"
+                                                       style="width:180px;">
+                                            </div>
+                                            <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;">
+                                                <img style="width: 155px; height: auto"
+                                                     src="{{ $product->nispa_images_banner2 }}">
                                             </div>
                                         </div>
+                                    </div>
 
-                                        <div class="col-sm-4">
-                                            <div class="block_sp">
-                                                <div class="form-group">
-                                                    <!-- multi ảnh -->
-                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh tính năng(section 2) (kt: 980 × 564 px)</label>
-                                                    <input type="file" name="gogo_tinhnang_image" id="flupload" class="pull-right" style="width:180px;">
-                                                </div>
-                                                <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;">
-                                                    <img style="width: 155px; height: auto" src="{{ asset('home/images/x3/tinhnang_1.png') }}">
-                                                    <img style="width: 155px; height: auto" src="{{ asset('home/images/x3/tinhnang_2.png') }}">
-                                                    <img style="width: 155px; height: auto" src="{{ asset('home/images/x3/tinhnang_3.png') }}">
-                                                </div>
+                                    <div class="col-sm-4">
+                                        <div class="block_sp">
+                                            <div class="form-group">
+                                                <!-- multi ảnh -->
+                                                <label class="text-no-bold" data-bind="text: Title">Hình ảnh tính
+                                                    năng(section 2) (kt: 980 × 564 px)</label>
+                                                <input type="file" name="nispa_tinhnang_image[]" id="nispa_tinhnang_image"
+                                                       class="pull-right" style="width:180px;" multiple>
+                                            </div>
+                                            <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;" id="image-preview-11">
+                                                @if(!empty($nispa_tinhnang_image))
+                                                    @foreach($nispa_tinhnang_image as $value)
+                                                        <img style="width: 155px; height: auto"
+                                                             src="{{ $value->images }}">
+                                                    @endforeach
+                                                @endif
                                             </div>
                                         </div>
+                                    </div>
 
-                                        <hr>
-                                        <div class="col-sm-12">
-                                            <div class="block_sp">
-                                                <div class="form-group">
-                                                    <label class="text-no-bold" data-bind="text: Title">Thông tin chi tiết xe</label>
-                                                </div>
-                                                <div>
-                                                    <textarea name="" rows="12" col="12" id="" class="form-control">
-
-                                                    <!-- html nội dung chi tiết xe -->
-                                                    <!-- <div class="func-item aos-init aos-animate" data-aos="fade-up"
-                                                        data-aos-duration="1000">
-                                                        <span>Giảm xóc</span>
-                                                        <h3>Đài Loan</h3>
-                                                    </div>
-                                                    <div class="func-item aos-init aos-animate" data-aos="fade-up"
-                                                        data-aos-duration="1300">
-                                                        <span>Đèn led</span>
-                                                        <h3>Toàn xe</h3>
-                                                    </div>
-                                                    <div class="func-item aos-init aos-animate" data-aos="fade-up"
-                                                        data-aos-duration="1500">
-                                                        <span>Mặt đồng hồ</span>
-                                                        <h3>Led mở rộng</h3>
-                                                    </div>
-                                                    <div class="func-item aos-init aos-animate" data-aos="fade-up"
-                                                        data-aos-duration="1700">
-                                                        <span>Chiều cao xe</span>
-                                                        <h3>1045 mm</h3>
-                                                    </div>
-                                                    <div class="func-item aos-init aos-animate" data-aos="fade-up"
-                                                        data-aos-duration="2000">
-                                                        <span>Mở khoá</span>
-                                                        <h3>Smartkey</h3>
-                                                    </div> -->
-
+                                    <hr>
+                                    <div class="col-sm-12">
+                                        <div class="block_sp">
+                                            <div class="form-group">
+                                                <label class="text-no-bold" data-bind="text: Title">Thông tin chi tiết
+                                                    xe</label>
+                                            </div>
+                                            <div>
+                                                    <textarea name="nispa_desc_3" rows="12" col="12" id="" class="form-control">
+                                                        {!! $product->nispa_desc_3 !!}
                                                     </textarea>
-                                                </div>
                                             </div>
                                         </div>
-                                        <hr>
+                                    </div>
+                                    <hr>
 
-                                        <hr>
-                                        <div class="col-sm-12">
-                                            <div class="block_sp">
-                                                <div class="form-group">
-                                                    <label class="text-no-bold" data-bind="text: Title">Thông tin Công suất & Thời gian bảo hành</label>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                            <input type="file" name="gogo_tinhnang_image" id="flupload" style="width:180px;">
-                                                            <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;">
-                                                                <img style="width: 155px; height: auto" src="{{ asset('home/images/x3/dongcoxanh2.png') }}">
-                                                            </div>
-                                                        </div>
-                                                    <div class="col-md-6">
-                                                        <textarea name="" rows="12" col="12" id="" class="form-control">
-
-                                                        <!-- html nội dung chi tiết xe -->
-                                                        <!-- <h2>Giảm xóc đài loan êm ái</h2>
-                                                            <div class="descp">
-                                                                <p>Công suất trung bình (W)</p>
-                                                                <h3>500</h3>
-                                                                <p>Công suất trung bình (W)</p>
-                                                                <h3>1000</h3>
-                                                                <p>Thời gian bảo hành (năm)</p>
-                                                                <h3>03</h3>
-                                                            </div> -->
-
-                                                        </textarea>
-                                                    </div>
-                                                </div>
+                                    <hr>
+                                    <div class="col-sm-12">
+                                        <div class="block_sp">
+                                            <div class="form-group">
+                                                <label class="text-no-bold" data-bind="text: Title">Thông tin Công suất
+                                                    & Thời gian bảo hành</label>
                                             </div>
-                                        </div>
-                                        <hr>
-
-                                        <div class="col-sm-12 ">
-                                            <p class="ttg">Section gallery</p>
                                             <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
-                                                        <div class="row">
-                                                            <div class="col-sm-12">
-                                                                <div class="form-group">
-                                                                    <!-- nhiều ảnh -->
-                                                                    <label class="text-no-bold" data-bind="text: Title">Nâng cấp chính bạn</label>
-                                                                    <input type="text" name="" id="" value="Nâng cấp chính bạn" placeholder="Nâng cấp chính bạn" class="form-control pull-right" style="width:100%;margin-bottom: 20px">
-                                                                    <textarea name="" id="" class="form-control" style="width:100%;">
-                                                                        Mỗi màu sắc đều mang lại một phong cách riêng biệt cho người lái, thể hiện được cá tính và sở thích của họ.
+                                                <div class="col-md-6">
+                                                    <input type="file" name="nispa_images_4" id="flupload"
+                                                           style="width:180px;">
+                                                    <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;">
+                                                        <img style="width: 155px; height: auto"
+                                                             src="{{ $product->nispa_images_4 }}">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                        <textarea name="nispa_desc_4" rows="12" col="12" id="" class="form-control">
+                                                            {!! $product->nispa_desc_4 !!}
+                                                        </textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+                                    <div class="col-sm-12 ">
+                                        <p class="ttg">Section gallery</p>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group"
+                                                     style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                    <div class="row">
+                                                        <div class="col-sm-12">
+                                                            <div class="form-group">
+                                                                <!-- nhiều ảnh -->
+                                                                <label class="text-no-bold" data-bind="text: Title">Nâng
+                                                                    cấp chính bạn</label>
+                                                                <input type="text" name="nispa_title_4" id=""
+                                                                       value="{{$product->nispa_title_4}}"
+                                                                       placeholder="Nâng cấp chính bạn"
+                                                                       class="form-control pull-right"
+                                                                       style="width:100%;margin-bottom: 20px">
+                                                                <textarea name="nispa_desc_5" id="" class="form-control"
+                                                                          style="width:100%;">
+                                                                       {!! $product->nispa_desc_5 !!}
                                                                     </textarea>
-                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="col-sm-12">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
-                                                        <div class="row">
-                                                            <div class="col-sm-6">
-                                                                <div class="form-group">
-                                                                    <!-- nhiều ảnh -->
-                                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh gallery</label>
-                                                                    <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
-                                                                </div>
-                                                                <div>
-                                                                    <img style="width: 180px; height: auto" src="{{ asset('home/images/section8_gallarey.png') }}">
-                                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group"
+                                                     style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                    <div class="row">
+                                                        <div class="col-sm-6">
+                                                            <div class="form-group">
+                                                                <!-- nhiều ảnh -->
+                                                                <label class="text-no-bold" data-bind="text: Title">Hình
+                                                                    ảnh gallery</label>
+                                                                <input type="file" name="nispa_gallery[]" id="nispa_gallery"
+                                                                       class="pull-right" style="width:180px;" multiple>
+                                                            </div>
+                                                            <div id="image-preview-10">
+                                                                @if(!empty($nispa_gallery))
+                                                                    @foreach($nispa_gallery as $value)
+                                                                        <img style="width: 180px; height: auto"
+                                                                             src="{{ $value->images }}">
+                                                                    @endforeach
+                                                                @endif
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-
                                     </div>
-                                    </div>
-
 
                                 </div>
+                            </div>
+
 
                         </div>
 
                     </div>
-                    <div class="clr"></div>
+
                 </div>
+                <div class="clr"></div>
             </div>
+        </div>
 
-            <script type="text/javascript">
-                $(document).ready(function () {
-                    //Horizontal Tab
-                    $('#parentHorizontalTabcontent').easyResponsiveTabs({
-                        type: 'default', //Types: default, vertical, accordion
-                        width: 'auto', //auto or any width like 600px
-                        fit: true, // 100% fit in a container
-                        tabidentify: 'hor_1', // The tab groups identifier
-                        activate: function (event) { // Callback function if tab is switched
-                            var $tab = $(this);
-                            var $info = $('#nested-tabInfo');
-                            var $name = $('span', $info);
-                            $name.text($tab.text());
-                            $info.show();
-                        }
-                    });
-
-                });
-            </script>
-
-            <script>
-                CKEDITOR.replace('detail', {
-                    filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
-                    filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
-                    filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
-                    filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
-                    filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
-                    filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                    allowedContent: true
-                });
-                CKEDITOR.replace('overview', {
-                    filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
-                    filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
-                    filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
-                    filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
-                    filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
-                    filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                    allowedContent: true
-                });
-                CKEDITOR.replace('engine', {
-                    filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
-                    filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
-                    filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
-                    filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
-                    filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
-                    filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                    allowedContent: true
-                });
-                CKEDITOR.replace('chassis', {
-                    filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
-                    filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
-                    filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
-                    filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
-                    filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
-                    filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                    allowedContent: true
-                });
-                CKEDITOR.replace('gogo_desc_3', {
-                    filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
-                    filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
-                    filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
-                    filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
-                    filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
-                    filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                    allowedContent: true
-                });
-                CKEDITOR.replace('gogo_desc_banner9', {
-                    filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
-                    filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
-                    filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
-                    filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
-                    filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
-                    filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                    allowedContent: true
-                });
-                CKEDITOR.replace('gogo_desc_banner10', {
-                    filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
-                    filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
-                    filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
-                    filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
-                    filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
-                    filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                    allowedContent: true
-                });
-                CKEDITOR.replace('gogo_desc_banner11', {
-                    filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
-                    filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
-                    filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
-                    filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
-                    filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
-                    filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                    allowedContent: true
-                });
-            </script>
-
-
-            <script>
-                document.getElementById('feature_description').addEventListener('change', function (e) {
-                    var previewContainer = document.getElementById('image-preview');
-                    previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
-
-                    if (e.target.files.length > 0) {
-                        for (var i = 0; i < e.target.files.length; i++) {
-                            var file = e.target.files[i];
-
-                            if (file.type.match(/^image\//)) {
-                                var reader = new FileReader();
-
-                                reader.onload = function (e) {
-                                    var img = document.createElement('img');
-                                    img.src = e.target.result;
-                                    img.className = 'preview-image';
-                                    previewContainer.appendChild(img);
-                                };
-
-                                reader.readAsDataURL(file);
-                            } else {
-                                alert('Vui lòng chọn một hình ảnh.');
-                            }
-                        }
+        <script type="text/javascript">
+            $(document).ready(function () {
+                //Horizontal Tab
+                $('#parentHorizontalTabcontent').easyResponsiveTabs({
+                    type: 'default', //Types: default, vertical, accordion
+                    width: 'auto', //auto or any width like 600px
+                    fit: true, // 100% fit in a container
+                    tabidentify: 'hor_1', // The tab groups identifier
+                    activate: function (event) { // Callback function if tab is switched
+                        var $tab = $(this);
+                        var $info = $('#nested-tabInfo');
+                        var $name = $('span', $info);
+                        $name.text($tab.text());
+                        $info.show();
                     }
                 });
-                document.getElementById('vehicle_detail_photos').addEventListener('change', function (e) {
-                    var previewContainer = document.getElementById('image-preview-1');
-                    previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
 
-                    if (e.target.files.length > 0) {
-                        for (var i = 0; i < e.target.files.length; i++) {
-                            var file = e.target.files[i];
+            });
+        </script>
 
-                            if (file.type.match(/^image\//)) {
-                                var reader = new FileReader();
+        <script>
+            CKEDITOR.replace('detail', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true
+            });
+            CKEDITOR.replace('overview', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true
+            });
+            CKEDITOR.replace('engine', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true
+            });
+            CKEDITOR.replace('chassis', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true
+            });
+            CKEDITOR.replace('gogo_desc_3', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true
+            });
+            CKEDITOR.replace('gogo_desc_banner9', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true
+            });
+            CKEDITOR.replace('gogo_desc_banner10', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true
+            });
+            CKEDITOR.replace('gogo_desc_banner11', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true
+            });
+            CKEDITOR.replace('viva_desc_banner4', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true
+            });
+            CKEDITOR.replace('viva_desc_banner5', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true
+            });
+            CKEDITOR.replace('viva_desc_banner6', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true
+            });
+            CKEDITOR.replace('nispa_desc_4', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true
+            });
+            CKEDITOR.replace('nispa_desc_3', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true
+            });
+        </script>
 
-                                reader.onload = function (e) {
-                                    var img = document.createElement('img');
-                                    img.src = e.target.result;
-                                    img.className = 'preview-image-1';
-                                    previewContainer.appendChild(img);
-                                };
 
-                                reader.readAsDataURL(file);
-                            } else {
-                                alert('Vui lòng chọn một hình ảnh.');
-                            }
+        <script>
+            document.getElementById('feature_description').addEventListener('change', function (e) {
+                var previewContainer = document.getElementById('image-preview');
+                previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
+
+                if (e.target.files.length > 0) {
+                    for (var i = 0; i < e.target.files.length; i++) {
+                        var file = e.target.files[i];
+
+                        if (file.type.match(/^image\//)) {
+                            var reader = new FileReader();
+
+                            reader.onload = function (e) {
+                                var img = document.createElement('img');
+                                img.src = e.target.result;
+                                img.className = 'preview-image';
+                                previewContainer.appendChild(img);
+                            };
+
+                            reader.readAsDataURL(file);
+                        } else {
+                            alert('Vui lòng chọn một hình ảnh.');
                         }
                     }
-                });
-                document.getElementById('actual_photo').addEventListener('change', function (e) {
-                    var previewContainer = document.getElementById('image-preview-2');
-                    previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
-
-                    if (e.target.files.length > 0) {
-                        for (var i = 0; i < e.target.files.length; i++) {
-                            var file = e.target.files[i];
-
-                            if (file.type.match(/^image\//)) {
-                                var reader = new FileReader();
-
-                                reader.onload = function (e) {
-                                    var img = document.createElement('img');
-                                    img.src = e.target.result;
-                                    img.className = 'preview-image-2';
-                                    previewContainer.appendChild(img);
-                                };
-
-                                reader.readAsDataURL(file);
-                            } else {
-                                alert('Vui lòng chọn một hình ảnh.');
-                            }
-                        }
-                    }
-                });
-                document.getElementById('icon_images').addEventListener('change', function (e) {
-                    var previewContainer = document.getElementById('image-preview-3');
-                    previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
-
-                    if (e.target.files.length > 0) {
-                        for (var i = 0; i < e.target.files.length; i++) {
-                            var file = e.target.files[i];
-
-                            if (file.type.match(/^image\//)) {
-                                var reader = new FileReader();
-
-                                reader.onload = function (e) {
-                                    var img = document.createElement('img');
-                                    img.src = e.target.result;
-                                    img.className = 'preview-image-3';
-                                    previewContainer.appendChild(img);
-                                };
-
-                                reader.readAsDataURL(file);
-                            } else {
-                                alert('Vui lòng chọn một hình ảnh.');
-                            }
-                        }
-                    }
-                });
-                document.getElementById('color_image').addEventListener('change', function (e) {
-                    var previewContainer = document.getElementById('image-preview-4');
-                    previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
-
-                    if (e.target.files.length > 0) {
-                        for (var i = 0; i < e.target.files.length; i++) {
-                            var file = e.target.files[i];
-
-                            if (file.type.match(/^image\//)) {
-                                var reader = new FileReader();
-
-                                reader.onload = function (e) {
-                                    var img = document.createElement('img');
-                                    img.src = e.target.result;
-                                    img.className = 'preview-image-4';
-                                    previewContainer.appendChild(img);
-                                };
-
-                                reader.readAsDataURL(file);
-                            } else {
-                                alert('Vui lòng chọn một hình ảnh.');
-                            }
-                        }
-                    }
-                });
-                document.getElementById('images360').addEventListener('change', function (e) {
-                    var previewContainer = document.getElementById('image-preview-5');
-                    previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
-
-                    if (e.target.files.length > 0) {
-                        for (var i = 0; i < e.target.files.length; i++) {
-                            var file = e.target.files[i];
-
-                            if (file.type.match(/^image\//)) {
-                                var reader = new FileReader();
-
-                                reader.onload = function (e) {
-                                    var img = document.createElement('img');
-                                    img.src = e.target.result;
-                                    img.className = 'preview-image-5';
-                                    previewContainer.appendChild(img);
-                                };
-
-                                reader.readAsDataURL(file);
-                            } else {
-                                alert('Vui lòng chọn một hình ảnh.');
-                            }
-                        }
-                    }
-                });
-                document.getElementById('gogo_images_banner2_multi').addEventListener('change', function (e) {
-                    var previewContainer = document.getElementById('image-preview-6');
-                    previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
-
-                    if (e.target.files.length > 0) {
-                        for (var i = 0; i < e.target.files.length; i++) {
-                            var file = e.target.files[i];
-
-                            if (file.type.match(/^image\//)) {
-                                var reader = new FileReader();
-
-                                reader.onload = function (e) {
-                                    var img = document.createElement('img');
-                                    img.src = e.target.result;
-                                    img.className = 'preview-image-6';
-                                    previewContainer.appendChild(img);
-                                };
-
-                                reader.readAsDataURL(file);
-                            } else {
-                                alert('Vui lòng chọn một hình ảnh.');
-                            }
-                        }
-                    }
-                });
-                document.getElementById('gogo_tinhnang_image').addEventListener('change', function (e) {
-                    var previewContainer = document.getElementById('image-preview-7');
-                    previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
-
-                    if (e.target.files.length > 0) {
-                        for (var i = 0; i < e.target.files.length; i++) {
-                            var file = e.target.files[i];
-
-                            if (file.type.match(/^image\//)) {
-                                var reader = new FileReader();
-
-                                reader.onload = function (e) {
-                                    var img = document.createElement('img');
-                                    img.src = e.target.result;
-                                    img.className = 'preview-image-7';
-                                    previewContainer.appendChild(img);
-                                };
-
-                                reader.readAsDataURL(file);
-                            } else {
-                                alert('Vui lòng chọn một hình ảnh.');
-                            }
-                        }
-                    }
-                });
-                document.getElementById('gogo_images_banner13').addEventListener('change', function (e) {
-                    var previewContainer = document.getElementById('image-preview-8');
-                    previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
-
-                    if (e.target.files.length > 0) {
-                        for (var i = 0; i < e.target.files.length; i++) {
-                            var file = e.target.files[i];
-
-                            if (file.type.match(/^image\//)) {
-                                var reader = new FileReader();
-
-                                reader.onload = function (e) {
-                                    var img = document.createElement('img');
-                                    img.src = e.target.result;
-                                    img.className = 'preview-image-8';
-                                    previewContainer.appendChild(img);
-                                };
-
-                                reader.readAsDataURL(file);
-                            } else {
-                                alert('Vui lòng chọn một hình ảnh.');
-                            }
-                        }
-                    }
-                });
-            </script>
-            <style>
-
-                #image-preview-1,
-                #image-preview-2,
-                #image-preview-3,
-                #image-preview-4,
-                #image-preview-5,
-                #image-preview-6,
-                #image-preview-7,
-                #image-preview-8,
-                #image-preview {
-                    display: flex;
-                    flex-wrap: wrap;
                 }
+            });
+            document.getElementById('vehicle_detail_photos').addEventListener('change', function (e) {
+                var previewContainer = document.getElementById('image-preview-1');
+                previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
 
-                .preview-image-1,
-                .preview-image-2,
-                .preview-image-3,
-                .preview-image-4,
-                .preview-image-5,
-                .preview-image-6,
-                .preview-image-7,
-                .preview-image-8,
-                .preview-image {
-                    max-width: 100px;
-                    height: auto;
-                    margin: 5px;
+                if (e.target.files.length > 0) {
+                    for (var i = 0; i < e.target.files.length; i++) {
+                        var file = e.target.files[i];
+
+                        if (file.type.match(/^image\//)) {
+                            var reader = new FileReader();
+
+                            reader.onload = function (e) {
+                                var img = document.createElement('img');
+                                img.src = e.target.result;
+                                img.className = 'preview-image-1';
+                                previewContainer.appendChild(img);
+                            };
+
+                            reader.readAsDataURL(file);
+                        } else {
+                            alert('Vui lòng chọn một hình ảnh.');
+                        }
+                    }
                 }
-                /* .heidi_page {
-                    display: none !important
-                } */
+            });
+            document.getElementById('actual_photo').addEventListener('change', function (e) {
+                var previewContainer = document.getElementById('image-preview-2');
+                previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
 
-            </style>
+                if (e.target.files.length > 0) {
+                    for (var i = 0; i < e.target.files.length; i++) {
+                        var file = e.target.files[i];
+
+                        if (file.type.match(/^image\//)) {
+                            var reader = new FileReader();
+
+                            reader.onload = function (e) {
+                                var img = document.createElement('img');
+                                img.src = e.target.result;
+                                img.className = 'preview-image-2';
+                                previewContainer.appendChild(img);
+                            };
+
+                            reader.readAsDataURL(file);
+                        } else {
+                            alert('Vui lòng chọn một hình ảnh.');
+                        }
+                    }
+                }
+            });
+            document.getElementById('icon_images').addEventListener('change', function (e) {
+                var previewContainer = document.getElementById('image-preview-3');
+                previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
+
+                if (e.target.files.length > 0) {
+                    for (var i = 0; i < e.target.files.length; i++) {
+                        var file = e.target.files[i];
+
+                        if (file.type.match(/^image\//)) {
+                            var reader = new FileReader();
+
+                            reader.onload = function (e) {
+                                var img = document.createElement('img');
+                                img.src = e.target.result;
+                                img.className = 'preview-image-3';
+                                previewContainer.appendChild(img);
+                            };
+
+                            reader.readAsDataURL(file);
+                        } else {
+                            alert('Vui lòng chọn một hình ảnh.');
+                        }
+                    }
+                }
+            });
+            document.getElementById('color_image').addEventListener('change', function (e) {
+                var previewContainer = document.getElementById('image-preview-4');
+                previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
+
+                if (e.target.files.length > 0) {
+                    for (var i = 0; i < e.target.files.length; i++) {
+                        var file = e.target.files[i];
+
+                        if (file.type.match(/^image\//)) {
+                            var reader = new FileReader();
+
+                            reader.onload = function (e) {
+                                var img = document.createElement('img');
+                                img.src = e.target.result;
+                                img.className = 'preview-image-4';
+                                previewContainer.appendChild(img);
+                            };
+
+                            reader.readAsDataURL(file);
+                        } else {
+                            alert('Vui lòng chọn một hình ảnh.');
+                        }
+                    }
+                }
+            });
+            document.getElementById('images360').addEventListener('change', function (e) {
+                var previewContainer = document.getElementById('image-preview-5');
+                previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
+
+                if (e.target.files.length > 0) {
+                    for (var i = 0; i < e.target.files.length; i++) {
+                        var file = e.target.files[i];
+
+                        if (file.type.match(/^image\//)) {
+                            var reader = new FileReader();
+
+                            reader.onload = function (e) {
+                                var img = document.createElement('img');
+                                img.src = e.target.result;
+                                img.className = 'preview-image-5';
+                                previewContainer.appendChild(img);
+                            };
+
+                            reader.readAsDataURL(file);
+                        } else {
+                            alert('Vui lòng chọn một hình ảnh.');
+                        }
+                    }
+                }
+            });
+            document.getElementById('gogo_images_banner2_multi').addEventListener('change', function (e) {
+                var previewContainer = document.getElementById('image-preview-6');
+                previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
+
+                if (e.target.files.length > 0) {
+                    for (var i = 0; i < e.target.files.length; i++) {
+                        var file = e.target.files[i];
+
+                        if (file.type.match(/^image\//)) {
+                            var reader = new FileReader();
+
+                            reader.onload = function (e) {
+                                var img = document.createElement('img');
+                                img.src = e.target.result;
+                                img.className = 'preview-image-6';
+                                previewContainer.appendChild(img);
+                            };
+
+                            reader.readAsDataURL(file);
+                        } else {
+                            alert('Vui lòng chọn một hình ảnh.');
+                        }
+                    }
+                }
+            });
+            document.getElementById('gogo_tinhnang_image').addEventListener('change', function (e) {
+                var previewContainer = document.getElementById('image-preview-7');
+                previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
+
+                if (e.target.files.length > 0) {
+                    for (var i = 0; i < e.target.files.length; i++) {
+                        var file = e.target.files[i];
+
+                        if (file.type.match(/^image\//)) {
+                            var reader = new FileReader();
+
+                            reader.onload = function (e) {
+                                var img = document.createElement('img');
+                                img.src = e.target.result;
+                                img.className = 'preview-image-7';
+                                previewContainer.appendChild(img);
+                            };
+
+                            reader.readAsDataURL(file);
+                        } else {
+                            alert('Vui lòng chọn một hình ảnh.');
+                        }
+                    }
+                }
+            });
+            document.getElementById('gogo_images_banner13').addEventListener('change', function (e) {
+                var previewContainer = document.getElementById('image-preview-8');
+                previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
+
+                if (e.target.files.length > 0) {
+                    for (var i = 0; i < e.target.files.length; i++) {
+                        var file = e.target.files[i];
+
+                        if (file.type.match(/^image\//)) {
+                            var reader = new FileReader();
+
+                            reader.onload = function (e) {
+                                var img = document.createElement('img');
+                                img.src = e.target.result;
+                                img.className = 'preview-image-8';
+                                previewContainer.appendChild(img);
+                            };
+
+                            reader.readAsDataURL(file);
+                        } else {
+                            alert('Vui lòng chọn một hình ảnh.');
+                        }
+                    }
+                }
+            });
+            document.getElementById('viva_gallery').addEventListener('change', function (e) {
+                var previewContainer = document.getElementById('image-preview-9');
+                previewContainer.innerHTML = '';
+
+                if (e.target.files.length > 0) {
+                    for (var i = 0; i < e.target.files.length; i++) {
+                        var file = e.target.files[i];
+
+                        if (file.type.match(/^image\//)) {
+                            var reader = new FileReader();
+
+                            reader.onload = function (e) {
+                                var img = document.createElement('img');
+                                img.src = e.target.result;
+                                img.className = 'preview-image-9';
+                                previewContainer.appendChild(img);
+                            };
+
+                            reader.readAsDataURL(file);
+                        } else {
+                            alert('Vui lòng chọn một hình ảnh.');
+                        }
+                    }
+                }
+            });
+            document.getElementById('nispa_tinhnang_image').addEventListener('change', function (e) {
+                var previewContainer = document.getElementById('image-preview-11');
+                previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
+
+                if (e.target.files.length > 0) {
+                    for (var i = 0; i < e.target.files.length; i++) {
+                        var file = e.target.files[i];
+
+                        if (file.type.match(/^image\//)) {
+                            var reader = new FileReader();
+
+                            reader.onload = function (e) {
+                                var img = document.createElement('img');
+                                img.src = e.target.result;
+                                img.className = 'preview-image-11';
+                                previewContainer.appendChild(img);
+                            };
+
+                            reader.readAsDataURL(file);
+                        } else {
+                            alert('Vui lòng chọn một hình ảnh.');
+                        }
+                    }
+                }
+            });
+            document.getElementById('nispa_gallery').addEventListener('change', function (e) {
+                var previewContainer = document.getElementById('image-preview-10');
+                previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
+
+                if (e.target.files.length > 0) {
+                    for (var i = 0; i < e.target.files.length; i++) {
+                        var file = e.target.files[i];
+
+                        if (file.type.match(/^image\//)) {
+                            var reader = new FileReader();
+
+                            reader.onload = function (e) {
+                                var img = document.createElement('img');
+                                img.src = e.target.result;
+                                img.className = 'preview-image-10';
+                                previewContainer.appendChild(img);
+                            };
+
+                            reader.readAsDataURL(file);
+                        } else {
+                            alert('Vui lòng chọn một hình ảnh.');
+                        }
+                    }
+                }
+            });
+        </script>
+        <style>
+
+            #image-preview-1,
+            #image-preview-2,
+            #image-preview-3,
+            #image-preview-4,
+            #image-preview-5,
+            #image-preview-6,
+            #image-preview-7,
+            #image-preview-8,
+            #image-preview-9,
+            #image-preview-10,
+            #image-preview-11,
+            #image-preview {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .preview-image-1,
+            .preview-image-2,
+            .preview-image-3,
+            .preview-image-4,
+            .preview-image-5,
+            .preview-image-6,
+            .preview-image-7,
+            .preview-image-8,
+            .preview-image-9,
+            .preview-image-10,
+            .preview-image-11,
+            .preview-image {
+                max-width: 100px;
+                height: auto;
+                margin: 5px;
+            }
+
+            /* .heidi_page {
+                display: none !important
+            } */
+
+        </style>
 
 
         </div>

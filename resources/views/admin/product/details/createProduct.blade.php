@@ -1203,7 +1203,7 @@
                                             <div class="block_sp">
                                                 <div class="form-group">
                                                     <label class="text-no-bold" data-bind="text: Title">Tiêu đề, slogan xe</label>
-                                                    <input type="text" name="" id="" value="NISPA VIVA - LƯỚT PHONG CÁCH THỜI TRANG" placeholder="NISPA VIVA - LƯỚT PHONG CÁCH THỜI TRANG" class="form-control" style="width:100%;">
+                                                    <input type="text" name="viva_slogan" id="" value="" placeholder="" class="form-control" style="width:100%;">
                                                 </div>
                                             </div>
                                         </div>
@@ -1218,19 +1218,10 @@
                                                     <div class="form-group">
                                                         <!-- upload mutil video ngắn  -->
                                                         <label class="text-no-bold" data-bind="text: Title">upload video nền</label>
-                                                        <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
+                                                        <input type="file" name="viva_upload_video[]" id="flupload" class="pull-right" style="width:180px;" multiple>
                                                     </div>
                                                         <div style="display: flex;align-items: center;gap: 10px;">
-                                                        <video style="width: 300px;" playsinline preload autoplay muted
-                                                            src="{{ asset('home/images/nispaviva/X-Rotation-A.mp4') }}"></video>
-                                                        <video style="width: 300px;" playsinline preload autoplay muted
-                                                            src="{{ asset('home/images/nispaviva/X-Rotation-B.mp4') }}"></video>
-                                                        <video style="width: 300px;" playsinline preload autoplay muted
-                                                            src="{{ asset('home/images/nispaviva/X-Rotation-C.mp4') }}"></video>
-                                                        <video style="width: 300px;" playsinline preload autoplay muted
-                                                            src="{{ asset('home/images/nispaviva/X-Rotation-D.mp4') }}"></video>
-                                                        <video style="width: 300px;" playsinline preload autoplay muted
-                                                            src="{{ asset('home/images/nispaviva/X-Rotation-E.mp4') }}"></video>
+
                                                     </div>
                                                 </div>
                                             </div>
@@ -1242,10 +1233,10 @@
                                             <div class="block_sp">
                                                 <div class="form-group">
                                                     <label class="text-no-bold" data-bind="text: Title">Hình ảnh logo xe(section 1)</label>
-                                                    <input type="file" name="" id="" class="pull-right" style="width:180px;">
+                                                    <input type="file" name="viva_images_banner1" id="" class="pull-right" style="width:180px;">
                                                 </div>
                                                 <div style="background: black">
-                                                    <img style="width: 180px; height: auto" src="{{ asset('home/images/nispaviva/titlenispabanner.png') }}">
+                                                    <img style="width: 180px; height: auto" src="">
                                                 </div>
                                             </div>
                                         </div>
@@ -1253,10 +1244,10 @@
                                             <div class="block_sp">
                                                 <div class="form-group">
                                                     <label class="text-no-bold" data-bind="text: Title">Hình ảnh (section 2) (kt: 1910 × 1035 px)</label>
-                                                    <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
+                                                    <input type="file" name="viva_images_banner2" id="flupload" class="pull-right" style="width:180px;">
                                                 </div>
                                                 <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;">
-                                                    <img style="width: 155px; height: auto" src="{{ asset('home/images/nispaviva/section1.png') }}">
+                                                    <img style="width: 155px; height: auto" src="">
                                                 </div>
                                             </div>
                                         </div>
@@ -1264,13 +1255,13 @@
                                             <div class="block_sp">
                                                 <div class="form-group">
                                                     <label class="text-no-bold" data-bind="text: Title">url video youtube</label>
-                                                    <input type="text" name="" id="" class="form-control " style="width:100%;">
+                                                    <input type="text" name="viva_youtube_banner3" id="" class="form-control " style="width:100%;">
                                                     <br>
                                                     <label class="text-no-bold" data-bind="text: Title">ảnh nền section video</label>
-                                                    <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
+                                                    <input type="file" name="viva_images_banner3" id="flupload" class="pull-right" style="width:180px;">
                                                 </div>
                                                 <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;">
-                                                    <img style="width: 155px; height: auto" src="{{ asset('home/images/nispaviva/thumbnailvideo1.png') }}">
+                                                    <img style="width: 155px; height: auto" src="">
                                                 </div>
                                             </div>
                                         </div>
@@ -1284,22 +1275,15 @@
                                                     <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
                                                     <div class="form-group">
                                                         <label class="text-no-bold" data-bind="text: Title">tabs 1</label>
-                                                        <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
+                                                        <input type="file" name="viva_images_banner4" id="flupload" class="pull-right" style="width:180px;">
                                                     </div>
                                                         <div>
-                                                            <img style="width: 180px; height: auto" src="{{ asset('home/images/gogo/tienich_1.png') }}">
+                                                            <img style="width: 180px; height: auto" src="">
                                                         </div>
                                                         <label class="next-label">Mô tả 1</label>
-                                                        <input name="" type="text" value="CỐP RỘNG BAO LA" id="" class="inputbox" placeholder="CỐP RỘNG BAO LA" style="width:100%;">
-                                                        <textarea name="" rows="5" cols="70" id="" class="inputbox" style="width: 100%; height:80px;">
-                                                            <!-- nội dung html -->
-                                                            <div>
-                                                                <h2>Cốp rộng bao la</h2>
-                                                                <ul>
-                                                                    <li>Để đồ thả ga với dung tích 20</li>
-                                                                    <li>Tăng tính tiện lợi</li>
-                                                                </ul>
-                                                            </div>
+                                                        <input name="viva_title_banner4" type="text" value="" id="" class="inputbox" placeholder="" style="width:100%;">
+                                                        <textarea name="viva_desc_banner4" rows="5" cols="70" id="" class="inputbox" style="width: 100%; height:80px;">
+
                                                         </textarea>
 
                                                     </div>
@@ -1308,22 +1292,15 @@
                                                     <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
                                                     <div class="form-group">
                                                         <label class="text-no-bold" data-bind="text: Title">tabs 2</label>
-                                                        <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
+                                                        <input type="file" name="viva_images_banner5" id="flupload" class="pull-right" style="width:180px;">
                                                     </div>
                                                         <div>
-                                                            <img style="width: 180px; height: auto" src="{{ asset('home/images/gogo/tienich_1.png') }}">
+                                                            <img style="width: 180px; height: auto" src="">
                                                         </div>
                                                         <label class="next-label">Mô tả 2</label>
-                                                        <input name="" type="text" value="CỔNG SẠC USB" id="" class="inputbox" placeholder="CỔNG SẠC USB" style="width:100%;">
-                                                        <textarea name="" rows="5" cols="70" id="" class="inputbox" style="width: 100%; height:80px;">
-                                                            <!-- nội dung html -->
-                                                            <div>
-                                                                <h2>Cốp rộng bao la</h2>
-                                                                <ul>
-                                                                    <li>Để đồ thả ga với dung tích 20</li>
-                                                                    <li>Tăng tính tiện lợi</li>
-                                                                </ul>
-                                                            </div>
+                                                        <input name="viva_title_banner5" type="text" value="" id="" class="inputbox" placeholder="" style="width:100%;">
+                                                        <textarea name="viva_desc_banner5" rows="5" cols="70" id="" class="inputbox" style="width: 100%; height:80px;">
+
                                                         </textarea>
 
                                                     </div>
@@ -1332,22 +1309,15 @@
                                                     <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
                                                     <div class="form-group">
                                                         <label class="text-no-bold" data-bind="text: Title">tabs 3</label>
-                                                        <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
+                                                        <input type="file" name="viva_images_banner6" id="flupload" class="pull-right" style="width:180px;">
                                                     </div>
                                                         <div>
-                                                            <img style="width: 180px; height: auto" src="{{ asset('home/images/gogo/tienich_1.png') }}">
+                                                            <img style="width: 180px; height: auto" src="">
                                                         </div>
                                                         <label class="next-label">Mô tả 3</label>
-                                                        <input name="" type="text" value="Móc treo đồ" id="" class="inputbox" placeholder="Móc treo đồ" style="width:100%;">
-                                                        <textarea name="" rows="5" cols="70" id="" class="inputbox" style="width: 100%; height:80px;">
-                                                            <!-- nội dung html -->
-                                                            <div>
-                                                                <h2>Cốp rộng bao la</h2>
-                                                                <ul>
-                                                                    <li>Để đồ thả ga với dung tích 20</li>
-                                                                    <li>Tăng tính tiện lợi</li>
-                                                                </ul>
-                                                            </div>
+                                                        <input name="viva_title_banner6" type="text" value="" id="" class="inputbox" placeholder="" style="width:100%;">
+                                                        <textarea name="viva_desc_banner6" rows="5" cols="70" id="" class="inputbox" style="width: 100%; height:80px;">
+
                                                         </textarea>
                                                     </div>
                                                 </div>
@@ -1365,9 +1335,8 @@
                                                                 <div class="form-group">
                                                                     <!-- nhiều ảnh -->
                                                                     <label class="text-no-bold" data-bind="text: Title">Nâng cấp chính bạn</label>
-                                                                    <input type="text" name="" id="" value="Nâng cấp chính bạn" placeholder="Nâng cấp chính bạn" class="form-control pull-right" style="width:100%;margin-bottom: 20px">
-                                                                    <textarea name="" id="" class="form-control" style="width:100%;">
-                                                                        Mỗi màu sắc đều mang lại một phong cách riêng biệt cho người lái, thể hiện được cá tính và sở thích của họ.
+                                                                    <input type="text" name="viva_title_banner7" id="" value="" placeholder="" class="form-control pull-right" style="width:100%;margin-bottom: 20px">
+                                                                    <textarea name="viva_desc_banner7" id="" class="form-control" style="width:100%;">
                                                                     </textarea>
                                                                 </div>
                                                             </div>
@@ -1381,10 +1350,10 @@
                                                                 <div class="form-group">
                                                                     <!-- nhiều ảnh -->
                                                                     <label class="text-no-bold" data-bind="text: Title">Hình ảnh gallery</label>
-                                                                    <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
+                                                                    <input type="file" name="viva_gallery[]" id="viva_gallery" class="pull-right" style="width:180px;" multiple>
                                                                 </div>
-                                                                <div>
-                                                                    <img style="width: 180px; height: auto" src="{{ asset('home/images/section8_gallarey.png') }}">
+                                                                <div id="image-preview-9">
+
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1406,64 +1375,14 @@
                                      style="border-color: rgb(193, 193, 193);">
 
                                     <div class="row">
-                                        <div class="col-sm-12">
-                                            <div class="block_sp">
-                                                <div class="form-group">
-                                                    <label class="text-no-bold" data-bind="text: Title">Tiêu đề, slogan xe</label>
-                                                    <input type="text" name="" id="" value="NISPA VIVA - LƯỚT PHONG CÁCH THỜI TRANG" placeholder="NISPA VIVA - LƯỚT PHONG CÁCH THỜI TRANG" class="form-control" style="width:100%;">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <hr>
-
-                                        <div class="col-sm-12 ">
-                                            <p class="ttg">video nền section 1</p>
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
-                                                    <div class="form-group">
-                                                        <!-- upload mutil video ngắn  -->
-                                                        <label class="text-no-bold" data-bind="text: Title">upload video nền</label>
-                                                        <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
-                                                    </div>
-                                                        <div style="display: flex;align-items: center;gap: 10px;">
-                                                        <video style="width: 300px;" playsinline preload autoplay muted
-                                                            src="{{ asset('home/images/nispaviva/X-Rotation-A.mp4') }}"></video>
-                                                        <video style="width: 300px;" playsinline preload autoplay muted
-                                                            src="{{ asset('home/images/nispaviva/X-Rotation-B.mp4') }}"></video>
-                                                        <video style="width: 300px;" playsinline preload autoplay muted
-                                                            src="{{ asset('home/images/nispaviva/X-Rotation-C.mp4') }}"></video>
-                                                        <video style="width: 300px;" playsinline preload autoplay muted
-                                                            src="{{ asset('home/images/nispaviva/X-Rotation-D.mp4') }}"></video>
-                                                        <video style="width: 300px;" playsinline preload autoplay muted
-                                                            src="{{ asset('home/images/nispaviva/X-Rotation-E.mp4') }}"></video>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <hr>
-
                                         <div class="col-sm-4">
                                             <div class="block_sp">
                                                 <div class="form-group">
-                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh logo xe(section 1)</label>
-                                                    <input type="file" name="" id="" class="pull-right" style="width:180px;">
-                                                </div>
-                                                <div style="background: black">
-                                                    <img style="width: 180px; height: auto" src="{{ asset('home/images/nispaviva/titlenispabanner.png') }}">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-4">
-                                            <div class="block_sp">
-                                                <div class="form-group">
-                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh (section 2) (kt: 1910 × 1035 px)</label>
-                                                    <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
+                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh banner xe (section 1)</label>
+                                                    <input type="file" name="nispa_images_banner1" id="flupload" class="pull-right" style="width:180px;">
                                                 </div>
                                                 <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;">
-                                                    <img style="width: 155px; height: auto" src="{{ asset('home/images/nispaviva/section1.png') }}">
+                                                    <img style="width: 155px; height: auto" src="">
                                                 </div>
                                             </div>
                                         </div>
@@ -1471,97 +1390,68 @@
                                             <div class="block_sp">
                                                 <div class="form-group">
                                                     <label class="text-no-bold" data-bind="text: Title">url video youtube</label>
-                                                    <input type="text" name="" id="" class="form-control " style="width:100%;">
+                                                    <input type="text" name="nispa_youtube_banner2" id="" class="form-control " style="width:100%;">
                                                     <br>
                                                     <label class="text-no-bold" data-bind="text: Title">ảnh nền section video</label>
-                                                    <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
+                                                    <input type="file" name="nispa_images_banner2" id="flupload" class="pull-right" style="width:180px;">
                                                 </div>
                                                 <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;">
-                                                    <img style="width: 155px; height: auto" src="{{ asset('home/images/nispaviva/thumbnailvideo1.png') }}">
+                                                    <img style="width: 155px; height: auto" src="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-4">
+                                            <div class="block_sp">
+                                                <div class="form-group">
+                                                    <!-- multi ảnh -->
+                                                    <label class="text-no-bold" data-bind="text: Title">Hình ảnh tính năng(section 2) (kt: 980 × 564 px)</label>
+                                                    <input type="file" name="nispa_tinhnang_image[]" id="nispa_tinhnang_image" class="pull-right" style="width:180px;" multiple>
+                                                </div>
+                                                <div id="image-preview-8">
+
                                                 </div>
                                             </div>
                                         </div>
 
                                         <hr>
-
-                                        <div class="col-sm-12 ">
-                                            <p class="ttg">Section tiện ích</p>
-                                            <div class="row">
-                                                <div class="col-sm-4">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
-                                                    <div class="form-group">
-                                                        <label class="text-no-bold" data-bind="text: Title">tabs 1</label>
-                                                        <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
-                                                    </div>
-                                                        <div>
-                                                            <img style="width: 180px; height: auto" src="{{ asset('home/images/gogo/tienich_1.png') }}">
-                                                        </div>
-                                                        <label class="next-label">Mô tả 1</label>
-                                                        <input name="" type="text" value="CỐP RỘNG BAO LA" id="" class="inputbox" placeholder="CỐP RỘNG BAO LA" style="width:100%;">
-                                                        <textarea name="" rows="5" cols="70" id="" class="inputbox" style="width: 100%; height:80px;">
-                                                            <!-- nội dung html -->
-                                                            <div>
-                                                                <h2>Cốp rộng bao la</h2>
-                                                                <ul>
-                                                                    <li>Để đồ thả ga với dung tích 20</li>
-                                                                    <li>Tăng tính tiện lợi</li>
-                                                                </ul>
-                                                            </div>
-                                                        </textarea>
-
-                                                    </div>
+                                        <div class="col-sm-12">
+                                            <div class="block_sp">
+                                                <div class="form-group">
+                                                    <label class="text-no-bold" data-bind="text: Title">Thông tin chi tiết xe</label>
                                                 </div>
-                                                <div class="col-sm-4">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
-                                                    <div class="form-group">
-                                                        <label class="text-no-bold" data-bind="text: Title">tabs 2</label>
-                                                        <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
-                                                    </div>
-                                                        <div>
-                                                            <img style="width: 180px; height: auto" src="{{ asset('home/images/gogo/tienich_1.png') }}">
-                                                        </div>
-                                                        <label class="next-label">Mô tả 2</label>
-                                                        <input name="" type="text" value="CỔNG SẠC USB" id="" class="inputbox" placeholder="CỔNG SẠC USB" style="width:100%;">
-                                                        <textarea name="" rows="5" cols="70" id="" class="inputbox" style="width: 100%; height:80px;">
-                                                            <!-- nội dung html -->
-                                                            <div>
-                                                                <h2>Cốp rộng bao la</h2>
-                                                                <ul>
-                                                                    <li>Để đồ thả ga với dung tích 20</li>
-                                                                    <li>Tăng tính tiện lợi</li>
-                                                                </ul>
-                                                            </div>
-                                                        </textarea>
+                                                <div>
+                                                    <textarea name="nispa_desc_3" rows="12" col="12" id="" class="form-control">
 
-                                                    </div>
+                                                    </textarea>
                                                 </div>
-                                                <div class="col-sm-4">
-                                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
-                                                    <div class="form-group">
-                                                        <label class="text-no-bold" data-bind="text: Title">tabs 3</label>
-                                                        <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
-                                                    </div>
-                                                        <div>
-                                                            <img style="width: 180px; height: auto" src="{{ asset('home/images/gogo/tienich_1.png') }}">
+                                            </div>
+                                        </div>
+                                        <hr>
+
+                                        <hr>
+                                        <div class="col-sm-12">
+                                            <div class="block_sp">
+                                                <div class="form-group">
+                                                    <label class="text-no-bold" data-bind="text: Title">Thông tin Công suất & Thời gian bảo hành</label>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <input type="file" name="nispa_images_4" id="flupload" style="width:180px;">
+                                                        <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;">
+                                                            <img style="width: 155px; height: auto" src="">
                                                         </div>
-                                                        <label class="next-label">Mô tả 3</label>
-                                                        <input name="" type="text" value="Móc treo đồ" id="" class="inputbox" placeholder="Móc treo đồ" style="width:100%;">
-                                                        <textarea name="" rows="5" cols="70" id="" class="inputbox" style="width: 100%; height:80px;">
-                                                            <!-- nội dung html -->
-                                                            <div>
-                                                                <h2>Cốp rộng bao la</h2>
-                                                                <ul>
-                                                                    <li>Để đồ thả ga với dung tích 20</li>
-                                                                    <li>Tăng tính tiện lợi</li>
-                                                                </ul>
-                                                            </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <textarea name="nispa_desc_4" rows="12" col="12" id="" class="form-control">
+
                                                         </textarea>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-
                                         <hr>
+
                                         <div class="col-sm-12 ">
                                             <p class="ttg">Section gallery</p>
                                             <div class="row">
@@ -1572,9 +1462,9 @@
                                                                 <div class="form-group">
                                                                     <!-- nhiều ảnh -->
                                                                     <label class="text-no-bold" data-bind="text: Title">Nâng cấp chính bạn</label>
-                                                                    <input type="text" name="" id="" value="Nâng cấp chính bạn" placeholder="Nâng cấp chính bạn" class="form-control pull-right" style="width:100%;margin-bottom: 20px">
-                                                                    <textarea name="" id="" class="form-control" style="width:100%;">
-                                                                        Mỗi màu sắc đều mang lại một phong cách riêng biệt cho người lái, thể hiện được cá tính và sở thích của họ.
+                                                                    <input type="text" name="nispa_title_4" id="" value="" placeholder="" class="form-control pull-right" style="width:100%;margin-bottom: 20px">
+                                                                    <textarea name="nispa_desc_5" id="" class="form-control" style="width:100%;">
+
                                                                     </textarea>
                                                                 </div>
                                                             </div>
@@ -1588,10 +1478,10 @@
                                                                 <div class="form-group">
                                                                     <!-- nhiều ảnh -->
                                                                     <label class="text-no-bold" data-bind="text: Title">Hình ảnh gallery</label>
-                                                                    <input type="file" name="" id="flupload" class="pull-right" style="width:180px;">
+                                                                    <input type="file" name="nispa_gallery[]" id="nispa_gallery" class="pull-right" style="width:180px;" multiple>
                                                                 </div>
-                                                                <div>
-                                                                    <img style="width: 180px; height: auto" src="{{ asset('home/images/section8_gallarey.png') }}">
+                                                                <div id="image-preview-10">
+
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1601,9 +1491,6 @@
                                         </div>
 
                                     </div>
-                                    </div>
-
-
                                 </div>
 
                             </div>
@@ -1699,6 +1586,51 @@
                     allowedContent: true
                 });
                 CKEDITOR.replace('gogo_desc_banner11', {
+                    filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                    filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                    filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                    filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                    filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                    filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                    allowedContent: true
+                });
+                CKEDITOR.replace('viva_desc_banner4', {
+                    filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                    filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                    filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                    filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                    filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                    filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                    allowedContent: true
+                });
+                CKEDITOR.replace('viva_desc_banner5', {
+                    filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                    filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                    filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                    filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                    filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                    filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                    allowedContent: true
+                });
+                CKEDITOR.replace('viva_desc_banner6', {
+                    filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                    filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                    filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                    filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                    filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                    filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                    allowedContent: true
+                });
+                CKEDITOR.replace('nispa_desc_4', {
+                    filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                    filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                    filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                    filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                    filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                    filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                    allowedContent: true
+                });
+                CKEDITOR.replace('nispa_desc_3', {
                     filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
                     filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
                     filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
@@ -1916,6 +1848,81 @@
                         }
                     }
                 });
+                document.getElementById('nispa_tinhnang_image').addEventListener('change', function (e) {
+                    var previewContainer = document.getElementById('image-preview-8');
+                    previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
+
+                    if (e.target.files.length > 0) {
+                        for (var i = 0; i < e.target.files.length; i++) {
+                            var file = e.target.files[i];
+
+                            if (file.type.match(/^image\//)) {
+                                var reader = new FileReader();
+
+                                reader.onload = function (e) {
+                                    var img = document.createElement('img');
+                                    img.src = e.target.result;
+                                    img.className = 'preview-image-8';
+                                    previewContainer.appendChild(img);
+                                };
+
+                                reader.readAsDataURL(file);
+                            } else {
+                                alert('Vui lòng chọn một hình ảnh.');
+                            }
+                        }
+                    }
+                });
+                document.getElementById('viva_gallery').addEventListener('change', function (e) {
+                    var previewContainer = document.getElementById('image-preview-9');
+                    previewContainer.innerHTML = '';
+
+                    if (e.target.files.length > 0) {
+                        for (var i = 0; i < e.target.files.length; i++) {
+                            var file = e.target.files[i];
+
+                            if (file.type.match(/^image\//)) {
+                                var reader = new FileReader();
+
+                                reader.onload = function (e) {
+                                    var img = document.createElement('img');
+                                    img.src = e.target.result;
+                                    img.className = 'preview-image-9';
+                                    previewContainer.appendChild(img);
+                                };
+
+                                reader.readAsDataURL(file);
+                            } else {
+                                alert('Vui lòng chọn một hình ảnh.');
+                            }
+                        }
+                    }
+                });
+                document.getElementById('nispa_gallery').addEventListener('change', function (e) {
+                    var previewContainer = document.getElementById('image-preview-10');
+                    previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
+
+                    if (e.target.files.length > 0) {
+                        for (var i = 0; i < e.target.files.length; i++) {
+                            var file = e.target.files[i];
+
+                            if (file.type.match(/^image\//)) {
+                                var reader = new FileReader();
+
+                                reader.onload = function (e) {
+                                    var img = document.createElement('img');
+                                    img.src = e.target.result;
+                                    img.className = 'preview-image-10';
+                                    previewContainer.appendChild(img);
+                                };
+
+                                reader.readAsDataURL(file);
+                            } else {
+                                alert('Vui lòng chọn một hình ảnh.');
+                            }
+                        }
+                    }
+                });
 
             </script>
             <style>
@@ -1927,6 +1934,9 @@
                 #image-preview-5,
                 #image-preview-6,
                 #image-preview-7,
+                #image-preview-8,
+                #image-preview-9,
+                #image-preview-10,
                 #image-preview {
                     display: flex;
                     flex-wrap: wrap;
@@ -1939,6 +1949,9 @@
                 .preview-image-5,
                 .preview-image-6,
                 .preview-image-7,
+                .preview-image-8,
+                .preview-image-9,
+                .preview-image-10,
                 .preview-image {
                     max-width: 100px;
                     height: auto;

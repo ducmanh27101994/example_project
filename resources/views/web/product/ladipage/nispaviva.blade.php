@@ -14,7 +14,7 @@
         <div class="hero-scooters-svg">
             <div class="viva-svg">
                 <!-- Hình ảnh logo xe(section 1) -->
-                <img src="{{ asset('home/images/nispaviva/titlenispabanner.png') }}" alt="titlenispabanner">
+                <img src="{{ $product->viva_images_banner1 }}" alt="titlenispabanner">
                 <div class="name_title-banner d-flex align-items-center justify-content-between">
                     <span>
                         OSAKAR
@@ -31,35 +31,23 @@
 
         <div class="hero-scooters">
             <!-- ảnh màu sắc xe-->
-            <figure class="hero-scooter"
-                style="background-image: url('{{ asset('home/images/nispaviva/nispaviva.png') }}')">
-            </figure>
-            <figure class="hero-scooter"
-                style='background-image: url("{{ asset('home/images/nispaviva/nispaviva.png') }}")'>
-            </figure>
-            <figure class="hero-scooter"
-                style='background-image: url("{{ asset('home/images/nispaviva/nispaviva.png') }}")'>
-            </figure>
-            <figure class="hero-scooter"
-                style='background-image: url("{{ asset('home/images/nispaviva/nispaviva.png') }}")'>
-            </figure>
-            <figure class="hero-scooter"
-                style='background-image: url("{{ asset('home/images/nispaviva/nispaviva.png') }}")'>
-            </figure>
+            @if(!empty($color_image))
+                @foreach($color_image as $value)
+                    <figure class="hero-scooter"
+                            style="background-image: url('{{ $value->images }}')">
+                    </figure>
+                @endforeach
+            @endif
         </div>
 
 
         <!-- video nền section 1 -->
-        <video class="d-none" playsinline preload autoplay muted
-            data-src="{{ asset('home/images/nispaviva/X-Rotation-A.mp4') }}"></video>
-        <video class="d-none" playsinline preload autoplay muted
-            data-src="{{ asset('home/images/nispaviva/X-Rotation-B.mp4') }}"></video>
-        <video class="d-none" playsinline preload autoplay muted
-            data-src="{{ asset('home/images/nispaviva/X-Rotation-C.mp4') }}"></video>
-        <video class="d-none" playsinline preload autoplay muted
-            data-src="{{ asset('home/images/nispaviva/X-Rotation-D.mp4') }}"></video>
-        <video class="d-none" playsinline preload autoplay muted
-            data-src="{{ asset('home/images/nispaviva/X-Rotation-E.mp4') }}"></video>
+        @if(!empty($viva_upload_video))
+            @foreach($viva_upload_video as $value)
+                <video class="d-none" playsinline preload autoplay muted
+                       data-src="{{ $value->images }}"></video>
+            @endforeach
+        @endif
     </section>
 
 
@@ -69,7 +57,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                     <div class="title d-flex align-items-center" style="height: 100%">
                         <!-- Tiêu đề, slogan xe -->
-                        <h1>NISPA VIVA - LƯỚT PHONG CÁCH THỜI TRANG</h1>
+                        <h1>{{$product->viva_slogan}}}</h1>
                     </div>
                 </div>
             </div>
@@ -78,7 +66,7 @@
 
     <div class="wrapper-image-itelligent">
         <!-- Hình ảnh (section 2) (kt: 1910 × 1035 px) -->
-        <img class="w-100" src="{{ asset('home/images/nispaviva/section1.png') }}" alt="section1">
+        <img class="w-100" src="{{ $product->viva_images_banner2 }}" alt="section1">
     </div>
 
     <section class="page-block parts-bike section" id="pdp-parts-bike">
@@ -94,56 +82,21 @@
         <div class="parts-bike__container padding-container">
             <div class="parts-bike__list parts-bike__list_type__owl owl-carousel owl-theme">
                 <!-- Ảnh chi tiết xe trong tabs hình ảnh chi tiết -->
-                <div class="parts-bike__item js-aos aos-init aos-animate" data-aos="fade-left" data-aos-delay="0"
-                    data-aos-duration="300">
-                    <picture>
-                        <source class="img-srcset" data-srcset="{{ asset('home/images/nispaviva/details_1.png') }}"
-                            type="image/png" srcset="{{ asset('home/images/nispaviva/details_1.png') }}">
-                        <img data-src="{{ asset('home/images/nispaviva/details_1.png') }}" title="Evo200"
-                            alt="Hệ thống đèn LED và đèn pha projector của xe máy điện VinFast Evo200" width="100%"
-                            class="img-lazy" src="{{ asset('home/images/nispaviva/details_1.png') }}">
-                    </picture>
-                </div>
-                <div class="parts-bike__item js-aos aos-init aos-animate" data-aos="fade-left" data-aos-delay="150"
-                    data-aos-duration="300">
-                    <picture>
-                        <source class="img-srcset" data-srcset="{{ asset('home/images/nispaviva/details_2.png') }}"
-                            type="image/png" srcset="{{ asset('home/images/nispaviva/details_2.png') }}">
-                        <img data-src="{{ asset('home/images/nispaviva/details_2.png') }}" title="Evo200"
-                            alt="Hệ thống đèn LED và đèn pha projector của xe máy điện VinFast Evo200" width="100%"
-                            class="img-lazy" src="{{ asset('home/images/nispaviva/details_2.png') }}">
-                    </picture>
-                </div>
-                <div class="parts-bike__item js-aos aos-init aos-animate" data-aos="fade-left" data-aos-delay="300"
-                    data-aos-duration="300">
-                    <picture>
-                        <source class="img-srcset" data-srcset="{{ asset('home/images/nispaviva/details_3.png') }}"
-                            type="image/png" srcset="{{ asset('home/images/nispaviva/details_3.png') }}">
-                        <img data-src="{{ asset('home/images/nispaviva/details_3.png') }}" title="Evo200"
-                            alt="Hệ thống đèn LED và đèn pha projector của xe máy điện VinFast Evo200" width="100%"
-                            class="img-lazy" src="{{ asset('home/images/nispaviva/details_3.png') }}">
-                    </picture>
-                </div>
-                <div class="parts-bike__item js-aos aos-init aos-animate" data-aos="fade-left" data-aos-delay="450"
-                    data-aos-duration="300">
-                    <picture>
-                        <source class="img-srcset" data-srcset="{{ asset('home/images/nispaviva/details_4.png') }}"
-                            type="image/png" srcset="{{ asset('home/images/nispaviva/details_4.png') }}">
-                        <img data-src="{{ asset('home/images/nispaviva/details_4.png') }}" title="Evo200"
-                            alt="Hệ thống đèn LED và đèn pha projector của xe máy điện VinFast Evo200" width="100%"
-                            class="img-lazy" src="{{ asset('home/images/nispaviva/details_4.png') }}">
-                    </picture>
-                </div>
-                <div class="parts-bike__item js-aos aos-init aos-animate" data-aos="fade-left" data-aos-delay="600"
-                    data-aos-duration="300">
-                    <picture>
-                        <source class="img-srcset" data-srcset="{{ asset('home/images/nispaviva/details_5.png') }}"
-                            type="image/png" srcset="{{ asset('home/images/nispaviva/details_5.png') }}">
-                        <img data-src="{{ asset('home/images/nispaviva/details_5.png') }}" title="Evo200"
-                            alt="Hệ thống đèn LED và đèn pha projector của xe máy điện VinFast Evo200" width="100%"
-                            class="img-lazy" src="{{ asset('home/images/nispaviva/details_5.png') }}">
-                    </picture>
-                </div>
+                @if(!empty($vehicle_detail_photos))
+                    @foreach($vehicle_detail_photos as $value)
+                        <div class="parts-bike__item js-aos aos-init aos-animate" data-aos="fade-left" data-aos-delay="0"
+                             data-aos-duration="300">
+                            <picture>
+                                <source class="img-srcset" data-srcset="{{ $value->images }}"
+                                        type="image/png" srcset="{{ $value->images }}">
+                                <img data-src="{{ $value->images }}" title="Evo200"
+                                     alt="Hệ thống đèn LED và đèn pha projector của xe máy điện VinFast Evo200" width="100%"
+                                     class="img-lazy" src="{{ $value->images }}">
+                            </picture>
+                        </div>
+                    @endforeach
+                @endif
+
             </div>
         </div>
     </section>
@@ -151,11 +104,11 @@
     <section class="section section-video" data-component-list="Video">
         <div class="video-copy">
             <!-- url video youtube -->
-            <a data-fancybox data-width="auto" data-height="auto" href="https://www.youtube.com/embed/yJG90zU3_ug"
+            <a data-fancybox data-width="auto" data-height="auto" href="{{$product->viva_youtube_banner3}}"
                 title="video">
                 <!-- ảnh nền section video -->
                 <figure class="image-video-crossover">
-                    <img class="w-100" src="{{ asset('home/images/nispaviva/thumbnailvideo1.png') }}"
+                    <img class="w-100" src="{{ $product->viva_images_banner3 }}"
                         alt="thumbnailvideo1">
                 </figure>
                 <svg xmlns="http://www.w3.org/2000/svg" width="132" height="132" viewBox="0 0 132 132" fill="none">
@@ -224,69 +177,31 @@
 
         <div class="top-main-img">
             <div class="mySliderTop">
-                <div class>
-                    <picture>
-                        <source srcset="{{ asset('home/images/nispaviva/image-360.png') }}" type="image/webp" />
-                        <img data-lazy="{{ asset('home/images/nispaviva/image-360.png') }}" title
-                            alt="Xe máy điện VinFast Evo200 màu vàng" width="100%" />
-                    </picture>
-                </div>
-                <div class>
-                    <picture>
-                        <source data-lazy-srcset="{{ asset('home/images/nispaviva/image-360.png') }}"
-                            type="image/webp" />
-                        <img data-lazy-src="{{ asset('home/images/nispaviva/image-360.png') }}"
-                            alt="Xe máy điện VinFast Evo200 màu đen" width="100%" />
-                    </picture>
-                </div>
-                <div class>
-                    <picture>
-                        <source data-lazy-srcset="{{ asset('home/images/nispaviva/image-360.png') }}"
-                            type="image/webp" />
-                        <img data-lazy-src="{{ asset('home/images/nispaviva/image-360.png') }}"
-                            alt="Xe máy điện VinFast Evo200 màu đỏ" width="100%" />
-                    </picture>
-                </div>
-                <div class>
-                    <picture>
-                        <source data-lazy-srcset="{{ asset('home/images/nispaviva/image-360.png') }}"
-                            type="image/webp" />
-                        <img data-lazy-src="{{ asset('home/images/nispaviva/image-360.png') }}"
-                            alt="Xe máy điện VinFast Evo200 màu xanh" width="100%" />
-                    </picture>
-                </div>
-                <div class>
-                    <picture>
-                        <source data-lazy-srcset="{{ asset('home/images/nispaviva/image-360.png') }}"
-                            type="image/webp" />
-                        <img data-lazy-src="{{ asset('home/images/nispaviva/image-360.png') }}"
-                            alt="Xe máy điện VinFast Evo200 màu trắng" width="100%" />
-                    </picture>
-                </div>
+                @if(!empty($color_image))
+                    @foreach($color_image as $value)
+                        <div class>
+                            <picture>
+                                <source srcset="{{ $value->images }}" type="image/webp" />
+                                <img data-lazy="{{ $value->images }}" title
+                                     alt="Xe máy điện VinFast Evo200 màu vàng" width="100%" />
+                            </picture>
+                        </div>
+                    @endforeach
+                @endif
+
             </div>
         </div>
         <div class="top-main-control js-aos" data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
             <div class="myThumbSlider" data-showitem="7">
-                <div class="item-myThumb">
-                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwddfc1849/images/PDP-XMD/color/evo-yellow.png"
-                        alt="màu vàng">
-                </div>
-                <div class="item-myThumb">
-                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw5b7d4ede/images/PDP-XMD/color/evo-black.png"
-                        alt="màu đen">
-                </div>
-                <div class="item-myThumb">
-                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
-                        alt="màu đỏ">
-                </div>
-                <div class="item-myThumb">
-                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw4c44a070/images/PDP-XMD/color/evo-blue.png"
-                        alt="màu xanh">
-                </div>
-                <div class="item-myThumb">
-                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwd52b0fb5/images/PDP-XMD/color/evo-white.png"
-                        alt="màu trắng">
-                </div>
+                @if(!empty($icon_images))
+                    @foreach($icon_images as $value)
+                        <div class="item-myThumb">
+                            <img src="{{$value->images}}"
+                                 alt="màu vàng">
+                        </div>
+                    @endforeach
+                @endif
+
             </div>
             <div class="box-control-nav">
                 <div class="btn-arrow button-prev"></div>
@@ -325,17 +240,17 @@
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="tienich1" data-toggle="tab" href="javascript:void(0)" role="tab"
-                        aria-controls="home" aria-selected="true">CỐP RỘNG BAO LA
+                        aria-controls="home" aria-selected="true">{{$product->viva_title_banner4}}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="tienich2" data-toggle="tab" href="javascript:void(0)" role="tab"
-                        aria-controls="profile" aria-selected="false">CỔNG SẠC USB
+                        aria-controls="profile" aria-selected="false">{{$product->viva_title_banner5}}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="tienich3" data-toggle="tab" href="javascript:void(0)" role="tab"
-                        aria-controls="profile" aria-selected="false">Móc treo đồ
+                        aria-controls="profile" aria-selected="false">{{$product->viva_title_banner6}}
                     </a>
                 </li>
             </ul>
@@ -345,17 +260,11 @@
 
                         <div class="row" style="width: 100%">
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
-                                <img class="img" src="{{ asset('home/images/gogo/tienich_1.png') }}" alt="tienich_1">
+                                <img class="img" src="{{ $product->viva_images_banner4 }}" alt="tienich_1">
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
                                 <div class="tabs-ck-editor d-flex align-items-center">
-                                    <div>
-                                        <h2>Cốp rộng bao la</h2>
-                                        <ul>
-                                            <li>Để đồ thả ga với dung tích 20</li>
-                                            <li>Tăng tính tiện lợi</li>
-                                        </ul>
-                                    </div>
+                                    {!! $product->viva_desc_banner4 !!}
                                 </div>
                             </div>
                         </div>
@@ -366,17 +275,11 @@
                     <div class="breaking-battery-tab d-flex justify-content-between">
                         <div class="row" style="width: 100%">
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
-                                <img class="img" src="{{ asset('home/images/gogo/tienich_2.png') }}" alt="tienich_1">
+                                <img class="img" src="{{ $product->viva_images_banner5 }}" alt="tienich_1">
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
                                 <div class="tabs-ck-editor d-flex align-items-center">
-                                    <div>
-                                        <h2>Cổng sạc USB</h2>
-                                        <ul>
-                                            <li>Phía trước tiện lợi</li>
-                                            <li>Móc treo đồ dạng gập tiện lợi</li>
-                                        </ul>
-                                    </div>
+                                    {!! $product->viva_desc_banner5 !!}
                                 </div>
                             </div>
                         </div>
@@ -386,17 +289,11 @@
                     <div class="breaking-battery-tab d-flex justify-content-between">
                         <div class="row" style="width: 100%">
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
-                                <img class="img" src="{{ asset('home/images/gogo/tienich_3.png') }}" alt="tienich_1">
+                                <img class="img" src="{{ $product->viva_images_banner6 }}" alt="tienich_1">
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
                                 <div class="tabs-ck-editor d-flex align-items-center">
-                                    <div>
-                                        <h2>Móc treo đồ</h2>
-                                        <ul>
-                                            <li>Móc treo đồ dạng gập tiện lợi</li>
-                                            <li>Móc treo đồ dạng gập tiện lợi</li>
-                                        </ul>
-                                    </div>
+                                    {!! $product->viva_desc_banner6 !!}
                                 </div>
                             </div>
                         </div>
@@ -415,10 +312,8 @@
         <div class="gallery-header">
             <!-- Nâng cấp chính bạn -->
             <div class="gallery-header-content">
-                <h3 class="gallery-title">Nâng cấp chính bạn</h3>
-                <p class="gallery-copy">Mỗi màu sắc đều mang lại một phong cách riêng biệt cho người lái, thể hiện được
-                    cá tính và sở
-                    thích của họ.</p>
+                <h3 class="gallery-title">{{$product->viva_title_banner7}}</h3>
+                <p class="gallery-copy">{{$product->viva_desc_banner7}}</p>
                 <button class="cta-button cta-button--gallery btn btn-button"><a href="#">
                         Tìm hiểu ngay
                     </a></button>
@@ -498,82 +393,12 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane  show active tabInfoProduct" id="tabInfoProduct" role="tabpanel"
                         aria-labelledby="tabInfoProduct">
-                        <div class="tab-pane-info d-flex justify-content-between">
-                            <ul>
-                                <li>
-                                    <h3 class="fw-light">Màu sắc</h3>
-                                    <span>Đỏ tươi, Trắng ngọc trai,<br>
-                                        Xanh tím than, Vàng, Đen Nhám</span>
-                                </li>
-                                <li>
-                                    <h3 class="fw-light">Thời gian sạc tiêu chuẩn</h3>
-                                    <span>Sạc 400W - 10h</span>
-                                </li>
-                                <li>
-                                    <h3 class="fw-light">Loại động cơ</h3>
-                                    <span>Inhub</span>
-                                </li>
-                                <li>
-                                    <h3 class="fw-light">Công suất danh định</h3>
-                                    <span>1500 W</span>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>
-                                    <h3 class="fw-light">Giảm xóc</h3>
-                                    <span>Ống lồng-giảm chấn thủy lực;<br>
-                                        giảm xóc đôi, giảm chấn thủy lực</span>
-                                </li>
-                                <li>
-                                    <h3 class="fw-light">PIN</h3>
-                                    <span>01 Pin LFP</span>
-                                </li>
-                                <li>
-                                    <h3 class="fw-light">Dung lượng PIN</h3>
-                                    <span>3,5 KWh</span>
-                                </li>
-                                <li>
-                                    <span class="fw-light">Tốc độ tối đa</span>
-                                    <span>70 km/h</span>
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>
-                                    <h3 class="fw-light">Công suất lớn nhất</h3>
-                                    <span>2500 W</span>
-                                </li>
-                                <li>
-                                    <h3 class="fw-light">Trọng lượng</h3>
-                                    <span>97 kg bao gồm pin LFP</span>
-                                </li>
-                                <li>
-                                    <h3 class="fw-light">Dài x Rộng x Cao</h3>
-                                    <span>1804 x 683 x 1127 mm</span>
-                                </li>
-                                <li>
-                                    <h3 class="fw-light">Phanh trước và sau</h3>
-                                    <span>Phanh đĩa/cơ</span>
-                                </li>
-                            </ul>
-                        </div>
+                        {!! $product->overview !!}
                     </div>
                     <div class="tab-pane  tabBatteryPackages" id="tabBatteryPackages" role="tabpanel"
                         aria-labelledby="tabBatteryPackages">
                         <div class="breaking-battery-tab d-flex justify-content-between">
-                            <div>
-                                <h3 class="pin-subtitle">Gói thuê PIN</h3>
-                                <p>Gói cước thuê pin:</p>
-                                <ul class="rental-list">
-                                    <li>Quãng đường di chuyển trong tháng dưới 2.000 km, cước thuê pin: 350.000
-                                        VNĐ/tháng.</li>
-                                    <li>Quãng đường di chuyển trong tháng trên 2.000 km trở lên, cước thuê pin: 990.000
-                                        VNĐ/tháng.</li>
-                                </ul>
-                                <div class="rental-note">*Phí đặt cọc thuê pin 2.000.000 VNĐ</div>
-
-
-                                <p></p>
-                            </div>
+                            {!! $product->engine !!}
                         </div>
                     </div>
                 </div>

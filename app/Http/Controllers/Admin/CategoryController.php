@@ -338,6 +338,31 @@ class CategoryController extends BaseController
             'gogo_title_banner12' => $request->gogo_title_banner12 ?? '',
             'gogo_desc_banner12' => $request->gogo_desc_banner12 ?? '',
 
+            //Viva
+            'viva_slogan' => $request->viva_slogan ?? '',
+            'viva_youtube_banner3' => $request->viva_youtube_banner3 ?? '',
+            'viva_title_banner4' => $request->viva_title_banner4 ?? '',
+            'viva_desc_banner4' => $request->viva_desc_banner4 ?? '',
+            'viva_title_banner5' => $request->viva_title_banner5 ?? '',
+            'viva_desc_banner5' => $request->viva_desc_banner5 ?? '',
+            'viva_title_banner6' => $request->viva_title_banner6 ?? '',
+            'viva_desc_banner6' => $request->viva_desc_banner6 ?? '',
+            'viva_title_banner7' => $request->viva_title_banner7 ?? '',
+            'viva_desc_banner7' => $request->viva_desc_banner7 ?? '',
+            'nispa_youtube_banner2' => $request->nispa_youtube_banner2 ?? '',
+            'nispa_desc_3' => $request->nispa_desc_3 ?? '',
+            'nispa_desc_4' => $request->nispa_desc_4 ?? '',
+            'nispa_title_4' => $request->nispa_title_4 ?? '',
+            'nispa_desc_5' => $request->nispa_desc_5 ?? '',
+            'viva_images_banner1' => !empty($request->viva_images_banner1) ? $this->uploadService->upload_param($request->viva_images_banner1) : '',
+            'viva_images_banner2' => !empty($request->viva_images_banner2) ? $this->uploadService->upload_param($request->viva_images_banner2) : '',
+            'viva_images_banner3' => !empty($request->viva_images_banner3) ? $this->uploadService->upload_param($request->viva_images_banner3) : '',
+            'viva_images_banner4' => !empty($request->viva_images_banner4) ? $this->uploadService->upload_param($request->viva_images_banner4) : '',
+            'viva_images_banner5' => !empty($request->viva_images_banner5) ? $this->uploadService->upload_param($request->viva_images_banner5) : '',
+            'viva_images_banner6' => !empty($request->viva_images_banner6) ? $this->uploadService->upload_param($request->viva_images_banner6) : '',
+            'nispa_images_banner1' => !empty($request->nispa_images_banner1) ? $this->uploadService->upload_param($request->nispa_images_banner1) : '',
+            'nispa_images_banner2' => !empty($request->nispa_images_banner2) ? $this->uploadService->upload_param($request->nispa_images_banner2) : '',
+            'nispa_images_4' => !empty($request->nispa_images_4) ? $this->uploadService->upload_param($request->nispa_images_4) : '',
         ];
 
         $product = $this->productRepositories->create($data);
@@ -452,6 +477,62 @@ class CategoryController extends BaseController
                     $this->imagesRepositories->create($color_image);
                 }
             }
+            if (!empty($request->viva_upload_video)) {
+                foreach ($request->viva_upload_video as $value) {
+                    $images = $this->uploadService->upload_param($value);
+                    $color_image = [
+                        'product_id' => $product->id,
+                        'code' => 'viva_upload_video',
+                        'images' => $images
+                    ];
+                    $this->imagesRepositories->create($color_image);
+                }
+            }
+            if (!empty($request->viva_upload_video)) {
+                foreach ($request->viva_upload_video as $value) {
+                    $images = $this->uploadService->upload_param($value);
+                    $color_image = [
+                        'product_id' => $product->id,
+                        'code' => 'viva_upload_video',
+                        'images' => $images
+                    ];
+                    $this->imagesRepositories->create($color_image);
+                }
+            }
+            if (!empty($request->viva_gallery)) {
+                foreach ($request->viva_gallery as $value) {
+                    $images = $this->uploadService->upload_param($value);
+                    $color_image = [
+                        'product_id' => $product->id,
+                        'code' => 'viva_gallery',
+                        'images' => $images
+                    ];
+                    $this->imagesRepositories->create($color_image);
+                }
+            }
+            if (!empty($request->nispa_tinhnang_image)) {
+                foreach ($request->nispa_tinhnang_image as $value) {
+                    $images = $this->uploadService->upload_param($value);
+                    $color_image = [
+                        'product_id' => $product->id,
+                        'code' => 'nispa_tinhnang_image',
+                        'images' => $images
+                    ];
+                    $this->imagesRepositories->create($color_image);
+                }
+            }
+            if (!empty($request->nispa_gallery)) {
+                foreach ($request->nispa_gallery as $value) {
+                    $images = $this->uploadService->upload_param($value);
+                    $color_image = [
+                        'product_id' => $product->id,
+                        'code' => 'nispa_gallery',
+                        'images' => $images
+                    ];
+                    $this->imagesRepositories->create($color_image);
+                }
+            }
+
 
         }
 
@@ -528,7 +609,32 @@ class CategoryController extends BaseController
             ->orderBy('created_at', 'asc')
             ->get();
 
-        return view('admin.product.details.editProduct', compact('gogo_tinhnang_image','gogo_images_banner13','gogo_images_banner2_multi','images360', 'color_image', 'icon_images', 'product', 'categoryProduct', 'feature_description', 'vehicle_detail_photos', 'actual_photo'));
+        $viva_upload_video = DB::table('images_products')
+            ->where('product_id', '=', $id)
+            ->where('code', '=', 'viva_upload_video')
+            ->orderBy('created_at', 'asc')
+            ->get();
+
+        $viva_gallery = DB::table('images_products')
+            ->where('product_id', '=', $id)
+            ->where('code', '=', 'viva_gallery')
+            ->orderBy('created_at', 'asc')
+            ->get();
+
+        $nispa_tinhnang_image = DB::table('images_products')
+            ->where('product_id', '=', $id)
+            ->where('code', '=', 'nispa_tinhnang_image')
+            ->orderBy('created_at', 'asc')
+            ->get();
+
+        $nispa_gallery = DB::table('images_products')
+            ->where('product_id', '=', $id)
+            ->where('code', '=', 'nispa_gallery')
+            ->orderBy('created_at', 'asc')
+            ->get();
+
+
+        return view('admin.product.details.editProduct', compact('viva_upload_video','viva_gallery','nispa_tinhnang_image','nispa_gallery','gogo_tinhnang_image','gogo_images_banner13','gogo_images_banner2_multi','images360', 'color_image', 'icon_images', 'product', 'categoryProduct', 'feature_description', 'vehicle_detail_photos', 'actual_photo'));
 
     }
 

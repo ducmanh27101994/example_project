@@ -254,10 +254,37 @@ class HomePageController extends BaseController
             ->orderBy('created_at', 'asc')
             ->get();
 
+        $viva_upload_video = DB::table('images_products')
+            ->where('product_id', '=', $product->id)
+            ->where('code', '=', 'viva_upload_video')
+            ->orderBy('created_at', 'asc')
+            ->get();
+        $viva_gallery = DB::table('images_products')
+            ->where('product_id', '=', $product->id)
+            ->where('code', '=', 'viva_gallery')
+            ->orderBy('created_at', 'asc')
+            ->get();
+
+        $nispa_tinhnang_image = DB::table('images_products')
+            ->where('product_id', '=', $product->id)
+            ->where('code', '=', 'nispa_tinhnang_image')
+            ->orderBy('created_at', 'asc')
+            ->get();
+
+        $nispa_gallery = DB::table('images_products')
+            ->where('product_id', '=', $product->id)
+            ->where('code', '=', 'nispa_gallery')
+            ->orderBy('created_at', 'asc')
+            ->get();
+
         if ($product->interface_type == 2) {
             return view('web.product.ladipage.heidi', compact('product', 'color_image', 'icon_images', 'images360'));
         } elseif ($product->interface_type == 3) {
-            return view('web.product.ladipage.gogo', compact('images360', 'color_image', 'icon_images','product','gogo_tinhnang_image','gogo_images_banner13','gogo_images_banner2_multi'));
+            return view('web.product.ladipage.gogo', compact('images360', 'color_image', 'icon_images', 'product', 'gogo_tinhnang_image', 'gogo_images_banner13', 'gogo_images_banner2_multi'));
+        } elseif ($product->interface_type == 4) {
+            return view('web.product.ladipage.nispaviva', compact('viva_gallery', 'vehicle_detail_photos', 'viva_upload_video', 'product', 'color_image', 'icon_images', 'images360'));
+        } elseif ($product->interface_type == 5) {
+            return view('web.product.ladipage.x3', compact('nispa_gallery', 'nispa_tinhnang_image', 'product', 'color_image', 'icon_images', 'images360'));
         } else {
             return view('web.product.detailsBasic', compact('images360', 'color_image', 'icon_images', 'product', 'feature_description', 'vehicle_detail_photos', 'actual_photo'));
         }

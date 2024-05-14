@@ -15,7 +15,7 @@ class AddColumnSloganToProducts extends Migration
     {
         Schema::table('products', function (Blueprint $table) {
             //
-            $table->string('gogo_slogan')->nullable();
+
         });
     }
 
