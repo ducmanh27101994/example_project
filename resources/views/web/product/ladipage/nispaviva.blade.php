@@ -14,7 +14,7 @@
         <div class="hero-scooters-svg">
             <div class="viva-svg">
                 <!-- Hình ảnh logo xe(section 1) -->
-                <img src="{{ $product->viva_images_banner1 }}" alt="titlenispabanner">
+                <img src="{{ $product->viva_images_banner1 ?? '' }}" alt="titlenispabanner">
                 <div class="name_title-banner d-flex align-items-center justify-content-between">
                     <span>
                         OSAKAR
@@ -57,7 +57,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                     <div class="title d-flex align-items-center" style="height: 100%">
                         <!-- Tiêu đề, slogan xe -->
-                        <h1>{{$product->viva_slogan}}}</h1>
+                        <h1>{{$product->viva_slogan ?? ''}}}</h1>
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@
 
     <div class="wrapper-image-itelligent">
         <!-- Hình ảnh (section 2) (kt: 1910 × 1035 px) -->
-        <img class="w-100" src="{{ $product->viva_images_banner2 }}" alt="section1">
+        <img class="w-100" src="{{ $product->viva_images_banner2 ?? '' }}" alt="section1">
     </div>
 
     <section class="page-block parts-bike section" id="pdp-parts-bike">
@@ -104,11 +104,11 @@
     <section class="section section-video" data-component-list="Video">
         <div class="video-copy">
             <!-- url video youtube -->
-            <a data-fancybox data-width="auto" data-height="auto" href="{{$product->viva_youtube_banner3}}"
+            <a data-fancybox data-width="auto" data-height="auto" href="{{$product->viva_youtube_banner3 ?? ''}}"
                 title="video">
                 <!-- ảnh nền section video -->
                 <figure class="image-video-crossover">
-                    <img class="w-100" src="{{ $product->viva_images_banner3 }}"
+                    <img class="w-100" src="{{ $product->viva_images_banner3 ?? '' }}"
                         alt="thumbnailvideo1">
                 </figure>
                 <svg xmlns="http://www.w3.org/2000/svg" width="132" height="132" viewBox="0 0 132 132" fill="none">
@@ -240,17 +240,17 @@
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="tienich1" data-toggle="tab" href="javascript:void(0)" role="tab"
-                        aria-controls="home" aria-selected="true">{{$product->viva_title_banner4}}
+                        aria-controls="home" aria-selected="true">{{$product->viva_title_banner4 ?? ''}}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="tienich2" data-toggle="tab" href="javascript:void(0)" role="tab"
-                        aria-controls="profile" aria-selected="false">{{$product->viva_title_banner5}}
+                        aria-controls="profile" aria-selected="false">{{$product->viva_title_banner5 ?? ''}}
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="tienich3" data-toggle="tab" href="javascript:void(0)" role="tab"
-                        aria-controls="profile" aria-selected="false">{{$product->viva_title_banner6}}
+                        aria-controls="profile" aria-selected="false">{{$product->viva_title_banner6 ?? ''}}
                     </a>
                 </li>
             </ul>
@@ -260,11 +260,11 @@
 
                         <div class="row" style="width: 100%">
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
-                                <img class="img" src="{{ $product->viva_images_banner4 }}" alt="tienich_1">
+                                <img class="img" src="{{ $product->viva_images_banner4 ?? '' }}" alt="tienich_1">
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
                                 <div class="tabs-ck-editor d-flex align-items-center">
-                                    {!! $product->viva_desc_banner4 !!}
+                                    {!! $product->viva_desc_banner4 ?? '' !!}
                                 </div>
                             </div>
                         </div>
@@ -275,11 +275,11 @@
                     <div class="breaking-battery-tab d-flex justify-content-between">
                         <div class="row" style="width: 100%">
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
-                                <img class="img" src="{{ $product->viva_images_banner5 }}" alt="tienich_1">
+                                <img class="img" src="{{ $product->viva_images_banner5 ?? '' }}" alt="tienich_1">
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
                                 <div class="tabs-ck-editor d-flex align-items-center">
-                                    {!! $product->viva_desc_banner5 !!}
+                                    {!! $product->viva_desc_banner5 ?? '' !!}
                                 </div>
                             </div>
                         </div>
@@ -289,11 +289,11 @@
                     <div class="breaking-battery-tab d-flex justify-content-between">
                         <div class="row" style="width: 100%">
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
-                                <img class="img" src="{{ $product->viva_images_banner6 }}" alt="tienich_1">
+                                <img class="img" src="{{ $product->viva_images_banner6 ?? '' }}" alt="tienich_1">
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
                                 <div class="tabs-ck-editor d-flex align-items-center">
-                                    {!! $product->viva_desc_banner6 !!}
+                                    {!! $product->viva_desc_banner6 ?? '' !!}
                                 </div>
                             </div>
                         </div>
@@ -312,8 +312,8 @@
         <div class="gallery-header">
             <!-- Nâng cấp chính bạn -->
             <div class="gallery-header-content">
-                <h3 class="gallery-title">{{$product->viva_title_banner7}}</h3>
-                <p class="gallery-copy">{{$product->viva_desc_banner7}}</p>
+                <h3 class="gallery-title">{{$product->viva_title_banner7 ?? ''}}</h3>
+                <p class="gallery-copy">{{$product->viva_desc_banner7 ?? ''}}</p>
                 <button class="cta-button cta-button--gallery btn btn-button"><a href="#">
                         Tìm hiểu ngay
                     </a></button>
@@ -393,12 +393,12 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane  show active tabInfoProduct" id="tabInfoProduct" role="tabpanel"
                         aria-labelledby="tabInfoProduct">
-                        {!! $product->overview !!}
+                        {!! $product->overview ?? '' !!}
                     </div>
                     <div class="tab-pane  tabBatteryPackages" id="tabBatteryPackages" role="tabpanel"
                         aria-labelledby="tabBatteryPackages">
 
-                            {!! $product->engine !!}
+                            {!! $product->engine ?? '' !!}
 
                     </div>
                 </div>

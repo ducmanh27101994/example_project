@@ -11,7 +11,7 @@
         <section class="hero-section">
             <div class="hero-main">
                 <div class="hero-background"
-                     style="background: url({{ $product->heidi_images_banner1 }}) center / cover no-repeat;"></div>
+                     style="background: url({{ $product->heidi_images_banner1 ?? '' }}) center / cover no-repeat;"></div>
             </div>
         </section>
 
@@ -24,7 +24,7 @@
                 <div class="break-scooter">
                     <p class="heidi_text_head_line_top">
                         <!-- Hình ảnh tên xe(section 2): HEIDI.png -->
-                        <img src="{{ $product->heidi_images_banner2 }}" alt="HEIDI">
+                        <img src="{{ $product->heidi_images_banner2 ?? '' }}" alt="HEIDI">
                     </p>
                     <p class="heidi_text_head_line_bottom">
                         <span>TỐI ƯU TRẢI NGHIỆM</span>
@@ -38,7 +38,7 @@
             <style>
                 /* Hình ảnh xe(section 2): hedi-dauxe.png */
                 .break-scooter::before {
-                    background-image: url('{{ $product->heidi_images_banner3 }}');
+                    background-image: url('{{ $product->heidi_images_banner3 ?? '' }}');
                 }
             </style>
         </section>
@@ -59,7 +59,7 @@
                 <style>
                     /* Hình ảnh xe(section 3): OSK_7822.png */
                     .section-fast::after {
-                        background: url('{{ $product->heidi_images_banner4 }}') center bottom / auto 100% no-repeat;
+                        background: url('{{ $product->heidi_images_banner4 ?? '' }}') center bottom / auto 100% no-repeat;
                     }
 
                     @media (min-width: 768px) {
@@ -114,7 +114,7 @@
 
         <!-- Hình ảnh xe da dạng màu sắc(section 4): Banner_color.png -->
         <section class="section section-color"
-                 style="background: #000 url({{ $product->heidi_images_banner5 }}) no-repeat;">
+                 style="background: #000 url({{ $product->heidi_images_banner5 ?? '' }}) no-repeat;">
 
             <div class="head_color_title">
                 <h2>Đa dạng màu sắc</h2>
@@ -186,8 +186,8 @@
                         <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-left"
                              data-aos-duration="2000">
                             <div>
-                                <h4 class="subhead">{{$product->heidi_title_banner6}}</h4>
-                                <p>{{$product->heidi_desc_banner6}}</p>
+                                <h4 class="subhead">{{$product->heidi_title_banner6 ?? ''}}</h4>
+                                <p>{{$product->heidi_desc_banner6 ?? ''}}</p>
                             </div>
                         </div>
                     </div>
@@ -199,8 +199,8 @@
                         <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-right"
                              data-aos-duration="2000">
                             <div>
-                                <h4 class="subhead">{{$product->heidi_title_banner7}}</h4>
-                                <p>{{$product->heidi_desc_banner7}}</p>
+                                <h4 class="subhead">{{$product->heidi_title_banner7 ?? ''}}</h4>
+                                <p>{{$product->heidi_desc_banner7 ?? ''}}</p>
                             </div>
                         </div>
                     </div>
@@ -212,8 +212,8 @@
                         <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-left"
                              data-aos-duration="2000">
                             <div>
-                                <h4 class="subhead">{{$product->heidi_title_banner8}}</h4>
-                                <p>{{$product->heidi_desc_banner8}}</p>
+                                <h4 class="subhead">{{$product->heidi_title_banner8 ?? ''}}</h4>
+                                <p>{{$product->heidi_desc_banner8 ?? ''}}</p>
                             </div>
                         </div>
                     </div>
@@ -225,8 +225,8 @@
                         <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-right"
                              data-aos-duration="2000">
                             <div>
-                                <h4 class="subhead">{{$product->heidi_title_banner9}}</h4>
-                                <p>{{$product->heidi_desc_banner9}}</p>
+                                <h4 class="subhead">{{$product->heidi_title_banner9 ?? ''}}</h4>
+                                <p>{{$product->heidi_desc_banner9 ?? ''}}</p>
                             </div>
                         </div>
                     </div>
@@ -302,20 +302,20 @@
                     <style>
                         /* Hình ảnh 2 */
                         .performance-bg--caliper {
-                            background-image: url({{ $product->heidi_images_banner10_1 }});
+                            background-image: url({{ $product->heidi_images_banner10_1 ?? '' }});
                         }
 
                         /* Hình ảnh 1 */
                         .performance-bg--caliper::before {
-                            background-image: url({{ $product->heidi_images_banner10 }});
+                            background-image: url({{ $product->heidi_images_banner10 ?? '' }});
                         }
                     </style>
                     <div class="performance-content">
                         <!-- nội dung từng phần -->
                         <div class="section-content">
                             <div class="performance-content-sizer">
-                                <h4 class="subhead">{{ $product->heidi_title_banner10 }}</h4>
-                                <p>{{ $product->heidi_desc_banner10 }}
+                                <h4 class="subhead">{{ $product->heidi_title_banner10 ?? ''}}</h4>
+                                <p>{{ $product->heidi_desc_banner10 ?? '' }}
                                 </p>
                             </div>
                         </div>
@@ -326,20 +326,20 @@
                     <style>
                         /* Hình ảnh 2 */
                         .performance-bg--f-suspension {
-                            background-image: url({{ $product->heidi_images_banner11_1 }});
+                            background-image: url({{ $product->heidi_images_banner11_1 ?? '' }});
                         }
 
                         /* Hình ảnh 1 */
                         .performance-bg--f-suspension::before {
-                            background-image: url({{ $product->heidi_images_banner11 }});
+                            background-image: url({{ $product->heidi_images_banner11 ?? '' }});
                         }
                     </style>
                     <div class="performance-content">
                         <!-- nội dung từng phần -->
                         <div class="section-content">
                             <div class="performance-content-sizer">
-                                <h4 class="subhead">{{ $product->heidi_title_banner11 }}</h4>
-                                <p>{{ $product->heidi_desc_banner11 }}</p>
+                                <h4 class="subhead">{{ $product->heidi_title_banner11 ?? '' }}</h4>
+                                <p>{{ $product->heidi_desc_banner11 ?? '' }}</p>
                             </div>
                         </div>
                     </div>
@@ -349,20 +349,20 @@
                     <style>
                         /* Hình ảnh 2 */
                         .performance-bg--r-suspension {
-                            background-image: url({{ $product->heidi_images_banner12_1 }});
+                            background-image: url({{ $product->heidi_images_banner12_1 ?? '' }});
                         }
 
                         /* Hình ảnh 1 */
                         .performance-bg--r-suspension::before {
-                            background-image: url({{ $product->heidi_images_banner12 }});
+                            background-image: url({{ $product->heidi_images_banner12 ?? '' }});
                         }
                     </style>
                     <div class="performance-content">
                         <!-- nội dung từng phần -->
                         <div class="section-content">
                             <div class="performance-content-sizer">
-                                <h4 class="subhead">{{ $product->heidi_title_banner12 }}</h4>
-                                <p>{{ $product->heidi_desc_banner12 }}</p>
+                                <h4 class="subhead">{{ $product->heidi_title_banner12 ?? '' }}</h4>
+                                <p>{{ $product->heidi_desc_banner12 ?? '' }}</p>
                             </div>
                         </div>
                     </div>
@@ -371,7 +371,7 @@
         </section>
 
         <section class="section section-gallarey">
-            <img src="{{ $product->heidi_images_banner13 }}" alt="section8_gallarey">
+            <img src="{{ $product->heidi_images_banner13 ?? '' }}" alt="section8_gallarey">
         </section>
 
         <!-- thông số kỹ thuật -->
@@ -398,13 +398,13 @@
                         <div class="tab-pane fade show active tabInfoProduct" id="tabInfoProduct" role="tabpanel"
                              aria-labelledby="tabInfoProduct">
 
-                                {!! $product->overview !!}
+                                {!! $product->overview ?? '' !!}
 
                         </div>
                         <div class="tab-pane fade tabBatteryPackages" id="tabBatteryPackages" role="tabpanel"
                              aria-labelledby="tabBatteryPackages">
 
-                                   {!! $product->chassis !!}
+                                   {!! $product->chassis ?? '' !!}
 
                         </div>
                     </div>

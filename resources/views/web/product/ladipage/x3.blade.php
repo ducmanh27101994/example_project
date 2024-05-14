@@ -11,7 +11,7 @@
         <div class="hero-main">
             <!-- Hình ảnh banner xe (section 1) -->
             <div class="hero-background"
-                style="background: url({{ $product->nispa_images_banner1 }}) center / cover no-repeat;">
+                style="background: url({{ $product->nispa_images_banner1 ?? '' }}) center / cover no-repeat;">
             </div>
         </div>
     </section>
@@ -43,7 +43,7 @@
         <div class="group-wrapper-func">
             <div class="d-flex align-items-center justify-content-between">
                 <!-- Thông tin chi tiết xe -->
-                {!! $product->nispa_desc_3 !!}
+                {!! $product->nispa_desc_3 ?? '' !!}
             </div>
         </div>
     </section>
@@ -51,11 +51,11 @@
     <section class="section section-video" data-component-list="Video">
         <div class="video-copy">
             <!-- url video youtube -->
-            <a data-fancybox data-width="auto" data-height="auto" href="{{$product->nispa_youtube_banner2}}"
+            <a data-fancybox data-width="auto" data-height="auto" href="{{$product->nispa_youtube_banner2 ?? ''}}"
                 title="video">
                 <!-- ảnh nền section video -->
                 <figure class="image-video-crossover">
-                    <img class="w-100" src="{{ $product->nispa_images_banner2 }}" alt="thumbnailvideo1">
+                    <img class="w-100" src="{{ $product->nispa_images_banner2 ?? '' }}" alt="thumbnailvideo1">
                 </figure>
                 <svg xmlns="http://www.w3.org/2000/svg" width="132" height="132" viewBox="0 0 132 132" fill="none">
                     <circle cx="66.0019" cy="66" r="55.2558" fill="white" />
@@ -160,14 +160,14 @@
             <!-- Thông tin Công suất & Thời gian bảo hành -->
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                 <div class="page-block-details-img aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
-                    <img src="{{ $product->nispa_images_4 }}" alt="dongcoxanh2">
+                    <img src="{{ $product->nispa_images_4 ?? '' }}" alt="dongcoxanh2">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 aos-init aos-animate" data-aos="zoom-in"
                 data-aos-duration="2000">
                 <div class="page-block-details-content">
                     <div class="content">
-                        {!! $product->nispa_desc_4 !!}
+                        {!! $product->nispa_desc_4 ?? '' !!}
                     </div>
                 </div>
             </div>
@@ -200,8 +200,8 @@
         <!-- Nâng cấp chính bạn -->
         <div class="gallery-header">
             <div class="gallery-header-content">
-                <h3 class="gallery-title">{{$product->nispa_title_4}}</h3>
-                <p class="gallery-copy">{{$product->nispa_desc_5}}</p>
+                <h3 class="gallery-title">{{$product->nispa_title_4 ?? ''}}</h3>
+                <p class="gallery-copy">{{$product->nispa_desc_5 ?? ''}}</p>
                 <button class="cta-button cta-button--gallery btn btn-button"><a href="#">
                         Tìm hiểu ngay
                     </a></button>
@@ -281,11 +281,11 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane  show active tabInfoProduct" id="tabInfoProduct" role="tabpanel"
                         aria-labelledby="tabInfoProduct">
-                        {!! $product->overview !!}
+                        {!! $product->overview ?? '' !!}
                     </div>
                     <div class="tab-pane  tabBatteryPackages" id="tabBatteryPackages" role="tabpanel"
                         aria-labelledby="tabBatteryPackages">
-                            {!! $product->engine !!}
+                            {!! $product->engine ?? '' !!}
 
                     </div>
                 </div>

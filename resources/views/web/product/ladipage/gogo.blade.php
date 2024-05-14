@@ -13,7 +13,7 @@
             <div class="hero-main">
                 <!-- Hình ảnh banner(section 1) -->
                 <div class="hero-background"
-                     style="background: url({{ $product->gogo_images_banner1 }}) center / cover no-repeat;">
+                     style="background: url({{ $product->gogo_images_banner1 ?? '' }}) center / cover no-repeat;">
                 </div>
             </div>
         </section>
@@ -25,7 +25,7 @@
                         <div class="title d-flex align-items-center aos-init aos-animate" data-aos="fade-left"
                              data-aos-duration="1000" style="height: 100%">
                             <!-- Tiêu đề, slogan xe -->
-                            <h1>{{ $product->gogo_slogan }}</h1>
+                            <h1>{{ $product->gogo_slogan ?? '' }}</h1>
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -33,7 +33,7 @@
                             <div class="breaking-wrap" style="padding: 0">
                                 <div class="breaking-top d-flex justify-content-end">
                                     <div class="breaking-top__title-btn" style="margin-top: 0">
-                                        <span class="">{{number_format($product->product_price)}} VNĐ</span>
+                                        <span class="">{{number_format($product->product_price ?? 0)}} VNĐ</span>
                                         <a href="#" class="add-to-cart-v3s btn-pdp btn btn-primary effect-apollo"
                                            data-pid="VF-ZFG-ESNA5LHH-REQ"><span>Mua Ngay</span></a>
                                     </div>
@@ -70,7 +70,7 @@
             <div class="group-wrapper-func">
                 <div class="d-flex align-items-center justify-content-between">
                     <!-- Thông tin chi tiết xe -->
-                    {!! $product->gogo_desc_3 !!}
+                    {!! $product->gogo_desc_3 ?? '' !!}
                 </div>
             </div>
         </section>
@@ -81,28 +81,28 @@
             <div class="feature-bot-top-1 d-flex align-items-center">
                 <div class="feature-box-top-1-left-image">
                     <div class="image">
-                        <img src="{{ $product->gogo_images_banner4 }}" alt="feature1_1">
+                        <img src="{{ $product->gogo_images_banner4 ?? ''}}" alt="feature1_1">
                     </div>
                 </div>
                 <div class="feature-box-top-1-left-content">
                     <div class="feature-box-top-1-left-box-content aos-init aos-animate" data-aos="fade-up"
                          data-aos-duration="2000">
-                        <h3>{{$product->gogo_title_banner4}}</h3>
-                        <p>{{$product->gogo_desc_banner4}}</p>
+                        <h3>{{$product->gogo_title_banner4 ?? ''}}</h3>
+                        <p>{{$product->gogo_desc_banner4 ?? ''}}</p>
                     </div>
                 </div>
             </div>
             <div class="feature-bot-top-1 d-flex align-items-center flex-roate">
                 <div class="feature-box-top-1-left-image feature-box-top-2-left-image-style">
                     <div class="image">
-                        <img src="{{ $product->gogo_images_banner5 }}" alt="feature1_2">
+                        <img src="{{ $product->gogo_images_banner5 ?? '' }}" alt="feature1_2">
                     </div>
                 </div>
                 <div class="feature-box-top-1-left-content feature-box-top-2-left-content-style aos-init aos-animate"
                      data-aos="fade-up" data-aos-duration="2000">
                     <div class="feature-box-top-1-left-box-content">
-                        <h3>{{$product->gogo_title_banner5}}</h3>
-                        <p>{{$product->gogo_desc_banner5}}</p>
+                        <h3>{{$product->gogo_title_banner5 ?? ''}}</h3>
+                        <p>{{$product->gogo_desc_banner5 ?? ''}}</p>
                     </div>
                 </div>
             </div>
@@ -126,17 +126,17 @@
 
                     <li class="nav-item">
                         <a class="nav-link active" id="tabexperience1" data-toggle="tab" href="javascript:void(0)"
-                           role="tab" aria-controls="home" aria-selected="true">{{$product->gogo_title_banner6}}
+                           role="tab" aria-controls="home" aria-selected="true">{{$product->gogo_title_banner6 ?? ''}}
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="tabexperience2" data-toggle="tab" href="javascript:void(0)" role="tab"
-                           aria-controls="profile" aria-selected="false">{{$product->gogo_title_banner7}}
+                           aria-controls="profile" aria-selected="false">{{$product->gogo_title_banner7 ?? ''}}
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="tabexperience3" data-toggle="tab" href="javascript:void(0)" role="tab"
-                           aria-controls="profile" aria-selected="false">{{$product->gogo_title_banner8}}
+                           aria-controls="profile" aria-selected="false">{{$product->gogo_title_banner8 ?? ''}}
                         </a>
                     </li>
                 </ul>
@@ -147,9 +147,9 @@
                         <div class="tab-pane-info d-flex justify-content-center">
 
                             <div class="block-tabs text-center">
-                                <p>{{$product->gogo_desc_banner6}}</p>
+                                <p>{{$product->gogo_desc_banner6 ?? ''}}</p>
 
-                                <img class="mx-auto" src="{{ $product->gogo_images_banner6 }}"
+                                <img class="mx-auto" src="{{ $product->gogo_images_banner6 ?? '' }}"
                                      alt="image-exp-tabs">
                             </div>
 
@@ -160,9 +160,9 @@
                         <div class="tab-pane-info d-flex justify-content-center">
 
                             <div class="block-tabs text-center">
-                                <p>{{$product->gogo_desc_banner7}}</p>
+                                <p>{{$product->gogo_desc_banner7 ?? ''}}</p>
 
-                                <img class="mx-auto" src="{{ $product->gogo_images_banner7 }}"
+                                <img class="mx-auto" src="{{ $product->gogo_images_banner7 ?? '' }}"
                                      alt="image-exp-tabs">
                             </div>
 
@@ -173,9 +173,9 @@
                         <div class="tab-pane-info d-flex justify-content-center">
 
                             <div class="block-tabs text-center">
-                                <p>{{$product->gogo_desc_banner8}}</p>
+                                <p>{{$product->gogo_desc_banner8 ?? ''}}</p>
 
-                                <img class="mx-auto" src="{{ $product->gogo_images_banner8 }}"
+                                <img class="mx-auto" src="{{ $product->gogo_images_banner8 ?? ''}}"
                                      alt="image-exp-tabs">
                             </div>
 
@@ -301,8 +301,8 @@
             <!-- Nâng cấp chính bạn -->
             <div class="gallery-header">
                 <div class="gallery-header-content">
-                    <h3 class="gallery-title">{{$product->gogo_title_banner12}}</h3>
-                    <p class="gallery-copy">{{$product->gogo_desc_banner12}}</p>
+                    <h3 class="gallery-title">{{$product->gogo_title_banner12 ?? ''}}</h3>
+                    <p class="gallery-copy">{{$product->gogo_desc_banner12 ?? ''}}</p>
                     <button class="cta-button cta-button--gallery btn btn-button"><a href="#">
                             Tìm hiểu ngay
                         </a></button>
@@ -371,17 +371,17 @@
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="tienich1" data-toggle="tab" href="javascript:void(0)" role="tab"
-                           aria-controls="home" aria-selected="true">{{$product->gogo_title_banner9}}
+                           aria-controls="home" aria-selected="true">{{$product->gogo_title_banner9 ?? ''}}
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="tienich2" data-toggle="tab" href="javascript:void(0)" role="tab"
-                           aria-controls="profile" aria-selected="false">{{$product->gogo_title_banner10}}
+                           aria-controls="profile" aria-selected="false">{{$product->gogo_title_banner10 ?? ''}}
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="tienich3" data-toggle="tab" href="javascript:void(0)" role="tab"
-                           aria-controls="profile" aria-selected="false">{{$product->gogo_title_banner11}}
+                           aria-controls="profile" aria-selected="false">{{$product->gogo_title_banner11 ?? ''}}
                         </a>
                     </li>
                 </ul>
@@ -391,12 +391,12 @@
 
                             <div class="row" style="width: 100%">
                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
-                                    <img class="img" src="{{ $product->gogo_images_banner9 }}"
+                                    <img class="img" src="{{ $product->gogo_images_banner9 ?? '' }}"
                                          alt="tienich_1">
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
                                     <div class="tabs-ck-editor d-flex align-items-center">
-                                        {!! $product->gogo_desc_banner9 !!}
+                                        {!! $product->gogo_desc_banner9 ?? '' !!}
                                     </div>
                                 </div>
                             </div>
@@ -407,12 +407,12 @@
                         <div class="breaking-battery-tab d-flex justify-content-between">
                             <div class="row" style="width: 100%">
                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
-                                    <img class="img" src="{{ $product->gogo_images_banner10 }}"
+                                    <img class="img" src="{{ $product->gogo_images_banner10 ?? '' }}"
                                          alt="tienich_1">
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
                                     <div class="tabs-ck-editor d-flex align-items-center">
-                                        {!! $product->gogo_desc_banner10 !!}
+                                        {!! $product->gogo_desc_banner10 ?? '' !!}
                                     </div>
                                 </div>
                             </div>
@@ -422,12 +422,12 @@
                         <div class="breaking-battery-tab d-flex justify-content-between">
                             <div class="row" style="width: 100%">
                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
-                                    <img class="img" src="{{ $product->gogo_images_banner11 }}"
+                                    <img class="img" src="{{ $product->gogo_images_banner11 ?? ''}}"
                                          alt="tienich_1">
                                 </div>
                                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
                                     <div class="tabs-ck-editor d-flex align-items-center">
-                                        {!! $product->gogo_desc_banner11 !!}
+                                        {!! $product->gogo_desc_banner11 ?? '' !!}
                                     </div>
                                 </div>
                             </div>
@@ -460,11 +460,11 @@
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane  show active tabInfoProduct" id="tabInfoProduct" role="tabpanel"
                              aria-labelledby="tabInfoProduct">
-                            {!! $product->overview !!}
+                            {!! $product->overview ?? '' !!}
                         </div>
                         <div class="tab-pane  tabBatteryPackages" id="tabBatteryPackages" role="tabpanel"
                              aria-labelledby="tabBatteryPackages">
-                            {!! $product->engine !!}
+                            {!! $product->engine ?? '' !!}
                         </div>
                     </div>
                 </div>
