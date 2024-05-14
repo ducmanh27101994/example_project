@@ -717,7 +717,7 @@
                                                 </div>
                                                 <div style="background: #000;">
                                                     <img style="width: 180px; height: auto"
-                                                         src="{{$product->heidi_images_banner2}}">
+                                                         src="{{$product->heidi_images_banner2 ?? ''}}">
                                                 </div>
                                             </div>
                                         </div>
@@ -731,7 +731,7 @@
                                                 </div>
                                                 <div>
                                                     <img style="width: 180px; height: auto"
-                                                         src="{{$product->heidi_images_banner3}}">
+                                                         src="{{$product->heidi_images_banner3 ?? ''}}">
                                                 </div>
                                             </div>
                                         </div>
@@ -745,7 +745,7 @@
                                                 </div>
                                                 <div>
                                                     <img style="width: 180px; height: auto"
-                                                         src="{{$product->heidi_images_banner4}}">
+                                                         src="{{$product->heidi_images_banner4 ?? ''}}">
                                                 </div>
                                             </div>
                                         </div>
@@ -759,7 +759,7 @@
                                                 </div>
                                                 <div>
                                                     <img style="width: 180px; height: auto"
-                                                         src="{{$product->heidi_images_banner5}}">
+                                                         src="{{$product->heidi_images_banner5 ?? ''}}">
                                                 </div>
                                             </div>
                                         </div>
@@ -778,16 +778,16 @@
                                                         </div>
                                                         <div>
                                                             <img style="width: 180px; height: auto"
-                                                                 src="{{$product->heidi_images_banner6}}">
+                                                                 src="{{$product->heidi_images_banner6 ?? ''}}">
                                                         </div>
                                                         <label class="next-label">Mô tả 1</label>
                                                         <input name="heidi_title_banner6" type="text"
-                                                               value="{{$product->heidi_title_banner6}}"
+                                                               value="{{$product->heidi_title_banner6 ?? ''}}"
                                                                id="txtproductname" class="inputbox"
                                                                placeholder="Perfectly Stealth 1" style="width:100%;">
                                                         <textarea name="heidi_desc_banner6" rows="5" cols="70"
                                                                   id="txtkeyword" class="inputbox"
-                                                                  style="width: 100%; height:80px;">{{$product->heidi_desc_banner6}}</textarea>
+                                                                  style="width: 100%; height:80px;">{{$product->heidi_desc_banner6 ?? ''}}</textarea>
 
                                                     </div>
                                                 </div>
@@ -802,16 +802,16 @@
                                                         </div>
                                                         <div>
                                                             <img style="width: 180px; height: auto"
-                                                                 src="{{$product->heidi_images_banner7}}">
+                                                                 src="{{$product->heidi_images_banner7 ?? ''}}">
                                                         </div>
                                                         <label class="next-label">Mô tả 2</label>
                                                         <input name="heidi_title_banner7" type="text"
-                                                               value="{{$product->heidi_title_banner7}}"
+                                                               value="{{$product->heidi_title_banner7 ?? ''}}"
                                                                id="txtproductname" class="inputbox"
                                                                placeholder="Perfectly Stealth 2" style="width:100%;">
                                                         <textarea name="heidi_desc_banner7" rows="5" cols="70"
                                                                   id="txtkeyword" class="inputbox"
-                                                                  style="width: 100%; height:80px;">{{$product->heidi_desc_banner7}}</textarea>
+                                                                  style="width: 100%; height:80px;">{{$product->heidi_desc_banner7 ?? ''}}</textarea>
 
                                                     </div>
                                                 </div>
@@ -826,16 +826,16 @@
                                                         </div>
                                                         <div>
                                                             <img style="width: 180px; height: auto"
-                                                                 src="{{$product->heidi_images_banner8}}">
+                                                                 src="{{$product->heidi_images_banner8 ?? ''}}">
                                                         </div>
                                                         <label class="next-label">Mô tả 3</label>
                                                         <input name="heidi_title_banner8" type="text"
-                                                               value="{{$product->heidi_title_banner8}}"
+                                                               value="{{$product->heidi_title_banner8 ?? ''}}"
                                                                id="txtproductname" class="inputbox"
                                                                placeholder="Perfectly Stealth 3" style="width:100%;">
                                                         <textarea name="heidi_desc_banner8" rows="5" cols="70"
                                                                   id="txtkeyword" class="inputbox"
-                                                                  style="width: 100%; height:80px;">{{$product->heidi_desc_banner8}}</textarea>
+                                                                  style="width: 100%; height:80px;">{{$product->heidi_desc_banner8 ?? ''}}</textarea>
 
                                                     </div>
                                                 </div>
@@ -850,16 +850,16 @@
                                                         </div>
                                                         <div>
                                                             <img style="width: 180px; height: auto"
-                                                                 src="{{$product->heidi_images_banner9}}">
+                                                                 src="{{$product->heidi_images_banner9 ?? ''}}">
                                                         </div>
                                                         <label class="next-label">Mô tả 4</label>
                                                         <input name="heidi_title_banner9" type="text"
-                                                               value="{{$product->heidi_title_banner9}}"
+                                                               value="{{$product->heidi_title_banner9 ?? ''}}"
                                                                id="txtproductname" class="inputbox"
                                                                placeholder="Perfectly Stealth 1" style="width:100%;">
                                                         <textarea name="heidi_desc_banner9" rows="5" cols="70"
                                                                   id="txtkeyword" class="inputbox"
-                                                                  style="width: 100%; height:80px;">{{$product->heidi_desc_banner9}}</textarea>
+                                                                  style="width: 100%; height:80px;">{{$product->heidi_desc_banner9 ?? ''}}</textarea>
 
                                                     </div>
                                                 </div>
@@ -882,7 +882,7 @@
                                                                 </div>
                                                                 <div>
                                                                     <img style="width: 180px; height: auto"
-                                                                         src="{{$product->heidi_images_banner10}}">
+                                                                         src="{{$product->heidi_images_banner10 ?? ''}}">
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-6">
@@ -895,18 +895,18 @@
                                                                 </div>
                                                                 <div>
                                                                     <img style="width: 180px; height: auto"
-                                                                         src="{{$product->heidi_images_banner10_1}}">
+                                                                         src="{{$product->heidi_images_banner10_1 ?? ''}}">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <label class="next-label">Mô tả 1</label>
                                                         <input name="heidi_title_banner10" type="text"
-                                                               value="{{$product->heidi_title_banner10}}}"
+                                                               value="{{$product->heidi_title_banner10 ?? ''}}}"
                                                                id="txtproductname" class="inputbox"
                                                                placeholder="Perfectly Stealth 1" style="width:100%;">
                                                         <textarea name="heidi_desc_banner10" rows="5" cols="70"
                                                                   id="txtkeyword" class="inputbox"
-                                                                  style="width: 100%; height:80px;">{{$product->heidi_desc_banner10}}</textarea>
+                                                                  style="width: 100%; height:80px;">{{$product->heidi_desc_banner10 ?? ''}}</textarea>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
@@ -923,7 +923,7 @@
                                                                 </div>
                                                                 <div>
                                                                     <img style="width: 180px; height: auto"
-                                                                         src="{{$product->heidi_images_banner11}}">
+                                                                         src="{{$product->heidi_images_banner11 ?? ''}}">
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-6">
@@ -936,18 +936,18 @@
                                                                 </div>
                                                                 <div>
                                                                     <img style="width: 180px; height: auto"
-                                                                         src="{{$product->heidi_images_banner11_1}}">
+                                                                         src="{{$product->heidi_images_banner11_1 ?? ''}}">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <label class="next-label">Mô tả 2</label>
                                                         <input name="heidi_title_banner11" type="text"
-                                                               value="{{$product->heidi_title_banner11}}"
+                                                               value="{{$product->heidi_title_banner11 ?? ''}}"
                                                                id="txtproductname" class="inputbox"
                                                                placeholder="Perfectly Stealth 2" style="width:100%;">
                                                         <textarea name="heidi_desc_banner11" rows="5" cols="70"
                                                                   id="txtkeyword" class="inputbox"
-                                                                  style="width: 100%; height:80px;">{{$product->heidi_desc_banner11}}</textarea>
+                                                                  style="width: 100%; height:80px;">{{$product->heidi_desc_banner11 ?? ''}}</textarea>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
@@ -964,7 +964,7 @@
                                                                 </div>
                                                                 <div>
                                                                     <img style="width: 180px; height: auto"
-                                                                         src="{{$product->heidi_images_banner12}}">
+                                                                         src="{{$product->heidi_images_banner12 ?? ''}}">
                                                                 </div>
                                                             </div>
                                                             <div class="col-sm-6">
@@ -977,18 +977,18 @@
                                                                 </div>
                                                                 <div>
                                                                     <img style="width: 180px; height: auto"
-                                                                         src="{{$product->heidi_images_banner12_1}}">
+                                                                         src="{{$product->heidi_images_banner12_1 ?? ''}}">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <label class="next-label">Mô tả 3</label>
                                                         <input name="heidi_title_banner12" type="text"
-                                                               value="{{$product->heidi_title_banner12}}"
+                                                               value="{{$product->heidi_title_banner12 ?? ''}}"
                                                                id="txtproductname" class="inputbox"
                                                                placeholder="Perfectly Stealth 3" style="width:100%;">
                                                         <textarea name="heidi_desc_banner12" rows="5" cols="70"
                                                                   id="txtkeyword" class="inputbox"
-                                                                  style="width: 100%; height:80px;">{{$product->heidi_desc_banner12}}</textarea>
+                                                                  style="width: 100%; height:80px;">{{$product->heidi_desc_banner12 ?? ''}}</textarea>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1012,7 +1012,7 @@
                                                                 </div>
                                                                 <div>
                                                                     <img style="width: 180px; height: auto"
-                                                                         src="{{$product->heidi_images_banner13}}">
+                                                                         src="{{$product->heidi_images_banner13 ?? ''}}">
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1037,7 +1037,7 @@
                                                     <label class="text-no-bold" data-bind="text: Title">Tiêu đề, slogan
                                                         xe</label>
                                                     <input type="text" name="gogo_slogan" id="" placeholder=""
-                                                           value="{{$product->gogo_slogan}}" class="form-control"
+                                                           value="{{$product->gogo_slogan ?? ''}}" class="form-control"
                                                            style="width:100%;">
                                                 </div>
                                             </div>
@@ -1052,7 +1052,7 @@
                                                 </div>
                                                 <div>
                                                     <img style="width: 180px; height: auto"
-                                                         src="{{$product->gogo_images_banner1}}">
+                                                         src="{{$product->gogo_images_banner1 ?? ''}}">
                                                 </div>
                                             </div>
                                         </div>
@@ -1095,7 +1095,7 @@
                                                 </div>
                                                 <div>
                                                     <textarea cols="12" name="gogo_desc_3" id="" class="form-control">
-                                                        {!! $product->gogo_desc_3 !!}
+                                                        {!! $product->gogo_desc_3 ?? '' !!}
                                                     </textarea>
                                                 </div>
                                             </div>
@@ -1115,16 +1115,16 @@
                                                         </div>
                                                         <div>
                                                             <img style="width: 180px; height: auto"
-                                                                 src="{{ $product->gogo_images_banner4 }}">
+                                                                 src="{{ $product->gogo_images_banner4 ?? '' }}">
                                                         </div>
                                                         <label class="next-label">Mô tả 1</label>
                                                         <input name="gogo_title_banner4" type="text"
-                                                               value="{{$product->gogo_title_banner4}}}" id=""
+                                                               value="{{$product->gogo_title_banner4 ?? ''}}}" id=""
                                                                class="inputbox" placeholder="HỆ THỐNG PHANH E-ABS"
                                                                style="width:100%;">
                                                         <textarea name="gogo_desc_banner4" rows="5" cols="70" id=""
                                                                   class="inputbox"
-                                                                  style="width: 100%; height:80px;">{{$product->gogo_desc_banner4}}</textarea>
+                                                                  style="width: 100%; height:80px;">{{$product->gogo_desc_banner4 ?? ''}}</textarea>
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
@@ -1136,16 +1136,16 @@
                                                         </div>
                                                         <div>
                                                             <img style="width: 180px; height: auto"
-                                                                 src="{{ $product->gogo_images_banner5 }}">
+                                                                 src="{{ $product->gogo_images_banner5 ?? '' }}">
                                                         </div>
                                                         <label class="next-label">Mô tả 2</label>
                                                         <input name="gogo_title_banner5" type="text"
-                                                               value="{{$product->gogo_title_banner5}}" id=""
+                                                               value="{{$product->gogo_title_banner5 ?? ''}}" id=""
                                                                class="inputbox" placeholder="CỤM ĐÈN NỔI BẬT"
                                                                style="width:100%;">
                                                         <textarea name="gogo_desc_banner5" rows="5" cols="70" id=""
                                                                   class="inputbox"
-                                                                  style="width: 100%; height:80px;">{{$product->gogo_desc_banner5}}</textarea>
+                                                                  style="width: 100%; height:80px;">{{$product->gogo_desc_banner5 ?? ''}}</textarea>
 
                                                     </div>
                                                 </div>
@@ -1168,15 +1168,15 @@
                                                         </div>
                                                         <div>
                                                             <img style="width: 180px; height: auto"
-                                                                 src="{{ $product->gogo_images_banner6 }}">
+                                                                 src="{{ $product->gogo_images_banner6 ?? '' }}">
                                                         </div>
                                                         <label class="next-label">Mô tả 1</label>
                                                         <input name="gogo_title_banner6" type="text"
-                                                               value="{{$product->gogo_title_banner6}}" id=""
+                                                               value="{{$product->gogo_title_banner6 ?? ''}}" id=""
                                                                class="inputbox" placeholder="" style="width:100%;">
                                                         <textarea name="gogo_desc_banner6" rows="5" cols="70" id=""
                                                                   class="inputbox"
-                                                                  style="width: 100%; height:80px;">{{$product->gogo_desc_banner6}}</textarea>
+                                                                  style="width: 100%; height:80px;">{{$product->gogo_desc_banner6 ?? ''}}</textarea>
 
                                                     </div>
                                                 </div>
@@ -1191,16 +1191,16 @@
                                                         </div>
                                                         <div>
                                                             <img style="width: 180px; height: auto"
-                                                                 src="{{ $product->gogo_images_banner7 }}">
+                                                                 src="{{ $product->gogo_images_banner7 ?? '' }}">
                                                         </div>
                                                         <label class="next-label">Mô tả 2</label>
                                                         <input name="gogo_title_banner7" type="text"
-                                                               value="{{$product->gogo_title_banner7}}" id=""
+                                                               value="{{$product->gogo_title_banner7 ?? ''}}" id=""
                                                                class="inputbox" placeholder="CAN ĐẢM GIỮA NHỮNG CƠN MƯA"
                                                                style="width:100%;">
                                                         <textarea name="gogo_desc_banner7" rows="5" cols="70" id=""
                                                                   class="inputbox"
-                                                                  style="width: 100%; height:80px;">{{$product->gogo_desc_banner7}}</textarea>
+                                                                  style="width: 100%; height:80px;">{{$product->gogo_desc_banner7 ?? ''}}</textarea>
 
                                                     </div>
                                                 </div>
@@ -1215,16 +1215,16 @@
                                                         </div>
                                                         <div>
                                                             <img style="width: 180px; height: auto"
-                                                                 src="{{ $product->gogo_images_banner8 }}">
+                                                                 src="{{ $product->gogo_images_banner8 ?? '' }}">
                                                         </div>
                                                         <label class="next-label">Mô tả 3</label>
                                                         <input name="gogo_title_banner8" type="text"
-                                                               value="{{$product->gogo_title_banner8}}" id=""
+                                                               value="{{$product->gogo_title_banner8 ?? ''}}" id=""
                                                                class="inputbox" placeholder="ÁP SUẤT LỐP"
                                                                style="width:100%;">
                                                         <textarea name="gogo_desc_banner8" rows="5" cols="70" id=""
                                                                   class="inputbox"
-                                                                  style="width: 100%; height:80px;">{{$product->gogo_desc_banner8}}</textarea>
+                                                                  style="width: 100%; height:80px;">{{$product->gogo_desc_banner8 ?? ''}}</textarea>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1246,16 +1246,16 @@
                                                         </div>
                                                         <div>
                                                             <img style="width: 180px; height: auto"
-                                                                 src="{{ $product->gogo_images_banner9 }}">
+                                                                 src="{{ $product->gogo_images_banner9 ?? '' }}">
                                                         </div>
                                                         <label class="next-label">Mô tả 1</label>
                                                         <input name="gogo_title_banner9" type="text"
-                                                               value="{{$product->gogo_title_banner9}}" id=""
+                                                               value="{{$product->gogo_title_banner9 ?? ''}}" id=""
                                                                class="inputbox" placeholder="CỐP RỘNG BAO LA"
                                                                style="width:100%;">
                                                         <textarea name="gogo_desc_banner9" rows="5" cols="70" id=""
                                                                   class="inputbox" style="width: 100%; height:80px;">
-                                                            {!! $product->gogo_desc_banner9 !!}
+                                                            {!! $product->gogo_desc_banner9 ?? '' !!}
                                                         </textarea>
 
                                                     </div>
@@ -1271,16 +1271,16 @@
                                                         </div>
                                                         <div>
                                                             <img style="width: 180px; height: auto"
-                                                                 src="{{ $product->gogo_images_banner10 }}">
+                                                                 src="{{ $product->gogo_images_banner10 ?? '' }}">
                                                         </div>
                                                         <label class="next-label">Mô tả 2</label>
                                                         <input name="gogo_title_banner10" type="text"
-                                                               value="{{$product->gogo_title_banner10}}" id=""
+                                                               value="{{$product->gogo_title_banner10 ?? ''}}" id=""
                                                                class="inputbox" placeholder="CỔNG SẠC USB"
                                                                style="width:100%;">
                                                         <textarea name="gogo_desc_banner10" rows="5" cols="70" id=""
                                                                   class="inputbox" style="width: 100%; height:80px;">
-                                                            {!! $product->gogo_desc_banner10 !!}
+                                                            {!! $product->gogo_desc_banner10 ?? '' !!}
                                                         </textarea>
 
                                                     </div>
@@ -1296,16 +1296,16 @@
                                                         </div>
                                                         <div>
                                                             <img style="width: 180px; height: auto"
-                                                                 src="{{ $product->gogo_images_banner11 }}">
+                                                                 src="{{ $product->gogo_images_banner11 ?? '' }}">
                                                         </div>
                                                         <label class="next-label">Mô tả 3</label>
                                                         <input name="gogo_title_banner11" type="text"
-                                                               value="{{$product->gogo_title_banner11}}" id=""
+                                                               value="{{$product->gogo_title_banner11 ?? ''}}" id=""
                                                                class="inputbox" placeholder="Móc treo đồ"
                                                                style="width:100%;">
                                                         <textarea name="gogo_desc_banner11" rows="5" cols="70" id=""
                                                                   class="inputbox" style="width: 100%; height:80px;">
-                                                            {!! $product->gogo_desc_banner11 !!}
+                                                            {!! $product->gogo_desc_banner11 ?? '' !!}
                                                         </textarea>
                                                     </div>
                                                 </div>
@@ -1326,13 +1326,13 @@
                                                                     <label class="text-no-bold" data-bind="text: Title">Nâng
                                                                         cấp chính bạn</label>
                                                                     <input type="text" name="gogo_title_banner12" id=""
-                                                                           value="{{$product->gogo_title_banner12}}"
+                                                                           value="{{$product->gogo_title_banner12 ?? ''}}"
                                                                            placeholder="Nâng cấp chính bạn"
                                                                            class="form-control pull-right"
                                                                            style="width:100%;margin-bottom: 20px">
                                                                     <textarea name="gogo_desc_banner12" id=""
                                                                               class="form-control" style="width:100%;">
-                                                                        {!! $product->gogo_desc_banner12 !!}
+                                                                        {!! $product->gogo_desc_banner12 ?? '' !!}
                                                                     </textarea>
                                                                 </div>
                                                             </div>
@@ -1383,7 +1383,7 @@
                                                     <label class="text-no-bold" data-bind="text: Title">Tiêu đề, slogan
                                                         xe</label>
                                                     <input type="text" name="viva_slogan" id=""
-                                                           value="{{$product->viva_slogan}}" placeholder=""
+                                                           value="{{$product->viva_slogan ?? ''}}" placeholder=""
                                                            class="form-control" style="width:100%;">
                                                 </div>
                                             </div>
@@ -1430,7 +1430,7 @@
                                                 </div>
                                                 <div style="background: black">
                                                     <img style="width: 180px; height: auto"
-                                                         src="{{ $product->viva_images_banner1 }}">
+                                                         src="{{ $product->viva_images_banner1 ?? '' }}">
                                                 </div>
                                             </div>
                                         </div>
@@ -1444,7 +1444,7 @@
                                                 </div>
                                                 <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;">
                                                     <img style="width: 155px; height: auto"
-                                                         src="{{ $product->viva_images_banner2 }}">
+                                                         src="{{ $product->viva_images_banner2 ?? '' }}">
                                                 </div>
                                             </div>
                                         </div>
@@ -1454,7 +1454,7 @@
                                                     <label class="text-no-bold" data-bind="text: Title">url video
                                                         youtube</label>
                                                     <input type="text" name="viva_youtube_banner3" id="" class="form-control "
-                                                           style="width:100%;" value="{{ $product->viva_youtube_banner3 }}">
+                                                           style="width:100%;" value="{{ $product->viva_youtube_banner3 ?? '' }}">
                                                     <br>
                                                     <label class="text-no-bold" data-bind="text: Title">ảnh nền section
                                                         video</label>
@@ -1463,7 +1463,7 @@
                                                 </div>
                                                 <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;">
                                                     <img style="width: 155px; height: auto"
-                                                         src="{{ $product->viva_images_banner3 }}">
+                                                         src="{{ $product->viva_images_banner3 ?? '' }}">
                                                 </div>
                                             </div>
                                         </div>
@@ -1484,15 +1484,15 @@
                                                         </div>
                                                         <div>
                                                             <img style="width: 180px; height: auto"
-                                                                 src="{{ $product->viva_images_banner4 }}">
+                                                                 src="{{ $product->viva_images_banner4 ?? '' }}">
                                                         </div>
                                                         <label class="next-label">Mô tả 1</label>
-                                                        <input name="viva_title_banner4" type="text" value="{{$product->viva_title_banner4}}" id=""
+                                                        <input name="viva_title_banner4" type="text" value="{{$product->viva_title_banner4 ?? ''}}" id=""
                                                                class="inputbox" placeholder=""
                                                                style="width:100%;">
                                                         <textarea name="viva_desc_banner4" rows="5" cols="70" id="" class="inputbox"
                                                                   style="width: 100%; height:80px;">
-                                                            {!! $product->viva_desc_banner4 !!}
+                                                            {!! $product->viva_desc_banner4 ?? '' !!}
                                                         </textarea>
 
                                                     </div>
@@ -1508,15 +1508,15 @@
                                                         </div>
                                                         <div>
                                                             <img style="width: 180px; height: auto"
-                                                                 src="{{ $product->viva_images_banner5 }}">
+                                                                 src="{{ $product->viva_images_banner5 ?? '' }}">
                                                         </div>
                                                         <label class="next-label">Mô tả 2</label>
-                                                        <input name="viva_title_banner5" type="text" value="{{$product->viva_title_banner5}}" id=""
+                                                        <input name="viva_title_banner5" type="text" value="{{$product->viva_title_banner5 ?? ''}}" id=""
                                                                class="inputbox" placeholder=""
                                                                style="width:100%;">
                                                         <textarea name="viva_desc_banner5" rows="5" cols="70" id="" class="inputbox"
                                                                   style="width: 100%; height:80px;">
-                                                            {!! $product->viva_desc_banner5 !!}
+                                                            {!! $product->viva_desc_banner5 ?? '' !!}
                                                         </textarea>
 
                                                     </div>
@@ -1532,15 +1532,15 @@
                                                         </div>
                                                         <div>
                                                             <img style="width: 180px; height: auto"
-                                                                 src="{{ $product->viva_images_banner6 }}">
+                                                                 src="{{ $product->viva_images_banner6 ?? '' }}">
                                                         </div>
                                                         <label class="next-label">Mô tả 3</label>
-                                                        <input name="viva_title_banner6" type="text" value="{{$product->viva_title_banner6}}" id=""
+                                                        <input name="viva_title_banner6" type="text" value="{{$product->viva_title_banner6 ?? ''}}" id=""
                                                                class="inputbox" placeholder=""
                                                                style="width:100%;">
                                                         <textarea name="viva_desc_banner6" rows="5" cols="70" id="" class="inputbox"
                                                                   style="width: 100%; height:80px;">
-                                                            {!! $product->viva_desc_banner6 !!}
+                                                            {!! $product->viva_desc_banner6 ?? '' !!}
                                                         </textarea>
                                                     </div>
                                                 </div>
@@ -1561,13 +1561,13 @@
                                                                     <label class="text-no-bold" data-bind="text: Title">Nâng
                                                                         cấp chính bạn</label>
                                                                     <input type="text" name="viva_title_banner7" id=""
-                                                                           value="{{$product->viva_title_banner7}}"
+                                                                           value="{{$product->viva_title_banner7 ?? ''}}"
                                                                            placeholder=""
                                                                            class="form-control pull-right"
                                                                            style="width:100%;margin-bottom: 20px">
                                                                     <textarea name="viva_desc_banner7" id="" class="form-control"
                                                                               style="width:100%;">
-                                                                       {!! $product->viva_desc_banner7 !!}
+                                                                       {!! $product->viva_desc_banner7 ?? '' !!}
                                                                     </textarea>
                                                                 </div>
                                                             </div>
@@ -1625,7 +1625,7 @@
                                             </div>
                                             <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;">
                                                 <img style="width: 155px; height: auto"
-                                                     src="{{ $product->nispa_images_banner1 }}">
+                                                     src="{{ $product->nispa_images_banner1 ?? '' }}">
                                             </div>
                                         </div>
                                     </div>
@@ -1635,7 +1635,7 @@
                                                 <label class="text-no-bold" data-bind="text: Title">url video
                                                     youtube</label>
                                                 <input type="text" name="nispa_youtube_banner2" id="" class="form-control "
-                                                       style="width:100%;" value="{{$product->nispa_youtube_banner2}}">
+                                                       style="width:100%;" value="{{$product->nispa_youtube_banner2 ?? ''}}">
                                                 <br>
                                                 <label class="text-no-bold" data-bind="text: Title">ảnh nền section
                                                     video</label>
@@ -1644,7 +1644,7 @@
                                             </div>
                                             <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;">
                                                 <img style="width: 155px; height: auto"
-                                                     src="{{ $product->nispa_images_banner2 }}">
+                                                     src="{{ $product->nispa_images_banner2 ?? '' }}">
                                             </div>
                                         </div>
                                     </div>
@@ -1678,7 +1678,7 @@
                                             </div>
                                             <div>
                                                     <textarea name="nispa_desc_3" rows="12" col="12" id="" class="form-control">
-                                                        {!! $product->nispa_desc_3 !!}
+                                                        {!! $product->nispa_desc_3 ?? '' !!}
                                                     </textarea>
                                             </div>
                                         </div>
@@ -1698,12 +1698,12 @@
                                                            style="width:180px;">
                                                     <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;">
                                                         <img style="width: 155px; height: auto"
-                                                             src="{{ $product->nispa_images_4 }}">
+                                                             src="{{ $product->nispa_images_4 ?? '' }}">
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6">
                                                         <textarea name="nispa_desc_4" rows="12" col="12" id="" class="form-control">
-                                                            {!! $product->nispa_desc_4 !!}
+                                                            {!! $product->nispa_desc_4 ?? '' !!}
                                                         </textarea>
                                                 </div>
                                             </div>
@@ -1724,13 +1724,13 @@
                                                                 <label class="text-no-bold" data-bind="text: Title">Nâng
                                                                     cấp chính bạn</label>
                                                                 <input type="text" name="nispa_title_4" id=""
-                                                                       value="{{$product->nispa_title_4}}"
+                                                                       value="{{$product->nispa_title_4 ?? ''}}"
                                                                        placeholder="Nâng cấp chính bạn"
                                                                        class="form-control pull-right"
                                                                        style="width:100%;margin-bottom: 20px">
                                                                 <textarea name="nispa_desc_5" id="" class="form-control"
                                                                           style="width:100%;">
-                                                                       {!! $product->nispa_desc_5 !!}
+                                                                       {!! $product->nispa_desc_5 ?? '' !!}
                                                                     </textarea>
                                                             </div>
                                                         </div>
