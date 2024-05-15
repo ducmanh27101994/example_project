@@ -18,6 +18,7 @@ use App\Http\Services\UploadService;
 use App\Models\Blog;
 use App\Models\Category;
 use App\Models\CateProduct;
+use App\Models\Product;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -634,7 +635,7 @@ class CategoryController extends BaseController
             ->get();
 
 
-        return view('admin.product.details.editProduct', compact('viva_upload_video','viva_gallery','nispa_tinhnang_image','nispa_gallery','gogo_tinhnang_image','gogo_images_banner13','gogo_images_banner2_multi','images360', 'color_image', 'icon_images', 'product', 'categoryProduct', 'feature_description', 'vehicle_detail_photos', 'actual_photo'));
+        return view('admin.product.details.editProduct', compact('viva_upload_video', 'viva_gallery', 'nispa_tinhnang_image', 'nispa_gallery', 'gogo_tinhnang_image', 'gogo_images_banner13', 'gogo_images_banner2_multi', 'images360', 'color_image', 'icon_images', 'product', 'categoryProduct', 'feature_description', 'vehicle_detail_photos', 'actual_photo'));
 
     }
 
@@ -836,6 +837,25 @@ class CategoryController extends BaseController
         $blog = Blog::findOrFail($id);
         $blog->delete();
         return redirect()->back();
+    }
+
+    public function createBuild($id)
+    {
+        $product = Product::findOrFail($id);
+        $icon_images = [];
+        $color_image = [];
+        if (!empty($product)) {
+            $icon_images = DB::table('images_products')
+                ->where('product_id', '=', $product->id)
+                ->where('code', '=', 'icon_images')
+                ->get();
+            $color_image = DB::table('images_products')
+                ->where('product_id', '=', $product->id)
+                ->where('code', '=', 'color_image')
+                ->get();
+        }
+
+        return view('web.order.oder', compact('product','icon_images','color_image'));
     }
 
 

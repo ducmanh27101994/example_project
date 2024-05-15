@@ -84,7 +84,7 @@
                                                                             </p>
                                                                         </div>
                                                                         <div class="d-flex flex-wrap justify-content-between">
-                                                                            <a href="#" class="deposit-buy-now col-lg-6">Mua
+                                                                            <a href="{{route('create.build', $value->id)}}" class="deposit-buy-now col-lg-6">Mua
                                                                                 ngay</a>
                                                                             <a href="{{route('details.basic', $value->path)}}"
                                                                                class="view-detail col-lg-6">Xem chi tiết</a>

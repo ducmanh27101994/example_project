@@ -155,7 +155,7 @@
                     </div>
                     <figure class="image-family image-family--supersport"
                         style="background-image: url('{{$value->representative_image}}')"></figure>
-                    <a href="#" class="deposit-buy-now ">Mua ngay</a>
+                    <a href="{{route('create.build')}}" class="deposit-buy-now ">Mua ngay</a>
                 </div>
                 @endforeach
                 @endif

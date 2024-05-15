@@ -152,3 +152,5 @@ Route::get('/list-store/{desc}', 'App\Http\Controllers\HomePageController@listSt
 Route::get('/near-by-store', 'App\Http\Controllers\HomePageController@nearbyStore')->name('nearbyStore');
 Route::get('/dieu-khoan-chinh-sach', 'App\Http\Controllers\HomePageController@policy')->name('policy');
 
+Route::get('/order/{id}', 'App\Http\Controllers\Admin\CategoryController@createBuild')->name('create.build');
+

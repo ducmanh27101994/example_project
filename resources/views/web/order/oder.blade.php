@@ -25,54 +25,18 @@
                             <nav class="vf-bike-order__product-list">
                                 <div class="bike-slider swiper-container">
                                     <ul class="vf-bike-order__container swiper-wrapper">
-                                        <li data-id="Products-Scooter-THEON-S" data-name="evo2000" data-pid="12"
-                                            class="add-to-cart-v3s swiper-slide">
-                                            <figure> <img
-                                                    src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw04cebe7d/images/productScooter/Products-Scooter-THEON-S.png"
-                                                    alt="Xe máy điện VinFast Theon S">
-                                                <figcaption>Theon S</figcaption>
-                                            </figure>
-                                        </li>
-                                        <li data-id="Products-Scooter-VENTO-S" data-name="evo2000" data-pid="123"
-                                            class="add-to-cart-v3s swiper-slide">
-                                            <figure> <img
-                                                    src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw5875cb20/images/productScooter/Products-Scooter-VENTO-S.png"
-                                                    alt="Xe máy điện VinFast Vento S">
-                                                <figcaption>Vento S</figcaption>
-                                            </figure>
-                                        </li>
-                                        <li data-id="Products-Scooter-FELIZ-S" data-name="evo2000" data-pid="1234"
-                                            class="add-to-cart-v3s swiper-slide">
-                                            <figure> <img
-                                                    src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwa157998b/images/productScooter/Products-Scooter-FELIZ-S.png"
-                                                    alt="Xe máy điện VinFast Feliz S">
-                                                <figcaption>Feliz S</figcaption>
-                                            </figure>
-                                        </li>
-                                        <li data-id="Products-Scooter-KLARA-S-2022" data-name="evo2000" data-pid="12345"
-                                            class="add-to-cart-v3s swiper-slide">
-                                            <figure> <img
-                                                    src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw760d662e/images/productScooter/Products-Scooter-KLARA-S-2022.png"
-                                                    alt="Xe máy điện VinFast Klara S (2022)">
-                                                <figcaption>Klara S (2022)</figcaption>
-                                            </figure>
-                                        </li>
-                                        <li data-id="Products-Scooter-EVO-200" data-name="evo2000" data-pid="123456"
-                                            class="add-to-cart-v3s swiper-slide">
-                                            <figure> <img
-                                                    src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw747ef047/images/productScooter/Products-Scooter-EVO200.png"
-                                                    alt="Xe máy điện VinFast Evo200">
-                                                <figcaption>Evo200</figcaption>
-                                            </figure>
-                                        </li>
-                                        <li data-id="Products-Scooter-EVO-200-LITE" data-name="evo2000"
-                                            data-pid="1234567" class="add-to-cart-v3s swiper-slide">
-                                            <figure> <img
-                                                    src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwa5b930c1/images/productScooter/Products-Scooter-EVO200-LITE.png"
-                                                    alt="Xe máy điện VinFast Evo200 Lite">
-                                                <figcaption>Evo200 Lite</figcaption>
-                                            </figure>
-                                        </li>
+                                        @if(!empty($color_image))
+                                            @foreach($color_image as $value)
+                                                <li data-id="color_image" data-name="evo2000" data-pid="12"
+                                                    class="add-to-cart-v3s swiper-slide">
+                                                    <figure> <img
+                                                            src="{{$value->images}}"
+                                                            alt="">
+                                                        <figcaption></figcaption>
+                                                    </figure>
+                                                </li>
+                                            @endforeach
+                                        @endif
                                     </ul>
                                     <div class="swiper-button-next"></div>
                                     <div class="swiper-button-prev"></div>
@@ -97,7 +61,7 @@
                                         <li class="bike-info-item">
                                             <p class="bike-info-item-no"> Tốc độ tối đa </p>
                                             <div class="bike-info-item-description">
-                                                70
+                                                {{$product->maximum_speed ?? 0}}
                                                 <div>
                                                     <p class="bike-info-item-label">km/h</p>
                                                 </div>
@@ -106,18 +70,9 @@
                                         <li class="bike-info-item">
                                             <p class="bike-info-item-no"> Qu&atilde;ng đường đi được 1 lần sạc </p>
                                             <div class="bike-info-item-description">
-                                                khoảng 203
+                                                khoảng {{$product->distance_traveled ?? 0}}
                                                 <div>
                                                     <p class="bike-info-item-label">km</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="bike-info-item">
-                                            <p class="bike-info-item-no"> Pin LFP </p>
-                                            <div class="bike-info-item-description">
-                                                01
-                                                <div>
-                                                    <p class="bike-info-item-label">Pin <br />LFP</p>
                                                 </div>
                                             </div>
                                         </li>
@@ -222,7 +177,7 @@
                                             <li class="bike-info-item">
                                                 <p class="bike-info-item-no"> Tốc độ tối đa </p>
                                                 <div class="bike-info-item-description">
-                                                    70
+                                                    {{$product->maximum_speed ?? 0}}
                                                     <div>
                                                         <p class="bike-info-item-label">km/h</p>
                                                     </div>
@@ -232,7 +187,7 @@
                                                 <p class="bike-info-item-no"> Qu&atilde;ng đường đi được 1 lần sạc
                                                 </p>
                                                 <div class="bike-info-item-description">
-                                                    khoảng 203
+                                                    khoảng {{$product->distance_traveled ?? 0}}
                                                     <div>
                                                         <p class="bike-info-item-label">km</p>
                                                     </div>
@@ -265,28 +220,15 @@
                                     <span class="v3s-product--color-name"></span>
                                 </div>
                                 <ul class="colorItemList bike slides">
-                                    <li class="slide-item" data-name="Đỏ Đậm-Đen" data-item="REQ" data-pid="12">
-                                        <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw951cd87b/images/XMD/EVO-200/REQ.png"
-                                            alt="M&agrave;u xe VinFast Đỏ Đậm-Đen">
-                                    </li>
-                                    <li class="slide-item  " data-name="Đen Nh&aacute;m" data-item="BAR" data-pid="123">
-                                        <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwd0b3fec6/images/XMD/EVO-200/BAR.png"
-                                            alt="M&agrave;u xe VinFast Đen Nh&aacute;m">
-                                    </li>
-                                    <li class="slide-item  " data-name="Trắng Ngọc Trai" data-item="WHR"
-                                        data-pid="1234">
-                                        <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw475be2c7/images/XMD/EVO-200/WHR.png"
-                                            alt="M&agrave;u xe VinFast Trắng Ngọc Trai">
-                                    </li>
-                                    <li class="slide-item  " data-name="Xanh t&iacute;m than" data-item="BUR"
-                                        data-pid="12345">
-                                        <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwe8816d2c/images/XMD/EVO-200/BUR.png"
-                                            alt="M&agrave;u xe VinFast Xanh t&iacute;m than">
-                                    </li>
-                                    <li class="slide-item  " data-name="V&agrave;ng" data-item="YER" data-pid="123456">
-                                        <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw3a7b8fd6/images/XMD/EVO-200/YER.png"
-                                            alt="M&agrave;u xe VinFast V&agrave;ng">
-                                    </li>
+                                    @if(!empty($icon_images))
+                                        @foreach($icon_images as $value)
+                                            <li class="slide-item" data-name="Đỏ Đậm-Đen" data-item="REQ" data-pid="12">
+                                                <img src="{{$value->images}}"
+                                                     alt="M&agrave;u xe VinFast Đỏ Đậm-Đen">
+                                            </li>
+                                        @endforeach
+                                    @endif
+
                                 </ul>
                             </div>
                             <div class="order-bill">
@@ -294,7 +236,7 @@
                                     <li class="d-flex justify-content-between align-items-center border-b-none">
                                         <span>Số tiền thanh toán (tạm tính)</span> <span id="payment-sum"
                                             class="payment-sum finance-item--price-after-savings"><span
-                                                class="value">18.000.000</span> VNĐ</span>
+                                                class="value">{{number_format($product->price_comparison ?? 0)}}</span> VNĐ</span>
                                     </li>
                                 </ul>
                             </div>
@@ -758,7 +700,7 @@
                                                     <label for="rad-payment-tm">Tiền mặt khi nhận xe</label>
                                                 </a>
                                             </li>
-                                          
+
                                             <li class="nav-item ">
                                                 <a class="nav-link" data-toggle="tab" href="#tabPayMentAtmCard">
                                                     <input type="radio" id="rad-payment-atm" value="AtmCard"
@@ -959,7 +901,7 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <button class="button-payment  effect-apollo" type="button" disabled>THANH
+                                <button id="ajaxButton" class="button-payment  effect-apollo" type="button" disabled>THANH
                                     TO&Aacute;N</button>
                             </div>
                         </div>
@@ -1201,4 +1143,31 @@
         display: none;
     }
 </style>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+        $('#ajaxButton').click(function() {
+            console.log(111);
+            $.ajax({
+                url: '',
+                type: 'POST',
+                data: {
+                    // Dữ liệu gửi đi, ví dụ:
+                    // id: 1
+                },
+                success: function(response) {
+                    alert(response.message);
+                },
+                error: function(xhr, status, error) {
+                    alert('Có lỗi xảy ra: ' + error);
+                }
+            });
+        });
+    });
+</script>
 @endsection
