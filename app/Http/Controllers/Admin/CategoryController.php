@@ -844,6 +844,7 @@ class CategoryController extends BaseController
         $product = Product::findOrFail($id);
         $icon_images = [];
         $color_image = [];
+        $listStore = [];
         if (!empty($product)) {
             $icon_images = DB::table('images_products')
                 ->where('product_id', '=', $product->id)
@@ -853,9 +854,56 @@ class CategoryController extends BaseController
                 ->where('product_id', '=', $product->id)
                 ->where('code', '=', 'color_image')
                 ->get();
+
+            $listStore = DB::table('store')->get();
         }
 
-        return view('web.order.oder', compact('product','icon_images','color_image'));
+        return view('web.order.oder', compact('product', 'icon_images', 'color_image','listStore'));
+    }
+
+    public function createOrder(Request $request)
+    {
+        $data = [
+            'id_product' => $request->id_product ?? '',
+            'color_product' => $request->color_product ?? '',
+            'price_product' => $request->price_product ?? '',
+            'chu_so_huu' => $request->chu_so_huu ?? '',
+            'billingLastName' => $request->billingLastName ?? '',
+            'billingCompanyName' => $request->billingCompanyName ?? '',
+            'identifyId' => $request->identifyId ?? '',
+            'taxCode' => $request->taxCode ?? '',
+            'phoneNumber' => $request->phoneNumber ?? '',
+            'email' => $request->email ?? '',
+            'storeList' => $request->storeList ?? '',
+        ];
+
+        try {
+            DB::table('bill')->insert($data);
+            return response()->json([
+                'status' => 200,
+                'message' => 'Order created successfully',
+            ]);
+        } catch (\Exception $e) {
+            return response()->json([
+                'status' => 500,
+                'message' => 'Error creating order: ' . $e->getMessage(),
+            ], 500);
+        }
+    }
+
+    public function listBill() {
+
+        $result = DB::table('bill as b')
+            ->leftJoin('products as p','p.id', '=','b.id_product')
+            ->leftJoin('store as s','s.id','=','b.storeList')
+            ->leftJoin('images_products as i','i.id','=','b.color_product')
+            ->orderBy('b.id','desc')
+            ->select('b.id','i.images','s.title_store','p.product_name','b.price_product','b.chu_so_huu','b.billingLastName','b.billingCompanyName','b.identifyId','b.taxCode','b.phoneNumber','b.email','b.employee','b.storeList')
+            ->get();
+        if (empty($result)) {
+            $result = [];
+        }
+        return view('admin.product.listBill', compact('result'));
     }
 
 

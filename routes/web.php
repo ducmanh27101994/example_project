@@ -153,4 +153,6 @@ Route::get('/near-by-store', 'App\Http\Controllers\HomePageController@nearbyStor
 Route::get('/dieu-khoan-chinh-sach', 'App\Http\Controllers\HomePageController@policy')->name('policy');
 
 Route::get('/order/{id}', 'App\Http\Controllers\Admin\CategoryController@createBuild')->name('create.build');
+Route::post('/createOrder', 'App\Http\Controllers\Admin\CategoryController@createOrder')->name('create.order');
+Route::get('/listBill', 'App\Http\Controllers\Admin\CategoryController@listBill')->name('index.bill');
 

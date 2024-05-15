@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('home/css/w_ajbo.css') }}" />
     <link rel="stylesheet" href="{{ asset('home/css/default.css') }}">
     <link rel="stylesheet" href="{{ asset('home/css/style.css') }}">
-
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 
 <body>

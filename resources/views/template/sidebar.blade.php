@@ -111,7 +111,7 @@
                 <li style="display:none"><a href="#" title="Quản lý kho hàng"><i class="fa fa-fw fa fa-caret-right"></i>Quản lý kho
                         hàng</a></li>
 
-                <li ><a href="#" title="Quản lý đơn hàng"><i class="fa fa-fw fa fa-caret-right"></i>Quản lý đơn
+                <li ><a href="{{route('index.bill')}}" title="Quản lý đơn hàng"><i class="fa fa-fw fa fa-caret-right"></i>Quản lý đơn
                         hàng</a></li>
 
                 <li style="display:none"><a href="#" title="Nhập, xuất danh sách sản phẩm"><i class="fa fa-fw fa fa-caret-right"></i>Nhập, xuất danh sách sản phẩm</a></li>
