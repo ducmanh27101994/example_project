@@ -230,7 +230,7 @@
     </section>
 
     <!-- ảnh 360 -->
-    <section class="page-block-image page-block-image-360" id="pdp-img-360" style="background: #1B1B1E;">
+    <section class="page-block-image page-block-image-360 product-360-views product-360-views-gogo" id="pdp-img-360" style="background: #1B1B1E;">
         <div class="breaking-wrap product-images-list">
             <!-- Ảnh 360 -->
             <div id="threesixty" class="wrap_image"></div>

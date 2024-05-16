@@ -54,10 +54,10 @@
     <div class="buy-wrapper-box">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="title d-flex align-items-center" style="height: 100%">
                         <!-- Tiêu đề, slogan xe -->
-                        <h1>{{$product->viva_slogan ?? ''}}}</h1>
+                        <h1>{{$product->viva_slogan ?? ''}}</h1>
                     </div>
                 </div>
             </div>
@@ -69,7 +69,7 @@
         <img class="w-100" src="{{ $product->viva_images_banner2 ?? '' }}" alt="section1">
     </div>
 
-    <section class="page-block parts-bike section" id="pdp-parts-bike">
+    <section class="parts-bike section" id="pdp-parts-bike" style="margin-bottom: 60px">
         <div class="parts-bike__head_text text-center block_center">
             <h2>
                 Dẫn đầu phong cách thời thượng
