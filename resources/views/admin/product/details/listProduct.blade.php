@@ -144,6 +144,12 @@
                                                     src="{{ asset('/images/iconedit_c.png') }}"></a>&nbsp;
                                             &nbsp;
 
+                                            <a href=""
+                                               style="display:inline-block"
+                                               title="Xóa"><img
+                                                    src="{{ asset('/images/icondelete_c.png') }}"></a>&nbsp;
+                                            &nbsp;
+
 
                                         </td>
                                     </tr>
