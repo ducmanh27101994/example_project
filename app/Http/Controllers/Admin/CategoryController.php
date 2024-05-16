@@ -712,15 +712,15 @@ class CategoryController extends BaseController
 
             //Gogo
             'gogo_slogan' => $request->gogo_slogan ?? '',
-            'gogo_images_banner1' => !empty($request->gogo_images_banner1) ? $this->uploadService->upload_param($request->gogo_images_banner1) : '',
-            'gogo_images_banner4' => !empty($request->gogo_images_banner4) ? $this->uploadService->upload_param($request->gogo_images_banner4) : '',
-            'gogo_images_banner5' => !empty($request->gogo_images_banner5) ? $this->uploadService->upload_param($request->gogo_images_banner5) : '',
-            'gogo_images_banner6' => !empty($request->gogo_images_banner6) ? $this->uploadService->upload_param($request->gogo_images_banner6) : '',
-            'gogo_images_banner7' => !empty($request->gogo_images_banner7) ? $this->uploadService->upload_param($request->gogo_images_banner7) : '',
-            'gogo_images_banner8' => !empty($request->gogo_images_banner8) ? $this->uploadService->upload_param($request->gogo_images_banner8) : '',
-            'gogo_images_banner9' => !empty($request->gogo_images_banner9) ? $this->uploadService->upload_param($request->gogo_images_banner9) : '',
-            'gogo_images_banner10' => !empty($request->gogo_images_banner10) ? $this->uploadService->upload_param($request->gogo_images_banner10) : '',
-            'gogo_images_banner11' => !empty($request->gogo_images_banner11) ? $this->uploadService->upload_param($request->gogo_images_banner11) : '',
+            'gogo_images_banner1' => !empty($request->gogo_images_banner1) ? $this->uploadService->upload_param($request->gogo_images_banner1) : $this->productRepositories->find($id)->gogo_images_banner1,
+            'gogo_images_banner4' => !empty($request->gogo_images_banner4) ? $this->uploadService->upload_param($request->gogo_images_banner4) : $this->productRepositories->find($id)->gogo_images_banner4,
+            'gogo_images_banner5' => !empty($request->gogo_images_banner5) ? $this->uploadService->upload_param($request->gogo_images_banner5) : $this->productRepositories->find($id)->gogo_images_banner5,
+            'gogo_images_banner6' => !empty($request->gogo_images_banner6) ? $this->uploadService->upload_param($request->gogo_images_banner6) : $this->productRepositories->find($id)->gogo_images_banner6,
+            'gogo_images_banner7' => !empty($request->gogo_images_banner7) ? $this->uploadService->upload_param($request->gogo_images_banner7) : $this->productRepositories->find($id)->gogo_images_banner7,
+            'gogo_images_banner8' => !empty($request->gogo_images_banner8) ? $this->uploadService->upload_param($request->gogo_images_banner8) : $this->productRepositories->find($id)->gogo_images_banner8,
+            'gogo_images_banner9' => !empty($request->gogo_images_banner9) ? $this->uploadService->upload_param($request->gogo_images_banner9) : $this->productRepositories->find($id)->gogo_images_banner9,
+            'gogo_images_banner10' => !empty($request->gogo_images_banner10) ? $this->uploadService->upload_param($request->gogo_images_banner10) : $this->productRepositories->find($id)->gogo_images_banner10,
+            'gogo_images_banner11' => !empty($request->gogo_images_banner11) ? $this->uploadService->upload_param($request->gogo_images_banner11) : $this->productRepositories->find($id)->gogo_images_banner11,
             'gogo_desc_3' => $request->gogo_desc_3 ?? '',
             'gogo_title_banner4' => $request->gogo_title_banner4 ?? '',
             'gogo_desc_banner4' => $request->gogo_desc_banner4 ?? '',
@@ -757,15 +757,15 @@ class CategoryController extends BaseController
             'nispa_desc_4' => $request->nispa_desc_4 ?? '',
             'nispa_title_4' => $request->nispa_title_4 ?? '',
             'nispa_desc_5' => $request->nispa_desc_5 ?? '',
-            'viva_images_banner1' => !empty($request->viva_images_banner1) ? $this->uploadService->upload_param($request->viva_images_banner1) : '',
-            'viva_images_banner2' => !empty($request->viva_images_banner2) ? $this->uploadService->upload_param($request->viva_images_banner2) : '',
-            'viva_images_banner3' => !empty($request->viva_images_banner3) ? $this->uploadService->upload_param($request->viva_images_banner3) : '',
-            'viva_images_banner4' => !empty($request->viva_images_banner4) ? $this->uploadService->upload_param($request->viva_images_banner4) : '',
-            'viva_images_banner5' => !empty($request->viva_images_banner5) ? $this->uploadService->upload_param($request->viva_images_banner5) : '',
-            'viva_images_banner6' => !empty($request->viva_images_banner6) ? $this->uploadService->upload_param($request->viva_images_banner6) : '',
-            'nispa_images_banner1' => !empty($request->nispa_images_banner1) ? $this->uploadService->upload_param($request->nispa_images_banner1) : '',
-            'nispa_images_banner2' => !empty($request->nispa_images_banner2) ? $this->uploadService->upload_param($request->nispa_images_banner2) : '',
-            'nispa_images_4' => !empty($request->nispa_images_4) ? $this->uploadService->upload_param($request->nispa_images_4) : '',
+            'viva_images_banner1' => !empty($request->viva_images_banner1) ? $this->uploadService->upload_param($request->viva_images_banner1) : $this->productRepositories->find($id)->viva_images_banner1,
+            'viva_images_banner2' => !empty($request->viva_images_banner2) ? $this->uploadService->upload_param($request->viva_images_banner2) : $this->productRepositories->find($id)->viva_images_banner2,
+            'viva_images_banner3' => !empty($request->viva_images_banner3) ? $this->uploadService->upload_param($request->viva_images_banner3) : $this->productRepositories->find($id)->viva_images_banner3,
+            'viva_images_banner4' => !empty($request->viva_images_banner4) ? $this->uploadService->upload_param($request->viva_images_banner4) : $this->productRepositories->find($id)->viva_images_banner4,
+            'viva_images_banner5' => !empty($request->viva_images_banner5) ? $this->uploadService->upload_param($request->viva_images_banner5) : $this->productRepositories->find($id)->viva_images_banner5,
+            'viva_images_banner6' => !empty($request->viva_images_banner6) ? $this->uploadService->upload_param($request->viva_images_banner6) : $this->productRepositories->find($id)->viva_images_banner6,
+            'nispa_images_banner1' => !empty($request->nispa_images_banner1) ? $this->uploadService->upload_param($request->nispa_images_banner1) : $this->productRepositories->find($id)->nispa_images_banner1,
+            'nispa_images_banner2' => !empty($request->nispa_images_banner2) ? $this->uploadService->upload_param($request->nispa_images_banner2) : $this->productRepositories->find($id)->nispa_images_banner2,
+            'nispa_images_4' => !empty($request->nispa_images_4) ? $this->uploadService->upload_param($request->nispa_images_4) : $this->productRepositories->find($id)->nispa_images_4,
 
             ];
 
@@ -1059,6 +1059,12 @@ class CategoryController extends BaseController
             $result = [];
         }
         return view('admin.product.listBill', compact('result'));
+    }
+
+    public function deleteProduct($id) {
+        $product = Product::findOrFail($id);
+        $product->delete();
+        return redirect()->route('admin.list.product')->with('success', 'Sản phẩm đã được xóa thành công.');
     }
 
 
