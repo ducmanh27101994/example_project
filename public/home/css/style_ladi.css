@@ -2365,7 +2365,7 @@
 }
 
 .top-main-control {
-    margin-top: 20px;
+    margin-top: 20px !important;
 }
 
 @media (max-width: 1400px) and (min-width: 1200px) {
