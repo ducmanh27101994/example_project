@@ -2364,6 +2364,10 @@
     max-width: max-content;
 }
 
+.top-main-control {
+    margin-top: 20px;
+}
+
 @media (max-width: 1400px) and (min-width: 1200px) {
     .heidi_text_head_line_top {
         top: -19%;
