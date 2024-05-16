@@ -310,6 +310,7 @@
             </div>
 
             <!-- gallery -->
+
             <div class="gallery-container">
                 <div class="gallery-images">
                     <figure class="gallery-image gallery-image--01">
