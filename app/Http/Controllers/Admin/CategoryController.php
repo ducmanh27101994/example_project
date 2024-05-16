@@ -1061,5 +1061,12 @@ class CategoryController extends BaseController
         return view('admin.product.listBill', compact('result'));
     }
 
+    public function deleteProduct($id) {
+        $product = Product::findOrFail($id);
+        $product->delete();
+
+        return redirect()->route('admin.list.product')->with('success', 'Sản phẩm đã được xóa thành công.');
+    }
+
 
 }

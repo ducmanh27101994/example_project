@@ -28,6 +28,11 @@
         </div>
         <div id="element-box">
             <div class="m">
+                @if(session('success'))
+                    <div class="alert alert-success">
+                        {{ session('success') }}
+                    </div>
+                @endif
                 <div id="adminForm1">
                     <div id="pnlist">
 
@@ -144,10 +149,10 @@
                                                     src="{{ asset('/images/iconedit_c.png') }}"></a>&nbsp;
                                             &nbsp;
 
-                                            <a href=""
+                                            <a href="{{route('product.destroy', $value->id)}}"
                                                style="display:inline-block"
                                                title="Xóa"><img
-                                                    src="{{ asset('/images/icondelete_c.png') }}"></a>&nbsp;
+                                                    src="{{ asset('/images/icondelete_c.png') }}" onclick="return confirm('Bạn có chắc chắn muốn xóa sản phẩm này?')"></a>&nbsp;
                                             &nbsp;
 
 

@@ -125,6 +125,7 @@ Route::group(['middleware' => 'auth_admin'], function () {
         Route::post('/createProductAdmin', 'App\Http\Controllers\Admin\CategoryController@submitCreateProduct')->name('admin.submit.product');
         Route::get('/editProduct/{id}', 'App\Http\Controllers\Admin\CategoryController@editProduct')->name('admin.edit.product');
         Route::post('/submitEditProduct/{id}', 'App\Http\Controllers\Admin\CategoryController@submitEditProduct')->name('admin.submit.edit.product');
+        Route::get('/deleteProduct/{id}', 'App\Http\Controllers\Admin\CategoryController@deleteProduct')->name('product.destroy');
     });
 });
 
