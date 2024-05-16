@@ -262,7 +262,7 @@
                     @if(!empty($icon_images))
                         @foreach($icon_images as $value)
                             <div class="item-myThumb">
-                                <img src="{{$value}}"
+                                <img src="{{$value->images}}"
                                      alt="màu vàng">
                             </div>
                         @endforeach
