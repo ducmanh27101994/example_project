@@ -511,7 +511,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@mladenilic/threesixty.js/dist/threesixty.js"></script>
     <script src="{{ asset('home/js/gallarey.js') }}"></script>
     @php
-        $imageUrls = [asset('home/images/360.png')];
+        $imageUrls = [];
     @endphp
     @if(!empty($images360))
         @foreach($images360 as $value)

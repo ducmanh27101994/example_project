@@ -56,19 +56,19 @@ class TemplateController extends BaseController
     }
     public function heidi()
     {
-        return view('web.product.ladipage.heidi');
+        return view('template.heidi');
     }
     public function gogo()
     {
-        return view('web.product.ladipage.gogo');
+        return view('template.gogo');
     }
     public function nispaviva()
     {
-        return view('web.product.ladipage.nispaviva');
+        return view('template.nispaviva');
     }
     public function x3()
     {
-        return view('web.product.ladipage.x3');
+        return view('template.x3');
     }
     public function order()
     {
