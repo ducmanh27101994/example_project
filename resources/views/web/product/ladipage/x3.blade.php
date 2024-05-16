@@ -128,21 +128,21 @@
                         <div class>
                             <picture>
                                 <source srcset="{{ $value->images }}" type="image/webp" />
-                                <img data-lazy="{{ $value->images }}" title
-                                     alt="Xe máy điện VinFast Evo200 màu vàng" width="100%" />
+                                <img data-lazy="{{ $value->images }}" title alt="Xe máy điện VinFast Evo200 màu vàng"
+                                    width="100%" />
                             </picture>
                         </div>
                     @endforeach
                 @endif
             </div>
         </div>
-        <div class="top-main-control js-aos" style="max-width: 800px;margin:auto; overflow: hidden;" data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
+        <div class="top-main-control js-aos" style="max-width: 800px;margin:auto; overflow: hidden;"
+            data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
             <div class="myThumbSlider" data-showitem="8">
                 @if(!empty($icon_images))
                     @foreach($icon_images as $value)
                         <div class="item-myThumb">
-                            <img src="{{$value->images}}"
-                                 alt="màu vàng">
+                            <img src="{{$value->images}}" alt="màu vàng">
                         </div>
                     @endforeach
                 @endif
@@ -281,11 +281,19 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane  show active tabInfoProduct" id="tabInfoProduct" role="tabpanel"
                         aria-labelledby="tabInfoProduct">
-                        {!! $product->overview ?? '' !!}
+                        <div class="breaking-battery-tab d-flex justify-content-between">
+                            <div>
+                                {!! $product->overview ?? '' !!}
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane  tabBatteryPackages" id="tabBatteryPackages" role="tabpanel"
                         aria-labelledby="tabBatteryPackages">
-                            {!! $product->engine ?? '' !!}
+                        <div class="breaking-battery-tab d-flex justify-content-between">
+                            <div>
+                                {!! $product->engine ?? '' !!}
+                            </div>
+                        </div>
 
                     </div>
                 </div>

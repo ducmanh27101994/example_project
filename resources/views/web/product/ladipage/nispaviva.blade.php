@@ -393,12 +393,19 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane  show active tabInfoProduct" id="tabInfoProduct" role="tabpanel"
                         aria-labelledby="tabInfoProduct">
+                        <div class="breaking-battery-tab d-flex justify-content-between">
+                            <div>
                         {!! $product->overview ?? '' !!}
+                        </div>  
+                        </div>  
                     </div>
                     <div class="tab-pane  tabBatteryPackages" id="tabBatteryPackages" role="tabpanel"
                         aria-labelledby="tabBatteryPackages">
-
+                        <div class="breaking-battery-tab d-flex justify-content-between">
+                            <div>
                             {!! $product->engine ?? '' !!}
+                            </div>  
+                            </div>  
 
                     </div>
                 </div>

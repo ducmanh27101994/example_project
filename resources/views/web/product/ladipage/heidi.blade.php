@@ -139,7 +139,8 @@
                 @endif
             </div>
         </div>
-        <div class="top-main-control js-aos" style="max-width: 800px;margin:auto; overflow: hidden;" data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
+        <div class="top-main-control js-aos" style="max-width: 800px;margin:auto; overflow: hidden;"
+            data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
             <div class="myThumbSlider" data-showitem="8">
                 @if(!empty($icon_images))
                     @foreach($icon_images as $value)
@@ -230,7 +231,8 @@
     </section>
 
     <!-- ảnh 360 -->
-    <section class="page-block-image page-block-image-360 product-360-views product-360-views-gogo" id="pdp-img-360" style="background: #1B1B1E;">
+    <section class="page-block-image page-block-image-360 product-360-views product-360-views-gogo" id="pdp-img-360"
+        style="background: #1B1B1E;">
         <div class="breaking-wrap product-images-list">
             <!-- Ảnh 360 -->
             <div id="threesixty" class="wrap_image"></div>
@@ -394,15 +396,19 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane show active tabInfoProduct" id="tabInfoProduct" role="tabpanel"
                         aria-labelledby="tabInfoProduct">
-
-                        {!! $product->overview ?? '' !!}
-
+                        <div class="breaking-battery-tab d-flex justify-content-between">
+                            <div>
+                                {!! $product->overview ?? '' !!}
+                            </div>
+                        </div>
                     </div>
                     <div class="tab-pane tabBatteryPackages" id="tabBatteryPackages" role="tabpanel"
                         aria-labelledby="tabBatteryPackages">
-
-                        {!! $product->chassis ?? '' !!}
-
+                        <div class="breaking-battery-tab d-flex justify-content-between">
+                            <div>
+                                {!! $product->chassis ?? '' !!}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
