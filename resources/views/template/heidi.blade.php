@@ -244,12 +244,12 @@
                 <div class="btn-arrow button-prev"></div>
                 <div class="btn-arrow button-next"></div>
             </div>
+            <div style="clear: left"></div>
         </div>
         </div>
      
     </section>
 
-<div style="clear: left"></div>
     <section class="section section-design progressive-image">
         <div class="design-bg"></div>
         <div class="section-content">
