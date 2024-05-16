@@ -1964,6 +1964,7 @@
     padding: 50px 0;
     background-position: center left;
     position: relative;
+    overflow: hidden;
 }
 
 .head_color_title {
@@ -2003,16 +2004,16 @@
 }
 
 .section-color .top-main-control .slick-track {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    width: 100% !important;
-    transform: unset !important;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* gap: 20px; */
+    /* width: 100% !important; */
+    /* transform: unset !important; */
 }
 
 .section-color .top-main-control .slick-initialized .item-myThumb {
-    display: block;
-    width: fit-content !important;
+    /* display: block; */
+    /* width: fit-content !important; */
 }
 
 .buy-wrapper-box {

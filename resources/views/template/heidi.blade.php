@@ -148,8 +148,9 @@
                 </div>
             </div>
         </div>
-        <div class="top-main-control js-aos" data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
-            <div class="myThumbSlider" data-showitem="7">
+        <div class="container" style="overflow: hidden;">
+        <div class="top-main-control js-aos" style="max-width: 800px;margin:auto; overflow: hidden;" data-aos="fade-left" data-aos-delay="100" data-aos-duration="300" style="margin-top: 20px">
+            <div class="myThumbSlider" style="overflow: hidden;" data-showitem="8">
                 <div class="item-myThumb">
                     <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwddfc1849/images/PDP-XMD/color/evo-yellow.png"
                         alt="màu vàng">
@@ -167,8 +168,36 @@
                         alt="màu xanh">
                 </div>
                 <div class="item-myThumb">
-                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwd52b0fb5/images/PDP-XMD/color/evo-white.png"
-                        alt="màu trắng">
+                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw5b7d4ede/images/PDP-XMD/color/evo-black.png"
+                        alt="màu đen">
+                </div>
+                <div class="item-myThumb">
+                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
+                        alt="màu đỏ">
+                </div>
+                <div class="item-myThumb">
+                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw4c44a070/images/PDP-XMD/color/evo-blue.png"
+                        alt="màu xanh">
+                </div>
+                <div class="item-myThumb">
+                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw5b7d4ede/images/PDP-XMD/color/evo-black.png"
+                        alt="màu đen">
+                </div>
+                <div class="item-myThumb">
+                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
+                        alt="màu đỏ">
+                </div>
+                <div class="item-myThumb">
+                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw4c44a070/images/PDP-XMD/color/evo-blue.png"
+                        alt="màu xanh">
+                </div>
+                <div class="item-myThumb">
+                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw5b7d4ede/images/PDP-XMD/color/evo-black.png"
+                        alt="màu đen">
+                </div>
+                <div class="item-myThumb">
+                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
+                        alt="màu đỏ">
                 </div>
             </div>
             <div class="box-control-nav">
@@ -176,9 +205,11 @@
                 <div class="btn-arrow button-next"></div>
             </div>
         </div>
+        </div>
+     
     </section>
 
-
+<div style="clear: left"></div>
     <section class="section section-design progressive-image">
         <div class="design-bg"></div>
         <div class="section-content">
