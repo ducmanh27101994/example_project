@@ -137,7 +137,7 @@
             </div>
         </div>
         <div class="top-main-control js-aos" style="max-width: 800px;margin:auto; overflow: hidden;"
-            data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
+            >
             <div class="myThumbSlider" data-showitem="8">
                 @if(!empty($icon_images))
                     @foreach($icon_images as $value)
