@@ -9,9 +9,8 @@
 <main>
     <section class="hero-section hero-gogo" style="min-height: unset">
         <div class="hero-main">
-            <!-- Hình ảnh banner xe (section 1) -->
             <div class="hero-background"
-                style="background: url({{ $product->nispa_images_banner1 ?? '' }}) center / cover no-repeat;">
+                style="background: url({{ asset('home/images/x3/banner.png') }}) center / cover no-repeat;">
             </div>
         </div>
     </section>
@@ -23,18 +22,24 @@
         </div>
         <div class="tinhnang-owl story-items">
             <div data-story-track="" class="tinhnang-items-track owl-carousel owl-theme">
-                <!-- Hình ảnh tính năng(section 2)s -->
-                @if(!empty($nispa_tinhnang_image))
-                    @foreach($nispa_tinhnang_image as $value)
-                        <div class="story-item container">
-                            <figure class="image-story image-story--smart-1">
-                                <img src="{{ $value->images }}" alt="tinhnang_1">
-                            </figure>
+                <div class="story-item container">
+                    <figure class="image-story image-story--smart-1">
+                        <img src="{{ asset('home/images/x3/tinhnang_1.png') }}" alt="tinhnang_1">
+                    </figure>
 
-                        </div>
-                    @endforeach
-                @endif
+                </div>
+                <div class="story-item container">
+                    <figure class="image-story image-story--smart-2">
+                        <img src="{{ asset('home/images/x3/tinhnang_2.png') }}" alt="tinhnang_2">
+                    </figure>
 
+                </div>
+                <div class="story-item container">
+                    <figure class="image-story image-story--smart-3">
+                        <img src="{{ asset('home/images/x3/tinhnang_3.png') }}" alt="tinhnang_3">
+                    </figure>
+
+                </div>
             </div>
 
             <button class="story-prev" data-story-prev="" disabled=""></button>
@@ -42,20 +47,36 @@
         </div>
         <div class="group-wrapper-func">
             <div class="d-flex align-items-center justify-content-between">
-                <!-- Thông tin chi tiết xe -->
-                {!! $product->nispa_desc_3 ?? '' !!}
+                <div class="func-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+                    <span style="color: #AFAFAF">Giảm xóc</span>
+                    <h3>Đài Loan</h3>
+                </div>
+                <div class="func-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1300">
+                    <span style="color: #AFAFAF">Đèn led</span>
+                    <h3>Toàn xe</h3>
+                </div>
+                <div class="func-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500">
+                    <span style="color: #AFAFAF">Mặt đồng hồ</span>
+                    <h3>Led mở rộng</h3>
+                </div>
+                <div class="func-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1700">
+                    <span style="color: #AFAFAF">Chiều cao xe</span>
+                    <h3>1045 mm</h3>
+                </div>
+                <div class="func-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
+                    <span style="color: #AFAFAF">Mở khoá</span>
+                    <h3>Smartkey</h3>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="section section-video" data-component-list="Video">
         <div class="video-copy">
-            <!-- url video youtube -->
-            <a data-fancybox data-width="auto" data-height="auto" href="{{$product->nispa_youtube_banner2 ?? ''}}"
+            <a data-fancybox data-width="auto" data-height="auto" href="https://www.youtube.com/embed/yJG90zU3_ug"
                 title="video">
-                <!-- ảnh nền section video -->
                 <figure class="image-video-crossover">
-                    <img class="w-100" src="{{ $product->nispa_images_banner2 ?? '' }}" alt="thumbnailvideo1">
+                    <img class="w-100" src="{{ asset('home/images/x3/thumbnailvideo1.png') }}" alt="thumbnailvideo1">
                 </figure>
                 <svg xmlns="http://www.w3.org/2000/svg" width="132" height="132" viewBox="0 0 132 132" fill="none">
                     <circle cx="66.0019" cy="66" r="55.2558" fill="white" />
@@ -67,7 +88,6 @@
         </div>
     </section>
 
-    <!-- phần chung cho vô nội dung độc lập -->
     <section class="page-block-image page-block-dong-co-xanh" id="dong-co-xanh">
         <div class="breaking-wrap">
             <div class="row">
@@ -111,7 +131,6 @@
         </div>
     </section>
 
-    <!-- ảnh màu xe -->
     <section class="section section-color"
         style="background: #000 url({{ asset('home/images/x3/bg-color.png') }}) no-repeat;">
 
@@ -123,52 +142,95 @@
 
         <div class="top-main-img">
             <div class="mySliderTop">
-                @if(!empty($color_image))
-                    @foreach($color_image as $value)
-                        <div class>
-                            <picture>
-                                <source srcset="{{ $value->images }}" type="image/webp" />
-                                <img data-lazy="{{ $value->images }}" title alt="Xe máy điện VinFast Evo200 màu vàng"
-                                    width="100%" />
-                            </picture>
-                        </div>
-                    @endforeach
-                @endif
+                <div class>
+                    <picture>
+                        <source srcset="{{ asset('home/images/x3/color.png') }}" type="image/webp" />
+                        <img data-lazy="{{ asset('home/images/x3/color.png') }}" title
+                            alt="Xe máy điện VinFast Evo200 màu vàng" width="100%" />
+                    </picture>
+                </div>
+                <div class>
+                    <picture>
+                        <source data-lazy-srcset="{{ asset('home/images/x3/color.png') }}" type="image/webp" />
+                        <img data-lazy-src="{{ asset('home/images/x3/color.png') }}"
+                            alt="Xe máy điện VinFast Evo200 màu đen" width="100%" />
+                    </picture>
+                </div>
+                <div class>
+                    <picture>
+                        <source data-lazy-srcset="{{ asset('home/images/x3/color.png') }}" type="image/webp" />
+                        <img data-lazy-src="{{ asset('home/images/x3/color.png') }}"
+                            alt="Xe máy điện VinFast Evo200 màu đỏ" width="100%" />
+                    </picture>
+                </div>
+                <div class>
+                    <picture>
+                        <source data-lazy-srcset="{{ asset('home/images/x3/color.png') }}" type="image/webp" />
+                        <img data-lazy-src="{{ asset('home/images/x3/color.png') }}"
+                            alt="Xe máy điện VinFast Evo200 màu xanh" width="100%" />
+                    </picture>
+                </div>
+                <div class>
+                    <picture>
+                        <source data-lazy-srcset="{{ asset('home/images/x3/color.png') }}" type="image/webp" />
+                        <img data-lazy-src="{{ asset('home/images/x3/color.png') }}"
+                            alt="Xe máy điện VinFast Evo200 màu trắng" width="100%" />
+                    </picture>
+                </div>
             </div>
         </div>
-        <div class="top-main-control js-aos" style="max-width: 800px;margin:auto; overflow: hidden;"
-            data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
-            <div class="myThumbSlider" data-showitem="8">
-                @if(!empty($icon_images))
-                    @foreach($icon_images as $value)
-                        <div class="item-myThumb">
-                            <img src="{{$value->images}}" alt="màu vàng">
-                        </div>
-                    @endforeach
-                @endif
+        <div class="top-main-control js-aos" data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
+            <div class="myThumbSlider" data-showitem="7">
+                <div class="item-myThumb">
+                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwddfc1849/images/PDP-XMD/color/evo-yellow.png"
+                        alt="màu vàng">
+                </div>
+                <div class="item-myThumb">
+                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw5b7d4ede/images/PDP-XMD/color/evo-black.png"
+                        alt="màu đen">
+                </div>
+                <div class="item-myThumb">
+                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
+                        alt="màu đỏ">
+                </div>
+                <div class="item-myThumb">
+                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw4c44a070/images/PDP-XMD/color/evo-blue.png"
+                        alt="màu xanh">
+                </div>
+                <div class="item-myThumb">
+                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwd52b0fb5/images/PDP-XMD/color/evo-white.png"
+                        alt="màu trắng">
+                </div>
             </div>
             <div class="box-control-nav">
                 <div class="btn-arrow button-prev"></div>
                 <div class="btn-arrow button-next"></div>
             </div>
-            <div style="clear: left"></div>
         </div>
     </section>
 
-    <!-- Thông tin Công suất & Thời gian bảo hành -->
+
     <section class="page-block-details">
         <div class="row">
-            <!-- Thông tin Công suất & Thời gian bảo hành -->
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-                <div class="page-block-details-img aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
-                    <img src="{{ $product->nispa_images_4 ?? '' }}" alt="dongcoxanh2">
+                <div class="page-block-details-img aos-init aos-animate" data-aos="fade-up"
+                    data-aos-duration="2000">
+                    <img src="{{ asset('home/images/x3/dongcoxanh2.png') }}" alt="dongcoxanh2">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 aos-init aos-animate" data-aos="zoom-in"
-                data-aos-duration="2000">
+                    data-aos-duration="2000">
                 <div class="page-block-details-content">
                     <div class="content">
-                        {!! $product->nispa_desc_4 ?? '' !!}
+                        <h2>Giảm xóc đài loan êm ái</h2>
+                        <div class="descp">
+                            <p>Công suất trung bình (W)</p>
+                            <h3>500</h3>
+                            <p>Công suất trung bình (W)</p>
+                            <h3>1000</h3>
+                            <p>Thời gian bảo hành (năm)</p>
+                            <h3>03</h3>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -198,18 +260,18 @@
         <input id="gallery-toggle-02" type="radio" class="gallery-toggle d-none" name="gallery">
         <input id="gallery-toggle-03" type="radio" class="gallery-toggle d-none" name="gallery">
 
-        <!-- Nâng cấp chính bạn -->
         <div class="gallery-header">
             <div class="gallery-header-content">
-                <h3 class="gallery-title">{{$product->nispa_title_4 ?? ''}}</h3>
-                <p class="gallery-copy">{{$product->nispa_desc_5 ?? ''}}</p>
+                <h3 class="gallery-title">Nâng cấp chính bạn</h3>
+                <p class="gallery-copy">Mỗi màu sắc đều mang lại một phong cách riêng biệt cho người lái, thể hiện được
+                    cá tính và sở
+                    thích của họ.</p>
                 <button class="cta-button cta-button--gallery btn btn-button"><a href="#">
                         Tìm hiểu ngay
                     </a></button>
             </div>
         </div>
 
-        <!-- Hình ảnh gallery -->
         <div class="gallery-container">
             <div class="gallery-images">
                 <figure class="gallery-image gallery-image--01">
@@ -259,7 +321,7 @@
         </div>
     </section>
 
-    <!-- thông số kỹ thuật -->
+
     <section class="breaking-technology section" id="pdp-breaking-technology">
         <div class="breaking-wrap">
 
@@ -282,16 +344,83 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane  show active tabInfoProduct" id="tabInfoProduct" role="tabpanel"
                         aria-labelledby="tabInfoProduct">
-                        <div class="breaking-battery-tab d-flex justify-content-between" style="margin-top: 30px">
-\                                {!! $product->overview ?? '' !!}
-\                        </div>
+                        <div class="tab-pane-info d-flex justify-content-between">
+                            <ul>
+                                <li>
+                                    <h3 class="fw-light">Màu sắc</h3>
+                                    <span>Đỏ tươi, Trắng ngọc trai,<br>
+                                        Xanh tím than, Vàng, Đen Nhám</span>
+                                </li>
+                                <li>
+                                    <h3 class="fw-light">Thời gian sạc tiêu chuẩn</h3>
+                                    <span>Sạc 400W - 10h</span>
+                                </li>
+                                <li>
+                                    <h3 class="fw-light">Loại động cơ</h3>
+                                    <span>Inhub</span>
+                                </li>
+                                <li>
+                                    <h3 class="fw-light">Công suất danh định</h3>
+                                    <span>1500 W</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h3 class="fw-light">Giảm xóc</h3>
+                                    <span>Ống lồng-giảm chấn thủy lực;<br>
+                                        giảm xóc đôi, giảm chấn thủy lực</span>
+                                </li>
+                                <li>
+                                    <h3 class="fw-light">PIN</h3>
+                                    <span>01 Pin LFP</span>
+                                </li>
+                                <li>
+                                    <h3 class="fw-light">Dung lượng PIN</h3>
+                                    <span>3,5 KWh</span>
+                                </li>
+                                <li>
+                                    <span class="fw-light">Tốc độ tối đa</span>
+                                    <span>70 km/h</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h3 class="fw-light">Công suất lớn nhất</h3>
+                                    <span>2500 W</span>
+                                </li>
+                                <li>
+                                    <h3 class="fw-light">Trọng lượng</h3>
+                                    <span>97 kg bao gồm pin LFP</span>
+                                </li>
+                                <li>
+                                    <h3 class="fw-light">Dài x Rộng x Cao</h3>
+                                    <span>1804 x 683 x 1127 mm</span>
+                                </li>
+                                <li>
+                                    <h3 class="fw-light">Phanh trước và sau</h3>
+                                    <span>Phanh đĩa/cơ</span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="tab-pane  tabBatteryPackages" id="tabBatteryPackages" role="tabpanel"
                         aria-labelledby="tabBatteryPackages">
-                        <div class="breaking-battery-tab d-flex justify-content-between" style="margin-top: 30px">
-                                {!! $product->engine ?? '' !!}
-                        </div>
+                        <div class="breaking-battery-tab d-flex justify-content-between">
+                            <div>
+                                <h3 class="pin-subtitle">Gói thuê PIN</h3>
+                                <p>Gói cước thuê pin:</p>
+                                <ul class="rental-list">
+                                    <li>Quãng đường di chuyển trong tháng dưới 2.000 km, cước thuê pin: 350.000
+                                        VNĐ/tháng.</li>
+                                    <li>Quãng đường di chuyển trong tháng trên 2.000 km trở lên, cước thuê pin: 990.000
+                                        VNĐ/tháng.</li>
+                                </ul>
+                                <div class="rental-note">*Phí đặt cọc thuê pin 2.000.000 VNĐ</div>
 
+
+                                <p></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -334,7 +463,7 @@
 <script src="{{ asset('home/js/gallarey.js') }}"></script>
 <script defer src="{{ asset('home/js/jquery.fancybox.min.js') }}"></script>
 @php
-    $imageUrls = [];
+    $imageUrls = [asset('home/images/x3/img-360.png')];
 @endphp
 @if(!empty($images360))
     @foreach($images360 as $value)

@@ -11,9 +11,8 @@
 <main>
     <section class="hero-section hero-gogo">
         <div class="hero-main">
-            <!-- Hình ảnh banner(section 1) -->
             <div class="hero-background"
-                style="background: url({{ $product->gogo_images_banner1 ?? '' }}) center / cover no-repeat;">
+                style="background: url({{ asset('home/images/gogo/gogo_banner.png') }}) center / cover no-repeat;">
             </div>
         </div>
     </section>
@@ -23,9 +22,8 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                     <div class="title d-flex align-items-center aos-init aos-animate" data-aos="fade-left"
-                        data-aos-duration="1000" style="height: 100%">
-                        <!-- Tiêu đề, slogan xe -->
-                        <h1>{{ $product->gogo_slogan ?? '' }}</h1>
+                    data-aos-duration="1000" style="height: 100%">
+                        <h1>GOGO FIONA - ĐÓN ĐẦU THỜI ĐẠI</h1>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -33,7 +31,7 @@
                         <div class="breaking-wrap" style="padding: 0">
                             <div class="breaking-top d-flex justify-content-end">
                                 <div class="breaking-top__title-btn" style="margin-top: 0">
-                                    <span class="">{{number_format($product->product_price ?? 0)}} VNĐ</span>
+                                    <span class="">18.000.000 VNĐ</span>
                                     <a href="#" class="add-to-cart-v3s btn-pdp btn btn-primary effect-apollo"
                                         data-pid="VF-ZFG-ESNA5LHH-REQ"><span>Mua Ngay</span></a>
                                 </div>
@@ -52,57 +50,89 @@
         </div>
         <div class="tinhnang-owl story-items">
             <div data-story-track="" class="tinhnang-items-track owl-carousel owl-theme">
-                <!-- Hình ảnh tính năng(section 2) -->
+                <div class="story-item container">
+                    <figure class="image-story image-story--smart-1">
+                        <img src="{{ asset('home/images/gogo/tn_1.png') }}" alt="tn_1">
+                    </figure>
 
-                @if(!empty($gogo_images_banner2_multi))
-                    @foreach($gogo_images_banner2_multi as $value)
-                        <div class="story-item container">
-                            <figure class="image-story image-story--smart-2">
-                                <img src="{{ $value->images }}" alt="tn_2">
-                            </figure>
-                        </div>
-                    @endforeach
-                @endif
+                </div>
+                <div class="story-item container">
+                    <figure class="image-story image-story--smart-2">
+                        <img src="{{ asset('home/images/gogo/tn_2.png') }}" alt="tn_2">
+                    </figure>
+
+                </div>
+                <div class="story-item container">
+                    <figure class="image-story image-story--smart-3">
+                        <img src="{{ asset('home/images/gogo/tn_3.png') }}" alt="tn_3">
+                    </figure>
+
+                </div>
             </div>
+
             <button class="story-prev" data-story-prev="" disabled=""></button>
             <button class="story-next" data-story-next=""></button>
         </div>
         <div class="group-wrapper-func">
             <div class="d-flex align-items-center justify-content-between">
-                <!-- Thông tin chi tiết xe -->
-                {!! $product->gogo_desc_3 ?? '' !!}
+                <div class="func-item aos-init aos-animate" data-aos="fade-up"
+                    data-aos-duration="1000">
+                    <span>Giảm xóc</span>
+                    <h3>Đài Loan</h3>
+                </div>
+                <div class="func-item aos-init aos-animate" data-aos="fade-up"
+                    data-aos-duration="1300">
+                    <span>Đèn led</span>
+                    <h3>Toàn xe</h3>
+                </div>
+                <div class="func-item aos-init aos-animate" data-aos="fade-up"
+                    data-aos-duration="1500">
+                    <span>Mặt đồng hồ</span>
+                    <h3>Led mở rộng</h3>
+                </div>
+                <div class="func-item aos-init aos-animate" data-aos="fade-up"
+                    data-aos-duration="1700">
+                    <span>Chiều cao xe</span>
+                    <h3>1045 mm</h3>
+                </div>
+                <div class="func-item aos-init aos-animate" data-aos="fade-up"
+                    data-aos-duration="2000">
+                    <span>Mở khoá</span>
+                    <h3>Smartkey</h3>
+                </div>
             </div>
         </div>
+
     </section>
 
-
     <section class="section section-feature">
-        <!-- Section 3 mô tả xe -->
         <div class="feature-bot-top-1 d-flex align-items-center">
             <div class="feature-box-top-1-left-image">
                 <div class="image">
-                    <img src="{{ $product->gogo_images_banner4 ?? ''}}" alt="feature1_1">
+                    <img src="{{ asset('home/images/gogo/feature1_1.png') }}" alt="feature1_1">
                 </div>
             </div>
             <div class="feature-box-top-1-left-content">
                 <div class="feature-box-top-1-left-box-content aos-init aos-animate" data-aos="fade-up"
                     data-aos-duration="2000">
-                    <h3>{{$product->gogo_title_banner4 ?? ''}}</h3>
-                    <p>{{$product->gogo_desc_banner4 ?? ''}}</p>
+                    <h3>HỆ THỐNG PHANH E-ABS</h3>
+                    <p>Nispa Vera đã kết hợp nhiều sắc thái màu sắc vào bảng điều khiển, ghế ngồi và thân xe, nổi bật
+                        bằng các điểm nhấn mạ crôm, mang lại vẻ ngoài vừa êm dịu vừa uyển chuyển khi di chuyển.</p>
                 </div>
             </div>
         </div>
         <div class="feature-bot-top-1 d-flex align-items-center flex-roate">
             <div class="feature-box-top-1-left-image feature-box-top-2-left-image-style">
                 <div class="image">
-                    <img src="{{ $product->gogo_images_banner5 ?? '' }}" alt="feature1_2">
+                    <img src="{{ asset('home/images/gogo/feature1_2.png') }}" alt="feature1_2">
                 </div>
             </div>
-            <div class="feature-box-top-1-left-content feature-box-top-2-left-content-style aos-init aos-animate"
-                data-aos="fade-up" data-aos-duration="2000">
+            <div class="feature-box-top-1-left-content feature-box-top-2-left-content-style aos-init aos-animate" data-aos="fade-up"
+                    data-aos-duration="2000">
                 <div class="feature-box-top-1-left-box-content">
-                    <h3>{{$product->gogo_title_banner5 ?? ''}}</h3>
-                    <p>{{$product->gogo_desc_banner5 ?? ''}}</p>
+                    <h3>CỤM ĐÈN NỔI BẬT</h3>
+                    <p>Nispa Vera đã kết hợp nhiều sắc thái màu sắc vào bảng điều khiển, ghế ngồi và thân xe, nổi bật
+                        bằng các điểm nhấn mạ crôm, mang lại vẻ ngoài vừa êm dịu vừa uyển chuyển khi di chuyển.</p>
                 </div>
             </div>
         </div>
@@ -117,72 +147,62 @@
             </div>
         </div>
 
-        <!-- Section trải nghiệm niềm vui, cảm nhận sự an toàn -->
-
         <div class="breaking-experience-tabs breaking-technology-bot">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
-
-                <!-- tiêu đề mô tả -->
-
                 <li class="nav-item">
                     <a class="nav-link active" id="tabexperience1" data-toggle="tab" href="javascript:void(0)"
-                        role="tab" aria-controls="home" aria-selected="true">{{$product->gogo_title_banner6 ?? ''}}
+                        role="tab" aria-controls="home" aria-selected="true">DỪNG LẠI NHANH CHÓNG, ĐẢM BẢO AN TOÀN
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="tabexperience2" data-toggle="tab" href="javascript:void(0)" role="tab"
-                        aria-controls="profile" aria-selected="false">{{$product->gogo_title_banner7 ?? ''}}
+                        aria-controls="profile" aria-selected="false">CAN ĐẢM GIỮA NHỮNG CƠN MƯA
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="tabexperience3" data-toggle="tab" href="javascript:void(0)" role="tab"
-                        aria-controls="profile" aria-selected="false">{{$product->gogo_title_banner8 ?? ''}}
+                        aria-controls="profile" aria-selected="false">ÁP SUẤT LỐP
                     </a>
                 </li>
             </ul>
             <div class="tab-content">
-                <!-- nội dung mô tả & ảnh -->
                 <div class="tab-pane show active tabexperience1" id="tabexperience1" role="tabpanel"
                     aria-labelledby="tabexperience1">
                     <div class="tab-pane-info d-flex justify-content-center">
 
                         <div class="block-tabs text-center">
-                            <p>{{$product->gogo_desc_banner6 ?? ''}}</p>
+                            <p>Phanh đĩa trước và sau cung cấp hiệu suất phanh hiệu quả và ổn định. Tăng tốc và cấu trúc
+                                mô-men xoắn linh hoạt, giúp xe dễ dàng xử lý cấp độ tăng tốc và giảm tốc một cách mượt
+                                mà</p>
 
-                            <img class="mx-auto" src="{{ $product->gogo_images_banner6 ?? '' }}" alt="image-exp-tabs">
+                            <img class="mx-auto" src="{{ asset('home/images/gogo/image-exp-tabs.png') }}"
+                                alt="image-exp-tabs">
                         </div>
 
                     </div>
                 </div>
                 <div class="tab-pane tabexperience2" id="tabexperience2" role="tabpanel"
                     aria-labelledby="tabexperience2">
-                    <div class="tab-pane-info d-flex justify-content-center">
-
+                    <div class="breaking-battery-tab d-flex justify-content-between">
                         <div class="block-tabs text-center">
-                            <p>{{$product->gogo_desc_banner7 ?? ''}}</p>
+                            <h3 class="pin-subtitle">CAN ĐẢM GIỮA NHỮNG CƠN MƯA</h3>
 
-                            <img class="mx-auto" src="{{ $product->gogo_images_banner7 ?? '' }}" alt="image-exp-tabs">
                         </div>
-
                     </div>
                 </div>
                 <div class="tab-pane tabexperience3" id="tabexperience3" role="tabpanel"
                     aria-labelledby="tabexperience3">
-                    <div class="tab-pane-info d-flex justify-content-center">
-
+                    <div class="breaking-battery-tab d-flex justify-content-between">
                         <div class="block-tabs text-center">
-                            <p>{{$product->gogo_desc_banner8 ?? ''}}</p>
+                            <h3 class="pin-subtitle">ÁP SUẤT LỐP</h3>
 
-                            <img class="mx-auto" src="{{ $product->gogo_images_banner8 ?? ''}}" alt="image-exp-tabs">
                         </div>
-
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- phần này chung chắc cho vào nội dung độc lập -->
     <section class="page-block-image page-block-dong-co-xanh" id="dong-co-xanh">
         <div class="breaking-wrap">
             <div class="row">
@@ -207,8 +227,7 @@
                         </div>
                         <div class="text_descreption">
                             <p>Trang bị động cơ công suất tối đa 2800W, hoạt động bền bỉ, công nghệ cuộn dây đơn dây
-                                cuộn mật độ dày cao gọn gàng phẳng khe hở ít, giúp hiệu suất của động cơ tăng 35 %.
-                                Bộ
+                                cuộn mật độ dày cao gọn gàng phẳng khe hở ít, giúp hiệu suất của động cơ tăng 35 %. Bộ
                                 điều khiển thu hồi điện năng.</p>
                         </div>
                         <div class="infor_bottom">
@@ -227,53 +246,85 @@
         </div>
     </section>
 
-    <!-- màu sắc -->
     <section class="section section-color">
 
         <div class="head_color_title">
             <h2>Đa dạng màu sắc</h2>
-            <p>Mỗi màu sắc đều mang lại một phong cách riêng biệt cho người lái, thể hiện được cá tính và sở thích
-                của
+            <p>Mỗi màu sắc đều mang lại một phong cách riêng biệt cho người lái, thể hiện được cá tính và sở thích của
                 họ.</p>
         </div>
 
-            <div class="top-main-img">
-                <div class="mySliderTop">
-                    @if(!empty($icon_images) && !empty($color_image))
-                        @for($i=0; $i < count($icon_images) ; $i++)
-                            <div class>
-                                <picture>
-                                    <source srcset="{{ $color_image[$i]->images }}"
-                                            type="image/webp"/>
-                                    <img data-lazy="{{ $color_image[$i]->images }}" title
-                                         alt="" width="100%"/>
-                                </picture>
-                            </div>
-                        @endfor
-                    @endif
+        <div class="top-main-img">
+            <div class="mySliderTop">
+                <div class>
+                    <picture>
+                        <source srcset="{{ asset('home/images/color_image_heidi.png') }}" type="image/webp" />
+                        <img data-lazy="{{ asset('home/images/color_image_heidi.png') }}" title
+                            alt="Xe máy điện VinFast Evo200 màu vàng" width="100%" />
+                    </picture>
+                </div>
+                <div class>
+                    <picture>
+                        <source data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}" type="image/webp" />
+                        <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                            alt="Xe máy điện VinFast Evo200 màu đen" width="100%" />
+                    </picture>
+                </div>
+                <div class>
+                    <picture>
+                        <source data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}" type="image/webp" />
+                        <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                            alt="Xe máy điện VinFast Evo200 màu đỏ" width="100%" />
+                    </picture>
+                </div>
+                <div class>
+                    <picture>
+                        <source data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}" type="image/webp" />
+                        <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                            alt="Xe máy điện VinFast Evo200 màu xanh" width="100%" />
+                    </picture>
+                </div>
+                <div class>
+                    <picture>
+                        <source data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}" type="image/webp" />
+                        <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                            alt="Xe máy điện VinFast Evo200 màu trắng" width="100%" />
+                    </picture>
                 </div>
             </div>
-            <div class="top-main-control js-aos" data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
-                <div class="myThumbSlider" data-showitem="7">
-                    @if(!empty($icon_images))
-                        @foreach($icon_images as $value)
-                            <div class="item-myThumb">
-                                <img src="{{$value->images}}"
-                                     alt="màu vàng">
-                            </div>
-                        @endforeach
-                    @endif
+        </div>
+        <div class="top-main-control js-aos" data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
+            <div class="myThumbSlider" data-showitem="7">
+                <div class="item-myThumb">
+                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwddfc1849/images/PDP-XMD/color/evo-yellow.png"
+                        alt="màu vàng">
                 </div>
-                <div class="box-control-nav">
-                    <div class="btn-arrow button-prev"></div>
-                    <div class="btn-arrow button-next"></div>
+                <div class="item-myThumb">
+                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw5b7d4ede/images/PDP-XMD/color/evo-black.png"
+                        alt="màu đen">
+                </div>
+                <div class="item-myThumb">
+                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
+                        alt="màu đỏ">
+                </div>
+                <div class="item-myThumb">
+                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw4c44a070/images/PDP-XMD/color/evo-blue.png"
+                        alt="màu xanh">
+                </div>
+                <div class="item-myThumb">
+                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwd52b0fb5/images/PDP-XMD/color/evo-white.png"
+                        alt="màu trắng">
                 </div>
             </div>
-        </section>
+            <div class="box-control-nav">
+                <div class="btn-arrow button-prev"></div>
+                <div class="btn-arrow button-next"></div>
+            </div>
+        </div>
+    </section>
 
-    <!-- ảnh 360 -->
     <section class="page-block-image page-block-image-360 product-360-views product-360-views-gogo" id="pdp-img-360"
-        style="background: #040406;">
+        style="background: #1B1B1E;">
         <div class="breaking-wrap product-images-list">
             <!-- Ảnh 360 -->
             <div id="threesixty" class="wrap_image"></div>
@@ -294,18 +345,17 @@
         <input id="gallery-toggle-02" type="radio" class="gallery-toggle d-none" name="gallery">
         <input id="gallery-toggle-03" type="radio" class="gallery-toggle d-none" name="gallery">
 
-        <!-- Nâng cấp chính bạn -->
         <div class="gallery-header">
             <div class="gallery-header-content">
-                <h3 class="gallery-title">{{$product->gogo_title_banner12 ?? ''}}</h3>
-                <p class="gallery-copy">{{$product->gogo_desc_banner12 ?? ''}}</p>
+                <h3 class="gallery-title">Nâng cấp chính bạn</h3>
+                <p class="gallery-copy">Mỗi màu sắc đều mang lại một phong cách riêng biệt cho người lái, thể hiện được
+                    cá tính và sở
+                    thích của họ.</p>
                 <button class="cta-button cta-button--gallery btn btn-button"><a href="#">
                         Tìm hiểu ngay
                     </a></button>
             </div>
         </div>
-
-        <!-- gallery -->
 
         <div class="gallery-container">
             <div class="gallery-images">
@@ -317,31 +367,31 @@
                 </figure>
 
                 <style>
+                .gallery-image--01 {
+                    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-01-mobile@2x.jpg?v=v1")
+                }
+
+                .gallery-image--02 {
+                    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-02-mobile@2x.jpg?v=v1")
+                }
+
+                .gallery-image--03 {
+                    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-03-mobile@2x.jpg?v=v1")
+                }
+
+                @media(min-aspect-ratio: 1/1) {
                     .gallery-image--01 {
-                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-01-mobile@2x.jpg?v=v1")
+                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-01@2x.jpg?v=v1")
                     }
 
                     .gallery-image--02 {
-                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-02-mobile@2x.jpg?v=v1")
+                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-02@2x.jpg?v=v1")
                     }
 
                     .gallery-image--03 {
-                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-03-mobile@2x.jpg?v=v1")
+                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-03@2x.jpg?v=v1")
                     }
-
-                    @media (min-aspect-ratio: 1/1) {
-                        .gallery-image--01 {
-                            background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-01@2x.jpg?v=v1")
-                        }
-
-                        .gallery-image--02 {
-                            background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-02@2x.jpg?v=v1")
-                        }
-
-                        .gallery-image--03 {
-                            background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-03@2x.jpg?v=v1")
-                        }
-                    }
+                }
                 </style>
 
             </div>
@@ -368,17 +418,17 @@
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="tienich1" data-toggle="tab" href="javascript:void(0)" role="tab"
-                        aria-controls="home" aria-selected="true">{{$product->gogo_title_banner9 ?? ''}}
+                        aria-controls="home" aria-selected="true">CỐP RỘNG BAO LA
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="tienich2" data-toggle="tab" href="javascript:void(0)" role="tab"
-                        aria-controls="profile" aria-selected="false">{{$product->gogo_title_banner10 ?? ''}}
+                        aria-controls="profile" aria-selected="false">CỔNG SẠC USB
                     </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" id="tienich3" data-toggle="tab" href="javascript:void(0)" role="tab"
-                        aria-controls="profile" aria-selected="false">{{$product->gogo_title_banner11 ?? ''}}
+                        aria-controls="profile" aria-selected="false">Móc treo đồ
                     </a>
                 </li>
             </ul>
@@ -388,11 +438,17 @@
 
                         <div class="row" style="width: 100%">
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
-                                <img class="img" src="{{ $product->gogo_images_banner9 ?? '' }}" alt="tienich_1">
+                                <img class="img" src="{{ asset('home/images/gogo/tienich_1.png') }}" alt="tienich_1">
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
                                 <div class="tabs-ck-editor d-flex align-items-center">
-                                    {!! $product->gogo_desc_banner9 ?? '' !!}
+                                    <div>
+                                        <h2>Cốp rộng bao la</h2>
+                                        <ul>
+                                            <li>Để đồ thả ga với dung tích 20</li>
+                                            <li>Tăng tính tiện lợi</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -403,11 +459,17 @@
                     <div class="breaking-battery-tab d-flex justify-content-between">
                         <div class="row" style="width: 100%">
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
-                                <img class="img" src="{{ $product->gogo_images_banner10 ?? '' }}" alt="tienich_1">
+                                <img class="img" src="{{ asset('home/images/gogo/tienich_2.png') }}" alt="tienich_1">
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
                                 <div class="tabs-ck-editor d-flex align-items-center">
-                                    {!! $product->gogo_desc_banner10 ?? '' !!}
+                                    <div>
+                                        <h2>Cổng sạc USB</h2>
+                                        <ul>
+                                            <li>Phía trước tiện lợi</li>
+                                            <li>Móc treo đồ dạng gập tiện lợi</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -417,11 +479,17 @@
                     <div class="breaking-battery-tab d-flex justify-content-between">
                         <div class="row" style="width: 100%">
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
-                                <img class="img" src="{{ $product->gogo_images_banner11 ?? ''}}" alt="tienich_1">
+                                <img class="img" src="{{ asset('home/images/gogo/tienich_3.png') }}" alt="tienich_1">
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
                                 <div class="tabs-ck-editor d-flex align-items-center">
-                                    {!! $product->gogo_desc_banner11 ?? '' !!}
+                                    <div>
+                                        <h2>Móc treo đồ</h2>
+                                        <ul>
+                                            <li>Móc treo đồ dạng gập tiện lợi</li>
+                                            <li>Móc treo đồ dạng gập tiện lợi</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -430,6 +498,7 @@
             </div>
         </div>
     </section>
+
 
 
     <section class="breaking-technology section" id="pdp-breaking-technology">
@@ -454,27 +523,92 @@
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane  show active tabInfoProduct" id="tabInfoProduct" role="tabpanel"
                         aria-labelledby="tabInfoProduct">
-                        <div class="breaking-battery-tab d-flex justify-content-between" style="margin-top: 30px">
-                                {!! $product->overview ?? '' !!}
+                        <div class="tab-pane-info d-flex justify-content-between">
+                            <ul>
+                                <li>
+                                    <h3 class="fw-light">Màu sắc</h3>
+                                    <span>Đỏ tươi, Trắng ngọc trai,<br>
+                                        Xanh tím than, Vàng, Đen Nhám</span>
+                                </li>
+                                <li>
+                                    <h3 class="fw-light">Thời gian sạc tiêu chuẩn</h3>
+                                    <span>Sạc 400W - 10h</span>
+                                </li>
+                                <li>
+                                    <h3 class="fw-light">Loại động cơ</h3>
+                                    <span>Inhub</span>
+                                </li>
+                                <li>
+                                    <h3 class="fw-light">Công suất danh định</h3>
+                                    <span>1500 W</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h3 class="fw-light">Giảm xóc</h3>
+                                    <span>Ống lồng-giảm chấn thủy lực;<br>
+                                        giảm xóc đôi, giảm chấn thủy lực</span>
+                                </li>
+                                <li>
+                                    <h3 class="fw-light">PIN</h3>
+                                    <span>01 Pin LFP</span>
+                                </li>
+                                <li>
+                                    <h3 class="fw-light">Dung lượng PIN</h3>
+                                    <span>3,5 KWh</span>
+                                </li>
+                                <li>
+                                    <span class="fw-light">Tốc độ tối đa</span>
+                                    <span>70 km/h</span>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <h3 class="fw-light">Công suất lớn nhất</h3>
+                                    <span>2500 W</span>
+                                </li>
+                                <li>
+                                    <h3 class="fw-light">Trọng lượng</h3>
+                                    <span>97 kg bao gồm pin LFP</span>
+                                </li>
+                                <li>
+                                    <h3 class="fw-light">Dài x Rộng x Cao</h3>
+                                    <span>1804 x 683 x 1127 mm</span>
+                                </li>
+                                <li>
+                                    <h3 class="fw-light">Phanh trước và sau</h3>
+                                    <span>Phanh đĩa/cơ</span>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="tab-pane  tabBatteryPackages" id="tabBatteryPackages" role="tabpanel"
                         aria-labelledby="tabBatteryPackages">
-                        <div class="breaking-battery-tab d-flex justify-content-between" style="margin-top: 30px">
-                                {!! $product->engine ?? '' !!}
+                        <div class="breaking-battery-tab d-flex justify-content-between">
+                            <div>
+                                <h3 class="pin-subtitle">Gói thuê PIN</h3>
+                                <p>Gói cước thuê pin:</p>
+                                <ul class="rental-list">
+                                    <li>Quãng đường di chuyển trong tháng dưới 2.000 km, cước thuê pin: 350.000
+                                        VNĐ/tháng.</li>
+                                    <li>Quãng đường di chuyển trong tháng trên 2.000 km trở lên, cước thuê pin: 990.000
+                                        VNĐ/tháng.</li>
+                                </ul>
+                                <div class="rental-note">*Phí đặt cọc thuê pin 2.000.000 VNĐ</div>
+
+
+                                <p></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="node_text">
                 <p> *Độ dài quãng đường đi được và tốc độ tối đa đạt được trong phần giới thiệu này được thử nghiệm
-                    trong điều kiện tiêu chuẩn của OSAKAR, các yếu tố khác có thể làm ảnh hưởng đến quãng đường thực
-                    tế,
-                    ví dụ như tải trọng, nhiệt độ, tốc độ gió, điều kiện đường và thói quen di chuyển. Đồng thời
-                    dung
+                    trong điều kiện tiêu chuẩn của OSAKAR, các yếu tố khác có thể làm ảnh hưởng đến quãng đường thực tế,
+                    ví dụ như tải trọng, nhiệt độ, tốc độ gió, điều kiện đường và thói quen di chuyển. Đồng thời dung
                     lượng tối đa của ắc quy sẽ bị giảm sau một thời gian sử dụng do đặc tính của nó.
-                    *OSAKAR có quyền thay đổi hoặc sửa đổi bất kỳ thông số kỹ thuật nào mà không cần thông báo
-                    trước.
+                    *OSAKAR có quyền thay đổi hoặc sửa đổi bất kỳ thông số kỹ thuật nào mà không cần thông báo trước.
                 </p>
             </div>
         </div>
@@ -507,25 +641,25 @@
 <script src="https://cdn.jsdelivr.net/npm/@mladenilic/threesixty.js/dist/threesixty.js"></script>
 <script src="{{ asset('home/js/gallarey.js') }}"></script>
 @php
-    $imageUrls = [];
+$imageUrls = [asset('home/images/360.png')];
 @endphp
 @if(!empty($images360))
-    @foreach($images360 as $value)
-        @php
-            $imageUrls[] = $value->images;
-        @endphp
-    @endforeach
+@foreach($images360 as $value)
+@php
+$imageUrls[] = $value->images;
+@endphp
+@endforeach
 @endif
 <script>
-    var img360 = @json($imageUrls);
-    if (img360 != '') {
-        const threesixty = new ThreeSixty(document.getElementById('threesixty'), {
-            image: img360,
-            count: 31,
-            perRow: 0,
-            width: '100%',
-            height: 680,
-        });
-    }
+var img360 = @json($imageUrls);
+if (img360 != '') {
+    const threesixty = new ThreeSixty(document.getElementById('threesixty'), {
+        image: img360,
+        count: 31,
+        perRow: 0,
+        width: '100%',
+        height: 680,
+    });
+}
 </script>
 @endsection
