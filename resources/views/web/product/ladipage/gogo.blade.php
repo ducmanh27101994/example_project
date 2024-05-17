@@ -247,9 +247,9 @@
                         @for($i=0; $i < count($icon_images) ; $i++)
                             <div class>
                                 <picture>
-                                    <source srcset="{{ $color_image[$i] }}"
+                                    <source srcset="{{ $color_image[$i]->images }}"
                                             type="image/webp"/>
-                                    <img data-lazy="{{ $color_image[$i] }}" title
+                                    <img data-lazy="{{ $color_image[$i]->images }}" title
                                          alt="" width="100%"/>
                                 </picture>
                             </div>
