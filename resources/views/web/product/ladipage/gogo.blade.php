@@ -237,39 +237,41 @@
                 họ.</p>
         </div>
 
-        <div class="top-main-img">
-            <div class="mySliderTop">
-                @if(!empty($icon_images) && !empty($color_image))
-                    @for($i = 0; $i < count($icon_images); $i++)
-                        <div class>
-                            <picture>
-                                <source srcset="{{ $color_image[$i] }}" type="image/webp" />
-                                <img data-lazy="{{ $color_image[$i] }}" title alt="" width="100%" />
-                            </picture>
-                        </div>
-                    @endfor
-                @endif
+            <div class="top-main-img">
+                <div class="mySliderTop">
+                    @if(!empty($icon_images) && !empty($color_image))
+                        @for($i=0; $i < count($icon_images) ; $i++)
+                            <div class>
+                                <picture>
+                                    <source srcset="{{ $color_image[$i]->images }}"
+                                            type="image/webp"/>
+                                    <img data-lazy="{{ $color_image[$i]->images }}" title
+                                         alt="" width="100%"/>
+                                </picture>
+                            </div>
+                        @endfor
+                    @endif
+                </div>
             </div>
-        </div>
-        <div class="top-main-control js-aos" style="max-width: 800px;margin:auto; overflow: hidden;"
-            data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
-            <div class="myThumbSlider" data-showitem="8">
-                @if(!empty($icon_images))
-                    @foreach($icon_images as $value)
-                        <div class="item-myThumb">
-                            <img src="{{$value->images}}" alt="màu vàng">
-                        </div>
-                    @endforeach
-                @endif
-            </div>
-            <div class="box-control-nav">
-                <div class="btn-arrow button-prev"></div>
-                <div class="btn-arrow button-next"></div>
+            <div class="top-main-control js-aos" data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
+                <div class="myThumbSlider" data-showitem="7">
+                    @if(!empty($icon_images))
+                        @foreach($icon_images as $value)
+                            <div class="item-myThumb">
+                                <img src="{{$value->images}}"
+                                     alt="màu vàng">
+                            </div>
+                        @endforeach
+                    @endif
+                </div>
+                <div class="box-control-nav">
+                    <div class="btn-arrow button-prev"></div>
+                    <div class="btn-arrow button-next"></div>
+                </div>
+                <div style="clear: left"></div>
             </div>
             <div style="clear: left"></div>
-        </div>
-        <div style="clear: left"></div>
-    </section>
+        </section>
 
     <!-- ảnh 360 -->
     <section class="page-block-image page-block-image-360 product-360-views product-360-views-gogo" id="pdp-img-360"
