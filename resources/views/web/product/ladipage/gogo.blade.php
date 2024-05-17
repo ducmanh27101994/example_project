@@ -253,7 +253,7 @@
                     @endif
                 </div>
             </div>
-            <div class="top-main-control js-aos" >
+            <div class="top-main-control" >
                 <div class="myThumbSlider" data-showitem="7">
                     @if(!empty($icon_images))
                         @foreach($icon_images as $value)

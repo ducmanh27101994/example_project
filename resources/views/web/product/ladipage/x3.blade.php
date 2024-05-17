@@ -136,7 +136,7 @@
                 @endif
             </div>
         </div>
-        <div class="top-main-control js-aos" style="max-width: 800px;margin:auto; overflow: hidden;"
+        <div class="top-main-control" style="max-width: 800px;margin:auto; overflow: hidden;"
             >
             <div class="myThumbSlider" data-showitem="8">
                 @if(!empty($icon_images))
