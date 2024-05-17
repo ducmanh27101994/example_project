@@ -153,6 +153,7 @@
             </div>
             <div style="clear: left"></div>
         </div>
+        <div style="clear: left"></div>
     </section>
 
     <!-- Thông tin Công suất & Thời gian bảo hành -->
@@ -283,13 +284,13 @@
                     <div class="tab-pane  show active tabInfoProduct" id="tabInfoProduct" role="tabpanel"
                         aria-labelledby="tabInfoProduct">
                         <div class="breaking-battery-tab d-flex justify-content-between" style="margin-top: 30px">
-\                                {!! $product->overview ?? '' !!}
-\                        </div>
+                            \ {!! $product->overview ?? '' !!}
+                            \ </div>
                     </div>
                     <div class="tab-pane  tabBatteryPackages" id="tabBatteryPackages" role="tabpanel"
                         aria-labelledby="tabBatteryPackages">
                         <div class="breaking-battery-tab d-flex justify-content-between" style="margin-top: 30px">
-                                {!! $product->engine ?? '' !!}
+                            {!! $product->engine ?? '' !!}
                         </div>
 
                     </div>

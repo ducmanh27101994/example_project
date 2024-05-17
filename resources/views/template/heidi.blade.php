@@ -9,7 +9,8 @@
 <main>
     <section class="hero-section">
         <div class="hero-main">
-            <div class="hero-background" style="background: url({{ asset('home/images/sec_1_banner.png') }}) center / cover no-repeat;"></div>
+            <div class="hero-background"
+                style="background: url({{ asset('home/images/sec_1_banner.png') }}) center / cover no-repeat;"></div>
         </div>
     </section>
 
@@ -103,45 +104,35 @@
             <div class="mySliderTop">
                 <div class>
                     <picture>
-                        <source
-                            srcset="{{ asset('home/images/color_image_heidi.png') }}"
-                            type="image/webp" />
-                        <img data-lazy="{{ asset('home/images/color_image_heidi.png') }}"
-                            title alt="Xe máy điện VinFast Evo200 màu vàng" width="100%" />
+                        <source srcset="{{ asset('home/images/color_image_heidi.png') }}" type="image/webp" />
+                        <img data-lazy="{{ asset('home/images/color_image_heidi.png') }}" title
+                            alt="Xe máy điện VinFast Evo200 màu vàng" width="100%" />
                     </picture>
                 </div>
                 <div class>
                     <picture>
-                        <source
-                            data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}"
-                            type="image/webp" />
+                        <source data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}" type="image/webp" />
                         <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
                             alt="Xe máy điện VinFast Evo200 màu đen" width="100%" />
                     </picture>
                 </div>
                 <div class>
                     <picture>
-                        <source
-                            data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}"
-                            type="image/webp" />
+                        <source data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}" type="image/webp" />
                         <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
                             alt="Xe máy điện VinFast Evo200 màu đỏ" width="100%" />
                     </picture>
                 </div>
                 <div class>
                     <picture>
-                        <source
-                            data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}"
-                            type="image/webp" />
+                        <source data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}" type="image/webp" />
                         <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
                             alt="Xe máy điện VinFast Evo200 màu xanh" width="100%" />
                     </picture>
                 </div>
                 <div class>
                     <picture>
-                        <source
-                            data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}"
-                            type="image/webp" />
+                        <source data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}" type="image/webp" />
                         <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
                             alt="Xe máy điện VinFast Evo200 màu trắng" width="100%" />
                     </picture>
@@ -149,105 +140,107 @@
             </div>
         </div>
         <div class="container" style="overflow: hidden;">
-        <div class="top-main-control js-aos" style="max-width: 900px;margin:auto; overflow: hidden;" data-aos="fade-left" data-aos-delay="100" data-aos-duration="300" style="margin-top: 20px">
-            <div class="myThumbSlider" style="overflow: hidden;" data-showitem="17">
-                <div class="item-myThumb">
-                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwddfc1849/images/PDP-XMD/color/evo-yellow.png"
-                        alt="màu vàng">
+            <div class="top-main-control js-aos" style="max-width: 900px;margin:auto; overflow: hidden;"
+                data-aos="fade-left" data-aos-delay="100" data-aos-duration="300" style="margin-top: 20px">
+                <div class="myThumbSlider" style="overflow: hidden;" data-showitem="17">
+                    <div class="item-myThumb">
+                        <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwddfc1849/images/PDP-XMD/color/evo-yellow.png"
+                            alt="màu vàng">
+                    </div>
+                    <div class="item-myThumb">
+                        <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw5b7d4ede/images/PDP-XMD/color/evo-black.png"
+                            alt="màu đen">
+                    </div>
+                    <div class="item-myThumb">
+                        <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
+                            alt="màu đỏ">
+                    </div>
+                    <div class="item-myThumb">
+                        <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw4c44a070/images/PDP-XMD/color/evo-blue.png"
+                            alt="màu xanh">
+                    </div>
+                    <div class="item-myThumb">
+                        <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw5b7d4ede/images/PDP-XMD/color/evo-black.png"
+                            alt="màu đen">
+                    </div>
+                    <div class="item-myThumb">
+                        <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
+                            alt="màu đỏ">
+                    </div>
+                    <div class="item-myThumb">
+                        <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw4c44a070/images/PDP-XMD/color/evo-blue.png"
+                            alt="màu xanh">
+                    </div>
+                    <div class="item-myThumb">
+                        <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw5b7d4ede/images/PDP-XMD/color/evo-black.png"
+                            alt="màu đen">
+                    </div>
+                    <div class="item-myThumb">
+                        <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
+                            alt="màu đỏ">
+                    </div>
+                    <div class="item-myThumb">
+                        <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw4c44a070/images/PDP-XMD/color/evo-blue.png"
+                            alt="màu xanh">
+                    </div>
+                    <div class="item-myThumb">
+                        <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw5b7d4ede/images/PDP-XMD/color/evo-black.png"
+                            alt="màu đen">
+                    </div>
+                    <div class="item-myThumb">
+                        <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
+                            alt="màu đỏ">
+                    </div>
+
+                    <div class="item-myThumb">
+                        <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
+                            alt="màu đỏ">
+                    </div>
+
+                    <div class="item-myThumb">
+                        <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
+                            alt="màu đỏ">
+                    </div>
+
+                    <div class="item-myThumb">
+                        <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
+                            alt="màu đỏ">
+                    </div>
+
+                    <div class="item-myThumb">
+                        <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
+                            alt="màu đỏ">
+                    </div>
+
+                    <div class="item-myThumb">
+                        <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
+                            alt="màu đỏ">
+                    </div>
+
+                    <div class="item-myThumb">
+                        <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
+                            alt="màu đỏ">
+                    </div>
+
+                    <div class="item-myThumb">
+                        <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
+                            alt="màu đỏ">
+                    </div>
+
+                    <div class="item-myThumb">
+                        <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
+                            alt="màu đỏ">
+                    </div>
                 </div>
-                <div class="item-myThumb">
-                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw5b7d4ede/images/PDP-XMD/color/evo-black.png"
-                        alt="màu đen">
+                <div class="box-control-nav">
+                    <div class="btn-arrow button-prev"></div>
+                    <div class="btn-arrow button-next"></div>
                 </div>
-                <div class="item-myThumb">
-                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
-                        alt="màu đỏ">
-                </div>
-                <div class="item-myThumb">
-                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw4c44a070/images/PDP-XMD/color/evo-blue.png"
-                        alt="màu xanh">
-                </div>
-                <div class="item-myThumb">
-                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw5b7d4ede/images/PDP-XMD/color/evo-black.png"
-                        alt="màu đen">
-                </div>
-                <div class="item-myThumb">
-                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
-                        alt="màu đỏ">
-                </div>
-                <div class="item-myThumb">
-                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw4c44a070/images/PDP-XMD/color/evo-blue.png"
-                        alt="màu xanh">
-                </div>
-                <div class="item-myThumb">
-                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw5b7d4ede/images/PDP-XMD/color/evo-black.png"
-                        alt="màu đen">
-                </div>
-                <div class="item-myThumb">
-                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
-                        alt="màu đỏ">
-                </div>
-                <div class="item-myThumb">
-                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw4c44a070/images/PDP-XMD/color/evo-blue.png"
-                        alt="màu xanh">
-                </div>
-                <div class="item-myThumb">
-                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw5b7d4ede/images/PDP-XMD/color/evo-black.png"
-                        alt="màu đen">
-                </div>
-                <div class="item-myThumb">
-                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
-                        alt="màu đỏ">
-                </div>
-                
-                <div class="item-myThumb">
-                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
-                        alt="màu đỏ">
-                </div>
-                
-                <div class="item-myThumb">
-                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
-                        alt="màu đỏ">
-                </div>
-                
-                <div class="item-myThumb">
-                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
-                        alt="màu đỏ">
-                </div>
-                
-                <div class="item-myThumb">
-                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
-                        alt="màu đỏ">
-                </div>
-                
-                <div class="item-myThumb">
-                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
-                        alt="màu đỏ">
-                </div>
-                
-                <div class="item-myThumb">
-                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
-                        alt="màu đỏ">
-                </div>
-                
-                <div class="item-myThumb">
-                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
-                        alt="màu đỏ">
-                </div>
-                
-                <div class="item-myThumb">
-                    <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwda679f8f/images/PDP-XMD/color/evo-red.png"
-                        alt="màu đỏ">
-                </div>
-            </div>
-            <div class="box-control-nav">
-                <div class="btn-arrow button-prev"></div>
-                <div class="btn-arrow button-next"></div>
+                <div style="clear: left"></div>
             </div>
             <div style="clear: left"></div>
         </div>
-        </div>
-     
+
     </section>
 
     <section class="section section-design progressive-image">
@@ -270,7 +263,8 @@
                     <div class="design-topic__image aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
                         <div class="image-design image-design--dashboard"></div>
                     </div>
-                    <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-left" data-aos-duration="2000">
+                    <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-left"
+                        data-aos-duration="2000">
                         <div>
                             <h4 class="subhead">Màn hình LED đa sắc</h4>
                             <p>Bằng cách đồng bộ thiết kế bề mặt màn hình màu đen, khiến người dùng tập trung hơn vào
@@ -281,9 +275,10 @@
                 </div>
                 <div class="design-topic">
                     <div class="design-topic__image aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
-                        <div class="image-design image-design--seat" ></div>
+                        <div class="image-design image-design--seat"></div>
                     </div>
-                    <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-right" data-aos-duration="2000">
+                    <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-right"
+                        data-aos-duration="2000">
                         <div>
                             <h4 class="subhead">SOS Mode <br /> Tính năng cứu hộ hiện đại</h4>
                             <p>Bằng cách đồng bộ thiết kế bề mặt màn hình màu đen, khiến người dùng tập trung hơn vào
@@ -294,9 +289,10 @@
                 </div>
                 <div class="design-topic">
                     <div class="design-topic__image aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
-                        <div class="image-design image-design--floor" ></div>
+                        <div class="image-design image-design--floor"></div>
                     </div>
-                    <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-left" data-aos-duration="2000">
+                    <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-left"
+                        data-aos-duration="2000">
                         <div>
                             <h4 class="subhead">Bàn đạp trợ lực khi lên dốc</h4>
                             <p>Bằng cách đồng bộ thiết kế bề mặt màn hình màu đen, khiến người dùng tập trung hơn vào
@@ -307,9 +303,10 @@
                 </div>
                 <div class="design-topic">
                     <div class="design-topic__image aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
-                        <div class="image-design image-design--wheel" ></div>
+                        <div class="image-design image-design--wheel"></div>
                     </div>
-                    <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-right" data-aos-duration="2000">
+                    <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-right"
+                        data-aos-duration="2000">
                         <div>
                             <h4 class="subhead">Thẻ NFC <br /> Một chạm mở khoá</h4>
                             <p>Bằng cách đồng bộ thiết kế bề mặt màn hình màu đen, khiến người dùng tập trung hơn vào
@@ -330,18 +327,19 @@
             </div>
         </div>
     </section>
-    
+
     <section class="page-block-image page-block-dong-co-xanh" id="dong-co-xanh">
         <div class="breaking-wrap">
             <div class="row">
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                     <div class="dong-co-xanh_img ">
-                        <div class="wrap_image aos-init aos-animate"  data-aos="zoom-out-down" data-aos-duration="10000">
+                        <div class="wrap_image aos-init aos-animate" data-aos="zoom-out-down" data-aos-duration="10000">
                             <img src="{{ asset('home/images/dongcoxanh.png') }}" alt="dongcoxanh">
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
+                <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 aos-init aos-animate" data-aos="fade-up"
+                    data-aos-duration="2000">
                     <div class="dong-co-xanh_text">
                         <div class="text_head">
                             <h2> ĐỘNG CƠ ĐỘC QUYỀN
@@ -429,14 +427,14 @@
                 <h3 class="headline text-center">Thông số kỹ thuật</h3>
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" id="tabInfoProduct" data-toggle="tab" href="javascript:void(0)" role="tab"
-                            aria-controls="home" aria-selected="true">
+                        <a class="nav-link active" id="tabInfoProduct" data-toggle="tab" href="javascript:void(0)"
+                            role="tab" aria-controls="home" aria-selected="true">
                             <h2 class="tab-title">THÔNG SỐ SẢN PHẨM</h2>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" id="tabBatteryPackages" data-toggle="tab" href="javascript:void(0)" role="tab"
-                            aria-controls="profile" aria-selected="false">
+                        <a class="nav-link" id="tabBatteryPackages" data-toggle="tab" href="javascript:void(0)"
+                            role="tab" aria-controls="profile" aria-selected="false">
                             <h2 class="tab-title">DỊCH VỤ PIN</h2>
                         </a>
                     </li>
@@ -503,7 +501,8 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="tab-pane fade tabBatteryPackages" id="tabBatteryPackages" role="tabpanel" aria-labelledby="tabBatteryPackages">
+                    <div class="tab-pane fade tabBatteryPackages" id="tabBatteryPackages" role="tabpanel"
+                        aria-labelledby="tabBatteryPackages">
                         <div class="breaking-battery-tab d-flex justify-content-between">
                             <div>
                                 <h3 class="pin-subtitle">Gói thuê PIN</h3>
