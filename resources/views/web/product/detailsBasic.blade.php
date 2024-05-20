@@ -73,7 +73,7 @@
                 </div>
             </div>
             <div class="top-main-control js-aos" data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
-                <div class="myThumbSlider" data-showitem="7">
+                <div class="myThumbSlider" data-showitem="12">
                     <!-- icon màu sắc -->
                     @if(!empty($icon_images))
                     @foreach($icon_images as $value)

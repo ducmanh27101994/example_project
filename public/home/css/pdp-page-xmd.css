@@ -759,14 +759,14 @@ img {
     }
 
     .top-main .top-main-control .slick-initialized .slick-slide {
-        display: block;
-        width: fit-content !important;
+        /* display: block; */
+        /* width: fit-content !important; */
     }
 
     .top-main .top-main-control .slick-track {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* gap: 20px; */
     }
 }
 
@@ -995,8 +995,8 @@ img {
 }
 
 .top-main .myThumbSlider .item-myThumb img {
-    width: 40px !important;
-    height: 40px;
+    /* width: 40px !important; */
+    /* height: 40px; */
     padding: 2px;
     border: 2px solid transparent;
     border-radius: 100%;
