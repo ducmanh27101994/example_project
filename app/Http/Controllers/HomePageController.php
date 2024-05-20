@@ -233,7 +233,7 @@ class HomePageController extends BaseController
         $images360 = DB::table('images_products')
             ->where('product_id', '=', $product->id)
             ->where('code', '=', 'images360')
-            ->orderBy('created_at', 'asc')
+            ->orderBy('id', 'asc')
             ->get();
 
         $gogo_images_banner2_multi = DB::table('images_products')
