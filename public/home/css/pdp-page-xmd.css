@@ -741,14 +741,6 @@ img {
     }
 }
 
-.top-main-control {
-    max-width: 600px;
-}
-
-.top-main-control .slick-current {
-    border: 2px solid #1464f4;
-}
-
 @media only screen and (max-width:1199px) {
     .top-main .top-main-btn .top-btn {
         margin-left: auto;
@@ -767,14 +759,14 @@ img {
     }
 
     .top-main .top-main-control .slick-initialized .slick-slide {
-        /* display: block; */
-        /* width: fit-content !important; */
+        display: block;
+        width: fit-content !important;
     }
 
     .top-main .top-main-control .slick-track {
-        /* display: flex; */
-        /* justify-content: center; */
-        /* gap: 20px; */
+        display: flex;
+        justify-content: center;
+        gap: 20px;
     }
 }
 
@@ -787,7 +779,7 @@ img {
 @media only screen and (min-width:1200px) {
     .top-main .top-main-control .box-control-nav {
         position: absolute;
-        right: -25%;
+        right: 0;
         top: 0;
         width: 128px;
         display: -ms-flexbox;
@@ -1003,8 +995,8 @@ img {
 }
 
 .top-main .myThumbSlider .item-myThumb img {
-    /* width: 40px !important; */
-    /* height: 40px; */
+    width: 40px !important;
+    height: 40px;
     padding: 2px;
     border: 2px solid transparent;
     border-radius: 100%;
@@ -2901,11 +2893,8 @@ img {
 }
 
 .pdp-evo200 .top-main .top-main-control {
-    max-width: 500px;
+    max-width: 1440px;
     width: 100%;
-    margin: auto;
-    left: 0;
-    right: 0;
 }
 
 @media only screen and (min-width:1200px) and (max-width:1600px) {
