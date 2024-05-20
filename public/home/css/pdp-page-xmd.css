@@ -748,10 +748,6 @@ img {
     }
 }
 
-.top-main-control {
-    max-width: 600px;
-}
-
 @media only screen and (min-width:1200px) {
     .top-main .top-main-control {
         position: absolute;
@@ -783,7 +779,7 @@ img {
 @media only screen and (min-width:1200px) {
     .top-main .top-main-control .box-control-nav {
         position: absolute;
-        right: 0;
+        right: -25%;
         top: 0;
         width: 128px;
         display: -ms-flexbox;
@@ -2897,8 +2893,11 @@ img {
 }
 
 .pdp-evo200 .top-main .top-main-control {
-    max-width: 1440px;
+    max-width: 500px;
     width: 100%;
+    margin: auto;
+    left: 0;
+    right: 0;
 }
 
 @media only screen and (min-width:1200px) and (max-width:1600px) {
