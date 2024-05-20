@@ -741,6 +741,14 @@ img {
     }
 }
 
+.top-main-control {
+    max-width: 600px;
+}
+
+.top-main-control .slick-current {
+    border: 2px solid #1464f4;
+}
+
 @media only screen and (max-width:1199px) {
     .top-main .top-main-btn .top-btn {
         margin-left: auto;
