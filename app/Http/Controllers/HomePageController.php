@@ -331,7 +331,7 @@ class HomePageController extends BaseController
             ->where('status', '=', 'active')
             ->where('product_portfolio', '=', $id)
             ->orderBy('created_at', 'desc')
-            ->get();
+            ->paginate(6);
 
         $blog1 = DB::table('blogs')
             ->where('status', '=', 'active')
