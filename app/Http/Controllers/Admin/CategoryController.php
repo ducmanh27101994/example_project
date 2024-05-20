@@ -433,9 +433,13 @@ class CategoryController extends BaseController
                     $this->imagesRepositories->create($color_image);
                 }
             }
-            $images360 = [];
+
             if (!empty($request->images360)) {
-                foreach ($request->images360 as $value) {
+                $images360 = $request->images360;
+                usort($images360, function($a, $b) {
+                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+                });
+                foreach ($images360 as $value) {
                     $images = $this->uploadService->upload_param($value);
                     $color_image = [
                         'product_id' => $product->id,
@@ -857,13 +861,17 @@ class CategoryController extends BaseController
                     $this->imagesRepositories->create($color_image);
                 }
             }
-            $images360 = [];
+
             if (!empty($request->images360)) {
                 DB::table('images_products')
                     ->where('product_id', '=', $id)
                     ->where('code', '=', 'images360')
                     ->delete();
-                foreach ($request->images360 as $value) {
+                $images360 = $request->images360;
+                usort($images360, function($a, $b) {
+                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+                });
+                foreach ($images360 as $value) {
                     $images = $this->uploadService->upload_param($value);
                     $color_image = [
                         'product_id' => $product->id,
