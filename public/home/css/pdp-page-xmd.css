@@ -748,6 +748,10 @@ img {
     }
 }
 
+.top-main-control {
+    max-width: 600px;
+}
+
 @media only screen and (min-width:1200px) {
     .top-main .top-main-control {
         position: absolute;
