@@ -63,6 +63,21 @@ class HomePageController extends BaseController
             ->where('location', '=', 'homepage-counter')
             ->get();
 
+        $homepage_popular_left = DB::table('independent_content')
+            ->where('status', '=', 'active')
+            ->where('location', '=', 'homepage-popular-left')
+            ->get();
+
+        $homepage_popular_right = DB::table('independent_content')
+            ->where('status', '=', 'active')
+            ->where('location', '=', 'homepage-popular-right')
+            ->get();
+
+        $homepage_popular_bottom = DB::table('independent_content')
+            ->where('status', '=', 'active')
+            ->where('location', '=', 'homepage-popular-bottom')
+            ->get();
+
         $data = [];
         if (!empty($listCategory)) {
             foreach ($listCategory as $value) {
@@ -75,7 +90,7 @@ class HomePageController extends BaseController
             }
         }
 
-        return view('web.home.trangchu', compact('slide_banner', 'img_slider', 'gallery_items', 'home_page_co2', 'pbgn_partner','homepage_counter', 'listCategory', 'data', 'about_us_gt_cl'));
+        return view('web.home.trangchu', compact('slide_banner', 'img_slider', 'gallery_items', 'home_page_co2', 'pbgn_partner', 'homepage_counter', 'listCategory', 'data', 'about_us_gt_cl', 'homepage_popular_left', 'homepage_popular_right', 'homepage_popular_bottom'));
     }
 
     public function indexAboutUs()
