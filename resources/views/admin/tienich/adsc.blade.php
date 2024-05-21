@@ -14,17 +14,21 @@
                             Quản lý quảng cáo</i></h4>
                     <div class="ui-widget-content ui-corner-top ui-corner-bottom">
                         <div id="toolbox">
-                            <a class="button" href="{{route('admin.createBannerAds')}}">Thêm</a>
+                            
                             <div style="float: right; margin-right: 10px;" class="toolbox-content">
 
                                 <table class="toolbar">
-                                    <tbody>
-                                    <tr>
+                                        <tbody>
+                                        <tr>
 
 
-                                    </tr>
-                                    </tbody>
-                                </table>
+                                            <td align="center">
+                                            <a  href="{{route('admin.createBannerAds')}}"><span class="icon-ok-new"></span> Thêm</a>
+                                            </td>
+
+                                        </tr>
+                                        </tbody>
+                                    </table>
 
                             </div>
                         </div>

@@ -11,7 +11,7 @@
 
     </div>
     <div class="companyname">
-        Tên công ti
+        Osakar.vn
     </div>
     <!-- Top Menu Items -->
     <ul class="nav navbar-right top-nav">
@@ -132,74 +132,6 @@
                 <li><a href="{{route('admin.indexStore')}}" title="Danh sách hỏi đáp"><i class="fa fa-fw fa fa-caret-right"></i>Danh sách cửa hàng</a></li>
             </ul>
         </li>
-        <li><a data-toggle="collapse" data-target="#pncontent" href="javascript:void(0)" title="Bài viết"><i class="fa fa-fw fa-folder-o"></i>Trang nội dung<i class="fa fa-fw fa-caret-down"></i></a>
-            <ul id="pncontent" class="collapse ">
-                <li style="display:none"><a href="#" title="Danh mục trang nội dung"><i class="fa fa-fw fa fa-caret-right"></i>Danh mục
-                        trang nội dung</a></li>
-                <li><a href="#" title=">Danh sách trang nội dung"><i class="fa fa-fw fa fa-caret-right"></i>Danh
-                        sách trang nội dung</a></li>
-            </ul>
-        </li>
-        <li style="display:none"><a data-toggle="collapse" data-target="#pnservices" href="javascript:void(0)" title="Dịch vụ"><i class="fa fa-object-group"></i>Dịch vụ<i class="fa fa-fw fa-caret-down"></i></a>
-            <ul id="pnservices" class="collapse ">
-                <li><a href="#" title="Danh mục dịch vụ"><i class="fa fa-fw fa fa-caret-right"></i>Danh mục dịch
-                        vụ</a></li>
-                <li><a href="#" title="Danh sách dịch vụ"><i class="fa fa-fw fa fa-caret-right"></i>Danh sách dịch
-                        vụ</a></li>
-            </ul>
-        </li>
-        <li style="display:none"><a data-toggle="collapse" data-target="#pnvideo" href="javascript:void(0)" title="Thư viện video"><i class="fa fa-fw fa-video-camera"></i>Thư viện video<i class="fa fa-fw fa-caret-down"></i></a>
-            <ul id="pnvideo" class="collapse ">
-                <li><a href="#" title="Danh mục video"><i class="fa fa-fw fa fa-caret-right"></i>Danh mục video</a>
-                </li>
-                <li><a href="#" title="Danh sách video"><i class="fa fa-fw fa fa-caret-right"></i>Danh sách
-                        video</a></li>
-
-            </ul>
-        </li>
-        <li style="display:none"><a data-toggle="collapse" data-target="#pnalbum" href="javascript:void(0)" title="Thư viện hình"><i class="fa fa-fw fa-file-image-o"></i>Thư viện hình<i class="fa fa-fw fa-caret-down"></i></a>
-            <ul id="pnalbum" class="collapse ">
-
-                <li style="display:none"><a href="#" title="Danh mục ảnh"><i class="fa fa-fw fa fa-caret-right"></i>Danh mục ảnh</a></li>
-                <li style="display:none"><a href="#" title="Danh sách ảnh"><i class="fa fa-fw fa fa-caret-right"></i>Danh sách ảnh</a>
-                </li>
-            </ul>
-        </li>
-        <li style="display:none"><a data-toggle="collapse" data-target="#pnfile" href="javascript:void(0)" title="Thư viện tài liệu"><i class="fa fa-fw fa-file-archive-o"></i>Thư viện tài liệu<i class="fa fa-fw fa-caret-down"></i></a>
-            <ul id="pnfile" class="collapse ">
-
-                <li style="display:none"><a href="#" title="Danh mục tài liệu"><i class="fa fa-fw fa fa-caret-right"></i>Danh mục tài
-                        liệu</a></li>
-                <li style="display:none"><a href="#" title="Danh sách tài liệu"><i class="fa fa-fw fa fa-caret-right"></i>Danh sách tài
-                        liệu</a></li>
-            </ul>
-        </li>
-        <li style="display:none"><a data-toggle="collapse" data-target="#pnprojects" href="javascript:void(0)" title="Dự án"><i class="fa fa-fw fa-file-archive-o"></i>Dự án<i class="fa fa-fw fa-caret-down"></i></a>
-            <ul id="pnprojects" class="collapse ">
-
-                <li style="display:none"><a href="#" title="Danh mục dự án"><i class="fa fa-fw fa fa-caret-right"></i>Danh mục dự án</a>
-                </li>
-                <li><a href="#" title="Danh sách dự án"><i class="fa fa-fw fa fa-caret-right"></i>Danh sách dự
-                        án</a></li>
-            </ul>
-        </li>
-        <li style="display:none"><a data-toggle="collapse" data-target="#pnfaq" href="javascript:void(0)" title="Hỏi đáp"><i class="fa fa-fw fa-question-circle"></i>Hỏi đáp<i class="fa fa-fw fa-caret-down"></i></a>
-            <ul id="pnfaq" class="collapse ">
-
-                <li><a href="#" title="Danh mục hỏi đáp"><i class="fa fa-fw fa fa-caret-right"></i>Danh mục hỏi
-                        đáp</a></li>
-                <li><a href="#" title="Danh sách hỏi đáp"><i class="fa fa-fw fa fa-caret-right"></i>Danh sách hỏi
-                        đáp</a></li>
-            </ul>
-        </li>
-        <li style="display:none"><a data-toggle="collapse" data-target="#pncustomer_reviews" href="javascript:void(0)" title="Ý kiến khách hàng"><i class="fa fa-fw fa-comments-o"></i>Ý kiến khách hàng<i class="fa fa-fw fa-caret-down"></i></a>
-            <ul id="pncustomer_reviews" class="collapse  ">
-                <li style="display:none"><a href="#" title="Ý kiến khách hàng"><i class="fa fa-fw fa fa-caret-right"></i>Danh mục ý kiến
-                        khách hàng</a></li>
-                <li><a href="#" title="Hotline"><i class="fa fa-fw fa fa-caret-right"></i>Danh sách ý kiến khách
-                        hàng</a></li>
-            </ul>
-        </li>
         <li><a data-toggle="collapse" data-target="#pncontacts" href="javascript:void(0)" title="Liên hệ"><i class="fa fa-fw fa-support"></i>Liên hệ<i class="fa fa-fw fa-caret-down"></i></a>
             <ul id="pncontacts" class="collapse ">
                 <li><a href="{{route('admin.indexContact')}}" title="Danh sách liên hệ"><i class="fa fa-fw fa fa-caret-right"></i>Danh sách liên
@@ -207,14 +139,6 @@
                 <li><a href="{{route('admin.indexMap')}}" title="Thông tin liên hệ &amp; bản đồ"><i class="fa fa-fw fa fa-caret-right"></i>Bản đồ</a></li>
             </ul>
         </li>
-        <li style="display:none"><a data-toggle="collapse" data-target="#pncomment" href="javascript:void(0)" title="Liên hệ"><i class="fa fa-fw fa-support"></i>Bình luận<i class="fa fa-fw fa-caret-down"></i></a>
-            <ul id="pncomment" class="collapse ">
-                <li style="display:none"><a href="#" title="Danh sách bình luận"><i class="fa fa-fw fa fa-caret-right"></i>Danh sách bình
-                        luận</a></li>
-                <li style="display:none"><a href="#" title="Cấu hình"><i class="fa fa-fw fa fa-caret-right"></i>Cấu hình</a></li>
-            </ul>
-        </li>
-        <li style="display:none"><a href="#"><i class="fa  fa-user"></i>Thành viên</a></li>
         <li><a data-toggle="collapse" data-target="#pnintegrated" href="javascript:void(0)" title="Tích hợp"><i class="fa fa-tasks"></i>Tích hợp<i class="fa fa-fw fa-caret-down"></i></a>
             <ul id="pnintegrated" class="collapse ">
                 <li><a href="{{route('admin.indexSeo')}}" title="Tích hợp SEO"><i class="fa fa-fw fa fa-caret-right"></i>Tích hợp SEO</a></li>
@@ -222,16 +146,12 @@
                         Google Analytics</a></li>
                 <li><a href="{{route('admin.indexMastertools')}}" title="Tích hợp Google Master Tool"><i class="fa fa-fw fa fa-caret-right"></i>Tích
                         hợp Google Master Tool</a></li>
-                <li><a href="#" title="Chuyển hướng 301"><i class="fa fa-fw fa fa-caret-right"></i>Chuyển hướng
-                        301</a></li>
                 <li><a href="{{route('admin.indexFanpage')}}" title="Tích hợp Facebook"><i class="fa fa-fw fa fa-caret-right"></i>Tích hợp
                         Facebook Fanpage</a></li>
                 <li><a href="{{route('admin.indexLiveChat')}}" title="Tích hợp Livechat"><i class="fa fa-fw fa fa-caret-right"></i>Tích hợp
                         Livechat</a></li>
                 <li><a href="{{route('admin.indexSocial')}}" title="Tích hợp mạng xã hội"><i class="fa fa-fw fa fa-caret-right"></i>Tích hợp mạng
                         xã hội</a></li>
-                <li><a href="#" title="Nội dung trang lỗi"><i class="fa fa-fw fa fa-caret-right"></i>Nội dung trang
-                        lỗi</a></li>
                 <li><a href="{{route('admin.indexAfterBody')}}" title="Tích hợp mạng xã hội"><i class="fa fa-fw fa fa-caret-right"></i>Tích hợp script trước body</a></li>
                 <li><a href="{{route('admin.indexBeforeBody')}}" title="Nội dung trang lỗi"><i class="fa fa-fw fa fa-caret-right"></i>Tích hợp script sau body</a></li>
             </ul>
@@ -250,14 +170,8 @@
             <ul id="pnaccounts" class="collapse ">
                 <li><a href="{{route('admin.account')}}" title="Danh sách tài khoản"><i class="fa fa-fw fa fa-caret-right"></i>Danh sách tài
                         khoản</a></li>
-                <li><a href="#" title="Định nghĩa quyền"><i class="fa fa-fw fa fa-caret-right"></i>Định nghĩa
-                        quyền</a></li>
-                <li><a href="#" title="Lịch sử truy cập"><i class="fa fa-fw fa fa-caret-right"></i>Lịch sử truy
-                        cập</a></li>
             </ul>
         </li>
-        <li><a href="#"><i class="fa fa-bar-chart"></i>Báo
-                cáo</a></li>
 
         </ul>
     </div>
