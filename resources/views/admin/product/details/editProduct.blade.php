@@ -187,6 +187,7 @@
                                             <div class="form-group">
                                                 <label class="next-label">Chi tiết</label>
 
+                                               
                                                 <textarea name="detail" id="detail" cols="50"
                                                     rows="30">{!! html_entity_decode($product->detail) !!} </textarea>
                                             </div>
@@ -403,11 +404,12 @@
 
                                 <div class="gallarey">
                                     <label for="album">Ảnh chi tiết xe (up nhiều ảnh một lúc, 494 × 636 px)</label>
-                                    <input name="vehicle_detail_photos_title" type="text" value="{{$product->vehicle_detail_photos_title}}"
+                                    <input name="vehicle_detail_photos_title" type="text"
+                                        value="{{$product->vehicle_detail_photos_title}}"
                                         id="vehicle_detail_photos_title" class="inputbox" placeholder="Tiêu đề mô tả 2"
                                         style="width:100%;">
-                                    <textarea name="vehicle_detail_photos_desc" rows="5" cols="70" id="vehicle_detail_photos_desc"
-                                        class="inputbox"
+                                    <textarea name="vehicle_detail_photos_desc" rows="5" cols="70"
+                                        id="vehicle_detail_photos_desc" class="inputbox"
                                         style="width: 100%; height:80px;">{{$product->vehicle_detail_photos_desc}}</textarea>
                                     <div id="uploadfiles" maxcount="16" input="ctl33_ctl00_FileServer2_ctl00"
                                         class="uploadfdfile upload-create-form">
@@ -443,9 +445,9 @@
 
                                 <div class="gallarey">
                                     <label for="album">Ảnh thực tế (up nhiều ảnh một lúc, 346 × 597 px)</label>
-                                    <input name="actual_photo_title" type="text" value="{{$product->actual_photo_title}}"
-                                        id="actual_photo_title" class="inputbox" placeholder="Tiêu đề mô tả 2"
-                                        style="width:100%;">
+                                    <input name="actual_photo_title" type="text"
+                                        value="{{$product->actual_photo_title}}" id="actual_photo_title"
+                                        class="inputbox" placeholder="Tiêu đề mô tả 2" style="width:100%;">
                                     <textarea name="actual_photo_desc" rows="5" cols="70" id="actual_photo_desc"
                                         class="inputbox"
                                         style="width: 100%; height:80px;">{{$product->actual_photo_desc}}</textarea>
@@ -1791,203 +1793,125 @@
     });
     </script>
 
-    <script>
-    CKEDITOR.replace('detail', {
-        filebrowserBrowseUrl: '{{ asset('
-        ckfinder / ckfinder.html ') }}',
-        filebrowserImageBrowseUrl: '{{ asset('
-        ckfinder / ckfinder.html ? type = Images ') }}',
-        filebrowserFlashBrowseUrl : '{{ asset('
-        ckfinder / ckfinder.html ? type = Flash ') }}',
-        filebrowserUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Files ') }}',
-        filebrowserImageUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Images ') }}',
-        filebrowserFlashUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Flash ') }}',
-        allowedContent : true
-    });
-    CKEDITOR.replace('overview', {
-        filebrowserBrowseUrl: '{{ asset('
-        ckfinder / ckfinder.html ') }}',
-        filebrowserImageBrowseUrl: '{{ asset('
-        ckfinder / ckfinder.html ? type = Images ') }}',
-        filebrowserFlashBrowseUrl : '{{ asset('
-        ckfinder / ckfinder.html ? type = Flash ') }}',
-        filebrowserUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Files ') }}',
-        filebrowserImageUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Images ') }}',
-        filebrowserFlashUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Flash ') }}',
-        allowedContent : true
-    });
-    CKEDITOR.replace('engine', {
-        filebrowserBrowseUrl: '{{ asset('
-        ckfinder / ckfinder.html ') }}',
-        filebrowserImageBrowseUrl: '{{ asset('
-        ckfinder / ckfinder.html ? type = Images ') }}',
-        filebrowserFlashBrowseUrl : '{{ asset('
-        ckfinder / ckfinder.html ? type = Flash ') }}',
-        filebrowserUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Files ') }}',
-        filebrowserImageUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Images ') }}',
-        filebrowserFlashUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Flash ') }}',
-        allowedContent : true
-    });
-    CKEDITOR.replace('chassis', {
-        filebrowserBrowseUrl: '{{ asset('
-        ckfinder / ckfinder.html ') }}',
-        filebrowserImageBrowseUrl: '{{ asset('
-        ckfinder / ckfinder.html ? type = Images ') }}',
-        filebrowserFlashBrowseUrl : '{{ asset('
-        ckfinder / ckfinder.html ? type = Flash ') }}',
-        filebrowserUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Files ') }}',
-        filebrowserImageUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Images ') }}',
-        filebrowserFlashUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Flash ') }}',
-        allowedContent : true
-    });
-    CKEDITOR.replace('gogo_desc_3', {
-        filebrowserBrowseUrl: '{{ asset('
-        ckfinder / ckfinder.html ') }}',
-        filebrowserImageBrowseUrl: '{{ asset('
-        ckfinder / ckfinder.html ? type = Images ') }}',
-        filebrowserFlashBrowseUrl : '{{ asset('
-        ckfinder / ckfinder.html ? type = Flash ') }}',
-        filebrowserUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Files ') }}',
-        filebrowserImageUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Images ') }}',
-        filebrowserFlashUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Flash ') }}',
-        allowedContent : true
-    });
-    CKEDITOR.replace('gogo_desc_banner9', {
-        filebrowserBrowseUrl: '{{ asset('
-        ckfinder / ckfinder.html ') }}',
-        filebrowserImageBrowseUrl: '{{ asset('
-        ckfinder / ckfinder.html ? type = Images ') }}',
-        filebrowserFlashBrowseUrl : '{{ asset('
-        ckfinder / ckfinder.html ? type = Flash ') }}',
-        filebrowserUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Files ') }}',
-        filebrowserImageUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Images ') }}',
-        filebrowserFlashUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Flash ') }}',
-        allowedContent : true
-    });
-    CKEDITOR.replace('gogo_desc_banner10', {
-        filebrowserBrowseUrl: '{{ asset('
-        ckfinder / ckfinder.html ') }}',
-        filebrowserImageBrowseUrl: '{{ asset('
-        ckfinder / ckfinder.html ? type = Images ') }}',
-        filebrowserFlashBrowseUrl : '{{ asset('
-        ckfinder / ckfinder.html ? type = Flash ') }}',
-        filebrowserUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Files ') }}',
-        filebrowserImageUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Images ') }}',
-        filebrowserFlashUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Flash ') }}',
-        allowedContent : true
-    });
-    CKEDITOR.replace('gogo_desc_banner11', {
-        filebrowserBrowseUrl: '{{ asset('
-        ckfinder / ckfinder.html ') }}',
-        filebrowserImageBrowseUrl: '{{ asset('
-        ckfinder / ckfinder.html ? type = Images ') }}',
-        filebrowserFlashBrowseUrl : '{{ asset('
-        ckfinder / ckfinder.html ? type = Flash ') }}',
-        filebrowserUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Files ') }}',
-        filebrowserImageUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Images ') }}',
-        filebrowserFlashUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Flash ') }}',
-        allowedContent : true
-    });
-    CKEDITOR.replace('viva_desc_banner4', {
-        filebrowserBrowseUrl: '{{ asset('
-        ckfinder / ckfinder.html ') }}',
-        filebrowserImageBrowseUrl: '{{ asset('
-        ckfinder / ckfinder.html ? type = Images ') }}',
-        filebrowserFlashBrowseUrl : '{{ asset('
-        ckfinder / ckfinder.html ? type = Flash ') }}',
-        filebrowserUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Files ') }}',
-        filebrowserImageUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Images ') }}',
-        filebrowserFlashUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Flash ') }}',
-        allowedContent : true
-    });
-    CKEDITOR.replace('viva_desc_banner5', {
-        filebrowserBrowseUrl: '{{ asset('
-        ckfinder / ckfinder.html ') }}',
-        filebrowserImageBrowseUrl: '{{ asset('
-        ckfinder / ckfinder.html ? type = Images ') }}',
-        filebrowserFlashBrowseUrl : '{{ asset('
-        ckfinder / ckfinder.html ? type = Flash ') }}',
-        filebrowserUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Files ') }}',
-        filebrowserImageUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Images ') }}',
-        filebrowserFlashUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Flash ') }}',
-        allowedContent : true
-    });
-    CKEDITOR.replace('viva_desc_banner6', {
-        filebrowserBrowseUrl: '{{ asset('
-        ckfinder / ckfinder.html ') }}',
-        filebrowserImageBrowseUrl: '{{ asset('
-        ckfinder / ckfinder.html ? type = Images ') }}',
-        filebrowserFlashBrowseUrl : '{{ asset('
-        ckfinder / ckfinder.html ? type = Flash ') }}',
-        filebrowserUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Files ') }}',
-        filebrowserImageUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Images ') }}',
-        filebrowserFlashUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Flash ') }}',
-        allowedContent : true
-    });
-    CKEDITOR.replace('nispa_desc_4', {
-        filebrowserBrowseUrl: '{{ asset('
-        ckfinder / ckfinder.html ') }}',
-        filebrowserImageBrowseUrl: '{{ asset('
-        ckfinder / ckfinder.html ? type = Images ') }}',
-        filebrowserFlashBrowseUrl : '{{ asset('
-        ckfinder / ckfinder.html ? type = Flash ') }}',
-        filebrowserUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Files ') }}',
-        filebrowserImageUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Images ') }}',
-        filebrowserFlashUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Flash ') }}',
-        allowedContent : true
-    });
-    CKEDITOR.replace('nispa_desc_3', {
-        filebrowserBrowseUrl: '{{ asset('
-        ckfinder / ckfinder.html ') }}',
-        filebrowserImageBrowseUrl: '{{ asset('
-        ckfinder / ckfinder.html ? type = Images ') }}',
-        filebrowserFlashBrowseUrl : '{{ asset('
-        ckfinder / ckfinder.html ? type = Flash ') }}',
-        filebrowserUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Files ') }}',
-        filebrowserImageUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Images ') }}',
-        filebrowserFlashUploadUrl : '{{ asset('
-        ckfinder / core / connector / php / connector.php ? command = QuickUpload & type = Flash ') }}',
-        allowedContent : true
-    });
-    </script>
+<script>
+            CKEDITOR.replace('detail', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true
+            });
+            CKEDITOR.replace('overview', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true
+            });
+            CKEDITOR.replace('engine', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true
+            });
+            CKEDITOR.replace('chassis', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true
+            });
+            CKEDITOR.replace('gogo_desc_3', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true
+            });
+            CKEDITOR.replace('gogo_desc_banner9', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true
+            });
+            CKEDITOR.replace('gogo_desc_banner10', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true
+            });
+            CKEDITOR.replace('gogo_desc_banner11', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true
+            });
+            CKEDITOR.replace('viva_desc_banner4', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true
+            });
+            CKEDITOR.replace('viva_desc_banner5', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true
+            });
+            CKEDITOR.replace('viva_desc_banner6', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true
+            });
+            CKEDITOR.replace('nispa_desc_4', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true
+            });
+            CKEDITOR.replace('nispa_desc_3', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true
+            });
+        </script>
 
 
     <script>
