@@ -1474,8 +1474,13 @@ img {
 .battery-technology__content {
     width: 36%;
     position: absolute;
-    bottom: 2.77778%;
-    z-index: 5
+    top: auto;
+    bottom: auto;
+    z-index: 5;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 @media only screen and (min-width:1441px) {
