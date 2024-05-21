@@ -82,6 +82,11 @@ class HomePageController extends BaseController
             ->where('location', '=', 'about-us-tn-sm')
             ->get();
 
+        $about_us_gt_cl = DB::table('independent_content')
+            ->where('status', '=', 'active')
+            ->where('location', '=', 'about-us-gt-cl')
+            ->get();
+
         $about_us_image = DB::table('independent_content')
             ->where('status', '=', 'active')
             ->where('location', '=', 'about-us-image')
@@ -97,7 +102,7 @@ class HomePageController extends BaseController
             ->where('location', '=', 'box-banner-sohoa')
             ->first();
 
-        return view('web.aboutus.abouts', compact('pbgn_partner', 'about_us_mission', 'about_us_tm_sm', 'about_us_image', 'history_content_box', 'box_banner_sohoa'));
+        return view('web.aboutus.abouts', compact('pbgn_partner', 'about_us_mission', 'about_us_tm_sm', 'about_us_gt_cl', 'about_us_image', 'history_content_box', 'box_banner_sohoa'));
     }
 
     public function listCategory(Request $request)
