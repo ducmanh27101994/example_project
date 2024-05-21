@@ -89,7 +89,7 @@
 
                             </div>
                             <div class="text-center">
-                                <a class="cta-link" href="/" target="_blank">Về chúng tôi <img
+                                <a class="cta-link" href="/" target="_blank">HỢP TÁC VỚI CHÚNG TÔI <img
                                         src="{{ asset('home/images/arrow-circle-right.png') }}" /></a>
                             </div>
                         </div>
