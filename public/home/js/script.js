@@ -131,16 +131,6 @@ $(document).ready(function () {
             }
         }
     });
-    $('.section-hero-slider').owlCarousel({
-        animateOut: 'fadeOut',
-        animateIn: 'fadeOut',
-        items: 1,
-        dots: false,
-        loop: true,
-        autoplay: true,
-        autoplaySpeed: 650,
-        smartSpeed: 650,
-    });
 
     $('.story-items-track').owlCarousel({
         items: 1,

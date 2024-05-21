@@ -763,7 +763,7 @@ img {
         z-index: 9;
         width: 30%;
         right: 9.63542%;
-        padding-top: 0;
+        padding-top: 80px;
     }
 
     .top-main .top-main-control .slick-initialized .slick-slide {
@@ -2452,7 +2452,7 @@ img {
     }
 
     .pdp-page .top-main .top-main-control {
-    top: 27vw;
+    top: 32vw;
     }
 
     .pdp-page .banner-connect .connect-right {
@@ -2901,7 +2901,7 @@ img {
 }
 
 .pdp-evo200 .top-main .top-main-control {
-    max-width: 284px;
+    max-width: 400px;
 }
 
 @media only screen and (min-width:1200px) and (max-width:1600px) {
@@ -3327,7 +3327,7 @@ html {
 
 @media only screen and (min-width:1200px) and (max-width:1600px) and (max-height:1000px) {
     .pdp-page.pdp-evo200 .top-main .top-main-ptext {
-        top: 15vw;
+        top: 26vw;
     }
 
     .pdp-page.pdp-evo200 .top-main .top-main-info,
@@ -3336,11 +3336,11 @@ html {
     }
 
     .pdp-page.pdp-evo200 .top-main .top-main-control {
-        bottom: 0;
+        top: 38vw;
     }
 
     .pdp-page.pdp-evo200 .top-main .top-main-control .box-control-nav {
-        top: 20%
+        top: 7%
     }
 }
 
