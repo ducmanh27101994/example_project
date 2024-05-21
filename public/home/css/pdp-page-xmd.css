@@ -787,7 +787,7 @@ img {
 @media only screen and (min-width:1200px) {
     .top-main .top-main-control .box-control-nav {
         position: absolute;
-        right: -25%;
+        right: 0;
         top: 0;
         width: 128px;
         display: -ms-flexbox;
@@ -2452,7 +2452,7 @@ img {
     }
 
     .pdp-page .top-main .top-main-control {
-        bottom: 0;
+    top: 27vw;
     }
 
     .pdp-page .banner-connect .connect-right {
@@ -2901,11 +2901,7 @@ img {
 }
 
 .pdp-evo200 .top-main .top-main-control {
-    max-width: 600px;
-    width: 100%;
-    margin: auto;
-    left: 0;
-    right: 0;
+    max-width: 284px;
 }
 
 @media only screen and (min-width:1200px) and (max-width:1600px) {
