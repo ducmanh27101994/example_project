@@ -72,6 +72,11 @@ class HomePageController extends BaseController
             ->where('code_ads', '=', 'pbgn-partner')
             ->get();
 
+        $about_us_video = DB::table('independent_content')
+            ->where('status', '=', 'active')
+            ->where('location', '=', 'about-us-video')
+            ->get();
+
         $about_us_mission = DB::table('independent_content')
             ->where('status', '=', 'active')
             ->where('location', '=', 'about-us-mission')

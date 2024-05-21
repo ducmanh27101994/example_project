@@ -8,10 +8,15 @@
             <div class="row">
                 <div class="col-xs-12 col-md-12">
                     <div class="video_intro">
-                        <iframe width="100%" height="570" src="https://www.youtube.com/embed/yJG90zU3_ug"
-                            title="Livestream XE ĐIỆN OSAKAR NISPA VERA MỚI NHẤT ĐANG CÓ TẠI XE ĐẠP 107" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                        @if(!empty($about_us_video))
+                            @foreach($about_us_video as $value)
+                                <iframe width="100%" height="570" src="https://www.youtube.com/embed/{!! $value->link !!}"
+                                    title="{!! $value->title !!}" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                            @endforeach
+                        @endif
+
                     </div>
                 </div>
             </div>
@@ -74,8 +79,8 @@
                                 @if(!empty($about_us_gt_cl))
                                     @foreach($about_us_gt_cl as $value)
                                         <div class="about-topic">
-                                            <img class="typography-about-topic-img"
-                                                src="{!! $value->avatar !!}" alt="{!! $value->title !!}" />
+                                            <img class="typography-about-topic-img" src="{!! $value->avatar !!}"
+                                                alt="{!! $value->title !!}" />
                                             <h4 class="typography-about-topic-headline">{!! $value->title !!}</h4>
                                             <div class="typography-about-topic-intro"> {!! $value->detail !!}</div>
                                         </div>
