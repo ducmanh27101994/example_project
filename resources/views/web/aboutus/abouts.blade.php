@@ -38,8 +38,8 @@
                             <div class="mission-content">
                                 <div class="mission-head">
 
-                                    @if(!empty($about_us_mission))
-                                        @foreach($about_us_mission as $value)
+                                    @if(!empty($about_us_tm_sm))
+                                        @foreach($about_us_tm_sm as $value)
                                             <h2>{!! $value->title !!}</h2>
                                             <p>{!! $value->detail !!}</p>
                                         @endforeach
