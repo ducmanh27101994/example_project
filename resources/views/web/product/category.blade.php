@@ -149,8 +149,8 @@
                 @foreach($products as $value)
                 <div class="family-item family-item--supersport ">
                     <div class="family-item-copy">
-                        <h4 class="typography-eyebrow">Gogoro SuperSport</h4>
-                        <h3 class="typography-tagline">Ultra smart control.</h3>
+                        <h4 class="typography-eyebrow">Osakar</h4>
+                        <h3 class="typography-tagline">{{$value->product_name}}</h3>
                         <a class="cta-link" href="{{route('details.basic', $value->path)}}">Xem chi tiết</a>
                     </div>
                     <figure class="image-family image-family--supersport"
