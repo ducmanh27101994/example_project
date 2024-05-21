@@ -29,10 +29,13 @@ class AppServiceProvider extends ServiceProvider
         $table_config_images = DB::table('table_config_images')->first();
         $configOptionGlobal = DB::table('config_option')->where('status','=','active')->pluck('slug')->toArray();
 
-        view()->composer('*', function ($view) use ($table_menu, $table_config_images,$configOptionGlobal) {
+        $modal_image = DB::table('banner_ads')->where('status', '=', 'active')->where('code_ads', '=', 'modal-image')->get();
+
+        view()->composer('*', function ($view) use ($table_menu, $table_config_images,$configOptionGlobal, $modal_image) {
             $view->with('table_menu', $table_menu)
                 ->with('table_config_images', $table_config_images)
-                ->with('configOptionGlobal', $configOptionGlobal);
+                ->with('configOptionGlobal', $configOptionGlobal)
+                ->with('modal_image', $modal_image);
         });
     }
 }
