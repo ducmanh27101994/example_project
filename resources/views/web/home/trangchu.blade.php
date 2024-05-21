@@ -161,26 +161,36 @@
 
 
     <section class="section section-pbgn section--limit-width">
-        <h2 class="typography-section-headline typography-section-headline--enhanced">Trong 20 năm phát triển, <span
-                style="color: #ED2025;">OSAKAR</span> đã nhanh chóng đạt
-            <br /> được những con số ấn tượng
-        </h2>
-        <div class="pbgn-badges">
-            <div class="pbgn-badge">
-                <div class="pbgn-badge-value counter">63</div>
-                <div class="pbgn-badge-label">Tỉnh thành</div>
-            </div>
-            <div class="pbgn-badge">
-                <div class="pbgn-badge-value"><span class="counter">100</span><span>+</span></div>
-                <div class="pbgn-badge-label">Đại lý</div>
-            </div>
-            <div class="pbgn-badge">
-                <div class="pbgn-badge-value"><span class="counter">20</span><sup>+</sup>
-                </div>
-                <div class="pbgn-badge-label">Mẫu xe</div>
-            </div>
-        </div>
-        <figure class="image-avengers"></figure>
+        @if(!empty($homepage_counter))
+            @foreach($homepage_counter as $value)
+                <h2 class="typography-section-headline typography-section-headline--enhanced">Trong 20 năm phát triển, <span
+                        style="color: #ED2025;">OSAKAR</span> đã nhanh chóng đạt
+                    <br /> được những con số ấn tượng
+                </h2>
+
+                {!! $value->detail !!}
+
+                <!-- <div class="pbgn-badges">
+                    <div class="pbgn-badge">
+                        <div class="pbgn-badge-value counter">63</div>
+                        <div class="pbgn-badge-label">Tỉnh thành</div>
+                    </div>
+                    <div class="pbgn-badge">
+                        <div class="pbgn-badge-value"><span class="counter">100</span><span>+</span></div>
+                        <div class="pbgn-badge-label">Đại lý</div>
+                    </div>
+                    <div class="pbgn-badge">
+                        <div class="pbgn-badge-value"><span class="counter">20</span><sup>+</sup>
+                        </div>
+                        <div class="pbgn-badge-label">Mẫu xe</div>
+                    </div>
+                </div> -->
+
+                <figure class="image-avengers" style="background: center / contain no-repeat url({!! $value->avatar !!});"></figure>
+
+            @endforeach
+        @endif
+        
         <div class="pbgn-partners-section">
             <h3 class="typography-section-headline typography-section-headline--reduced">Đối tác của <span
                     class="d-inline-block">OSAKAR</span></h3>
