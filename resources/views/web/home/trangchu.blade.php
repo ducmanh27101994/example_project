@@ -247,8 +247,8 @@
         <input type="radio" name="impact-toggle" id="impact-toggle-swap" class="impact-toggle hidden" checked="">
 
         <div class="impact-slides">
-            @if(!empty($about_us_gt_cl))
-                @foreach($about_us_gt_cl as $value)
+            @if(!empty($home_page_co2))
+                @foreach($home_page_co2 as $value)
                     <div class="impact-slide impact-slide--co2">
                         <div class="impact-copy">
                             <h4 class="typography-impact-eyebrow">{!! $value->title !!}</h4>
