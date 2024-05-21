@@ -39,6 +39,11 @@ class HomePageController extends BaseController
             ->where('code_ads', '=', 'gallery-items')
             ->get();
 
+        $home_page_co2 = DB::table('independent_content')
+            ->where('status', '=', 'active')
+            ->where('location', '=', 'home_page_co2')
+            ->get();
+
         $pbgn_partner = DB::table('banner_ads')
             ->where('status', '=', 'active')
             ->where('code_ads', '=', 'pbgn-partner')
@@ -60,7 +65,7 @@ class HomePageController extends BaseController
             }
         }
 
-        return view('web.home.trangchu', compact('slide_banner', 'img_slider', 'gallery_items', 'pbgn_partner', 'listCategory', 'data'));
+        return view('web.home.trangchu', compact('slide_banner', 'img_slider', 'gallery_items', 'home_page_co2', 'pbgn_partner', 'listCategory', 'data'));
     }
 
     public function indexAboutUs()
