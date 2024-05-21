@@ -271,6 +271,10 @@ class CategoryController extends BaseController
             'path' => !empty($request->product_name) ? $this->slugify($request->product_name) : '',
             'keyword_tags' => !empty($request->keyword_tags) ? $request->keyword_tags : '',
             'description_card' => !empty($request->description_card) ? $request->description_card : '',
+            'vehicle_detail_photos_title' => !empty($request->vehicle_detail_photos_title) ? $request->vehicle_detail_photos_title : '',
+            'vehicle_detail_photos_desc' => !empty($request->vehicle_detail_photos_desc) ? $request->vehicle_detail_photos_desc : '',
+            'actual_photo_title' => !empty($request->actual_photo_title) ? $request->actual_photo_title : '',
+            'actual_photo_desc' => !empty($request->actual_photo_desc) ? $request->actual_photo_desc : '',
             'status' => $status,
             'new_product' => $new_product,
             'selling_products' => $selling_products,
@@ -681,6 +685,10 @@ class CategoryController extends BaseController
             'new_product' => $new_product,
             'selling_products' => $selling_products,
             'promotional_products' => $promotional_products,
+            'vehicle_detail_photos_title' => !empty($request->vehicle_detail_photos_title) ? $request->vehicle_detail_photos_title : '',
+            'vehicle_detail_photos_desc' => !empty($request->vehicle_detail_photos_desc) ? $request->vehicle_detail_photos_desc : '',
+            'actual_photo_title' => !empty($request->actual_photo_title) ? $request->actual_photo_title : '',
+            'actual_photo_desc' => !empty($request->actual_photo_desc) ? $request->actual_photo_desc : '',
 
             //Hedi
             'heidi_images_banner1' => !empty($request->heidi_images_banner1) ? $this->uploadService->upload_param($request->heidi_images_banner1) : $this->productRepositories->find($id)->heidi_images_banner1,

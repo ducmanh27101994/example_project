@@ -167,11 +167,10 @@
             <div class="breaking-wrap">
                 <div class="parts-bike__head_text">
                     <h2>
-                        Không chỉ là phong cách thời thượng
+                        {{$product->vehicle_detail_photos_title}}
                     </h2>
                     <p>
-                        Nâng chất lượng - Trải nghiệm lái xe êm ái. Bứt phá công nghệ hiện đại, được tính hợp nhiều
-                        tính năng thông minh.
+                        {{$product->vehicle_detail_photos_desc}}
                     </p>
                 </div>
             </div>
@@ -197,11 +196,10 @@
         <section class="page-block parts-bike section" id="pdp-parts-bike">
             <div class="parts-bike__head_text text-center block_center">
                 <h2>
-                    Dẫn đầu phong cách thời thượng
+                    {{$product->actual_photo_title}}
                 </h2>
                 <p>
-                    Nâng chất lượng - Trải nghiệm lái xe êm ái. Bứt phá công nghệ hiện đại, được tính hợp nhiều tính
-                    năng thông minh.
+                    {{$product->actual_photo_desc}}
                 </p>
             </div>
             <div class="parts-bike__container padding-container">
@@ -261,7 +259,7 @@
                             pin.</h6>
                     </div>
                     <div class="breaking-top__img breaking-slick">
-                        <div class="slick-slide">
+                        <div class="section-hero-slider owl-carousel">
                             <!-- Ảnh đại diện -->
                             @if(!empty($color_image))
                                 @foreach($color_image as $value)

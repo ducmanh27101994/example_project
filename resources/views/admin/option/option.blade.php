@@ -38,7 +38,6 @@
                                                         </td>
                                                         <td>
 
-
                                                             <ul>
 
                                                                 @if(!empty($configOption))
