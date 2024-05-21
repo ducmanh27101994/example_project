@@ -163,9 +163,12 @@
     <section class="section section-pbgn section--limit-width">
         @if(!empty($homepage_counter))
             @foreach($homepage_counter as $value)
-                <h2 class="typography-section-headline typography-section-headline--enhanced">Trong 20 năm phát triển, <span
+                <!-- <h2 class="typography-section-headline typography-section-headline--enhanced">Trong 20 năm phát triển, <span
                         style="color: #ED2025;">OSAKAR</span> đã nhanh chóng đạt
                     <br /> được những con số ấn tượng
+                </h2> -->
+
+                <h2 class="typography-section-headline typography-section-headline--enhanced">{!! $value->title !!}
                 </h2>
 
                 {!! $value->detail !!}
