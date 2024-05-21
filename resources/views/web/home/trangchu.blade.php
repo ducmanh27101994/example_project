@@ -150,8 +150,8 @@ include_once (app_path() . '/helpers.php');
                     @endforeach
                     @endif
 
-                    @if(!empty($homepage_popular_right))
-                    @foreach($homepage_popular_right as $value)
+                    @if(!empty($homepage_popular_bottom))
+                    @foreach($homepage_popular_bottom as $value)
                     <div class="grid-item grid-item--tile grid-item--experience-dimension span-12"
                         data-component-list="GridItem" style="background-image: url({!! $value->avatar !!}">
 

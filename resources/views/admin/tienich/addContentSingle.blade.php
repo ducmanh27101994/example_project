@@ -36,7 +36,7 @@
                                             </td>
                                             <td align="center">
                                                 <a id="lnkclose" class="toolbar"
-                                                   href="{{route('admin.createStaticPage')}}">
+                                                   href="{{route('admin.indexStaticPage')}}">
                                                     <span class="icon-ok-close"></span>
                                                     Quay lại
                                                 </a>
