@@ -230,9 +230,9 @@
                 <div class="battery-technology__item js-aos" data-aos="fade-left" data-aos-delay="0"
                     data-aos-duration="300">
                     <!-- Ảnh Đại diện -->
-                    @if(!empty($product->representative_image))
-                        <img data-src="{{$product->representative_image}}" title="Evo200"
-                            alt="Xe máy điện VinFast Evo200 ứng dụng công nghệ pin LFP tiên tiến" width="100%"
+                    @if(!empty($product->block_detail_image))
+                        <img data-src="{{$product->block_detail_image}}" title="Evo200"
+                            alt="{{$product->product_name}}" width="100%"
                             class="img-lazy" />
                     @endif
                 </div>

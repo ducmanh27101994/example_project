@@ -240,6 +240,10 @@ class CategoryController extends BaseController
             $representative_image = $this->uploadService->upload_param($request->representative_image);
         }
 
+        if ($request->block_detail_image) {
+            $block_detail_image = $this->uploadService->upload_param($request->block_detail_image);
+        }
+
         $data = [
             'product_name' => !empty($request->product_name) ? $request->product_name : '',
             'distance_traveled' => !empty($request->distance_traveled) ? $request->distance_traveled : '',
@@ -275,6 +279,7 @@ class CategoryController extends BaseController
             'vehicle_detail_photos_desc' => !empty($request->vehicle_detail_photos_desc) ? $request->vehicle_detail_photos_desc : '',
             'actual_photo_title' => !empty($request->actual_photo_title) ? $request->actual_photo_title : '',
             'actual_photo_desc' => !empty($request->actual_photo_desc) ? $request->actual_photo_desc : '',
+            'block_detail_image' => !empty($block_detail_image) ? $block_detail_image : '',
             'status' => $status,
             'new_product' => $new_product,
             'selling_products' => $selling_products,
@@ -651,6 +656,12 @@ class CategoryController extends BaseController
             $representative_image = $this->productRepositories->find($id)->representative_image;
         }
 
+        if ($request->block_detail_image) {
+            $block_detail_image = $this->uploadService->upload_param($request->block_detail_image);
+        } else {
+            $block_detail_image = $this->productRepositories->find($id)->block_detail_image;
+        }
+
         $data = [
             'product_name' => !empty($request->product_name) ? $request->product_name : '',
             'distance_traveled' => !empty($request->distance_traveled) ? $request->distance_traveled : '',
@@ -689,6 +700,7 @@ class CategoryController extends BaseController
             'vehicle_detail_photos_desc' => !empty($request->vehicle_detail_photos_desc) ? $request->vehicle_detail_photos_desc : '',
             'actual_photo_title' => !empty($request->actual_photo_title) ? $request->actual_photo_title : '',
             'actual_photo_desc' => !empty($request->actual_photo_desc) ? $request->actual_photo_desc : '',
+            'block_detail_image' => !empty($block_detail_image) ? $block_detail_image : '',
 
             //Hedi
             'heidi_images_banner1' => !empty($request->heidi_images_banner1) ? $this->uploadService->upload_param($request->heidi_images_banner1) : $this->productRepositories->find($id)->heidi_images_banner1,
