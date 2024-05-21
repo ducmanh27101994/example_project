@@ -53,6 +53,11 @@ class HomePageController extends BaseController
             ->where('status', '=', 'active')
             ->get();
 
+        $about_us_gt_cl = DB::table('independent_content')
+            ->where('status', '=', 'active')
+            ->where('location', '=', 'about-us-gt-cl')
+            ->get();
+
         $data = [];
         if (!empty($listCategory)) {
             foreach ($listCategory as $value) {
@@ -65,7 +70,7 @@ class HomePageController extends BaseController
             }
         }
 
-        return view('web.home.trangchu', compact('slide_banner', 'img_slider', 'gallery_items', 'home_page_co2', 'pbgn_partner', 'listCategory', 'data'));
+        return view('web.home.trangchu', compact('slide_banner', 'img_slider', 'gallery_items', 'home_page_co2', 'pbgn_partner', 'listCategory', 'data', 'about_us_gt_cl'));
     }
 
     public function indexAboutUs()

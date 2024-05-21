@@ -205,28 +205,21 @@
                     @endforeach
                 @endif
             </div>
+
             <div class="about-topics">
-                <div class="about-topic">
-                    <img class="typography-about-topic-img" src="{{ asset('home/images/ic_baohanhvikh.png') }}" />
-                    <h4 class="typography-about-topic-headline">Chính sách bảo hành vì khách hàng</h4>
-                    <p class="typography-about-topic-intro">Bảo hành dành riêng cho bạn - Cam kết chất lượng và sự
-                        hài lòng của khách hàng là ưu tiên hàng đầu của chúng tôi.</p>
-                </div>
-                <div class="about-topic">
-                    <img class="typography-about-topic-img" src="{{ asset('home/images/ic_dichvuKHtotnhat.png') }}" />
-                    <h4 class="typography-about-topic-headline">Dịch vụ khách hàng tốt nhất</h4>
-                    <p class="typography-about-topic-intro">Dịch vụ khách hàng ưu việt - Tận tâm phục vụ, luôn lắng
-                        nghe và đáp ứng mong muốn của mọi khách hàng.</p>
-                </div>
-                <div class="about-topic">
-                    <img class="typography-about-topic-img" src="{{ asset('home/images/ic_spchatluongVN.png') }}" />
-                    <h4 class="typography-about-topic-headline">Sản phẩm chất lượng hàng đầu Việt Nam</h4>
-                    <p class="typography-about-topic-intro">Osakar luôn tự hào mang đến chất lượng vượt trội và đẳng
-                        cấp kết hợp với sự đa dạng về thiết kế và màu sắc của các mẫu xe.</p>
-                </div>
+                @if(!empty($about_us_gt_cl))
+                    @foreach($about_us_gt_cl as $value)
+                        <div class="about-topic">
+                            <img class="typography-about-topic-img" src="{!! $value->avatar !!}" alt="{!! $value->title !!}" />
+                            <h4 class="typography-about-topic-headline">{!! $value->title !!}</h4>
+                            <div class="typography-about-topic-intro"> {!! $value->detail !!}</div>
+                        </div>
+                    @endforeach
+                @endif
             </div>
+
             <div class="text-center">
-                <a class="cta-link" href="#" target="_blank">Về chúng tôi <img
+                <a class="cta-link" href="/about-us" target="_blank">Về chúng tôi <img
                         src="{{ asset('home/images/arrow-circle-right.png') }}" /></a>
             </div>
         </div>
