@@ -181,6 +181,14 @@
                                             <div class="form-group">
                                                 <label class="next-label">Chi tiết</label>
 
+                                                <div class="block_sp">
+                                                    <div class="form-group">
+                                                        <label class="text-no-bold" data-bind="text: Title">Hình ảnh block chi tiết</label>
+                                                        <input type="file" name="block_detail_image" id="flupload"
+                                                            class="btn-change-link pull-right" style="width:180px;">
+                                                    </div>
+                                                </div>
+
                                                 <textarea name="detail" id="detail" cols="50"
                                                     rows="30">{{old('detail')}}</textarea>
                                             </div>
