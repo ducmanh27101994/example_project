@@ -259,19 +259,19 @@
                             pin.</h6>
                     </div>
                     <div class="breaking-top__img breaking-slick">
-                        <div class="section-hero-slider owl-carousel">
-                            <!-- Ảnh đại diện -->
-                            @if(!empty($color_image))
-                                @foreach($color_image as $value)
-                                    <div class>
-                                        <picture>
-                                            <img data-lazy="{{$value->images}}" title alt="" width="100%" />
-                                        </picture>
-                                    </div>
-                                @endforeach
-                            @endif
-                        </div>
+                        <!-- Ảnh đại diện -->
+                        @if(!empty($color_image))
+                            @foreach($color_image as $value)
+                                <div class>
+                                    <picture>
+                                        <img data-lazy="{{$value->images}}" title alt="" width="100%" />
+                                    </picture>
+                                </div>
+                            @endforeach
+                        @endif
                     </div>
+                    <div class="breaking-slick__button-next"></div>
+                    <div class="breaking-slick__button-prev"></div>
                 </div>
                 <div class="breaking-technology-bot">
                     <div class="parts-bike__head_text text-center block_center">
