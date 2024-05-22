@@ -122,7 +122,7 @@
     <section class="section section-family">
         <div class="container">
             <div class="regions_wrapper">
-                <div class="regions_wrapper_area hidden-xs">
+                <div class="regions_wrapper_area owl-carousel hidden-xs">
                     @if(!empty($category))
                     @foreach($category as $key => $value)
                     <div

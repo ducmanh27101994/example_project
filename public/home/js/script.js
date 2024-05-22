@@ -131,6 +131,30 @@ $(document).ready(function () {
             }
         }
     });
+
+    $('.section-family .regions_wrapper_area').owlCarousel({
+        items: 5,
+        margin: 30,
+        stagePadding: 0,
+        loop: true,
+        autoplay: true,
+        smartSpeed: 650,
+        dots: true,
+        responsive: {
+            0: {
+                items: 2
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 4
+            },
+            1600: {
+                items: 5
+            }
+        }
+    });
     
     $('.section-hero-slider').owlCarousel({
         animateIn: 'fadeOut',
