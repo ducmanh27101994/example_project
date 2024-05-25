@@ -90,6 +90,8 @@ $(document).ready(function () {
         margin: 30,
         stagePadding: 0,
         smartSpeed: 650,
+        nav: true,
+        navText: ['<i class="fa fa-caret-left" aria-hidden="true"></i>', '<i class="fa fa-caret-right" aria-hidden="true"></i>'],
         responsive: {
             0: {
                 items: 1,
@@ -136,8 +138,8 @@ $(document).ready(function () {
         items: 5,
         margin: 30,
         stagePadding: 0,
-        loop: true,
-        autoplay: true,
+        loop: false,
+        autoplay: false,
         smartSpeed: 650,
         dots: true,
         responsive: {
@@ -163,7 +165,7 @@ $(document).ready(function () {
         loop: true,
         autoplay: true,
         autoplaySpeed: 650,
-        smartSpeed: 650,
+        smartSpeed: 650
     });
 
     $('.story-items-track').owlCarousel({
@@ -195,6 +197,8 @@ $(document).ready(function () {
         loop: false,
         autoplay: false,
         smartSpeed: 650,
+        nav: true,
+        navText: ['<i class="fa fa-caret-left" aria-hidden="true"></i>', '<i class="fa fa-caret-right" aria-hidden="true"></i>'],
         stagePadding: parseInt($('#pdp-img-360 .breaking-wrap').css('padding-left')?.replace('px', '') - 15, 10),
         responsive: {
             0: {

@@ -51,6 +51,7 @@ class HomePageController extends BaseController
 
         $listCategory = DB::table('cate_product')
             ->where('status', '=', 'active')
+            ->orderBy('created_at', 'desc')
             ->get();
 
         $about_us_gt_cl = DB::table('independent_content')
@@ -346,6 +347,12 @@ class HomePageController extends BaseController
                 ->orderBy('created_at', 'desc')
                 ->paginate(6);
         }
+
+        $products_hot = DB::table('products')
+                ->where('status', '=', 'active')
+                ->where('interface_type', '!=', 1)
+                ->orderBy('created_at', 'desc')
+                ->paginate(6);
 
         $blog1 = DB::table('blogs')
             ->where('status', '=', 'active')

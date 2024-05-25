@@ -1229,97 +1229,6 @@ html[dark] .section-sosumi {
     }
 }
 
-.family-nav-image--supersport {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/family-nav/img-scooter-menu-ss@2x.png?v=v14")
-}
-
-.family-nav-image--supersport-zh-TW {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/family-nav/img-scooter-menu-ss-lighting@2x.png?v=v14")
-}
-
-.family-nav-image--s1 {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/family-nav/img-scooter-menu-s1@2x.png?v=v14")
-}
-
-.family-nav-image--2-series {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/family-nav/img-scooter-menu-2-series@2x.png?v=v14")
-}
-
-.family-nav-image--viva {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/family-nav/img-scooter-menu-viva-my22@2x.png?v=v14")
-}
-
-.family-nav-image--viva-zh-TW,
-.family-nav-image--viva-me {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/family-nav/img-scooter-menu-viva-me-fcl-mujigrey@2x.png?v=v14")
-}
-
-.family-nav-image--viva-standard {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/family-nav/img-scooter-menu-viva-my22@2x.png?v=v14")
-}
-
-.family-nav-image--viva-mix {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/family-nav/img-scooter-menu-viva-mix-my23@2x.png?v=v14")
-}
-
-.family-nav-image--viva-mix-zh-TW {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/family-nav/img-scooter-menu-viva-mix-me-mujibrown@2x.png?v=v14")
-}
-
-.family-nav-image--viva-mix-standard {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/family-nav/img-scooter-menu-viva-mix-my23@2x.png?v=v14")
-}
-
-.family-nav-image--viva-mix-me {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/family-nav/img-scooter-menu-viva-mix-me-mujibrown@2x.png?v=v14")
-}
-
-.family-nav-image--viva-xl,
-.family-nav-image--viva-xl-standard {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/family-nav/img-scooter-menu-viva-xl-blue-my23@2x.png?v=v14")
-}
-
-.family-nav-image--delight,
-.family-nav-image--delight-standard {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/family-nav/img-scooter-menu-delight@2x.png?v=v14")
-}
-
-.family-nav-image--delight-zh-TW {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/family-nav/img-scooter-menu-delight-lighting@2x.png?v=v14")
-}
-
-.family-nav-image--delight-red-crush {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/family-nav/img-scooter-menu-delight-redcrush.png?v=v14")
-}
-
-.family-nav-image--delight-the-new-black {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/family-nav/img-scooter-menu-delight-the-new-black@2x.png?v=v14")
-}
-
-.family-nav-image--viva-mix-purplesoul {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/family-nav/img-scooter-menu-viva-mix-purple@2x.png?v=v14")
-}
-
-.family-nav-image--viva-mix-esc {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/family-nav/img-scooter-menu-viva-mix-sf-esc@2x.png?v=v14")
-}
-
-.family-nav-image--viva-mix-superfast {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/family-nav/img-scooter-menu-viva-mix-sf@2x.png?v=v14")
-}
-
-.family-nav-image--viva-xl-superfast {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/family-nav/img-scooter-menu-viva-xl-sf@2x.png?v=v14")
-}
-
-.family-nav-image--premium {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/family-nav/img-scooter-menu-premium@2x.png?v=v14")
-}
-
-.family-nav-image--crossover {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/family-nav/img-scooter-menu-crossover@2x.png?v=v14")
-}
-
 .section-hero {
     position: relative;
     max-height: 600px;
@@ -1502,7 +1411,6 @@ html[dark] .section-sosumi {
     border-radius: 30px;
     grid-column: span 12;
     color: #fff;
-    background: center/cover no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/home/family/img-banner-s-performance-mobile@2x.jpg?v=v14")
 }
 
 .family-item--s-performance .cta-link {
@@ -1513,7 +1421,6 @@ html[dark] .section-sosumi {
     .family-item--s-performance {
         max-width: initial;
         height: 300px;
-        background: center/cover no-repeat url("//cdn.gogoro.com/resources/pages/smartscooter/home/family/img-banner-s-performance@2x.jpg?v=v14")
     }
 }
 
@@ -1612,88 +1519,6 @@ html[dark] .section-sosumi {
     100% {
         background-color: #ED2025;
         box-shadow: 0 0 3px #ED2025;
-    }
-}
-
-.image-story--smart-1 {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/stories/img-scooter-slide1-photo1-mobile@2x.jpg?v=v14")
-}
-
-.image-story--smart-2 {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/stories/202203/img-scooter-slide1-photo2-eng-mobile@2x.jpg?v=v14")
-}
-
-.image-story--smart-2:lang(zh) {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/stories/202203/img-scooter-slide1-photo2-ch-mobile@2x.jpg?v=v14")
-}
-
-.image-story--smart-3 {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/stories/img-scooter-slide1-photo3-mobile@2x.jpg?v=v14")
-}
-
-.image-story--easy-1 {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/stories/img-scooter-slide2-photo1-mobile@2x.jpg?v=v14")
-}
-
-.image-story--easy-2 {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/stories/img-scooter-slide2-photo2-mobile@2x.jpg?v=v14")
-}
-
-.image-story--easy-3 {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/stories/img-scooter-slide2-photo3-mobile@2x.jpg?v=v14")
-}
-
-.image-story--experience-1 {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/stories/img-scooter-slide3-photo1-mobile@2x.jpg?v=v14")
-}
-
-.image-story--experience-2 {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/stories/img-scooter-slide3-photo2-mobile@2x.jpg?v=v14")
-}
-
-.image-story--experience-3 {
-    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/stories/img-scooter-slide3-photo3-mobile@2x.jpg?v=v14")
-}
-
-@media(min-width: 768px) {
-    .image-story--smart-1 {
-        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/stories/img-scooter-slide1-photo1@2x.jpg?v=v14")
-    }
-
-    .image-story--smart-2 {
-        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/stories/202203/img-scooter-slide1-photo2-eng@2x.jpg?v=v14")
-    }
-
-    .image-story--smart-2:lang(zh) {
-        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/stories/202203/img-scooter-slide1-photo2-ch@2x.jpg?v=v14")
-    }
-
-    .image-story--smart-3 {
-        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/stories/img-scooter-slide1-photo3@2x.jpg?v=v14")
-    }
-
-    .image-story--easy-1 {
-        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/stories/img-scooter-slide2-photo1@2x.jpg?v=v14")
-    }
-
-    .image-story--easy-2 {
-        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/stories/img-scooter-slide2-photo2@2x.jpg?v=v14")
-    }
-
-    .image-story--easy-3 {
-        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/stories/img-scooter-slide2-photo3@2x.jpg?v=v14")
-    }
-
-    .image-story--experience-1 {
-        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/stories/img-scooter-slide3-photo1@2x.jpg?v=v14")
-    }
-
-    .image-story--experience-2 {
-        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/stories/img-scooter-slide3-photo2@2x.jpg?v=v14")
-    }
-
-    .image-story--experience-3 {
-        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/home/stories/img-scooter-slide3-photo3@2x.jpg?v=v14")
     }
 }
 

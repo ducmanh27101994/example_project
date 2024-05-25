@@ -31,17 +31,17 @@
                             <li class="top-main-item">
                                 <p class="text">Quãng đường di chuyển</p>
                                 <!-- Quãng đường di chuyển -->
-                                <p class="no">{{$product->distance_traveled}} km</p>
+                                <p class="no"><span class="counter">{{$product->distance_traveled}}</span> km</p>
                             </li>
                             <li class="top-main-item">
                                 <p class="text">Vận tốc lớn nhất</p>
                                 <!-- Vận tốc lớn nhất -->
-                                <p class="no">{{$product->maximum_speed}} km/h</p>
+                                <p class="no"><span class="counter">{{$product->maximum_speed}}</span> km/h</p>
                             </li>
                             <li class="top-main-item">
                                 <p class="text">Khối lượng cho phép chở</p>
                                 <!-- Khối lượng cho phép chở -->
-                                <p class="no">{{$product->allowable_weight_to_carry}} kg</p>
+                                <p class="no"><span class="counter">{{$product->allowable_weight_to_carry}}</span> kg</p>
                             </li>
                         </ul>
                     </div>
@@ -143,25 +143,26 @@
                 </div>
             </div>
         </section>
-        <section class="page-block-image page-block-image-360 product-360-views" id="pdp-img-360">
-            <div class="breaking-wrap product-images-list">
-                <!-- Ảnh 360 -->
-                <div id="threesixty" class="wrap_image"></div>
-                <div class="instruction">
-                    <div class="rotating-360-ico">
-                        <div class="main-circle"></div>
-                        <div class="sub-circle horizontal"></div>
-                        <div class="sub-circle vertical"></div>
-                        <div class="context">360</div>
+        @if(!empty($images360))
+            @foreach($images360 as $value)
+                <section class="page-block-image page-block-image-360 product-360-views" id="pdp-img-360">
+                    <div class="breaking-wrap product-images-list">
+                        <!-- Ảnh 360 -->
+                        <div id="threesixty" class="wrap_image"></div>
+                        <div class="instruction">
+                            <div class="rotating-360-ico">
+                                <div class="main-circle"></div>
+                                <div class="sub-circle horizontal"></div>
+                                <div class="sub-circle vertical"></div>
+                                <div class="context">360</div>
+                            </div>
+                            <p>Xoay để xem ảnh 360 toàn xe</p>
+                        </div>
                     </div>
-                    <p>Xoay để xem ảnh 360 toàn xe</p>
-                </div>
-                <div class="top-btn">
-                    <a href="" class="add-to-cart-v3s btn-pdp btn btn-primary effect-apollo"
-                        data-pid="VF-ZFG-ESNA5LHH-REQ"><span>Mua Ngay</span></a>
-                </div>
-            </div>
-        </section>
+                </section>
+            @endforeach
+        @endif
+
         <section class="page-block parts-bike section" id="pdp-parts-bike">
 
             <div class="breaking-wrap">
@@ -231,9 +232,8 @@
                     data-aos-duration="300">
                     <!-- Ảnh Đại diện -->
                     @if(!empty($product->block_detail_image))
-                        <img data-src="{{$product->block_detail_image}}" title="Evo200"
-                            alt="{{$product->product_name}}" width="100%"
-                            class="img-lazy" />
+                        <img data-src="{{$product->block_detail_image}}" title="Evo200" alt="{{$product->product_name}}"
+                            width="100%" class="img-lazy" />
                     @endif
                 </div>
                 <div class="battery-technology__content">
@@ -357,7 +357,7 @@
             count: 31,
             perRow: 0,
             width: '100%',
-            height: 680,
+            height: '100vh',
         });
     }
 </script>

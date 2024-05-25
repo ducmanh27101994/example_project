@@ -2536,3 +2536,60 @@ table tbody tr th:nth-child(4) {
     -moz-animation-timing-function: linear;
     animation-timing-function: linear;
 }
+
+.owl-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: auto;
+    bottom: auto;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 5% 0 5%;
+}
+
+.owl-nav .fa {
+    font-size: 50px;
+    color: #7a99ac;
+}
+
+.owl-nav .fa {
+    font-size: 50px;
+    color: #7a99ac;
+}
+
+.owl-nav .fa:hover,
+.owl-nav .active {
+    font-size: 50px;
+    color: #ED2025
+}
+
+.typewriter {
+    width: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid #212121;
+    animation: cursor 1s step-start infinite, text 3s steps(16) alternate infinite;
+}
+
+@keyframes cursor {
+
+    0%,
+    100% {
+        border-color: #212121;
+    }
+}
+
+@keyframes text {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: auto;
+    }
+}

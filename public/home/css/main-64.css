@@ -3232,7 +3232,7 @@ html[dark] .section-sosumi {
 
 @media(min-width: 1260px) {
     .section-about .cta-link {
-        font-size: 18px;
+        font-size: 24px;
         font-weight: 500;
     }
 }

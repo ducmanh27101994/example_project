@@ -1,7 +1,7 @@
 @extends('/web/index')
 @section('content')
 <main class="page-content">
-    <nav class="family-nav" data-component-list="FamilyNav FamilyNavMenu" style="display: none">
+    <nav class="family-nav" data-component-list="FamilyNav FamilyNavMenu" >
         <div class="family-nav-wrapper">
             <ul class="family-nav-items">
                 <li class="family-nav-item">
@@ -42,50 +42,6 @@
             </ul>
         </div>
     </nav>
-    <div class="family-nav-menus">
-        <div class="family-nav-menu" data-family-menu-key="viva-xl" style="left: 1045.5px;">
-            <div class="family-nav-menu-inner-container">
-                <div class="family-nav-menu-name">VIVA XL</div>
-                <div class="family-nav-menu-items">
-                    <a class="family-nav-menu-item-link" href="/smartscooter/viva/xl/superfast/" data-component-list="Hoverable" data-hover-toggle-class="family-nav-image--viva-xl-superfast" data-hover-target="#family-nav-image-viva-xl">
-                        <figure class="family-nav-image family-nav-image--viva-xl-superfast"></figure>
-                        <h4 class="family-nav-label" role="text">SUPERFAST</h4>
-                        <span class="family-nav-new">New</span>
-                    </a>
-                    <a class="family-nav-menu-item-link" href="/smartscooter/viva/xl/" data-component-list="Hoverable" data-hover-toggle-class="family-nav-image--viva-xl-standard" data-hover-target="#family-nav-image-viva-xl">
-                        <figure class="family-nav-image family-nav-image--viva-xl-standard"></figure>
-                        <h4 class="family-nav-label" role="text">STANDARD</h4>
-
-                    </a>
-                </div>
-                <button type="button" class="family-nav-menu-close"></button>
-            </div>
-        </div>
-        <div class="family-nav-menu" data-family-menu-key="viva-mix" style="left: 1233.5px;">
-            <div class="family-nav-menu-inner-container">
-                <div class="family-nav-menu-name">VIVA MIX</div>
-                <div class="family-nav-menu-items">
-                    <a class="family-nav-menu-item-link" href="/smartscooter/viva/mix/superfast/" data-component-list="Hoverable" data-hover-toggle-class="family-nav-image--viva-mix-superfast" data-hover-target="#family-nav-image-viva-mix">
-                        <figure class="family-nav-image family-nav-image--viva-mix-superfast"></figure>
-                        <h4 class="family-nav-label" role="text">SUPERFAST</h4>
-
-                    </a>
-                    <a class="family-nav-menu-item-link" href="/smartscooter/viva/mix/purplesoul/" data-component-list="Hoverable" data-hover-toggle-class="family-nav-image--viva-mix-purplesoul" data-hover-target="#family-nav-image-viva-mix">
-                        <figure class="family-nav-image family-nav-image--viva-mix-purplesoul"></figure>
-                        <h4 class="family-nav-label" role="text">PURPLE SOUL</h4>
-
-                    </a>
-                    <a class="family-nav-menu-item-link" href="/smartscooter/viva/mix/" data-component-list="Hoverable" data-hover-toggle-class="family-nav-image--viva-mix-standard" data-hover-target="#family-nav-image-viva-mix">
-                        <figure class="family-nav-image family-nav-image--viva-mix-standard"></figure>
-                        <h4 class="family-nav-label" role="text">STANDARD</h4>
-
-                    </a>
-                </div>
-                <button type="button" class="family-nav-menu-close"></button>
-            </div>
-        </div>
-    </div>
-
     <section class="section section-hero">
         <div class="hero-copy-position">
             <div class="container">
@@ -105,7 +61,7 @@
     <section class="section section-family">
         <div class="container">
             <div class="regions_wrapper">
-                <div class="regions_wrapper_area">
+                <div class="regions_wrapper_area owl-carousel">
                     <div class="regions_wrapper_area_item active">
                         <a href="#" title="XE ĐIỆN HOT HIT">XE ĐIỆN HOT HIT</a>
                     </div>
