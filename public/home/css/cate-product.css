@@ -1209,7 +1209,8 @@ html[dark] .section-sosumi {
 
 .family-nav-image {
     width: 130px;
-    background: center/auto 100% no-repeat
+    background: center/auto 100% no-repeat;
+    margin-bottom: 10px;
 }
 
 .family-nav-image::before {
