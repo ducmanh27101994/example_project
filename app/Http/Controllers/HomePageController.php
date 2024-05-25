@@ -372,7 +372,7 @@ class HomePageController extends BaseController
             ->orderBy('created_at', 'desc')
             ->get();
 
-        return view('web.product.category', compact('category', 'products', 'blog1', 'blog2', 'blog3'));
+        return view('web.product.category', compact('category', 'products', 'products_hot', 'blog1', 'blog2', 'blog3'));
     }
 
     public function detailCategoryProduct($id)
