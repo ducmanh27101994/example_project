@@ -163,7 +163,7 @@
             @endforeach
         @endif
 
-        <section class="page-block parts-bike section" id="pdp-parts-bike">
+        <section class="parts-bike section" id="pdp-parts-bike">
 
             <div class="breaking-wrap">
                 <div class="parts-bike__head_text">
@@ -194,7 +194,7 @@
                 </div>
             </div>
         </section>
-        <section class="page-block parts-bike section" id="pdp-parts-bike">
+        <section class="parts-bike section" id="pdp-parts-bike">
             <div class="parts-bike__head_text text-center block_center">
                 <h2>
                     {{$product->actual_photo_title}}
