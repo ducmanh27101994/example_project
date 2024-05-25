@@ -437,6 +437,11 @@ class HomePageController extends BaseController
                 ->paginate(10);
         }
 
+        $store_counter = DB::table('independent_content')
+            ->where('status', '=', 'active')
+            ->where('location', '=', 'homepage-counter')
+            ->get();
+
 
         $listProvince = DB::table('store')
             ->select('latitude')
@@ -448,7 +453,7 @@ class HomePageController extends BaseController
             ->groupBy('longitude')
             ->get();
 
-        return view('web.store.listStore', compact('listStore', 'flag', 'listProvince', 'listDistrict'));
+        return view('web.store.listStore', compact('listStore', 'flag', 'listProvince', 'listDistrict', 'store_counter'));
 
     }
 

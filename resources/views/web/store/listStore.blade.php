@@ -10,7 +10,17 @@
                     <div class="text_box_image">
                         <h2>Mạng Lưới</h2>
                         <p>Hệ thống cửa hàng đại lý của Osakar sẵn sàng phục vụ Quý khách hàng tại hơn</p>
-                        <div class="pbgn-badges">
+
+                        @if(!empty($homepage_counter))
+                        @foreach($homepage_counter as $value)
+
+                        {!! $value->detail !!}
+
+
+                        @endforeach
+                        @endif
+
+                        <!-- <div class="pbgn-badges">
                             <div class="pbgn-badge">
                                 <div class="pbgn-badge-value counter">63</div>
                                 <div class="pbgn-badge-label">Tỉnh thành</div>
@@ -19,7 +29,7 @@
                                 <div class="pbgn-badge-value "><span>+</span><span class="counter">100</span></div>
                                 <div class="pbgn-badge-label">Đại lý</div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-6 col-sm-6 col-lg-6">
@@ -65,7 +75,8 @@
                 @endphp
                 <div class="regions_wrapper_area hidden-md hidden-lg hidden-sm">
                     <select id="regionDropdown" onchange="navigateToRegion()">
-                        <option value="/list-store/mien-bac">Đang lọc theo: @if($flag == 1) Miền Bắc @endif @if($flag == 2) Miền Trung @endif @if($flag == 3) Miền Nam @endif</option>
+                        <option value="/list-store/mien-bac">Đang lọc theo: @if($flag == 1) Miền Bắc @endif @if($flag ==
+                            2) Miền Trung @endif @if($flag == 3) Miền Nam @endif</option>
                         <option value="/list-store/mien-bac">Miền Bắc</option>
                         <option value="/list-store/mien-trung">Miền Trung</option>
                         <option value="/list-store/mien-nam">Miền Nam</option>
@@ -139,54 +150,59 @@
         </div>
     </div>
     <script>
-        $(document).ready(function () {
-            var provinceDropdown = $('#province');
-            var districtDropdown = $('#district');
-            // Load provinces into the province dropdown on page load
+    $(document).ready(function() {
+        var provinceDropdown = $('#province');
+        var districtDropdown = $('#district');
+        // Load provinces into the province dropdown on page load
+        $.ajax({
+            url: 'https://vapi.vnappmob.com/api/province/',
+            method: 'GET',
+            dataType: 'json',
+            success: function(data) {
+                $.each(data, function(index, province) {
+                    for (var i = 0; i < province.length; i++) {
+                        provinceDropdown.append('<option value="' + province[i]
+                            .province_id + '">' + province[i].province_name +
+                            '</option>');
+                    }
+                });
+            }
+        });
+
+        // Handle province dropdown change event
+        provinceDropdown.on('change', function() {
+            var selectedProvinceCode = $(this).val();
+            // Load districts based on the selected province
             $.ajax({
-                url: 'https://vapi.vnappmob.com/api/province/',
+                url: 'https://vapi.vnappmob.com/api/province/district/' + selectedProvinceCode,
                 method: 'GET',
                 dataType: 'json',
-                success: function (data) {
-                    $.each(data, function (index, province) {
-                        for (var i = 0; i < province.length; i++) {
-                            provinceDropdown.append('<option value="' + province[i].province_id + '">' + province[i].province_name + '</option>');
+                success: function(result) {
+                    districtDropdown.empty();
+                    $.each(result, function(index, district) {
+                        for (var i = 0; i < district.length; i++) {
+                            districtDropdown.append('<option value="' + district[i]
+                                .district_name + '">' + district[i]
+                                .district_name + '</option>');
                         }
                     });
                 }
             });
-
-            // Handle province dropdown change event
-            provinceDropdown.on('change', function () {
-                var selectedProvinceCode = $(this).val();
-                // Load districts based on the selected province
-                $.ajax({
-                    url: 'https://vapi.vnappmob.com/api/province/district/' + selectedProvinceCode,
-                    method: 'GET',
-                    dataType: 'json',
-                    success: function (result) {
-                        districtDropdown.empty();
-                        $.each(result, function (index, district) {
-                            for (var i = 0; i < district.length; i++) {
-                                districtDropdown.append('<option value="' + district[i].district_name + '">' + district[i].district_name + '</option>');
-                            }
-                        });
-                    }
-                });
-            });
         });
+    });
     </script>
 
 
     <script>
-        function submitForm() {
-            document.getElementById("formSearch").submit();
-        }
-        function navigateToRegion() {
-            var dropdown = document.getElementById("regionDropdown");
-            var selectedValue = dropdown.options[dropdown.selectedIndex].value;
-            window.location.href = selectedValue;
-        }
+    function submitForm() {
+        document.getElementById("formSearch").submit();
+    }
+
+    function navigateToRegion() {
+        var dropdown = document.getElementById("regionDropdown");
+        var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+        window.location.href = selectedValue;
+    }
     </script>
 </main>
 
