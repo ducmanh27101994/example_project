@@ -477,7 +477,14 @@ class HomePageController extends BaseController
         } else {
             $listStore = [];
         }
-        return view('web.store.nearbyStore', compact('listStore'));
+
+        $store_counter = DB::table('independent_content')
+            ->where('status', '=', 'active')
+            ->where('location', '=', 'homepage-counter')
+            ->get();
+
+
+        return view('web.store.nearbyStore', compact('listStore', 'store_counter'));
     }
 
     public function policy(Request $request)
