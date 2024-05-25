@@ -11,8 +11,8 @@
                         <h2>Mạng Lưới</h2>
                         <p>Hệ thống cửa hàng đại lý của Osakar sẵn sàng phục vụ Quý khách hàng tại hơn</p>
 
-                        @if(!empty($homepage_counter))
-                        @foreach($homepage_counter as $value)
+                        @if(!empty($store_counter ))
+                        @foreach($store_counter  as $value)
 
                         {!! $value->detail !!}
 
