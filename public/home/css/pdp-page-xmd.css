@@ -2273,6 +2273,7 @@ img {
 #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content #tabInfoProduct .tab-pane-info ul {
     margin-top: 64px;
     width: 100%;
+    margin: 64px -40px 0 -40px;
 }
 
 @media only screen and (min-width:1200px) and (max-width:1440px) {
@@ -2308,10 +2309,10 @@ img {
     font-size: 14px;
     list-style: none;
     float: left;
-    width: 31%;
+    width: 28%;
     height: 49px;
     padding: 0 0px;
-    margin: 0 15px;
+    margin: 0 40px;
 }
 
 @media only screen and (min-width:1200px) and (max-width:1400px) {
@@ -3879,6 +3880,12 @@ html {
 
     .page-block-image {
         padding-top: 0;
+    }
+    #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content #tabInfoProduct .tab-pane-info ul li {
+        width: 100%;
+        float: unset;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
