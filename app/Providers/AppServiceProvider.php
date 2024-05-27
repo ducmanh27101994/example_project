@@ -31,11 +31,17 @@ class AppServiceProvider extends ServiceProvider
 
         $modal_image = DB::table('banner_ads')->where('status', '=', 'active')->where('code_ads', '=', 'modal-image')->get();
 
-        view()->composer('*', function ($view) use ($table_menu, $table_config_images,$configOptionGlobal, $modal_image) {
+        $products_hot = DB::table('products')
+                ->where('status', '=', 'active')
+                ->where('interface_type', '!=', 1)
+                ->orderBy('created_at', 'desc');
+
+        view()->composer('*', function ($view) use ($table_menu, $table_config_images,$configOptionGlobal, $modal_image, $products_hot) {
             $view->with('table_menu', $table_menu)
                 ->with('table_config_images', $table_config_images)
                 ->with('configOptionGlobal', $configOptionGlobal)
-                ->with('modal_image', $modal_image);
+                ->with('modal_image', $modal_image)
+                ->with('products_hot', $products_hot);
         });
     }
 }

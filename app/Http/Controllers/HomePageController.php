@@ -348,12 +348,6 @@ class HomePageController extends BaseController
                 ->paginate(6);
         }
 
-        $products_hot = DB::table('products')
-                ->where('status', '=', 'active')
-                ->where('interface_type', '!=', 1)
-                ->orderBy('created_at', 'desc')
-                ->paginate(6);
-
         $blog1 = DB::table('blogs')
             ->where('status', '=', 'active')
             ->where('category_blogproduct', '=', 2)
@@ -372,7 +366,7 @@ class HomePageController extends BaseController
             ->orderBy('created_at', 'desc')
             ->get();
 
-        return view('web.product.category', compact('category', 'products', 'products_hot', 'blog1', 'blog2', 'blog3'));
+        return view('web.product.category', compact('category', 'products', 'blog1', 'blog2', 'blog3'));
     }
 
     public function detailCategoryProduct($id)
