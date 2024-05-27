@@ -90,8 +90,8 @@ $(document).ready(function () {
         margin: 30,
         stagePadding: 0,
         smartSpeed: 650,
-        // nav: true,
-        // navText: ['<i class="fa fa-caret-left" aria-hidden="true"></i>', '<i class="fa fa-caret-right" aria-hidden="true"></i>'],
+        nav: true,
+        navText: ['<i class="fa fa-caret-left" aria-hidden="true"></i>', '<i class="fa fa-caret-right" aria-hidden="true"></i>'],
         responsive: {
             0: {
                 items: 1,
