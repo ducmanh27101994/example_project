@@ -34,7 +34,8 @@ class AppServiceProvider extends ServiceProvider
         $products_hot = DB::table('products')
                 ->where('status', '=', 'active')
                 ->where('interface_type', '!=', 1)
-                ->orderBy('created_at', 'desc');
+                ->orderBy('created_at', 'desc')
+                ->get();
 
         view()->composer('*', function ($view) use ($table_menu, $table_config_images,$configOptionGlobal, $modal_image, $products_hot) {
             $view->with('table_menu', $table_menu)
