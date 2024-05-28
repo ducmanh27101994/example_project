@@ -2584,6 +2584,7 @@ table tbody tr th:nth-child(4) {
     left: -15px;
     padding: 0;
     height: auto;
+    display: block;
 }
 
 .owl-nav .fa {
