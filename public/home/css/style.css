@@ -2635,6 +2635,21 @@ button.owl-next {
     color: #ED2025;
 }
 
+.from-left-and-back {
+    background-image: linear-gradient(to right, #000000 45%, #ED2025 55%);
+    background-size: 220% 100%;
+    background-position: 100% 50%;
+    color: transparent !important;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-repeat: no-repeat;
+    transition: 0.5s ease-out;
+}
+
+.from-left-and-back:hover {
+    background-position: 0% 50%;
+}
+
 .typewriter {
     width: 12.5ch;
     white-space: nowrap;

@@ -77,7 +77,7 @@
                             <div class="family-item-copy">
                                 <h4 class="typography-eyebrow">Osakar</h4>
                                 <h3 class="typography-tagline">{{$value->product_name}}</h3>
-                                <a class="cta-link" href="{{route('details.basic', $value->path)}}">Xem chi tiết</a>
+                                <a class="cta-link from-left-and-back" href="{{route('details.basic', $value->path)}}">Xem chi tiết</a>
                             </div>
                             <figure class="image-family image-family--supersport"
                                 style="background-image: url('{{$value->representative_image}}')"></figure>
