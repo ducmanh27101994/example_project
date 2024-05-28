@@ -41,7 +41,8 @@
                             <li class="top-main-item">
                                 <p class="text">Khối lượng cho phép chở</p>
                                 <!-- Khối lượng cho phép chở -->
-                                <p class="no"><span class="counter">{{$product->allowable_weight_to_carry}}</span> kg</p>
+                                <p class="no"><span class="counter">{{$product->allowable_weight_to_carry}}</span> kg
+                                </p>
                             </li>
                         </ul>
                     </div>
@@ -144,23 +145,21 @@
             </div>
         </section>
         @if(!empty($images360))
-            @foreach($images360 as $value)
-                <section class="page-block-image page-block-image-360 product-360-views" id="pdp-img-360">
-                    <div class="breaking-wrap product-images-list">
-                        <!-- Ảnh 360 -->
-                        <div id="threesixty" class="wrap_image"></div>
-                        <div class="instruction">
-                            <div class="rotating-360-ico">
-                                <div class="main-circle"></div>
-                                <div class="sub-circle horizontal"></div>
-                                <div class="sub-circle vertical"></div>
-                                <div class="context">360</div>
-                            </div>
-                            <p>Xoay để xem ảnh 360 toàn xe</p>
+            <section class="page-block-image page-block-image-360 product-360-views" id="pdp-img-360">
+                <div class="breaking-wrap product-images-list">
+                    <!-- Ảnh 360 -->
+                    <div id="threesixty" class="wrap_image"></div>
+                    <div class="instruction">
+                        <div class="rotating-360-ico">
+                            <div class="main-circle"></div>
+                            <div class="sub-circle horizontal"></div>
+                            <div class="sub-circle vertical"></div>
+                            <div class="context">360</div>
                         </div>
+                        <p>Xoay để xem ảnh 360 toàn xe</p>
                     </div>
-                </section>
-            @endforeach
+                </div>
+            </section>
         @endif
 
         <section class="parts-bike section" id="pdp-parts-bike">

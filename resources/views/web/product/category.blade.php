@@ -9,7 +9,8 @@
                 @if(!empty($products_hot))
                     @foreach($products_hot as $value)
                         <li class="family-nav-item">
-                            <a class="family-nav-link " href="{{route('details.basic', $value->path)}}" data-family-menu-target="">
+                            <a class="family-nav-link " href="{{route('details.basic', $value->path)}}"
+                                data-family-menu-target="">
                                 <figure id="family-nav-image-2-series"
                                     class="family-nav-image family-nav-image--2-series family-nav-image--2-series-en"
                                     style="background-image: url('{{$value->representative_image}}')"></figure>
@@ -84,7 +85,9 @@
                         </div>
                     @endforeach
                 </div>
-                {{ $products->links() }}
+                <div class="navigation_page">
+                    {{ $products->links() }}
+                </div>
             @endif
 
         </div>
