@@ -10,7 +10,7 @@
             @foreach($slide_banner as $value)
                 <div class="slider_item">
                     <img src="{{ $value->image_banner }}" />
-                    <div class="hero-copy hero-copy-slider">
+                    <div class="hero-copy hero-copy-slider" style="background-color: transparent">
                         {!! $value->desc !!}
                     </div>
                 </div>
