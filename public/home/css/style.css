@@ -310,6 +310,11 @@ ul.language_choose li a:hover {
     }
 }
 
+.bikes .tab-content .bike-item a {
+    display: block;
+    overflow: hidden;
+}
+
 .bikes .tab-content .bike-item img {
     margin-bottom: 24px;
     width: 100%;
@@ -502,6 +507,8 @@ ul.language_choose li a:hover {
 
 #block-newhome-escooter .view-detail:hover {
     background: #ED2025;
+    color: #fff;
+    border-color: #ED2025;
 }
 
 #block-newhome-escooter #pills-tab {
@@ -2593,6 +2600,16 @@ table tbody tr th:nth-child(4) {
 .owl-nav .active {
     font-size: 50px;
     color: #ED2025
+}
+
+button.owl-prev {
+    position: absolute;
+    left: -50px;
+}
+
+button.owl-next {
+    position: absolute;
+    right: -50px;
 }
 
 .typewriter {
