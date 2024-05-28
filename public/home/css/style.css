@@ -321,7 +321,7 @@ ul.language_choose li a:hover {
     transition: transform .7s ease;
 }
 
-.bikes .tab-content .bike-item:hover img{
+.bikes .tab-content .bike-item:hover img {
     transition: transform .7s ease;
     transform: scale(1.03);
 }
@@ -2607,6 +2607,34 @@ button.owl-next {
     top: 0;
 }
 
+.navigation_page {
+    margin-top: 40px;
+}
+
+.navigation_page .flex {
+    justify-content: center;
+}
+
+.navigation_page .flex span {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.navigation_page .flex a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: #323237;
+}
+
+.navigation_page .flex a.active,
+.navigation_page .flex a:hover {
+    color: #ED2025;
+}
+
 .typewriter {
     width: 12.5ch;
     white-space: nowrap;
@@ -2629,6 +2657,6 @@ button.owl-next {
     }
 
     100% {
-        width: 12.5ch; 
+        width: 12.5ch;
     }
 }

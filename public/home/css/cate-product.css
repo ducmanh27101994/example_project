@@ -461,13 +461,19 @@
     text-align: center;
     text-transform: inherit;
     transition: all 0.3s ease-in-out 0s;
-    color: rgb(255, 255, 255) !important;
+    color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 163px;
     width: 100%;
     margin: 24px auto 0;
+    border: 1px solid;
+}
+
+.deposit-buy-now:hover {
+    color: #ED2025;
+    background: #fff;
 }
 
 @media(min-width: 768px) {
