@@ -17,11 +17,13 @@ use App\Http\Services\Import;
 use App\Http\Services\UploadService;
 use App\Models\BannerAds;
 use App\Models\IndependentContent;
+use App\Models\Store;
 use App\Models\Users;
 use App\Service\Api;
 use Illuminate\Http\Request;
 use App\Http\Services\UserService;
 use Illuminate\Support\Facades\Cookie;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 use Yoeunes\Toastr\Facades\Toastr;
 
@@ -54,24 +56,28 @@ class StoreController extends BaseController
     public function submitStore(Request $request)
     {
 
-        $status = (!empty($request->status) && $request->status == 'on') ? 'active' : 'block';
+        $status = (!empty($request->status) && $request->status == 'on') ? '1' : 'block';
         if ($request->image_store) {
             $image_store = $this->uploadService->upload_param($request->image_store);
         }
+        $result = DB::table('store')->orderBy('id','desc')->first();
         $data = [
+            'id' => $result->id ?? '',
             'image_store' => $image_store ?? '',
             'status' => $status,
             'title_store' => $request->title_store,
-            'latitude' => $request->latitude,
-            'longitude' => $request->longitude,
+            'latitude' => $request->province,
+            'longitude' => $request->district,
             'desc' => $request->desc,
             'address' => $request->address,
             'page_title_tag' => $request->page_title_tag,
             'path' => $request->path,
-            'keyword_tags' => $request->keyword_tags,
-            'description_card' => $request->description_card,
+            'keyword_tags' => $this->slugify($request->province),
+            'description_card' => $this->slugify($request->district),
+            'created_at' => now(),
+            'updated_at' => now(),
         ];
-        $store = $this->storeRepository->create($data);
+        $store = DB::table('store')->insert($data);
         if ($store) {
             toastr()->success("Tạo mới thành công", 'Success');
             return redirect()->route('admin.indexStore');

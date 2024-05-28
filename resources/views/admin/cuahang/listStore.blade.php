@@ -20,12 +20,12 @@
                             <tbody>
                             <tr>
 
-{{--                                <td align="center">--}}
-{{--                                    <a id="lnkadd" class="toolbar" href="{{route('admin.createStore')}}">--}}
-{{--                                        <span class="icon-ok-new"></span>--}}
-{{--                                        Thêm--}}
-{{--                                    </a>--}}
-{{--                                </td>--}}
+                                <td align="center">
+                                    <a id="lnkadd" class="toolbar" href="{{route('admin.createStore')}}">
+                                        <span class="icon-ok-new"></span>
+                                        Thêm
+                                    </a>
+                                </td>
                             </tr>
                             </tbody>
                         </table>
