@@ -2265,7 +2265,7 @@ html[dark] .section-sosumi {
 }
 
 .grid-item-eyebrow {
-  color: #fff;
+  color: #000;
   padding: var(--tile-padding-y) var(--tile-padding-x);
   padding-bottom: 0;
   font-size: 18px;
