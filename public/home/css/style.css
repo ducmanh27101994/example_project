@@ -2552,7 +2552,7 @@ table tbody tr th:nth-child(4) {
     padding: 0 5% 0 5%;
 }
 
-.escooter-swiper .swiper-wrapper {
+.escooter-swiper .swiper-wrapper .owl-nav{
     right: -15px;
     margin: auto 0;
     left: -15px;
