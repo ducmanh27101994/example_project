@@ -71,23 +71,35 @@
                 </div>
             </div>
             @if(!empty($products))
-                <div class="family-items">
-                    @foreach($products as $value)
-                        <div class="family-item family-item--supersport ">
-                            <div class="family-item-copy">
-                                <h4 class="typography-eyebrow">Osakar</h4>
-                                <h3 class="typography-tagline">{{$value->product_name}}</h3>
-                                <a class="cta-link from-left-and-back" href="{{route('details.basic', $value->path)}}">Xem chi tiết</a>
-                            </div>
-                            <figure class="image-family image-family--supersport"
-                                style="background-image: url('{{$value->representative_image}}')"></figure>
-                            <a href="{{route('create.build', $value->id)}}" class="deposit-buy-now ">Mua ngay</a>
-                        </div>
-                    @endforeach
-                </div>
-                <div class="navigation_page">
-                    {{ $products->links() }}
-                </div>
+                    <div class="family-items">
+                        @foreach($products as $value)
+                                    <div class="family-item family-item--supersport ">
+                                        <div class="family-item-copy">
+                                            <h4 class="typography-eyebrow">Osakar
+
+                                                <?php
+                            if ($value->interface_type != 1) {
+                                                                ?>
+                                                <span class="hot">Hot</span>
+                                                <?php
+                            }
+                                                        ?>
+
+
+                                            </h4>
+                                            <h3 class="typography-tagline">{{$value->product_name}}</h3>
+                                            <a class="cta-link from-left-and-back" href="{{route('details.basic', $value->path)}}">Xem chi
+                                                tiết</a>
+                                        </div>
+                                        <figure class="image-family image-family--supersport"
+                                            style="background-image: url('{{$value->representative_image}}')"></figure>
+                                        <a href="{{route('create.build', $value->id)}}" class="deposit-buy-now ">Mua ngay</a>
+                                    </div>
+                        @endforeach
+                    </div>
+                    <div class="navigation_page">
+                        {{ $products->links() }}
+                    </div>
             @endif
 
         </div>
