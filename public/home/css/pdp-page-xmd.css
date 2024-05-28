@@ -93,7 +93,8 @@
 
 .btn-pdp {
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 16px;
+    font-weight: 600;
     line-height: 1.25;
     text-align: center;
     width: 100%;
@@ -2464,7 +2465,7 @@ img {
     }
 
     .pdp-page .top-main .top-main-control {
-    top: 32vw;
+    top: 30vw;
     }
 
     .pdp-page .banner-connect .connect-right {
