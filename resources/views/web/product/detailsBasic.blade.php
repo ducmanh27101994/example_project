@@ -160,8 +160,10 @@
                     </div>
                 </div>
             </section>
+        @else
+            <div></div>
         @endif
-        
+
 
         <section class="parts-bike section" id="pdp-parts-bike">
 
