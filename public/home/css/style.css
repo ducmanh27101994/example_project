@@ -2608,7 +2608,7 @@ button.owl-next {
 }
 
 .typewriter {
-    width: auto;
+    width: 12.5ch;
     white-space: nowrap;
     overflow: hidden;
     border-right: 1px solid #212121;
@@ -2629,6 +2629,6 @@ button.owl-next {
     }
 
     100% {
-        width: auto;
+        width: 12.5ch; 
     }
 }
