@@ -159,7 +159,6 @@ $(document).ready(function () {
     });
     
     $('.section-hero-slider').owlCarousel({
-        animateIn: 'fadeOut',
         items: 1,
         dots: false,
         loop: true,
