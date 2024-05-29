@@ -195,11 +195,11 @@
                                                     </div>
                                                     <div>
                                                         <img style="width: 180px; height: auto"
-                                                            src="{{$product->block_detail_image}}">
+                                                            src="{{$product->block_detail_image ?? ''}}">
                                                     </div>
                                                 </div>
 
-                                               
+
                                                 <textarea name="detail" id="detail" cols="50"
                                                     rows="30">{!! html_entity_decode($product->detail) !!} </textarea>
                                             </div>
