@@ -2263,7 +2263,7 @@ img {
 }
 
 @media only screen and (max-width:1199px) {
-    #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content #tabInfoProduct .tab-pane-info {
+    #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .tab-pane-info {
         display: -ms-flexbox;
         display: flex;
         -ms-flex-direction: column;
@@ -2271,26 +2271,26 @@ img {
     }
 }
 
-#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content #tabInfoProduct .tab-pane-info ul {
+#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content  .tab-pane-info ul {
     margin-top: 64px;
     width: 100%;
     margin: 64px -40px 0 -40px;
 }
 
 @media only screen and (min-width:1200px) and (max-width:1440px) {
-    #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content #tabInfoProduct .tab-pane-info ul {
+    #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .tab-pane-info ul {
         margin-top: 24px;
         width: 30.03831%
     }
 }
 
 @media only screen and (max-width:1199px) {
-    #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content #tabInfoProduct .tab-pane-info ul {
+    #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .tab-pane-info ul {
         margin-top: unset;
         width: 100%
     }
 
-    #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content #tabInfoProduct .tab-pane-info ul:first-child {
+    #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .tab-pane-info ul:first-child {
         margin-top: 30px
     }
 }
@@ -2352,26 +2352,26 @@ img {
 }
 
 @media only screen and (max-width:1199px) {
-    #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content #tabBatteryPackages .breaking-battery-tab {
+    #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .breaking-battery-tab {
         -ms-flex-direction: column;
         flex-direction: column
     }
 }
 
-#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content #tabBatteryPackages .breaking-battery-tab>div {
+#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .breaking-battery-tab>div {
     margin-top: 64px;
     width: 28.63325%
 }
 
 @media only screen and (min-width:1200px) and (max-width:1440px) {
-    #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content #tabBatteryPackages .breaking-battery-tab>div {
+    #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .breaking-battery-tab>div {
         margin-top: 25px;
         width: 30.0636%
     }
 }
 
 @media only screen and (max-width:1199px) {
-    #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content #tabBatteryPackages .breaking-battery-tab>div {
+    #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .breaking-battery-tab>div {
         width: 100%;
         margin-top: 30px;
         padding: 16px;
@@ -2380,9 +2380,9 @@ img {
     }
 }
 
-#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content #tabBatteryPackages .breaking-battery-tab>div h2,
-#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content #tabBatteryPackages .breaking-battery-tab>div .price,
-#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content #tabBatteryPackages .breaking-battery-tab>div .pin-subtitle {
+#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content  .breaking-battery-tab>div h2,
+#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content  .breaking-battery-tab>div .price,
+#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content  .breaking-battery-tab>div .pin-subtitle {
     font-weight: 600;
     font-size: 16px;
     line-height: 150%;
@@ -2390,15 +2390,15 @@ img {
     margin: 0
 }
 
-#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content #tabBatteryPackages .breaking-battery-tab>div p:not(.price) {
+#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content  .breaking-battery-tab>div p:not(.price) {
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
     color: #3c3c3c
 }
 
-#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content #tabBatteryPackages .breaking-battery-tab>div p,
-#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content #tabBatteryPackages .breaking-battery-tab>div .price {
+#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content  .breaking-battery-tab>div p,
+#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content  .breaking-battery-tab>div .price {
     margin-top: 16px
 }
 
