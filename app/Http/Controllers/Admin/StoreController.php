@@ -161,5 +161,12 @@ class StoreController extends BaseController
         return redirect()->route('admin.editStore', ['id' => $id]);
     }
 
+    public function searchStore(Request $request)
+    {
+        $query = $request->input('searchTitleStore');
+        $results = Store::where('title_store', 'LIKE', '%' . $query . '%')->get();
+        return view('admin.cuahang.listStore', ['store' => $results]);
+    }
+
 
 }

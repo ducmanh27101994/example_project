@@ -41,16 +41,16 @@
                             <div class="span3">
                                 <div style="margin-top: 4px; font-size: 12px; font-style: italic;">
                                     Tổng số cửa hàng: <span
-                                        style="color: #A52A2A;">{{count($store) > 0 ? $store->total() : 0}}</span>
+                                        style="color: #A52A2A;">{{!empty($store) ? count($store) : 0}}</span>
 
                                 </div>
                             </div>
-                           <form method="get" action="{{route('admin.indexStore')}}">
+                           <form method="get" action="{{route('search.store')}}">
                                 <div class="span9">
                                    <div class="pagination pagination-small pagination-right">
-                                        <input name="title_store" type="text"
+                                        <input name="searchTitleStore" type="text"
                                              id="txtkeysearch"
-                                              class="inputbox-top" style="width:150px;padding-left: 10px" placeholder="Tìm kiếm cửa hàng" value="{{ request()->get('title_store') }}">
+                                              class="inputbox-top" style="width:150px;padding-left: 10px" placeholder="Tìm kiếm cửa hàng" value="{{ request()->get('searchTitleStore') }}">
                                        <input type="submit" name="controls1$ctl00$ctl00$ctl00$btnsearch"
                                                value="Tìm kiếm"
                                               id="btnsearch" class="buton-css">
