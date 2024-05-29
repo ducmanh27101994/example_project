@@ -2271,7 +2271,7 @@ img {
     }
 }
 
-#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content  .tab-pane-info ul {
+#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .tab-pane-info ul {
     margin-top: 64px;
     width: 100%;
     margin: 64px -40px 0 -40px;
@@ -2380,9 +2380,9 @@ img {
     }
 }
 
-#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content  .breaking-battery-tab>div h2,
-#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content  .breaking-battery-tab>div .price,
-#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content  .breaking-battery-tab>div .pin-subtitle {
+#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .breaking-battery-tab>div h2,
+#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .breaking-battery-tab>div .price,
+#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .breaking-battery-tab>div .pin-subtitle {
     font-weight: 600;
     font-size: 16px;
     line-height: 150%;
@@ -2390,15 +2390,15 @@ img {
     margin: 0
 }
 
-#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content  .breaking-battery-tab>div p:not(.price) {
+#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .breaking-battery-tab>div p:not(.price) {
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
     color: #3c3c3c
 }
 
-#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content  .breaking-battery-tab>div p,
-#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content  .breaking-battery-tab>div .price {
+#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .breaking-battery-tab>div p,
+#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .breaking-battery-tab>div .price {
     margin-top: 16px
 }
 
@@ -2465,7 +2465,7 @@ img {
     }
 
     .pdp-page .top-main .top-main-control {
-    top: 30vw;
+        top: 30vw;
     }
 
     .pdp-page .banner-connect .connect-right {
@@ -3837,6 +3837,10 @@ html {
         padding: 0;
         filter: brightness(1);
     }
+
+    #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .tab-pane-info ul {
+        margin: 0;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -3882,11 +3886,16 @@ html {
     .page-block-image {
         padding-top: 0;
     }
+
     #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .tab-pane-info ul li {
         width: 100%;
         float: unset;
         margin-left: 0;
         margin-right: 0;
+    }
+
+    #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .tab-pane-info ul {
+        margin: 0;
     }
 }
 
