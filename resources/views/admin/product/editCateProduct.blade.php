@@ -11,7 +11,7 @@
 
 
                     <div class="widget-title">
-                        <h4><i class="icon-reorder">Thêm danh mục tin tức</i></h4>
+                        <h4><i class="icon-reorder">Thêm danh mục sản phẩm</i></h4>
                         <div class="ui-widget-content ui-corner-top ui-corner-bottom">
                             <div id="toolbox">
 
@@ -106,6 +106,16 @@
                                                                     <p class="text-danger"
                                                                        style="margin-top: 10px;">{{ $errors->first('name') }}</p>
                                                                 @endif
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="key">
+                                                                <label for="listnhom">Số thứ tự</label>
+                                                            </td>
+                                                            <td>
+                                                                <input id="chkstatus" type="number" class="inputbox" min="0" name="cate_order" placeholder="0">
+
                                                             </td>
                                                         </tr>
 

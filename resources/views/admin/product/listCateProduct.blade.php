@@ -179,7 +179,7 @@
                 echo '<td><a>' . $char . $item->name . '</a></td>';
                 echo '<td align="center"><p class="sptime"><i class="ico-dcreate" title="Ngày tạo"></i>' . $item->created_at . '</p></td>';
                 echo '<td align="center"><a id="LinkButton2" title="Thay đổi trạng thái" >' . $item->status . '</a></td>';
-                echo ' <td align="center"><a href="https://vntravelsimple.com/chuyen-muc-tin-81" target="_blank" title="Xem chi tiết"><img src="https://vntravelsimple.com/templates/admin/images/view.png"></a>&nbsp; &nbsp;<a id="LinkButton3" title="Sửa" href="' . route('admin.edit.cate.product', $item->id) . '"><img src="'.asset('/images/iconedit_c.png').'"></a> &nbsp; &nbsp;</td>';
+                echo ' <td align="center"><a id="LinkButton3" title="Sửa" href="' . route('admin.edit.cate.product', $item->id) . '"><img src="'.asset('/images/iconedit_c.png').'"></a> &nbsp; &nbsp;</td>';
                 echo '</tr>';
                 echo '</tbody>';
         }

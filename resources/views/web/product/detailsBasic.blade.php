@@ -311,24 +311,24 @@
                     </ul>
                     <div class="tab-content" id="myTabContent">
                         <div class="tabInfoProduct" id="tabInfoProduct" role="tabpanel" aria-labelledby="info-tab">
-                            <div class="tab-pane-info d-flex justify-content-between">
+                            <div class="tab-pane-info d-flex justify-content-between" style="display: block;">
                                 {!! $product->overview !!}
                             </div>
                         </div>
                         <div class="tabBatteryPackages" id="tabBatteryPackages" role="tabpanel"
                             aria-labelledby="battery-tab">
-                            <div class="breaking-battery-tab d-flex justify-content-between">
-                                <div>
+                            <div class="breaking-battery-tab d-flex justify-content-between" style="display: block;">
+                               
                                     {!! $product->chassis !!}
-                                </div>
+                               
                             </div>
                         </div>
                         <div class="tabdongcoPackages" id="tabdongcoPackages" role="tabpanel"
-                            aria-labelledby="battery-tab">
+                            aria-labelledby="battery-tab" style="display: block;">
                             <div class="breaking-battery-tab d-flex justify-content-between">
-                                <div>
+                              
                                     {!! $product->engine !!}
-                                </div>
+                              
 
                             </div>
                         </div>

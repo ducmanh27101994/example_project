@@ -106,6 +106,16 @@
 
                                                         <tr>
                                                             <td class="key">
+                                                                <label for="listnhom">Số thứ tự</label>
+                                                            </td>
+                                                            <td>
+                                                                <input id="chkstatus" type="number" min="0" name="cate_order" placeholder="0">
+
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr>
+                                                            <td class="key">
                                                                 <label for="listnhom">Trạng thái</label>
                                                             </td>
                                                             <td>
