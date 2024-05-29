@@ -466,7 +466,8 @@
             filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
             filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
             filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-            allowedContent: true
+            allowedContent: true,
+            removeFormatAttributes: ''
         });
         CKEDITOR.replace('describe', {
             filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -476,6 +477,7 @@
             filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
             filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
             allowedContent: true,
+            removeFormatAttributes: ''
         });
 
     </script>

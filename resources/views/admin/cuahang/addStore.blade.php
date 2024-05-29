@@ -73,7 +73,7 @@
                                     <li class="resp-tab-item hor_1 resp-tab-active" aria-controls="hor_1_tab_item-0"
                                         role="tab"
                                         style="background-color: rgb(255, 255, 255); border-color: rgb(193, 193, 193);">
-                                        Thông cửa hàng chung
+                                        Thông tin cửa hàng
                                     </li>
                                 </ul>
                                 <div class="resp-tabs-container hor_1" style="border-color: rgb(193, 193, 193);">
@@ -81,7 +81,7 @@
                                     <h2 class="resp-accordion hor_1 resp-tab-active" role="tab"
                                         aria-controls="hor_1_tab_item-0"
                                         style="background: none; border-color: rgb(193, 193, 193);"><span
-                                            class="resp-arrow"></span>Thông cửa hàng chung</h2>
+                                            class="resp-arrow"></span>Thông tin cửa hàng</h2>
                                     <div class="resp-tab-content hor_1 resp-tab-content-active"
                                          aria-labelledby="hor_1_tab_item-0" style="display:block">
                                         <div class="row">
@@ -172,20 +172,7 @@
                                             </div>
 
                                             <div class="col-sm-4">
-                                                <div class="block_sp">
-                                                    <div class="form-group">
-                                                        <label class="text-no-bold" data-bind="text:Title"
-                                                               style="font-weight:bold">Hình ảnh đại diện</label>
-                                                        <input type="file" name="image_store" id="flupload"
-                                                               class="btn-change-link pull-right" style="width:180px;">
-                                                    </div>
-                                                    <div class="center">
-
-
-                                                    </div>
-                                                    <p style="color:#c3cfd8" class="center">Sử dụng nút <strong>Chọn
-                                                            hình</strong> để thêm hình.</p>
-                                                </div>
+                                                
                                                 <div class="block_sp">
                                                     <p class="ttg">Khu vực</p>
                                                     <div class="form-group">

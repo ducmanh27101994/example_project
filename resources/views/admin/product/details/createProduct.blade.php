@@ -1737,7 +1737,8 @@
                 filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
                 filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
                 filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true
+                allowedContent: true,
+                removeFormatAttributes: ''
             });
             CKEDITOR.replace('overview', {
                 filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -1746,7 +1747,8 @@
                 filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
                 filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
                 filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true
+                allowedContent: true,
+                removeFormatAttributes: ''
             });
             CKEDITOR.replace('engine', {
                 filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -1755,7 +1757,8 @@
                 filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
                 filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
                 filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true
+                allowedContent: true,
+                removeFormatAttributes: ''
             });
             CKEDITOR.replace('chassis', {
                 filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -1764,7 +1767,8 @@
                 filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
                 filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
                 filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true
+                allowedContent: true,
+                removeFormatAttributes: ''
             });
             CKEDITOR.replace('gogo_desc_3', {
                 filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -1773,7 +1777,8 @@
                 filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
                 filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
                 filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true
+                allowedContent: true,
+                removeFormatAttributes: ''
             });
             CKEDITOR.replace('gogo_desc_banner9', {
                 filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -1782,7 +1787,8 @@
                 filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
                 filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
                 filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true
+                allowedContent: true,
+                removeFormatAttributes: ''
             });
             CKEDITOR.replace('gogo_desc_banner10', {
                 filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -1791,7 +1797,8 @@
                 filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
                 filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
                 filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true
+                allowedContent: true,
+                removeFormatAttributes: ''
             });
             CKEDITOR.replace('gogo_desc_banner11', {
                 filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -1800,7 +1807,8 @@
                 filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
                 filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
                 filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true
+                allowedContent: true,
+                removeFormatAttributes: ''
             });
             CKEDITOR.replace('viva_desc_banner4', {
                 filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -1809,7 +1817,8 @@
                 filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
                 filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
                 filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true
+                allowedContent: true,
+                removeFormatAttributes: ''
             });
             CKEDITOR.replace('viva_desc_banner5', {
                 filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -1818,7 +1827,8 @@
                 filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
                 filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
                 filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true
+                allowedContent: true,
+                removeFormatAttributes: ''
             });
             CKEDITOR.replace('viva_desc_banner6', {
                 filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -1827,7 +1837,8 @@
                 filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
                 filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
                 filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true
+                allowedContent: true,
+                removeFormatAttributes: ''
             });
             CKEDITOR.replace('nispa_desc_4', {
                 filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -1836,7 +1847,8 @@
                 filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
                 filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
                 filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true
+                allowedContent: true,
+                removeFormatAttributes: ''
             });
             CKEDITOR.replace('nispa_desc_3', {
                 filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -1845,7 +1857,8 @@
                 filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
                 filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
                 filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true
+                allowedContent: true,
+                removeFormatAttributes: ''
             });
         </script>
 
