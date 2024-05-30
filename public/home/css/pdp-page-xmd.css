@@ -3628,8 +3628,6 @@ html {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    width: 100% !important;
-    height: 100vh !important;
 }
 
 .page-block-image-360 img {
