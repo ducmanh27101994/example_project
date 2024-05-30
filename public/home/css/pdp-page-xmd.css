@@ -3678,7 +3678,7 @@ html {
     width: 100%;
     color: black;
     line-height: 2;
-    bottom: 100px;
+    bottom: 0;
     left: 0;
     display: flex;
     align-items: center;

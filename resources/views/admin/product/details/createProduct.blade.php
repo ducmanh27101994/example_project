@@ -433,7 +433,7 @@
 
                                     <div id="image-preview-2"></div>
                                 </div>
-
+                                <p class="upload_click">Upload click</p>
                                 <div class="upload__box">
                                     <div class="upload__btn-box">
                                         <label class="upload__btn">
@@ -525,67 +525,64 @@
                                         }
                                     </style>
                                     <script>
-                                        jQuery(document).ready(function () {
-                                            ImgUpload();
-                                        });
+                                        $(document).ready(function () {
+    ImgUpload();
+});
 
-                                        function ImgUpload() {
-                                            var imgWrap = "";
-                                            var imgArray = [];
+function ImgUpload() {
+    var imgWrap = "";
+    var imgArray = [];
 
-                                            $('.upload__inputfile').each(function () {
-                                                $(this).on('change', function (e) {
-                                                    imgWrap = $(this).closest('.upload__box').find('.upload__img-wrap');
-                                                    var maxLength = $(this).attr('data-max_length');
+    $('.upload__inputfile').each(function () {
+        $(this).on('change', function (e) {
+            imgWrap = $(this).closest('.upload__box').find('.upload__img-wrap');
+            var maxLength = $(this).attr('data-max_length');
 
-                                                    var files = e.target.files;
-                                                    var filesArr = Array.prototype.slice.call(files);
-                                                    var iterator = 0;
-                                                    filesArr.forEach(function (f, index) {
+            var files = e.target.files;
+            var filesArr = Array.prototype.slice.call(files);
+            var iterator = 0;
+            filesArr.forEach(function (f, index) {
 
-                                                        if (!f.type.match('image.*')) {
-                                                            return;
-                                                        }
+                if (!f.type.match('image.*')) {
+                    return;
+                }
 
-                                                        if (imgArray.length > maxLength) {
-                                                            return false
-                                                        } else {
-                                                            var len = 0;
-                                                            for (var i = 0; i < imgArray.length; i++) {
-                                                                if (imgArray[i] !== undefined) {
-                                                                    len++;
-                                                                }
-                                                            }
-                                                            if (len > maxLength) {
-                                                                return false;
-                                                            } else {
-                                                                imgArray.push(f);
-                                                                console.log(imgArray)
-                                                                var reader = new FileReader();
-                                                                reader.onload = function (e) {
-                                                                    var html = "<div class='upload__img-box'><div style='background-image: url(" + e.target.result + ")' data-number='" + $(".upload__img-close").length + "' data-file='" + f.name + "' class='img-bg'><div class='upload__img-close'></div></div></div>";
-                                                                    imgWrap.append(html);
-                                                                    iterator++;
-                                                                }
-                                                                reader.readAsDataURL(f);
-                                                            }
-                                                        }
-                                                    });
-                                                });
-                                            });
+                if (imgArray.length >= maxLength) {
+                    return false;
+                } else {
+                    imgArray.push({ file: f, customVariable: '' });
+                    console.log(imgArray);
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                        var html = "<div class='upload__img-box'><input type='text' class='img-name' placeholder='Enter image name'><div style='background-image: url(" + e.target.result + ")' data-number='" + $(".upload__img-close").length + "' data-file='" + f.name + "' class='img-bg'><div class='upload__img-close'></div></div></div>";
+                        imgWrap.append(html);
+                        iterator++;
+                    }
+                    reader.readAsDataURL(f);
+                }
+            });
+        });
+    });
 
-                                            $('body').on('click', ".upload__img-close", function (e) {
-                                                var file = $(this).parent().data("file");
-                                                for (var i = 0; i < imgArray.length; i++) {
-                                                    if (imgArray[i].name === file) {
-                                                        imgArray.splice(i, 1);
-                                                        console.log(imgArray)
-                                                        break;
-                                                    }
-                                                }
-                                                $(this).parent().parent().remove();
-                                            });
-                                        }
+    $('body').on('click', ".upload__img-close", function (e) {
+        var file = $(this).parent().data("file");
+        for (var i = 0; i < imgArray.length; i++) {
+            if (imgArray[i].file.name === file) {
+                imgArray.splice(i, 1);
+                console.log(imgArray);
+                break;
+            }
+        }
+        $(this).parent().parent().remove();
+    });
+
+    $('body').on('blur', ".img-name", function () {
+        var index = $(this).closest('.upload__img-box').index();
+        imgArray[index].customVariable = $(this).val();
+    });
+    
+}
+
                                     </script>
                                 </div>
 
