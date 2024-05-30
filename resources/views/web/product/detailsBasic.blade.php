@@ -148,8 +148,8 @@
 
         if (count($images360) !== 0) {
         ?>
-        <section class="page-block-image page-block-image-360 product-360-views" id="pdp-img-360" style="height: 100vh;display: flex;align-items: center;">
-            <div class="breaking-wrap product-images-list">
+        <section class="page-block-image page-block-image-360 product-360-views" id="pdp-img-360">
+            <div class="product-images-list">
                 <!-- Ảnh 360 -->
                 <div id="threesixty" class="wrap_image"></div>
                 <div class="instruction">
@@ -365,8 +365,8 @@ if (img360 != '') {
         image: img360,
         count: 31,
         perRow: 0,
-        width: '800',
-        height: '800',
+        width: '100%',
+        height: '100vh',
     });
 }
 </script>

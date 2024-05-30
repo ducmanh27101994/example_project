@@ -3626,7 +3626,7 @@ html {
 
 .page-block-image-360 #threesixty {
     background-position: center;
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
