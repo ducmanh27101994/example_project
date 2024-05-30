@@ -365,8 +365,8 @@ if (img360 != '') {
         image: img360,
         count: 31,
         perRow: 0,
-        width: '400',
-        height: '600',
+        width: '800',
+        height: '800',
     });
 }
 </script>
