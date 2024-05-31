@@ -1008,13 +1008,8 @@ img {
     /* height: 40px; */
     padding: 2px;
     border: 2px solid transparent;
-    border-radius: 100%;
     display: block;
     margin: 0 auto
-}
-
-.top-main .myThumbSlider .item-myThumb.slick-current img {
-    border: 2px solid #1464f4
 }
 
 .banner-info .box-banner-info {
@@ -3626,7 +3621,7 @@ html {
 
 .page-block-image-360 #threesixty {
     background-position: center;
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
@@ -3676,7 +3671,7 @@ html {
     width: 100%;
     color: black;
     line-height: 2;
-    bottom: 0;
+    bottom: 50px;
     left: 0;
     display: flex;
     align-items: center;

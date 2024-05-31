@@ -200,7 +200,7 @@ $(document).ready(function () {
         smartSpeed: 650,
         nav: true,
         navText: ['<i class="fa fa-caret-left" aria-hidden="true"></i>', '<i class="fa fa-caret-right" aria-hidden="true"></i>'],
-        stagePadding: parseInt($('#pdp-img-360 .breaking-wrap').css('padding-left')?.replace('px', '') - 15, 10),
+        stagePadding: 100,
         responsive: {
             0: {
                 items: 1,
@@ -211,10 +211,10 @@ $(document).ready(function () {
                 stagePadding: 0
             },
             1000: {
-                stagePadding: parseInt($('#pdp-img-360 .breaking-wrap').css('padding-left')?.replace('px', '') - 15, 10)
+                stagePadding: 100
             },
             1600: {
-                stagePadding: parseInt($('#pdp-img-360 .breaking-wrap').css('padding-left')?.replace('px', '') - 15, 10)
+                stagePadding: 150
             }
         }
     });
