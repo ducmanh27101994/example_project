@@ -380,7 +380,11 @@ class CategoryController extends BaseController
         if (!empty($product)) {
             $feature_description = [];
             if (!empty($request->feature_description)) {
-                foreach ($request->feature_description as $value) {
+                $imagesList = $request->feature_description;
+                usort($imagesList, function($a, $b) {
+                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+                });
+                foreach ($imagesList as $value) {
                     $images = $this->uploadService->upload_param($value);
                     $feature_description = [
                         'product_id' => $product->id,
@@ -393,7 +397,11 @@ class CategoryController extends BaseController
 
             $vehicle_detail_photos = [];
             if (!empty($request->vehicle_detail_photos)) {
-                foreach ($request->vehicle_detail_photos as $value) {
+                $imagesList = $request->vehicle_detail_photos;
+                usort($imagesList, function($a, $b) {
+                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+                });
+                foreach ($imagesList as $value) {
                     $images = $this->uploadService->upload_param($value);
                     $vehicle_detail_photos = [
                         'product_id' => $product->id,
@@ -406,7 +414,11 @@ class CategoryController extends BaseController
 
             $actual_photo = [];
             if (!empty($request->actual_photo)) {
-                foreach ($request->actual_photo as $value) {
+                $imagesList = $request->actual_photo;
+                usort($imagesList, function($a, $b) {
+                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+                });
+                foreach ($imagesList as $value) {
                     $images = $this->uploadService->upload_param($value);
                     $actual_photo = [
                         'product_id' => $product->id,
@@ -419,7 +431,11 @@ class CategoryController extends BaseController
 
             $icon_images = [];
             if (!empty($request->icon_images)) {
-                foreach ($request->icon_images as $value) {
+                $imagesList = $request->icon_images;
+                usort($imagesList, function($a, $b) {
+                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+                });
+                foreach ($imagesList as $value) {
                     $images = $this->uploadService->upload_param($value);
                     $icon_images = [
                         'product_id' => $product->id,
@@ -432,7 +448,11 @@ class CategoryController extends BaseController
 
             $color_image = [];
             if (!empty($request->color_image)) {
-                foreach ($request->color_image as $value) {
+                $imagesList = $request->color_image;
+                usort($imagesList, function($a, $b) {
+                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+                });
+                foreach ($imagesList as $value) {
                     $images = $this->uploadService->upload_param($value);
                     $color_image = [
                         'product_id' => $product->id,
@@ -459,7 +479,11 @@ class CategoryController extends BaseController
                 }
             }
             if (!empty($request->gogo_images_banner2_multi)) {
-                foreach ($request->gogo_images_banner2_multi as $value) {
+                $imagesList = $request->gogo_images_banner2_multi;
+                usort($imagesList, function($a, $b) {
+                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+                });
+                foreach ($imagesList as $value) {
                     $images = $this->uploadService->upload_param($value);
                     $color_image = [
                         'product_id' => $product->id,
@@ -470,7 +494,11 @@ class CategoryController extends BaseController
                 }
             }
             if (!empty($request->gogo_images_banner13)) {
-                foreach ($request->gogo_images_banner13 as $value) {
+                $imagesList = $request->gogo_images_banner13;
+                usort($imagesList, function($a, $b) {
+                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+                });
+                foreach ($imagesList as $value) {
                     $images = $this->uploadService->upload_param($value);
                     $color_image = [
                         'product_id' => $product->id,
@@ -481,7 +509,11 @@ class CategoryController extends BaseController
                 }
             }
             if (!empty($request->gogo_tinhnang_image)) {
-                foreach ($request->gogo_tinhnang_image as $value) {
+                $imagesList = $request->gogo_tinhnang_image;
+                usort($imagesList, function($a, $b) {
+                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+                });
+                foreach ($imagesList as $value) {
                     $images = $this->uploadService->upload_param($value);
                     $color_image = [
                         'product_id' => $product->id,
@@ -492,7 +524,11 @@ class CategoryController extends BaseController
                 }
             }
             if (!empty($request->viva_upload_video)) {
-                foreach ($request->viva_upload_video as $value) {
+                $imagesList = $request->viva_upload_video;
+                usort($imagesList, function($a, $b) {
+                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+                });
+                foreach ($imagesList as $value) {
                     $images = $this->uploadService->upload_param($value);
                     $color_image = [
                         'product_id' => $product->id,
@@ -504,7 +540,11 @@ class CategoryController extends BaseController
             }
 
             if (!empty($request->viva_gallery)) {
-                foreach ($request->viva_gallery as $value) {
+                $imagesList = $request->viva_gallery;
+                usort($imagesList, function($a, $b) {
+                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+                });
+                foreach ($imagesList as $value) {
                     $images = $this->uploadService->upload_param($value);
                     $color_image = [
                         'product_id' => $product->id,
@@ -515,7 +555,11 @@ class CategoryController extends BaseController
                 }
             }
             if (!empty($request->nispa_tinhnang_image)) {
-                foreach ($request->nispa_tinhnang_image as $value) {
+                $imagesList = $request->nispa_tinhnang_image;
+                usort($imagesList, function($a, $b) {
+                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+                });
+                foreach ($imagesList as $value) {
                     $images = $this->uploadService->upload_param($value);
                     $color_image = [
                         'product_id' => $product->id,
@@ -526,7 +570,11 @@ class CategoryController extends BaseController
                 }
             }
             if (!empty($request->nispa_gallery)) {
-                foreach ($request->nispa_gallery as $value) {
+                $imagesList = $request->nispa_gallery;
+                usort($imagesList, function($a, $b) {
+                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+                });
+                foreach ($imagesList as $value) {
                     $images = $this->uploadService->upload_param($value);
                     $color_image = [
                         'product_id' => $product->id,
@@ -803,7 +851,11 @@ class CategoryController extends BaseController
                     ->where('product_id', '=', $id)
                     ->where('code', '=', 'feature_description')
                     ->delete();
-                foreach ($request->feature_description as $value) {
+                $imagesList = $request->feature_description;
+                usort($imagesList, function($a, $b) {
+                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+                });
+                foreach ($imagesList as $value) {
                     $images = $this->uploadService->upload_param($value);
                     $feature_description = [
                         'product_id' => $product->id,
@@ -820,7 +872,11 @@ class CategoryController extends BaseController
                     ->where('product_id', '=', $id)
                     ->where('code', '=', 'vehicle_detail_photos')
                     ->delete();
-                foreach ($request->vehicle_detail_photos as $value) {
+                $imagesList = $request->vehicle_detail_photos;
+                usort($imagesList, function($a, $b) {
+                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+                });
+                foreach ($imagesList as $value) {
                     $images = $this->uploadService->upload_param($value);
                     $vehicle_detail_photos = [
                         'product_id' => $product->id,
@@ -837,7 +893,11 @@ class CategoryController extends BaseController
                     ->where('product_id', '=', $id)
                     ->where('code', '=', 'actual_photo')
                     ->delete();
-                foreach ($request->actual_photo as $value) {
+                $imagesList = $request->actual_photo;
+                usort($imagesList, function($a, $b) {
+                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+                });
+                foreach ($imagesList as $value) {
                     $images = $this->uploadService->upload_param($value);
                     $actual_photo = [
                         'product_id' => $product->id,
@@ -854,7 +914,11 @@ class CategoryController extends BaseController
                     ->where('product_id', '=', $id)
                     ->where('code', '=', 'icon_images')
                     ->delete();
-                foreach ($request->icon_images as $value) {
+                $imagesList = $request->icon_images;
+                usort($imagesList, function($a, $b) {
+                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+                });
+                foreach ($imagesList as $value) {
                     $images = $this->uploadService->upload_param($value);
                     $icon_images = [
                         'product_id' => $product->id,
@@ -871,7 +935,11 @@ class CategoryController extends BaseController
                     ->where('product_id', '=', $id)
                     ->where('code', '=', 'color_image')
                     ->delete();
-                foreach ($request->color_image as $value) {
+                $imagesList = $request->color_image;
+                usort($imagesList, function($a, $b) {
+                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+                });
+                foreach ($imagesList as $value) {
                     $images = $this->uploadService->upload_param($value);
                     $color_image = [
                         'product_id' => $product->id,
@@ -907,7 +975,11 @@ class CategoryController extends BaseController
                     ->where('product_id', '=', $id)
                     ->where('code', '=', 'gogo_images_banner2_multi')
                     ->delete();
-                foreach ($request->gogo_images_banner2_multi as $value) {
+                $imagesList = $request->gogo_images_banner2_multi;
+                usort($imagesList, function($a, $b) {
+                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+                });
+                foreach ($imagesList as $value) {
                     $images = $this->uploadService->upload_param($value);
                     $color_image = [
                         'product_id' => $product->id,
@@ -922,7 +994,11 @@ class CategoryController extends BaseController
                     ->where('product_id', '=', $id)
                     ->where('code', '=', 'gogo_images_banner13')
                     ->delete();
-                foreach ($request->gogo_images_banner13 as $value) {
+                $imagesList = $request->gogo_images_banner13;
+                usort($imagesList, function($a, $b) {
+                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+                });
+                foreach ($imagesList as $value) {
                     $images = $this->uploadService->upload_param($value);
                     $color_image = [
                         'product_id' => $product->id,
@@ -937,7 +1013,11 @@ class CategoryController extends BaseController
                     ->where('product_id', '=', $id)
                     ->where('code', '=', 'gogo_tinhnang_image')
                     ->delete();
-                foreach ($request->gogo_tinhnang_image as $value) {
+                $imagesList = $request->gogo_tinhnang_image;
+                usort($imagesList, function($a, $b) {
+                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+                });
+                foreach ($imagesList as $value) {
                     $images = $this->uploadService->upload_param($value);
                     $color_image = [
                         'product_id' => $product->id,
@@ -952,7 +1032,11 @@ class CategoryController extends BaseController
                     ->where('product_id', '=', $id)
                     ->where('code', '=', 'viva_upload_video')
                     ->delete();
-                foreach ($request->viva_upload_video as $value) {
+                $imagesList = $request->viva_upload_video;
+                usort($imagesList, function($a, $b) {
+                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+                });
+                foreach ($imagesList as $value) {
                     $images = $this->uploadService->upload_param($value);
                     $color_image = [
                         'product_id' => $product->id,
@@ -968,7 +1052,11 @@ class CategoryController extends BaseController
                     ->where('product_id', '=', $id)
                     ->where('code', '=', 'viva_gallery')
                     ->delete();
-                foreach ($request->viva_gallery as $value) {
+                $imagesList = $request->viva_gallery;
+                usort($imagesList, function($a, $b) {
+                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+                });
+                foreach ($imagesList as $value) {
                     $images = $this->uploadService->upload_param($value);
                     $color_image = [
                         'product_id' => $product->id,
@@ -983,7 +1071,11 @@ class CategoryController extends BaseController
                     ->where('product_id', '=', $id)
                     ->where('code', '=', 'nispa_tinhnang_image')
                     ->delete();
-                foreach ($request->nispa_tinhnang_image as $value) {
+                $imagesList = $request->nispa_tinhnang_image;
+                usort($imagesList, function($a, $b) {
+                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+                });
+                foreach ($imagesList as $value) {
                     $images = $this->uploadService->upload_param($value);
                     $color_image = [
                         'product_id' => $product->id,
@@ -998,7 +1090,11 @@ class CategoryController extends BaseController
                     ->where('product_id', '=', $id)
                     ->where('code', '=', 'nispa_gallery')
                     ->delete();
-                foreach ($request->nispa_gallery as $value) {
+                $imagesList = $request->nispa_gallery;
+                usort($imagesList, function($a, $b) {
+                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
+                });
+                foreach ($imagesList as $value) {
                     $images = $this->uploadService->upload_param($value);
                     $color_image = [
                         'product_id' => $product->id,
