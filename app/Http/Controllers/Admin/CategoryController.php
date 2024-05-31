@@ -378,212 +378,58 @@ class CategoryController extends BaseController
         $product = $this->productRepositories->create($data);
 
         if (!empty($product)) {
-            $feature_description = [];
             if (!empty($request->feature_description)) {
-                $imagesList = $request->feature_description;
-                usort($imagesList, function($a, $b) {
-                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
-                });
-                foreach ($imagesList as $value) {
-                    $images = $this->uploadService->upload_param($value);
-                    $feature_description = [
-                        'product_id' => $product->id,
-                        'code' => 'feature_description',
-                        'images' => $images
-                    ];
-                    $this->imagesRepositories->create($feature_description);
-                }
+                $this->processImagesCreate($request->feature_description, $product->id, 'feature_description');
             }
 
-            $vehicle_detail_photos = [];
             if (!empty($request->vehicle_detail_photos)) {
-                $imagesList = $request->vehicle_detail_photos;
-                usort($imagesList, function($a, $b) {
-                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
-                });
-                foreach ($imagesList as $value) {
-                    $images = $this->uploadService->upload_param($value);
-                    $vehicle_detail_photos = [
-                        'product_id' => $product->id,
-                        'code' => 'vehicle_detail_photos',
-                        'images' => $images
-                    ];
-                    $this->imagesRepositories->create($vehicle_detail_photos);
-                }
+                $this->processImagesCreate($request->vehicle_detail_photos, $product->id, 'vehicle_detail_photos');
             }
 
-            $actual_photo = [];
             if (!empty($request->actual_photo)) {
-                $imagesList = $request->actual_photo;
-                usort($imagesList, function($a, $b) {
-                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
-                });
-                foreach ($imagesList as $value) {
-                    $images = $this->uploadService->upload_param($value);
-                    $actual_photo = [
-                        'product_id' => $product->id,
-                        'code' => 'actual_photo',
-                        'images' => $images
-                    ];
-                    $this->imagesRepositories->create($actual_photo);
-                }
+                $this->processImagesCreate($request->actual_photo, $product->id, 'actual_photo');
             }
 
-            $icon_images = [];
             if (!empty($request->icon_images)) {
-                $imagesList = $request->icon_images;
-                usort($imagesList, function($a, $b) {
-                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
-                });
-                foreach ($imagesList as $value) {
-                    $images = $this->uploadService->upload_param($value);
-                    $icon_images = [
-                        'product_id' => $product->id,
-                        'code' => 'icon_images',
-                        'images' => $images
-                    ];
-                    $this->imagesRepositories->create($icon_images);
-                }
+                $this->processImagesCreate($request->icon_images, $product->id, 'icon_images');
             }
 
-            $color_image = [];
             if (!empty($request->color_image)) {
-                $imagesList = $request->color_image;
-                usort($imagesList, function($a, $b) {
-                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
-                });
-                foreach ($imagesList as $value) {
-                    $images = $this->uploadService->upload_param($value);
-                    $color_image = [
-                        'product_id' => $product->id,
-                        'code' => 'color_image',
-                        'images' => $images
-                    ];
-                    $this->imagesRepositories->create($color_image);
-                }
+                $this->processImagesCreate($request->color_image, $product->id, 'color_image');
             }
 
             if (!empty($request->images360)) {
-                $images360 = $request->images360;
-                usort($images360, function($a, $b) {
-                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
-                });
-                foreach ($images360 as $value) {
-                    $images = $this->uploadService->upload_param($value);
-                    $color_image = [
-                        'product_id' => $product->id,
-                        'code' => 'images360',
-                        'images' => $images
-                    ];
-                    $this->imagesRepositories->create($color_image);
-                }
+                $this->processImagesCreate($request->images360, $product->id, 'images360');
             }
+
             if (!empty($request->gogo_images_banner2_multi)) {
-                $imagesList = $request->gogo_images_banner2_multi;
-                usort($imagesList, function($a, $b) {
-                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
-                });
-                foreach ($imagesList as $value) {
-                    $images = $this->uploadService->upload_param($value);
-                    $color_image = [
-                        'product_id' => $product->id,
-                        'code' => 'gogo_images_banner2_multi',
-                        'images' => $images
-                    ];
-                    $this->imagesRepositories->create($color_image);
-                }
+                $this->processImagesCreate($request->gogo_images_banner2_multi, $product->id, 'gogo_images_banner2_multi');
             }
+
             if (!empty($request->gogo_images_banner13)) {
-                $imagesList = $request->gogo_images_banner13;
-                usort($imagesList, function($a, $b) {
-                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
-                });
-                foreach ($imagesList as $value) {
-                    $images = $this->uploadService->upload_param($value);
-                    $color_image = [
-                        'product_id' => $product->id,
-                        'code' => 'gogo_images_banner13',
-                        'images' => $images
-                    ];
-                    $this->imagesRepositories->create($color_image);
-                }
+                $this->processImagesCreate($request->gogo_images_banner13, $product->id, 'gogo_images_banner13');
             }
+
             if (!empty($request->gogo_tinhnang_image)) {
-                $imagesList = $request->gogo_tinhnang_image;
-                usort($imagesList, function($a, $b) {
-                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
-                });
-                foreach ($imagesList as $value) {
-                    $images = $this->uploadService->upload_param($value);
-                    $color_image = [
-                        'product_id' => $product->id,
-                        'code' => 'gogo_tinhnang_image',
-                        'images' => $images
-                    ];
-                    $this->imagesRepositories->create($color_image);
-                }
+                $this->processImagesCreate($request->gogo_tinhnang_image, $product->id, 'gogo_tinhnang_image');
             }
+
             if (!empty($request->viva_upload_video)) {
-                $imagesList = $request->viva_upload_video;
-                usort($imagesList, function($a, $b) {
-                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
-                });
-                foreach ($imagesList as $value) {
-                    $images = $this->uploadService->upload_param($value);
-                    $color_image = [
-                        'product_id' => $product->id,
-                        'code' => 'viva_upload_video',
-                        'images' => $images
-                    ];
-                    $this->imagesRepositories->create($color_image);
-                }
+                $this->processImagesCreate($request->viva_upload_video, $product->id, 'viva_upload_video');
             }
 
             if (!empty($request->viva_gallery)) {
-                $imagesList = $request->viva_gallery;
-                usort($imagesList, function($a, $b) {
-                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
-                });
-                foreach ($imagesList as $value) {
-                    $images = $this->uploadService->upload_param($value);
-                    $color_image = [
-                        'product_id' => $product->id,
-                        'code' => 'viva_gallery',
-                        'images' => $images
-                    ];
-                    $this->imagesRepositories->create($color_image);
-                }
+                $this->processImagesCreate($request->viva_gallery, $product->id, 'viva_gallery');
             }
+
             if (!empty($request->nispa_tinhnang_image)) {
-                $imagesList = $request->nispa_tinhnang_image;
-                usort($imagesList, function($a, $b) {
-                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
-                });
-                foreach ($imagesList as $value) {
-                    $images = $this->uploadService->upload_param($value);
-                    $color_image = [
-                        'product_id' => $product->id,
-                        'code' => 'nispa_tinhnang_image',
-                        'images' => $images
-                    ];
-                    $this->imagesRepositories->create($color_image);
-                }
+                $this->processImagesCreate($request->nispa_tinhnang_image, $product->id, 'nispa_tinhnang_image');
             }
+
             if (!empty($request->nispa_gallery)) {
-                $imagesList = $request->nispa_gallery;
-                usort($imagesList, function($a, $b) {
-                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
-                });
-                foreach ($imagesList as $value) {
-                    $images = $this->uploadService->upload_param($value);
-                    $color_image = [
-                        'product_id' => $product->id,
-                        'code' => 'nispa_gallery',
-                        'images' => $images
-                    ];
-                    $this->imagesRepositories->create($color_image);
-                }
+                $this->processImagesCreate($request->nispa_gallery, $product->id, 'nispa_gallery');
             }
+
 
 
         }
@@ -845,265 +691,58 @@ class CategoryController extends BaseController
 
 
         if (!empty($product)) {
-            $feature_description = [];
             if (!empty($request->feature_description)) {
-                DB::table('images_products')
-                    ->where('product_id', '=', $id)
-                    ->where('code', '=', 'feature_description')
-                    ->delete();
-                $imagesList = $request->feature_description;
-                usort($imagesList, function($a, $b) {
-                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
-                });
-                foreach ($imagesList as $value) {
-                    $images = $this->uploadService->upload_param($value);
-                    $feature_description = [
-                        'product_id' => $product->id,
-                        'code' => 'feature_description',
-                        'images' => $images
-                    ];
-                    $this->imagesRepositories->create($feature_description);
-                }
+                $this->processImages($request->feature_description, $product->id, 'feature_description');
             }
 
-            $vehicle_detail_photos = [];
             if (!empty($request->vehicle_detail_photos)) {
-                DB::table('images_products')
-                    ->where('product_id', '=', $id)
-                    ->where('code', '=', 'vehicle_detail_photos')
-                    ->delete();
-                $imagesList = $request->vehicle_detail_photos;
-                usort($imagesList, function($a, $b) {
-                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
-                });
-                foreach ($imagesList as $value) {
-                    $images = $this->uploadService->upload_param($value);
-                    $vehicle_detail_photos = [
-                        'product_id' => $product->id,
-                        'code' => 'vehicle_detail_photos',
-                        'images' => $images
-                    ];
-                    $this->imagesRepositories->create($vehicle_detail_photos);
-                }
+                $this->processImages($request->vehicle_detail_photos, $product->id, 'vehicle_detail_photos');
             }
 
-            $actual_photo = [];
             if (!empty($request->actual_photo)) {
-                DB::table('images_products')
-                    ->where('product_id', '=', $id)
-                    ->where('code', '=', 'actual_photo')
-                    ->delete();
-                $imagesList = $request->actual_photo;
-                usort($imagesList, function($a, $b) {
-                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
-                });
-                foreach ($imagesList as $value) {
-                    $images = $this->uploadService->upload_param($value);
-                    $actual_photo = [
-                        'product_id' => $product->id,
-                        'code' => 'actual_photo',
-                        'images' => $images
-                    ];
-                    $this->imagesRepositories->create($actual_photo);
-                }
+                $this->processImages($request->actual_photo, $product->id, 'actual_photo');
             }
 
-            $icon_images = [];
             if (!empty($request->icon_images)) {
-                DB::table('images_products')
-                    ->where('product_id', '=', $id)
-                    ->where('code', '=', 'icon_images')
-                    ->delete();
-                $imagesList = $request->icon_images;
-                usort($imagesList, function($a, $b) {
-                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
-                });
-                foreach ($imagesList as $value) {
-                    $images = $this->uploadService->upload_param($value);
-                    $icon_images = [
-                        'product_id' => $product->id,
-                        'code' => 'icon_images',
-                        'images' => $images
-                    ];
-                    $this->imagesRepositories->create($icon_images);
-                }
+                $this->processImages($request->icon_images, $product->id, 'icon_images');
             }
 
-            $color_image = [];
             if (!empty($request->color_image)) {
-                DB::table('images_products')
-                    ->where('product_id', '=', $id)
-                    ->where('code', '=', 'color_image')
-                    ->delete();
-                $imagesList = $request->color_image;
-                usort($imagesList, function($a, $b) {
-                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
-                });
-                foreach ($imagesList as $value) {
-                    $images = $this->uploadService->upload_param($value);
-                    $color_image = [
-                        'product_id' => $product->id,
-                        'code' => 'color_image',
-                        'images' => $images
-                    ];
-                    $this->imagesRepositories->create($color_image);
-                }
+                $this->processImages($request->color_image, $product->id, 'color_image');
             }
 
             if (!empty($request->images360)) {
-                DB::table('images_products')
-                    ->where('product_id', '=', $id)
-                    ->where('code', '=', 'images360')
-                    ->delete();
-                $images360 = $request->images360;
-                usort($images360, function($a, $b) {
-                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
-                });
-                foreach ($images360 as $value) {
-                    $images = $this->uploadService->upload_param($value);
-                    $color_image = [
-                        'product_id' => $product->id,
-                        'code' => 'images360',
-                        'images' => $images
-                    ];
-                    $this->imagesRepositories->create($color_image);
-                }
+                $this->processImages($request->images360, $product->id, 'images360');
             }
 
             if (!empty($request->gogo_images_banner2_multi)) {
-                DB::table('images_products')
-                    ->where('product_id', '=', $id)
-                    ->where('code', '=', 'gogo_images_banner2_multi')
-                    ->delete();
-                $imagesList = $request->gogo_images_banner2_multi;
-                usort($imagesList, function($a, $b) {
-                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
-                });
-                foreach ($imagesList as $value) {
-                    $images = $this->uploadService->upload_param($value);
-                    $color_image = [
-                        'product_id' => $product->id,
-                        'code' => 'gogo_images_banner2_multi',
-                        'images' => $images
-                    ];
-                    $this->imagesRepositories->create($color_image);
-                }
+                $this->processImages($request->gogo_images_banner2_multi, $product->id, 'gogo_images_banner2_multi');
             }
+
             if (!empty($request->gogo_images_banner13)) {
-                DB::table('images_products')
-                    ->where('product_id', '=', $id)
-                    ->where('code', '=', 'gogo_images_banner13')
-                    ->delete();
-                $imagesList = $request->gogo_images_banner13;
-                usort($imagesList, function($a, $b) {
-                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
-                });
-                foreach ($imagesList as $value) {
-                    $images = $this->uploadService->upload_param($value);
-                    $color_image = [
-                        'product_id' => $product->id,
-                        'code' => 'gogo_images_banner13',
-                        'images' => $images
-                    ];
-                    $this->imagesRepositories->create($color_image);
-                }
+                $this->processImages($request->gogo_images_banner13, $product->id, 'gogo_images_banner13');
             }
+
             if (!empty($request->gogo_tinhnang_image)) {
-                DB::table('images_products')
-                    ->where('product_id', '=', $id)
-                    ->where('code', '=', 'gogo_tinhnang_image')
-                    ->delete();
-                $imagesList = $request->gogo_tinhnang_image;
-                usort($imagesList, function($a, $b) {
-                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
-                });
-                foreach ($imagesList as $value) {
-                    $images = $this->uploadService->upload_param($value);
-                    $color_image = [
-                        'product_id' => $product->id,
-                        'code' => 'gogo_tinhnang_image',
-                        'images' => $images
-                    ];
-                    $this->imagesRepositories->create($color_image);
-                }
+                $this->processImages($request->gogo_tinhnang_image, $product->id, 'gogo_tinhnang_image');
             }
+
             if (!empty($request->viva_upload_video)) {
-                DB::table('images_products')
-                    ->where('product_id', '=', $id)
-                    ->where('code', '=', 'viva_upload_video')
-                    ->delete();
-                $imagesList = $request->viva_upload_video;
-                usort($imagesList, function($a, $b) {
-                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
-                });
-                foreach ($imagesList as $value) {
-                    $images = $this->uploadService->upload_param($value);
-                    $color_image = [
-                        'product_id' => $product->id,
-                        'code' => 'viva_upload_video',
-                        'images' => $images
-                    ];
-                    $this->imagesRepositories->create($color_image);
-                }
+                $this->processImages($request->viva_upload_video, $product->id, 'viva_upload_video');
             }
 
             if (!empty($request->viva_gallery)) {
-                DB::table('images_products')
-                    ->where('product_id', '=', $id)
-                    ->where('code', '=', 'viva_gallery')
-                    ->delete();
-                $imagesList = $request->viva_gallery;
-                usort($imagesList, function($a, $b) {
-                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
-                });
-                foreach ($imagesList as $value) {
-                    $images = $this->uploadService->upload_param($value);
-                    $color_image = [
-                        'product_id' => $product->id,
-                        'code' => 'viva_gallery',
-                        'images' => $images
-                    ];
-                    $this->imagesRepositories->create($color_image);
-                }
+                $this->processImages($request->viva_gallery, $product->id, 'viva_gallery');
             }
+
             if (!empty($request->nispa_tinhnang_image)) {
-                DB::table('images_products')
-                    ->where('product_id', '=', $id)
-                    ->where('code', '=', 'nispa_tinhnang_image')
-                    ->delete();
-                $imagesList = $request->nispa_tinhnang_image;
-                usort($imagesList, function($a, $b) {
-                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
-                });
-                foreach ($imagesList as $value) {
-                    $images = $this->uploadService->upload_param($value);
-                    $color_image = [
-                        'product_id' => $product->id,
-                        'code' => 'nispa_tinhnang_image',
-                        'images' => $images
-                    ];
-                    $this->imagesRepositories->create($color_image);
-                }
+                $this->processImages($request->nispa_tinhnang_image, $product->id, 'nispa_tinhnang_image');
             }
+
             if (!empty($request->nispa_gallery)) {
-                DB::table('images_products')
-                    ->where('product_id', '=', $id)
-                    ->where('code', '=', 'nispa_gallery')
-                    ->delete();
-                $imagesList = $request->nispa_gallery;
-                usort($imagesList, function($a, $b) {
-                    return strcmp($a->getClientOriginalName(), $b->getClientOriginalName());
-                });
-                foreach ($imagesList as $value) {
-                    $images = $this->uploadService->upload_param($value);
-                    $color_image = [
-                        'product_id' => $product->id,
-                        'code' => 'nispa_gallery',
-                        'images' => $images
-                    ];
-                    $this->imagesRepositories->create($color_image);
-                }
+                $this->processImages($request->nispa_gallery, $product->id, 'nispa_gallery');
             }
+
         }
 
         toastr()->success('Thêm mới thành công', 'Success');
@@ -1189,6 +828,71 @@ class CategoryController extends BaseController
         $product = Product::findOrFail($id);
         $product->delete();
         return redirect()->route('admin.list.product')->with('success', 'Sản phẩm đã được xóa thành công.');
+    }
+
+    private function processImages($imagesList, $productId, $code)
+    {
+        if (!empty($imagesList)) {
+            DB::table('images_products')
+                ->where('product_id', '=', $productId)
+                ->where('code', '=', $code)
+                ->delete();
+
+            usort($imagesList, function($a, $b) {
+                $nameA = $a->getClientOriginalName();
+                $nameB = $b->getClientOriginalName();
+
+                preg_match('/\d+/', $nameA, $matchesA);
+                preg_match('/\d+/', $nameB, $matchesB);
+
+                $numA = $matchesA[0] ?? 0;
+                $numB = $matchesB[0] ?? 0;
+
+                return $numA - $numB;
+            });
+
+            foreach ($imagesList as $value) {
+                $images = $this->uploadService->upload_param($value);
+                $color_image = [
+                    'product_id' => $productId,
+                    'code' => $code,
+                    'images' => $images
+                ];
+                $this->imagesRepositories->create($color_image);
+            }
+        }
+    }
+
+    private function processImagesCreate($imagesList, $productId, $code)
+    {
+        if (!empty($imagesList)) {
+
+
+            usort($imagesList, function($a, $b) {
+                $nameA = $a->getClientOriginalName();
+                $nameB = $b->getClientOriginalName();
+
+                // Trích xuất số từ tên
+                preg_match('/\d+/', $nameA, $matchesA);
+                preg_match('/\d+/', $nameB, $matchesB);
+
+                $numA = $matchesA[0] ?? 0;
+                $numB = $matchesB[0] ?? 0;
+
+                return $numA - $numB;
+            });
+
+
+            foreach ($imagesList as $value) {
+                $images = $this->uploadService->upload_param($value);
+                $imageData = [
+                    'product_id' => $productId,
+                    'code' => $code,
+                    'images' => $images
+                ];
+                $this->imagesRepositories->create($imageData);
+            }
+        }
     }
 
 
