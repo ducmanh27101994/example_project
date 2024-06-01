@@ -311,20 +311,20 @@
                     </ul>
                     <div class="tab-content" id="myTabContent">
                         <div class="tabInfoProduct" id="tabInfoProduct" role="tabpanel" aria-labelledby="info-tab">
-                            <div class="tab-pane-info d-flex justify-content-between" style="display: block;">
+                            <div class="tab-pane-info d-flex justify-content-between">
                                 {!! $product->overview !!}
                             </div>
                         </div>
                         <div class="tabBatteryPackages" id="tabBatteryPackages" role="tabpanel"
                             aria-labelledby="battery-tab">
-                            <div class="tab-pane-info breaking-battery-tab d-flex justify-content-between" style="display: block;">
+                            <div class="tab-pane-info breaking-battery-tab d-flex justify-content-between">
                                
                                     {!! $product->chassis !!}
                                
                             </div>
                         </div>
                         <div class="tabdongcoPackages" id="tabdongcoPackages" role="tabpanel"
-                            aria-labelledby="battery-tab" style="display: block;">
+                            aria-labelledby="battery-tab">
                             <div class="tab-pane-info breaking-battery-tab d-flex justify-content-between">
                               
                                     {!! $product->engine !!}
@@ -336,7 +336,7 @@
                 </div>
             </div>
         </section>
-        <section class="page-block-image">
+        <section class="page-block-image" style="clear: both">
             <div class="breaking-wrap">
                 <div class="wrap_image">
                     <img src="{{ asset('home/images/bg_facepr.png') }}" alt="coverimg">
