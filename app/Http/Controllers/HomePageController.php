@@ -254,26 +254,31 @@ class HomePageController extends BaseController
         $feature_description = DB::table('images_products')
             ->where('product_id', '=', $product->id)
             ->where('code', '=', 'feature_description')
+            ->orderBy('id', 'asc')
             ->get();
 
         $vehicle_detail_photos = DB::table('images_products')
             ->where('product_id', '=', $product->id)
             ->where('code', '=', 'vehicle_detail_photos')
+            ->orderBy('id', 'asc')
             ->get();
 
         $actual_photo = DB::table('images_products')
             ->where('product_id', '=', $product->id)
             ->where('code', '=', 'actual_photo')
+            ->orderBy('id', 'asc')
             ->get();
 
         $icon_images = DB::table('images_products')
             ->where('product_id', '=', $product->id)
             ->where('code', '=', 'icon_images')
+            ->orderBy('id', 'asc')
             ->get();
 
         $color_image = DB::table('images_products')
             ->where('product_id', '=', $product->id)
             ->where('code', '=', 'color_image')
+            ->orderBy('id', 'asc')
             ->get();
 
         $images360 = DB::table('images_products')
@@ -285,42 +290,42 @@ class HomePageController extends BaseController
         $gogo_images_banner2_multi = DB::table('images_products')
             ->where('product_id', '=', $product->id)
             ->where('code', '=', 'gogo_images_banner2_multi')
-            ->orderBy('created_at', 'asc')
+            ->orderBy('id', 'asc')
             ->get();
 
         $gogo_images_banner13 = DB::table('images_products')
             ->where('product_id', '=', $product->id)
             ->where('code', '=', 'gogo_images_banner13')
-            ->orderBy('created_at', 'asc')
+            ->orderBy('id', 'asc')
             ->get();
 
         $gogo_tinhnang_image = DB::table('images_products')
             ->where('product_id', '=', $product->id)
             ->where('code', '=', 'gogo_tinhnang_image')
-            ->orderBy('created_at', 'asc')
+            ->orderBy('id', 'asc')
             ->get();
 
         $viva_upload_video = DB::table('images_products')
             ->where('product_id', '=', $product->id)
             ->where('code', '=', 'viva_upload_video')
-            ->orderBy('created_at', 'asc')
+            ->orderBy('id', 'asc')
             ->get();
         $viva_gallery = DB::table('images_products')
             ->where('product_id', '=', $product->id)
             ->where('code', '=', 'viva_gallery')
-            ->orderBy('created_at', 'asc')
+            ->orderBy('id', 'asc')
             ->get();
 
         $nispa_tinhnang_image = DB::table('images_products')
             ->where('product_id', '=', $product->id)
             ->where('code', '=', 'nispa_tinhnang_image')
-            ->orderBy('created_at', 'asc')
+            ->orderBy('id', 'asc')
             ->get();
 
         $nispa_gallery = DB::table('images_products')
             ->where('product_id', '=', $product->id)
             ->where('code', '=', 'nispa_gallery')
-            ->orderBy('created_at', 'asc')
+            ->orderBy('id', 'asc')
             ->get();
 
         if ($product->interface_type == 2) {

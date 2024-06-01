@@ -62,7 +62,7 @@ class StoreController extends BaseController
         }
         $result = DB::table('store')->orderBy('id','desc')->first();
         $data = [
-            'id' => $result->id ?? '',
+            'id' => $result->id + 1 ?? '',
             'image_store' => $image_store ?? '',
             'status' => $status,
             'title_store' => $request->title_store,
