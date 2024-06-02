@@ -125,7 +125,7 @@
 
         <!-- load icon màu sắc và hình ảnh -->
         <div class="top-main-img">
-            <div class="">
+            <div class="myThumbSlider">
                 @if(!empty($icon_images) && !empty($color_image))
                     @for($i = 0; $i < count($icon_images); $i++)
                         <div class>
