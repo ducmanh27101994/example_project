@@ -178,7 +178,7 @@
 
     <section class="page-block-image page-block-image-360 product-360-views" id="pdp-img-360"
         style="background: #040406;">
-        <div class="breaking-wrap product-images-list">
+        <div class="product-images-list">
             <!-- Ảnh 360 -->
             <div id="threesixty" class="wrap_image"></div>
             <div class="instruction">
@@ -351,7 +351,7 @@
             count: 31,
             perRow: 0,
             width: '100%',
-            height: 680,
+            height: 800,
         });
     }
 </script>
