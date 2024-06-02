@@ -2346,8 +2346,15 @@ img {
 
 @media only screen and (min-width:1200px) and (max-width:1440px) {
     #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .tab-pane-info ul li {
-        margin-top: 1em
+        margin-top: 1em;
+        max-width: 27%;
     }
+
+    #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .tab-pane-info ul li .fw-light {
+        margin-right: 0;
+        max-width: 48%;
+    }
+
 }
 
 @media only screen and (max-width:1199px) {
