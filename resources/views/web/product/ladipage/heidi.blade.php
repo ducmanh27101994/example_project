@@ -114,7 +114,7 @@
 
     <!-- Hình ảnh xe da dạng màu sắc(section 4): Banner_color.png -->
     <section class="section section-color"
-        style="background: #000 url({{ $product->heidi_images_banner5 ?? '' }}) no-repeat;">
+        style="background: #000 url({{ $product->heidi_images_banner5 ?? '' }}) no-repeat;max-height: 100vh;">
 
         <div class="head_color_title">
             <h2>Đa dạng màu sắc</h2>
