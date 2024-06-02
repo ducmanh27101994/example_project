@@ -125,7 +125,7 @@
 
         <!-- load icon màu sắc và hình ảnh -->
         <div class="top-main-img">
-            <div class="mySliderTop">
+            <div class="myThumbSlider">
                 @if(!empty($icon_images) && !empty($color_image))
                     @for($i = 0; $i < count($icon_images); $i++)
                         <div class>
@@ -140,7 +140,7 @@
             </div>
         </div>
         <div class="top-main-control" style="max-width: 800px;margin:auto; overflow: hidden;">
-            <div class="myThumbSlider" data-showitem="8">
+            <div class="mySliderTop" data-showitem="8">
                 @if(!empty($icon_images))
                     @foreach($icon_images as $value)
                         <div class="item-myThumb">

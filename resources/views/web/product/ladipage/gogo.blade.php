@@ -238,7 +238,7 @@
         </div>
 
             <div class="top-main-img">
-                <div class="mySliderTop">
+                <div class="myThumbSlider">
                     @if(!empty($icon_images) && !empty($color_image))
                         @for($i=0; $i < count($icon_images) ; $i++)
                             <div class>
@@ -254,7 +254,7 @@
                 </div>
             </div>
             <div class="top-main-control" >
-                <div class="myThumbSlider" data-showitem="7">
+                <div class="mySliderTop" data-showitem="7">
                     @if(!empty($icon_images))
                         @foreach($icon_images as $value)
                             <div class="item-myThumb">
