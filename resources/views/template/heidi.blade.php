@@ -100,48 +100,158 @@
                 họ.</p>
         </div>
 
-        <div class="top-main-img">
-            <div class="mySliderTop">
-                <div class>
-                    <picture>
-                        <source srcset="{{ asset('home/images/color_image_heidi.png') }}" type="image/webp" />
-                        <img data-lazy="{{ asset('home/images/color_image_heidi.png') }}" title
-                            alt="Xe máy điện VinFast Evo200 màu vàng" width="100%" />
-                    </picture>
-                </div>
-                <div class>
-                    <picture>
-                        <source data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}" type="image/webp" />
-                        <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
-                            alt="Xe máy điện VinFast Evo200 màu đen" width="100%" />
-                    </picture>
-                </div>
-                <div class>
-                    <picture>
-                        <source data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}" type="image/webp" />
-                        <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
-                            alt="Xe máy điện VinFast Evo200 màu đỏ" width="100%" />
-                    </picture>
-                </div>
-                <div class>
-                    <picture>
-                        <source data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}" type="image/webp" />
-                        <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
-                            alt="Xe máy điện VinFast Evo200 màu xanh" width="100%" />
-                    </picture>
-                </div>
-                <div class>
-                    <picture>
-                        <source data-lazy-srcset="{{ asset('home/images/color_image_heidi.png') }}" type="image/webp" />
-                        <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
-                            alt="Xe máy điện VinFast Evo200 màu trắng" width="100%" />
-                    </picture>
+        <div class="container">
+            <div class="row">
+                <div class="top-main-img col-xs-12" style="overflow: hidden;">
+                    <div class="myThumbSlider">
+                        <div class>
+                            <picture>
+                                
+                                <img data-lazy="{{ asset('home/images/color_image_heidi.png') }}" title
+                                    alt="Xe máy điện VinFast Evo200 màu vàng" width="100%" />
+                            </picture>
+                        </div>
+                        <div class>
+                            <picture>
+                                
+                                <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                                    alt="Xe máy điện VinFast Evo200 màu đen" width="100%" />
+                            </picture>
+                        </div>
+                        <div class>
+                            <picture>
+                                
+                                <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                                    alt="Xe máy điện VinFast Evo200 màu đỏ" width="100%" />
+                            </picture>
+                        </div>
+                        <div class>
+                            <picture>
+                                
+                                <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                                    alt="Xe máy điện VinFast Evo200 màu xanh" width="100%" />
+                            </picture>
+                        </div>
+                        <div class>
+                            <picture>
+                                
+                                <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                                    alt="Xe máy điện VinFast Evo200 màu trắng" width="100%" />
+                            </picture>
+                        </div>
+                        <div class>
+                            <picture>
+                                
+                                <img data-lazy="{{ asset('home/images/color_image_heidi.png') }}" title
+                                    alt="Xe máy điện VinFast Evo200 màu vàng" width="100%" />
+                            </picture>
+                        </div>
+                        <div class>
+                            <picture>
+                                
+                                <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                                    alt="Xe máy điện VinFast Evo200 màu đen" width="100%" />
+                            </picture>
+                        </div>
+                        <div class>
+                            <picture>
+                                
+                                <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                                    alt="Xe máy điện VinFast Evo200 màu đỏ" width="100%" />
+                            </picture>
+                        </div>
+                        <div class>
+                            <picture>
+                                
+                                <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                                    alt="Xe máy điện VinFast Evo200 màu xanh" width="100%" />
+                            </picture>
+                        </div>
+                        <div class>
+                            <picture>
+                                
+                                <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                                    alt="Xe máy điện VinFast Evo200 màu trắng" width="100%" />
+                            </picture>
+                        </div>
+                        <div class>
+                            <picture>
+                                
+                                <img data-lazy="{{ asset('home/images/color_image_heidi.png') }}" title
+                                    alt="Xe máy điện VinFast Evo200 màu vàng" width="100%" />
+                            </picture>
+                        </div>
+                        <div class>
+                            <picture>
+                                
+                                <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                                    alt="Xe máy điện VinFast Evo200 màu đen" width="100%" />
+                            </picture>
+                        </div>
+                        <div class>
+                            <picture>
+                                
+                                <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                                    alt="Xe máy điện VinFast Evo200 màu đỏ" width="100%" />
+                            </picture>
+                        </div>
+                        <div class>
+                            <picture>
+                                
+                                <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                                    alt="Xe máy điện VinFast Evo200 màu xanh" width="100%" />
+                            </picture>
+                        </div>
+                        <div class>
+                            <picture>
+                                
+                                <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                                    alt="Xe máy điện VinFast Evo200 màu trắng" width="100%" />
+                            </picture>
+                        </div>
+                        <div class>
+                            <picture>
+                                
+                                <img data-lazy="{{ asset('home/images/color_image_heidi.png') }}" title
+                                    alt="Xe máy điện VinFast Evo200 màu vàng" width="100%" />
+                            </picture>
+                        </div>
+                        <div class>
+                            <picture>
+                                
+                                <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                                    alt="Xe máy điện VinFast Evo200 màu đen" width="100%" />
+                            </picture>
+                        </div>
+                        <div class>
+                            <picture>
+                                
+                                <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                                    alt="Xe máy điện VinFast Evo200 màu đỏ" width="100%" />
+                            </picture>
+                        </div>
+                        <div class>
+                            <picture>
+                                
+                                <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                                    alt="Xe máy điện VinFast Evo200 màu xanh" width="100%" />
+                            </picture>
+                        </div>
+                        <div class>
+                            <picture>
+                                
+                                <img data-lazy-src="{{ asset('home/images/color_image_heidi.png') }}"
+                                    alt="Xe máy điện VinFast Evo200 màu trắng" width="100%" />
+                            </picture>
+                        </div>
+                    </div>
+                    <div style="clear: left"></div>
                 </div>
             </div>
         </div>
+        <div style="clear: left"></div>
         <div class="container" style="overflow: hidden;">
-            <div class="top-main-control js-aos" style="max-width: 900px;margin:auto; overflow: hidden;"
-                data-aos="fade-left" data-aos-delay="100" data-aos-duration="300" style="margin-top: 20px">
+            <div class="mySliderTop" style="max-width: 900px;margin:auto; overflow: hidden;" style="margin-top: 20px">
                 <div class="myThumbSlider" style="overflow: hidden;" data-showitem="17">
                     <div class="item-myThumb">
                         <img src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwddfc1849/images/PDP-XMD/color/evo-yellow.png"
