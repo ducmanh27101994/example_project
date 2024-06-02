@@ -750,6 +750,10 @@ img {
     border: 2px solid #1464f4;
 }
 
+.item-myThumb:last-child {
+    display: none;
+}
+
 @media only screen and (max-width:1199px) {
     .top-main .top-main-btn .top-btn {
         margin-left: auto;
@@ -768,8 +772,7 @@ img {
     }
 
     .top-main .top-main-control .slick-initialized .slick-slide {
-        /* display: block; */
-        /* width: fit-content !important; */
+        width: fit-content !important;
     }
 
     .top-main .top-main-control .slick-track {
