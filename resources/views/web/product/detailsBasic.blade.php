@@ -120,7 +120,7 @@
                             @if(!empty($feature_description))
                             @foreach($feature_description as $value)
                             <img data-src="{{$value->images}}" type="image/webp"
-                                alt="Xe máy điện VinFast Evo200 thiết kế sang trọng" width="100%" class="img-lazy" />
+                                alt="Xe máy điện VinFast Evo200 thiết kế sang trọng" width="100%" class="" />
                             @endforeach
                             @endif
                         </picture>
@@ -195,7 +195,7 @@
                             <source class="img-srcset" data-srcset="{{ $value->images }}" type="image/webp" />
                             <img data-src="{{ $value->images }}" title="Evo200"
                                 alt="Hệ thống đèn LED và đèn pha projector của xe máy điện VinFast Evo200" width="100%"
-                                class="img-lazy" />
+                                class="" />
                         </picture>
                     </div>
                     @endforeach
@@ -224,7 +224,7 @@
                                 srcset="{{$value->images}}">
                             <img data-src="{{$value->images}}" title="Evo200"
                                 alt="Hệ thống đèn LED và đèn pha projector của xe máy điện VinFast Evo200" width="100%"
-                                class="img-lazy" src="{{$value->images}}">
+                                class="" src="{{$value->images}}">
                         </picture>
 
                     </div>
@@ -242,7 +242,7 @@
                     <!-- Ảnh Đại diện -->
                     @if(!empty($product->block_detail_image))
                     <img data-src="{{$product->block_detail_image}}" title="Evo200" alt="{{$product->product_name}}"
-                        width="100%" class="img-lazy" />
+                        width="100%" class="" />
                     @endif
                 </div>
                 <div class="battery-technology__content">
