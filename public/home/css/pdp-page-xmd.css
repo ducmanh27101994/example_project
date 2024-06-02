@@ -399,7 +399,7 @@ img {
 
 @media only screen and (min-width:768px) and (max-width:1199px) {
     .top-main .top-main-htitle {
-        font-size: 18.88021vw
+        font-size: 16.88021vw
     }
 }
 
@@ -2346,8 +2346,14 @@ img {
 }
 
 @media only screen and (max-width:1199px) {
+    body {
+        overflow-y: hidden;
+    }
+
     #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .tab-pane-info ul li {
-        font-size: 12px
+        font-size: 12px;
+        margin: 0 10px;
+        width: 31%;
     }
 }
 
@@ -3851,6 +3857,9 @@ html {
 
     #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .tab-pane-info ul {
         margin: 0;
+    }
+    .pdp-evo200 .top-main .top-main-info, .pdp-evo200 .top-main .top-main-btn {
+        top: 0;
     }
 }
 
