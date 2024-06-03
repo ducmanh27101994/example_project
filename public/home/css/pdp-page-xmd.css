@@ -405,7 +405,7 @@ img {
 
 @media only screen and (max-width:767px) {
     .top-main .top-main-htitle {
-        font-size: 20vw
+        font-size: 16vw
     }
 }
 
@@ -788,52 +788,50 @@ img {
     }
 }
 
-@media only screen and (min-width:1200px) {
-    .top-main .top-main-control .box-control-nav {
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 128px;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-pack: justify;
-        justify-content: space-between
-    }
+.top-main .top-main-control .box-control-nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 128px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
 
-    .top-main .top-main-control .btn-arrow {
-        width: 48px;
-        height: 48px;
-        position: relative
-    }
+.top-main .top-main-control .btn-arrow {
+    width: 48px;
+    height: 48px;
+    position: relative
+}
 
-    .top-main .top-main-control .btn-arrow:before {
-        content: '';
-        width: 0;
-        height: 0;
-        border-style: solid;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%)
-    }
+.top-main .top-main-control .btn-arrow:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
 
-    .top-main .top-main-control .btn-arrow.button-prev:before {
-        border-width: 12px 16px 12px 0;
-        border-color: transparent #7a99ac transparent transparent;
-    }
+.top-main .top-main-control .btn-arrow.button-prev:before {
+    border-width: 12px 16px 12px 0;
+    border-color: transparent #7a99ac transparent transparent;
+}
 
-    .top-main .top-main-control .btn-arrow.button-prev:hover:before {
-        border-color: transparent #F4797C transparent transparent;
-    }
+.top-main .top-main-control .btn-arrow.button-prev:hover:before {
+    border-color: transparent #F4797C transparent transparent;
+}
 
-    .top-main .top-main-control .btn-arrow.button-next:before {
-        border-width: 12px 0 12px 16px;
-        border-color: transparent transparent transparent #7a99ac
-    }
+.top-main .top-main-control .btn-arrow.button-next:before {
+    border-width: 12px 0 12px 16px;
+    border-color: transparent transparent transparent #7a99ac
+}
 
-    .top-main .top-main-control .btn-arrow.button-next:hover:before {
-        border-color: transparent transparent transparent #F4797C;
-    }
+.top-main .top-main-control .btn-arrow.button-next:hover:before {
+    border-color: transparent transparent transparent #F4797C;
 }
 
 @media print {
@@ -1542,7 +1540,6 @@ img {
 
 .battery-technology__item img {
     border-radius: 60px;
-    max-width: 600px;
 }
 
 @media only screen and (min-width:1200px) {
@@ -2936,6 +2933,7 @@ img {
 
 .pdp-evo200 .top-main .top-main-control {
     max-width: 400px;
+    max-height: 200px;
 }
 
 @media only screen and (min-width:1200px) and (max-width:1600px) {
@@ -3863,7 +3861,7 @@ html {
 
     .pdp-evo200 .top-main .top-main-info,
     .pdp-evo200 .top-main .top-main-btn {
-        top: 0;
+        top: 30px;
     }
 }
 
@@ -3887,7 +3885,7 @@ html {
     }
 }
 
-@media(max-width:767px) {
+@media(max-width:768px) {
     .page-block-image-360 img {
         border-radius: 10px;
         margin-bottom: 0;
@@ -3898,7 +3896,7 @@ html {
     }
 
     .parts-bike__head_text h2 {
-        font-size: 24px;
+        font-size: 20px;
         line-height: 36px;
     }
 
@@ -3920,6 +3918,36 @@ html {
 
     #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .tab-pane-info ul {
         margin: 0;
+    }
+
+    #pdp-breaking-technology .breaking-wrap .breaking-top__img.breaking-slick {
+        width: auto;
+        position: relative;
+        right: unset;
+        top: unset;
+    }
+
+    #pdp-breaking-technology .breaking-wrap .breaking-top .breaking-slick__button-next {
+        top: unset;
+        right: 40%
+    }
+
+    #pdp-breaking-technology .breaking-wrap .breaking-top .breaking-slick__button-prev {
+        top: unset;
+        right: 60%
+    }
+
+    #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .nav-link {
+        font-size: 17px;
+    }
+
+    .top-main .top-main-control .box-control-nav {
+        position: absolute;
+        top: unset;
+        left: 0;
+        right: 0;
+        bottom: -66%;
+        margin: auto;
     }
 }
 
