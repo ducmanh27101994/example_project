@@ -2333,7 +2333,7 @@ img {
 
 #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .tab-pane-info ul li .fw-light {
     font-weight: 400;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     margin-right: 30px;
     margin-bottom: 0;
     font-size: inherit
