@@ -2284,9 +2284,13 @@ img {
 }
 
 @media only screen and (min-width:1200px) and (max-width:1440px) {
+    #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .tab-pane-info {
+        justify-content: center;
+    }
+
     #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .tab-pane-info ul {
         margin-top: 24px;
-        width: 30.03831%
+        width: 100%
     }
 }
 
@@ -3858,7 +3862,9 @@ html {
     #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .tab-pane-info ul {
         margin: 0;
     }
-    .pdp-evo200 .top-main .top-main-info, .pdp-evo200 .top-main .top-main-btn {
+
+    .pdp-evo200 .top-main .top-main-info,
+    .pdp-evo200 .top-main .top-main-btn {
         top: 0;
     }
 }
