@@ -431,7 +431,6 @@ class CategoryController extends BaseController
             }
 
 
-
         }
 
         toastr()->success('Thêm mới thành công', 'Success');
@@ -690,7 +689,7 @@ class CategoryController extends BaseController
             'nispa_images_banner2' => !empty($request->nispa_images_banner2) ? $this->uploadService->upload_param($request->nispa_images_banner2) : $this->productRepositories->find($id)->nispa_images_banner2,
             'nispa_images_4' => !empty($request->nispa_images_4) ? $this->uploadService->upload_param($request->nispa_images_4) : $this->productRepositories->find($id)->nispa_images_4,
 
-            ];
+        ];
 
         $product = $this->productRepositories->update($id, $data);
 
@@ -781,7 +780,7 @@ class CategoryController extends BaseController
             $listStore = DB::table('store')->get();
         }
 
-        return view('web.order.oder', compact('product', 'icon_images', 'color_image','listStore'));
+        return view('web.order.oder', compact('product', 'icon_images', 'color_image', 'listStore'));
     }
 
     public function createOrder(Request $request)
@@ -814,14 +813,15 @@ class CategoryController extends BaseController
         }
     }
 
-    public function listBill() {
+    public function listBill()
+    {
 
         $result = DB::table('bill as b')
-            ->leftJoin('products as p','p.id', '=','b.id_product')
-            ->leftJoin('store as s','s.id','=','b.storeList')
-            ->leftJoin('images_products as i','i.id','=','b.color_product')
-            ->orderBy('b.id','desc')
-            ->select('b.id','i.images','s.title_store','p.product_name','b.price_product','b.chu_so_huu','b.billingLastName','b.billingCompanyName','b.identifyId','b.taxCode','b.phoneNumber','b.email','b.employee','b.storeList')
+            ->leftJoin('products as p', 'p.id', '=', 'b.id_product')
+            ->leftJoin('store as s', 's.id', '=', 'b.storeList')
+            ->leftJoin('images_products as i', 'i.id', '=', 'b.color_product')
+            ->orderBy('b.id', 'desc')
+            ->select('b.id', 'i.images', 's.title_store', 'p.product_name', 'b.price_product', 'b.chu_so_huu', 'b.billingLastName', 'b.billingCompanyName', 'b.identifyId', 'b.taxCode', 'b.phoneNumber', 'b.email', 'b.employee', 'b.storeList')
             ->get();
         if (empty($result)) {
             $result = [];
@@ -829,7 +829,8 @@ class CategoryController extends BaseController
         return view('admin.product.listBill', compact('result'));
     }
 
-    public function deleteProduct($id) {
+    public function deleteProduct($id)
+    {
         $product = Product::findOrFail($id);
         $product->delete();
         return redirect()->route('admin.list.product')->with('success', 'Sản phẩm đã được xóa thành công.');
@@ -843,7 +844,7 @@ class CategoryController extends BaseController
                 ->where('code', '=', $code)
                 ->delete();
 
-            usort($imagesList, function($a, $b) {
+            usort($imagesList, function ($a, $b) {
                 $nameA = $a->getClientOriginalName();
                 $nameB = $b->getClientOriginalName();
 
@@ -871,9 +872,7 @@ class CategoryController extends BaseController
     private function processImagesCreate($imagesList, $productId, $code)
     {
         if (!empty($imagesList)) {
-
-
-            usort($imagesList, function($a, $b) {
+            usort($imagesList, function ($a, $b) {
                 $nameA = $a->getClientOriginalName();
                 $nameB = $b->getClientOriginalName();
 
@@ -897,6 +896,24 @@ class CategoryController extends BaseController
                 ];
                 $this->imagesRepositories->create($imageData);
             }
+        }
+    }
+
+    public function deleteImages($id)
+    {
+        try {
+            DB::table('images_products')
+                ->where('id', '=', $id)
+                ->delete();
+            return response()->json([
+                'status' => 200,
+                'message' => 'Successfully',
+            ]);
+        } catch (\Exception $e) {
+            return response()->json([
+                'status' => 500,
+                'message' => 'Error delete: ' . $e->getMessage(),
+            ], 500);
         }
     }
 
