@@ -3835,6 +3835,7 @@ html {
 
     .page-block-image-360 #threesixty {
         height: 500px;
+        background-size: cover;
     }
 
     .product-360-views .instruction p {
@@ -3867,31 +3868,16 @@ html {
     .pdp-evo200 .top-main .top-main-btn {
         top: 30px;
     }
+
+    .pdp-evo200 .top-main .top-main-ptext {
+        top: 4vw;
+    }
 }
 
 @media (max-width: 992px) {
     .page-block-image-360 #threesixty {
-        height: 430px;
-    }
-}
-
-@media screen and (max-width:600px) {
-    .product-360-views {
-        padding: 7vw 0 20vw;
-    }
-
-    .product-360-views .instruction {
-        padding: 0 15px;
-        bottom: 3vw;
-    }
-
-    .product-360-views .instruction p {
-        font-size: 13px;
-    }
-
-    .product-360-views .product-images-list {
-        width: 140vw;
-        margin-left: -20vw;
+        height: 430px !important;
+        background-size: cover;
     }
 }
 
@@ -3962,6 +3948,27 @@ html {
 
     .page-block-image-360 #threesixty {
         height: 320px !important;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .product-360-views {
+        padding: 7vw 0 20vw;
+    }
+
+    .product-360-views .instruction {
+        padding: 0 15px;
+        bottom: 3vw;
+    }
+
+    .product-360-views .instruction p {
+        font-size: 13px;
+    }
+
+    .product-360-views .product-images-list {
+        width: 140vw;
+        margin-left: -20vw;
     }
 }
 
