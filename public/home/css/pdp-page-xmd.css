@@ -3833,6 +3833,10 @@ html {
         line-height: 36px;
     }
 
+    .page-block-image-360 #threesixty {
+        height: 500px;
+    }
+
     .product-360-views .instruction p {
         margin: 0;
         font-size: 18px;
@@ -3862,6 +3866,12 @@ html {
     .pdp-evo200 .top-main .top-main-info,
     .pdp-evo200 .top-main .top-main-btn {
         top: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .page-block-image-360 #threesixty {
+        height: 430px;
     }
 }
 
@@ -3948,6 +3958,10 @@ html {
         right: 0;
         bottom: -66%;
         margin: auto;
+    }
+
+    .page-block-image-360 #threesixty {
+        height: 320px !important;
     }
 }
 
