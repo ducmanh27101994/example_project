@@ -599,6 +599,7 @@ class CategoryController extends BaseController
             'actual_photo_title' => !empty($request->actual_photo_title) ? $request->actual_photo_title : '',
             'actual_photo_desc' => !empty($request->actual_photo_desc) ? $request->actual_photo_desc : '',
             'block_detail_image' => !empty($block_detail_image) ? $block_detail_image : '',
+            'path' => !empty($request->product_name) ? $this->slugify($request->product_name) : '',
 
             //Hedi
             'heidi_images_banner1' => !empty($request->heidi_images_banner1) ? $this->uploadService->upload_param($request->heidi_images_banner1) : $this->productRepositories->find($id)->heidi_images_banner1,
