@@ -86,6 +86,8 @@ class HomePageController extends BaseController
                 $productsCate = DB::table('cate_product')
                     ->join('products', 'cate_product.id', '=', 'products.product_portfolio')
                     ->where('products.product_portfolio', '=', $value->id)
+                    ->where('products.status', '=', 'active')
+                    ->orderBy('products.created_at', 'desc')
                     ->get();
                 $data["$key"] = $productsCate;
             }

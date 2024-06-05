@@ -245,6 +245,15 @@
                                         </div>
                                         <div class="block_sp">
                                             <div class="form-group">
+                                                <label class="text-no-bold" data-bind="text: Title">Hình ảnh đại
+                                                    diện trang sản phẩm (1230 × 700 px)</label>
+                                                <input type="file" name="representative_image_product" id="flupload"
+                                                    class="btn-change-link pull-right" style="width:180px;">
+
+                                            </div>
+                                        </div>
+                                        <div class="block_sp">
+                                            <div class="form-group">
                                                 <label class="text-no-bold" data-bind="text: Title">Hình ảnh
                                                     360</label>
                                                 <input type="file" name="images360[]" id="images360"
@@ -325,9 +334,23 @@
 
                                         <div class="block_sp">
                                             <div class="form-group">
+                                                <p class="ttg">Số thứ tụ</p>
+                                                <input id="chkstt" name="chkstt" class="inputbox" style="width:100%;" type="number" min="0">
+                                            </div>
+                                        </div>
+
+                                        <div class="block_sp">
+                                            <div class="form-group">
                                                 <p class="ttg">Trạng thái</p>
                                                 <input id="chkstatus" type="checkbox" name="status" checked="checked">
                                                 Hiển thị<br>
+                                            </div>
+                                        </div>
+
+                                        <div class="block_sp">
+                                            <div class="form-group">
+                                                <p class="ttg">Lưu ý</p>
+                                                <textarea name="note" id="note" class="inputbox form-control" rows="6" cols="50"></textarea>
                                             </div>
                                         </div>
 

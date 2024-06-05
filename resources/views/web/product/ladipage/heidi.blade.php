@@ -138,7 +138,7 @@
                 @endif
             </div>
         </div>
-        <div class="top-main-control" style="max-width: 800px;margin:auto; overflow: hidden;">
+        <div class="top-main-control">
             <div class="mySliderTop" data-showitem="8">
                 @if(!empty($icon_images))
                     @foreach($icon_images as $value)
@@ -377,37 +377,59 @@
     <section class="breaking-technology section" id="pdp-breaking-technology">
         <div class="breaking-wrap">
 
+            
             <div class="breaking-technology-bot">
-                <h3 class="headline text-center">Thông số kỹ thuật</h3>
+                <div class="parts-bike__head_text text-center block_center">
+                    <h2>
+                        Thông số kỹ thuật
+                    </h2>
+                </div>
+                <!-- tab thông số -->
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="tabInfoProduct" data-toggle="tab" href="javascript:void(0)"
                             role="tab" aria-controls="home" aria-selected="true">
-                            <h2 class="tab-title">THÔNG SỐ SẢN PHẨM</h2>
+                            <h2 class="tab-title">Tổng quan</h2>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="tabBatteryPackages" data-toggle="tab" href="javascript:void(0)"
                             role="tab" aria-controls="profile" aria-selected="false">
-                            <h2 class="tab-title">DỊCH VỤ PIN</h2>
+                            <h2 class="tab-title">Khung xe</h2>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tabdongcoPackages" data-toggle="tab" href="javascript:void(0)"
+                            role="tab" aria-controls="profile" aria-selected="false">
+                            <h2 class="tab-title">Động cơ</h2>
                         </a>
                     </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane show active tabInfoProduct" id="tabInfoProduct" role="tabpanel"
-                        aria-labelledby="tabInfoProduct">
-                        <div class="breaking-battery-tab d-flex justify-content-between" style="margin-top: 30px">
-                                {!! $product->overview ?? '' !!}
+                    <div class="tabInfoProduct" id="tabInfoProduct" role="tabpanel" aria-labelledby="info-tab">
+                        <div class="tab-pane-info d-flex justify-content-between">
+                            {!! $product->overview !!}
                         </div>
                     </div>
-                    <div class="tab-pane tabBatteryPackages" id="tabBatteryPackages" role="tabpanel"
-                        aria-labelledby="tabBatteryPackages">
-                        <div class="breaking-battery-tab d-flex justify-content-between" style="margin-top: 30px">
-                                {!! $product->chassis ?? '' !!}
+                    <div class="tabBatteryPackages" id="tabBatteryPackages" role="tabpanel"
+                        aria-labelledby="battery-tab">
+                        <div class="tab-pane-info breaking-battery-tab d-flex justify-content-between">
+
+                            {!! $product->chassis !!}
+
+                        </div>
+                    </div>
+                    <div class="tabdongcoPackages" id="tabdongcoPackages" role="tabpanel" aria-labelledby="battery-tab">
+                        <div class="tab-pane-info breaking-battery-tab d-flex justify-content-between">
+
+                            {!! $product->engine !!}
+
+
                         </div>
                     </div>
                 </div>
             </div>
+
             <div class="node_text">
                 <p> *Độ dài quãng đường đi được và tốc độ tối đa đạt được trong phần giới thiệu này được thử nghiệm
                     trong điều kiện tiêu chuẩn của OSAKAR, các yếu tố khác có thể làm ảnh hưởng đến quãng đường thực

@@ -204,6 +204,28 @@
                                                     rows="30">{!! html_entity_decode($product->detail) !!} </textarea>
                                             </div>
                                         </div>
+
+                                        <div class="block_sp">
+                                            <div class="form-group">
+                                                <label class="next-label">Động cơ (4 trang langdingpage)</label>
+
+                                                <div class="block_sp">
+                                                    <div class="form-group">
+                                                        <label class="text-no-bold" data-bind="text: Title">Hình ảnh động cơ</label>
+                                                        <input type="file" name="block_detail_image" id="flupload"
+                                                            class="btn-change-link pull-right" style="width:180px;">
+                                                    </div>
+                                                    <div>
+                                                        
+                                                    </div>
+                                                </div>
+
+
+                                                <textarea name="detail" id="dongco" cols="50"
+                                                    rows="30"></textarea>
+                                            </div>
+                                        </div>
+
                                         <div class="block_sp">
                                             <div class="form-group">
                                                 <label class="next-label">Thông số kỹ thuật</label>
@@ -248,6 +270,18 @@
                                             <div>
                                                 <img style="width: 180px; height: auto"
                                                     src="{{$product->representative_image}}">
+                                            </div>
+                                        </div>
+                                        <div class="block_sp">
+                                            <div class="form-group">
+                                                <label class="text-no-bold" data-bind="text: Title">Hình ảnh đại
+                                                    diện trang sản phẩm (1230 × 700 px)</label>
+                                                <input type="file" name="representative_image_product" id="flupload"
+                                                    class="btn-change-link pull-right" style="width:180px;">
+
+                                            </div>
+                                            <div>
+                                                
                                             </div>
                                         </div>
                                         <div class="block_sp">
@@ -359,12 +393,26 @@
 
                                         <div class="block_sp">
                                             <div class="form-group">
+                                                <p class="ttg">Số thứ tụ</p>
+                                                <input id="chkstt"  name="chkstt" class="inputbox" style="width:100%;" type="number" min="0">
+                                            </div>
+                                        </div>
+
+                                        <div class="block_sp">
+                                            <div class="form-group">
                                                 <p class="ttg">Trạng thái</p>
                                                 <input id="chkstatus" type="checkbox" name="status" @if($product->status
                                                 == 'active')
                                                 checked="checked"
                                                 @endif>
                                                 Hiển thị<br>
+                                            </div>
+                                        </div>
+
+                                        <div class="block_sp">
+                                            <div class="form-group">
+                                                <p class="ttg">Lưu ý</p>
+                                                <textarea name="note" id="note" class="inputbox form-control" rows="6" cols="50"></textarea>
                                             </div>
                                         </div>
 
@@ -1927,6 +1975,16 @@
                 removeFormatAttributes: ''
             });
             CKEDITOR.replace('nispa_desc_3', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true,
+                removeFormatAttributes: ''
+            });
+            CKEDITOR.replace('dongco', {
                 filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
                 filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
                 filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',

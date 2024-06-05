@@ -33,8 +33,7 @@
             <!-- ảnh màu sắc xe-->
             @if(!empty($color_image))
                 @foreach($color_image as $value)
-                    <figure class="hero-scooter"
-                            style="background-image: url('{{ $value->images }}')">
+                    <figure class="hero-scooter" style="background-image: url('{{ $value->images }}')">
                     </figure>
                 @endforeach
             @endif
@@ -44,8 +43,7 @@
         <!-- video nền section 1 -->
         @if(!empty($viva_upload_video))
             @foreach($viva_upload_video as $value)
-                <video class="d-none" playsinline preload autoplay muted
-                       data-src="{{ $value->images }}"></video>
+                <video class="d-none" playsinline preload autoplay muted data-src="{{ $value->images }}"></video>
             @endforeach
         @endif
     </section>
@@ -85,13 +83,13 @@
                 @if(!empty($vehicle_detail_photos))
                     @foreach($vehicle_detail_photos as $value)
                         <div class="parts-bike__item js-aos aos-init aos-animate" data-aos="fade-left" data-aos-delay="0"
-                             data-aos-duration="300">
+                            data-aos-duration="300">
                             <picture>
-                                <source class="img-srcset" data-srcset="{{ $value->images }}"
-                                        type="image/png" srcset="{{ $value->images }}">
+                                <source class="img-srcset" data-srcset="{{ $value->images }}" type="image/png"
+                                    srcset="{{ $value->images }}">
                                 <img data-src="{{ $value->images }}" title="Evo200"
-                                     alt="Hệ thống đèn LED và đèn pha projector của xe máy điện VinFast Evo200" width="100%"
-                                     class="img-lazy" src="{{ $value->images }}">
+                                    alt="Hệ thống đèn LED và đèn pha projector của xe máy điện VinFast Evo200" width="100%"
+                                    class="img-lazy" src="{{ $value->images }}">
                             </picture>
                         </div>
                     @endforeach
@@ -108,8 +106,7 @@
                 title="video">
                 <!-- ảnh nền section video -->
                 <figure class="image-video-crossover">
-                    <img class="w-100" src="{{ $product->viva_images_banner3 ?? '' }}"
-                        alt="thumbnailvideo1">
+                    <img class="w-100" src="{{ $product->viva_images_banner3 ?? '' }}" alt="thumbnailvideo1">
                 </figure>
                 <svg xmlns="http://www.w3.org/2000/svg" width="132" height="132" viewBox="0 0 132 132" fill="none">
                     <circle cx="66.0019" cy="66" r="55.2558" fill="white" />
@@ -174,15 +171,15 @@
             <p>Mỗi màu sắc đều mang lại một phong cách riêng biệt cho người lái, thể hiện được cá tính và sở thích của
                 họ.</p>
         </div>
-
+        <!-- width: 60.0625%; -->
         <div class="top-main-img">
             <div class="myThumbSlider">
                 @if(!empty($color_image))
                     @foreach($color_image as $value)
                         <div class>
                             <picture>
-                                <img data-lazy="{{ $value->images }}" title
-                                     alt="Xe máy điện VinFast Evo200 màu vàng" width="100%" />
+                                <img data-lazy="{{ $value->images }}" title alt="Xe máy điện VinFast Evo200 màu vàng"
+                                    width="100%" />
                             </picture>
                         </div>
                     @endforeach
@@ -190,13 +187,12 @@
 
             </div>
         </div>
-        <div class="top-main-control" style="max-width: 800px;margin:auto; overflow: hidden;">
+        <div class="top-main-control">
             <div class="mySliderTop" data-showitem="8">
                 @if(!empty($icon_images))
                     @foreach($icon_images as $value)
                         <div class="item-myThumb">
-                            <img src="{{$value->images}}"
-                                 alt="màu vàng">
+                            <img src="{{$value->images}}" alt="màu vàng">
                         </div>
                     @endforeach
                 @endif
@@ -265,7 +261,7 @@
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
                                 <div class="tabs-ck-editor d-flex align-items-center">
-                                    {!! $product->viva_desc_banner4 ?? '' !!}
+                                    <div>{!! $product->viva_desc_banner4 ?? '' !!}</div>
                                 </div>
                             </div>
                         </div>
@@ -280,7 +276,7 @@
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
                                 <div class="tabs-ck-editor d-flex align-items-center">
-                                    {!! $product->viva_desc_banner5 ?? '' !!}
+                                    <div>{!! $product->viva_desc_banner5 ?? '' !!}</div>
                                 </div>
                             </div>
                         </div>
@@ -294,7 +290,7 @@
                             </div>
                             <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding: 0">
                                 <div class="tabs-ck-editor d-flex align-items-center">
-                                    {!! $product->viva_desc_banner6 ?? '' !!}
+                                    <div>{!! $product->viva_desc_banner6 ?? '' !!}</div>
                                 </div>
                             </div>
                         </div>
@@ -376,34 +372,53 @@
         <div class="breaking-wrap">
 
             <div class="breaking-technology-bot">
-                <h3 class="headline text-center">Thông số kỹ thuật</h3>
+                <div class="parts-bike__head_text text-center block_center">
+                    <h2>
+                        Thông số kỹ thuật
+                    </h2>
+                </div>
+                <!-- tab thông số -->
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                     <li class="nav-item">
                         <a class="nav-link active" id="tabInfoProduct" data-toggle="tab" href="javascript:void(0)"
                             role="tab" aria-controls="home" aria-selected="true">
-                            <h2 class="tab-title">THÔNG SỐ SẢN PHẨM</h2>
+                            <h2 class="tab-title">Tổng quan</h2>
                         </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="tabBatteryPackages" data-toggle="tab" href="javascript:void(0)"
                             role="tab" aria-controls="profile" aria-selected="false">
-                            <h2 class="tab-title">DỊCH VỤ PIN</h2>
+                            <h2 class="tab-title">Khung xe</h2>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="tabdongcoPackages" data-toggle="tab" href="javascript:void(0)"
+                            role="tab" aria-controls="profile" aria-selected="false">
+                            <h2 class="tab-title">Động cơ</h2>
                         </a>
                     </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane  show active tabInfoProduct" id="tabInfoProduct" role="tabpanel"
-                        aria-labelledby="tabInfoProduct">
-                        <div class="breaking-battery-tab d-flex justify-content-between" style="margin-top: 30px">
-                        {!! $product->overview ?? '' !!}
-                        </div>  
+                    <div class="tabInfoProduct" id="tabInfoProduct" role="tabpanel" aria-labelledby="info-tab">
+                        <div class="tab-pane-info d-flex justify-content-between">
+                            {!! $product->overview !!}
+                        </div>
                     </div>
-                    <div class="tab-pane  tabBatteryPackages" id="tabBatteryPackages" role="tabpanel"
-                        aria-labelledby="tabBatteryPackages">
-                        <div class="breaking-battery-tab d-flex justify-content-between" style="margin-top: 30px">
-                            {!! $product->engine ?? '' !!}
-                            </div>  
+                    <div class="tabBatteryPackages" id="tabBatteryPackages" role="tabpanel"
+                        aria-labelledby="battery-tab">
+                        <div class="tab-pane-info breaking-battery-tab d-flex justify-content-between">
 
+                            {!! $product->chassis !!}
+
+                        </div>
+                    </div>
+                    <div class="tabdongcoPackages" id="tabdongcoPackages" role="tabpanel" aria-labelledby="battery-tab">
+                        <div class="tab-pane-info breaking-battery-tab d-flex justify-content-between">
+
+                            {!! $product->engine !!}
+
+
+                        </div>
                     </div>
                 </div>
             </div>
