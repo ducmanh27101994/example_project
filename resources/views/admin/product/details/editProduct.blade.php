@@ -212,7 +212,7 @@
                                                 <div class="block_sp">
                                                     <div class="form-group">
                                                         <label class="text-no-bold" data-bind="text: Title">Hình ảnh động cơ</label>
-                                                        <input type="file" name="block_detail_image" id="flupload"
+                                                        <input type="file" name="block_dongco_image" id="flupload"
                                                             class="btn-change-link pull-right" style="width:180px;">
                                                     </div>
                                                     <div>
@@ -221,7 +221,7 @@
                                                 </div>
 
 
-                                                <textarea name="detail" id="dongco" cols="50"
+                                                <textarea name="dongco" id="dongco" cols="50"
                                                     rows="30"></textarea>
                                             </div>
                                         </div>

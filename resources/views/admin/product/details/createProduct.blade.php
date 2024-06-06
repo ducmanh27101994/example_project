@@ -194,6 +194,28 @@
                                                     rows="30">{{old('detail')}}</textarea>
                                             </div>
                                         </div>
+
+                                        <div class="block_sp">
+                                            <div class="form-group">
+                                                <label class="next-label">Động cơ (4 trang langdingpage)</label>
+
+                                                <div class="block_sp">
+                                                    <div class="form-group">
+                                                        <label class="text-no-bold" data-bind="text: Title">Hình ảnh động cơ</label>
+                                                        <input type="file" name="block_dongco_image" id="flupload"
+                                                            class="btn-change-link pull-right" style="width:180px;">
+                                                    </div>
+                                                    <div>
+                                                        
+                                                    </div>
+                                                </div>
+
+
+                                                <textarea name="dongco" id="dongco" cols="50"
+                                                    rows="30"></textarea>
+                                            </div>
+                                        </div>
+
                                         <div class="block_sp">
                                             <div class="form-group">
                                                 <label class="next-label">Thông số kỹ thuật</label>
