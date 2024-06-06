@@ -218,7 +218,7 @@ class CategoryController extends BaseController
     public function listProductAdmin()
     {
 
-        $product = DB::table('products')->orderBy('created_at', 'desc')->get();
+        $product = DB::table('products')->orderBy('chkstt', 'asc')->get();
 
         return view('admin.product.details.listProduct', compact('product'));
     }
@@ -238,6 +238,14 @@ class CategoryController extends BaseController
 
         if ($request->representative_image) {
             $representative_image = $this->uploadService->upload_param($request->representative_image);
+        }
+
+        if ($request->representative_image_product) {
+            $representative_image_product = $this->uploadService->upload_param($request->representative_image_product);
+        }
+
+        if ($request->block_dongco_image) {
+            $block_dongco_image = $this->uploadService->upload_param($request->block_dongco_image);
         }
 
         if ($request->block_detail_image) {
@@ -265,6 +273,8 @@ class CategoryController extends BaseController
             'engine' => !empty($request->engine) ? $request->engine : '',
             'engine_price' => !empty($request->engine_price) ? $request->engine_price : '',
             'representative_image' => !empty($representative_image) ? $representative_image : '',
+            'representative_image_product' => !empty($representative_image_product) ? $representative_image_product : '',
+            'block_dongco_image' => !empty($block_dongco_image) ? $block_dongco_image : '',
             'product_code' => !empty($request->product_code) ? $request->product_code : '',
             'product_price' => !empty($request->product_price) ? $request->product_price : '',
             'price_comparison' => !empty($request->price_comparison) ? $request->price_comparison : '',
@@ -281,6 +291,9 @@ class CategoryController extends BaseController
             'actual_photo_desc' => !empty($request->actual_photo_desc) ? $request->actual_photo_desc : '',
             'block_detail_image' => !empty($block_detail_image) ? $block_detail_image : '',
             'status' => $status,
+            'chkstt' => !empty($request->chkstt) ? $request->chkstt : '',
+            'note' => !empty($request->note) ? $request->note : '',
+            'dongco_content' => !empty($request->dongco_content) ? $request->dongco_content : '',
             'new_product' => $new_product,
             'selling_products' => $selling_products,
             'promotional_products' => $promotional_products,
@@ -554,6 +567,18 @@ class CategoryController extends BaseController
             $representative_image = $this->productRepositories->find($id)->representative_image;
         }
 
+        if ($request->representative_image_product) {
+            $representative_image_product = $this->uploadService->upload_param($request->representative_image_product);
+        } else {
+            $representative_image_product = $this->productRepositories->find($id)->representative_image_product;
+        }
+
+        if ($request->block_dongco_image) {
+            $block_dongco_image = $this->uploadService->upload_param($request->block_dongco_image);
+        } else {
+            $block_dongco_image = $this->productRepositories->find($id)->block_dongco_image;
+        }
+
         if ($request->block_detail_image) {
             $block_detail_image = $this->uploadService->upload_param($request->block_detail_image);
         } else {
@@ -581,6 +606,7 @@ class CategoryController extends BaseController
             'engine' => !empty($request->engine) ? $request->engine : '',
             'engine_price' => !empty($request->engine_price) ? $request->engine_price : '',
             'representative_image' => !empty($representative_image) ? $representative_image : '',
+            'representative_image_product' => !empty($representative_image_product) ? $representative_image_product : '',
             'product_code' => !empty($request->product_code) ? $request->product_code : '',
             'product_price' => !empty($request->product_price) ? $request->product_price : '',
             'price_comparison' => !empty($request->price_comparison) ? $request->price_comparison : '',
@@ -591,6 +617,9 @@ class CategoryController extends BaseController
             'keyword_tags' => !empty($request->keyword_tags) ? $request->keyword_tags : '',
             'description_card' => !empty($request->description_card) ? $request->description_card : '',
             'status' => $status,
+            'chkstt' => !empty($request->chkstt) ? $request->chkstt : '',
+            'note' => !empty($request->note) ? $request->note : '',
+            'dongco_content' => !empty($request->dongco_content) ? $request->dongco_content : '',
             'new_product' => $new_product,
             'selling_products' => $selling_products,
             'promotional_products' => $promotional_products,

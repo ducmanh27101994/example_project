@@ -109,6 +109,8 @@
                                 </th>
                                 <th width="80" style="text-align:center" class="title">Trạng thái
                                 </th>
+                                <th  style="text-align:center" class="title">Số thứ tự
+                                </th>
                                 <th style="width: 120px;" class="title"></th>
 
                             </tr>
@@ -140,6 +142,9 @@
                                         </td>
                                         <td align="center">
                                             {{$value->status}}
+                                        </td>
+                                        <td align="center">
+                                            {{$value->chkstt}}
                                         </td>
                                         <td align="center">
 

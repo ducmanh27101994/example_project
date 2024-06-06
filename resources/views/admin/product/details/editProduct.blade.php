@@ -189,7 +189,8 @@
 
                                                 <div class="block_sp">
                                                     <div class="form-group">
-                                                        <label class="text-no-bold" data-bind="text: Title">Hình ảnh block chi tiết</label>
+                                                        <label class="text-no-bold" data-bind="text: Title">Hình ảnh
+                                                            block chi tiết</label>
                                                         <input type="file" name="block_detail_image" id="flupload"
                                                             class="btn-change-link pull-right" style="width:180px;">
                                                     </div>
@@ -211,18 +212,20 @@
 
                                                 <div class="block_sp">
                                                     <div class="form-group">
-                                                        <label class="text-no-bold" data-bind="text: Title">Hình ảnh động cơ</label>
+                                                        <label class="text-no-bold" data-bind="text: Title">Hình ảnh
+                                                            động cơ</label>
                                                         <input type="file" name="block_dongco_image" id="flupload"
                                                             class="btn-change-link pull-right" style="width:180px;">
                                                     </div>
                                                     <div>
-                                                        
+                                                        <img style="width: 180px; height: auto"
+                                                            src="{{$product->block_dongco_image ?? ''}}">
                                                     </div>
                                                 </div>
 
 
-                                                <textarea name="dongco" id="dongco" cols="50"
-                                                    rows="30"></textarea>
+                                                <textarea name="dongco_content" id="dongco_content" cols="50"
+                                                    rows="30">{!! html_entity_decode($product->dongco_content) !!}</textarea>
                                             </div>
                                         </div>
 
@@ -281,7 +284,8 @@
 
                                             </div>
                                             <div>
-                                                
+                                                <img style="width: 180px; height: auto"
+                                                    src="{{$product->representative_image_product}}">
                                             </div>
                                         </div>
                                         <div class="block_sp">
@@ -294,9 +298,9 @@
                                             <div>
                                                 <div id="image-preview-5">
                                                     @if(!empty($images360))
-                                                    @foreach($images360 as $value)
-                                                    <img style="width: 180px; height: auto" src="{{$value->images}}">
-                                                    @endforeach
+                                                        @foreach($images360 as $value)
+                                                            <img style="width: 180px; height: auto" src="{{$value->images}}">
+                                                        @endforeach
                                                     @endif
                                                 </div>
 
@@ -335,7 +339,7 @@
                                                         value="{{$product->price_comparison}}" id="txtpriceold"
                                                         class="inputbox" onkeypress=" return isNumberKey(event)"
                                                         placeholder="Giá so sánh với giá thị trường (Không bắt buộc nhập)"
-                                                        style="width:100%;" required>
+                                                        style="width:100%;">
                                                 </div>
                                             </div>
                                         </div>
@@ -348,11 +352,15 @@
                                                 <select name="product_portfolio" id="ddlcate" class="inputbox"
                                                     style="width:100%;">
                                                     @if(!empty($categoryProduct))
-                                                    @foreach($categoryProduct as $value)
-                                                    <option value="{{$value->id}}" @if($value->id ==
-                                                        $product->product_portfolio) selected @endif>{{$value->name}}
-                                                    </option>
-                                                    @endforeach
+                                                                                                    @foreach($categoryProduct as $value)
+                                                                                                                                                    <option value="{{$value->id}}"
+                                                                                                                                                        @if(
+                                                                                                                                                            $value->id ==
+                                                                                                                                                            $product->product_portfolio
+                                                                                                                                                        ) selected @endif>
+                                                                                                                                                        {{$value->name}}
+                                                                                                                                                    </option>
+                                                                                                    @endforeach
                                                     @endif
                                                 </select>
                                             </div>
@@ -367,24 +375,24 @@
 
                                                 <select name="interface_type" id="ddlcate_page" class="inputbox"
                                                     style="width:100%;">
-                                                    <option value="1" @if("1"==$product->interface_type) selected
-                                                        @endif>
+                                                    <option value="1" @if("1" == $product->interface_type) selected
+                                                    @endif>
                                                         Trang cơ bản
                                                     </option>
-                                                    <option value="2" @if("2"==$product->interface_type) selected
-                                                        @endif>
+                                                    <option value="2" @if("2" == $product->interface_type) selected
+                                                    @endif>
                                                         Trang Hot 1 (Phiên bản Heidi)
                                                     </option>
-                                                    <option value="3" @if("3"==$product->interface_type) selected
-                                                        @endif>
+                                                    <option value="3" @if("3" == $product->interface_type) selected
+                                                    @endif>
                                                         Trang Hot 2 (Phiên bản gogo)
                                                     </option>
-                                                    <option value="4" @if("4"==$product->interface_type) selected
-                                                        @endif>
+                                                    <option value="4" @if("4" == $product->interface_type) selected
+                                                    @endif>
                                                         Trang Hot 3 (Phiên bản nispaviva)
                                                     </option>
-                                                    <option value="5" @if("5"==$product->interface_type) selected
-                                                        @endif>
+                                                    <option value="5" @if("5" == $product->interface_type) selected
+                                                    @endif>
                                                         Trang Hot 4 (Phiên bản x3)
                                                     </option>
                                                 </select>
@@ -394,17 +402,19 @@
                                         <div class="block_sp">
                                             <div class="form-group">
                                                 <p class="ttg">Số thứ tụ</p>
-                                                <input id="chkstt"  name="chkstt" class="inputbox" style="width:100%;" type="number" min="0">
+                                                <input id="chkstt" value="{{$product->chkstt}}" name="chkstt"
+                                                    class="inputbox" style="width:100%;" type="number" min="0">
                                             </div>
                                         </div>
 
                                         <div class="block_sp">
                                             <div class="form-group">
                                                 <p class="ttg">Trạng thái</p>
-                                                <input id="chkstatus" type="checkbox" name="status" @if($product->status
-                                                == 'active')
-                                                checked="checked"
-                                                @endif>
+                                                <input id="chkstatus" type="checkbox" name="status"
+                                                    @if(
+                                                        $product->status
+                                                        == 'active'
+                                                    ) checked="checked" @endif>
                                                 Hiển thị<br>
                                             </div>
                                         </div>
@@ -412,7 +422,8 @@
                                         <div class="block_sp">
                                             <div class="form-group">
                                                 <p class="ttg">Lưu ý</p>
-                                                <textarea name="note" id="note" class="inputbox form-control" rows="6" cols="50"></textarea>
+                                                <textarea name="note" id="note" cols="50"
+                                                    rows="30">{!! html_entity_decode($product->note) !!} </textarea>
                                             </div>
                                         </div>
 
@@ -450,10 +461,10 @@
 
                                     <div id="image-preview">
                                         @if(!empty($feature_description))
-                                        @foreach($feature_description as $value)
-                                        <img style="width: 200px;height: auto;object-fit: contain;"
-                                            src="{{$value->images}}">
-                                        @endforeach
+                                            @foreach($feature_description as $value)
+                                                <img style="width: 200px;height: auto;object-fit: contain;"
+                                                    src="{{$value->images}}">
+                                            @endforeach
                                         @endif
                                     </div>
                                     <br>
@@ -492,10 +503,10 @@
                                     </div>
                                     <div id="image-preview-1">
                                         @if(!empty($vehicle_detail_photos))
-                                        @foreach($vehicle_detail_photos as $value)
-                                        <img style="width: 200px;height: auto;object-fit: contain;"
-                                            src="{{$value->images}}">
-                                        @endforeach
+                                            @foreach($vehicle_detail_photos as $value)
+                                                <img style="width: 200px;height: auto;object-fit: contain;"
+                                                    src="{{$value->images}}">
+                                            @endforeach
                                         @endif
                                     </div>
                                     <br>
@@ -533,10 +544,10 @@
 
                                     <div id="image-preview-2">
                                         @if(!empty($actual_photo))
-                                        @foreach($actual_photo as $value)
-                                        <img style="width: 200px;height: auto;object-fit: contain;"
-                                            src="{{$value->images}}">
-                                        @endforeach
+                                            @foreach($actual_photo as $value)
+                                                <img style="width: 200px;height: auto;object-fit: contain;"
+                                                    src="{{$value->images}}">
+                                            @endforeach
                                         @endif
                                     </div>
                                 </div>
@@ -562,10 +573,10 @@
                                             </div>
                                             <div id="image-preview-3">
                                                 @if(!empty($icon_images))
-                                                @foreach($icon_images as $value)
-                                                <img style="width: 100px;height: auto;object-fit: contain;"
-                                                    src="{{$value->images}}">
-                                                @endforeach
+                                                    @foreach($icon_images as $value)
+                                                        <img style="width: 100px;height: auto;object-fit: contain;"
+                                                            src="{{$value->images}}">
+                                                    @endforeach
                                                 @endif
                                             </div>
                                         </div>
@@ -582,9 +593,9 @@
                                             </div>
                                             <div id="image-preview-4">
                                                 @if(!empty($color_image))
-                                                @foreach($color_image as $value)
-                                                <img style="width: 250px;object-fit: contain;" src="{{$value->images}}">
-                                                @endforeach
+                                                    @foreach($color_image as $value)
+                                                        <img style="width: 250px;object-fit: contain;" src="{{$value->images}}">
+                                                    @endforeach
                                                 @endif
                                             </div>
 
@@ -608,12 +619,12 @@
                                             <td>
                                                 <select name="status_product" id="ddltt" class="inputbox"
                                                     style="width:170px;">
-                                                    <option value="1" @if("1"==$product->status_product) selected
-                                                        @endif>Còn
+                                                    <option value="1" @if("1" == $product->status_product) selected
+                                                    @endif>Còn
                                                         hàng
                                                     </option>
-                                                    <option value="2" @if("2"==$product->status_product) selected
-                                                        @endif>Hết
+                                                    <option value="2" @if("2" == $product->status_product) selected
+                                                    @endif>Hết
                                                         hàng
                                                     </option>
 
@@ -629,19 +640,16 @@
                                             </td>
                                             <td>
                                                 <input id="chknew" type="checkbox" name="new_product"
-                                                    @if($product->new_product == 'active')
-                                                checked="checked"
-                                                @endif><label for="chknew"> Sản phẩm Hot</label>
+                                                    @if($product->new_product == 'active') checked="checked" @endif><label
+                                                    for="chknew"> Sản phẩm Hot</label>
                                                 &nbsp;&nbsp;&nbsp;&nbsp;<br>
                                                 <input id="chkhot" type="checkbox" name="selling_products"
-                                                    @if($product->selling_products == 'active')
-                                                checked="checked"
-                                                @endif><label for="chkhot"> Sản phẩm bán chạy</label>
+                                                    @if($product->selling_products == 'active') checked="checked"
+                                                    @endif><label for="chkhot"> Sản phẩm bán chạy</label>
                                                 &nbsp;&nbsp;&nbsp;&nbsp;<br>
                                                 <input id="chksale" type="checkbox" name="promotional_products"
-                                                    @if($product->promotional_products == 'active')
-                                                checked="checked"
-                                                @endif><label for="chksale"> Sản phẩm khuyến mại</label>
+                                                    @if($product->promotional_products == 'active') checked="checked"
+                                                    @endif><label for="chksale"> Sản phẩm khuyến mại</label>
 
                                             </td>
                                         </tr>
@@ -694,8 +702,9 @@
                                                     </span>
                                                 </a>
                                                 @if($errors->has('page_title_tag'))
-                                                <p class="text-danger" style="margin-top: 10px;">
-                                                    {{ $errors->first('page_title_tag') }}</p>
+                                                    <p class="text-danger" style="margin-top: 10px;">
+                                                        {{ $errors->first('page_title_tag') }}
+                                                    </p>
                                                 @endif
                                             </td>
                                         </tr>
@@ -1124,9 +1133,9 @@
                                             </div>
                                             <div id="image-preview-6">
                                                 @if(!empty($gogo_images_banner2_multi))
-                                                @foreach($gogo_images_banner2_multi as $value)
-                                                <img style="width: 155px; height: auto" src="{{ $value->images }}">
-                                                @endforeach
+                                                    @foreach($gogo_images_banner2_multi as $value)
+                                                        <img style="width: 155px; height: auto" src="{{ $value->images }}">
+                                                    @endforeach
                                                 @endif
                                             </div>
                                         </div>
@@ -1140,9 +1149,9 @@
                                                     class="pull-right" style="width:180px;" multiple>
                                                 <div id="image-preview-7">
                                                     @if(!empty($gogo_tinhnang_image))
-                                                    @foreach($gogo_tinhnang_image as $value)
-                                                    <img style="width: 155px; height: auto" src="{{ $value->images }}">
-                                                    @endforeach
+                                                        @foreach($gogo_tinhnang_image as $value)
+                                                            <img style="width: 155px; height: auto" src="{{ $value->images }}">
+                                                        @endforeach
                                                     @endif
                                                 </div>
                                             </div>
@@ -1404,10 +1413,10 @@
                                                             </div>
                                                             <div>
                                                                 @if(!empty($gogo_images_banner13))
-                                                                @foreach($gogo_images_banner13 as $value)
-                                                                <img style="width: 180px; height: auto"
-                                                                    src="{{ $value->images }}">
-                                                                @endforeach
+                                                                    @foreach($gogo_images_banner13 as $value)
+                                                                        <img style="width: 180px; height: auto"
+                                                                            src="{{ $value->images }}">
+                                                                    @endforeach
                                                                 @endif
                                                             </div>
                                                         </div>
@@ -1457,10 +1466,10 @@
                                                     </div>
                                                     <div style="display: flex;align-items: center;gap: 10px;">
                                                         @if(!empty($viva_upload_video))
-                                                        @foreach($viva_upload_video as $value)
-                                                        <video style="width: 300px;" playsinline preload autoplay muted
-                                                            src="{{ $value->images }}"></video>
-                                                        @endforeach
+                                                            @foreach($viva_upload_video as $value)
+                                                                <video style="width: 300px;" playsinline preload autoplay muted
+                                                                    src="{{ $value->images }}"></video>
+                                                            @endforeach
                                                         @endif
                                                     </div>
                                                 </div>
@@ -1641,10 +1650,10 @@
                                                             </div>
                                                             <div id="image-preview-9">
                                                                 @if(!empty($viva_gallery))
-                                                                @foreach($viva_gallery as $value)
-                                                                <img style="width: 180px; height: auto"
-                                                                    src="{{ $value->images }}">
-                                                                @endforeach
+                                                                    @foreach($viva_gallery as $value)
+                                                                        <img style="width: 180px; height: auto"
+                                                                            src="{{ $value->images }}">
+                                                                    @endforeach
                                                                 @endif
                                                             </div>
                                                         </div>
@@ -1715,9 +1724,9 @@
                                         <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;"
                                             id="image-preview-11">
                                             @if(!empty($nispa_tinhnang_image))
-                                            @foreach($nispa_tinhnang_image as $value)
-                                            <img style="width: 155px; height: auto" src="{{ $value->images }}">
-                                            @endforeach
+                                                @foreach($nispa_tinhnang_image as $value)
+                                                    <img style="width: 155px; height: auto" src="{{ $value->images }}">
+                                                @endforeach
                                             @endif
                                         </div>
                                     </div>
@@ -1807,10 +1816,10 @@
                                                         </div>
                                                         <div id="image-preview-10">
                                                             @if(!empty($nispa_gallery))
-                                                            @foreach($nispa_gallery as $value)
-                                                            <img style="width: 180px; height: auto"
-                                                                src="{{ $value->images }}">
-                                                            @endforeach
+                                                                @foreach($nispa_gallery as $value)
+                                                                    <img style="width: 180px; height: auto"
+                                                                        src="{{ $value->images }}">
+                                                                @endforeach
                                                             @endif
                                                         </div>
                                                     </div>
@@ -1834,506 +1843,516 @@
     </div>
 
     <script type="text/javascript">
-    $(document).ready(function() {
-        //Horizontal Tab
-        $('#parentHorizontalTabcontent').easyResponsiveTabs({
-            type: 'default', //Types: default, vertical, accordion
-            width: 'auto', //auto or any width like 600px
-            fit: true, // 100% fit in a container
-            tabidentify: 'hor_1', // The tab groups identifier
-            activate: function(event) { // Callback function if tab is switched
-                var $tab = $(this);
-                var $info = $('#nested-tabInfo');
-                var $name = $('span', $info);
-                $name.text($tab.text());
-                $info.show();
-            }
-        });
+        $(document).ready(function () {
+            //Horizontal Tab
+            $('#parentHorizontalTabcontent').easyResponsiveTabs({
+                type: 'default', //Types: default, vertical, accordion
+                width: 'auto', //auto or any width like 600px
+                fit: true, // 100% fit in a container
+                tabidentify: 'hor_1', // The tab groups identifier
+                activate: function (event) { // Callback function if tab is switched
+                    var $tab = $(this);
+                    var $info = $('#nested-tabInfo');
+                    var $name = $('span', $info);
+                    $name.text($tab.text());
+                    $info.show();
+                }
+            });
 
-    });
+        });
     </script>
 
-<script>
-            CKEDITOR.replace('detail', {
-                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
-                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
-                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
-                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
-                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
-                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true,
-                removeFormatAttributes: ''
-            });
-            CKEDITOR.replace('overview', {
-                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
-                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
-                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
-                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
-                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
-                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true,
-                removeFormatAttributes: ''
-            });
-            CKEDITOR.replace('engine', {
-                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
-                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
-                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
-                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
-                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
-                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true,
-                removeFormatAttributes: ''
-            });
-            CKEDITOR.replace('chassis', {
-                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
-                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
-                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
-                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
-                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
-                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true,
-                removeFormatAttributes: ''
-            });
-            CKEDITOR.replace('gogo_desc_3', {
-                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
-                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
-                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
-                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
-                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
-                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true,
-                removeFormatAttributes: ''
-            });
-            CKEDITOR.replace('gogo_desc_banner9', {
-                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
-                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
-                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
-                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
-                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
-                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true,
-                removeFormatAttributes: ''
-            });
-            CKEDITOR.replace('gogo_desc_banner10', {
-                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
-                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
-                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
-                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
-                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
-                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true,
-                removeFormatAttributes: ''
-            });
-            CKEDITOR.replace('gogo_desc_banner11', {
-                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
-                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
-                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
-                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
-                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
-                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true,
-                removeFormatAttributes: ''
-            });
-            CKEDITOR.replace('viva_desc_banner4', {
-                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
-                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
-                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
-                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
-                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
-                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true,
-                removeFormatAttributes: ''
-            });
-            CKEDITOR.replace('viva_desc_banner5', {
-                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
-                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
-                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
-                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
-                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
-                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true,
-                removeFormatAttributes: ''
-            });
-            CKEDITOR.replace('viva_desc_banner6', {
-                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
-                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
-                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
-                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
-                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
-                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true,
-                removeFormatAttributes: ''
-            });
-            CKEDITOR.replace('nispa_desc_4', {
-                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
-                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
-                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
-                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
-                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
-                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true,
-                removeFormatAttributes: ''
-            });
-            CKEDITOR.replace('nispa_desc_3', {
-                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
-                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
-                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
-                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
-                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
-                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true,
-                removeFormatAttributes: ''
-            });
-            CKEDITOR.replace('dongco', {
-                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
-                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
-                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
-                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
-                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
-                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
-                allowedContent: true,
-                removeFormatAttributes: ''
-            });
-        </script>
+    <script>
+        CKEDITOR.replace('detail', {
+            filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+            filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+            filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+            filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+            filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+            filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+            allowedContent: true,
+            removeFormatAttributes: ''
+        });
+        CKEDITOR.replace('overview', {
+            filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+            filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+            filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+            filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+            filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+            filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+            allowedContent: true,
+            removeFormatAttributes: ''
+        });
+        CKEDITOR.replace('engine', {
+            filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+            filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+            filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+            filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+            filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+            filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+            allowedContent: true,
+            removeFormatAttributes: ''
+        });
+        CKEDITOR.replace('chassis', {
+            filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+            filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+            filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+            filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+            filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+            filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+            allowedContent: true,
+            removeFormatAttributes: ''
+        });
+        CKEDITOR.replace('gogo_desc_3', {
+            filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+            filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+            filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+            filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+            filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+            filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+            allowedContent: true,
+            removeFormatAttributes: ''
+        });
+        CKEDITOR.replace('gogo_desc_banner9', {
+            filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+            filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+            filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+            filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+            filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+            filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+            allowedContent: true,
+            removeFormatAttributes: ''
+        });
+        CKEDITOR.replace('gogo_desc_banner10', {
+            filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+            filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+            filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+            filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+            filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+            filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+            allowedContent: true,
+            removeFormatAttributes: ''
+        });
+        CKEDITOR.replace('gogo_desc_banner11', {
+            filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+            filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+            filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+            filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+            filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+            filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+            allowedContent: true,
+            removeFormatAttributes: ''
+        });
+        CKEDITOR.replace('viva_desc_banner4', {
+            filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+            filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+            filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+            filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+            filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+            filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+            allowedContent: true,
+            removeFormatAttributes: ''
+        });
+        CKEDITOR.replace('viva_desc_banner5', {
+            filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+            filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+            filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+            filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+            filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+            filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+            allowedContent: true,
+            removeFormatAttributes: ''
+        });
+        CKEDITOR.replace('viva_desc_banner6', {
+            filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+            filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+            filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+            filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+            filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+            filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+            allowedContent: true,
+            removeFormatAttributes: ''
+        });
+        CKEDITOR.replace('nispa_desc_4', {
+            filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+            filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+            filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+            filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+            filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+            filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+            allowedContent: true,
+            removeFormatAttributes: ''
+        });
+        CKEDITOR.replace('nispa_desc_3', {
+            filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+            filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+            filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+            filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+            filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+            filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+            allowedContent: true,
+            removeFormatAttributes: ''
+        });
+        CKEDITOR.replace('dongco_content', {
+            filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+            filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+            filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+            filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+            filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+            filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+            allowedContent: true,
+            removeFormatAttributes: ''
+        });
+        CKEDITOR.replace('note', {
+            filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+            filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+            filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+            filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+            filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+            filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+            allowedContent: true,
+            removeFormatAttributes: ''
+        });
+    </script>
 
 
     <script>
-    document.getElementById('feature_description').addEventListener('change', function(e) {
-        var previewContainer = document.getElementById('image-preview');
-        previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
+        document.getElementById('feature_description').addEventListener('change', function (e) {
+            var previewContainer = document.getElementById('image-preview');
+            previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
 
-        if (e.target.files.length > 0) {
-            for (var i = 0; i < e.target.files.length; i++) {
-                var file = e.target.files[i];
+            if (e.target.files.length > 0) {
+                for (var i = 0; i < e.target.files.length; i++) {
+                    var file = e.target.files[i];
 
-                if (file.type.match(/^image\//)) {
-                    var reader = new FileReader();
+                    if (file.type.match(/^image\//)) {
+                        var reader = new FileReader();
 
-                    reader.onload = function(e) {
-                        var img = document.createElement('img');
-                        img.src = e.target.result;
-                        img.className = 'preview-image';
-                        previewContainer.appendChild(img);
-                    };
+                        reader.onload = function (e) {
+                            var img = document.createElement('img');
+                            img.src = e.target.result;
+                            img.className = 'preview-image';
+                            previewContainer.appendChild(img);
+                        };
 
-                    reader.readAsDataURL(file);
-                } else {
-                    alert('Vui lòng chọn một hình ảnh.');
+                        reader.readAsDataURL(file);
+                    } else {
+                        alert('Vui lòng chọn một hình ảnh.');
+                    }
                 }
             }
-        }
-    });
-    document.getElementById('vehicle_detail_photos').addEventListener('change', function(e) {
-        var previewContainer = document.getElementById('image-preview-1');
-        previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
+        });
+        document.getElementById('vehicle_detail_photos').addEventListener('change', function (e) {
+            var previewContainer = document.getElementById('image-preview-1');
+            previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
 
-        if (e.target.files.length > 0) {
-            for (var i = 0; i < e.target.files.length; i++) {
-                var file = e.target.files[i];
+            if (e.target.files.length > 0) {
+                for (var i = 0; i < e.target.files.length; i++) {
+                    var file = e.target.files[i];
 
-                if (file.type.match(/^image\//)) {
-                    var reader = new FileReader();
+                    if (file.type.match(/^image\//)) {
+                        var reader = new FileReader();
 
-                    reader.onload = function(e) {
-                        var img = document.createElement('img');
-                        img.src = e.target.result;
-                        img.className = 'preview-image-1';
-                        previewContainer.appendChild(img);
-                    };
+                        reader.onload = function (e) {
+                            var img = document.createElement('img');
+                            img.src = e.target.result;
+                            img.className = 'preview-image-1';
+                            previewContainer.appendChild(img);
+                        };
 
-                    reader.readAsDataURL(file);
-                } else {
-                    alert('Vui lòng chọn một hình ảnh.');
+                        reader.readAsDataURL(file);
+                    } else {
+                        alert('Vui lòng chọn một hình ảnh.');
+                    }
                 }
             }
-        }
-    });
-    document.getElementById('actual_photo').addEventListener('change', function(e) {
-        var previewContainer = document.getElementById('image-preview-2');
-        previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
+        });
+        document.getElementById('actual_photo').addEventListener('change', function (e) {
+            var previewContainer = document.getElementById('image-preview-2');
+            previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
 
-        if (e.target.files.length > 0) {
-            for (var i = 0; i < e.target.files.length; i++) {
-                var file = e.target.files[i];
+            if (e.target.files.length > 0) {
+                for (var i = 0; i < e.target.files.length; i++) {
+                    var file = e.target.files[i];
 
-                if (file.type.match(/^image\//)) {
-                    var reader = new FileReader();
+                    if (file.type.match(/^image\//)) {
+                        var reader = new FileReader();
 
-                    reader.onload = function(e) {
-                        var img = document.createElement('img');
-                        img.src = e.target.result;
-                        img.className = 'preview-image-2';
-                        previewContainer.appendChild(img);
-                    };
+                        reader.onload = function (e) {
+                            var img = document.createElement('img');
+                            img.src = e.target.result;
+                            img.className = 'preview-image-2';
+                            previewContainer.appendChild(img);
+                        };
 
-                    reader.readAsDataURL(file);
-                } else {
-                    alert('Vui lòng chọn một hình ảnh.');
+                        reader.readAsDataURL(file);
+                    } else {
+                        alert('Vui lòng chọn một hình ảnh.');
+                    }
                 }
             }
-        }
-    });
-    document.getElementById('icon_images').addEventListener('change', function(e) {
-        var previewContainer = document.getElementById('image-preview-3');
-        previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
+        });
+        document.getElementById('icon_images').addEventListener('change', function (e) {
+            var previewContainer = document.getElementById('image-preview-3');
+            previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
 
-        if (e.target.files.length > 0) {
-            for (var i = 0; i < e.target.files.length; i++) {
-                var file = e.target.files[i];
+            if (e.target.files.length > 0) {
+                for (var i = 0; i < e.target.files.length; i++) {
+                    var file = e.target.files[i];
 
-                if (file.type.match(/^image\//)) {
-                    var reader = new FileReader();
+                    if (file.type.match(/^image\//)) {
+                        var reader = new FileReader();
 
-                    reader.onload = function(e) {
-                        var img = document.createElement('img');
-                        img.src = e.target.result;
-                        img.className = 'preview-image-3';
-                        previewContainer.appendChild(img);
-                    };
+                        reader.onload = function (e) {
+                            var img = document.createElement('img');
+                            img.src = e.target.result;
+                            img.className = 'preview-image-3';
+                            previewContainer.appendChild(img);
+                        };
 
-                    reader.readAsDataURL(file);
-                } else {
-                    alert('Vui lòng chọn một hình ảnh.');
+                        reader.readAsDataURL(file);
+                    } else {
+                        alert('Vui lòng chọn một hình ảnh.');
+                    }
                 }
             }
-        }
-    });
-    document.getElementById('color_image').addEventListener('change', function(e) {
-        var previewContainer = document.getElementById('image-preview-4');
-        previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
+        });
+        document.getElementById('color_image').addEventListener('change', function (e) {
+            var previewContainer = document.getElementById('image-preview-4');
+            previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
 
-        if (e.target.files.length > 0) {
-            for (var i = 0; i < e.target.files.length; i++) {
-                var file = e.target.files[i];
+            if (e.target.files.length > 0) {
+                for (var i = 0; i < e.target.files.length; i++) {
+                    var file = e.target.files[i];
 
-                if (file.type.match(/^image\//)) {
-                    var reader = new FileReader();
+                    if (file.type.match(/^image\//)) {
+                        var reader = new FileReader();
 
-                    reader.onload = function(e) {
-                        var img = document.createElement('img');
-                        img.src = e.target.result;
-                        img.className = 'preview-image-4';
-                        previewContainer.appendChild(img);
-                    };
+                        reader.onload = function (e) {
+                            var img = document.createElement('img');
+                            img.src = e.target.result;
+                            img.className = 'preview-image-4';
+                            previewContainer.appendChild(img);
+                        };
 
-                    reader.readAsDataURL(file);
-                } else {
-                    alert('Vui lòng chọn một hình ảnh.');
+                        reader.readAsDataURL(file);
+                    } else {
+                        alert('Vui lòng chọn một hình ảnh.');
+                    }
                 }
             }
-        }
-    });
-    document.getElementById('images360').addEventListener('change', function(e) {
-        var previewContainer = document.getElementById('image-preview-5');
-        previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
+        });
+        document.getElementById('images360').addEventListener('change', function (e) {
+            var previewContainer = document.getElementById('image-preview-5');
+            previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
 
-        if (e.target.files.length > 0) {
-            for (var i = 0; i < e.target.files.length; i++) {
-                var file = e.target.files[i];
+            if (e.target.files.length > 0) {
+                for (var i = 0; i < e.target.files.length; i++) {
+                    var file = e.target.files[i];
 
-                if (file.type.match(/^image\//)) {
-                    var reader = new FileReader();
+                    if (file.type.match(/^image\//)) {
+                        var reader = new FileReader();
 
-                    reader.onload = function(e) {
-                        var img = document.createElement('img');
-                        img.src = e.target.result;
-                        img.className = 'preview-image-5';
-                        previewContainer.appendChild(img);
-                    };
+                        reader.onload = function (e) {
+                            var img = document.createElement('img');
+                            img.src = e.target.result;
+                            img.className = 'preview-image-5';
+                            previewContainer.appendChild(img);
+                        };
 
-                    reader.readAsDataURL(file);
-                } else {
-                    alert('Vui lòng chọn một hình ảnh.');
+                        reader.readAsDataURL(file);
+                    } else {
+                        alert('Vui lòng chọn một hình ảnh.');
+                    }
                 }
             }
-        }
-    });
-    document.getElementById('gogo_images_banner2_multi').addEventListener('change', function(e) {
-        var previewContainer = document.getElementById('image-preview-6');
-        previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
+        });
+        document.getElementById('gogo_images_banner2_multi').addEventListener('change', function (e) {
+            var previewContainer = document.getElementById('image-preview-6');
+            previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
 
-        if (e.target.files.length > 0) {
-            for (var i = 0; i < e.target.files.length; i++) {
-                var file = e.target.files[i];
+            if (e.target.files.length > 0) {
+                for (var i = 0; i < e.target.files.length; i++) {
+                    var file = e.target.files[i];
 
-                if (file.type.match(/^image\//)) {
-                    var reader = new FileReader();
+                    if (file.type.match(/^image\//)) {
+                        var reader = new FileReader();
 
-                    reader.onload = function(e) {
-                        var img = document.createElement('img');
-                        img.src = e.target.result;
-                        img.className = 'preview-image-6';
-                        previewContainer.appendChild(img);
-                    };
+                        reader.onload = function (e) {
+                            var img = document.createElement('img');
+                            img.src = e.target.result;
+                            img.className = 'preview-image-6';
+                            previewContainer.appendChild(img);
+                        };
 
-                    reader.readAsDataURL(file);
-                } else {
-                    alert('Vui lòng chọn một hình ảnh.');
+                        reader.readAsDataURL(file);
+                    } else {
+                        alert('Vui lòng chọn một hình ảnh.');
+                    }
                 }
             }
-        }
-    });
-    document.getElementById('gogo_tinhnang_image').addEventListener('change', function(e) {
-        var previewContainer = document.getElementById('image-preview-7');
-        previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
+        });
+        document.getElementById('gogo_tinhnang_image').addEventListener('change', function (e) {
+            var previewContainer = document.getElementById('image-preview-7');
+            previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
 
-        if (e.target.files.length > 0) {
-            for (var i = 0; i < e.target.files.length; i++) {
-                var file = e.target.files[i];
+            if (e.target.files.length > 0) {
+                for (var i = 0; i < e.target.files.length; i++) {
+                    var file = e.target.files[i];
 
-                if (file.type.match(/^image\//)) {
-                    var reader = new FileReader();
+                    if (file.type.match(/^image\//)) {
+                        var reader = new FileReader();
 
-                    reader.onload = function(e) {
-                        var img = document.createElement('img');
-                        img.src = e.target.result;
-                        img.className = 'preview-image-7';
-                        previewContainer.appendChild(img);
-                    };
+                        reader.onload = function (e) {
+                            var img = document.createElement('img');
+                            img.src = e.target.result;
+                            img.className = 'preview-image-7';
+                            previewContainer.appendChild(img);
+                        };
 
-                    reader.readAsDataURL(file);
-                } else {
-                    alert('Vui lòng chọn một hình ảnh.');
+                        reader.readAsDataURL(file);
+                    } else {
+                        alert('Vui lòng chọn một hình ảnh.');
+                    }
                 }
             }
-        }
-    });
-    document.getElementById('gogo_images_banner13').addEventListener('change', function(e) {
-        var previewContainer = document.getElementById('image-preview-8');
-        previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
+        });
+        document.getElementById('gogo_images_banner13').addEventListener('change', function (e) {
+            var previewContainer = document.getElementById('image-preview-8');
+            previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
 
-        if (e.target.files.length > 0) {
-            for (var i = 0; i < e.target.files.length; i++) {
-                var file = e.target.files[i];
+            if (e.target.files.length > 0) {
+                for (var i = 0; i < e.target.files.length; i++) {
+                    var file = e.target.files[i];
 
-                if (file.type.match(/^image\//)) {
-                    var reader = new FileReader();
+                    if (file.type.match(/^image\//)) {
+                        var reader = new FileReader();
 
-                    reader.onload = function(e) {
-                        var img = document.createElement('img');
-                        img.src = e.target.result;
-                        img.className = 'preview-image-8';
-                        previewContainer.appendChild(img);
-                    };
+                        reader.onload = function (e) {
+                            var img = document.createElement('img');
+                            img.src = e.target.result;
+                            img.className = 'preview-image-8';
+                            previewContainer.appendChild(img);
+                        };
 
-                    reader.readAsDataURL(file);
-                } else {
-                    alert('Vui lòng chọn một hình ảnh.');
+                        reader.readAsDataURL(file);
+                    } else {
+                        alert('Vui lòng chọn một hình ảnh.');
+                    }
                 }
             }
-        }
-    });
-    document.getElementById('viva_gallery').addEventListener('change', function(e) {
-        var previewContainer = document.getElementById('image-preview-9');
-        previewContainer.innerHTML = '';
+        });
+        document.getElementById('viva_gallery').addEventListener('change', function (e) {
+            var previewContainer = document.getElementById('image-preview-9');
+            previewContainer.innerHTML = '';
 
-        if (e.target.files.length > 0) {
-            for (var i = 0; i < e.target.files.length; i++) {
-                var file = e.target.files[i];
+            if (e.target.files.length > 0) {
+                for (var i = 0; i < e.target.files.length; i++) {
+                    var file = e.target.files[i];
 
-                if (file.type.match(/^image\//)) {
-                    var reader = new FileReader();
+                    if (file.type.match(/^image\//)) {
+                        var reader = new FileReader();
 
-                    reader.onload = function(e) {
-                        var img = document.createElement('img');
-                        img.src = e.target.result;
-                        img.className = 'preview-image-9';
-                        previewContainer.appendChild(img);
-                    };
+                        reader.onload = function (e) {
+                            var img = document.createElement('img');
+                            img.src = e.target.result;
+                            img.className = 'preview-image-9';
+                            previewContainer.appendChild(img);
+                        };
 
-                    reader.readAsDataURL(file);
-                } else {
-                    alert('Vui lòng chọn một hình ảnh.');
+                        reader.readAsDataURL(file);
+                    } else {
+                        alert('Vui lòng chọn một hình ảnh.');
+                    }
                 }
             }
-        }
-    });
-    document.getElementById('nispa_tinhnang_image').addEventListener('change', function(e) {
-        var previewContainer = document.getElementById('image-preview-11');
-        previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
+        });
+        document.getElementById('nispa_tinhnang_image').addEventListener('change', function (e) {
+            var previewContainer = document.getElementById('image-preview-11');
+            previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
 
-        if (e.target.files.length > 0) {
-            for (var i = 0; i < e.target.files.length; i++) {
-                var file = e.target.files[i];
+            if (e.target.files.length > 0) {
+                for (var i = 0; i < e.target.files.length; i++) {
+                    var file = e.target.files[i];
 
-                if (file.type.match(/^image\//)) {
-                    var reader = new FileReader();
+                    if (file.type.match(/^image\//)) {
+                        var reader = new FileReader();
 
-                    reader.onload = function(e) {
-                        var img = document.createElement('img');
-                        img.src = e.target.result;
-                        img.className = 'preview-image-11';
-                        previewContainer.appendChild(img);
-                    };
+                        reader.onload = function (e) {
+                            var img = document.createElement('img');
+                            img.src = e.target.result;
+                            img.className = 'preview-image-11';
+                            previewContainer.appendChild(img);
+                        };
 
-                    reader.readAsDataURL(file);
-                } else {
-                    alert('Vui lòng chọn một hình ảnh.');
+                        reader.readAsDataURL(file);
+                    } else {
+                        alert('Vui lòng chọn một hình ảnh.');
+                    }
                 }
             }
-        }
-    });
-    document.getElementById('nispa_gallery').addEventListener('change', function(e) {
-        var previewContainer = document.getElementById('image-preview-10');
-        previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
+        });
+        document.getElementById('nispa_gallery').addEventListener('change', function (e) {
+            var previewContainer = document.getElementById('image-preview-10');
+            previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
 
-        if (e.target.files.length > 0) {
-            for (var i = 0; i < e.target.files.length; i++) {
-                var file = e.target.files[i];
+            if (e.target.files.length > 0) {
+                for (var i = 0; i < e.target.files.length; i++) {
+                    var file = e.target.files[i];
 
-                if (file.type.match(/^image\//)) {
-                    var reader = new FileReader();
+                    if (file.type.match(/^image\//)) {
+                        var reader = new FileReader();
 
-                    reader.onload = function(e) {
-                        var img = document.createElement('img');
-                        img.src = e.target.result;
-                        img.className = 'preview-image-10';
-                        previewContainer.appendChild(img);
-                    };
+                        reader.onload = function (e) {
+                            var img = document.createElement('img');
+                            img.src = e.target.result;
+                            img.className = 'preview-image-10';
+                            previewContainer.appendChild(img);
+                        };
 
-                    reader.readAsDataURL(file);
-                } else {
-                    alert('Vui lòng chọn một hình ảnh.');
+                        reader.readAsDataURL(file);
+                    } else {
+                        alert('Vui lòng chọn một hình ảnh.');
+                    }
                 }
             }
-        }
-    });
+        });
     </script>
     <style>
-    #image-preview-1,
-    #image-preview-2,
-    #image-preview-3,
-    #image-preview-4,
-    #image-preview-5,
-    #image-preview-6,
-    #image-preview-7,
-    #image-preview-8,
-    #image-preview-9,
-    #image-preview-10,
-    #image-preview-11,
-    #image-preview {
-        display: flex;
-        flex-wrap: wrap;
-    }
+        #image-preview-1,
+        #image-preview-2,
+        #image-preview-3,
+        #image-preview-4,
+        #image-preview-5,
+        #image-preview-6,
+        #image-preview-7,
+        #image-preview-8,
+        #image-preview-9,
+        #image-preview-10,
+        #image-preview-11,
+        #image-preview {
+            display: flex;
+            flex-wrap: wrap;
+        }
 
-    .preview-image-1,
-    .preview-image-2,
-    .preview-image-3,
-    .preview-image-4,
-    .preview-image-5,
-    .preview-image-6,
-    .preview-image-7,
-    .preview-image-8,
-    .preview-image-9,
-    .preview-image-10,
-    .preview-image-11,
-    .preview-image {
-        max-width: 100px;
-        height: auto;
-        margin: 5px;
-    }
+        .preview-image-1,
+        .preview-image-2,
+        .preview-image-3,
+        .preview-image-4,
+        .preview-image-5,
+        .preview-image-6,
+        .preview-image-7,
+        .preview-image-8,
+        .preview-image-9,
+        .preview-image-10,
+        .preview-image-11,
+        .preview-image {
+            max-width: 100px;
+            height: auto;
+            margin: 5px;
+        }
 
-    /* .heidi_page {
+        /* .heidi_page {
                 display: none !important
             } */
     </style>

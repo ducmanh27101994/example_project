@@ -87,7 +87,7 @@ class HomePageController extends BaseController
                     ->join('products', 'cate_product.id', '=', 'products.product_portfolio')
                     ->where('products.product_portfolio', '=', $value->id)
                     ->where('products.status', '=', 'active')
-                    ->orderBy('products.created_at', 'desc')
+                    ->orderBy('products.chkstt', 'asc')
                     ->get();
                 $data["$key"] = $productsCate;
             }
@@ -351,7 +351,7 @@ class HomePageController extends BaseController
             $products = DB::table('products')
                 ->where('status', '=', 'active')
                 ->where('product_portfolio', '=', $category[0]->id)
-                ->orderBy('created_at', 'desc')
+                ->orderBy('chkstt', 'asc')
                 ->paginate(6);
         }
 

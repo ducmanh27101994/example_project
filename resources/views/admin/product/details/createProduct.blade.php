@@ -211,7 +211,7 @@
                                                 </div>
 
 
-                                                <textarea name="dongco" id="dongco" cols="50"
+                                                <textarea name="dongco_content" id="dongco_content" cols="50"
                                                     rows="30"></textarea>
                                             </div>
                                         </div>
@@ -315,7 +315,7 @@
                                                         id="txtpriceold" class="inputbox"
                                                         onkeypress=" return isNumberKey(event)"
                                                         placeholder="Giá so sánh với giá thị trường (Không bắt buộc nhập)"
-                                                        style="width:100%;" required>
+                                                        style="width:100%;" >
                                                 </div>
                                             </div>
                                         </div>
@@ -372,7 +372,9 @@
                                         <div class="block_sp">
                                             <div class="form-group">
                                                 <p class="ttg">Lưu ý</p>
-                                                <textarea name="note" id="note" class="inputbox form-control" rows="6" cols="50"></textarea>
+                                                <textarea name="note" id="note" class="inputbox"
+                                                            placeholder="Tên thông số dộng cơ"
+                                                            style="width:100%;"></textarea>
                                             </div>
                                         </div>
 
@@ -2050,6 +2052,26 @@ function ImgUpload() {
                 removeFormatAttributes: ''
             });
             CKEDITOR.replace('nispa_desc_3', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true,
+                removeFormatAttributes: ''
+            });
+            CKEDITOR.replace('dongco_content', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true,
+                removeFormatAttributes: ''
+            });
+            CKEDITOR.replace('note', {
                 filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
                 filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
                 filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
