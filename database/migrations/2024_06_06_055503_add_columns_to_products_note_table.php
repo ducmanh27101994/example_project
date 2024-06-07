@@ -14,7 +14,7 @@ class AddColumnsToProductsNoteTable extends Migration
     public function up()
     {
         Schema::table('products', function (Blueprint $table) {
-            $table->longText('note')->nullable();
+            $table->text('note')->nullable();
         });
     }
 

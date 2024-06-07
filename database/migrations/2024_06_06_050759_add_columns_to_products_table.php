@@ -14,10 +14,10 @@ class AddColumnsToProductsTable extends Migration
     public function up()
     {
         Schema::table('products', function (Blueprint $table) {
-            $table->string('representative_image_product')->nullable();
-            $table->string('block_dongco_image')->nullable();
-            $table->string('dongco_content')->nullable();
-            $table->string('chkstt')->nullable();
+            $table->text('representative_image_product')->nullable();
+            $table->text('block_dongco_image')->nullable();
+            $table->text('dongco_content')->nullable();
+            $table->text('chkstt')->nullable();
         });
     }
 
