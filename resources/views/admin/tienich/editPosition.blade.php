@@ -161,7 +161,7 @@
                                                                     title="Ảnh đại diện" class="upload-file">
                                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                                 <img
-                                                                    src="{{$banner->image_banner}}" style="width: 250px">
+                                                                    src="{{$banner->image_banner}}" style="width: 150px;display: block;">
                                                             </td>
                                                         </tr>
 
@@ -176,7 +176,7 @@
                                                                     title="Ảnh đại diện mobile" class="upload-file">
                                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                                                 <img
-                                                                    src="{{$banner->image_banner_mobile}}" style="width: 250px">
+                                                                    src="{{$banner->image_banner_mobile}}" style="width: 150px;display: block;">
                                                             </td>
                                                         </tr>
 

@@ -145,7 +145,7 @@
                                                                        id="flupload" title="Ảnh đại diện"
                                                                        class="upload-file" >
                                                                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                                                <img src="{{$staticPage->avatar}}">
+                                                                <img src="{{$staticPage->avatar}}" style="width: 150px;display: block;">
                                                             </td>
                                                         </tr>
                                                         <tr>
