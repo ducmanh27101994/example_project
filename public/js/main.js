@@ -66,7 +66,7 @@ $(document).ready(function () {
             method: "GET",
             success: function (response) {
                 // Handle the successful response here
-                console.log('success')
+                $('.imag-id-' + id).css('display', 'none')
             },
             error: function (xhr, status, error) {
                 // Handle errors here
