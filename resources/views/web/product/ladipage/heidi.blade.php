@@ -377,7 +377,7 @@
     <section class="breaking-technology section" id="pdp-breaking-technology">
         <div class="breaking-wrap">
 
-            
+
             <div class="breaking-technology-bot">
                 <div class="parts-bike__head_text text-center block_center">
                     <h2>
@@ -431,15 +431,7 @@
             </div>
 
             <div class="node_text">
-                <p> *Độ dài quãng đường đi được và tốc độ tối đa đạt được trong phần giới thiệu này được thử nghiệm
-                    trong điều kiện tiêu chuẩn của OSAKAR, các yếu tố khác có thể làm ảnh hưởng đến quãng đường thực
-                    tế,
-                    ví dụ như tải trọng, nhiệt độ, tốc độ gió, điều kiện đường và thói quen di chuyển. Đồng thời
-                    dung
-                    lượng tối đa của ắc quy sẽ bị giảm sau một thời gian sử dụng do đặc tính của nó.
-                    *OSAKAR có quyền thay đổi hoặc sửa đổi bất kỳ thông số kỹ thuật nào mà không cần thông báo
-                    trước.
-                </p>
+                {!! $product->note !!}
             </div>
         </div>
     </section>

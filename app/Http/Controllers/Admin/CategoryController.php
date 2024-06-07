@@ -33,13 +33,14 @@ class CategoryController extends BaseController
     protected $imagesRepositories;
     protected $uploadService;
 
-    public function __construct(CategoryService       $categoryService,
-                                BlogService           $blogService,
-                                CateProductRepository $repoCateProduct,
-                                ProductRepository     $productRepositories,
-                                ImageRepository       $imagesRepositories,
-                                UploadService         $uploadService)
-    {
+    public function __construct(
+        CategoryService $categoryService,
+        BlogService $blogService,
+        CateProductRepository $repoCateProduct,
+        ProductRepository $productRepositories,
+        ImageRepository $imagesRepositories,
+        UploadService $uploadService
+    ) {
         $this->categoryService = $categoryService;
         $this->blogService = $blogService;
         $this->repoCateProduct = $repoCateProduct;
@@ -177,6 +178,7 @@ class CategoryController extends BaseController
         $data = [
             'name' => $request->category_title,
             'status' => $status,
+            'chkstt' => $request->chkstt,
         ];
         $result = $this->repoCateProduct->create($data);
 
@@ -203,6 +205,7 @@ class CategoryController extends BaseController
         $data = [
             'name' => $request->category_title,
             'status' => $status,
+            'chkstt' => $request->chkstt,
         ];
         $cate = $this->repoCateProduct->update($id, $data);
 
@@ -866,6 +869,13 @@ class CategoryController extends BaseController
         return redirect()->route('admin.list.product')->with('success', 'Sản phẩm đã được xóa thành công.');
     }
 
+    public function deleteCateProduct($id)
+    {
+        $product = CateProduct::findOrFail($id);
+        $product->delete();
+        return redirect()->route('admin.list.cate.product')->with('success', 'Danh mục đã được xóa thành công.');
+    }
+
     private function processImages($imagesList, $productId, $code)
     {
         if (!empty($imagesList)) {
@@ -947,5 +957,24 @@ class CategoryController extends BaseController
         }
     }
 
+    public function deleteImagesTableProducts($fields, $id)
+    {
+        try {
+            $product = DB::table('products')->where('id', $id)->first();
+
+            if ($product) {
+                DB::table('products')->where('id', $id)->update([$fields => null]);
+            }
+            return response()->json([
+                'status' => 200,
+                'message' => 'Successfully',
+            ]);
+        } catch (\Exception $e) {
+            return response()->json([
+                'status' => 500,
+                'message' => 'Error delete: ' . $e->getMessage(),
+            ], 500);
+        }
+    }
 
 }

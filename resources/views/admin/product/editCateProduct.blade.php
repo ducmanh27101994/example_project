@@ -114,7 +114,7 @@
                                                                 <label for="listnhom">Số thứ tự</label>
                                                             </td>
                                                             <td>
-                                                                <input id="chkstatus" type="number" class="inputbox" min="0" name="cate_order" placeholder="0">
+                                                                <input id="chkstt" type="number" class="inputbox" value="{{$editCate->chkstt}}" min="0" name="chkstt" placeholder="0">
 
                                                             </td>
                                                         </tr>

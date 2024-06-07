@@ -109,7 +109,7 @@
                                                                 <label for="listnhom">Số thứ tự</label>
                                                             </td>
                                                             <td>
-                                                                <input id="chkstatus" type="number" min="0" name="cate_order" placeholder="0">
+                                                                <input id="chkstt" type="number" class="inputbox" value="0" min="0" name="chkstt">
 
                                                             </td>
                                                         </tr>

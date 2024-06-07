@@ -25,6 +25,28 @@ body {
     line-height: normal;
 }
 
+.image-box {
+    position: relative;
+}
+
+.delete-image {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: #00000075;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete-image img{
+    filter: brightness(0) invert(1) grayscale(100%);
+}
+
 @media(min-width:768px) {
     #wrapper {
         padding-left: 225px;

@@ -58,4 +58,19 @@ $(document).ready(function () {
             $info.show();
         }
     });
+
+    $("body").on("click", ".delete-image", function () {
+        var id = $(this).attr("data-id")
+        $.ajax({
+            url: "/admin/deleteImages/" + id,
+            method: "GET",
+            success: function (response) {
+                // Handle the successful response here
+                console.log('success')
+            },
+            error: function (xhr, status, error) {
+                // Handle errors here
+            }
+        });
+    });
 });

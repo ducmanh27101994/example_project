@@ -51,10 +51,13 @@
 
                                             <th width="150" style="text-align:center" class="title">Thời gian tạo
                                             </th>
-                                            <th width="8%" class="title">
+                                            <th width="8%" class="title" style="text-align:center">
                                                 Trạng thái
                                             </th>
-                                            <th width="120" class="title">
+                                            <th width="8%" class="title" style="text-align:center">
+                                               Số thứ tự
+                                            </th>
+                                            <th width="120" class="title" style="text-align:center">
 
                                             </th>
                                         </tr>
@@ -178,8 +181,9 @@
                 echo '<tr class="row0">';
                 echo '<td><a>' . $char . $item->name . '</a></td>';
                 echo '<td align="center"><p class="sptime"><i class="ico-dcreate" title="Ngày tạo"></i>' . $item->created_at . '</p></td>';
-                echo '<td align="center"><a id="LinkButton2" title="Thay đổi trạng thái" >' . $item->status . '</a></td>';
-                echo ' <td align="center"><a id="LinkButton3" title="Sửa" href="' . route('admin.edit.cate.product', $item->id) . '"><img src="'.asset('/images/iconedit_c.png').'"></a> &nbsp; &nbsp;</td>';
+                echo '<td align="center"><a style="color: #000">' . $item->status . '</a></td>';
+                echo '<td align="center"><a style="color: #000">' . $item->chkstt . '</a></td>';
+                echo ' <td align="center"><a id="LinkButton3" title="Sửa" href="' . route('admin.edit.cate.product', $item->id) . '"><img src="'.asset('/images/iconedit_c.png').'"></a> &nbsp; &nbsp;<a id="LinkButton4" title="Xóa" href="' . route('product.cate.destroy', $item->id) . '"><img src="'.asset('/images/icondelete_c.png').'"></a></td>';
                 echo '</tr>';
                 echo '</tbody>';
         }

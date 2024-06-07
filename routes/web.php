@@ -128,7 +128,9 @@ Route::group(['middleware' => 'auth_admin'], function () {
         Route::get('/editProduct/{id}', 'App\Http\Controllers\Admin\CategoryController@editProduct')->name('admin.edit.product');
         Route::post('/submitEditProduct/{id}', 'App\Http\Controllers\Admin\CategoryController@submitEditProduct')->name('admin.submit.edit.product');
         Route::get('/deleteProduct/{id}', 'App\Http\Controllers\Admin\CategoryController@deleteProduct')->name('product.destroy');
+        Route::get('/deleteCateProduct/{id}', 'App\Http\Controllers\Admin\CategoryController@deleteCateProduct')->name('product.cate.destroy');
         Route::get('/deleteImages/{id}', 'App\Http\Controllers\Admin\CategoryController@deleteImages')->name('productImages.destroy');
+        Route::DELETE('/deleteImages/{fields}/{id}', 'App\Http\Controllers\Admin\CategoryController@deleteImages')->name('productImagesTableproducts.destroy');
     });
 });
 

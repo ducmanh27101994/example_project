@@ -357,7 +357,7 @@
                                         <div class="block_sp">
                                             <div class="form-group">
                                                 <p class="ttg">Số thứ tụ</p>
-                                                <input id="chkstt" name="chkstt" class="inputbox" style="width:100%;" type="number" min="0">
+                                                <input id="chkstt" name="chkstt" value="1" class="inputbox" style="width:100%;" type="number" min="0">
                                             </div>
                                         </div>
 

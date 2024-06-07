@@ -299,7 +299,15 @@
                                                 <div id="image-preview-5">
                                                     @if(!empty($images360))
                                                         @foreach($images360 as $value)
-                                                            <img style="width: 180px; height: auto" src="{{$value->images}}">
+                                                            <div class="image-360-box image-box imag-id-{{$value->id}}">
+                                                                <img id="{{$value->id}}" data-id="{{$value->id}}"
+                                                                    class="imag-360"
+                                                                    style="width: 160px; height: auto; padding: 7px"
+                                                                    src="{{$value->images}}">
+                                                                <div class="delete-image" data-id="{{$value->id}}">
+                                                                    <img src="{{ asset('/images/icondelete_c.png') }}">
+                                                                </div>
+                                                            </div>
                                                         @endforeach
                                                     @endif
                                                 </div>
@@ -353,11 +361,10 @@
                                                     style="width:100%;">
                                                     @if(!empty($categoryProduct))
                                                                                                     @foreach($categoryProduct as $value)
-                                                                                                                                                    <option value="{{$value->id}}"
-                                                                                                                                                        @if(
-                                                                                                                                                            $value->id ==
-                                                                                                                                                            $product->product_portfolio
-                                                                                                                                                        ) selected @endif>
+                                                                                                                                                    <option value="{{$value->id}}" @if(
+                                                                                                                                                        $value->id ==
+                                                                                                                                                        $product->product_portfolio
+                                                                                                                                                    ) selected @endif>
                                                                                                                                                         {{$value->name}}
                                                                                                                                                     </option>
                                                                                                     @endforeach
@@ -410,11 +417,10 @@
                                         <div class="block_sp">
                                             <div class="form-group">
                                                 <p class="ttg">Trạng thái</p>
-                                                <input id="chkstatus" type="checkbox" name="status"
-                                                    @if(
-                                                        $product->status
-                                                        == 'active'
-                                                    ) checked="checked" @endif>
+                                                <input id="chkstatus" type="checkbox" name="status" @if(
+                                                    $product->status
+                                                    == 'active'
+                                                ) checked="checked" @endif>
                                                 Hiển thị<br>
                                             </div>
                                         </div>
@@ -422,8 +428,7 @@
                                         <div class="block_sp">
                                             <div class="form-group">
                                                 <p class="ttg">Lưu ý</p>
-                                                <textarea name="note" id="note" cols="50"
-                                                    rows="30">{!! html_entity_decode($product->note) !!} </textarea>
+                                                <textarea name="note" id="note" cols="50" rows="30">{!! html_entity_decode($product->note) !!} </textarea>
                                             </div>
                                         </div>
 
@@ -462,8 +467,14 @@
                                     <div id="image-preview">
                                         @if(!empty($feature_description))
                                             @foreach($feature_description as $value)
-                                                <img style="width: 200px;height: auto;object-fit: contain;"
-                                                    src="{{$value->images}}">
+                                                <div class="image-box imag-id-{{$value->id}}">
+                                                    <img id="{{$value->id}}" data-id="{{$value->id}}" class="imag-360"
+                                                        style="width: 160px; height: auto; padding: 7px"
+                                                        src="{{$value->images}}">
+                                                    <div class="delete-image" data-id="{{$value->id}}">
+                                                        <img src="{{ asset('/images/icondelete_c.png') }}">
+                                                    </div>
+                                                </div>
                                             @endforeach
                                         @endif
                                     </div>
@@ -504,8 +515,14 @@
                                     <div id="image-preview-1">
                                         @if(!empty($vehicle_detail_photos))
                                             @foreach($vehicle_detail_photos as $value)
-                                                <img style="width: 200px;height: auto;object-fit: contain;"
-                                                    src="{{$value->images}}">
+                                                <div class="image-box imag-id-{{$value->id}}">
+                                                    <img id="{{$value->id}}" data-id="{{$value->id}}" class="imag-360"
+                                                        style="width: 160px; height: auto; padding: 7px"
+                                                        src="{{$value->images}}">
+                                                    <div class="delete-image" data-id="{{$value->id}}">
+                                                        <img src="{{ asset('/images/icondelete_c.png') }}">
+                                                    </div>
+                                                </div>
                                             @endforeach
                                         @endif
                                     </div>
@@ -545,8 +562,14 @@
                                     <div id="image-preview-2">
                                         @if(!empty($actual_photo))
                                             @foreach($actual_photo as $value)
-                                                <img style="width: 200px;height: auto;object-fit: contain;"
-                                                    src="{{$value->images}}">
+                                                <div class="image-box imag-id-{{$value->id}}">
+                                                    <img id="{{$value->id}}" data-id="{{$value->id}}" class="imag-360"
+                                                        style="width: 160px; height: auto; padding: 7px"
+                                                        src="{{$value->images}}">
+                                                    <div class="delete-image" data-id="{{$value->id}}">
+                                                        <img src="{{ asset('/images/icondelete_c.png') }}">
+                                                    </div>
+                                                </div>
                                             @endforeach
                                         @endif
                                     </div>
@@ -574,8 +597,14 @@
                                             <div id="image-preview-3">
                                                 @if(!empty($icon_images))
                                                     @foreach($icon_images as $value)
-                                                        <img style="width: 100px;height: auto;object-fit: contain;"
-                                                            src="{{$value->images}}">
+                                                        <div class="image-box imag-id-{{$value->id}}">
+                                                            <img id="{{$value->id}}" data-id="{{$value->id}}" class="imag-360"
+                                                                style="width: 160px; height: auto; padding: 7px"
+                                                                src="{{$value->images}}">
+                                                            <div class="delete-image" data-id="{{$value->id}}">
+                                                                <img src="{{ asset('/images/icondelete_c.png') }}">
+                                                            </div>
+                                                        </div>
                                                     @endforeach
                                                 @endif
                                             </div>
@@ -594,7 +623,14 @@
                                             <div id="image-preview-4">
                                                 @if(!empty($color_image))
                                                     @foreach($color_image as $value)
-                                                        <img style="width: 250px;object-fit: contain;" src="{{$value->images}}">
+                                                        <div class="image-box imag-id-{{$value->id}}">
+                                                            <img id="{{$value->id}}" data-id="{{$value->id}}" class="imag-360"
+                                                                style="width: 160px; height: auto; padding: 7px"
+                                                                src="{{$value->images}}">
+                                                            <div class="delete-image" data-id="{{$value->id}}">
+                                                                <img src="{{ asset('/images/icondelete_c.png') }}">
+                                                            </div>
+                                                        </div>
                                                     @endforeach
                                                 @endif
                                             </div>

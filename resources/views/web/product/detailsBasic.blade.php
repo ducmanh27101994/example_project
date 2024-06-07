@@ -65,13 +65,13 @@
                         <div class="myThumbSlider">
                             <!-- Màu sắc xe -->
                             @if(!empty($color_image))
-                            @foreach($color_image as $value)
-                            <div class>
-                                <picture>
-                                    <img data-lazy="{{$value->images}}" title alt="" width="100%" />
-                                </picture>
-                            </div>
-                            @endforeach
+                                @foreach($color_image as $value)
+                                    <div class>
+                                        <picture>
+                                            <img data-lazy="{{$value->images}}" title alt="" width="100%" />
+                                        </picture>
+                                    </div>
+                                @endforeach
                             @endif
                         </div>
                     </div>
@@ -81,11 +81,11 @@
                 <div class="mySliderTop" data-showitem="5">
                     <!-- icon màu sắc -->
                     @if(!empty($icon_images))
-                    @foreach($icon_images as $value)
-                    <div class="item-myThumb">
-                        <img src="{{$value->images}}" alt="màu vàng">
-                    </div>
-                    @endforeach
+                        @foreach($icon_images as $value)
+                            <div class="item-myThumb">
+                                <img src="{{$value->images}}" alt="màu vàng">
+                            </div>
+                        @endforeach
                     @endif
 
                 </div>
@@ -118,10 +118,10 @@
                         <!-- Ảnh slide mô tả tính năng -->
                         <picture>
                             @if(!empty($feature_description))
-                            @foreach($feature_description as $value)
-                            <img src="{{$value->images}}" type="image/webp"
-                                alt="Xe máy điện VinFast Evo200 thiết kế sang trọng" width="100%" class="" />
-                            @endforeach
+                                @foreach($feature_description as $value)
+                                    <img src="{{$value->images}}" type="image/webp"
+                                        alt="Xe máy điện VinFast Evo200 thiết kế sang trọng" width="100%" class="" />
+                                @endforeach
                             @endif
                         </picture>
                     </div>
@@ -165,7 +165,7 @@
         </section>
 
         <?php
-            }
+}
 
 
          ?>
@@ -188,17 +188,17 @@
                 <!-- Ảnh chi tiết xe -->
                 <div class="parts-bike__list parts-bike__list__owl owl-carousel owl-theme">
                     @if(!empty($vehicle_detail_photos))
-                    @foreach($vehicle_detail_photos as $value)
-                    <div class="parts-bike__item js-aos container" data-aos="fade-left" data-aos-delay="0"
-                        data-aos-duration="300">
-                        <picture class="image-story">
-                            <source class="img-srcset" data-srcset="{{ $value->images }}" type="image/webp" />
-                            <img src="{{ $value->images }}" title="Evo200"
-                                alt="Hệ thống đèn LED và đèn pha projector của xe máy điện VinFast Evo200" width="100%"
-                                class="" />
-                        </picture>
-                    </div>
-                    @endforeach
+                        @foreach($vehicle_detail_photos as $value)
+                            <div class="parts-bike__item js-aos container" data-aos="fade-left" data-aos-delay="0"
+                                data-aos-duration="300">
+                                <picture class="image-story">
+                                    <source class="img-srcset" data-srcset="{{ $value->images }}" type="image/webp" />
+                                    <img src="{{ $value->images }}" title="Evo200"
+                                        alt="Hệ thống đèn LED và đèn pha projector của xe máy điện VinFast Evo200" width="100%"
+                                        class="" />
+                                </picture>
+                            </div>
+                        @endforeach
                     @endif
                 </div>
             </div>
@@ -216,19 +216,19 @@
                 <!-- Ảnh thực tế -->
                 <div class="parts-bike__list parts-bike__list__gallarey">
                     @if(!empty($actual_photo))
-                    @foreach($actual_photo as $value)
-                    <div class="parts-bike__item js-aos aos-init aos-animate" data-aos="fade-left" data-aos-delay="0"
-                        data-aos-duration="300">
-                        <picture>
-                            <source class="img-srcset" data-srcset="{{$value->images}}" type="image/webp"
-                                srcset="{{$value->images}}">
-                            <img src="{{$value->images}}" title="Evo200"
-                                alt="Hệ thống đèn LED và đèn pha projector của xe máy điện VinFast Evo200" width="100%"
-                                class="" src="{{$value->images}}">
-                        </picture>
+                        @foreach($actual_photo as $value)
+                            <div class="parts-bike__item js-aos aos-init aos-animate" data-aos="fade-left" data-aos-delay="0"
+                                data-aos-duration="300">
+                                <picture>
+                                    <source class="img-srcset" data-srcset="{{$value->images}}" type="image/webp"
+                                        srcset="{{$value->images}}">
+                                    <img src="{{$value->images}}" title="Evo200"
+                                        alt="Hệ thống đèn LED và đèn pha projector của xe máy điện VinFast Evo200" width="100%"
+                                        class="" src="{{$value->images}}">
+                                </picture>
 
-                    </div>
-                    @endforeach
+                            </div>
+                        @endforeach
                     @endif
 
 
@@ -241,8 +241,8 @@
                     data-aos-duration="300">
                     <!-- Ảnh Đại diện -->
                     @if(!empty($product->block_detail_image))
-                    <img src="{{$product->block_detail_image}}" title="Evo200" alt="{{$product->product_name}}"
-                        width="100%" class="" />
+                        <img src="{{$product->block_detail_image}}" title="Evo200" alt="{{$product->product_name}}"
+                            width="100%" class="" />
                     @endif
                 </div>
                 <div class="battery-technology__content">
@@ -264,19 +264,25 @@
                             <a href class="add-to-cart-v3s btn-pdp btn btn-primary effect-apollo"
                                 data-pid="VF-ZFG-ESNA5LHH-REQ"><span>Mua Ngay</span></a>
                         </div>
-                        <h6 class="breaking-top__title-vat">Giá đã bao gồm VAT, 01 bộ sạc 400W và không bao gồm
+                        <h6 class="breaking-top__title-vat">Giá đã bao gồm VAT, 01 bộ sạc và không bao gồm
                             pin.</h6>
+
+                        <div class="node_text">
+                            <p> * {{$product->note}}
+                            </p>
+                        </div>
+
                     </div>
                     <div class="breaking-top__img breaking-slick">
                         <!-- Ảnh đại diện -->
                         @if(!empty($color_image))
-                        @foreach($color_image as $value)
-                        <div class>
-                            <picture>
-                                <img data-lazy="{{$value->images}}" title alt="" width="100%" />
-                            </picture>
-                        </div>
-                        @endforeach
+                            @foreach($color_image as $value)
+                                <div class>
+                                    <picture>
+                                        <img data-lazy="{{$value->images}}" title alt="" width="100%" />
+                                    </picture>
+                                </div>
+                            @endforeach
                         @endif
                     </div>
                     <div class="breaking-slick__button-next"></div>
@@ -311,24 +317,24 @@
                     </ul>
                     <div class="tab-content" id="myTabContent">
                         <div class="tabInfoProduct" id="tabInfoProduct" role="tabpanel" aria-labelledby="info-tab">
-                            <div class="tab-pane-info d-flex justify-content-between" >
+                            <div class="tab-pane-info d-flex justify-content-between">
                                 {!! $product->overview !!}
                             </div>
                         </div>
                         <div class="tabBatteryPackages" id="tabBatteryPackages" role="tabpanel"
                             aria-labelledby="battery-tab">
-                            <div class="tab-pane-info breaking-battery-tab d-flex justify-content-between" >
-                               
-                                    {!! $product->chassis !!}
-                               
+                            <div class="tab-pane-info breaking-battery-tab d-flex justify-content-between">
+
+                                {!! $product->chassis !!}
+
                             </div>
                         </div>
                         <div class="tabdongcoPackages" id="tabdongcoPackages" role="tabpanel"
                             aria-labelledby="battery-tab">
                             <div class="tab-pane-info breaking-battery-tab d-flex justify-content-between">
-                              
-                                    {!! $product->engine !!}
-                              
+
+                                {!! $product->engine !!}
+
 
                             </div>
                         </div>
@@ -349,26 +355,26 @@
 <script defer type="text/javascript" src="{{ asset('home/js/pdp-page-xmd.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/@mladenilic/threesixty.js/dist/threesixty.js"></script>
 @php
-$imageUrls = [];
+    $imageUrls = [];
 @endphp
 @if(!empty($images360))
-@foreach($images360 as $value)
-@php
-$imageUrls[] = $value->images;
-@endphp
-@endforeach
+    @foreach($images360 as $value)
+        @php
+            $imageUrls[] = $value->images;
+        @endphp
+    @endforeach
 @endif
 <script>
-var img360 = @json($imageUrls);
-if (img360 != '') {
-    const threesixty = new ThreeSixty(document.getElementById('threesixty'), {
-        image: img360,
-        count: 31,
-        perRow: 0,
-        width: '100%',
-        height: 800,
-    });
-}
+    var img360 = @json($imageUrls);
+    if (img360 != '') {
+        const threesixty = new ThreeSixty(document.getElementById('threesixty'), {
+            image: img360,
+            count: 31,
+            perRow: 0,
+            width: '100%',
+            height: 800,
+        });
+    }
 </script>
 
 @include('/web/skinpart/formemail')
