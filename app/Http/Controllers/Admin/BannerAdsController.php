@@ -53,6 +53,9 @@ class BannerAdsController extends BaseController
         if ($request->image_banner) {
             $image_banner = $this->uploadService->upload_param($request->image_banner);
         }
+        if ($request->image_banner_mobile) {
+            $image_banner_mobile = $this->uploadService->upload_param($request->image_banner_mobile);
+        }
         $data = [
             'image_banner' => $image_banner ?? '',
             'status' => $status,
@@ -60,7 +63,7 @@ class BannerAdsController extends BaseController
             'code_ads' => $request->code_ads,
             'desc' => $request->desc,
             'link' => $request->txt_link,
-            'image_banner_mobile' => $request->image_banner_mobile,
+            'image_banner_mobile' => $request->$image_banner_mobile,
         ];
         $banner = $this->bannerAdsRepository->create($data);
         if ($banner) {
@@ -90,6 +93,9 @@ class BannerAdsController extends BaseController
         if ($request->image_banner) {
             $image_banner = $this->uploadService->upload_param($request->image_banner);
         }
+        if ($request->image_banner_mobile) {
+            $image_banner_mobile = $this->uploadService->upload_param($request->image_banner_mobile);
+        }
         $data = [
             'image_banner' => $image_banner ?? $dataOld->image_banner,
             'status' => $status,
@@ -97,7 +103,7 @@ class BannerAdsController extends BaseController
             'code_ads' => $request->code_ads,
             'desc' => $request->desc,
             'link' => $request->txt_link,
-            'image_banner_mobile' => $request->image_banner_mobile,
+            'image_banner_mobile' => $request->$image_banner_mobile,
         ];
         $banner = $this->bannerAdsRepository->update($id, $data);
 
