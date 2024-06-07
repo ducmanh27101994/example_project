@@ -480,8 +480,8 @@
 
                                     <div id="image-preview-2"></div>
                                 </div>
-                                <p class="upload_click">Upload click</p>
-                                <div class="upload__box">
+                                <p class="upload_click hidden">Upload click</p>
+                                <div class="upload__box hidden">
                                     <div class="upload__btn-box">
                                         <label class="upload__btn">
                                             <p>Upload images</p>

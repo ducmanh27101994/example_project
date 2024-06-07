@@ -486,46 +486,55 @@
 
                                 <div class="gallarey">
                                     <label for="album">Ảnh chi tiết xe (up nhiều ảnh một lúc, 494 × 636 px)</label>
+
                                     <input name="vehicle_detail_photos_title" type="text"
                                         value="{{$product->vehicle_detail_photos_title}}"
                                         id="vehicle_detail_photos_title" class="inputbox" placeholder="Tiêu đề mô tả 2"
                                         style="width:100%;">
+
                                     <textarea name="vehicle_detail_photos_desc" rows="5" cols="70"
                                         id="vehicle_detail_photos_desc" class="inputbox"
                                         style="width: 100%; height:80px;">{{$product->vehicle_detail_photos_desc}}</textarea>
-                                    <div id="uploadfiles" maxcount="16" input="ctl33_ctl00_FileServer2_ctl00"
-                                        class="uploadfdfile upload-create-form">
-                                        <div class="droptext textUploadNotice"></div>
-                                        <div class="thumbnails prdthumbnails"></div>
-                                        <div style="display: none" class="divFileProgressContainer">
-                                            <div class="progressWrapper" id="divFileProgress"></div>
-                                        </div>
-                                        <div class="spanButtonPlaceholder block-upload-item" id="upload-drop-zone"
-                                            style="position: relative; overflow: hidden; direction: ltr;">
-                                            <div class="browse-file"></div>
-                                            <p
-                                                style="color: #065799;font-size: 13px;text-align: justify;font-weight: 700;">
-                                                Chọn hình ảnh từ máy tính để tải lên</p><input multiple="multiple"
-                                                type="file" id="vehicle_detail_photos" name="vehicle_detail_photos[]"
-                                                style="position: absolute; right: 0px; top: 0px; font-family: Arial; font-size: 118px; margin: 0px; padding: 0px; cursor: pointer; opacity: 0;">
-                                        </div>
-                                        <div class="divFileProgressContainer1" style="display: none;"></div>
-                                        <div class="droptext"></div>
-                                    </div>
-                                    <div id="image-preview-1">
-                                        @if(!empty($vehicle_detail_photos))
-                                            @foreach($vehicle_detail_photos as $value)
-                                                <div class="image-box imag-id-{{$value->id}}">
-                                                    <img id="{{$value->id}}" data-id="{{$value->id}}" class="imag-360"
-                                                        style="width: 160px; height: auto; padding: 7px"
-                                                        src="{{$value->images}}">
-                                                    <div class="delete-image" data-id="{{$value->id}}">
-                                                        <img src="{{ asset('/images/icondelete_c.png') }}">
-                                                    </div>
+
+                                    <div class="upload__box">
+                                        <div class="upload__btn-box">
+                                            <div class="upload__btn">
+                                                <div class="spanButtonPlaceholder block-upload-item"
+                                                    id="upload-drop-zone"
+                                                    style="position: relative; overflow: hidden; direction: ltr;">
+                                                    <div class="browse-file"></div>
+                                                    <p
+                                                        style="color: #065799;font-size: 13px;text-align: justify;font-weight: 700;">
+                                                        Chọn hình ảnh từ máy tính để tải lên</p><input
+                                                        multiple="multiple" type="file" id="vehicle_detail_photos"
+                                                        class="upload__inputfile" name="vehicle_detail_photos[]"
+                                                        style="position: absolute; right: 0px; top: 0px; font-family: Arial; font-size: 118px; margin: 0px; padding: 0px; cursor: pointer; opacity: 0;">
                                                 </div>
-                                            @endforeach
-                                        @endif
+                                            </div>
+                                        </div>
+                                        <div class="upload__img-wrap">
+
+                                            @if(!empty($vehicle_detail_photos))
+                                                @foreach($vehicle_detail_photos as $value)
+                                                    <div class="image-box imag-id-{{$value->id}}">
+                                                        <img id="{{$value->id}}" data-id="{{$value->id}}" class="imag-360"
+                                                            style="width: 160px; height: auto; padding: 7px"
+                                                            src="{{$value->images}}">
+                                                        <div class="delete-image" data-id="{{$value->id}}">
+                                                            <img src="{{ asset('/images/icondelete_c.png') }}">
+                                                        </div>
+                                                    </div>
+                                                @endforeach
+                                            @endif
+                                        </div>
                                     </div>
+                                    <br>
+                                    <hr>
+                                    <br>
+
+                                    </tr>
+
+
                                     <br>
                                     <hr>
                                     <br>
@@ -539,40 +548,40 @@
                                     <textarea name="actual_photo_desc" rows="5" cols="70" id="actual_photo_desc"
                                         class="inputbox"
                                         style="width: 100%; height:80px;">{{$product->actual_photo_desc}}</textarea>
-                                    <div id="uploadfiles" maxcount="16" input="ctl33_ctl00_FileServer2_ctl00"
-                                        class="uploadfdfile upload-create-form">
-                                        <div class="droptext textUploadNotice"></div>
-                                        <div class="thumbnails prdthumbnails"></div>
-                                        <div style="display: none" class="divFileProgressContainer">
-                                            <div class="progressWrapper" id="divFileProgress"></div>
+
+                                    <div class="upload__box">
+                                        <div class="upload__btn-box">
+                                            <div class="upload__btn">
+                                                <div class="spanButtonPlaceholder block-upload-item"
+                                                    id="upload-drop-zone"
+                                                    style="position: relative; overflow: hidden; direction: ltr;">
+                                                    <div class="browse-file"></div>
+                                                    <p
+                                                        style="color: #065799;font-size: 13px;text-align: justify;font-weight: 700;">
+                                                        Chọn hình ảnh từ máy tính để tải lên</p><input
+                                                        multiple="multiple" type="file" id="actual_photo"
+                                                        class="upload__inputfile" name="actual_photo[]"
+                                                        style="position: absolute; right: 0px; top: 0px; font-family: Arial; font-size: 118px; margin: 0px; padding: 0px; cursor: pointer; opacity: 0;">
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="spanButtonPlaceholder block-upload-item" id="upload-drop-zone"
-                                            style="position: relative; overflow: hidden; direction: ltr;">
-                                            <div class="browse-file"></div>
-                                            <p
-                                                style="color: #065799;font-size: 13px;text-align: justify;font-weight: 700;">
-                                                Chọn hình ảnh từ máy tính để tải lên</p><input multiple="multiple"
-                                                type="file" id="actual_photo" name="actual_photo[]"
-                                                style="position: absolute; right: 0px; top: 0px; font-family: Arial; font-size: 118px; margin: 0px; padding: 0px; cursor: pointer; opacity: 0;">
+                                        <div class="upload__img-wrap">
+
+                                            @if(!empty($actual_photo))
+                                                @foreach($actual_photo as $value)
+                                                    <div class="image-box imag-id-{{$value->id}}">
+                                                        <img id="{{$value->id}}" data-id="{{$value->id}}" class="imag-360"
+                                                            style="width: 160px; height: auto; padding: 7px"
+                                                            src="{{$value->images}}">
+                                                        <div class="delete-image" data-id="{{$value->id}}">
+                                                            <img src="{{ asset('/images/icondelete_c.png') }}">
+                                                        </div>
+                                                    </div>
+                                                @endforeach
+                                            @endif
                                         </div>
-                                        <div class="divFileProgressContainer1" style="display: none;"></div>
-                                        <div class="droptext"></div>
                                     </div>
 
-                                    <div id="image-preview-2">
-                                        @if(!empty($actual_photo))
-                                            @foreach($actual_photo as $value)
-                                                <div class="image-box imag-id-{{$value->id}}">
-                                                    <img id="{{$value->id}}" data-id="{{$value->id}}" class="imag-360"
-                                                        style="width: 160px; height: auto; padding: 7px"
-                                                        src="{{$value->images}}">
-                                                    <div class="delete-image" data-id="{{$value->id}}">
-                                                        <img src="{{ asset('/images/icondelete_c.png') }}">
-                                                    </div>
-                                                </div>
-                                            @endforeach
-                                        @endif
-                                    </div>
                                 </div>
 
 
@@ -2051,347 +2060,122 @@
         });
     </script>
 
-
-    <script>
-        document.getElementById('feature_description').addEventListener('change', function (e) {
-            var previewContainer = document.getElementById('image-preview');
-            previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
-
-            if (e.target.files.length > 0) {
-                for (var i = 0; i < e.target.files.length; i++) {
-                    var file = e.target.files[i];
-
-                    if (file.type.match(/^image\//)) {
-                        var reader = new FileReader();
-
-                        reader.onload = function (e) {
-                            var img = document.createElement('img');
-                            img.src = e.target.result;
-                            img.className = 'preview-image';
-                            previewContainer.appendChild(img);
-                        };
-
-                        reader.readAsDataURL(file);
-                    } else {
-                        alert('Vui lòng chọn một hình ảnh.');
-                    }
-                }
-            }
-        });
-        document.getElementById('vehicle_detail_photos').addEventListener('change', function (e) {
-            var previewContainer = document.getElementById('image-preview-1');
-            previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
-
-            if (e.target.files.length > 0) {
-                for (var i = 0; i < e.target.files.length; i++) {
-                    var file = e.target.files[i];
-
-                    if (file.type.match(/^image\//)) {
-                        var reader = new FileReader();
-
-                        reader.onload = function (e) {
-                            var img = document.createElement('img');
-                            img.src = e.target.result;
-                            img.className = 'preview-image-1';
-                            previewContainer.appendChild(img);
-                        };
-
-                        reader.readAsDataURL(file);
-                    } else {
-                        alert('Vui lòng chọn một hình ảnh.');
-                    }
-                }
-            }
-        });
-        document.getElementById('actual_photo').addEventListener('change', function (e) {
-            var previewContainer = document.getElementById('image-preview-2');
-            previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
-
-            if (e.target.files.length > 0) {
-                for (var i = 0; i < e.target.files.length; i++) {
-                    var file = e.target.files[i];
-
-                    if (file.type.match(/^image\//)) {
-                        var reader = new FileReader();
-
-                        reader.onload = function (e) {
-                            var img = document.createElement('img');
-                            img.src = e.target.result;
-                            img.className = 'preview-image-2';
-                            previewContainer.appendChild(img);
-                        };
-
-                        reader.readAsDataURL(file);
-                    } else {
-                        alert('Vui lòng chọn một hình ảnh.');
-                    }
-                }
-            }
-        });
-        document.getElementById('icon_images').addEventListener('change', function (e) {
-            var previewContainer = document.getElementById('image-preview-3');
-            previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
-
-            if (e.target.files.length > 0) {
-                for (var i = 0; i < e.target.files.length; i++) {
-                    var file = e.target.files[i];
-
-                    if (file.type.match(/^image\//)) {
-                        var reader = new FileReader();
-
-                        reader.onload = function (e) {
-                            var img = document.createElement('img');
-                            img.src = e.target.result;
-                            img.className = 'preview-image-3';
-                            previewContainer.appendChild(img);
-                        };
-
-                        reader.readAsDataURL(file);
-                    } else {
-                        alert('Vui lòng chọn một hình ảnh.');
-                    }
-                }
-            }
-        });
-        document.getElementById('color_image').addEventListener('change', function (e) {
-            var previewContainer = document.getElementById('image-preview-4');
-            previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
-
-            if (e.target.files.length > 0) {
-                for (var i = 0; i < e.target.files.length; i++) {
-                    var file = e.target.files[i];
-
-                    if (file.type.match(/^image\//)) {
-                        var reader = new FileReader();
-
-                        reader.onload = function (e) {
-                            var img = document.createElement('img');
-                            img.src = e.target.result;
-                            img.className = 'preview-image-4';
-                            previewContainer.appendChild(img);
-                        };
-
-                        reader.readAsDataURL(file);
-                    } else {
-                        alert('Vui lòng chọn một hình ảnh.');
-                    }
-                }
-            }
-        });
-        document.getElementById('images360').addEventListener('change', function (e) {
-            var previewContainer = document.getElementById('image-preview-5');
-            previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
-
-            if (e.target.files.length > 0) {
-                for (var i = 0; i < e.target.files.length; i++) {
-                    var file = e.target.files[i];
-
-                    if (file.type.match(/^image\//)) {
-                        var reader = new FileReader();
-
-                        reader.onload = function (e) {
-                            var img = document.createElement('img');
-                            img.src = e.target.result;
-                            img.className = 'preview-image-5';
-                            previewContainer.appendChild(img);
-                        };
-
-                        reader.readAsDataURL(file);
-                    } else {
-                        alert('Vui lòng chọn một hình ảnh.');
-                    }
-                }
-            }
-        });
-        document.getElementById('gogo_images_banner2_multi').addEventListener('change', function (e) {
-            var previewContainer = document.getElementById('image-preview-6');
-            previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
-
-            if (e.target.files.length > 0) {
-                for (var i = 0; i < e.target.files.length; i++) {
-                    var file = e.target.files[i];
-
-                    if (file.type.match(/^image\//)) {
-                        var reader = new FileReader();
-
-                        reader.onload = function (e) {
-                            var img = document.createElement('img');
-                            img.src = e.target.result;
-                            img.className = 'preview-image-6';
-                            previewContainer.appendChild(img);
-                        };
-
-                        reader.readAsDataURL(file);
-                    } else {
-                        alert('Vui lòng chọn một hình ảnh.');
-                    }
-                }
-            }
-        });
-        document.getElementById('gogo_tinhnang_image').addEventListener('change', function (e) {
-            var previewContainer = document.getElementById('image-preview-7');
-            previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
-
-            if (e.target.files.length > 0) {
-                for (var i = 0; i < e.target.files.length; i++) {
-                    var file = e.target.files[i];
-
-                    if (file.type.match(/^image\//)) {
-                        var reader = new FileReader();
-
-                        reader.onload = function (e) {
-                            var img = document.createElement('img');
-                            img.src = e.target.result;
-                            img.className = 'preview-image-7';
-                            previewContainer.appendChild(img);
-                        };
-
-                        reader.readAsDataURL(file);
-                    } else {
-                        alert('Vui lòng chọn một hình ảnh.');
-                    }
-                }
-            }
-        });
-        document.getElementById('gogo_images_banner13').addEventListener('change', function (e) {
-            var previewContainer = document.getElementById('image-preview-8');
-            previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
-
-            if (e.target.files.length > 0) {
-                for (var i = 0; i < e.target.files.length; i++) {
-                    var file = e.target.files[i];
-
-                    if (file.type.match(/^image\//)) {
-                        var reader = new FileReader();
-
-                        reader.onload = function (e) {
-                            var img = document.createElement('img');
-                            img.src = e.target.result;
-                            img.className = 'preview-image-8';
-                            previewContainer.appendChild(img);
-                        };
-
-                        reader.readAsDataURL(file);
-                    } else {
-                        alert('Vui lòng chọn một hình ảnh.');
-                    }
-                }
-            }
-        });
-        document.getElementById('viva_gallery').addEventListener('change', function (e) {
-            var previewContainer = document.getElementById('image-preview-9');
-            previewContainer.innerHTML = '';
-
-            if (e.target.files.length > 0) {
-                for (var i = 0; i < e.target.files.length; i++) {
-                    var file = e.target.files[i];
-
-                    if (file.type.match(/^image\//)) {
-                        var reader = new FileReader();
-
-                        reader.onload = function (e) {
-                            var img = document.createElement('img');
-                            img.src = e.target.result;
-                            img.className = 'preview-image-9';
-                            previewContainer.appendChild(img);
-                        };
-
-                        reader.readAsDataURL(file);
-                    } else {
-                        alert('Vui lòng chọn một hình ảnh.');
-                    }
-                }
-            }
-        });
-        document.getElementById('nispa_tinhnang_image').addEventListener('change', function (e) {
-            var previewContainer = document.getElementById('image-preview-11');
-            previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
-
-            if (e.target.files.length > 0) {
-                for (var i = 0; i < e.target.files.length; i++) {
-                    var file = e.target.files[i];
-
-                    if (file.type.match(/^image\//)) {
-                        var reader = new FileReader();
-
-                        reader.onload = function (e) {
-                            var img = document.createElement('img');
-                            img.src = e.target.result;
-                            img.className = 'preview-image-11';
-                            previewContainer.appendChild(img);
-                        };
-
-                        reader.readAsDataURL(file);
-                    } else {
-                        alert('Vui lòng chọn một hình ảnh.');
-                    }
-                }
-            }
-        });
-        document.getElementById('nispa_gallery').addEventListener('change', function (e) {
-            var previewContainer = document.getElementById('image-preview-10');
-            previewContainer.innerHTML = ''; // Xóa tất cả các ảnh hiện có
-
-            if (e.target.files.length > 0) {
-                for (var i = 0; i < e.target.files.length; i++) {
-                    var file = e.target.files[i];
-
-                    if (file.type.match(/^image\//)) {
-                        var reader = new FileReader();
-
-                        reader.onload = function (e) {
-                            var img = document.createElement('img');
-                            img.src = e.target.result;
-                            img.className = 'preview-image-10';
-                            previewContainer.appendChild(img);
-                        };
-
-                        reader.readAsDataURL(file);
-                    } else {
-                        alert('Vui lòng chọn một hình ảnh.');
-                    }
-                }
-            }
-        });
-    </script>
     <style>
-        #image-preview-1,
-        #image-preview-2,
-        #image-preview-3,
-        #image-preview-4,
-        #image-preview-5,
-        #image-preview-6,
-        #image-preview-7,
-        #image-preview-8,
-        #image-preview-9,
-        #image-preview-10,
-        #image-preview-11,
-        #image-preview {
+        .upload__btn-box {
+            margin-bottom: 10px;
+        }
+
+        .upload__img-wrap {
             display: flex;
             flex-wrap: wrap;
+            margin: 0 -10px;
         }
 
-        .preview-image-1,
-        .preview-image-2,
-        .preview-image-3,
-        .preview-image-4,
-        .preview-image-5,
-        .preview-image-6,
-        .preview-image-7,
-        .preview-image-8,
-        .preview-image-9,
-        .preview-image-10,
-        .preview-image-11,
-        .preview-image {
-            max-width: 100px;
-            height: auto;
-            margin: 5px;
+        .upload__img-box {
+            width: 200px;
+            padding: 0 10px;
+            margin-bottom: 12px;
         }
 
-        /* .heidi_page {
-                display: none !important
-            } */
+        .upload__img-close {
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            text-align: center;
+            line-height: 24px;
+            z-index: 1;
+            cursor: pointer;
+        }
+
+        .upload__img-close:after {
+            content: "✖";
+            font-size: 14px;
+            color: white;
+        }
+
+        .img-bg {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            padding-bottom: 100%;
+        }
     </style>
+    <script>
+        $(document).ready(function () {
+            ImgUpload();
+        });
+
+        function ImgUpload() {
+            var imgWrap = "";
+            var imgArray = [];
+
+            $('.upload__inputfile').each(function () {
+                $(this).on('change', function (e) {
+                    imgWrap = $(this).closest('.upload__box').find('.upload__img-wrap');
+                    var maxLength = $(this).attr('data-max_length');
+
+                    var files = e.target.files;
+                    var filesArr = Array.prototype.slice.call(files);
+                    var iterator = 0;
+                    filesArr.forEach(function (f, index) {
+
+                        if (!f.type.match('image.*')) {
+                            return;
+                        }
+
+                        if (imgArray.length >= maxLength) {
+                            return false;
+                        } else {
+                            imgArray.push({ file: f, customVariable: '' });
+                            console.log(imgArray);
+                            var reader = new FileReader();
+                            reader.onload = function (e) {
+                                var html = "<div class='upload__img-box'><input type='text' class='img-name' name='name_image' placeholder='Enter image name'><div style='background-image: url(" + e.target.result + ")' data-number='" + $(".upload__img-close").length + "' data-file='" + f.name + "' class='img-bg'><div class='upload__img-close'></div></div></div>";
+                                imgWrap.append(html);
+                                iterator++;
+                            }
+                            reader.readAsDataURL(f);
+                        }
+                    });
+                });
+            });
+
+            $('body').on('click', ".upload__img-close", function (e) {
+                var file = $(this).parent().data("file");
+                for (var i = 0; i < imgArray.length; i++) {
+                    if (imgArray[i].file.name === file) {
+                        imgArray.splice(i, 1);
+                        console.log(imgArray);
+                        break;
+                    }
+                }
+                $(this).parent().parent().remove();
+
+                updateInputValue();
+            });
+
+            $('body').on('blur', ".img-name", function () {
+                var index = $(this).closest('.upload__img-box').index();
+                imgArray[index].customVariable = $(this).val();
+            });
+
+        }
+
+        function updateInputValue() {
+            var input = $('#vehicle_detail_photos');
+            var newFiles = [];
+            imgArray.forEach(function (item) {
+                newFiles.push(item.file);
+            });
+            input.val('').prop('files', newFiles);
+        }
+
+    </script>
 
 
     </div>

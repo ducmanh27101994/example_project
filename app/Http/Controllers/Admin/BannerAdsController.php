@@ -59,6 +59,8 @@ class BannerAdsController extends BaseController
             'title' => $request->title,
             'code_ads' => $request->code_ads,
             'desc' => $request->desc,
+            'link' => $request->txt_link,
+            'image_banner_mobile' => $request->image_banner_mobile,
         ];
         $banner = $this->bannerAdsRepository->create($data);
         if ($banner) {
@@ -94,15 +96,17 @@ class BannerAdsController extends BaseController
             'title' => $request->title,
             'code_ads' => $request->code_ads,
             'desc' => $request->desc,
+            'link' => $request->txt_link,
+            'image_banner_mobile' => $request->image_banner_mobile,
         ];
         $banner = $this->bannerAdsRepository->update($id, $data);
 
         if ($banner) {
             toastr()->success('Cập nhật thành công', 'Success');
-            return redirect()->route('admin.editBannerAds', ['id' => $id]);
+            return redirect()->route('admin.indexBannerAds');
         }
         toastr()->error('Cập nhật thất bại', 'Fail');
-        return redirect()->route('admin.editBannerAds', ['id' => $id]);
+        return redirect()->route('admin.indexBannerAds');
     }
 
 

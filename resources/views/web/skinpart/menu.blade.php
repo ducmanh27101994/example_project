@@ -44,10 +44,6 @@
                         <a data-v-0cc9144e="" data-v-31312d37="" href="/" class="nav-logo nav-logo--dark"><img
                                 src="<?= !empty($url) ? $url : '' ?>" alt=""></a>
                     </li>
-                    <li data-v-31312d37="" class="ggr-header-item my-gogoro-item"><a data-v-893155ac=""
-                            data-v-31312d37="" href="/"
-                            class="ggr-nav-link nav-list__link nav-list__link--login nav-list__link--dark">Login</a>
-                    </li>
                 </ul>
             </div>
         </div>

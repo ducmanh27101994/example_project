@@ -5,14 +5,31 @@
 @endphp
 <main class="page-content">
 
-    <section class="section-hero section-hero-slider owl-carousel owl-theme">
+    <section class="section-hero section-hero-slider owl-carousel owl-theme hidden-xs">
         @if(!empty($slide_banner))
             @foreach($slide_banner as $value)
                 <div class="slider_item">
+                    <a href="{{ $value->link }}" title={!! $value->title !!}>
                     <img src="{{ $value->image_banner }}" />
                     <div class="hero-copy hero-copy-slider" style="background-color: transparent">
                         {!! $value->desc !!}
                     </div>
+                    </a>
+                </div>
+            @endforeach
+        @endif
+    </section>
+
+    <section class="section-hero section-hero-slider owl-carousel owl-theme hidden-md hidden-sm hidden-lg">
+        @if(!empty($slide_banner))
+            @foreach($slide_banner as $value)
+                <div class="slider_item">
+                    <a href="{{ $value->link }}" title={!! $value->title !!}>
+                    <img src="{{ $value->image_banner_mobile }}" />
+                    <div class="hero-copy hero-copy-slider" style="background-color: transparent">
+                        {!! $value->desc !!}
+                    </div>
+                    </a>
                 </div>
             @endforeach
         @endif

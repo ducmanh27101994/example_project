@@ -51,7 +51,7 @@ class HomePageController extends BaseController
 
         $listCategory = DB::table('cate_product')
             ->where('status', '=', 'active')
-            ->orderBy('created_at', 'desc')
+            ->orderBy('chkstt', 'asc')
             ->get();
 
         $about_us_gt_cl = DB::table('independent_content')
@@ -345,7 +345,7 @@ class HomePageController extends BaseController
 
     public function categoryProduct()
     {
-        $category = CateProduct::all();
+        $category = CateProduct::orderBy('chkstt', 'asc')->get();
 
         if (!empty($category)) {
             $products = DB::table('products')
@@ -378,7 +378,7 @@ class HomePageController extends BaseController
 
     public function detailCategoryProduct($id)
     {
-        $category = CateProduct::all();
+        $category = CateProduct::orderBy('chkstt', 'asc')->get();
 
         $products = DB::table('products')
             ->where('status', '=', 'active')
