@@ -17,7 +17,7 @@ class AddColumnsToProductsTable extends Migration
             $table->text('representative_image_product')->nullable();
             $table->text('block_dongco_image')->nullable();
             $table->text('dongco_content')->nullable();
-            $table->text('chkstt')->nullable();
+            $table->integer('chkstt')->nullable();
         });
     }
 
