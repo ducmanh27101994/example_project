@@ -131,6 +131,7 @@ Route::group(['middleware' => 'auth_admin'], function () {
         Route::get('/deleteCateProduct/{id}', 'App\Http\Controllers\Admin\CategoryController@deleteCateProduct')->name('product.cate.destroy');
         Route::get('/deleteImages/{id}', 'App\Http\Controllers\Admin\CategoryController@deleteImages')->name('productImages.destroy');
         Route::DELETE('/deleteImages/{fields}/{id}', 'App\Http\Controllers\Admin\CategoryController@deleteImages')->name('productImagesTableproducts.destroy');
+        Route::post('/updateListImages', 'App\Http\Controllers\Admin\CategoryController@updateListImages')->name('admin.updateListImages');
     });
 });
 

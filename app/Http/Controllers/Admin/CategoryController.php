@@ -34,13 +34,14 @@ class CategoryController extends BaseController
     protected $uploadService;
 
     public function __construct(
-        CategoryService $categoryService,
-        BlogService $blogService,
+        CategoryService       $categoryService,
+        BlogService           $blogService,
         CateProductRepository $repoCateProduct,
-        ProductRepository $productRepositories,
-        ImageRepository $imagesRepositories,
-        UploadService $uploadService
-    ) {
+        ProductRepository     $productRepositories,
+        ImageRepository       $imagesRepositories,
+        UploadService         $uploadService
+    )
+    {
         $this->categoryService = $categoryService;
         $this->blogService = $blogService;
         $this->repoCateProduct = $repoCateProduct;
@@ -876,38 +877,7 @@ class CategoryController extends BaseController
         return redirect()->route('admin.list.cate.product')->with('success', 'Danh mục đã được xóa thành công.');
     }
 
-    private function processImages($imagesList, $productId, $code)
-    {
-        if (!empty($imagesList)) {
-            DB::table('images_products')
-                ->where('product_id', '=', $productId)
-                ->where('code', '=', $code)
-                ->delete();
 
-            usort($imagesList, function ($a, $b) {
-                $nameA = $a->getClientOriginalName();
-                $nameB = $b->getClientOriginalName();
-
-                preg_match('/\d+/', $nameA, $matchesA);
-                preg_match('/\d+/', $nameB, $matchesB);
-
-                $numA = $matchesA[0] ?? 0;
-                $numB = $matchesB[0] ?? 0;
-
-                return $numA - $numB;
-            });
-
-            foreach ($imagesList as $value) {
-                $images = $this->uploadService->upload_param($value);
-                $color_image = [
-                    'product_id' => $productId,
-                    'code' => $code,
-                    'images' => $images
-                ];
-                $this->imagesRepositories->create($color_image);
-            }
-        }
-    }
 
     private function processImagesCreate($imagesList, $productId, $code)
     {
@@ -932,7 +902,8 @@ class CategoryController extends BaseController
                 $imageData = [
                     'product_id' => $productId,
                     'code' => $code,
-                    'images' => $images
+                    'images' => $images,
+                    'text_images' => ''
                 ];
                 $this->imagesRepositories->create($imageData);
             }
@@ -974,6 +945,62 @@ class CategoryController extends BaseController
                 'status' => 500,
                 'message' => 'Error delete: ' . $e->getMessage(),
             ], 500);
+        }
+    }
+
+    public function updateListImages(Request $request)
+    {
+        try {
+            $imagesList = $request->imagesList ?? [];
+            $productId = $request->productId ?? '';
+            $code = $request->code ?? '';
+            if (!empty($productId) && !empty($code)) {
+                $this->apiProcessImages($imagesList, $productId, $code);
+            }
+
+            return response()->json([
+                'status' => 200,
+                'message' => 'Successfully',
+            ]);
+        } catch (\Exception $e) {
+            return response()->json([
+                'status' => 500,
+                'message' => 'Error delete: ' . $e->getMessage(),
+            ], 500);
+        }
+    }
+
+    private function apiProcessImages($imagesList, $productId, $code)
+    {
+        if (!empty($imagesList)) {
+            DB::table('images_products')
+                ->where('product_id', '=', $productId)
+                ->where('code', '=', $code)
+                ->delete();
+
+            usort($imagesList, function ($a, $b) {
+                $nameA = $a['file'];
+                $nameB = $b['file'];
+
+                preg_match('/\d+/', $nameA, $matchesA);
+                preg_match('/\d+/', $nameB, $matchesB);
+
+                $numA = isset($matchesA[0]) ? (int)$matchesA[0] : 0;
+                $numB = isset($matchesB[0]) ? (int)$matchesB[0] : 0;
+
+                return $numA - $numB;
+            });
+
+            foreach ($imagesList as $value) {
+                $images = $this->uploadService->upload_param($value['file']);
+                $color_image = [
+                    'product_id' => $productId,
+                    'code' => $code,
+                    'images' => $images,
+                    'text_images' => $value['text_images'] ?? ''
+                ];
+                $this->imagesRepositories->create($color_image);
+            }
         }
     }
 
