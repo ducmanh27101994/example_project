@@ -878,7 +878,6 @@ class CategoryController extends BaseController
     }
 
 
-
     private function processImagesCreate($imagesList, $productId, $code)
     {
         if (!empty($imagesList)) {
@@ -998,6 +997,39 @@ class CategoryController extends BaseController
                     'code' => $code,
                     'images' => $images,
                     'text_images' => $value['text_images'] ?? ''
+                ];
+                $this->imagesRepositories->create($color_image);
+            }
+        }
+    }
+
+    private function processImages($imagesList, $productId, $code)
+    {
+        if (!empty($imagesList)) {
+            DB::table('images_products')
+                ->where('product_id', '=', $productId)
+                ->where('code', '=', $code)
+                ->delete();
+
+            usort($imagesList, function ($a, $b) {
+                $nameA = $a->getClientOriginalName();
+                $nameB = $b->getClientOriginalName();
+
+                preg_match('/\d+/', $nameA, $matchesA);
+                preg_match('/\d+/', $nameB, $matchesB);
+
+                $numA = $matchesA[0] ?? 0;
+                $numB = $matchesB[0] ?? 0;
+
+                return $numA - $numB;
+            });
+
+            foreach ($imagesList as $value) {
+                $images = $this->uploadService->upload_param($value);
+                $color_image = [
+                    'product_id' => $productId,
+                    'code' => $code,
+                    'images' => $images
                 ];
                 $this->imagesRepositories->create($color_image);
             }
