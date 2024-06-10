@@ -206,7 +206,7 @@
                                                             class="btn-change-link pull-right" style="width:180px;">
                                                     </div>
                                                     <div>
-                                                        
+
                                                     </div>
                                                 </div>
 
@@ -304,7 +304,7 @@
 
                                                     <input name="product_price" type="number" value="" id="txtpricenew"
                                                         class="inputbox" onkeypress=" return isNumberKey(event)"
-                                                        style="width:100%;" required>
+                                                        style="width:100%;" >
 
                                                 </div>
                                                 <div class="form-group">
@@ -627,7 +627,7 @@ function ImgUpload() {
         var index = $(this).closest('.upload__img-box').index();
         imgArray[index].customVariable = $(this).val();
     });
-    
+
 }
 
                                     </script>

@@ -336,7 +336,7 @@
                                                     <input name="product_price" type="number"
                                                         value="{{$product->product_price}}" id="txtpricenew"
                                                         class="inputbox" onkeypress=" return isNumberKey(event)"
-                                                        style="width:100%;" required>
+                                                        style="width:100%;" >
 
                                                 </div>
                                                 <div class="form-group">
