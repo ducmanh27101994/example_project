@@ -105,14 +105,13 @@
         </div>
     </section>
 
-    <section class="section section-stories hidden" data-component-list="Stories"
+    <section class="section section-stories" data-component-list="Stories"
         style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-11 col-xl-9 col-xxl-8">
-                    <h3 class="typography-stories-headline">Smart comes standard.</h3>
-                    <p class="typography-stories-intro">Everything integrated to bring you greater security,
-                        personalization, and control – with automatic updates that keep getting smarter all the time.
+                    <h3 class="typography-stories-headline">Yêu thích chuyến đi.</h3>
+                    <p class="typography-stories-intro">Sự đổi mới và thiết kế độc đáo giúp xe di chuyển linh hoạt, dễ dàng trên mọi cung đường. Trải nghiệm vận hành êm ái, cảm giác an toàn. Chào mừng bạn đến với bản nâng cấp của xe máy điện...
                     </p>
                 </div>
             </div>
@@ -140,14 +139,13 @@
         </div>
     </section>
 
-    <section class="section section-stories hidden" data-component-list="Stories"
+    <section class="section section-stories " data-component-list="Stories"
         style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
         <div id="container" class="container">
             <div class="row">
                 <div class="col-lg-11 col-xl-9 col-xxl-8">
-                    <h3 class="typography-stories-headline">Easy as ever.</h3>
-                    <p class="typography-stories-intro">Everyday riding essentials that simply work better. No more
-                        waiting to fill up, fumbling for keys, or struggling to park.</p>
+                    <h3 class="typography-stories-headline">Thông minh đạt tiêu chuẩn.</h3>
+                    <p class="typography-stories-intro">Sự đổi mới và thiết kế độc đáo giúp xe di chuyển linh hoạt, dễ dàng trên mọi cung đường. Trải nghiệm vận hành êm ái, cảm giác an toàn. Chào mừng bạn đến với bản nâng cấp của xe máy điện...</p>
                 </div>
             </div>
         </div>
@@ -173,15 +171,13 @@
         </div>
     </section>
 
-    <section class="section section-stories hidden" data-component-list="Stories"
+    <section class="section section-stories " data-component-list="Stories"
         style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-11 col-xl-9 col-xxl-8">
-                    <h3 class="typography-stories-headline">Love the ride.</h3>
-                    <p class="typography-stories-intro">Incredible motor efficiency and performance delivers
-                        uncompromising range and exhilarating speed. Enjoy smoother, safer, more exciting rides.
-                        Everyday.</p>
+                    <h3 class="typography-stories-headline">Dễ dàng hơn bao giờ hết.</h3>
+                    <p class="typography-stories-intro">Sự đổi mới và thiết kế độc đáo giúp xe di chuyển linh hoạt, dễ dàng trên mọi cung đường. Trải nghiệm vận hành êm ái, cảm giác an toàn. Chào mừng bạn đến với bản nâng cấp của xe máy điện...</p>
                 </div>
             </div>
         </div>
