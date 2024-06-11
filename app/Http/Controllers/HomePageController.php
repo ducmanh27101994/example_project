@@ -383,7 +383,7 @@ class HomePageController extends BaseController
         $products = DB::table('products')
             ->where('status', '=', 'active')
             ->where('product_portfolio', '=', $id)
-            ->orderBy('created_at', 'desc')
+            ->orderBy('chkstt', 'asc')
             ->paginate(6);
 
         $blog1 = DB::table('blogs')
