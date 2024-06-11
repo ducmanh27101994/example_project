@@ -13,7 +13,7 @@
                                 data-family-menu-target="">
                                 <figure id="family-nav-image-2-series"
                                     class="family-nav-image family-nav-image--2-series family-nav-image--2-series-en"
-                                    style="background-image: url('{{$value->representative_image}}')"></figure>
+                                    style="background-image: url('{{$value->representative_image_product}}')"></figure>
                                 <h4 class="family-nav-label" role="text">{{$value->product_name}}</h4>
                                 <span class="family-nav-new">Hot</span>
                             </a>
@@ -92,7 +92,7 @@
                                                 tiết</a>
                                         </div>
                                         <figure class="image-family image-family--supersport"
-                                            style="background-image: url('{{$value->representative_image}}')"></figure>
+                                            style="background-image: url('{{$value->representative_image_product}}')"></figure>
                                         <a href="{{route('create.build', $value->id)}}" class="deposit-buy-now ">Mua ngay</a>
                                     </div>
                         @endforeach
