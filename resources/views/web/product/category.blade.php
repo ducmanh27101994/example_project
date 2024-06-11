@@ -127,6 +127,8 @@
                             <div class="story-item-copy">
                                 <h4 class="typography-story-headline">{{$value->news_headlines}}</h4>
                                 <p class="typography-story-intro">{!! $value->describe !!}</p>
+                                <a class="cta-link typewriter" href="{{route('page.blog',$value->slug)}}" target="_blank">ĐỌC THÊM TIN TỨC <img
+                        src="{{ asset('home/images/arrow-circle-right.png') }}" /></a>
                             </div>
                         </div>
                     @endforeach
@@ -160,6 +162,8 @@
                             <div class="story-item-copy">
                                 <h4 class="typography-story-headline">{{$value->news_headlines}}</h4>
                                 <p class="typography-story-intro">{!! $value->describe !!}</p>
+                                <a class="cta-link typewriter" href="{{route('page.blog',$value->slug)}}" target="_blank">ĐỌC THÊM TIN TỨC <img
+                        src="{{ asset('home/images/arrow-circle-right.png') }}" /></a>
                             </div>
                         </div>
                     @endforeach
@@ -192,6 +196,8 @@
                             <div class="story-item-copy">
                                 <h4 class="typography-story-headline">{{$value->news_headlines}}</h4>
                                 <p class="typography-story-intro">{!! $value->describe !!}</p>
+                                <a class="cta-link typewriter" href="{{route('page.blog',$value->slug)}}" target="_blank">ĐỌC THÊM TIN TỨC <img
+                        src="{{ asset('home/images/arrow-circle-right.png') }}" /></a>
                             </div>
                         </div>
                     @endforeach
