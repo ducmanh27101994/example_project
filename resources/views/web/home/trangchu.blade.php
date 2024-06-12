@@ -91,9 +91,12 @@
                                                                             <span
                                                                                 class="new_price">{{number_format($value->product_price)}}
                                                                                 VNĐ</span>
-                                                                            <span
+                                                                                if(number_format($value->price_comparison) != 0) {
+                                                                                    <span
                                                                                 class="old_price">{{number_format($value->price_comparison)}}
                                                                                 VNĐ</span>
+                                                                                }
+                                                                            
                                                                         </p>
                                                                     </div>
                                                                     <div class="d-flex flex-wrap justify-content-between">
