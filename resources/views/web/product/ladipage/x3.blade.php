@@ -113,7 +113,7 @@
 
     <!-- ảnh màu xe -->
     <section class="section section-color"
-        style="background: #000 url({{ asset('home/images/x3/bg-color.png') }}) no-repeat;">
+        style="background: #000 url({{ asset('home/images/x3/bg-color.png') }}) no-repeat;background-size: cover;">
 
         <div class="head_color_title">
             <h2>Đa dạng màu sắc</h2>
