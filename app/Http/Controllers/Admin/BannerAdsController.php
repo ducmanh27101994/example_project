@@ -63,7 +63,7 @@ class BannerAdsController extends BaseController
             'code_ads' => $request->code_ads,
             'desc' => $request->desc,
             'link' => $request->txt_link,
-            'image_banner_mobile' => $request->$image_banner_mobile,
+            'image_banner_mobile' => $image_banner_mobile,
         ];
         $banner = $this->bannerAdsRepository->create($data);
         if ($banner) {
@@ -103,7 +103,7 @@ class BannerAdsController extends BaseController
             'code_ads' => $request->code_ads,
             'desc' => $request->desc,
             'link' => $request->txt_link,
-            'image_banner_mobile' => $request->$image_banner_mobile,
+            'image_banner_mobile' => $image_banner_mobile,
         ];
         $banner = $this->bannerAdsRepository->update($id, $data);
 
