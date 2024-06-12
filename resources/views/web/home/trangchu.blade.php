@@ -91,11 +91,13 @@
                                                                             <span
                                                                                 class="new_price">{{number_format($value->product_price)}}
                                                                                 VNĐ</span>
+                                                                                <?php
                                                                                 if(number_format($value->price_comparison) != 0) {
                                                                                     <span
                                                                                 class="old_price">{{number_format($value->price_comparison)}}
                                                                                 VNĐ</span>
                                                                                 }
+                                                                                ?>
                                                                             
                                                                         </p>
                                                                     </div>
