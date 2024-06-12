@@ -179,7 +179,7 @@
                                                 <div class="block_sp">
                                                     <div class="form-group">
                                                         <label class="text-no-bold" data-bind="text:Title"
-                                                               style="font-weight:bold">Hình ảnh đại diện</label>
+                                                               style="font-weight:bold">Hình ảnh đại diện (908 x 406 pixel)</label>
                                                         <input type="file" name="representative_image"
                                                                id="flupload" class="btn-change-link pull-right"
                                                                style="width:180px;">
