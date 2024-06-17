@@ -74,14 +74,15 @@
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
                     <div class="dong-co-xanh_img ">
                         <div class="wrap_image aos-init aos-animate" data-aos="zoom-out-down" data-aos-duration="10000">
-                            <img src="{{ asset('home/images/dongcoxanh.png') }}" alt="dongcoxanh">
+                            <img src="{{$product->block_dongco_image ?? ''}}" alt="dongcoxanh">
                         </div>
                     </div>
                 </div>
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 aos-init aos-animate" data-aos="fade-up"
                     data-aos-duration="2000">
                     <div class="dong-co-xanh_text">
-                        <div class="text_head">
+                        {{$product->dongco_content ?? ''}}
+                        <!-- <div class="text_head">
                             <h2> ĐỘNG CƠ ĐỘC QUYỀN
                                 <br /> OSAKAR
                             </h2>
@@ -92,7 +93,8 @@
                         </div>
                         <div class="text_descreption">
                             <p>Trang bị động cơ công suất tối đa 2800W, hoạt động bền bỉ, công nghệ cuộn dây đơn dây
-                                cuộn mật độ dày cao gọn gàng phẳng khe hở ít, giúp hiệu suất của động cơ tăng 35 %. Bộ
+                                cuộn mật độ dày cao gọn gàng phẳng khe hở ít, giúp hiệu suất của động cơ tăng 35 %.
+                                Bộ
                                 điều khiển thu hồi điện năng.</p>
                         </div>
                         <div class="infor_bottom">
@@ -104,7 +106,7 @@
                                 <span>Tăng tốc độ trong</span>
                                 <p>0-50km/h</p>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
