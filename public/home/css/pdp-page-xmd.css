@@ -1922,7 +1922,7 @@ img {
     align-items: center;
     margin-top: 24px;
     padding: 0;
-    width: 442px;
+    width: 520px;
     height: 64px;
     border-radius: 60px;
     background: #ED2025;
@@ -3801,6 +3801,13 @@ html {
 .product-360-views .product-images-list .image-item.active {
     opacity: 1;
     visibility: visible;
+}
+
+@media (max-width:1400px) and (max-width:1600px) { 
+    #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .tab-pane-info ul li {
+        margin: 0 35px;
+    }
+
 }
 
 @media screen and (max-width:1024px) {
