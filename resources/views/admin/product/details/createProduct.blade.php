@@ -201,7 +201,8 @@
 
                                                 <div class="block_sp">
                                                     <div class="form-group">
-                                                        <label class="text-no-bold" data-bind="text: Title">Hình ảnh động cơ</label>
+                                                        <label class="text-no-bold" data-bind="text: Title">Hình ảnh
+                                                            động cơ</label>
                                                         <input type="file" name="block_dongco_image" id="flupload"
                                                             class="btn-change-link pull-right" style="width:180px;">
                                                     </div>
@@ -211,8 +212,35 @@
                                                 </div>
 
 
-                                                <textarea name="dongco_content" id="dongco_content" cols="50"
-                                                    rows="30"></textarea>
+                                                <textarea name="dongco_content" id="dongco_content" cols="50" rows="30">
+
+                                                    <div class="text_head">
+                            <h2> ĐỘNG CƠ ĐỘC QUYỀN
+                                <br /> OSAKAR
+                            </h2>
+                        </div>
+                        <div class="text_mid">
+                            <h3> Mạnh mẽ hơn - Ổn định hơn - Êm ái hơn
+                            </h3>
+                        </div>
+                        <div class="text_descreption">
+                            <p>Trang bị động cơ công suất tối đa 2800W, hoạt động bền bỉ, công nghệ cuộn dây đơn dây
+                                cuộn mật độ dày cao gọn gàng phẳng khe hở ít, giúp hiệu suất của động cơ tăng 35 %.
+                                Bộ
+                                điều khiển thu hồi điện năng.</p>
+                        </div>
+                        <div class="infor_bottom">
+                            <div class="infor_box">
+                                <span>Tốc độ tối đa</span>
+                                <p>50km/h</p>
+                            </div>
+                            <div class="infor_box">
+                                <span>Tăng tốc độ trong</span>
+                                <p>0-50km/h</p>
+                            </div>
+                        </div>
+
+                                                </textarea>
                                             </div>
                                         </div>
 
@@ -304,7 +332,7 @@
 
                                                     <input name="product_price" type="number" value="" id="txtpricenew"
                                                         class="inputbox" onkeypress=" return isNumberKey(event)"
-                                                        style="width:100%;" >
+                                                        style="width:100%;">
 
                                                 </div>
                                                 <div class="form-group">
@@ -315,7 +343,7 @@
                                                         id="txtpriceold" class="inputbox"
                                                         onkeypress=" return isNumberKey(event)"
                                                         placeholder="Giá so sánh với giá thị trường (Không bắt buộc nhập)"
-                                                        style="width:100%;" >
+                                                        style="width:100%;">
                                                 </div>
                                             </div>
                                         </div>
@@ -357,7 +385,8 @@
                                         <div class="block_sp">
                                             <div class="form-group">
                                                 <p class="ttg">Số thứ tụ</p>
-                                                <input id="chkstt" name="chkstt" value="1" class="inputbox" style="width:100%;" type="number" min="0">
+                                                <input id="chkstt" name="chkstt" value="1" class="inputbox"
+                                                    style="width:100%;" type="number" min="0">
                                             </div>
                                         </div>
 
@@ -373,8 +402,7 @@
                                             <div class="form-group">
                                                 <p class="ttg">Lưu ý</p>
                                                 <textarea name="note" id="note" class="inputbox"
-                                                            placeholder="Tên thông số dộng cơ"
-                                                            style="width:100%;"></textarea>
+                                                    placeholder="Tên thông số dộng cơ" style="width:100%;"></textarea>
                                             </div>
                                         </div>
 
@@ -573,62 +601,62 @@
                                     </style>
                                     <script>
                                         $(document).ready(function () {
-    ImgUpload();
-});
+                                            ImgUpload();
+                                        });
 
-function ImgUpload() {
-    var imgWrap = "";
-    var imgArray = [];
+                                        function ImgUpload() {
+                                            var imgWrap = "";
+                                            var imgArray = [];
 
-    $('.upload__inputfile').each(function () {
-        $(this).on('change', function (e) {
-            imgWrap = $(this).closest('.upload__box').find('.upload__img-wrap');
-            var maxLength = $(this).attr('data-max_length');
+                                            $('.upload__inputfile').each(function () {
+                                                $(this).on('change', function (e) {
+                                                    imgWrap = $(this).closest('.upload__box').find('.upload__img-wrap');
+                                                    var maxLength = $(this).attr('data-max_length');
 
-            var files = e.target.files;
-            var filesArr = Array.prototype.slice.call(files);
-            var iterator = 0;
-            filesArr.forEach(function (f, index) {
+                                                    var files = e.target.files;
+                                                    var filesArr = Array.prototype.slice.call(files);
+                                                    var iterator = 0;
+                                                    filesArr.forEach(function (f, index) {
 
-                if (!f.type.match('image.*')) {
-                    return;
-                }
+                                                        if (!f.type.match('image.*')) {
+                                                            return;
+                                                        }
 
-                if (imgArray.length >= maxLength) {
-                    return false;
-                } else {
-                    imgArray.push({ file: f, customVariable: '' });
-                    console.log(imgArray);
-                    var reader = new FileReader();
-                    reader.onload = function (e) {
-                        var html = "<div class='upload__img-box'><input type='text' class='img-name' placeholder='Enter image name'><div style='background-image: url(" + e.target.result + ")' data-number='" + $(".upload__img-close").length + "' data-file='" + f.name + "' class='img-bg'><div class='upload__img-close'></div></div></div>";
-                        imgWrap.append(html);
-                        iterator++;
-                    }
-                    reader.readAsDataURL(f);
-                }
-            });
-        });
-    });
+                                                        if (imgArray.length >= maxLength) {
+                                                            return false;
+                                                        } else {
+                                                            imgArray.push({ file: f, customVariable: '' });
+                                                            console.log(imgArray);
+                                                            var reader = new FileReader();
+                                                            reader.onload = function (e) {
+                                                                var html = "<div class='upload__img-box'><input type='text' class='img-name' placeholder='Enter image name'><div style='background-image: url(" + e.target.result + ")' data-number='" + $(".upload__img-close").length + "' data-file='" + f.name + "' class='img-bg'><div class='upload__img-close'></div></div></div>";
+                                                                imgWrap.append(html);
+                                                                iterator++;
+                                                            }
+                                                            reader.readAsDataURL(f);
+                                                        }
+                                                    });
+                                                });
+                                            });
 
-    $('body').on('click', ".upload__img-close", function (e) {
-        var file = $(this).parent().data("file");
-        for (var i = 0; i < imgArray.length; i++) {
-            if (imgArray[i].file.name === file) {
-                imgArray.splice(i, 1);
-                console.log(imgArray);
-                break;
-            }
-        }
-        $(this).parent().parent().remove();
-    });
+                                            $('body').on('click', ".upload__img-close", function (e) {
+                                                var file = $(this).parent().data("file");
+                                                for (var i = 0; i < imgArray.length; i++) {
+                                                    if (imgArray[i].file.name === file) {
+                                                        imgArray.splice(i, 1);
+                                                        console.log(imgArray);
+                                                        break;
+                                                    }
+                                                }
+                                                $(this).parent().parent().remove();
+                                            });
 
-    $('body').on('blur', ".img-name", function () {
-        var index = $(this).closest('.upload__img-box').index();
-        imgArray[index].customVariable = $(this).val();
-    });
+                                            $('body').on('blur', ".img-name", function () {
+                                                var index = $(this).closest('.upload__img-box').index();
+                                                imgArray[index].customVariable = $(this).val();
+                                            });
 
-}
+                                        }
 
                                     </script>
                                 </div>
