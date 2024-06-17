@@ -81,7 +81,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 aos-init aos-animate" data-aos="fade-up"
                     data-aos-duration="2000">
                     <div class="dong-co-xanh_text">
-                        {{$product->dongco_content ?? ''}}
+                    {!! $product->dongco_content ?? '' !!}
                         <!-- <div class="text_head">
                             <h2> ĐỘNG CƠ ĐỘC QUYỀN
                                 <br /> OSAKAR
