@@ -157,7 +157,7 @@ $(document).ready(function () {
             }
         }
     });
-    
+
     $('.section-hero-slider').owlCarousel({
         items: 1,
         dots: false,
@@ -423,8 +423,16 @@ $(document).ready(function () {
     $(".arrco_block-element_single").on("click", function () {
         $(".arrco_block-element_single").children().removeClass('active')
         $(".arrco_block-element_single").children().next().removeClass('active')
-        $(this).children().addClass('active')
-        $(this).children().next().addClass('active')
+        
+        if ($(this).hasClass('active')) {
+            $(this).children().removeClass('active')
+            $(this).children().next().removeClass('active')
+            $(this).removeClass('active')
+        } else {
+            $(this).children().addClass('active')
+            $(this).children().next().addClass('active')
+            $(this).addClass('active')
+        }
     });
 
     $(".close, .mask").on("click", function () {

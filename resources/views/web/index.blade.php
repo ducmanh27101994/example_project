@@ -80,12 +80,12 @@
             });
         });
     </script>
-    <a href="tel:0986446868" title="098 644 6868" class="suntory-alo-phone suntory-alo-green" id="suntory-alo-phoneIcon" style="bottom: 10%; left: 0;">
+    <a href="tel:19000095" title="1900 0095" class="suntory-alo-phone suntory-alo-green" id="suntory-alo-phoneIcon" style="bottom: 10%; left: 0;">
         <div class="suntory-alo-ph-circle"></div>
         <div class="suntory-alo-ph-circle-fill"></div>
         <div class="suntory-alo-ph-img-circle"><i class="fa fa-phone"></i></div>
     </a>
-    <a href="https://zalo.me/0986446868">
+    <a href="https://zalo.me/3413590899111168672">
         <i class="button-zalo" id="button-zalo-m">
             <div class="button-zalo-main"></div>
             <em></em>
