@@ -91,9 +91,10 @@
                                             <a class="cta-link from-left-and-back" href="{{route('details.basic', $value->path)}}">Xem chi
                                                 tiết</a>
                                         </div>
+                                        <!-- {{route('create.build', $value->id)}} -->
                                         <figure class="image-family image-family--supersport"
                                             style="background-image: url('{{$value->representative_image_product}}')"></figure>
-                                        <a href="{{route('create.build', $value->id)}}" class="deposit-buy-now ">Mua ngay</a>
+                                        <a href="/" class="deposit-buy-now ">Mua ngay</a>
                                     </div>
                         @endforeach
                     </div>

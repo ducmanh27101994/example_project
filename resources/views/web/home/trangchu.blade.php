@@ -119,8 +119,9 @@ if ($value->price_comparison != 0) {
                                                     <?php
                                                     }
                                                     ?>
+                                                    <!-- {{route('create.build', $value->id)}} -->
                                                     <div class="d-flex flex-wrap justify-content-between">
-                                                        <a href="{{route('create.build', $value->id)}}"
+                                                        <a href="/"
                                                             class="deposit-buy-now col-lg-6">Mua
                                                             ngay</a>
                                                         <a href="{{route('details.basic', $value->path)}}"
