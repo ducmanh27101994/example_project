@@ -50,8 +50,12 @@ class IndependentContentController extends BaseController
         if ($request->avatar) {
             $avatar = $this->uploadService->upload_param($request->avatar);
         }
+        if ($request->avatar_mobile) {
+            $avatar_mobile = $this->uploadService->upload_param($request->avatar_mobile);
+        }
         $data = [
             'avatar' => $avatar ?? '',
+            'avatar_mobile' => $avatar_mobile ?? '',
             'status' => $status,
             'title' => $request->title,
             'location' => $request->location,
@@ -86,8 +90,12 @@ class IndependentContentController extends BaseController
         if ($request->avatar) {
             $avatar = $this->uploadService->upload_param($request->avatar);
         }
+        if ($request->avatar_mobile) {
+            $avatar_mobile = $this->uploadService->upload_param($request->avatar_mobile);
+        }
         $data = [
             'avatar' => $avatar ?? $dataOld->avatar,
+            'avatar_mobile' => $avatar_mobile ?? $dataOld->avatar_mobile,
             'status' => $status,
             'title' => $request->title,
             'location' => $request->location,

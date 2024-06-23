@@ -202,8 +202,23 @@ if ($value->price_comparison != 0) {
 
                     @if(!empty($homepage_popular_bottom))
                     @foreach($homepage_popular_bottom as $value)
-                    <div class="grid-item grid-item--tile grid-item--experience-dimension span-12"
+                    <div class="grid-item grid-item--tile grid-item--experience-dimension span-12 hidden-xs hidden-sm"
                         data-component-list="GridItem" style="background-image: url({!! $value->avatar !!}">
+                        <a href="{!! $value->link !!}" title="{!! $value->title !!}">
+
+                            <h3 class="grid-item-eyebrow" data-aos="fade-up" data-aos-duration='1500'>
+                                {!! $value->title !!}</h3>
+                            <div class="row">
+                                <div class="col-md-7 col-lg-6">
+                                    <div class="
+                                            grid-item-copy" data-aos="fade-up" data-aos-duration='2000'>
+                                        {!! $value->detail !!}</div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="grid-item grid-item--tile grid-item--experience-dimension span-12 hidden-md hidden-lg"
+                        data-component-list="GridItem" style="background-image: url({!! $value->avatar_mobile !!}">
                         <a href="{!! $value->link !!}" title="{!! $value->title !!}">
 
                             <h3 class="grid-item-eyebrow" data-aos="fade-up" data-aos-duration='1500'>

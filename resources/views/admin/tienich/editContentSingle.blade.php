@@ -149,6 +149,21 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
+                                                            <td class="key">
+                                                                <label for="txtphone">Ảnh đại diện mobile</label>
+                                                            </td>
+                                                            <td>
+
+                                                                <br>
+                                                                <input type="file"
+                                                                       name="avatar_mobile"
+                                                                       id="flupload" title="Ảnh đại diện mobile"
+                                                                       class="upload-file" >
+                                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                                <img src="{{$staticPage->avatar_mobile}}" style="width: 150px;display: block;">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
                                                             <td width="150" class="key">
                                                                 <label for="txtuser">Link liên kết</label>
                                                             </td>
