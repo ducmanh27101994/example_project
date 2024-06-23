@@ -15,204 +15,212 @@
                     <h2>ĐIều khoản, pháp lý</h2>
                 </div>
                 <div class="arrconrational_block">
-                    <div class="arrco_block-element_single">
-                        <div class="arrco_title">
-                            <span class="text_left">Chính sách bảo hành</span>
-                            <span class="icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38"
-                                    fill="none">
-                                    <path
-                                        d="M19.0013 3.1665C10.2771 3.1665 3.16797 10.2757 3.16797 18.9998C3.16797 27.724 10.2771 34.8332 19.0013 34.8332C27.7255 34.8332 34.8346 27.724 34.8346 18.9998C34.8346 10.2757 27.7255 3.1665 19.0013 3.1665ZM25.4296 17.844L19.8405 23.4332C19.603 23.6707 19.3021 23.7815 19.0013 23.7815C18.7005 23.7815 18.3996 23.6707 18.1621 23.4332L12.573 17.844C12.1138 17.3848 12.1138 16.6248 12.573 16.1657C13.0321 15.7065 13.7921 15.7065 14.2513 16.1657L19.0013 20.9157L23.7513 16.1657C24.2105 15.7065 24.9705 15.7065 25.4296 16.1657C25.8888 16.6248 25.8888 17.369 25.4296 17.844Z"
-                                        fill="#343944" />
-                                </svg>
-                            </span>
-                        </div>
-                        <div class="arrco_content_block">
-                            <div class="entry">
-                                <div class="title_content">
-                                    <h3>Chính sách bảo hành</h3>
-                                </div>
-                                <div class="text">
-                                    <p><strong style="font-size: 17px">1. Phạm vi bảo hành</strong></p>
-                                    <p>Các phụ tùng được Công ty áp dụng bảo hành được chỉ định rõ sau đây.</p>
-                                    <br>
-                                    <strong>CÁC SẢN PHẨM ĐƯỢC ÁP DỤNG BẢO HÀNH:</strong>
-                                    <br>
-                                    <div class="table_list">
-                                        <table style="width:100%">
-                                            <thead>
-                                                <tr>
-                                                    <th width="50">STT</th>
-                                                    <th>Tên sản phụ tùng</th>
-                                                    <th>Điều kiện bảo hành</th>
-                                                    <th width="250">Thời gian bảo hành</th>
-                                                    <th>Nội dung bảo hành</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <th>1</th>
-                                                    <th>Khung và càng sau</th>
-                                                    <th>Lỗi do nhà sản xuất. <br> Không có dấu hiệu va chạm giao thông
-                                                    </th>
-                                                    <th>36 tháng</th>
-                                                    <th>Bảo hành sửa chữa, vì không thể thay đổi số khung.</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>2</th>
-                                                    <th>Bộ phanh dầu</th>
-                                                    <th>Lỗi do nhà sản xuất, Nguyên vẹn, không có dấu hiệu va chạm giao
-                                                        thông, hoặc tự tháo lắp
-                                                    </th>
-                                                    <th>12 tháng</th>
-                                                    <th>Sửa chữa hoặc 1 đổi 1 với loại có chất lượng tương đương</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>3</th>
-                                                    <th>Bộ giảm xóc</th>
-                                                    <th>Lỗi do nhà sản xuất, nguyên vẹn, không có dấu hiệu va chạm giao
-                                                        thông, hoặc tự tháo lắp</th>
-                                                    <th>12 tháng</th>
-                                                    <th>Sửa chữa hoặc 1 đổi 1 với loại có chất lượng tương đương (riêng
-                                                        phớt
-                                                        dầu
-                                                        bù tại chỗ).</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>4</th>
-                                                    <th>Vành trước</th>
-                                                    <th>Lỗi do nhà sản xuất, hở
-                                                        khí, không đồng tâm, "không có dấu hiệu va chạm giao thông."
-                                                    </th>
-                                                    <th>24 tháng</th>
-                                                    <th>Đổi mới</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>5</th>
-                                                    <th>Động cơ liền vành sau</th>
-                                                    <th>Còn nguyên vẹn, dây và rắc điện đầy đủ dây và rắc điện, không có
-                                                        dấu hiệu tháo lắp cậy phá.</th>
-                                                    <th>24 tháng</th>
-                                                    <th>Sửa chữa, vì lý do không thể thay đổi số động cơ.</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>6</th>
-                                                    <th>Bộ sạc</th>
-                                                    <th>Còn nguyên tem, dây và rắc điện, không có dấu hiệu tháo lắp cắt
-                                                        nối.</th>
-                                                    <th>24 tháng</th>
-                                                    <th>Sửa chữa hoặc 1 đổi 1 với loại có chất lượng tương đương</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>7</th>
-                                                    <th>Bộ điều khiển</th>
-                                                    <th>Còn nguyên tem, dây và rắc điện, không có dấu hiệu tháo lắp cắt
-                                                        nối.</th>
-                                                    <th>24 tháng</th>
-                                                    <th>Trước 5 tháng đổi mới, còn lại Sửa chữa hoặc 1 đổi 1 với loại có
-                                                        chất lượng tương
-                                                        đương.
-                                                    </th>
-                                                </tr>
-                                                <tr>
-                                                    <th>8</th>
-                                                    <th>Bộ đèn pha, đèn hậu, xi nhan.</th>
-                                                    <th>Còn nguyên tem, dây và rắc điện, không biến dạng, gẫy vỡ, rạn
-                                                        nứt.</th>
-                                                    <th>12 tháng</th>
-                                                    <th>Sửa chữa hoặc 1 đổi 1 với loại có chất lượng tương đương ( không
-                                                        BH bóng sợi đốt)</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>9</th>
-                                                    <th>Bộ khóa điện</th>
-                                                    <th>Còn nguyên tem, dây và rắc điện, không biến dạng, gẫy vỡ, đủ 2
-                                                        chìa khóa.</th>
-                                                    <th>12 tháng</th>
-                                                    <th>Trước 3 tháng đổi mới, còn lại sửa chữa hoặc 1 đổi 1 với loại có
-                                                        chất lượng tương đương.</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>10</th>
-                                                    <th>Bộ tay ga</th>
-                                                    <th>Còn nguyên tem, dây và rắc điện không có dấu hiệu cắt nối, không
-                                                        trầy xước.</th>
-                                                    <th>12 tháng</th>
-                                                    <th>Sửa chữa hoặc 1 đổi 1 với loại có chất lượng tương đương.</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>11</th>
-                                                    <th>Bộ công tắc</th>
-                                                    <th>Còn nguyên vẹn nguyên tem, dây và rắc điện không có dấu hiệu cắt
-                                                        nối, không tháo lắp.</th>
-                                                    <th>12 tháng</th>
-                                                    <th>Sửa chữa hoặc 1 đổi 1 với loại có chất lượng tương đương.</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>12</th>
-                                                    <th>Bộ đổi nguồn</th>
-                                                    <th>Còn nguyên vẹn nguyên tem, đầy đủ dây và rắc điện, không có dấu
-                                                        hiệu cắt nối, tháo lắp.</th>
-                                                    <th>12 tháng</th>
-                                                    <th>Sửa chữa hoặc 1 đổi 1 với loại có chất lượng tương đương.</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>13</th>
-                                                    <th>Bộ chống trộm</th>
-                                                    <th>Còn nguyên vẹn, nguyên tem, đầy đủ dây và rắc điện, không có dấu
-                                                        hiệu tháo lắp, đủ 2 chìa khóa.</th>
-                                                    <th>6 tháng</th>
-                                                    <th>Sửa chữa hoặc 1 đổi 1 với loại có chất lượng tương đương.</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>14</th>
-                                                    <th>Bộ đồng hồ</th>
-                                                    <th>Còn nguyên vẹn, nguyên tem, đầy đủ dây và rắc điện, không có dấu
-                                                        hiệu tháo lắp, không biến dạng, nứt vỡ.</th>
-                                                    <th>12 tháng</th>
-                                                    <th>Sửa chữa hoặc 1 đổi 1 với loại có chất lượng tương đương.</th>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
 
-                                    <br>
-                                    <p><strong style="font-size: 17px">2. Những trường hợp không thuộc phạm vi bảo
-                                            hành</strong></p>
-                                    <div class="luuy">
-                                        <p>* Sau khi mua hàng những bộ phận hao mòn và tiêu hao tự nhiên (xem thêm ở
-                                            Hướng dẫn sử dụng) sẽ không thuộc gói ba bảo hành.</p>
-                                        <p>* Các trường hợp hư hỏng do không làm theo yêu cầu hướng dẫn trong Hướng dẫn
-                                            sử dụng xe hoặc Các trường hợp hư hỏng do bảo dưỡng không đúng cách tại các
-                                            cửa hàng, dịch vụ không chuyên nghiệp.</p>
-                                        <p>* Các trường hợp hư hỏng do sử dụng vượt quá giới hạn thông số kỹ thuật do
-                                            công ty quy định.</p>
-                                        <p>• Các trường thiệt hại, hư hỏng do tự ý sửa chữa không phải do kỹ thuật viên
-                                            hệ thống đại lý của OSAKAR.</p>
-                                        <p>* Các trường hợp hư do không sử dụng linh kiện chính hãng của OSAKAR.</p>
-                                        <p>* Các trường hợp hư hỏng do thay đổi theo thời gian (mất màu tự nhiên, lớp mạ
-                                            rỉ sét, v.v.).</p>
-                                        <p>* Sự xuống cấp của các bộ phận (cao su, v.v.) và dầu mỡ do để lâu ngày.</p>
-                                        <p>* Các vấn đề gây ra bởi các yếu tố bên ngoài như hành động ác ý, cố ý gây tổn
-                                            hại.</p>
-                                        <p>Các vấn đề do khói bụi than, thuốc, dược phẩm, phân chim và xói mòn do có
-                                            thành phần muối, mưa axit.
-                                        </p>
-                                        <p>• Thiệt hại trong các trường hợp bất khả kháng (động đất, bão, hỏa hoạn, lũ
-                                            lụt, v.v.)
-                                        </p>
-                                        <p>* Hư hỏng do các yếu tố không đảm bảo chất lượng khác.</p>
-                                        <p>* Không có hóa đơn, biên lai hoặc các chứng từ chứng minh đã mua xe OSAKAR
-                                            chính hãng.</p>
-                                        <p>* Bộ sạc, bộ điều khiển, v.v. có nhãn hiệu bị rách sẽ không được bảo hành và
-                                            chìa khóa bị gãy bên trong.</p>
-                                        <p>* Pin ắc quy bị chai, phồng, ngâm nước, hư hỏng do nguyên nhân bên ngoài, tất
-                                            cả pin và phụ kiện đều không phải được đổi trả.</p>
+                    @if(!empty($chinh_sach_bao_hanh))
+                        @foreach($chinh_sach_bao_hanh as $value)
+                            <div class="arrco_block-element_single">
+                                <div class="arrco_title">
+                                    <span class="text_left">{!! $value->title !!}</span>
+                                    <span class="icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38"
+                                            fill="none">
+                                            <path
+                                                d="M19.0013 3.1665C10.2771 3.1665 3.16797 10.2757 3.16797 18.9998C3.16797 27.724 10.2771 34.8332 19.0013 34.8332C27.7255 34.8332 34.8346 27.724 34.8346 18.9998C34.8346 10.2757 27.7255 3.1665 19.0013 3.1665ZM25.4296 17.844L19.8405 23.4332C19.603 23.6707 19.3021 23.7815 19.0013 23.7815C18.7005 23.7815 18.3996 23.6707 18.1621 23.4332L12.573 17.844C12.1138 17.3848 12.1138 16.6248 12.573 16.1657C13.0321 15.7065 13.7921 15.7065 14.2513 16.1657L19.0013 20.9157L23.7513 16.1657C24.2105 15.7065 24.9705 15.7065 25.4296 16.1657C25.8888 16.6248 25.8888 17.369 25.4296 17.844Z"
+                                                fill="#343944" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <div class="arrco_content_block">
+                                    <div class="entry">
+                                        <!-- <div class="title_content">
+                                            <h3>Chính sách bảo hành</h3>
+                                        </div>
+                                        <div class="text">
+                                            <p><strong style="font-size: 17px">1. Phạm vi bảo hành</strong></p>
+                                            <p>Các phụ tùng được Công ty áp dụng bảo hành được chỉ định rõ sau đây.</p>
+                                            <br>
+                                            <strong>CÁC SẢN PHẨM ĐƯỢC ÁP DỤNG BẢO HÀNH:</strong>
+                                            <br>
+                                            <div class="table_list">
+                                                <table style="width:100%">
+                                                    <thead>
+                                                        <tr>
+                                                            <th width="50">STT</th>
+                                                            <th>Tên sản phụ tùng</th>
+                                                            <th>Điều kiện bảo hành</th>
+                                                            <th width="250">Thời gian bảo hành</th>
+                                                            <th>Nội dung bảo hành</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <th>1</th>
+                                                            <th>Khung và càng sau</th>
+                                                            <th>Lỗi do nhà sản xuất. <br> Không có dấu hiệu va chạm giao thông
+                                                            </th>
+                                                            <th>36 tháng</th>
+                                                            <th>Bảo hành sửa chữa, vì không thể thay đổi số khung.</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>2</th>
+                                                            <th>Bộ phanh dầu</th>
+                                                            <th>Lỗi do nhà sản xuất, Nguyên vẹn, không có dấu hiệu va chạm giao
+                                                                thông, hoặc tự tháo lắp
+                                                            </th>
+                                                            <th>12 tháng</th>
+                                                            <th>Sửa chữa hoặc 1 đổi 1 với loại có chất lượng tương đương</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>3</th>
+                                                            <th>Bộ giảm xóc</th>
+                                                            <th>Lỗi do nhà sản xuất, nguyên vẹn, không có dấu hiệu va chạm giao
+                                                                thông, hoặc tự tháo lắp</th>
+                                                            <th>12 tháng</th>
+                                                            <th>Sửa chữa hoặc 1 đổi 1 với loại có chất lượng tương đương (riêng
+                                                                phớt
+                                                                dầu
+                                                                bù tại chỗ).</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>4</th>
+                                                            <th>Vành trước</th>
+                                                            <th>Lỗi do nhà sản xuất, hở
+                                                                khí, không đồng tâm, "không có dấu hiệu va chạm giao thông."
+                                                            </th>
+                                                            <th>24 tháng</th>
+                                                            <th>Đổi mới</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>5</th>
+                                                            <th>Động cơ liền vành sau</th>
+                                                            <th>Còn nguyên vẹn, dây và rắc điện đầy đủ dây và rắc điện, không có
+                                                                dấu hiệu tháo lắp cậy phá.</th>
+                                                            <th>24 tháng</th>
+                                                            <th>Sửa chữa, vì lý do không thể thay đổi số động cơ.</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>6</th>
+                                                            <th>Bộ sạc</th>
+                                                            <th>Còn nguyên tem, dây và rắc điện, không có dấu hiệu tháo lắp cắt
+                                                                nối.</th>
+                                                            <th>24 tháng</th>
+                                                            <th>Sửa chữa hoặc 1 đổi 1 với loại có chất lượng tương đương</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>7</th>
+                                                            <th>Bộ điều khiển</th>
+                                                            <th>Còn nguyên tem, dây và rắc điện, không có dấu hiệu tháo lắp cắt
+                                                                nối.</th>
+                                                            <th>24 tháng</th>
+                                                            <th>Trước 5 tháng đổi mới, còn lại Sửa chữa hoặc 1 đổi 1 với loại có
+                                                                chất lượng tương
+                                                                đương.
+                                                            </th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>8</th>
+                                                            <th>Bộ đèn pha, đèn hậu, xi nhan.</th>
+                                                            <th>Còn nguyên tem, dây và rắc điện, không biến dạng, gẫy vỡ, rạn
+                                                                nứt.</th>
+                                                            <th>12 tháng</th>
+                                                            <th>Sửa chữa hoặc 1 đổi 1 với loại có chất lượng tương đương ( không
+                                                                BH bóng sợi đốt)</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>9</th>
+                                                            <th>Bộ khóa điện</th>
+                                                            <th>Còn nguyên tem, dây và rắc điện, không biến dạng, gẫy vỡ, đủ 2
+                                                                chìa khóa.</th>
+                                                            <th>12 tháng</th>
+                                                            <th>Trước 3 tháng đổi mới, còn lại sửa chữa hoặc 1 đổi 1 với loại có
+                                                                chất lượng tương đương.</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>10</th>
+                                                            <th>Bộ tay ga</th>
+                                                            <th>Còn nguyên tem, dây và rắc điện không có dấu hiệu cắt nối, không
+                                                                trầy xước.</th>
+                                                            <th>12 tháng</th>
+                                                            <th>Sửa chữa hoặc 1 đổi 1 với loại có chất lượng tương đương.</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>11</th>
+                                                            <th>Bộ công tắc</th>
+                                                            <th>Còn nguyên vẹn nguyên tem, dây và rắc điện không có dấu hiệu cắt
+                                                                nối, không tháo lắp.</th>
+                                                            <th>12 tháng</th>
+                                                            <th>Sửa chữa hoặc 1 đổi 1 với loại có chất lượng tương đương.</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>12</th>
+                                                            <th>Bộ đổi nguồn</th>
+                                                            <th>Còn nguyên vẹn nguyên tem, đầy đủ dây và rắc điện, không có dấu
+                                                                hiệu cắt nối, tháo lắp.</th>
+                                                            <th>12 tháng</th>
+                                                            <th>Sửa chữa hoặc 1 đổi 1 với loại có chất lượng tương đương.</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>13</th>
+                                                            <th>Bộ chống trộm</th>
+                                                            <th>Còn nguyên vẹn, nguyên tem, đầy đủ dây và rắc điện, không có dấu
+                                                                hiệu tháo lắp, đủ 2 chìa khóa.</th>
+                                                            <th>6 tháng</th>
+                                                            <th>Sửa chữa hoặc 1 đổi 1 với loại có chất lượng tương đương.</th>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>14</th>
+                                                            <th>Bộ đồng hồ</th>
+                                                            <th>Còn nguyên vẹn, nguyên tem, đầy đủ dây và rắc điện, không có dấu
+                                                                hiệu tháo lắp, không biến dạng, nứt vỡ.</th>
+                                                            <th>12 tháng</th>
+                                                            <th>Sửa chữa hoặc 1 đổi 1 với loại có chất lượng tương đương.</th>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <br>
+                                            <p><strong style="font-size: 17px">2. Những trường hợp không thuộc phạm vi bảo
+                                                    hành</strong></p>
+                                            <div class="luuy">
+                                                <p>* Sau khi mua hàng những bộ phận hao mòn và tiêu hao tự nhiên (xem thêm ở
+                                                    Hướng dẫn sử dụng) sẽ không thuộc gói ba bảo hành.</p>
+                                                <p>* Các trường hợp hư hỏng do không làm theo yêu cầu hướng dẫn trong Hướng dẫn
+                                                    sử dụng xe hoặc Các trường hợp hư hỏng do bảo dưỡng không đúng cách tại các
+                                                    cửa hàng, dịch vụ không chuyên nghiệp.</p>
+                                                <p>* Các trường hợp hư hỏng do sử dụng vượt quá giới hạn thông số kỹ thuật do
+                                                    công ty quy định.</p>
+                                                <p>• Các trường thiệt hại, hư hỏng do tự ý sửa chữa không phải do kỹ thuật viên
+                                                    hệ thống đại lý của OSAKAR.</p>
+                                                <p>* Các trường hợp hư do không sử dụng linh kiện chính hãng của OSAKAR.</p>
+                                                <p>* Các trường hợp hư hỏng do thay đổi theo thời gian (mất màu tự nhiên, lớp mạ
+                                                    rỉ sét, v.v.).</p>
+                                                <p>* Sự xuống cấp của các bộ phận (cao su, v.v.) và dầu mỡ do để lâu ngày.</p>
+                                                <p>* Các vấn đề gây ra bởi các yếu tố bên ngoài như hành động ác ý, cố ý gây tổn
+                                                    hại.</p>
+                                                <p>Các vấn đề do khói bụi than, thuốc, dược phẩm, phân chim và xói mòn do có
+                                                    thành phần muối, mưa axit.
+                                                </p>
+                                                <p>• Thiệt hại trong các trường hợp bất khả kháng (động đất, bão, hỏa hoạn, lũ
+                                                    lụt, v.v.)
+                                                </p>
+                                                <p>* Hư hỏng do các yếu tố không đảm bảo chất lượng khác.</p>
+                                                <p>* Không có hóa đơn, biên lai hoặc các chứng từ chứng minh đã mua xe OSAKAR
+                                                    chính hãng.</p>
+                                                <p>* Bộ sạc, bộ điều khiển, v.v. có nhãn hiệu bị rách sẽ không được bảo hành và
+                                                    chìa khóa bị gãy bên trong.</p>
+                                                <p>* Pin ắc quy bị chai, phồng, ngâm nước, hư hỏng do nguyên nhân bên ngoài, tất
+                                                    cả pin và phụ kiện đều không phải được đổi trả.</p>
+                                            </div>
+                                        </div> -->
+                                        {!! $value->detail !!}
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        @endforeach
+                    @endif
+
+
                     <div class="arrco_block-element_single">
                         <div class="arrco_title">
                             <span class="text_left">Chính sách bảo mật thông tin</span>
@@ -436,7 +444,8 @@
                                         cửa hàng để có thể nhận được tư vấn cụ thể nhất</p>
                                     <br>
                                     <p><strong>4. Thanh Toán Qua Ví Điện Tử</strong></p>
-                                    <p>Quý khách chọn hình thức thanh toán qua ví điện tử như MoMo, Zalo Pay,...có thể yêu cầu trực tiếp với từng cửa hàng.</p>
+                                    <p>Quý khách chọn hình thức thanh toán qua ví điện tử như MoMo, Zalo Pay,...có thể
+                                        yêu cầu trực tiếp với từng cửa hàng.</p>
                                 </div>
                             </div>
                         </div>

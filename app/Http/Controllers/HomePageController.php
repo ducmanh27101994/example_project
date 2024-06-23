@@ -345,7 +345,9 @@ class HomePageController extends BaseController
 
     public function categoryProduct()
     {
-        $category = CateProduct::orderBy('chkstt', 'asc')->get();
+        $category = CateProduct::orderBy('chkstt', 'asc')
+        ->where('status', '=', 'active')
+        ->get();
 
         if (!empty($category)) {
             $products = DB::table('products')

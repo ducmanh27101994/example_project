@@ -819,6 +819,17 @@ li {
     content: "\f070" !important;
 }
 
+.wrapper_input_fields .group_input .form_ipnput span {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    font-size: 15px;
+    color: #CCCDD0;
+}
+
 .wrapper_input_fields .group_input .forget_pass {
     text-align: right;
     font-size: 14px;

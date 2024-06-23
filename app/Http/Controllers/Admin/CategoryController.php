@@ -258,6 +258,7 @@ class CategoryController extends BaseController
 
         $data = [
             'product_name' => !empty($request->product_name) ? $request->product_name : '',
+            'product_slogan' => !empty($request->product_slogan) ? $request->product_slogan : '',
             'distance_traveled' => !empty($request->distance_traveled) ? $request->distance_traveled : '',
             'maximum_speed' => !empty($request->maximum_speed) ? $request->maximum_speed : '',
             'allowable_weight_to_carry' => !empty($request->allowable_weight_to_carry) ? $request->allowable_weight_to_carry : '',
@@ -591,6 +592,7 @@ class CategoryController extends BaseController
 
         $data = [
             'product_name' => !empty($request->product_name) ? $request->product_name : '',
+            'product_slogan' => !empty($request->product_slogan) ? $request->product_slogan : '',
             'distance_traveled' => !empty($request->distance_traveled) ? $request->distance_traveled : '',
             'maximum_speed' => !empty($request->maximum_speed) ? $request->maximum_speed : '',
             'allowable_weight_to_carry' => !empty($request->allowable_weight_to_carry) ? $request->allowable_weight_to_carry : '',

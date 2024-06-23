@@ -423,7 +423,7 @@ $(document).ready(function () {
     $(".arrco_block-element_single").on("click", function () {
         $(".arrco_block-element_single").children().removeClass('active')
         $(".arrco_block-element_single").children().next().removeClass('active')
-        
+
         if ($(this).hasClass('active')) {
             $(this).children().removeClass('active')
             $(this).children().next().removeClass('active')
@@ -464,11 +464,17 @@ $(document).ready(function () {
     } else {
         $('.ggr-nav-container[data-v-31312d37]').css('top', '0')
         $('.page-content').css('padding-top', '70px')
-        $('.section-hero, .section-hero img').css('height', 'calc(100vh - 70px)')
     }
 
     $("input[type='radio']").click(function () {
         $('.radio_type').removeClass('active')
+
+        $(".dtmb_block").hide();
+
+        if ($(this).parent().is(":last-child")) {
+            $(".dtmb_block").show();
+        }
+
         if ($(this).is(":checked")) {
             $(this).parent().addClass('active');
         }

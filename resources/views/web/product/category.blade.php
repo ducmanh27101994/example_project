@@ -26,23 +26,90 @@
         </div>
     </nav>
 
-    <section class="section section-hero">
-        <div class="hero-copy-position">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-9 col-md-10">
-                        <div class="hero-copy">
-                            <h4 class="typography-eyebrow">Xe điện thông minh Osakar</h4>
-                            <h3 class="typography-hero-headline">Một vẻ đẹp thời thượng.</h3>
-                            <p class="typography-intro-super">Sự đổi mới và thiết kế độc đáo giúp xe di chuyển linh
-                                hoạt, dễ dàng trên mọi cung đường. Trải nghiệm vận hành êm ái, cảm giác an toàn. Chào
-                                mừng bạn đến với bản nâng cấp của xe máy điện.</p>
+    @if(!empty($content_products))
+        @foreach($content_products as $value)
+            <section class="section section-hero">
+                <div class="hero-copy-position">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-9 col-md-10">
+                                <div class="hero-copy">
+                                    <h4 class="typography-eyebrow">{!! $value->title !!}</h4>
+                                    {!! $value->detail !!}
+                                    <!-- <h3 class="typography-hero-headline">Một vẻ đẹp thời thượng.</h3>
+                                                                            <p class="typography-intro-super">Sự đổi mới và thiết kế độc đáo giúp xe di chuyển linh
+                                                                                hoạt, dễ dàng trên mọi cung đường. Trải nghiệm vận hành êm ái, cảm giác an toàn. Chào
+                                                                                mừng bạn đến với bản nâng cấp của xe máy điện.</p> -->
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
+                <style>
+                    .section-hero {
+                        position: relative;
+                        max-height: 600px;
+                        background: center bottom / auto 140% no-repeat,
+                            url("{{asset($value->avatar)}}"),
+                            linear-gradient(180deg, rgba(236, 236, 236, 0) 0%, #ECECEC 100%);
+                    }
+
+                    @media(min-width: 576px) {
+                        .section-hero {
+                            max-height: 700px
+                        }
+                    }
+
+                    @media(min-width: 768px) {
+                        .section-hero {
+                            background-position: bottom;
+                            background: bottom bottom / auto,
+                                url("{{asset($value->avatar)}}"),
+                                linear-gradient(180deg, rgba(236, 236, 236, 0) 0%, #ECECEC 100%);
+                            height: 800px;
+                            max-height: initial;
+                            background-repeat: no-repeat;
+                            background-size: 100%;
+                        }
+
+                        .section-hero::after {
+                            content: none
+                        }
+                    }
+
+                    @media(min-width: 992px) {
+                        .section-hero {
+                            height: 948px
+                        }
+                    }
+
+                    @media (max-width: 768px) {
+                        .section-hero {
+                            background: url('{{asset($value->avatar)}}'), linear-gradient(180deg, rgba(236, 236, 236, 0) 0%, #ECECEC 100%);
+                            background-size: 200%;
+                            background-repeat: no-repeat;
+                            background-position: bottom;
+                            height: 520px !important;
+                        }
+
+                        .hero-copy-position {
+                            padding: 32px 0 0 0;
+                        }
+
+                        .typography-hero-headline {
+                            font-size: 24px;
+                        }
+
+                        .typography-stories-intro {
+                            font-size: 16px;
+                        }
+                    }
+                </style>
+            </section>
+        @endforeach
+    @endif
+
+
 
     <section class="section section-family">
         <div class="container">
@@ -75,19 +142,19 @@
                         @foreach($products as $value)
                                     <div class="family-item family-item--supersport ">
                                         <div class="family-item-copy">
-                                            <h4 class="typography-eyebrow">Osakar
+                                            <h4 class="typography-eyebrow">{{$value->product_name}}
 
                                                 <?php
                             if ($value->interface_type != 1) {
-                                                                ?>
+                                                                                                                                                                                                                                                    ?>
                                                 <span class="hot">Hot</span>
                                                 <?php
                             }
-                                                        ?>
+                                                                                                                                                                                                                                            ?>
 
 
                                             </h4>
-                                            <h3 class="typography-tagline">{{$value->product_name}}</h3>
+                                            <h3 class="typography-tagline">{{$value->product_slogan}}</h3>
                                             <a class="cta-link from-left-and-back" href="{{route('details.basic', $value->path)}}">Xem chi
                                                 tiết</a>
                                         </div>
@@ -110,11 +177,15 @@
         style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
         <div class="container">
             <div class="row">
-                <div class="col-lg-11 col-xl-9 col-xxl-8">
-                    <h3 class="typography-stories-headline">Yêu thích chuyến đi.</h3>
-                    <p class="typography-stories-intro">Sự đổi mới và thiết kế độc đáo giúp xe di chuyển linh hoạt, dễ dàng trên mọi cung đường. Trải nghiệm vận hành êm ái, cảm giác an toàn. Chào mừng bạn đến với bản nâng cấp của xe máy điện...
-                    </p>
-                </div>
+                @if(!empty($tin_san_pham_top))
+                    @foreach($tin_san_pham_top as $value)
+                        <div class="col-lg-11 col-xl-9 col-xxl-8">
+                            <h3 class="typography-stories-headline">{!! $value->title !!}</h3>
+                            <div class="typography-stories-intro">{!! $value->detail !!}
+                            </div>
+                        </div>
+                    @endforeach
+                @endif
             </div>
         </div>
 
@@ -128,8 +199,8 @@
                             <div class="story-item-copy">
                                 <h4 class="typography-story-headline">{{$value->news_headlines}}</h4>
                                 <p class="typography-story-intro">{!! $value->describe !!}</p>
-                                <a class="cta-link typewriter" href="{{route('page.blog',$value->slug)}}" target="_blank">ĐỌC THÊM TIN TỨC <img
-                        src="{{ asset('home/images/arrow-circle-right.png') }}" /></a>
+                                <a class="cta-link typewriter" href="{!! $value->news_products_links !!}" target="_blank">ĐỌC
+                                    THÊM TIN TỨC <img src="{{ asset('home/images/arrow-circle-right.png') }}" /></a>
                             </div>
                         </div>
                     @endforeach
@@ -145,12 +216,19 @@
     <section class="section section-stories " data-component-list="Stories"
         style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
         <div id="container" class="container">
+
             <div class="row">
-                <div class="col-lg-11 col-xl-9 col-xxl-8">
-                    <h3 class="typography-stories-headline">Thông minh đạt tiêu chuẩn.</h3>
-                    <p class="typography-stories-intro">Sự đổi mới và thiết kế độc đáo giúp xe di chuyển linh hoạt, dễ dàng trên mọi cung đường. Trải nghiệm vận hành êm ái, cảm giác an toàn. Chào mừng bạn đến với bản nâng cấp của xe máy điện...</p>
-                </div>
+                @if(!empty($tin_san_pham_center))
+                    @foreach($tin_san_pham_center as $value)
+                        <div class="col-lg-11 col-xl-9 col-xxl-8">
+                            <h3 class="typography-stories-headline">{!! $value->title !!}</h3>
+                            <div class="typography-stories-intro">{!! $value->detail !!}
+                            </div>
+                        </div>
+                    @endforeach
+                @endif
             </div>
+
         </div>
 
 
@@ -163,8 +241,8 @@
                             <div class="story-item-copy">
                                 <h4 class="typography-story-headline">{{$value->news_headlines}}</h4>
                                 <p class="typography-story-intro">{!! $value->describe !!}</p>
-                                <a class="cta-link typewriter" href="{{route('page.blog',$value->slug)}}" target="_blank">ĐỌC THÊM TIN TỨC <img
-                        src="{{ asset('home/images/arrow-circle-right.png') }}" /></a>
+                                <a class="cta-link typewriter" href="{!! $value->news_products_links !!}" target="_blank">ĐỌC
+                                    THÊM TIN TỨC <img src="{{ asset('home/images/arrow-circle-right.png') }}" /></a>
                             </div>
                         </div>
                     @endforeach
@@ -180,10 +258,15 @@
         style="touch-action: pan-y; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
         <div class="container">
             <div class="row">
-                <div class="col-lg-11 col-xl-9 col-xxl-8">
-                    <h3 class="typography-stories-headline">Dễ dàng hơn bao giờ hết.</h3>
-                    <p class="typography-stories-intro">Sự đổi mới và thiết kế độc đáo giúp xe di chuyển linh hoạt, dễ dàng trên mọi cung đường. Trải nghiệm vận hành êm ái, cảm giác an toàn. Chào mừng bạn đến với bản nâng cấp của xe máy điện...</p>
-                </div>
+                @if(!empty($tin_san_pham_bottom))
+                    @foreach($tin_san_pham_bottom as $value)
+                        <div class="col-lg-11 col-xl-9 col-xxl-8">
+                            <h3 class="typography-stories-headline">{!! $value->title !!}</h3>
+                            <div class="typography-stories-intro">{!! $value->detail !!}
+                            </div>
+                        </div>
+                    @endforeach
+                @endif
             </div>
         </div>
 
@@ -197,8 +280,8 @@
                             <div class="story-item-copy">
                                 <h4 class="typography-story-headline">{{$value->news_headlines}}</h4>
                                 <p class="typography-story-intro">{!! $value->describe !!}</p>
-                                <a class="cta-link typewriter" href="{{route('page.blog',$value->slug)}}" target="_blank">ĐỌC THÊM TIN TỨC <img
-                        src="{{ asset('home/images/arrow-circle-right.png') }}" /></a>
+                                <a class="cta-link typewriter" href="{!! $value->news_products_links !!}" target="_blank">ĐỌC
+                                    THÊM TIN TỨC <img src="{{ asset('home/images/arrow-circle-right.png') }}" /></a>
                             </div>
                         </div>
                     @endforeach

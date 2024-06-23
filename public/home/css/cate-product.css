@@ -628,6 +628,14 @@
     max-width: 760px
 }
 
+.story-item .typewriter {
+    display: none;
+}
+
+.active .story-item .typewriter {
+    display: flex;
+}
+
 .image-story {
     position: relative;
     border-radius: 20px;
@@ -1236,49 +1244,6 @@ html[dark] .section-sosumi {
     }
 }
 
-.section-hero {
-    position: relative;
-    max-height: 600px;
-    background: center bottom / auto 140% no-repeat,
-        url("../images/img-scooter-home-banner.png"),
-        linear-gradient(180deg, rgba(236, 236, 236, 0) 0%, #ECECEC 100%);
-}
-
-.section-hero::after {
-    content: "";
-    display: block;
-    padding-bottom: 100%
-}
-
-@media(min-width: 576px) {
-    .section-hero {
-        max-height: 700px
-    }
-}
-
-@media(min-width: 768px) {
-    .section-hero {
-        background-position: bottom;
-        background: bottom bottom / auto,
-            url("../images/img-scooter-home-banner.png"),
-            linear-gradient(180deg, rgba(236, 236, 236, 0) 0%, #ECECEC 100%);
-        height: 800px;
-        max-height: initial;
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-
-    .section-hero::after {
-        content: none
-    }
-}
-
-@media(min-width: 992px) {
-    .section-hero {
-        height: 948px
-    }
-}
-
 .section-hero .typography-intro-super {
     color: #b9bcbf
 }
@@ -1529,23 +1494,3 @@ html[dark] .section-sosumi {
     }
 }
 
-@media (max-width: 768px) {
-    .section-hero {
-        background: url('../images/img-scooter-home-banner.png'), linear-gradient(180deg, rgba(236, 236, 236, 0) 0%, #ECECEC 100%);
-        background-size: 200%;
-        background-repeat: no-repeat;
-        background-position: bottom;
-        height: 520px !important;
-    }
-
-    .hero-copy-position {
-        padding: 32px 0 0 0;
-    }
-
-    .typography-hero-headline {
-        font-size: 24px;
-    }
-    .typography-stories-intro {
-        font-size: 16px;
-    }
-}

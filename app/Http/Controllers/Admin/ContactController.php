@@ -95,6 +95,7 @@ class ContactController extends BaseController
             'customer_type' => $request->customer_type,
             'content' => !empty($request->contents) ? $request->contents : '',
             'address' => !empty($request->address) ? $request->address : '',
+            'acreage' => !empty($request->acreage) ? $request->acreage : '',
         ];
         $contact = $this->contactRepository->create($data);
         if ($contact) {

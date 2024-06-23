@@ -51,7 +51,7 @@
                         data-aos-delay="0" data-aos-duration="300"><b>{{number_format($product->product_price)}}
                             VNĐ</b>
 
-                        
+
                     </p>
                     <div class="top-main-btn js-aos" data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
 
@@ -260,13 +260,36 @@
                         <h2 class="breaking-technology-name">{{$product->product_name}}</h2>
                         <div class="breaking-top__title-btn">
                             <!-- giá -->
-                            <span class>{{number_format($product->product_price)}} VNĐ</span>
-                            <a href class="add-to-cart-v3s btn-pdp btn btn-primary effect-apollo"
-                                data-pid="VF-ZFG-ESNA5LHH-REQ"><span>Mua Ngay</span></a>
+                            <span class>{{number_format($product->product_price)}} VNĐ
+
+
+                                <?php 
+
+if ($product->price_comparison != 0) { 
+
+
+    ?>
+
+                                <small style="text-decoration: line-through;">{{number_format($product->price_comparison)}}
+                                    VNĐ</small>
+
+
+                                <?php
+
+}
+
+
+?>
+
+                            </span>
+
+
+
+                            <a href class="" data-pid="VF-ZFG-ESNA5LHH-REQ"><span>Mua Ngay</span></a>
                         </div>
 
-                        <div class="node_text">
-                            <p> * {{$product->note}}
+                        <div class="node_text" style="margin-top: 15px">
+                            <p> * {!! $product->note ?? '' !!}
                             </p>
                         </div>
 

@@ -31,6 +31,7 @@ class BlogService
         $recommendedProducts = $request->input('recommended_products', []);
         $data = [
             'news_headlines' => $request->news_headlines,
+            'news_products_links' => $request->news_products_links,
             'status' => $status,
             'describe' => $request->describe,
             'detail' => $request->detail,
@@ -69,6 +70,7 @@ class BlogService
         $status = (!empty($request->status) && $request->status == 'on') ? 'active' : 'block';
         $data = [
             'news_headlines' => $request->news_headlines,
+            'news_products_links' => $request->news_products_links,
             'status' => $status,
             'describe' => $request->describe,
             'detail' => $request->detail,

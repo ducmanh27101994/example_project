@@ -109,6 +109,16 @@
                                                                style="margin-top: 10px;">{{ $errors->first('news_headlines') }}</p>
                                                         @endif
                                                     </div>
+
+                                                    <div class="form-group">
+                                                        <label class="next-label">Link sản phẩm</label>
+                                                        <input name="news_products_links" type="text"
+                                                               id="txtnewsname" class="inputbox"
+                                                               placeholder="Nhập link sản phẩm" style="width:100%;"
+                                                               value="{{!empty(old('news_products_links')) ? old('news_products_links') : $editBlog->news_products_links}}">
+                                                     
+                                                    </div>
+
                                                     <div class="form-group">
                                                         <label class="next-label">Mô tả</label>
                                                         <textarea name="describe" rows="2"
@@ -232,9 +242,22 @@
 
                                                         <select name="category_blogproduct" id="ddlblogproduct" class="inputbox" style="width:100%;">
                                                         <option value="1" @if($editBlog->category_blogproduct == "1") selected @endif>Không hiển thị</option>
-                                                        <option value="2" @if($editBlog->category_blogproduct == "2") selected @endif>Thông minh đạt tiêu chuẩn</option>
-                                                        <option value="3" @if($editBlog->category_blogproduct == "3") selected @endif>Dễ dàng hơn bao giờ hết</option>
-                                                        <option value="4" @if($editBlog->category_blogproduct == "4") selected @endif>Yêu thích chuyến đi</option>
+                                                        @if(!empty($tin_san_pham_top))
+                                                            @foreach($tin_san_pham_top as $value)
+                                                                <option value="2" @if($editBlog->category_blogproduct == "2") selected @endif>{!! $value->title !!}</option>
+                                                            @endforeach
+                                                        @endif
+                                                        @if(!empty($tin_san_pham_center))
+                                                            @foreach($tin_san_pham_center as $value)
+                                                                <option value="3" @if($editBlog->category_blogproduct == "3") selected @endif>{!! $value->title !!}</option>
+                                                            @endforeach
+                                                        @endif
+                                                        @if(!empty($tin_san_pham_bottom))
+                                                            @foreach($tin_san_pham_bottom as $value)
+                                                                <option value="4" @if($editBlog->category_blogproduct == "4") selected @endif>{!! $value->title !!}</option>
+                                                            @endforeach
+                                                        @endif
+
 
                                                         </select>
 

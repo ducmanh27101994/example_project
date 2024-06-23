@@ -101,6 +101,8 @@
                                     </th>
                                     <th class="title">Địa chỉ
                                     </th>
+                                    <th class="title">Diện tích mặt bằng (Đại lý)
+                                    </th>
                                     <th class="title">Loại khách hàng
                                     </th>
                                     <th style="text-align: center;" width="10%" nowrap="nowrap" class="title">Ngày gửi
@@ -127,6 +129,7 @@
                                             <td>{{$value->full_name}}</td>
                                             <td>{{$value->phone}}</td>
                                             <td>{{$value->address}}</td>
+                                            <td>{{$value->acreage}}</td>
                                             @php
                                                 $customer_type = "";
                                                 if (!empty($value->customer_type)) {

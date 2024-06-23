@@ -49,13 +49,13 @@
                         <div class="tab-left-box">
                             <div class="v3s-product__img">
                                 <h5 data-modelid="Products-Scooter-EVO-200"
-                                    class="v3s-product--name text-center text-nowrap">Evo200</h5>
+                                    class="v3s-product--name text-center text-nowrap">{{$product->product_name ?? 0}}</h5>
                                 <div class="v3s-product-item-0">
                                     <div class="product-container">
                                         <img class="product-item-REQ"
-                                             alt="Xe m&aacute;y điện VinFast Evo200 m&agrave;u đỏ đậm-đen"
-                                             title="Xe m&aacute;y điện VinFast Evo200 m&agrave;u đỏ đậm-đen"
-                                             src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_master/default/dw2c8dab24/images/EVO-200/REQ.png">
+                                             alt="{{$product->product_name ?? 0}}"
+                                             title="{{$product->product_name ?? 0}}"
+                                             src="{{$product->representative_image}}">
                                     </div>
                                     <div class="tab-bike-left-info show-pc">
                                         <ul class="bike-info-list">

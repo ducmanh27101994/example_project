@@ -99,6 +99,16 @@
                                                     class="inputbox" placeholder="" style="width:100%;">
                                             </div>
                                         </div>
+
+                                        <div class="block_sp">
+                                            <div class="form-group">
+                                                <label class="next-label">Tiêu đề nhỏ(slogan)</label>
+                                                <input required name="product_slogan" type="text"
+                                                    value="{{$product->product_slogan}}" id="txtproductname"
+                                                    class="inputbox" placeholder="" style="width:100%;">
+                                            </div>
+                                        </div>
+
                                         <div class="block_sp">
                                             <div class="form-group">
                                                 <label class="next-label">Quãng đường di chuyển</label>
@@ -190,7 +200,7 @@
                                                 <div class="block_sp">
                                                     <div class="form-group">
                                                         <label class="text-no-bold" data-bind="text: Title">Hình ảnh
-                                                            block chi tiết</label>
+                                                            block chi tiết (955x955)</label>
                                                         <input type="file" name="block_detail_image" id="flupload"
                                                             class="btn-change-link pull-right" style="width:180px;">
                                                     </div>
@@ -213,7 +223,7 @@
                                                 <div class="block_sp">
                                                     <div class="form-group">
                                                         <label class="text-no-bold" data-bind="text: Title">Hình ảnh
-                                                            động cơ</label>
+                                                            động cơ (768x823)</label>
                                                         <input type="file" name="block_dongco_image" id="flupload"
                                                             class="btn-change-link pull-right" style="width:180px;">
                                                     </div>

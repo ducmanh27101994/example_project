@@ -225,7 +225,6 @@
 
 .section-hero,
 .section-hero img {
-    height: calc(100vh - var(--nav-height));
     object-fit: fill;
 }
 

@@ -186,8 +186,7 @@ if ($value->price_comparison != 0) {
                     <div class="grid-item grid-item--tile grid-item--experience-mix span-12 span-md-6"
                         data-component-list="GridItem" style="background-image: url({!! $value->avatar !!}">
                         <a href="{!! $value->link !!}" title="{!! $value->title !!}">
-                            <h3 class="g
-                                    rid-item-eyebrow" data-aos="fade-up" data-aos-duration='1500'>
+                            <h3 class="grid-item-eyebrow" data-aos="fade-up" data-aos-duration='1500'>
                                 {!! $value->title !!}</h3>
                             <div class="row">
                                 <div class="col-lg-11">
@@ -207,8 +206,7 @@ if ($value->price_comparison != 0) {
                         data-component-list="GridItem" style="background-image: url({!! $value->avatar !!}">
                         <a href="{!! $value->link !!}" title="{!! $value->title !!}">
 
-                            <h3 class="g
-                                    rid-item-eyebrow" data-aos="fade-up" data-aos-duration='1500'>
+                            <h3 class="grid-item-eyebrow" data-aos="fade-up" data-aos-duration='1500'>
                                 {!! $value->title !!}</h3>
                             <div class="row">
                                 <div class="col-md-7 col-lg-6">

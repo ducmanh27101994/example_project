@@ -2666,12 +2666,12 @@ html[dark] .section-sosumi {
     position: relative;
     --kv-height: calc(var(--viewport-height) + 1px);
     background-color: #000;
-    height: var(--kv-height)
+    /* height: var(--kv-height) */
 }
 
 @media(min-width: 992px) {
     .section-hero {
-        --kv-height: 100vh
+        /* --kv-height: 100vh */
     }
 }
 

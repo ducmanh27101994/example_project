@@ -17,8 +17,8 @@
                 </div>
             </form>
             <div class="ggr_note">
-                <p>Bằng cách đăng ký, Quý khách xác nhận đã đọc, hiểu và đồng ý với <strong>Chính sách Quyền riêng
-                        tư</strong> của Osakar</p>
+                <p>Bằng cách đăng ký, Quý khách xác nhận đã đọc, hiểu và đồng ý với <a style="color: #000" href="/dieu-khoan-chinh-sach"><strong>Chính sách Quyền riêng
+                        tư</strong></a> của Osakar</p>
             </div>
         </div>
     </div>
