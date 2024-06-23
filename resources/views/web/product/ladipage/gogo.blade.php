@@ -196,7 +196,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 aos-init aos-animate" data-aos="fade-up"
                     data-aos-duration="2000">
                     <div class="dong-co-xanh_text">
-                    {!! $product->dongco_content ?? '' !!}
+                        {!! $product->dongco_content ?? '' !!}
                         <!-- <div class="text_head">
                             <h2> ĐỘNG CƠ ĐỘC QUYỀN
                                 <br /> OSAKAR
@@ -308,41 +308,31 @@
 
         <div class="gallery-container">
             <div class="gallery-images">
-                <figure class="gallery-image gallery-image--01">
-                </figure>
-                <figure class="gallery-image gallery-image--02">
-                </figure>
-                <figure class="gallery-image gallery-image--03">
-                </figure>
 
-                <style>
-                    .gallery-image--01 {
-                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-01-mobile@2x.jpg?v=v1")
-                    }
+                @if(!empty($gogo_images_banner13))
+                    @foreach($gogo_images_banner13 as $value)
+                        <figure class="gallery-image gallery-image--{{$value->id}}">
+                        </figure>
+                    @endforeach
+                @endif
 
-                    .gallery-image--02 {
-                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-02-mobile@2x.jpg?v=v1")
-                    }
+                @if(!empty($gogo_images_banner13))
+                    @foreach($gogo_images_banner13 as $value)
 
-                    .gallery-image--03 {
-                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-03-mobile@2x.jpg?v=v1")
-                    }
+                        <style>
+                            .gallery-image--{{$value->id}} {
+                                background-image: url("{{asset($value->images)}}")
+                            }
 
-                    @media (min-aspect-ratio: 1/1) {
-                        .gallery-image--01 {
-                            background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-01@2x.jpg?v=v1")
-                        }
+                            @media (min-aspect-ratio: 1/1) {
+                                .gallery-image--{{$value->id}} {
+                                    background-image: url("{{asset($value->images)}}")
+                                }
+                            }
+                        </style>
 
-                        .gallery-image--02 {
-                            background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-02@2x.jpg?v=v1")
-                        }
-
-                        .gallery-image--03 {
-                            background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-03@2x.jpg?v=v1")
-                        }
-                    }
-                </style>
-
+                    @endforeach
+                @endif
             </div>
             <div class="gallery-dots">
                 <button class="gallery-dot"></button>

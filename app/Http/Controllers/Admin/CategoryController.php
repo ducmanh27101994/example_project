@@ -34,14 +34,13 @@ class CategoryController extends BaseController
     protected $uploadService;
 
     public function __construct(
-        CategoryService       $categoryService,
-        BlogService           $blogService,
+        CategoryService $categoryService,
+        BlogService $blogService,
         CateProductRepository $repoCateProduct,
-        ProductRepository     $productRepositories,
-        ImageRepository       $imagesRepositories,
-        UploadService         $uploadService
-    )
-    {
+        ProductRepository $productRepositories,
+        ImageRepository $imagesRepositories,
+        UploadService $uploadService
+    ) {
         $this->categoryService = $categoryService;
         $this->blogService = $blogService;
         $this->repoCateProduct = $repoCateProduct;
@@ -431,6 +430,10 @@ class CategoryController extends BaseController
                 $this->processImagesCreate($request->gogo_images_banner13, $product->id, 'gogo_images_banner13');
             }
 
+            if (!empty($request->gogo_images_banner13_mobile)) {
+                $this->processImagesCreate($request->gogo_images_banner13_mobile, $product->id, 'gogo_images_banner13_mobile');
+            }
+
             if (!empty($request->gogo_tinhnang_image)) {
                 $this->processImagesCreate($request->gogo_tinhnang_image, $product->id, 'gogo_tinhnang_image');
             }
@@ -526,6 +529,12 @@ class CategoryController extends BaseController
             ->orderBy('id', 'asc')
             ->get();
 
+        $gogo_images_banner13_mobile = DB::table('images_products')
+            ->where('product_id', '=', $id)
+            ->where('code', '=', 'gogo_images_banner13_mobile')
+            ->orderBy('id', 'asc')
+            ->get();
+
         $gogo_tinhnang_image = DB::table('images_products')
             ->where('product_id', '=', $id)
             ->where('code', '=', 'gogo_tinhnang_image')
@@ -557,7 +566,7 @@ class CategoryController extends BaseController
             ->get();
 
 
-        return view('admin.product.details.editProduct', compact('viva_upload_video', 'viva_gallery', 'nispa_tinhnang_image', 'nispa_gallery', 'gogo_tinhnang_image', 'gogo_images_banner13', 'gogo_images_banner2_multi', 'images360', 'color_image', 'icon_images', 'product', 'categoryProduct', 'feature_description', 'vehicle_detail_photos', 'actual_photo'));
+        return view('admin.product.details.editProduct', compact('viva_upload_video', 'viva_gallery', 'nispa_tinhnang_image', 'nispa_gallery', 'gogo_tinhnang_image', 'gogo_images_banner13','gogo_images_banner13_mobile', 'gogo_images_banner2_multi', 'images360', 'color_image', 'icon_images', 'product', 'categoryProduct', 'feature_description', 'vehicle_detail_photos', 'actual_photo'));
 
     }
 
@@ -767,6 +776,10 @@ class CategoryController extends BaseController
 
             if (!empty($request->gogo_images_banner13)) {
                 $this->processImages($request->gogo_images_banner13, $product->id, 'gogo_images_banner13');
+            }
+
+            if (!empty($request->gogo_images_banner13_mobile)) {
+                $this->processImages($request->gogo_images_banner13_mobile, $product->id, 'gogo_images_banner13_mobile');
             }
 
             if (!empty($request->gogo_tinhnang_image)) {
@@ -992,8 +1005,8 @@ class CategoryController extends BaseController
                 preg_match('/\d+/', $nameA, $matchesA);
                 preg_match('/\d+/', $nameB, $matchesB);
 
-                $numA = isset($matchesA[0]) ? (int)$matchesA[0] : 0;
-                $numB = isset($matchesB[0]) ? (int)$matchesB[0] : 0;
+                $numA = isset($matchesA[0]) ? (int) $matchesA[0] : 0;
+                $numB = isset($matchesB[0]) ? (int) $matchesB[0] : 0;
 
                 return $numA - $numB;
             });

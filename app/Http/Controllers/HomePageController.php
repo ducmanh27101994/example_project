@@ -301,6 +301,12 @@ class HomePageController extends BaseController
             ->orderBy('id', 'asc')
             ->get();
 
+        $gogo_images_banner13_mobile = DB::table('images_products')
+            ->where('product_id', '=', $product->id)
+            ->where('code', '=', 'gogo_images_banner13_mobile')
+            ->orderBy('id', 'asc')
+            ->get();
+
         $gogo_tinhnang_image = DB::table('images_products')
             ->where('product_id', '=', $product->id)
             ->where('code', '=', 'gogo_tinhnang_image')
@@ -338,7 +344,7 @@ class HomePageController extends BaseController
         if ($product->interface_type == 2) {
             return view('web.product.ladipage.heidi', compact('product', 'color_image', 'icon_images', 'images360'));
         } elseif ($product->interface_type == 3) {
-            return view('web.product.ladipage.gogo', compact('images360', 'color_image', 'icon_images', 'product', 'gogo_tinhnang_image', 'gogo_images_banner13', 'gogo_images_banner2_multi'));
+            return view('web.product.ladipage.gogo', compact('images360', 'color_image', 'icon_images', 'product', 'gogo_tinhnang_image', 'gogo_images_banner13','gogo_images_banner13_mobile', 'gogo_images_banner2_multi'));
         } elseif ($product->interface_type == 4) {
             return view('web.product.ladipage.nispaviva', compact('viva_gallery', 'vehicle_detail_photos', 'viva_upload_video', 'product', 'color_image', 'icon_images', 'images360'));
         } elseif ($product->interface_type == 5) {

@@ -219,6 +219,33 @@ $(document).ready(function () {
         }
     });
 
+    $('.parts-bike__list__gallarey').owlCarousel({
+        items: 5,
+        dots: false,
+        loop: false,
+        autoplay: false,
+        smartSpeed: 650,
+        nav: true,
+        navText: ['<i class="fa fa-caret-left" aria-hidden="true"></i>', '<i class="fa fa-caret-right" aria-hidden="true"></i>'],
+        stagePadding: 0,
+        margin: 30,
+        responsive: {
+            0: {
+                items: 2,
+                margin: 15
+            },
+            600: {
+                items: 2
+            },
+            1000: {
+                items: 5
+            },
+            1600: {
+                items: 5
+            }
+        }
+    });
+
     $('.parts-bike__list_type__owl').owlCarousel({
         items: 5,
         dots: false,

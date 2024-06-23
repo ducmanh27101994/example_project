@@ -455,7 +455,7 @@
             </div>
             <div class="parts-bike__container padding-container">
                 <!-- Ảnh thực tế -->
-                <div class="parts-bike__list parts-bike__list__gallarey">
+                <div class="parts-bike__list parts-bike__list__gallarey owl-carousel owl-theme">
                     <div class="parts-bike__item js-aos aos-init aos-animate" data-aos="fade-left" data-aos-delay="0"
                         data-aos-duration="300">
                         <picture>
