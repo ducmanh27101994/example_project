@@ -37,9 +37,9 @@
                                     <h4 class="typography-eyebrow">{!! $value->title !!}</h4>
                                     {!! $value->detail !!}
                                     <!-- <h3 class="typography-hero-headline">Một vẻ đẹp thời thượng.</h3>
-                                                                            <p class="typography-intro-super">Sự đổi mới và thiết kế độc đáo giúp xe di chuyển linh
-                                                                                hoạt, dễ dàng trên mọi cung đường. Trải nghiệm vận hành êm ái, cảm giác an toàn. Chào
-                                                                                mừng bạn đến với bản nâng cấp của xe máy điện.</p> -->
+                                                                                    <p class="typography-intro-super">Sự đổi mới và thiết kế độc đáo giúp xe di chuyển linh
+                                                                                        hoạt, dễ dàng trên mọi cung đường. Trải nghiệm vận hành êm ái, cảm giác an toàn. Chào
+                                                                                        mừng bạn đến với bản nâng cấp của xe máy điện.</p> -->
                                 </div>
                             </div>
                         </div>
@@ -146,11 +146,11 @@
 
                                                 <?php
                             if ($value->interface_type != 1) {
-                                                                                                                                                                                                                                                    ?>
+                                                                                                                                                                                                                                                                        ?>
                                                 <span class="hot">Hot</span>
                                                 <?php
                             }
-                                                                                                                                                                                                                                            ?>
+                                                                                                                                                                                                                                                                ?>
 
 
                                             </h4>
@@ -159,8 +159,10 @@
                                                 tiết</a>
                                         </div>
                                         <!-- {{route('create.build', $value->id)}} -->
-                                        <figure class="image-family image-family--supersport"
-                                            style="background-image: url('{{$value->representative_image_product}}')"></figure>
+                                        <a class="cta-link from-left-and-back" href="{{route('details.basic', $value->path)}}">
+                                            <figure class="image-family image-family--supersport"
+                                                style="background-image: url('{{$value->representative_image_product}}')"></figure>
+                                        </a>
                                         <a href="/" class="deposit-buy-now ">Mua ngay</a>
                                     </div>
                         @endforeach

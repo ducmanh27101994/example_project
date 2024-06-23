@@ -14,16 +14,16 @@
                         </div>
                         <div class="social">
                             <div class="item_social">
-                                <a href="">
+                                <a href="{!! $social->facebook !!}">
                                     <img src="{{ asset('home/images/fb.png') }}" alt=""> <span>facebook</span>
                                 </a>
                             </div>
                             <div class="item_social">
-                                <a href=""><img src="{{ asset('home/images/ytb.png') }}" alt="">
+                                <a href="{!! $social->youtube !!}"><img src="{{ asset('home/images/ytb.png') }}" alt="">
                                     <span>youtube</span></a>
                             </div>
                             <div class="item_social">
-                                <a href=""><img src="{{ asset('home/images/tiktok.png') }}" alt="">
+                                <a href="{!! $social->twitter !!}"><img src="{{ asset('home/images/tiktok.png') }}" alt="">
                                     <span>tiktok</span></a>
                             </div>
                         </div>

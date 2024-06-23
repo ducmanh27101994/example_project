@@ -671,6 +671,7 @@ li {
     justify-content: center;
     gap: 10px;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .owl-dot {
@@ -2481,8 +2482,6 @@ table tbody tr th:nth-child(4) {
     .suntory-alo-phone {
         display: block;
         top: unset !important;
-        right: unset !important;
-        left: 10px;
         bottom: 10% !important;
     }
 
@@ -2495,7 +2494,7 @@ table tbody tr th:nth-child(4) {
 
 .button-zalo {
     position: fixed;
-    left: 19px;
+    right: 50px;
     bottom: 40px;
     cursor: pointer;
     z-index: 9999;

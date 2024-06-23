@@ -24,6 +24,14 @@
         <div data-v-31312d37="" class="ggr-header-container">
             <div data-v-31312d37="" class="gc-container">
                 <ul data-v-31312d37="" class="ggr-header">
+                    
+                    @if(isset($table_config_images->image_icon_right))
+                    <?php $url = $table_config_images->image_icon_right ?>
+                    @endif
+                    <li data-v-31312d37="" class="ggr-header-item logo-item">
+                        <a data-v-0cc9144e="" data-v-31312d37="" href="/" class="nav-logo nav-logo--dark"><img
+                                src="<?= !empty($url) ? $url : '' ?>" alt=""></a>
+                    </li>
                     <li data-v-31312d37="" class="ggr-header-item menuicon-item">
                         <label data-v-67f16422="" data-v-31312d37="" for="nav-menustate" class="nav-menuicon"><span
                                 data-v-67f16422="" class="nav-menuicon-bread nav-menuicon-bread--top"><span
@@ -36,13 +44,6 @@
                                     data-v-67f16422=""
                                     class="nav-menuicon-crust nav-menuicon-crust--bottom"></span></span>
                         </label>
-                    </li>
-                    @if(isset($table_config_images->image_icon_right))
-                    <?php $url = $table_config_images->image_icon_right ?>
-                    @endif
-                    <li data-v-31312d37="" class="ggr-header-item logo-item">
-                        <a data-v-0cc9144e="" data-v-31312d37="" href="/" class="nav-logo nav-logo--dark"><img
-                                src="<?= !empty($url) ? $url : '' ?>" alt=""></a>
                     </li>
                 </ul>
             </div>

@@ -94,7 +94,7 @@
                                     </tr>
                                     <tr>
                                         <td width="150" class="key" style="width:250px">
-                                            <label for="txttitle">Twitter</label>
+                                            <label for="txttitle">Tiktok</label>
                                         </td>
                                         <td>
                                             <input name="twitter" type="text"

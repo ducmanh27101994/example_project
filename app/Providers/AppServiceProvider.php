@@ -67,7 +67,9 @@ class AppServiceProvider extends ServiceProvider
             ->orderBy('chkstt', 'asc')
             ->get();
 
-        view()->composer('*', function ($view) use ($table_menu, $table_config_images, $configOptionGlobal, $modal_image, $products_hot, $content_products, $chinh_sach_bao_hanh, $tin_san_pham_top, $tin_san_pham_center, $tin_san_pham_bottom, $category_footer) {
+        $social = DB::table('social')->first();
+
+        view()->composer('*', function ($view) use ($table_menu, $table_config_images, $configOptionGlobal, $modal_image, $products_hot, $content_products, $chinh_sach_bao_hanh, $tin_san_pham_top, $tin_san_pham_center, $tin_san_pham_bottom, $category_footer, $social) {
             $view->with('table_menu', $table_menu)
                 ->with('table_config_images', $table_config_images)
                 ->with('configOptionGlobal', $configOptionGlobal)
@@ -78,7 +80,8 @@ class AppServiceProvider extends ServiceProvider
                 ->with('tin_san_pham_top', $tin_san_pham_top)
                 ->with('tin_san_pham_center', $tin_san_pham_center)
                 ->with('tin_san_pham_bottom', $tin_san_pham_bottom)
-                ->with('category_footer', $category_footer);
+                ->with('category_footer', $category_footer)
+                ->with('social', $social);
         });
     }
 }

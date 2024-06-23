@@ -3175,6 +3175,11 @@ html[dark] .section-sosumi {
     flex-wrap: wrap
 }
 
+.pbgn-partners .pbgn-partner img{
+    height: 60px;
+    object-fit: cover;
+}
+
 @media(min-width: 768px) {
     .pbgn-partners {
         margin: 48px 0 0 0

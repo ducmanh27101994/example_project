@@ -321,10 +321,18 @@
     height: 100%
 }
 
+.ggr-header-item[data-v-31312d37].menuicon-item {
+    right: 15%;
+}
+
 .logo-item[data-v-31312d37] {
     left: 50%;
     -webkit-transform: translate(-50%);
     transform: translate(-50%)
+}
+
+.logo-item[data-v-31312d37] img {
+    height: -webkit-fill-available
 }
 
 .my-gogoro-item[data-v-31312d37] {
@@ -1560,4 +1568,14 @@
     -webkit-transform: translateY(100%);
     transform: translateY(100%);
     opacity: 0
+}
+
+@media (max-width: 768px) {
+    .gdpr-container[data-v-7e7da536] {
+        padding: 15px 15px;
+    }
+
+    .gdpr-action+.gdpr-action[data-v-7e7da536] {
+        margin-left: 15px;
+    }
 }
