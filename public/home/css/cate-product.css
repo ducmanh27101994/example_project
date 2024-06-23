@@ -1333,7 +1333,9 @@ html[dark] .section-sosumi {
     width: 100%;
     max-width: 320px;
     background: center/contain no-repeat;
-    margin: 16px 0 0 0
+    margin: 16px 0 0 0;
+    width: 360px;
+    height: 360px
 }
 
 .image-family::before {
@@ -1493,4 +1495,3 @@ html[dark] .section-sosumi {
         box-shadow: 0 0 3px #ED2025;
     }
 }
-

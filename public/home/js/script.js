@@ -134,7 +134,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.section-family .regions_wrapper_area').owlCarousel({
+    $('.section-family .regions_wrapper_area_owl').owlCarousel({
         items: 5,
         margin: 30,
         stagePadding: 0,
