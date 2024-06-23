@@ -3833,11 +3833,11 @@ html {
     }
 
     .product-360-views .instruction .rotating-360-ico .main-circle {
-        border: 2px solid black;
+        border: 2px solid #fff;
     }
 
     .product-360-views .instruction .rotating-360-ico .sub-circle {
-        border: 1px solid black;
+        border: 1px solid #fff;
     }
 
     .product-360-views .instruction .rotating-360-ico .context {
