@@ -29,17 +29,17 @@
                         data-aos-duration="300">
                         <ul class="top-main-list">
                             <li class="top-main-item">
-                                <p class="text">Quãng đường di chuyển</p>
+                                <p class="text">{{$product->distance_traveled_title}}</p>
                                 <!-- Quãng đường di chuyển -->
                                 <p class="no"><span class="counter">{{$product->distance_traveled}}</span> km</p>
                             </li>
                             <li class="top-main-item">
-                                <p class="text">Vận tốc lớn nhất</p>
+                                <p class="text">{{$product->maximum_speed_title}}</p>
                                 <!-- Vận tốc lớn nhất -->
                                 <p class="no"><span class="counter">{{$product->maximum_speed}}</span> km/h</p>
                             </li>
                             <li class="top-main-item">
-                                <p class="text">Khối lượng cho phép chở</p>
+                                <p class="text">{{$product->allowable_weight_to_carry_title}}</p>
                                 <!-- Khối lượng cho phép chở -->
                                 <p class="no"><span class="counter">{{$product->allowable_weight_to_carry}}</span> kg
                                 </p>
@@ -270,7 +270,8 @@ if ($product->price_comparison != 0) {
 
     ?>
 
-                                <small style="text-decoration: line-through;font-size: 13px;">{{number_format($product->price_comparison)}}
+                                <small
+                                    style="text-decoration: line-through;font-size: 13px;">{{number_format($product->price_comparison)}}
                                     VNĐ</small>
 
 
@@ -363,13 +364,20 @@ if ($product->price_comparison != 0) {
                 </div>
             </div>
         </section>
-        <section class="page-block-image" style="clear: both">
-            <div class="breaking-wrap">
-                <div class="wrap_image">
-                    <img src="{{ asset('home/images/bg_facepr.png') }}" alt="coverimg">
-                </div>
-            </div>
-        </section>
+        @if(!empty($banner_details))
+            @foreach($banner_details as $value)
+                <section class="page-block-image" style="clear: both">
+                    <div class="breaking-wrap">
+                        <div class="wrap_image">
+                            <a href="{{ $value->link }}" title="{!! $value->title !!}">
+                            <img src="{{ $value->image_banner }}" alt="{!! $value->title !!}">
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            @endforeach
+        @endif
+
     </div>
 </div>
 <script defer type="text/javascript" src="{{ asset('home/js/slick.min.js') }}"></script>

@@ -95,7 +95,7 @@
                                             <div class="form-group">
                                                 <label class="next-label">Tên sản phẩm</label>
                                                 <input required name="product_name" type="text" value=""
-                                                    id="txtproductname" class="inputbox" placeholder=""
+                                                     class="inputbox" placeholder=""
                                                     style="width:100%;">
                                             </div>
                                         </div>
@@ -104,33 +104,36 @@
                                             <div class="form-group">
                                                 <label class="next-label">Tiêu đề nhỏ(slogan)</label>
                                                 <input required name="product_slogan" type="text" value=""
-                                                    id="txtproductname" class="inputbox" placeholder=""
+                                                     class="inputbox" placeholder=""
                                                     style="width:100%;">
                                             </div>
                                         </div>
 
                                         <div class="block_sp">
                                             <div class="form-group">
-                                                <label class="next-label">Quãng đường di chuyển</label>
-
-                                                <input name="distance_traveled" type="text" value="" id="txtproductname"
+                                                <input name="distance_traveled_title" type="text"
+                                                    value="Quãng đường di chuyển" id=""
+                                                    class="inputbox" placeholder="Quãng đường di chuyển" style="width:100%;">
+                                                <input name="distance_traveled" type="text" value="" 
                                                     class="inputbox" placeholder="" style="width:100%;">
                                             </div>
                                         </div>
                                         <div class="block_sp">
                                             <div class="form-group">
-                                                <label class="next-label">Vận tốc lớn nhất</label>
-
-                                                <input name="maximum_speed" type="number" value="" id="txtproductname"
+                                                <input name="maximum_speed_title" type="text"
+                                                    value="Vận tốc lớn nhất" id=""
+                                                    class="inputbox" placeholder="Vận tốc lớn nhất" style="width:100%;">
+                                                <input name="maximum_speed" type="number" value="" 
                                                     class="inputbox" placeholder="" style="width:100%;">
                                             </div>
                                         </div>
                                         <div class="block_sp">
                                             <div class="form-group">
-                                                <label class="next-label">Khối lượng cho phép chở</label>
-
+                                                <input name="allowable_weight_to_carry_title" type="text"
+                                                    value="Khối lượng cho phép chở"
+                                                    class="inputbox" placeholder="Khối lượng cho phép chở" style="width:100%;">
                                                 <input name="allowable_weight_to_carry" type="number" value=""
-                                                    id="txtproductname" class="inputbox" placeholder=""
+                                                     class="inputbox" placeholder=""
                                                     style="width:100%;">
                                             </div>
                                         </div>
@@ -141,11 +144,10 @@
                                                     <div class="form-group">
                                                         <label class="next-label">Mô tả 1</label>
                                                         <input name="describe_input_1" type="text" value=""
-                                                            id="txtproductname" class="inputbox"
+                                                             class="inputbox"
                                                             placeholder="Tiêu đề mô tả 1" style="width:100%;">
                                                         <textarea name="describe_textarea_1" rows="5" cols="70"
-                                                            id="txtkeyword" class="inputbox"
-                                                            style="width: 100%; height:80px;"></textarea>
+                                                            id="describe_textarea_1" class="inputbox"></textarea>
 
                                                     </div>
                                                 </div>
@@ -153,11 +155,10 @@
                                                     <div class="form-group">
                                                         <label class="next-label">Mô tả 2</label>
                                                         <input name="describe_input_2" type="text" value=""
-                                                            id="txtproductname" class="inputbox"
+                                                             class="inputbox"
                                                             placeholder="Tiêu đề mô tả 2" style="width:100%;">
                                                         <textarea name="describe_textarea_2" rows="5" cols="70"
-                                                            id="txtkeyword" class="inputbox"
-                                                            style="width: 100%; height:80px;"></textarea>
+                                                            id="describe_textarea_2" class="inputbox"></textarea>
 
                                                     </div>
                                                 </div>
@@ -165,11 +166,10 @@
                                                     <div class="form-group">
                                                         <label class="next-label">Mô tả 3</label>
                                                         <input name="describe_input_3" type="text" value=""
-                                                            id="txtproductname" class="inputbox"
+                                                             class="inputbox"
                                                             placeholder="Tiêu đề mô tả 3" style="width:100%;">
                                                         <textarea name="describe_textarea_3" rows="5" cols="70"
-                                                            id="txtkeyword" class="inputbox"
-                                                            style="width: 100%; height:80px;"></textarea>
+                                                            id="describe_textarea_3" class="inputbox"></textarea>
 
                                                     </div>
                                                 </div>
@@ -177,11 +177,10 @@
                                                     <div class="form-group">
                                                         <label class="next-label">Mô tả 4</label>
                                                         <input name="describe_input_4" type="text" value=""
-                                                            id="txtproductname" class="inputbox"
+                                                             class="inputbox"
                                                             placeholder="Tiêu đề mô tả 4" style="width:100%;">
                                                         <textarea name="describe_textarea_4" rows="5" cols="70"
-                                                            id="txtkeyword" class="inputbox"
-                                                            style="width: 100%; height:80px;"></textarea>
+                                                            id="describe_textarea_4" class="inputbox"></textarea>
 
                                                     </div>
                                                 </div>
@@ -1042,7 +1041,7 @@
                                                     </div>
                                                     <label class="next-label">Mô tả 1</label>
                                                     <input name="heidi_title_banner6" type="text" value=""
-                                                        id="txtproductname" class="inputbox" placeholder=""
+                                                         class="inputbox" placeholder=""
                                                         style="width:100%;">
                                                     <textarea name="heidi_desc_banner6" rows="5" cols="70"
                                                         id="txtkeyword" class="inputbox"
@@ -1064,7 +1063,7 @@
                                                     </div>
                                                     <label class="next-label">Mô tả 2</label>
                                                     <input name="heidi_title_banner7" type="text" value=""
-                                                        id="txtproductname" class="inputbox" placeholder=""
+                                                         class="inputbox" placeholder=""
                                                         style="width:100%;">
                                                     <textarea name="heidi_desc_banner7" rows="5" cols="70"
                                                         id="txtkeyword" class="inputbox"
@@ -1086,7 +1085,7 @@
                                                     </div>
                                                     <label class="next-label">Mô tả 3</label>
                                                     <input name="heidi_title_banner8" type="text" value=""
-                                                        id="txtproductname" class="inputbox" placeholder=""
+                                                         class="inputbox" placeholder=""
                                                         style="width:100%;">
                                                     <textarea name="heidi_desc_banner8" rows="5" cols="70"
                                                         id="txtkeyword" class="inputbox"
@@ -1108,7 +1107,7 @@
                                                     </div>
                                                     <label class="next-label">Mô tả 4</label>
                                                     <input name="heidi_title_banner9" type="text" value=""
-                                                        id="txtproductname" class="inputbox" placeholder=""
+                                                         class="inputbox" placeholder=""
                                                         style="width:100%;">
                                                     <textarea name="heidi_title_banner9" rows="5" cols="70"
                                                         id="txtkeyword" class="inputbox"
@@ -1152,7 +1151,7 @@
                                                     </div>
                                                     <label class="next-label">Mô tả 1</label>
                                                     <input name="heidi_title_banner10" type="text" value=""
-                                                        id="txtproductname" class="inputbox" placeholder=""
+                                                         class="inputbox" placeholder=""
                                                         style="width:100%;">
                                                     <textarea name="heidi_desc_banner10" rows="5" cols="70"
                                                         id="txtkeyword" class="inputbox"
@@ -1190,7 +1189,7 @@
                                                     </div>
                                                     <label class="next-label">Mô tả 2</label>
                                                     <input name="heidi_title_banner11" type="text" value=""
-                                                        id="txtproductname" class="inputbox" placeholder=""
+                                                         class="inputbox" placeholder=""
                                                         style="width:100%;">
                                                     <textarea name="heidi_desc_banner11" rows="5" cols="70"
                                                         id="txtkeyword" class="inputbox"
@@ -1228,7 +1227,7 @@
                                                     </div>
                                                     <label class="next-label">Mô tả 3</label>
                                                     <input name="heidi_title_banner12" type="text" value=""
-                                                        id="txtproductname" class="inputbox" placeholder=""
+                                                         class="inputbox" placeholder=""
                                                         style="width:100%;">
                                                     <textarea name="heidi_desc_banner12" rows="5" cols="70"
                                                         id="txtkeyword" class="inputbox"
@@ -2110,6 +2109,46 @@
                 removeFormatAttributes: ''
             });
             CKEDITOR.replace('note', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true,
+                removeFormatAttributes: ''
+            });
+            CKEDITOR.replace('describe_textarea_1', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true,
+                removeFormatAttributes: ''
+            });
+            CKEDITOR.replace('describe_textarea_2', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true,
+                removeFormatAttributes: ''
+            });
+            CKEDITOR.replace('describe_textarea_3', {
+                filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+                filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+                filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+                filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+                filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+                filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+                allowedContent: true,
+                removeFormatAttributes: ''
+            });
+            CKEDITOR.replace('describe_textarea_4', {
                 filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
                 filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
                 filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',

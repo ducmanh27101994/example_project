@@ -330,6 +330,11 @@ class HomePageController extends BaseController
             ->orderBy('id', 'asc')
             ->get();
 
+        $banner_details = DB::table('banner_ads')
+            ->where('status', '=', 'active')
+            ->where('code_ads', '=', 'chi-tiet-san-pham')
+            ->get();
+
         if ($product->interface_type == 2) {
             return view('web.product.ladipage.heidi', compact('product', 'color_image', 'icon_images', 'images360'));
         } elseif ($product->interface_type == 3) {
@@ -339,15 +344,15 @@ class HomePageController extends BaseController
         } elseif ($product->interface_type == 5) {
             return view('web.product.ladipage.x3', compact('nispa_gallery', 'nispa_tinhnang_image', 'product', 'color_image', 'icon_images', 'images360'));
         } else {
-            return view('web.product.detailsBasic', compact('images360', 'color_image', 'icon_images', 'product', 'feature_description', 'vehicle_detail_photos', 'actual_photo'));
+            return view('web.product.detailsBasic', compact('images360', 'color_image', 'icon_images', 'product', 'feature_description', 'vehicle_detail_photos', 'actual_photo', 'banner_details'));
         }
     }
 
     public function categoryProduct()
     {
         $category = CateProduct::orderBy('chkstt', 'asc')
-        ->where('status', '=', 'active')
-        ->get();
+            ->where('status', '=', 'active')
+            ->get();
 
         if (!empty($category)) {
             $products = DB::table('products')

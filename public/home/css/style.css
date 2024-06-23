@@ -1194,6 +1194,7 @@ li {
     gap: 24px;
     border-radius: 8px;
     background: #F4F4F4;
+    min-height: 120px;
 }
 
 .mission-content .mission-item p {
@@ -2125,6 +2126,9 @@ table tbody tr th:nth-child(4) {
 
     .gallery-items {
         margin: 0 auto 0px;
+        grid-template:
+            "B B" 280px
+            "C D" 150px / 1fr 1fr;
     }
 
     .ggr_form_input {
@@ -2668,6 +2672,12 @@ button.owl-next {
     overflow: hidden;
     border-right: 1px solid #212121;
     animation: cursor 1s step-start infinite, text 3s steps(16) alternate infinite;
+}
+
+@media (max-width: 768px) {
+    .video_intro iframe {
+        height: 270px !important;
+    }
 }
 
 @keyframes cursor {

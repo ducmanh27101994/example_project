@@ -192,24 +192,6 @@
                                             </div>
                                         </div>
 
-                                        <div class="timeline-item">
-                                            <div class="year">
-                                                <span>2018</span>
-                                            </div>
-                                            <div class="dotted">
-                                                <span></span>
-                                            </div>
-                                        </div>
-
-                                        <div class="timeline-item">
-                                            <div class="year">
-                                                <span>2022</span>
-                                            </div>
-                                            <div class="dotted">
-                                                <span></span>
-                                            </div>
-                                        </div>
-
                                     </div>
                                 </div>
                                 <div class="slider-timeline-for">
