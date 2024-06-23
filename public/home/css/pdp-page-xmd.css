@@ -1799,7 +1799,7 @@ img {
         z-index: 1;
         padding-top: 2.0625em;
         padding-bottom: 1.875em;
-        margin-bottom: 1.875em
+        margin-bottom: 0
     }
 }
 
@@ -1942,7 +1942,8 @@ img {
 
 @media only screen and (max-width:767px) {
     #pdp-breaking-technology .breaking-wrap .breaking-top__title-btn {
-        width: 100%
+        width: 100%;
+        min-width: unset;
     }
 }
 
@@ -2076,10 +2077,12 @@ img {
 }
 
 #pdp-breaking-technology .breaking-wrap .breaking-top__img.breaking-slick img {
-    height: 436px;
+    height: 485px;
     max-width: 600px;
     object-fit: contain;
     margin: auto;
+    width: 100%;
+    transform: scale(1.4);
 }
 
 #pdp-breaking-technology .breaking-wrap .breaking-top .breaking-slick__button-next,
@@ -3805,7 +3808,7 @@ html {
     visibility: visible;
 }
 
-@media (max-width:1400px) and (max-width:1600px) { 
+@media (max-width:1400px) and (max-width:1600px) {
     #pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .tab-pane-info ul li {
         margin: 0 35px;
     }
@@ -3888,6 +3891,14 @@ html {
     .page-block-image-360 #threesixty {
         height: 430px !important;
         background-size: cover;
+    }
+
+    #pdp-breaking-technology .breaking-wrap .breaking-top__img.breaking-slick img {
+        transform: scale(2);
+    }
+
+    .breaking-top__title-btn span small {
+        display: none;
     }
 }
 

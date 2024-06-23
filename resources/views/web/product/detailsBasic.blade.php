@@ -270,7 +270,7 @@ if ($product->price_comparison != 0) {
 
     ?>
 
-                                <small style="text-decoration: line-through;">{{number_format($product->price_comparison)}}
+                                <small style="text-decoration: line-through;font-size: 13px;">{{number_format($product->price_comparison)}}
                                     VNĐ</small>
 
 
@@ -289,8 +289,8 @@ if ($product->price_comparison != 0) {
                         </div>
 
                         <div class="node_text" style="margin-top: 15px">
-                            <p> * {!! $product->note ?? '' !!}
-                            </p>
+                            <div>{!! $product->note ?? '' !!}
+                            </div>
                         </div>
 
                     </div>

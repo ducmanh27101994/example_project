@@ -45,8 +45,9 @@
                     </div>
                     <!-- giá -->
                     <p class="top-main-pt2 top-main-ptext top-main__price-text js-aos" data-aos="fade-left"
-                        data-aos-delay="0" data-aos-duration="300"><b>19,500,000
-                            VNĐ</b>
+                        data-aos-delay="0" data-aos-duration="300"><span>19,500,000
+                            VNĐ <small style="text-decoration: line-through;font-size: 13px;">12,500,000 VNĐ</small>
+</span>
 
                         <br class="show-pc"><span class="desc">(Giá đã bao gồm VAT, 01 bộ sạc)</span></span>
                     </p>
