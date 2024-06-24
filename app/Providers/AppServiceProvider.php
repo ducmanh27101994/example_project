@@ -76,7 +76,7 @@ class AppServiceProvider extends ServiceProvider
                 ->with('modal_image', $modal_image)
                 ->with('products_hot', $products_hot)
                 ->with('content_products', $content_products)
-                ->with('chinh_sach_bao_mat', $chinh_sach_bao_hanh)
+                ->with('chinh_sach_bao_hanh', $chinh_sach_bao_hanh)
                 ->with('tin_san_pham_top', $tin_san_pham_top)
                 ->with('tin_san_pham_center', $tin_san_pham_center)
                 ->with('tin_san_pham_bottom', $tin_san_pham_bottom)
