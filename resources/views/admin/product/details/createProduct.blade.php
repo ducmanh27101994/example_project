@@ -132,7 +132,7 @@
                                                 <input name="allowable_weight_to_carry_title" type="text"
                                                     value="Khối lượng cho phép chở"
                                                     class="inputbox" placeholder="Khối lượng cho phép chở" style="width:100%;">
-                                                <input name="allowable_weight_to_carry" type="number" value=""
+                                                <input name="allowable_weight_to_carry" type="text" value=""
                                                      class="inputbox" placeholder=""
                                                     style="width:100%;">
                                             </div>
