@@ -273,7 +273,7 @@
     left: 0;
     position: fixed;
     width: 100%;
-    height: 70px;
+    height: 86px;
     -webkit-transition: height .6s, background-color 0s .6s;
     transition: height .6s, background-color 0s .6s;
     overflow: hidden;
@@ -310,7 +310,7 @@
 .ggr-header[data-v-31312d37] {
     position: relative;
     z-index: 1;
-    height: 70px;
+    height: 86px;
     display: flex;
     align-items: center;
 }
