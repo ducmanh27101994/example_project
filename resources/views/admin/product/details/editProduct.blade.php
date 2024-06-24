@@ -134,7 +134,7 @@
                                                 <input name="allowable_weight_to_carry_title" type="text"
                                                     value="{{$product->allowable_weight_to_carry_title  }}" id=""
                                                     class="inputbox" placeholder="Khối lượng cho phép chở" style="width:100%;">
-                                                <input name="allowable_weight_to_carry" type="number"
+                                                <input name="allowable_weight_to_carry" type="text"
                                                     value="{{$product->allowable_weight_to_carry}}" id=""
                                                     class="inputbox" placeholder="" style="width:100%;">
                                             </div>

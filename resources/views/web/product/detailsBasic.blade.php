@@ -41,7 +41,7 @@
                             <li class="top-main-item">
                                 <p class="text">{{$product->allowable_weight_to_carry_title}}</p>
                                 <!-- Khối lượng cho phép chở -->
-                                <p class="no"><span class="counter">{{$product->allowable_weight_to_carry}}</span> kg
+                                <p class="no"><span>{{$product->allowable_weight_to_carry}}</span>
                                 </p>
                             </li>
                         </ul>
@@ -103,13 +103,13 @@
                         <div class="banner-info-item js-aos" data-aos="fade-right" data-aos-delay="0"
                             data-aos-duration="300">
                             <h2 class="banner-info-name">{{$product->describe_input_1}}</h2>
-                            <p class="banner-info-desc">{{$product->describe_textarea_1}}</p>
+                            <p class="banner-info-desc">{!! $product->describe_textarea_1 !!}</p>
                         </div>
                         <!-- Mô tả 2 -->
                         <div class="banner-info-item js-aos" data-aos="fade-right" data-aos-delay="200"
                             data-aos-duration="300">
                             <h2 class="banner-info-name">{{$product->describe_input_2}}</h2>
-                            <p class="banner-info-desc">{{$product->describe_textarea_2}}</p>
+                            <p class="banner-info-desc">{!! $product->describe_textarea_2 !!}</p>
                         </div>
                     </div>
                 </div>
@@ -132,13 +132,13 @@
                         <div class="banner-info-item js-aos" data-aos="fade-left" data-aos-delay="0"
                             data-aos-duration="300">
                             <h2 class="banner-info-name">{{$product->describe_input_3}}</h2>
-                            <p class="banner-info-desc">{{$product->describe_textarea_3}}</p>
+                            <p class="banner-info-desc">{!! $product->describe_textarea_3 !!}</p>
                         </div>
                         <!-- Mô tả 4 -->
                         <div class="banner-info-item js-aos" data-aos="fade-left" data-aos-delay="200"
                             data-aos-duration="300">
                             <h2 class="banner-info-name">{{$product->describe_input_4}}</h2>
-                            <p class="banner-info-desc">{{$product->describe_textarea_4}}</p>
+                            <p class="banner-info-desc">{!! $product->describe_textarea_4 !!}</p>
                         </div>
                     </div>
                 </div>
@@ -370,7 +370,7 @@ if ($product->price_comparison != 0) {
                     <div class="breaking-wrap">
                         <div class="wrap_image">
                             <a href="{{ $value->link }}" title="{!! $value->title !!}">
-                            <img src="{{ $value->image_banner }}" alt="{!! $value->title !!}">
+                                <img src="{{ $value->image_banner }}" alt="{!! $value->title !!}">
                             </a>
                         </div>
                     </div>
