@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Pagination\Paginator;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -68,6 +69,8 @@ class AppServiceProvider extends ServiceProvider
             ->get();
 
         $social = DB::table('social')->first();
+
+        Paginator::useBootstrap();
 
         view()->composer('*', function ($view) use ($table_menu, $table_config_images, $configOptionGlobal, $modal_image, $products_hot, $content_products, $chinh_sach_bao_hanh, $tin_san_pham_top, $tin_san_pham_center, $tin_san_pham_bottom, $category_footer, $social) {
             $view->with('table_menu', $table_menu)
