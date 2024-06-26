@@ -86,13 +86,13 @@
                     @csrf
                     <div class="regions_wrapper_province">
                         <div class="province_select place_style_box">
-                            <select class="form-control-select" name="province" id="province">
-                                <option>Chọn Tỉnh/Thành Phố</option>
+                            <select class="form-control-select" name="province" id="province" onchange="submitForm()">
+                                <option value="">Chọn Tỉnh/Thành Phố</option>
                             </select>
                         </div>
                         <div class="district_select place_style_box">
                             <select class="form-control-select" name="district" id="district" onchange="submitForm()">
-                                <option>Chọn Quận/Huyện</option>
+                                <option value="">Chọn Quận/Huyện</option>
                             </select>
                         </div>
                     </div>
@@ -160,9 +160,10 @@
             dataType: 'json',
             success: function(data) {
                 $.each(data, function(index, province) {
+                    console.log(province)
                     for (var i = 0; i < province.length; i++) {
                         provinceDropdown.append('<option value="' + province[i]
-                            .province_id + '">' + province[i].province_name +
+                            .province_name + '">' + province[i].province_name +
                             '</option>');
                     }
                 });
