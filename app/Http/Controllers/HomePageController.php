@@ -444,11 +444,7 @@ class HomePageController extends BaseController
             $district = $request->get('district');
         }
 
-        if (!empty($province) && empty($district)) {
-            $listStore = DB::table('store')
-                ->where('description_card', '=', $this->slugify($province))
-                ->paginate(10);
-        } elseif (!empty($district)) {
+        if (!empty($district)) {
             $listStore = DB::table('store')
                 ->where('keyword_tags', '=', $this->slugify($district))
                 ->paginate(90);
