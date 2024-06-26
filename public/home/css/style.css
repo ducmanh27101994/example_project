@@ -2674,6 +2674,10 @@ button.owl-next {
     animation: cursor 1s step-start infinite, text 3s steps(16) alternate infinite;
 }
 
+.pagination {
+    display: flex;
+}
+
 @media (max-width: 768px) {
     .video_intro iframe {
         height: 270px !important;
