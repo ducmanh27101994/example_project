@@ -80,12 +80,12 @@
             });
         });
     </script>
-    <a href="tel:19000095" title="1900 0095" class="suntory-alo-phone suntory-alo-green" id="suntory-alo-phoneIcon" style="bottom: 10%; right: 0;">
+    <a href="https://zalo.me/3413590899111168672" class="suntory-alo-phone suntory-alo-green" id="suntory-alo-phoneIcon" style="bottom: 10%; right: 0;">
         <div class="suntory-alo-ph-circle"></div>
         <div class="suntory-alo-ph-circle-fill"></div>
         <div class="suntory-alo-ph-img-circle"><i class="fa fa-phone"></i></div>
     </a>
-    <a href="https://zalo.me/3413590899111168672">
+    <a href="https://zalo.me/3413590899111168672" class="hidden">
         <i class="button-zalo" id="button-zalo-m">
             <div class="button-zalo-main"></div>
             <em></em>
