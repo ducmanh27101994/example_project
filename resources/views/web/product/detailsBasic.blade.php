@@ -47,12 +47,25 @@
                         </ul>
                     </div>
                     <!-- giá -->
+
+                    <?php
+
+if ($product->product_price != 0) {
+                        ?>
                     <p class="top-main-pt2 top-main-ptext top-main__price-text js-aos" data-aos="fade-left"
                         data-aos-delay="0" data-aos-duration="300"><b>{{number_format($product->product_price)}}
                             VNĐ</b>
 
 
                     </p>
+
+                    <?php
+}
+
+                    
+                    ?>
+
+
                     <div class="top-main-btn js-aos" data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
 
                         <div class="top-btn">
@@ -260,15 +273,22 @@
                         <h2 class="breaking-technology-name">{{$product->product_name}}</h2>
                         <div class="breaking-top__title-btn">
                             <!-- giá -->
-                            <span class>{{number_format($product->product_price)}} VNĐ
+
+                            <?php 
+
+                                if ($product->product_price != 0) { ?>
+
+                            <span class>
+
+                                {{number_format($product->product_price)}} VNĐ
 
 
                                 <?php 
 
-if ($product->price_comparison != 0) { 
+                                if ($product->price_comparison != 0) { 
 
 
-    ?>
+                                    ?>
 
                                 <small
                                     style="text-decoration: line-through;font-size: 13px;">{{number_format($product->price_comparison)}}
@@ -277,19 +297,26 @@ if ($product->price_comparison != 0) {
 
                                 <?php
 
+    }
+
+
+                                ?>
+
+                            </span>
+
+                            <?php
+
 }
 
 
-?>
-
-                            </span>
+                                ?>
 
 
 
                             <a href class="" data-pid="VF-ZFG-ESNA5LHH-REQ"><span>Mua Ngay</span></a>
                         </div>
 
-                        <div class="node_text" style="margin-top: 15px">
+                        <div class="node_text" style="margin-top: 15px;font-size: 14px">
                             <div>{!! $product->note ?? '' !!}
                             </div>
                         </div>
