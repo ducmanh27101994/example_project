@@ -2701,6 +2701,42 @@ button.owl-next {
 
 .pagination {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 6px;
+}
+
+.pagination .page-item{
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.pagination .page-item:first-child{
+    border: 1px solid  #94A3B8;
+    font-size: 30px;
+}
+
+.pagination .page-item:last-child{
+    border: 1px solid #ED2025;
+    font-size: 30px;
+    color: #ED2025;
+}
+
+.pagination .page-item .page-link {
+    color: #000;
+}
+
+.pagination .page-item.active {
+    background: #ED2025;
+}
+
+.pagination .page-item.active .page-link {
+    color: #fff;
 }
 
 @media (max-width: 768px) {

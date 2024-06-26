@@ -455,7 +455,7 @@ class HomePageController extends BaseController
         } else {
             $listStore = DB::table('store')
                 ->where('desc', '=', $domain)
-                ->paginate(18);
+                ->paginate(30);
         }
 
         $store_counter = DB::table('independent_content')
