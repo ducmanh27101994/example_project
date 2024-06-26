@@ -451,11 +451,15 @@ class HomePageController extends BaseController
         } elseif (!empty($district)) {
             $listStore = DB::table('store')
                 ->where('keyword_tags', '=', $this->slugify($district))
-                ->paginate(10);
+                ->paginate(90);
+        } else if (!empty($province)) {
+            $listStore = DB::table('store')
+                ->where('description_card', '=', $this->slugify($province))
+                ->paginate(90);
         } else {
             $listStore = DB::table('store')
                 ->where('desc', '=', $domain)
-                ->paginate(10);
+                ->paginate(18);
         }
 
         $store_counter = DB::table('independent_content')
