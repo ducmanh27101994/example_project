@@ -1491,6 +1491,7 @@ li {
 
 .regions_wrapper {
     position: relative;
+    margin-top: 20px;
 }
 
 .regions_wrapper_area {

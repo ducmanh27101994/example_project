@@ -87,7 +87,7 @@
 
             </div>
             <div class="return_back_store">
-                <a href="#" title="Quay lại">Quay lại</a>
+                <a href="/list-store/mien-bac" title="Quay lại">Quay lại</a>
             </div>
         </div>
     </div>
