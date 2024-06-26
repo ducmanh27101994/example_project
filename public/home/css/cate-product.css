@@ -813,7 +813,8 @@ html[dark] .section-sosumi {
 
 
 .typography-eyebrow+.typography-tagline {
-    margin: 8px 0 0 0
+    margin: 8px 0 0 0;
+    font-weight: 600;
 }
 
 .typography-eyebrow+.typography-hero-headline {
