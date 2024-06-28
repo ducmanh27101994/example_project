@@ -52,7 +52,7 @@
         <div class="container">
             <div class="regions_wrapper">
 
-                <div class="regions_wrapper_area hidden-xs">
+                <div class="regions_wrapper_area hidden">
                     <div class="regions_wrapper_area_item @if($flag == 1) active @endif ">
                         <a href="{{route('list.store', 'mien-bac')}}" title="Miền bắc">Miền bắc</a>
                     </div>
@@ -73,7 +73,7 @@
                 $checkFlag = 'mien-nam';
                 }
                 @endphp
-                <div class="regions_wrapper_area hidden-md hidden-lg hidden-sm">
+                <div class="regions_wrapper_area hidden">
                     <select id="regionDropdown" onchange="navigateToRegion()">
                         <option value="/list-store/mien-bac">Đang lọc theo: @if($flag == 1) Miền Bắc @endif @if($flag ==
                             2) Miền Trung @endif @if($flag == 3) Miền Nam @endif</option>
