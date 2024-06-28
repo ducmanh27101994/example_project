@@ -52,7 +52,7 @@
         <div class="container">
             <div class="regions_wrapper">
 
-                <div class="regions_wrapper_area hidden">
+                <!-- <div class="regions_wrapper_area hidden">
                     <div class="regions_wrapper_area_item @if($flag == 1) active @endif ">
                         <a href="{{route('list.store', 'mien-bac')}}" title="Miền bắc">Miền bắc</a>
                     </div>
@@ -81,7 +81,7 @@
                         <option value="/list-store/mien-trung">Miền Trung</option>
                         <option value="/list-store/mien-nam">Miền Nam</option>
                     </select>
-                </div>
+                </div> -->
                 <form action="{{route('list.store', $checkFlag)}}" method="get" id="formSearch">
                     @csrf
                     <div class="regions_wrapper_province">
