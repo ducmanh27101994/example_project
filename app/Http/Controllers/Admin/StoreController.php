@@ -72,8 +72,8 @@ class StoreController extends BaseController
             'address' => $request->address,
             'page_title_tag' => $request->page_title_tag,
             'path' => $request->path,
-            'keyword_tags' => $this->slugify($request->province),
-            'description_card' => $this->slugify($request->district),
+            'keyword_tags' => $this->slugify($request->district),
+            'description_card' => $this->slugify($request->province),
             'created_at' => now(),
             'updated_at' => now(),
         ];
