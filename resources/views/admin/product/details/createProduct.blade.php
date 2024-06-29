@@ -103,7 +103,7 @@
                                         <div class="block_sp">
                                             <div class="form-group">
                                                 <label class="next-label">Tiêu đề nhỏ(slogan)</label>
-                                                <input required name="product_slogan" type="text" value=""
+                                                <input name="product_slogan" type="text" value=""
                                                      class="inputbox" placeholder=""
                                                     style="width:100%;">
                                             </div>
