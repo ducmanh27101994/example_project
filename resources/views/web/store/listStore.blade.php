@@ -197,7 +197,7 @@
             provinceDropdown.on('change', function () {
                 var selectedProvinceCode = $(this).val();
                 $("#hidden_link_province").val($('#province option:selected').text())
-                $("#hidden_link_province").attr("data-id", $('#province option:selected').val())
+                setCookie("location_id", $('#province option:selected').val(), 3600);
                 // Load districts based on the selected province
                 $.ajax({
                     url: 'https://vapi.vnappmob.com/api/province/district/' + selectedProvinceCode || getUrlParameter('id'),
@@ -222,16 +222,16 @@
             });
 
             $('.btn-search').on('click', function () {
+
                 if ($("#hidden_link_district").val().length === 0) {
-                    window.location.href = '/list-store/mien-bac?province=' + $("#hidden_link_province").val() + '&id=' + $("#hidden_link_province").attr('data-id')
+                    window.location.href = '/list-store/mien-bac?province=' + $("#hidden_link_province").val() + '&id=' + getCookie('location_id')
                 } else {
-                    window.location.href = '/list-store/mien-bac?province=' + $("#hidden_link_province").val() + '&district=' + $("#hidden_link_district").val()
+                    window.location.href = '/list-store/mien-bac?province=' + $("#hidden_link_province").val() + '&id=' + getCookie('location_id') + '&district=' + $("#hidden_link_district").val()
                 }
             });
 
             var provinceParam = getUrlParameter('province');
             var districtParam = getUrlParameter('district');
-            var id = getUrlParameter('id');
 
             if (provinceParam.length > 0) {
                 $('#select2-province-container').text(provinceParam);
@@ -243,14 +243,14 @@
                 $("#hidden_link_district").val(districtParam)
             }
 
-            if (id.length > 0) {
+            if (getCookie('location_id').length > 0) {
                 $.ajax({
-                    url: 'https://vapi.vnappmob.com/api/province/district/' + id,
+                    url: 'https://vapi.vnappmob.com/api/province/district/' + getCookie('location_id'),
                     method: 'GET',
                     dataType: 'json',
                     success: function (result) {
                         districtDropdown.empty();
-                        districtDropdown.append('<option value="-1">Chọn Quận/Huyện</option>');
+                        districtDropdown.append('<option value="-1">' + districtParam + '</option>');
                         $.each(result, function (index, district) {
                             for (var i = 0; i < district.length; i++) {
                                 districtDropdown.append('<option value="' + district[i]
