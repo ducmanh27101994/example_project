@@ -1,6 +1,9 @@
 @extends('/web/index')
 @section('content')
 
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+
 <main>
     <h1 class="hidden">Cửa Hàng - Osakar.vn</h1>
     <div class="banner_store_top">
@@ -11,13 +14,13 @@
                         <h2>Mạng Lưới</h2>
                         <p>Hệ thống cửa hàng đại lý của Osakar sẵn sàng phục vụ Quý khách hàng tại hơn</p>
 
-                        @if(!empty($store_counter ))
-                        @foreach($store_counter  as $value)
+                        @if(!empty($store_counter))
+                            @foreach($store_counter as $value)
 
-                        {!! $value->detail !!}
+                                {!! $value->detail !!}
 
 
-                        @endforeach
+                            @endforeach
                         @endif
 
                         <!-- <div class="pbgn-badges">
@@ -82,59 +85,78 @@
                         <option value="/list-store/mien-nam">Miền Nam</option>
                     </select>
                 </div> -->
-                <form action="{{route('list.store', $checkFlag)}}" method="get" id="formSearch">
-                    @csrf
+                <div id="formSearch">
                     <div class="regions_wrapper_province">
                         <div class="province_select place_style_box">
-                            <select class="form-control-select" name="province" id="province">
-                                <option>Chọn Tỉnh/Thành Phố</option>
+                            <select class="form-control-select" style="width: 200px" name="province" id="province">
+                                <option value="">Chọn Tỉnh/Thành</option>
                             </select>
+                            <script>
+                                $(document).ready(function () {
+                                    $('#province').select2({
+                                        placeholder: 'Chọn Tỉnh/Thành',
+                                        allowClear: false, // Cho phép xóa lựa chọn hiện tại
+                                        minimumResultsForSearch: 0 // Hiển thị ô tìm kiếm
+                                    });
+                                });
+                            </script>
                         </div>
                         <div class="district_select place_style_box">
-                            <select class="form-control-select" name="district" id="district" onchange="submitForm()">
+                            <select class="form-control-select" name="district" id="district">
                                 <option>Chọn Quận/Huyện</option>
                             </select>
+                            <script>
+                                $(document).ready(function () {
+                                    $('#district').select2({
+                                        allowClear: false, // Cho phép xóa lựa chọn hiện tại
+                                        minimumResultsForSearch: 0 // Hiển thị ô tìm kiếm
+                                    });
+                                });
+                            </script>
                         </div>
+                        <button id="button" class="btn btn-search">
+                            <i class="fa fa-search"></i>
+                        </button>
                     </div>
-                </form>
+                </div>
             </div>
             <div class="row">
                 @if(!empty($listStore))
-                @foreach($listStore as $value)
-                <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
-                    <div class="item_store">
-                        <div class="image">
-                            <img src="{{ asset('home/images/store.png') }}" alt="store">
-                        </div>
-                        <div class="content">
-                            <div class="title">
-                                <h2>{{$value->title_store}}</h2>
-                            </div>
-                            <div class="descreption">
-                                <p>
-                                    <img src="{{ asset('home/images/location.png') }}" alt="location">
-                                    <span>{{$value->address}}</span>
-                                </p>
-                                <p>
-                                    <a href="tel:{{$value->page_title_tag}}" title="{{$value->page_title_tag}}">
-                                        <img src="{{ asset('home/images/mobile.png') }}" alt="mobile">
-                                        <span>{{$value->page_title_tag}}</span>
+                    @foreach($listStore as $value)
+                        <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+                            <div class="item_store">
+                                <div class="image">
+                                    <img src="{{ asset('home/images/store.png') }}" alt="store">
+                                </div>
+                                <div class="content">
+                                    <div class="title">
+                                        <h2>{{$value->title_store}}</h2>
+                                    </div>
+                                    <div class="descreption">
+                                        <p>
+                                            <img src="{{ asset('home/images/location.png') }}" alt="location">
+                                            <span>{{$value->address}}</span>
+                                        </p>
+                                        <p>
+                                            <a href="tel:{{$value->page_title_tag}}" title="{{$value->page_title_tag}}">
+                                                <img src="{{ asset('home/images/mobile.png') }}" alt="mobile">
+                                                <span>{{$value->page_title_tag}}</span>
+                                            </a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="ridect_map-wrapper">
+                                    <a target="_blank" href="{{$value->path}}" title="Osakar Hà Nội - Xe điện Thành Công">
+                                        <p>
+                                            <img src="{{ asset('home/images/material-symbols_directions.png') }}"
+                                                alt="material-symbols_directions">
+                                            <span>Chỉ đường trên Google Map</span>
+                                        </p>
                                     </a>
-                                </p>
+                                </div>
                             </div>
                         </div>
-                        <div class="ridect_map-wrapper">
-                            <a target="_blank" href="{{$value->path}}" title="Osakar Hà Nội - Xe điện Thành Công">
-                                <p>
-                                    <img src="{{ asset('home/images/material-symbols_directions.png') }}"
-                                        alt="material-symbols_directions">
-                                    <span>Chỉ đường trên Google Map</span>
-                                </p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                @endforeach
+                    @endforeach
                 @endif
                 {{$listStore->links()}}
             </div>
@@ -149,61 +171,142 @@
             </div>
         </div>
     </div>
+    <input type="hidden" id="hidden_link_province">
+    <input type="hidden" id="hidden_link_district">
     <script>
-    $(document).ready(function() {
-        var provinceDropdown = $('#province');
-        var districtDropdown = $('#district');
-        // Load provinces into the province dropdown on page load
-        $.ajax({
-            url: 'https://vapi.vnappmob.com/api/province/',
-            method: 'GET',
-            dataType: 'json',
-            success: function(data) {
-                $.each(data, function(index, province) {
-                    for (var i = 0; i < province.length; i++) {
-                        provinceDropdown.append('<option value="' + province[i]
-                            .province_id + '">' + province[i].province_name +
-                            '</option>');
-                    }
-                });
-            }
-        });
-
-        // Handle province dropdown change event
-        provinceDropdown.on('change', function() {
-            var selectedProvinceCode = $(this).val();
-            // Load districts based on the selected province
+        $(document).ready(function () {
+            var provinceDropdown = $('#province');
+            var districtDropdown = $('#district');
+            // Load provinces into the province dropdown on page load
             $.ajax({
-                url: 'https://vapi.vnappmob.com/api/province/district/' + selectedProvinceCode,
+                url: 'https://vapi.vnappmob.com/api/province/',
                 method: 'GET',
                 dataType: 'json',
-                success: function(result) {
-                    districtDropdown.empty();
-                    $.each(result, function(index, district) {
-                        for (var i = 0; i < district.length; i++) {
-                            districtDropdown.append('<option value="' + district[i]
-                                .district_name + '">' + district[i]
-                                .district_name + '</option>');
+                success: function (data) {
+                    $.each(data, function (index, province) {
+                        for (var i = 0; i < province.length; i++) {
+                            provinceDropdown.append('<option value="' + province[i]
+                                .province_id + '">' + province[i].province_name +
+                                '</option>');
                         }
                     });
                 }
             });
+
+            // Handle province dropdown change event
+            provinceDropdown.on('change', function () {
+                var selectedProvinceCode = $(this).val();
+                $("#hidden_link_province").val($('#province option:selected').text())
+                $("#hidden_link_province").attr("data-id", $('#province option:selected').val())
+                // Load districts based on the selected province
+                $.ajax({
+                    url: 'https://vapi.vnappmob.com/api/province/district/' + selectedProvinceCode || getUrlParameter('id'),
+                    method: 'GET',
+                    dataType: 'json',
+                    success: function (result) {
+                        districtDropdown.empty();
+                        districtDropdown.append('<option value="-1">Chọn Quận/Huyện</option>');
+                        $.each(result, function (index, district) {
+                            for (var i = 0; i < district.length; i++) {
+                                districtDropdown.append('<option value="' + district[i]
+                                    .district_name + '">' + district[i]
+                                        .district_name + '</option>');
+                            }
+                        });
+                    }
+                });
+            });
+
+            districtDropdown.on('change', function () {
+                $("#hidden_link_district").val($('#district option:selected').val())
+            });
+
+            $('.btn-search').on('click', function () {
+                if ($("#hidden_link_district").val().length === 0) {
+                    window.location.href = '/list-store/mien-bac?province=' + $("#hidden_link_province").val() + '&id=' + $("#hidden_link_province").attr('data-id')
+                } else {
+                    window.location.href = '/list-store/mien-bac?province=' + $("#hidden_link_province").val() + '&district=' + $("#hidden_link_district").val()
+                }
+            });
+
+            var provinceParam = getUrlParameter('province');
+            var districtParam = getUrlParameter('district');
+            var id = getUrlParameter('id');
+
+            if (provinceParam.length > 0) {
+                $('#select2-province-container').text(provinceParam);
+                $("#hidden_link_province").val(provinceParam)
+            }
+
+            if (districtParam.length > 0) {
+                $('#select2-district-container').text(districtParam);
+                $("#hidden_link_district").val(districtParam)
+            }
+
+            if (id.length > 0) {
+                $.ajax({
+                    url: 'https://vapi.vnappmob.com/api/province/district/' + id,
+                    method: 'GET',
+                    dataType: 'json',
+                    success: function (result) {
+                        districtDropdown.empty();
+                        districtDropdown.append('<option value="-1">Chọn Quận/Huyện</option>');
+                        $.each(result, function (index, district) {
+                            for (var i = 0; i < district.length; i++) {
+                                districtDropdown.append('<option value="' + district[i]
+                                    .district_name + '">' + district[i]
+                                        .district_name + '</option>');
+                            }
+                        });
+                    }
+                });
+            }
+
         });
-    });
+
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
     </script>
 
 
     <script>
-    function submitForm() {
-        document.getElementById("formSearch").submit();
-    }
-
-    function navigateToRegion() {
-        var dropdown = document.getElementById("regionDropdown");
-        var selectedValue = dropdown.options[dropdown.selectedIndex].value;
-        window.location.href = selectedValue;
-    }
+        function navigateToRegion() {
+            var dropdown = document.getElementById("regionDropdown");
+            var selectedValue = dropdown.options[dropdown.selectedIndex].value;
+            window.location.href = selectedValue;
+        }
     </script>
+    <style>
+        .select2-search--dropdown::after {
+            content: "\f002";
+            width: 15px;
+            position: absolute;
+            bottom: 0;
+            display: inline-block;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            top: 9px;
+            right: 8px;
+            font-family: 'FontAwesome';
+            font-size: 13px;
+            color: gray;
+        }
+
+        .select2-results__option {
+            font-size: 14px;
+        }
+
+        .select2-container--default .select2-selection--single .select2-selection__rendered,
+        .select2-container--default .select2-selection--single .select2-selection__placeholder {
+            font-size: 14px;
+            color: #000;
+        }
+    </style>
 </main>
 
 @endsection
