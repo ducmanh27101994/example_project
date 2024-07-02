@@ -115,7 +115,11 @@
                                             <a id="LinkButton4" title="Sửa"
                                                href="{{route('admin.editStore', $value->id)}}"><img
                                                     src="{{ asset('images/iconedit_c.png') }}"></a>
-
+                                                    &nbsp;
+                                                    <a href="{{route('admin.deleteStore', $value->id)}}"
+                                               style="display:inline-block"
+                                               title="Xóa"><img
+                                                    src="{{ asset('/images/icondelete_c.png') }}" onclick="return confirm('Bạn có chắc chắn muốn xóa cửa hàng này?')"></a>&nbsp;
                                         </td>
                                     </tr>
                                     </tbody>

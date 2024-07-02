@@ -127,6 +127,13 @@ class StoreController extends BaseController
         return view('admin.cuahang.editStore', ['store' => $store]);
     }
 
+    public function deleteStore($id)
+    {
+        $store = Store::findOrFail($id);
+        $store->delete();
+        return redirect()->route('admin.indexStore')->with('success', 'Cửa hàng đã được xóa thành công.');
+    }
+
     public function submitEditStore(Request $request, $id)
     {
         $dataOld = $this->storeRepository->find($id);

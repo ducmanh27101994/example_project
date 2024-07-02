@@ -113,7 +113,7 @@ Route::group(['middleware' => 'auth_admin'], function () {
         Route::post('/createStore', 'App\Http\Controllers\Admin\StoreController@submitStore')->name('admin.submitStore');
         Route::get('/editStore/{id}', 'App\Http\Controllers\Admin\StoreController@editStore')->name('admin.editStore');
         Route::post('/editStore/{id}', 'App\Http\Controllers\Admin\StoreController@submitEditStore')->name('admin.submit.editStore');
-
+        Route::get('/deleteStore/{id}', 'App\Http\Controllers\Admin\StoreController@deleteStore')->name('admin.deleteStore');
         Route::get('/searchStore', 'App\Http\Controllers\Admin\StoreController@searchStore')->name('search.store');
 
         Route::get('/indexListCateProduct', 'App\Http\Controllers\Admin\CategoryController@indexListCategoryProduct')->name('admin.list.cate.product');
