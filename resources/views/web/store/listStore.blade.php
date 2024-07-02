@@ -143,6 +143,14 @@
                                                 <span>{{$value->page_title_tag}}</span>
                                             </a>
                                         </p>
+                                        <p>
+                                            <a target="_blank" href="{{$value->facebook}}" title="Fanpage Facebook">
+
+                                                <img src="{{ asset('home/images/fb.png') }}" alt="material-symbols_directions">
+                                                <span>Fanpage Facebook</span>
+
+                                            </a>
+                                        </p>
                                     </div>
                                 </div>
                                 <div class="ridect_map-wrapper">
@@ -153,6 +161,7 @@
                                             <span>Chỉ đường trên Google Map</span>
                                         </p>
                                     </a>
+
                                 </div>
                             </div>
                         </div>

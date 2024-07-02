@@ -6,7 +6,7 @@
     <div id="page-wrapper">
         <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
         <script>
-            $(function() {
+            $(function () {
                 $("#txt_updatetime").datepicker({
                     dateFormat: 'dd/mm/yy'
                 });
@@ -69,57 +69,82 @@
                         </span>
                         <div id="parentHorizontalTabcontent" style="display: block; width: 100%; margin: 0px;">
                             <ul class="resp-tabs-list hor_1">
-                                <li class="resp-tab-item hor_1 resp-tab-active" aria-controls="hor_1_tab_item-0" role="tab" style="background-color: rgb(255, 255, 255); border-color: rgb(193, 193, 193);">
+                                <li class="resp-tab-item hor_1 resp-tab-active" aria-controls="hor_1_tab_item-0"
+                                    role="tab"
+                                    style="background-color: rgb(255, 255, 255); border-color: rgb(193, 193, 193);">
                                     Thông cửa hàng chung
                                 </li>
-{{--                                <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-1" role="tab" style="background-color: rgb(245, 245, 245);">Cấu hình SEO--}}
-{{--                                </li>--}}
+                                {{-- <li class="resp-tab-item hor_1" aria-controls="hor_1_tab_item-1" role="tab"
+                                    style="background-color: rgb(245, 245, 245);">Cấu hình SEO--}}
+                                    {{-- </li>--}}
                             </ul>
                             <div class="resp-tabs-container hor_1" style="border-color: rgb(193, 193, 193);">
 
-                                <h2 class="resp-accordion hor_1 resp-tab-active" role="tab" aria-controls="hor_1_tab_item-0" style="background: none; border-color: rgb(193, 193, 193);"><span class="resp-arrow"></span>Thông cửa hàng chung</h2>
-                                <div class="resp-tab-content hor_1 resp-tab-content-active" aria-labelledby="hor_1_tab_item-0" style="display:block">
+                                <h2 class="resp-accordion hor_1 resp-tab-active" role="tab"
+                                    aria-controls="hor_1_tab_item-0"
+                                    style="background: none; border-color: rgb(193, 193, 193);"><span
+                                        class="resp-arrow"></span>Thông cửa hàng chung</h2>
+                                <div class="resp-tab-content hor_1 resp-tab-content-active"
+                                    aria-labelledby="hor_1_tab_item-0" style="display:block">
                                     <div class="row">
                                         <div class="col-sm-8">
                                             <div class="block_sp">
                                                 <div class="form-group">
-                                                    <label class="next-label">Tiêu đề cửa hàng</label> <a href="#" class="tooltip">
+                                                    <label class="next-label">Tiêu đề cửa hàng</label> <a href="#"
+                                                        class="tooltip">
                                                         <img src="{{ asset('images/help-icon.png') }}">
                                                         <span><b>Tiêu đề cửa hàng</b><br>
                                                             Nhập tiêu đề cửa hàng, độ dài tiêu đề không quá 150 ký tự
                                                         </span>
                                                     </a>
-                                                    <input name="title_store" type="text" id="txtnewsname" class="inputbox" placeholder="Nhập tiêu đề cửa hàng" style="width:100%;" value="{{!empty(old('title_store')) ? old('title_store') : $store->title_store}}">
+                                                    <input name="title_store" type="text" id="txtnewsname"
+                                                        class="inputbox" placeholder="Nhập tiêu đề cửa hàng"
+                                                        style="width:100%;"
+                                                        value="{{!empty(old('title_store')) ? old('title_store') : $store->title_store}}">
                                                     @if($errors->has('title_store'))
-                                                    <p class="text-danger" style="margin-top: 10px;">{{ $errors->first('title_store') }}</p>
+                                                        <p class="text-danger" style="margin-top: 10px;">
+                                                            {{ $errors->first('title_store') }}
+                                                        </p>
                                                     @endif
                                                 </div>
                                                 <div class="row hidden">
                                                     <div class="col-sm-6">
                                                         <div class="form-group">
-                                                            <label class="next-label">Tọa độ latitude</label> <a href="#" class="tooltip">
+                                                            <label class="next-label">Tọa độ latitude</label> <a
+                                                                href="#" class="tooltip">
                                                                 <img src="{{ asset('images/help-icon.png') }}">
                                                                 <span><b>Tọa độ vĩ độ latitude</b><br>
                                                                     Lấy tọa độ vĩ độ latitude trên google maps
                                                                 </span>
                                                             </a>
-                                                            <input name="latitude" type="text" id="txtnewsname" class="inputbox" placeholder="Nhập vĩ độ  latitude" style="width:100%;" value="{{!empty(old('latitude')) ? old('latitude') : $store->latitude}}">
+                                                            <input name="latitude" type="text" id="txtnewsname"
+                                                                class="inputbox" placeholder="Nhập vĩ độ  latitude"
+                                                                style="width:100%;"
+                                                                value="{{!empty(old('latitude')) ? old('latitude') : $store->latitude}}">
                                                             @if($errors->has('latitude'))
-                                                            <p class="text-danger" style="margin-top: 10px;">{{ $errors->first('latitude') }}</p>
+                                                                <p class="text-danger" style="margin-top: 10px;">
+                                                                    {{ $errors->first('latitude') }}
+                                                                </p>
                                                             @endif
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-6">
                                                         <div class="form-group">
-                                                            <label class="next-label">Tọa độ longitude</label> <a href="#" class="tooltip">
+                                                            <label class="next-label">Tọa độ longitude</label> <a
+                                                                href="#" class="tooltip">
                                                                 <img src="{{ asset('images/help-icon.png') }}">
                                                                 <span><b>Tọa độ kinh độ longitude</b><br>
                                                                     Lấy tọa độ kinh độ longitude trên google maps
                                                                 </span>
                                                             </a>
-                                                            <input name="longitude" type="text" id="txtnewsname" class="inputbox" placeholder="Nhập kinh độ longitude" style="width:100%;" value="{{!empty(old('longitude')) ? old('longitude') : $store->longitude}}">
+                                                            <input name="longitude" type="text" id="txtnewsname"
+                                                                class="inputbox" placeholder="Nhập kinh độ longitude"
+                                                                style="width:100%;"
+                                                                value="{{!empty(old('longitude')) ? old('longitude') : $store->longitude}}">
                                                             @if($errors->has('longitude'))
-                                                            <p class="text-danger" style="margin-top: 10px;">{{ $errors->first('longitude') }}</p>
+                                                                <p class="text-danger" style="margin-top: 10px;">
+                                                                    {{ $errors->first('longitude') }}
+                                                                </p>
                                                             @endif
                                                         </div>
                                                     </div>
@@ -128,25 +153,33 @@
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="next-label">Số điện thoại</label>
-                                                    <input name="page_title_tag" id="txtdesc" class="inputbox " style="width:100%;" value="{{!empty(old('page_title_tag')) ? old('page_title_tag') : $store->page_title_tag}}" />
+                                                    <input name="page_title_tag" id="txtdesc" class="inputbox "
+                                                        style="width:100%;"
+                                                        value="{{!empty(old('page_title_tag')) ? old('page_title_tag') : $store->page_title_tag}}" />
                                                 </div>
                                                 <div class="form-group">
                                                     <label class="next-label">Link google map</label>
-                                                    <input name="path" id="txtmaplink" class="inputbox " style="width:100%;" value="{{!empty(old('path')) ? old('path') : $store->path}}" />
+                                                    <input name="path" id="txtmaplink" class="inputbox "
+                                                        style="width:100%;"
+                                                        value="{{!empty(old('path')) ? old('path') : $store->path}}" />
                                                 </div>
                                                 <div class="form-group">
+                                                        <label class="next-label">Link Facebook Fanpage</label>
+                                                        <input name="facebook" rows="2" cols="20" 
+                                                               class="inputbox " style="width:100%;" value="{{!empty(old('facebook')) ? old('facebook') : $store->facebook}}"/>
+                                                    </div>
+                                                <div class="form-group">
                                                     <label class="next-label">Địa chỉ</label>
-                                                    <input name="address" id="txtmaplink" class="inputbox " style="width:100%;" value="{{!empty(old('address')) ? old('address') : $store->address}}" />
+                                                    <input name="address" id="txtmaplink" class="inputbox "
+                                                        style="width:100%;"
+                                                        value="{{!empty(old('address')) ? old('address') : $store->address}}" />
                                                 </div>
                                                 <div class="block_sp">
                                                     <div class="form-group">
                                                         <p class="ttg">Trạng thái</p>
-                                                        <input id="chkstatus" type="checkbox"
-                                                               name="status"
-                                                               @if($store->status == '1')
-                                                                   checked="checked"
-                                                            @endif
-                                                        > Hiển thị<br>
+                                                        <input id="chkstatus" type="checkbox" name="status"
+                                                            @if($store->status == '1') checked="checked" @endif> Hiển
+                                                        thị<br>
                                                     </div>
                                                 </div>
 
@@ -154,244 +187,152 @@
                                         </div>
 
                                         <div class="col-sm-4">
-{{--                                            <div class="block_sp">--}}
-{{--                                                <div class="form-group">--}}
-{{--                                                    <label class="text-no-bold" data-bind="text:Title" style="font-weight:bold">Hình ảnh đại diện</label>--}}
-{{--                                                    <input type="file" name="image_store" id="flupload" class="btn-change-link pull-right" style="width:180px;">--}}
-{{--                                                </div>--}}
-{{--                                                <div class="center">--}}
-{{--                                                    <img height="100" style="max-width:600px" @if(!empty($store->image_store))--}}
-{{--                                                    src="{{$store->image_store}}"--}}
-{{--                                                    @endif--}}
-{{--                                                    >--}}
-
-{{--                                                </div>--}}
-{{--                                                <p style="color:#c3cfd8" class="center">Sử dụng nút <strong>Chọn--}}
-{{--                                                        hình</strong> để thêm hình.</p>--}}
-{{--                                            </div>--}}
-{{--                                            <div class="block_sp">--}}
-{{--                                                <p class="ttg">Khu vực</p>--}}
-{{--                                                <div class="form-group">--}}
-
-{{--                                                    <select name="address" id="ddlcate" class="inputbox" style="width:100%;">--}}
-{{--                                                        <option value="An bắc">Miền bắc--}}
-{{--                                                        <option value="An trung">Miền trung--}}
-{{--                                                        <option value="An nam">Miền nam--}}
-{{--                                                    </select>--}}
-{{--                                                </div>--}}
-{{--                                            </div>--}}
-{{--                                            <div class="block_sp">--}}
-{{--                                                <p class="ttg">Tỉnh, thành phố cửa hàng<a href="#" class="tooltip">--}}
-{{--                                                        <img src="{{ asset('images/help-icon.png') }}">--}}
-{{--                                                        <span><b>Tỉnh, thành phố cửa hàng</b><br>--}}
-{{--                                                            Lưa chọn tỉnh, thành phố cửa hàng--}}
-{{--                                                        </span>--}}
-{{--                                                    </a></p>--}}
-{{--                                                <?php--}}
-{{--                                                $arr_store = [--}}
-{{--                                                    "An Giang",--}}
-{{--                                                    "Bà Rịa - Vũng Tàu",--}}
-{{--                                                    "Bắc Giang",--}}
-{{--                                                    "Bắc Kạn",--}}
-{{--                                                    "Bạc Liêu",--}}
-{{--                                                    "Bắc Ninh",--}}
-{{--                                                    "Bến Tre",--}}
-{{--                                                    "Bình Định",--}}
-{{--                                                    "Bình Dương",--}}
-{{--                                                    "Bình Phước",--}}
-{{--                                                    "Bình Thuận",--}}
-{{--                                                    "Bình Thuận",--}}
-{{--                                                    "Cà Mau",--}}
-{{--                                                    "Cao Bằng",--}}
-{{--                                                    "Đắk Lắk",--}}
-{{--                                                    "Đắk Nông",--}}
-{{--                                                    "Điện Biên",--}}
-{{--                                                    "Đồng Nai",--}}
-{{--                                                    "Đồng Tháp",--}}
-{{--                                                    "Đồng Tháp",--}}
-{{--                                                    "Gia Lai",--}}
-{{--                                                    "Hà Giang",--}}
-{{--                                                    "Hà Nam",--}}
-{{--                                                    "Hà Tĩnh",--}}
-{{--                                                    "Hải Dương",--}}
-{{--                                                    "Hậu Giang",--}}
-{{--                                                    "Hòa Bình",--}}
-{{--                                                    "Hưng Yên",--}}
-{{--                                                    "Khánh Hòa",--}}
-{{--                                                    "Kiên Giang",--}}
-{{--                                                    "Kon Tum",--}}
-{{--                                                    "Lai Châu",--}}
-{{--                                                    "Lâm Đồng",--}}
-{{--                                                    "Lạng Sơn",--}}
-{{--                                                    "Lào Cai",--}}
-{{--                                                    "Long An",--}}
-{{--                                                    "Nam Định",--}}
-{{--                                                    "Nghệ An",--}}
-{{--                                                    "Ninh Bình",--}}
-{{--                                                    "Ninh Thuận",--}}
-{{--                                                    "Phú Thọ",--}}
-{{--                                                    "Quảng Bình",--}}
-{{--                                                    "Quảng Bình",--}}
-{{--                                                    "Quảng Ngãi",--}}
-{{--                                                    "Quảng Ninh",--}}
-{{--                                                    "Quảng Trị",--}}
-{{--                                                    "Sóc Trăng",--}}
-{{--                                                    "Sơn La",--}}
-{{--                                                    "Tây Ninh",--}}
-{{--                                                    "Thái Bình",--}}
-{{--                                                    "Thái Nguyên",--}}
-{{--                                                    "Thanh Hóa",--}}
-{{--                                                    "Thừa Thiên Huế",--}}
-{{--                                                    "Tiền Giang",--}}
-{{--                                                    "Trà Vinh",--}}
-{{--                                                    "Tuyên Quang",--}}
-{{--                                                    "Vĩnh Long",--}}
-{{--                                                    "Vĩnh Phúc",--}}
-{{--                                                    "Yên Bái",--}}
-{{--                                                    "Phú Yên",--}}
-{{--                                                    "Tp.Cần Thơ",--}}
-{{--                                                    "Tp.Đà Nẵng",--}}
-{{--                                                    "Tp.Hải Phòng",--}}
-{{--                                                    "Tp.Hà Nội",--}}
-{{--                                                    "TP.HCM"--}}
-{{--                                                ]--}}
-
-{{--                                                ?>--}}
-{{--                                                <div class="form-group">--}}
-{{--                                                    <select name="address" id="ddlcate" class="inputbox" style="width:100%;">--}}
-{{--                                                        @foreach($arr_store as $value)--}}
-{{--                                                        <option {{$store->address == $value ? 'selected' : ''}} value="{{$value}}">{{$value}}--}}
-{{--                                                            @endforeach--}}
-{{--                                                    </select>--}}
-{{--                                                </div>--}}
-{{--                                                <div class="form-group hidden">--}}
-{{--                                                    <label class="next-label">Nhóm cửa hàng</label>--}}
-{{--                                                    <div class="listgr">--}}
-{{--                                                        <ul>--}}
-
-{{--                                                            <li><input type="checkbox" name="chkgr" value="10362"> Nhóm--}}
-{{--                                                                cửa hàng 1--}}
-{{--                                                            </li>--}}
-
-
-{{--                                                        </ul>--}}
-{{--                                                    </div>--}}
-{{--                                                </div>--}}
-{{--                                            </div>--}}
-{{--                                            <div class="block_sp">--}}
-{{--                                                <p class="ttg">Quận/Huyện</p>--}}
-{{--                                                <div class="form-group">--}}
-
-{{--                                                    <select name="address" id="ddlcate" class="inputbox" style="width:100%;">--}}
-{{--                                                        <option value="An bắc">Miền bắc--}}
-{{--                                                        <option value="An trung">Miền trung--}}
-{{--                                                        <option value="An nam">Miền nam--}}
-{{--                                                    </select>--}}
-{{--                                                </div>--}}
-{{--                                            </div>--}}
+                                            <div class="block_sp">
+                                                <p class="ttg">Tỉnh, thành phố cửa hàng<a href="#" class="tooltip">
+                                                        <img src="{{ asset('images/help-icon.png') }}">
+                                                        <span><b>Tỉnh, thành phố cửa hàng</b><br>
+                                                            Lưa chọn tỉnh, thành phố cửa hàng
+                                                        </span>
+                                                    </a></p>
+                                                <div class="form-group">
+                                                    <p>Tỉnh thành hiện tại: {{$store->latitude}}</p>
+                                                    <select class="inputbox" name="province" id="province">
+                                                        <option>Cập nhật Tỉnh/Thành phố</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="block_sp">
+                                                <p class="ttg">Quận huyện</p>
+                                                <div class="form-group">
+                                                    <p>Quận/Huyện hiện tại: {{$store->longitude}}</p>
+                                                    <select class="inputbox" name="district" id="district">
+                                                        <option>Cập nhật Quận/Huyện</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-
-
                                 </div>
 
 
-{{--                                <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-1" style="background-color: rgb(245, 245, 245); border-color: rgb(193, 193, 193);">--}}
-{{--                                    <span class="resp-arrow"></span>Cấu hình SEO--}}
-{{--                                </h2>--}}
-{{--                                <div class="resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-3" style="border-color: rgb(193, 193, 193);">--}}
+                                {{-- <h2 class="resp-accordion hor_1" role="tab" aria-controls="hor_1_tab_item-1"
+                                    style="background-color: rgb(245, 245, 245); border-color: rgb(193, 193, 193);">--}}
+                                    {{-- <span class="resp-arrow"></span>Cấu hình SEO--}}
+                                    {{-- </h2>--}}
+                                {{-- <div class="resp-tab-content hor_1" aria-labelledby="hor_1_tab_item-3"
+                                    style="border-color: rgb(193, 193, 193);">--}}
 
-{{--                                    <p>--}}
-{{--                                    </p>--}}
-{{--                                    <table class="admintable">--}}
-{{--                                        <tbody>--}}
-{{--                                            <tr>--}}
-{{--                                                <td valign="top">Tối ưu SEO</td>--}}
-{{--                                                <td>--}}
-{{--                                                    <div>--}}
-{{--                                                        <span class="page-title-seo">{{$store->page_title_tag}}</span>--}}
-{{--                                                        <div class="page-description-seo ws-nm">--}}
-{{--                                                            <span>{{ url()->to('/') . '/' }}{{$store->path}}</span>--}}
-{{--                                                        </div>--}}
-{{--                                                        <div class="page-url-seo ws-nm">--}}
-{{--                                                            {{$store->description_card}}--}}
-{{--                                                        </div>--}}
-{{--                                                    </div>--}}
-{{--                                                </td>--}}
-{{--                                            </tr>--}}
-{{--                                            <tr>--}}
-{{--                                                <td width="150" class="key">--}}
-{{--                                                    <label for="txttitle">Thẻ tiêu đề trang</label>--}}
-{{--                                                </td>--}}
-{{--                                                <td>--}}
-{{--                                                    <input name="page_title_tag" type="text" id="txttitleweb" class="inputbox" style="width:460px;" value="{{!empty(old('page_title_tag')) ? old('page_title_tag') : $store->page_title_tag}}">--}}
-{{--                                                    <a href="#" class="tooltip">--}}
-{{--                                                        <img src="{{ asset('images/help-icon.png') }}">--}}
-{{--                                                        <span><b>Tiêu đề trang</b><br>--}}
-{{--                                                            Nội dung được hiển thị dưới dạng tiêu đề trong kết quả tìm kiếm và trên trình duyệt của người dùng. <br><i>(Tiêu đề nên để dưới 70 ký tự)</i>--}}
-{{--                                                        </span>--}}
-{{--                                                    </a>--}}
-{{--                                                    @if($errors->has('page_title_tag'))--}}
-{{--                                                    <p class="text-danger" style="margin-top: 10px;">{{ $errors->first('page_title_tag') }}</p>--}}
-{{--                                                    @endif--}}
-{{--                                                </td>--}}
-{{--                                            </tr>--}}
+                                    {{-- <p>--}}
+                                        {{-- </p>--}}
+                                    {{-- <table class="admintable">--}}
+                                        {{-- <tbody>--}}
+                                            {{-- <tr>--}}
+                                                {{-- <td valign="top">Tối ưu SEO</td>--}}
+                                                {{-- <td>--}}
+                                                    {{-- <div>--}}
+                                                        {{-- <span
+                                                            class="page-title-seo">{{$store->page_title_tag}}</span>--}}
+                                                        {{-- <div class="page-description-seo ws-nm">--}}
+                                                            {{-- <span>{{ url()->to('/') . '/'
+                                                                }}{{$store->path}}</span>--}}
+                                                            {{-- </div>--}}
+                                                        {{-- <div class="page-url-seo ws-nm">--}}
+                                                            {{-- {{$store->description_card}}--}}
+                                                            {{-- </div>--}}
+                                                        {{-- </div>--}}
+                                                    {{-- </td>--}}
+                                                {{-- </tr>--}}
+                                            {{-- <tr>--}}
+                                                {{-- <td width="150" class="key">--}}
+                                                    {{-- <label for="txttitle">Thẻ tiêu đề trang</label>--}}
+                                                    {{-- </td>--}}
+                                                {{-- <td>--}}
+                                                    {{-- <input name="page_title_tag" type="text" id="txttitleweb"
+                                                        class="inputbox" style="width:460px;"
+                                                        value="{{!empty(old('page_title_tag')) ? old('page_title_tag') : $store->page_title_tag}}">--}}
+                                                    {{-- <a href="#" class="tooltip">--}}
+                                                        {{-- <img src="{{ asset('images/help-icon.png') }}">--}}
+                                                        {{-- <span><b>Tiêu đề trang</b><br>--}}
+                                                            {{-- Nội dung được hiển thị dưới dạng tiêu đề trong kết quả
+                                                            tìm kiếm và trên trình duyệt của người dùng. <br><i>(Tiêu đề
+                                                                nên để dưới 70 ký tự)</i>--}}
+                                                            {{-- </span>--}}
+                                                        {{-- </a>--}}
+                                                    {{-- @if($errors->has('page_title_tag'))--}}
+                                                    {{-- <p class="text-danger" style="margin-top: 10px;">{{
+                                                        $errors->first('page_title_tag') }}</p>--}}
+                                                    {{-- @endif--}}
+                                                    {{-- </td>--}}
+                                                {{-- </tr>--}}
 
-{{--                                            <tr>--}}
-{{--                                                <td width="150" class="key">--}}
-{{--                                                    <label for="txttitle">Đường dẫn</label>--}}
+                                            {{-- <tr>--}}
+                                                {{-- <td width="150" class="key">--}}
+                                                    {{-- <label for="txttitle">Đường dẫn</label>--}}
 
-{{--                                                </td>--}}
-{{--                                                <td>--}}
-{{--                                                    <div class="next-input--stylized">--}}
-{{--                                                        <span class="next-input-add-on next-input__add-on--before">{{ url()->to('/') . '/' }}</span>--}}
+                                                    {{-- </td>--}}
+                                                {{-- <td>--}}
+                                                    {{-- <div class="next-input--stylized">--}}
+                                                        {{-- <span
+                                                            class="next-input-add-on next-input__add-on--before">{{
+                                                            url()->to('/') . '/' }}</span>--}}
 
-{{--                                                        <input value="{{!empty(old('path')) ? old('path') : $store->path}}" name="path" type="text" id="txturl" class="txtpa" style="width:335px;">--}}
-{{--                                                    </div>--}}
-{{--                                                    <a href="#" class="tooltip">--}}
-{{--                                                        <img src="{{ asset('images/help-icon.png') }}">--}}
-{{--                                                        <span><b>Đường dẫn</b><br>--}}
-{{--                                                            Đường dẫn tới danh mục tin--}}
-{{--                                                        </span>--}}
-{{--                                                    </a>--}}
-{{--                                                    @if($errors->has('path'))--}}
-{{--                                                    <p class="text-danger" style="margin-top: 10px;">{{ $errors->first('path') }}</p>--}}
-{{--                                                    @endif--}}
-{{--                                                </td>--}}
-{{--                                            </tr>--}}
-{{--                                            <tr>--}}
-{{--                                                <td width="150" class="key">--}}
-{{--                                                    <label for="txtkeyword">Thẻ từ khóa</label>--}}
-{{--                                                </td>--}}
-{{--                                                <td>--}}
-{{--                                                    <textarea name="keyword_tags" rows="5" cols="70" id="txtkeyword" class="inputbox" style="height:80px;">{{!empty(old('keyword_tags')) ? old('keyword_tags') : $store->keyword_tags}}</textarea>--}}
-{{--                                                    <a href="#" class="tooltip">--}}
-{{--                                                        <img src="{{ asset('images/help-icon.png') }}">--}}
-{{--                                                        <span><b>Thẻ từ khóa</b><br>--}}
-{{--                                                            Mô tả các từ khóa chính của website--}}
-{{--                                                        </span>--}}
-{{--                                                    </a>--}}
-{{--                                                </td>--}}
-{{--                                            </tr>--}}
-{{--                                            <tr>--}}
-{{--                                                <td class="key">--}}
-{{--                                                    <label for="txtdesciption">Thẻ mô tả</label>--}}
-{{--                                                </td>--}}
-{{--                                                <td>--}}
-{{--                                                    <textarea name="description_card" rows="5" cols="70" id="txtdesc" class="inputbox" style="height:80px;">{{!empty(old('description_card')) ? old('description_card') : $store->description_card}}</textarea>--}}
-{{--                                                    <a href="#" class="tooltip">--}}
-{{--                                                        <img src="{{ asset('images/help-icon.png') }}">--}}
-{{--                                                        <span><b>Thẻ mô tả</b><br>--}}
-{{--                                                            Cung cấp một mô tả ngắn của trang. Trong vài trường hợp, mô tả này được sử dụng như một phần của đoạn trích được hiển thị trong kết quả tìm kiếm. <br><i>(Mô tả nên để dưới 160 ký tự)</i>--}}
-{{--                                                        </span>--}}
-{{--                                                    </a>--}}
-{{--                                                </td>--}}
-{{--                                            </tr>--}}
-{{--                                        </tbody>--}}
-{{--                                    </table>--}}
-{{--                                    <p></p>--}}
+                                                        {{-- <input
+                                                            value="{{!empty(old('path')) ? old('path') : $store->path}}"
+                                                            name="path" type="text" id="txturl" class="txtpa"
+                                                            style="width:335px;">--}}
+                                                        {{-- </div>--}}
+                                                    {{-- <a href="#" class="tooltip">--}}
+                                                        {{-- <img src="{{ asset('images/help-icon.png') }}">--}}
+                                                        {{-- <span><b>Đường dẫn</b><br>--}}
+                                                            {{-- Đường dẫn tới danh mục tin--}}
+                                                            {{-- </span>--}}
+                                                        {{-- </a>--}}
+                                                    {{-- @if($errors->has('path'))--}}
+                                                    {{-- <p class="text-danger" style="margin-top: 10px;">{{
+                                                        $errors->first('path') }}</p>--}}
+                                                    {{-- @endif--}}
+                                                    {{-- </td>--}}
+                                                {{-- </tr>--}}
+                                            {{-- <tr>--}}
+                                                {{-- <td width="150" class="key">--}}
+                                                    {{-- <label for="txtkeyword">Thẻ từ khóa</label>--}}
+                                                    {{-- </td>--}}
+                                                {{-- <td>--}}
+                                                    {{-- <textarea name="keyword_tags" rows="5" cols="70"
+                                                        id="txtkeyword" class="inputbox"
+                                                        style="height:80px;">{{!empty(old('keyword_tags')) ? old('keyword_tags') : $store->keyword_tags}}</textarea>--}}
+                                                    {{-- <a href="#" class="tooltip">--}}
+                                                        {{-- <img src="{{ asset('images/help-icon.png') }}">--}}
+                                                        {{-- <span><b>Thẻ từ khóa</b><br>--}}
+                                                            {{-- Mô tả các từ khóa chính của website--}}
+                                                            {{-- </span>--}}
+                                                        {{-- </a>--}}
+                                                    {{-- </td>--}}
+                                                {{-- </tr>--}}
+                                            {{-- <tr>--}}
+                                                {{-- <td class="key">--}}
+                                                    {{-- <label for="txtdesciption">Thẻ mô tả</label>--}}
+                                                    {{-- </td>--}}
+                                                {{-- <td>--}}
+                                                    {{-- <textarea name="description_card" rows="5" cols="70"
+                                                        id="txtdesc" class="inputbox"
+                                                        style="height:80px;">{{!empty(old('description_card')) ? old('description_card') : $store->description_card}}</textarea>--}}
+                                                    {{-- <a href="#" class="tooltip">--}}
+                                                        {{-- <img src="{{ asset('images/help-icon.png') }}">--}}
+                                                        {{-- <span><b>Thẻ mô tả</b><br>--}}
+                                                            {{-- Cung cấp một mô tả ngắn của trang. Trong vài trường
+                                                            hợp, mô tả này được sử dụng như một phần của đoạn trích được
+                                                            hiển thị trong kết quả tìm kiếm. <br><i>(Mô tả nên để dưới
+                                                                160 ký tự)</i>--}}
+                                                            {{-- </span>--}}
+                                                        {{-- </a>--}}
+                                                    {{-- </td>--}}
+                                                {{-- </tr>--}}
+                                            {{-- </tbody>--}}
+                                        {{-- </table>--}}
+                                    {{-- <p></p>--}}
 
-{{--                                </div>--}}
+                                    {{-- </div>--}}
 
                             </div>
                         </div>
@@ -404,14 +345,14 @@
     </div>
 </form>
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         //Horizontal Tab
         $('#parentHorizontalTabcontent').easyResponsiveTabs({
             type: 'default', //Types: default, vertical, accordion
             width: 'auto', //auto or any width like 600px
             fit: true, // 100% fit in a container
             tabidentify: 'hor_1', // The tab groups identifier
-            activate: function(event) { // Callback function if tab is switched
+            activate: function (event) { // Callback function if tab is switched
                 var $tab = $(this);
                 var $info = $('#nested-tabInfo');
                 var $name = $('span', $info);
@@ -439,7 +380,7 @@
             fit: true, // 100% fit in a container
             closed: 'accordion', // Start closed if in accordion view
             tabidentify: 'hor_1', // The tab groups identifier
-            activate: function(event) { // Callback function if tab is switched
+            activate: function (event) { // Callback function if tab is switched
                 var $tab = $(this);
                 var $info = $('#nested-tabInfo2');
                 var $name = $('span', $info);
@@ -452,6 +393,49 @@
             changeMonth: true,
             changeYear: true,
             dateFormat: 'dd/mm/yy'
+        });
+    });
+</script>
+<script>
+    $(document).ready(function () {
+        var provinceDropdown = $('#province');
+        var districtDropdown = $('#district');
+        // Load provinces into the province dropdown on page load
+        $.ajax({
+            url: 'https://vapi.vnappmob.com/api/province/',
+            method: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                $.each(data, function (index, province) {
+                    for (var i = 0; i < province.length; i++) {
+                        provinceDropdown.append('<option value="' + province[i]
+                            .province_name + '" data-id="' + province[i]
+                                .province_id + '">' + province[i].province_name +
+                            '</option>');
+                    }
+                });
+            }
+        });
+
+        // Handle province dropdown change event
+        provinceDropdown.on('change', function () {
+            var selectedProvinceCode = $('#province option:selected').data('id');
+            // Load districts based on the selected province
+            $.ajax({
+                url: 'https://vapi.vnappmob.com/api/province/district/' + selectedProvinceCode,
+                method: 'GET',
+                dataType: 'json',
+                success: function (result) {
+                    districtDropdown.empty();
+                    $.each(result, function (index, district) {
+                        for (var i = 0; i < district.length; i++) {
+                            districtDropdown.append('<option value="' + district[i]
+                                .district_name + '">' + district[i]
+                                    .district_name + '</option>');
+                        }
+                    });
+                }
+            });
         });
     });
 </script>

@@ -153,12 +153,17 @@
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="next-label">Link google map</label>
-                                                        <input name="path" rows="2" cols="20" id="txtmaplink"
+                                                        <input name="path" rows="2" cols="20" 
+                                                               class="inputbox " style="width:100%;" value=""/>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label class="next-label">Link Facebook Fanpage</label>
+                                                        <input name="facebook" rows="2" cols="20" 
                                                                class="inputbox " style="width:100%;" value=""/>
                                                     </div>
                                                     <div class="form-group">
                                                         <label class="next-label">Địa chỉ</label>
-                                                        <input name="address" rows="2" cols="20" id="txtmaplink"
+                                                        <input name="address" rows="2" cols="20" 
                                                                class="inputbox " style="width:100%;" value=""/>
                                                     </div>
                                                     <div class="block_sp">
@@ -173,7 +178,7 @@
 
                                             <div class="col-sm-4">
                                                 
-                                                <div class="block_sp">
+                                                <div class="block_sp hidden">
                                                     <p class="ttg">Khu vực</p>
                                                     <div class="form-group">
 

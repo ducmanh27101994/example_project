@@ -74,6 +74,7 @@ class StoreController extends BaseController
             'path' => $request->path,
             'keyword_tags' => $this->slugify($request->district),
             'description_card' => $this->slugify($request->province),
+            'facebook' => $request->facebook,
             'created_at' => now(),
             'updated_at' => now(),
         ];
@@ -142,14 +143,15 @@ class StoreController extends BaseController
             'image_store' => $image_store ?? $dataOld->image_store,
             'status' => $status,
             'title_store' => $request->title_store,
-            'latitude' => $request->latitude,
-            'longitude' => $request->longitude,
+            'latitude' => $request->province,
+            'longitude' => $request->district,
             'desc' => $request->desc,
             'address' => $request->address,
             'page_title_tag' => $request->page_title_tag,
             'path' => $request->path,
-            'keyword_tags' => $request->keyword_tags,
-            'description_card' => $request->description_card,
+            'keyword_tags' => $this->slugify($request->district),
+            'description_card' => $this->slugify($request->province),
+            'facebook' => $request->facebook,
         ];
         $store = $this->storeRepository->update($id, $data);
 
