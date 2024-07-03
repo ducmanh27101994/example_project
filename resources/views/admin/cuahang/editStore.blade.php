@@ -195,18 +195,16 @@
                                                         </span>
                                                     </a></p>
                                                 <div class="form-group">
-                                                    <p>Tỉnh thành hiện tại: {{$store->latitude}}</p>
                                                     <select class="inputbox" name="province" id="province">
-                                                        <option>Cập nhật Tỉnh/Thành phố</option>
+                                                        <option>{{!empty(old('latitude')) ? old('latitude') : $store->latitude}}</option>
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="block_sp">
                                                 <p class="ttg">Quận huyện</p>
                                                 <div class="form-group">
-                                                    <p>Quận/Huyện hiện tại: {{$store->longitude}}</p>
                                                     <select class="inputbox" name="district" id="district">
-                                                        <option>Cập nhật Quận/Huyện</option>
+                                                        <option>{{!empty(old('longitude')) ? old('longitude') : $store->longitude}}</option>
                                                     </select>
                                                 </div>
                                             </div>
