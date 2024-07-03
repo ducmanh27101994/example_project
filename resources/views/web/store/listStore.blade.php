@@ -249,17 +249,18 @@
 
             if (districtParam.length > 0) {
                 $('#select2-district-container').text(districtParam);
-                $("#hidden_link_district").val(districtParam)
             }
 
             if (getCookie('location_id').length > 0) {
+
+                var textDefault = districtParam.length === '' ? 'Chọn Quận/Huyện' : districtParam
+
                 $.ajax({
                     url: 'https://vapi.vnappmob.com/api/province/district/' + getCookie('location_id'),
                     method: 'GET',
                     dataType: 'json',
                     success: function (result) {
-                        districtDropdown.empty();
-                        districtDropdown.append('<option value="-1">' + districtParam + '</option>');
+                        districtDropdown.append('<option value="-1">' + textDefault + '</option>');
                         $.each(result, function (index, district) {
                             for (var i = 0; i < district.length; i++) {
                                 districtDropdown.append('<option value="' + district[i]
