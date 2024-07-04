@@ -1,2 +1,6 @@
 User-agent: *
-Disallow:
+Disallow: /cgi-bin/
+Disallow: /admin/
+Disallow: /gio-hang/
+Disallow: /lang/
+Disallow: /home/
