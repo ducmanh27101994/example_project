@@ -302,7 +302,7 @@
         </div>
     </section>
 
-    <section id="section-gallery" class="section section-gallery progressive-image nispaviva-block-gallery"
+    <section id="section-gallery" class="section section-gallery progressive-image nispaviva-block-gallery hidden"
         data-component-list="Gallery">
         <input id="gallery-toggle-01" type="radio" class="gallery-toggle d-none" name="gallery" checked>
         <input id="gallery-toggle-02" type="radio" class="gallery-toggle d-none" name="gallery">

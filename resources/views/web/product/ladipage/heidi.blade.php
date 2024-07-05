@@ -370,7 +370,7 @@
         </div>
     </section>
 
-    <section class="section section-gallarey">
+    <section class="section section-gallarey hidden">
         <img src="{{ $product->heidi_images_banner13 ?? '' }}" alt="section8_gallarey">
     </section>
 
