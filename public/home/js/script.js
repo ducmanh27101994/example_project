@@ -263,14 +263,19 @@ $(document).ready(function () {
         smartSpeed: 650,
         stagePadding: 0,
         margin: 30,
+        nav: true,
+        navText: [
+            '<i class="fa fa-caret-left" aria-hidden="true"></i>',
+            '<i class="fa fa-caret-right" aria-hidden="true"></i>',
+        ],
         responsive: {
             0: {
-                items: 2,
+                items: 1,
                 stagePadding: 15,
                 dots: true,
             },
             600: {
-                items: 3,
+                items: 2,
                 dots: true,
                 stagePadding: 15,
             },

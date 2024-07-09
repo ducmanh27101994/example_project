@@ -2323,7 +2323,7 @@ img {
     width: 28%;
     height: 49px;
     padding: 0 0px;
-    margin: 0 40px;
+    margin: 0 35px;
 }
 
 @media only screen and (min-width:1200px) and (max-width:1400px) {
@@ -2336,7 +2336,7 @@ img {
     /* margin-top: 0; */
 }
 
-#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .tab-pane-info ul li .fw-light {
+#pdp-breaking-technology .breaking-wrap .breaking-technology-bot .tab-content .tab-pane-info ul li h3 {
     font-weight: 400;
     /* white-space: nowrap; */
     margin-right: 30px;
