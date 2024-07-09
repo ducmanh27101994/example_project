@@ -116,7 +116,7 @@
                                                                id="txtnewsname" class="inputbox"
                                                                placeholder="Nhập link sản phẩm" style="width:100%;"
                                                                value="{{!empty(old('news_products_links')) ? old('news_products_links') : $editBlog->news_products_links}}">
-                                                     
+
                                                     </div>
 
                                                     <div class="form-group">
@@ -490,7 +490,16 @@
             filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
             filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
             allowedContent: true,
-            removeFormatAttributes: ''
+            removeFormatAttributes: '',
+            on: {
+                instanceReady: function() {
+                    this.on('notificationShow', function(evt) {
+                        if (evt.data.message.indexOf('4.22.1 ') !== -1) {
+                            evt.cancel();
+                        }
+                    });
+                }
+            }
         });
         CKEDITOR.replace('describe', {
             filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -500,7 +509,16 @@
             filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
             filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
             allowedContent: true,
-            removeFormatAttributes: ''
+            removeFormatAttributes: '',
+            on: {
+                instanceReady: function() {
+                    this.on('notificationShow', function(evt) {
+                        if (evt.data.message.indexOf('4.22.1 ') !== -1) {
+                            evt.cancel();
+                        }
+                    });
+                }
+            }
         });
 
     </script>
