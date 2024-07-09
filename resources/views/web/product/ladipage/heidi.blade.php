@@ -15,7 +15,7 @@
         </div>
     </section>
 
-    <section class="section section-break-a progressive-image">
+    <section class="section section-break-a progressive-image hidden-xs">
         <div class="break-a-duration"></div>
         <div class="animation-layer">
             <div class="break-spotlight">
@@ -40,7 +40,20 @@
             .break-scooter::before {
                 background-image: url('{{ $product->heidi_images_banner3 ?? '' }}');
             }
+
+            @media (max-width: 1025px) {
+
+                .break-spotlight,
+                .break-scooter,
+                .break-words {
+                    height: 50%;
+                }
+            }
         </style>
+    </section>
+
+    <section class="section section-break-a progressive-image hidden-md hidden-sm hidden-lg">
+        <img src="{{ $product->heidi_images_banner3_mobile ?? '' }}" alt="{{ $product->product_name ?? '' }}">
     </section>
 
     <section class="section section-fast progressive-image">
