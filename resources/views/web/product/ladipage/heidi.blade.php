@@ -10,9 +10,19 @@
     <!-- Hình ảnh banner(section 1): sec_1_banner.png -->
     <section class="hero-section">
         <div class="hero-main">
-            <div class="hero-background"
-                style="background: url({{ $product->heidi_images_banner1 ?? '' }}) center / cover no-repeat;"></div>
+            <div class="hero-background"></div>
         </div>
+        <style>
+            /* Hình ảnh xe(section 2): hedi-dauxe.png */
+            .hero-background {
+                background: url('{{ $product->heidi_images_banner1 ?? '' }}') center / cover no-repeat;
+            }
+            @media (max-width: 1025px) {
+                .hero-background {
+                    background: url('{{ $product->heidi_images_banner1_mobile ?? '' }}') center / cover no-repeat;
+                }
+            }
+        </style>
     </section>
 
     <section class="section section-break-a progressive-image hidden-xs">

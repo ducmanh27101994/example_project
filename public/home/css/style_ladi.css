@@ -2525,6 +2525,7 @@
 
     .hero-section {
         position: relative;
+        min-height: 735px;
     }
 
     .title h1 {

@@ -1270,7 +1270,7 @@
                                         <div class="block_sp">
                                             <div class="form-group">
                                                 <label class="text-no-bold" data-bind="text: Title">Hình ảnh
-                                                xe(section 1) kt: 590x874</label>
+                                                xe(section 1) kt: 550x854</label>
                                                 <input type="file" name="heidi_images_banner1_mobile" class="pull-right" style="width:180px;">
                                             </div>
                                         </div>

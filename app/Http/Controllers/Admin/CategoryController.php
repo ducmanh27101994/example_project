@@ -307,6 +307,7 @@ class CategoryController extends BaseController
 
             //Hedi
             'heidi_images_banner1' => !empty($request->heidi_images_banner1) ? $this->uploadService->upload_param($request->heidi_images_banner1) : '',
+            'heidi_images_banner1_mobile' => !empty($request->heidi_images_banner1_mobile) ? $this->uploadService->upload_param($request->heidi_images_banner1_mobile) : '',
             'heidi_images_banner2' => !empty($request->heidi_images_banner2) ? $this->uploadService->upload_param($request->heidi_images_banner2) : '',
             'heidi_images_banner3' => !empty($request->heidi_images_banner3) ? $this->uploadService->upload_param($request->heidi_images_banner3) : '',
             'heidi_images_banner3_mobile' => !empty($request->heidi_images_banner3_mobile) ? $this->uploadService->upload_param($request->heidi_images_banner3_mobile) : '',
@@ -654,6 +655,7 @@ class CategoryController extends BaseController
 
             //Hedi
             'heidi_images_banner1' => !empty($request->heidi_images_banner1) ? $this->uploadService->upload_param($request->heidi_images_banner1) : $this->productRepositories->find($id)->heidi_images_banner1,
+            'heidi_images_banner1_mobile' => !empty($request->heidi_images_banner1_mobile) ? $this->uploadService->upload_param($request->heidi_images_banner1_mobile) : $this->productRepositories->find($id)->heidi_images_banner1_mobile,
             'heidi_images_banner2' => !empty($request->heidi_images_banner2) ? $this->uploadService->upload_param($request->heidi_images_banner2) : $this->productRepositories->find($id)->heidi_images_banner2,
             'heidi_images_banner3' => !empty($request->heidi_images_banner3) ? $this->uploadService->upload_param($request->heidi_images_banner3) : $this->productRepositories->find($id)->heidi_images_banner3,
             'heidi_images_banner3_mobile' => !empty($request->heidi_images_banner3_mobile) ? $this->uploadService->upload_param($request->heidi_images_banner3_mobile) : $this->productRepositories->find($id)->heidi_images_banner3_mobile,
