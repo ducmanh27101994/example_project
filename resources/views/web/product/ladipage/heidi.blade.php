@@ -53,7 +53,7 @@
     </section>
 
     <section class="section section-break-a progressive-image hidden-md hidden-sm hidden-lg">
-        <img src="{{ $product->heidi_images_banner3_mobile ?? '' }}" alt="{{ $product->product_name ?? '' }}">
+        <img style="width: 100%" src="{{ $product->heidi_images_banner3_mobile ?? '' }}" alt="{{ $product->product_name ?? '' }}">
     </section>
 
     <section class="section section-fast progressive-image">

@@ -1151,6 +1151,18 @@
                                         <div class="block_sp">
                                             <div class="form-group">
                                                 <label class="text-no-bold" data-bind="text: Title">Hình ảnh
+                                                xe(section 1) kt: 590x874</label>
+                                                <input type="file" name="heidi_images_banner1_mobile" class="pull-right" style="width:180px;">
+                                            </div>
+                                            <div>
+                                                <img style="width: 180px; height: auto" src="{{$product->heidi_images_banner1_mobile ?? ''}}">
+                                            </div>
+                                        </div>
+                                    </div> 
+                                    <div class="col-sm-4">
+                                        <div class="block_sp">
+                                            <div class="form-group">
+                                                <label class="text-no-bold" data-bind="text: Title">Hình ảnh
                                                 xe(section 2) kt: 390x674</label>
                                                 <input type="file" name="heidi_images_banner3_mobile" class="pull-right" style="width:180px;">
                                             </div>
