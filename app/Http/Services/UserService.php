@@ -62,9 +62,9 @@ class UserService
             'time' => time(),
             'string' => uniqid(),
         ];
-        $token = Authorization::generateToken($data);
+//        $token = Authorization::generateToken($data);
         $user_new = $this->userRepository->update($user['id'], [
-            'token_web' => $token,
+//            'token_web' => $token,
             'agent' => $request->userAgent(),
             'ip_login' => $request->getClientIp()
         ]);
