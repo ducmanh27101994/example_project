@@ -1158,7 +1158,7 @@
                                                 <img style="width: 180px; height: auto" src="{{$product->heidi_images_banner1_mobile ?? ''}}">
                                             </div>
                                         </div>
-                                    </div> 
+                                    </div>
                                     <div class="col-sm-4">
                                         <div class="block_sp">
                                             <div class="form-group">
@@ -1170,7 +1170,7 @@
                                                 <img style="width: 180px; height: auto" src="{{$product->heidi_images_banner3_mobile ?? ''}}">
                                             </div>
                                         </div>
-                                    </div>           
+                                    </div>
                                 </div>
                             </div>
 
@@ -1957,7 +1957,16 @@
             filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
             filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
             allowedContent: true,
-            removeFormatAttributes: ''
+            removeFormatAttributes: '',
+            on: {
+                instanceReady: function() {
+                    this.on('notificationShow', function(evt) {
+                        if (evt.data.message.indexOf('4.22.1 ') !== -1) {
+                            evt.cancel();
+                        }
+                    });
+                }
+            }
         });
         CKEDITOR.replace('overview', {
             filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -1967,7 +1976,16 @@
             filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
             filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
             allowedContent: true,
-            removeFormatAttributes: ''
+            removeFormatAttributes: '',
+            on: {
+                instanceReady: function() {
+                    this.on('notificationShow', function(evt) {
+                        if (evt.data.message.indexOf('4.22.1 ') !== -1) {
+                            evt.cancel();
+                        }
+                    });
+                }
+            }
         });
         CKEDITOR.replace('engine', {
             filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -1977,7 +1995,16 @@
             filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
             filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
             allowedContent: true,
-            removeFormatAttributes: ''
+            removeFormatAttributes: '',
+            on: {
+                instanceReady: function() {
+                    this.on('notificationShow', function(evt) {
+                        if (evt.data.message.indexOf('4.22.1 ') !== -1) {
+                            evt.cancel();
+                        }
+                    });
+                }
+            }
         });
         CKEDITOR.replace('chassis', {
             filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -1987,7 +2014,16 @@
             filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
             filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
             allowedContent: true,
-            removeFormatAttributes: ''
+            removeFormatAttributes: '',
+            on: {
+                instanceReady: function() {
+                    this.on('notificationShow', function(evt) {
+                        if (evt.data.message.indexOf('4.22.1 ') !== -1) {
+                            evt.cancel();
+                        }
+                    });
+                }
+            }
         });
         CKEDITOR.replace('gogo_desc_3', {
             filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -1997,7 +2033,16 @@
             filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
             filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
             allowedContent: true,
-            removeFormatAttributes: ''
+            removeFormatAttributes: '',
+            on: {
+                instanceReady: function() {
+                    this.on('notificationShow', function(evt) {
+                        if (evt.data.message.indexOf('4.22.1 ') !== -1) {
+                            evt.cancel();
+                        }
+                    });
+                }
+            }
         });
         CKEDITOR.replace('gogo_desc_banner9', {
             filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -2007,7 +2052,16 @@
             filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
             filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
             allowedContent: true,
-            removeFormatAttributes: ''
+            removeFormatAttributes: '',
+            on: {
+                instanceReady: function() {
+                    this.on('notificationShow', function(evt) {
+                        if (evt.data.message.indexOf('4.22.1 ') !== -1) {
+                            evt.cancel();
+                        }
+                    });
+                }
+            }
         });
         CKEDITOR.replace('gogo_desc_banner10', {
             filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -2017,7 +2071,16 @@
             filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
             filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
             allowedContent: true,
-            removeFormatAttributes: ''
+            removeFormatAttributes: '',
+            on: {
+                instanceReady: function() {
+                    this.on('notificationShow', function(evt) {
+                        if (evt.data.message.indexOf('4.22.1 ') !== -1) {
+                            evt.cancel();
+                        }
+                    });
+                }
+            }
         });
         CKEDITOR.replace('gogo_desc_banner11', {
             filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -2027,7 +2090,16 @@
             filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
             filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
             allowedContent: true,
-            removeFormatAttributes: ''
+            removeFormatAttributes: '',
+            on: {
+                instanceReady: function() {
+                    this.on('notificationShow', function(evt) {
+                        if (evt.data.message.indexOf('4.22.1 ') !== -1) {
+                            evt.cancel();
+                        }
+                    });
+                }
+            }
         });
         CKEDITOR.replace('viva_desc_banner4', {
             filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -2037,7 +2109,16 @@
             filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
             filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
             allowedContent: true,
-            removeFormatAttributes: ''
+            removeFormatAttributes: '',
+            on: {
+                instanceReady: function() {
+                    this.on('notificationShow', function(evt) {
+                        if (evt.data.message.indexOf('4.22.1 ') !== -1) {
+                            evt.cancel();
+                        }
+                    });
+                }
+            }
         });
         CKEDITOR.replace('viva_desc_banner5', {
             filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -2047,7 +2128,16 @@
             filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
             filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
             allowedContent: true,
-            removeFormatAttributes: ''
+            removeFormatAttributes: '',
+            on: {
+                instanceReady: function() {
+                    this.on('notificationShow', function(evt) {
+                        if (evt.data.message.indexOf('4.22.1 ') !== -1) {
+                            evt.cancel();
+                        }
+                    });
+                }
+            }
         });
         CKEDITOR.replace('viva_desc_banner6', {
             filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -2057,7 +2147,16 @@
             filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
             filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
             allowedContent: true,
-            removeFormatAttributes: ''
+            removeFormatAttributes: '',
+            on: {
+                instanceReady: function() {
+                    this.on('notificationShow', function(evt) {
+                        if (evt.data.message.indexOf('4.22.1 ') !== -1) {
+                            evt.cancel();
+                        }
+                    });
+                }
+            }
         });
         CKEDITOR.replace('nispa_desc_4', {
             filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -2067,7 +2166,16 @@
             filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
             filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
             allowedContent: true,
-            removeFormatAttributes: ''
+            removeFormatAttributes: '',
+            on: {
+                instanceReady: function() {
+                    this.on('notificationShow', function(evt) {
+                        if (evt.data.message.indexOf('4.22.1 ') !== -1) {
+                            evt.cancel();
+                        }
+                    });
+                }
+            }
         });
         CKEDITOR.replace('nispa_desc_3', {
             filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -2077,7 +2185,16 @@
             filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
             filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
             allowedContent: true,
-            removeFormatAttributes: ''
+            removeFormatAttributes: '',
+            on: {
+                instanceReady: function() {
+                    this.on('notificationShow', function(evt) {
+                        if (evt.data.message.indexOf('4.22.1 ') !== -1) {
+                            evt.cancel();
+                        }
+                    });
+                }
+            }
         });
         CKEDITOR.replace('dongco_content', {
             filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -2087,7 +2204,16 @@
             filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
             filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
             allowedContent: true,
-            removeFormatAttributes: ''
+            removeFormatAttributes: '',
+            on: {
+                instanceReady: function() {
+                    this.on('notificationShow', function(evt) {
+                        if (evt.data.message.indexOf('4.22.1 ') !== -1) {
+                            evt.cancel();
+                        }
+                    });
+                }
+            }
         });
         CKEDITOR.replace('note', {
             filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -2097,7 +2223,16 @@
             filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
             filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
             allowedContent: true,
-            removeFormatAttributes: ''
+            removeFormatAttributes: '',
+            on: {
+                instanceReady: function() {
+                    this.on('notificationShow', function(evt) {
+                        if (evt.data.message.indexOf('4.22.1 ') !== -1) {
+                            evt.cancel();
+                        }
+                    });
+                }
+            }
         });
         CKEDITOR.replace('describe_textarea_1', {
             filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -2107,7 +2242,16 @@
             filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
             filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
             allowedContent: true,
-            removeFormatAttributes: ''
+            removeFormatAttributes: '',
+            on: {
+                instanceReady: function() {
+                    this.on('notificationShow', function(evt) {
+                        if (evt.data.message.indexOf('4.22.1 ') !== -1) {
+                            evt.cancel();
+                        }
+                    });
+                }
+            }
         });
         CKEDITOR.replace('describe_textarea_2', {
             filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -2117,7 +2261,16 @@
             filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
             filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
             allowedContent: true,
-            removeFormatAttributes: ''
+            removeFormatAttributes: '',
+            on: {
+                instanceReady: function() {
+                    this.on('notificationShow', function(evt) {
+                        if (evt.data.message.indexOf('4.22.1 ') !== -1) {
+                            evt.cancel();
+                        }
+                    });
+                }
+            }
         });
         CKEDITOR.replace('describe_textarea_3', {
             filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -2127,7 +2280,16 @@
             filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
             filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
             allowedContent: true,
-            removeFormatAttributes: ''
+            removeFormatAttributes: '',
+            on: {
+                instanceReady: function() {
+                    this.on('notificationShow', function(evt) {
+                        if (evt.data.message.indexOf('4.22.1 ') !== -1) {
+                            evt.cancel();
+                        }
+                    });
+                }
+            }
         });
         CKEDITOR.replace('describe_textarea_4', {
             filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
@@ -2137,7 +2299,16 @@
             filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
             filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
             allowedContent: true,
-            removeFormatAttributes: ''
+            removeFormatAttributes: '',
+            on: {
+                instanceReady: function() {
+                    this.on('notificationShow', function(evt) {
+                        if (evt.data.message.indexOf('4.22.1 ') !== -1) {
+                            evt.cancel();
+                        }
+                    });
+                }
+            }
         });
     </script>
 
