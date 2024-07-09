@@ -55,8 +55,8 @@
                     <?php $url = $table_config_images->image_icon_right ?>
                     @endif
                     <li data-v-31312d37="" class="ggr-nav-item ggr-nav-item--logo gc-desktop-visible"><a
-                            data-v-0cc9144e="" data-v-31312d37="" href="/" class="nav-logo nav-logo--dark"
-                            style="background-image: url('<?= !empty($url) ? $url : '' ?>');">OSAKAR - XE ĐIỆN</a>
+                            data-v-0cc9144e="" data-v-31312d37="" href="/" class="nav-logo nav-logo--dark"><img
+                            src="<?= !empty($url) ? $url : '' ?>" alt="logo" style="width: 55px"></a>
                     </li>
                     @if(!empty($table_menu))
                     @foreach($table_menu as $value)
