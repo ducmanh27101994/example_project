@@ -10,10 +10,20 @@
     <section class="hero-section hero-gogo" style="min-height: unset">
         <div class="hero-main">
             <!-- Hình ảnh banner xe (section 1) -->
-            <div class="hero-background"
-                style="background: url({{ $product->nispa_images_banner1 ?? '' }}) center / cover no-repeat;">
+            <div class="hero-background">
             </div>
         </div>
+        <style>
+            /* Hình ảnh xe(section 2): hedi-dauxe.png */
+            .hero-background {
+                background: url('{{ $product->nispa_images_banner1 ?? '' }}') center / cover no-repeat;
+            }
+            @media (max-width: 1025px) {
+                .hero-background {
+                    background: url('{{ $product->nispa_images_banner1_mobile ?? '' }}') center / cover no-repeat;
+                }
+            }
+        </style>
     </section>
 
     <section class="section section-tinhnang" style="background: #040406;">

@@ -1842,7 +1842,8 @@
                                         </div>
                                         <div class="block_sp">
                                             <div class="form-group">
-                                                <label class="text-no-bold" data-bind="text: Title">Hình ảnh background màu sắc</label>
+                                                <label class="text-no-bold" data-bind="text: Title">Hình ảnh background
+                                                    màu sắc</label>
                                                 <input type="file" name="nispa_images_banner_color" id="flupload"
                                                     class="pull-right" style="width:180px;">
                                             </div>
@@ -2009,6 +2010,21 @@
                                                         </div>
                                                     </div>
                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <hr>
+
+                                    <div class="col-sm-12">
+                                        <h2>Mobile</h2>
+                                    </div>
+                                    
+                                    <div class="col-sm-4">
+                                        <div class="block_sp">
+                                            <div class="form-group">
+                                                <label class="text-no-bold" data-bind="text: Title">Hình ảnh banner xe (section 1) kt: 550x854</label>
+                                                <input type="file" name="nispa_images_banner1_mobile" class="pull-right" style="width:180px;">
                                             </div>
                                         </div>
                                     </div>
