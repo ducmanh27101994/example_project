@@ -2752,9 +2752,13 @@ button.owl-next {
     .text_box_image .pbgn-badge-value {
         font-size: 30px;
     }
-    
+
     .logo-item[data-v-31312d37] img {
         width: 70px;
+    }
+    .menu_item_fixed_policy {
+        border-top: 1px solid #fff;
+        padding-top: 15px;
     }
 }
 
