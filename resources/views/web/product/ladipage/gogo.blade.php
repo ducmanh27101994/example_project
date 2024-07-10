@@ -9,13 +9,23 @@
 
 
 <main>
-    <section class="hero-section hero-gogo">
+    <section class="hero-section">
         <div class="hero-main">
             <!-- Hình ảnh banner(section 1) -->
-            <div class="hero-background"
-                style="background: url({{ $product->gogo_images_banner1 ?? '' }}) center / cover no-repeat;">
+            <div class="hero-background">
             </div>
         </div>
+        <style>
+            /* Hình ảnh xe(section 2): hedi-dauxe.png */
+            .hero-background {
+                background: url('{{ $product->gogo_images_banner1 ?? '' }}') center / cover no-repeat;
+            }
+            @media (max-width: 1025px) {
+                .hero-background {
+                    background: url('{{ $product->gogo_images_banner1_mobile ?? '' }}') center / cover no-repeat;
+                }
+            }
+        </style>
     </section>
 
     <div class="buy-wrapper-box">
@@ -288,7 +298,7 @@
         </div>
     </section>
 
-    <section id="section-gallery" class="section section-gallery progressive-image hidden" data-component-list="Gallery">
+    <section id="section-gallery" class="section section-gallery progressive-image" data-component-list="Gallery">
         <input id="gallery-toggle-01" type="radio" class="gallery-toggle d-none" name="gallery" checked>
         <input id="gallery-toggle-02" type="radio" class="gallery-toggle d-none" name="gallery">
         <input id="gallery-toggle-03" type="radio" class="gallery-toggle d-none" name="gallery">
@@ -307,7 +317,7 @@
         <!-- gallery -->
 
         <div class="gallery-container">
-            <div class="gallery-images">
+            <div class="gallery-images hidden-xs hidden-sm">
 
                 @if(!empty($gogo_images_banner13))
                     @foreach($gogo_images_banner13 as $value)
@@ -323,7 +333,24 @@
                             .gallery-image--{{$value->id}} {
                                 background-image: url("{{asset($value->images)}}")
                             }
+                        </style>
 
+                    @endforeach
+                @endif
+            </div>
+
+            <div class="gallery-images hidden-md hiddem-lg">
+
+                @if(!empty($gogo_images_banner13_mobile))
+                    @foreach($gogo_images_banner13_mobile as $value)
+                        <figure class="gallery-image gallery-image--{{$value->id}}">
+                        </figure>
+                    @endforeach
+                @endif
+
+                @if(!empty($gogo_images_banner13_mobile))
+                    @foreach($gogo_images_banner13_mobile as $value)
+                        <style>
                             @media (min-aspect-ratio: 1/1) {
                                 .gallery-image--{{$value->id}} {
                                     background-image: url("{{asset($value->images)}}")
@@ -334,6 +361,7 @@
                     @endforeach
                 @endif
             </div>
+
             <div class="gallery-dots">
                 <button class="gallery-dot"></button>
                 <button class="gallery-dot"></button>

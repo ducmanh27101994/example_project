@@ -351,14 +351,51 @@
                 <p class="gallery-copy">Mỗi màu sắc đều mang lại một phong cách riêng biệt cho người lái, thể hiện được
                     cá tính và sở
                     thích của họ.</p>
-                <button class="cta-button cta-button--gallery btn btn-button"><a href="#">
+                <button class="cta-button cta-button--gallery btn btn-button"><a>
                         Tìm hiểu ngay
                     </a></button>
             </div>
         </div>
 
         <div class="gallery-container">
-            <div class="gallery-images">
+            <div class="gallery-images hidden-xs hidden-sm">
+                <figure class="gallery-image gallery-image--01">
+                </figure>
+                <figure class="gallery-image gallery-image--02">
+                </figure>
+                <figure class="gallery-image gallery-image--03">
+                </figure>
+
+                <style>
+                .gallery-image--01 {
+                    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-01-mobile@2x.jpg?v=v1")
+                }
+
+                .gallery-image--02 {
+                    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-02-mobile@2x.jpg?v=v1")
+                }
+
+                .gallery-image--03 {
+                    background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-03-mobile@2x.jpg?v=v1")
+                }
+
+                @media(min-aspect-ratio: 1/1) {
+                    .gallery-image--01 {
+                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-01@2x.jpg?v=v1")
+                    }
+
+                    .gallery-image--02 {
+                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-02@2x.jpg?v=v1")
+                    }
+
+                    .gallery-image--03 {
+                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-03@2x.jpg?v=v1")
+                    }
+                }
+                </style>
+
+            </div>
+            <div class="gallery-images hidden-md hidden-lg">
                 <figure class="gallery-image gallery-image--01">
                 </figure>
                 <figure class="gallery-image gallery-image--02">

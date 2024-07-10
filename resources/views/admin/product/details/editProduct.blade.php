@@ -1516,7 +1516,47 @@
                                             </div>
                                         </div>
                                     </div>
-
+                                    <hr>
+                                    <div class="col-xs-12">
+                                        <h2>Mobile</h2>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="block_sp">
+                                            <div class="form-group">
+                                                <label class="text-no-bold" data-bind="text: Title">Hình ảnh
+                                                    banner(section 1)</label>
+                                                <input type="file" name="gogo_images_banner1_mobile" id="" class="pull-right" style="width:180px;">
+                                            </div>
+                                            <div>
+                                                <img style="width: 180px; height: auto"
+                                                    src="{{$product->gogo_images_banner1_mobile ?? ''}}">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <!-- nhiều ảnh -->
+                                                        <label class="text-no-bold" data-bind="text: Title">Hình
+                                                            ảnh gallery Mobile</label>
+                                                        <input type="file" name="gogo_images_banner13_mobile[]"
+                                                            id="gogo_images_banner13_mobile" class="pull-right"
+                                                            style="width:180px;" multiple>
+                                                    </div>
+                                                    <div>
+                                                        @if(!empty($gogo_images_banner13_mobile))
+                                                            @foreach($gogo_images_banner13_mobile as $value)
+                                                                <img style="width: 180px; height: auto"
+                                                                    src="{{ $value->images }}">
+                                                            @endforeach
+                                                        @endif
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
 
