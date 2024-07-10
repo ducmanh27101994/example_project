@@ -95,46 +95,43 @@
                                             <div class="form-group">
                                                 <label class="next-label">Tên sản phẩm</label>
                                                 <input required name="product_name" type="text" value=""
-                                                     class="inputbox" placeholder=""
-                                                    style="width:100%;">
+                                                    class="inputbox" placeholder="" style="width:100%;">
                                             </div>
                                         </div>
 
                                         <div class="block_sp">
                                             <div class="form-group">
                                                 <label class="next-label">Tiêu đề nhỏ(slogan)</label>
-                                                <input name="product_slogan" type="text" value=""
-                                                     class="inputbox" placeholder=""
-                                                    style="width:100%;">
+                                                <input name="product_slogan" type="text" value="" class="inputbox"
+                                                    placeholder="" style="width:100%;">
                                             </div>
                                         </div>
 
                                         <div class="block_sp">
                                             <div class="form-group">
                                                 <input name="distance_traveled_title" type="text"
-                                                    value="Quãng đường di chuyển" id=""
-                                                    class="inputbox" placeholder="Quãng đường di chuyển" style="width:100%;">
-                                                <input name="distance_traveled" type="text" value=""
-                                                    class="inputbox" placeholder="" style="width:100%;">
+                                                    value="Quãng đường di chuyển" id="" class="inputbox"
+                                                    placeholder="Quãng đường di chuyển" style="width:100%;">
+                                                <input name="distance_traveled" type="text" value="" class="inputbox"
+                                                    placeholder="" style="width:100%;">
                                             </div>
                                         </div>
                                         <div class="block_sp">
                                             <div class="form-group">
-                                                <input name="maximum_speed_title" type="text"
-                                                    value="Vận tốc lớn nhất" id=""
-                                                    class="inputbox" placeholder="Vận tốc lớn nhất" style="width:100%;">
-                                                <input name="maximum_speed" type="number" value=""
-                                                    class="inputbox" placeholder="" style="width:100%;">
+                                                <input name="maximum_speed_title" type="text" value="Vận tốc lớn nhất"
+                                                    id="" class="inputbox" placeholder="Vận tốc lớn nhất"
+                                                    style="width:100%;">
+                                                <input name="maximum_speed" type="number" value="" class="inputbox"
+                                                    placeholder="" style="width:100%;">
                                             </div>
                                         </div>
                                         <div class="block_sp">
                                             <div class="form-group">
                                                 <input name="allowable_weight_to_carry_title" type="text"
-                                                    value="Khối lượng cho phép chở"
-                                                    class="inputbox" placeholder="Khối lượng cho phép chở" style="width:100%;">
+                                                    value="Khối lượng cho phép chở" class="inputbox"
+                                                    placeholder="Khối lượng cho phép chở" style="width:100%;">
                                                 <input name="allowable_weight_to_carry" type="text" value=""
-                                                     class="inputbox" placeholder=""
-                                                    style="width:100%;">
+                                                    class="inputbox" placeholder="" style="width:100%;">
                                             </div>
                                         </div>
                                         <div class="block_sp">
@@ -144,8 +141,8 @@
                                                     <div class="form-group">
                                                         <label class="next-label">Mô tả 1</label>
                                                         <input name="describe_input_1" type="text" value=""
-                                                             class="inputbox"
-                                                            placeholder="Tiêu đề mô tả 1" style="width:100%;">
+                                                            class="inputbox" placeholder="Tiêu đề mô tả 1"
+                                                            style="width:100%;">
                                                         <textarea name="describe_textarea_1" rows="5" cols="70"
                                                             id="describe_textarea_1" class="inputbox"></textarea>
 
@@ -155,8 +152,8 @@
                                                     <div class="form-group">
                                                         <label class="next-label">Mô tả 2</label>
                                                         <input name="describe_input_2" type="text" value=""
-                                                             class="inputbox"
-                                                            placeholder="Tiêu đề mô tả 2" style="width:100%;">
+                                                            class="inputbox" placeholder="Tiêu đề mô tả 2"
+                                                            style="width:100%;">
                                                         <textarea name="describe_textarea_2" rows="5" cols="70"
                                                             id="describe_textarea_2" class="inputbox"></textarea>
 
@@ -166,8 +163,8 @@
                                                     <div class="form-group">
                                                         <label class="next-label">Mô tả 3</label>
                                                         <input name="describe_input_3" type="text" value=""
-                                                             class="inputbox"
-                                                            placeholder="Tiêu đề mô tả 3" style="width:100%;">
+                                                            class="inputbox" placeholder="Tiêu đề mô tả 3"
+                                                            style="width:100%;">
                                                         <textarea name="describe_textarea_3" rows="5" cols="70"
                                                             id="describe_textarea_3" class="inputbox"></textarea>
 
@@ -177,8 +174,8 @@
                                                     <div class="form-group">
                                                         <label class="next-label">Mô tả 4</label>
                                                         <input name="describe_input_4" type="text" value=""
-                                                             class="inputbox"
-                                                            placeholder="Tiêu đề mô tả 4" style="width:100%;">
+                                                            class="inputbox" placeholder="Tiêu đề mô tả 4"
+                                                            style="width:100%;">
                                                         <textarea name="describe_textarea_4" rows="5" cols="70"
                                                             id="describe_textarea_4" class="inputbox"></textarea>
 
@@ -1041,8 +1038,7 @@
                                                     </div>
                                                     <label class="next-label">Mô tả 1</label>
                                                     <input name="heidi_title_banner6" type="text" value=""
-                                                         class="inputbox" placeholder=""
-                                                        style="width:100%;">
+                                                        class="inputbox" placeholder="" style="width:100%;">
                                                     <textarea name="heidi_desc_banner6" rows="5" cols="70"
                                                         id="txtkeyword" class="inputbox"
                                                         style="width: 100%; height:80px;"></textarea>
@@ -1063,8 +1059,7 @@
                                                     </div>
                                                     <label class="next-label">Mô tả 2</label>
                                                     <input name="heidi_title_banner7" type="text" value=""
-                                                         class="inputbox" placeholder=""
-                                                        style="width:100%;">
+                                                        class="inputbox" placeholder="" style="width:100%;">
                                                     <textarea name="heidi_desc_banner7" rows="5" cols="70"
                                                         id="txtkeyword" class="inputbox"
                                                         style="width: 100%; height:80px;"></textarea>
@@ -1085,8 +1080,7 @@
                                                     </div>
                                                     <label class="next-label">Mô tả 3</label>
                                                     <input name="heidi_title_banner8" type="text" value=""
-                                                         class="inputbox" placeholder=""
-                                                        style="width:100%;">
+                                                        class="inputbox" placeholder="" style="width:100%;">
                                                     <textarea name="heidi_desc_banner8" rows="5" cols="70"
                                                         id="txtkeyword" class="inputbox"
                                                         style="width: 100%; height:80px;"></textarea>
@@ -1107,8 +1101,7 @@
                                                     </div>
                                                     <label class="next-label">Mô tả 4</label>
                                                     <input name="heidi_title_banner9" type="text" value=""
-                                                         class="inputbox" placeholder=""
-                                                        style="width:100%;">
+                                                        class="inputbox" placeholder="" style="width:100%;">
                                                     <textarea name="heidi_title_banner9" rows="5" cols="70"
                                                         id="txtkeyword" class="inputbox"
                                                         style="width: 100%; height:80px;"></textarea>
@@ -1151,8 +1144,7 @@
                                                     </div>
                                                     <label class="next-label">Mô tả 1</label>
                                                     <input name="heidi_title_banner10" type="text" value=""
-                                                         class="inputbox" placeholder=""
-                                                        style="width:100%;">
+                                                        class="inputbox" placeholder="" style="width:100%;">
                                                     <textarea name="heidi_desc_banner10" rows="5" cols="70"
                                                         id="txtkeyword" class="inputbox"
                                                         style="width: 100%; height:80px;"></textarea>
@@ -1189,8 +1181,7 @@
                                                     </div>
                                                     <label class="next-label">Mô tả 2</label>
                                                     <input name="heidi_title_banner11" type="text" value=""
-                                                         class="inputbox" placeholder=""
-                                                        style="width:100%;">
+                                                        class="inputbox" placeholder="" style="width:100%;">
                                                     <textarea name="heidi_desc_banner11" rows="5" cols="70"
                                                         id="txtkeyword" class="inputbox"
                                                         style="width: 100%; height:80px;"></textarea>
@@ -1227,8 +1218,7 @@
                                                     </div>
                                                     <label class="next-label">Mô tả 3</label>
                                                     <input name="heidi_title_banner12" type="text" value=""
-                                                         class="inputbox" placeholder=""
-                                                        style="width:100%;">
+                                                        class="inputbox" placeholder="" style="width:100%;">
                                                     <textarea name="heidi_desc_banner12" rows="5" cols="70"
                                                         id="txtkeyword" class="inputbox"
                                                         style="width: 100%; height:80px;"></textarea>
@@ -1270,8 +1260,9 @@
                                         <div class="block_sp">
                                             <div class="form-group">
                                                 <label class="text-no-bold" data-bind="text: Title">Hình ảnh
-                                                xe(section 1) kt: 550x854</label>
-                                                <input type="file" name="heidi_images_banner1_mobile" class="pull-right" style="width:180px;">
+                                                    xe(section 1) kt: 550x854</label>
+                                                <input type="file" name="heidi_images_banner1_mobile" class="pull-right"
+                                                    style="width:180px;">
                                             </div>
                                         </div>
                                     </div>
@@ -1279,8 +1270,9 @@
                                         <div class="block_sp">
                                             <div class="form-group">
                                                 <label class="text-no-bold" data-bind="text: Title">Hình ảnh
-                                                xe(section 2) kt: 414x715</label>
-                                                <input type="file" name="heidi_images_banner3_mobile" class="pull-right" style="width:180px;">
+                                                    xe(section 2) kt: 414x715</label>
+                                                <input type="file" name="heidi_images_banner3_mobile" class="pull-right"
+                                                    style="width:180px;">
                                             </div>
                                         </div>
                                     </div>
@@ -1346,7 +1338,29 @@
                                             </div>
                                             <div>
                                                 <textarea name="gogo_desc_3" id="" class="form-control">
+                                                <div class="func-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000"><span style="color: #AFAFAF">Giảm xóc</span>
+<h3>Đài Loan</h3>
+</div>
 
+<div class="func-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1300"><span style="color: #AFAFAF">Đèn led</span>
+
+<h3>Toàn xe</h3>
+</div>
+
+<div class="func-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500"><span style="color: #AFAFAF">Mặt đồng hồ</span>
+
+<h3>Full Led</h3>
+</div>
+
+<div class="func-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1700"><span style="color: #AFAFAF">Chiều cao xe</span>
+
+<h3>1045 mm</h3>
+</div>
+
+<div class="func-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000"><span style="color: #AFAFAF">Mở khoá</span>
+
+<h3>Smartkey</h3>
+</div>
                                                         </textarea>
                                             </div>
                                         </div>
@@ -1877,7 +1891,29 @@
                                             <div>
                                                 <textarea name="nispa_desc_3" rows="12" col="12" id=""
                                                     class="form-control">
+                <div class="func-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000"><span style="color: #AFAFAF">Giảm xóc</span>
+<h3>Đài Loan</h3>
+</div>
 
+<div class="func-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1300"><span style="color: #AFAFAF">Đèn led</span>
+
+<h3>Toàn xe</h3>
+</div>
+
+<div class="func-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1500"><span style="color: #AFAFAF">Mặt đồng hồ</span>
+
+<h3>Full Led</h3>
+</div>
+
+<div class="func-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="1700"><span style="color: #AFAFAF">Chiều cao xe</span>
+
+<h3>1045 mm</h3>
+</div>
+
+<div class="func-item aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000"><span style="color: #AFAFAF">Mở khoá</span>
+
+<h3>Smartkey</h3>
+</div>
                                                     </textarea>
                                             </div>
                                         </div>
@@ -1903,8 +1939,24 @@
                                                 <div class="col-md-6">
                                                     <textarea name="nispa_desc_4" rows="12" col="12" id=""
                                                         class="form-control">
+                                                        <div class="content">
+                                                            <h2>Giảm x&oacute;c đ&agrave;i loan &ecirc;m &aacute;i&nbsp;</h2>
 
-                                                        </textarea>
+                                                            <div class="descp">
+                                                            <p>C&ocirc;ng suất động cơ</p>
+
+                                                            <h3>500 W</h3>
+
+                                                            <p>C&ocirc;ng suất lớn nhất</p>
+
+                                                            <h3>1000 W</h3>
+
+                                                            <p>Thời gian bảo h&agrave;nh (năm)</p>
+
+                                                            <h3>03</h3>
+                                                            </div>
+                                                            </div>
+                                                    </textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -2000,8 +2052,8 @@
                 allowedContent: true,
                 removeFormatAttributes: '',
                 on: {
-                    instanceReady: function() {
-                        this.on('notificationShow', function(evt) {
+                    instanceReady: function () {
+                        this.on('notificationShow', function (evt) {
                             if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                                 evt.cancel();
                             }
@@ -2019,8 +2071,8 @@
                 allowedContent: true,
                 removeFormatAttributes: '',
                 on: {
-                    instanceReady: function() {
-                        this.on('notificationShow', function(evt) {
+                    instanceReady: function () {
+                        this.on('notificationShow', function (evt) {
                             if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                                 evt.cancel();
                             }
@@ -2038,8 +2090,8 @@
                 allowedContent: true,
                 removeFormatAttributes: '',
                 on: {
-                    instanceReady: function() {
-                        this.on('notificationShow', function(evt) {
+                    instanceReady: function () {
+                        this.on('notificationShow', function (evt) {
                             if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                                 evt.cancel();
                             }
@@ -2057,8 +2109,8 @@
                 allowedContent: true,
                 removeFormatAttributes: '',
                 on: {
-                    instanceReady: function() {
-                        this.on('notificationShow', function(evt) {
+                    instanceReady: function () {
+                        this.on('notificationShow', function (evt) {
                             if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                                 evt.cancel();
                             }
@@ -2076,8 +2128,8 @@
                 allowedContent: true,
                 removeFormatAttributes: '',
                 on: {
-                    instanceReady: function() {
-                        this.on('notificationShow', function(evt) {
+                    instanceReady: function () {
+                        this.on('notificationShow', function (evt) {
                             if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                                 evt.cancel();
                             }
@@ -2095,8 +2147,8 @@
                 allowedContent: true,
                 removeFormatAttributes: '',
                 on: {
-                    instanceReady: function() {
-                        this.on('notificationShow', function(evt) {
+                    instanceReady: function () {
+                        this.on('notificationShow', function (evt) {
                             if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                                 evt.cancel();
                             }
@@ -2114,8 +2166,8 @@
                 allowedContent: true,
                 removeFormatAttributes: '',
                 on: {
-                    instanceReady: function() {
-                        this.on('notificationShow', function(evt) {
+                    instanceReady: function () {
+                        this.on('notificationShow', function (evt) {
                             if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                                 evt.cancel();
                             }
@@ -2133,8 +2185,8 @@
                 allowedContent: true,
                 removeFormatAttributes: '',
                 on: {
-                    instanceReady: function() {
-                        this.on('notificationShow', function(evt) {
+                    instanceReady: function () {
+                        this.on('notificationShow', function (evt) {
                             if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                                 evt.cancel();
                             }
@@ -2152,8 +2204,8 @@
                 allowedContent: true,
                 removeFormatAttributes: '',
                 on: {
-                    instanceReady: function() {
-                        this.on('notificationShow', function(evt) {
+                    instanceReady: function () {
+                        this.on('notificationShow', function (evt) {
                             if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                                 evt.cancel();
                             }
@@ -2171,8 +2223,8 @@
                 allowedContent: true,
                 removeFormatAttributes: '',
                 on: {
-                    instanceReady: function() {
-                        this.on('notificationShow', function(evt) {
+                    instanceReady: function () {
+                        this.on('notificationShow', function (evt) {
                             if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                                 evt.cancel();
                             }
@@ -2190,8 +2242,8 @@
                 allowedContent: true,
                 removeFormatAttributes: '',
                 on: {
-                    instanceReady: function() {
-                        this.on('notificationShow', function(evt) {
+                    instanceReady: function () {
+                        this.on('notificationShow', function (evt) {
                             if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                                 evt.cancel();
                             }
@@ -2209,8 +2261,8 @@
                 allowedContent: true,
                 removeFormatAttributes: '',
                 on: {
-                    instanceReady: function() {
-                        this.on('notificationShow', function(evt) {
+                    instanceReady: function () {
+                        this.on('notificationShow', function (evt) {
                             if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                                 evt.cancel();
                             }
@@ -2228,8 +2280,8 @@
                 allowedContent: true,
                 removeFormatAttributes: '',
                 on: {
-                    instanceReady: function() {
-                        this.on('notificationShow', function(evt) {
+                    instanceReady: function () {
+                        this.on('notificationShow', function (evt) {
                             if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                                 evt.cancel();
                             }
@@ -2247,8 +2299,8 @@
                 allowedContent: true,
                 removeFormatAttributes: '',
                 on: {
-                    instanceReady: function() {
-                        this.on('notificationShow', function(evt) {
+                    instanceReady: function () {
+                        this.on('notificationShow', function (evt) {
                             if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                                 evt.cancel();
                             }
@@ -2266,8 +2318,8 @@
                 allowedContent: true,
                 removeFormatAttributes: '',
                 on: {
-                    instanceReady: function() {
-                        this.on('notificationShow', function(evt) {
+                    instanceReady: function () {
+                        this.on('notificationShow', function (evt) {
                             if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                                 evt.cancel();
                             }
@@ -2285,8 +2337,8 @@
                 allowedContent: true,
                 removeFormatAttributes: '',
                 on: {
-                    instanceReady: function() {
-                        this.on('notificationShow', function(evt) {
+                    instanceReady: function () {
+                        this.on('notificationShow', function (evt) {
                             if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                                 evt.cancel();
                             }
@@ -2304,8 +2356,8 @@
                 allowedContent: true,
                 removeFormatAttributes: '',
                 on: {
-                    instanceReady: function() {
-                        this.on('notificationShow', function(evt) {
+                    instanceReady: function () {
+                        this.on('notificationShow', function (evt) {
                             if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                                 evt.cancel();
                             }
@@ -2323,8 +2375,8 @@
                 allowedContent: true,
                 removeFormatAttributes: '',
                 on: {
-                    instanceReady: function() {
-                        this.on('notificationShow', function(evt) {
+                    instanceReady: function () {
+                        this.on('notificationShow', function (evt) {
                             if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                                 evt.cancel();
                             }
@@ -2342,8 +2394,8 @@
                 allowedContent: true,
                 removeFormatAttributes: '',
                 on: {
-                    instanceReady: function() {
-                        this.on('notificationShow', function(evt) {
+                    instanceReady: function () {
+                        this.on('notificationShow', function (evt) {
                             if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                                 evt.cancel();
                             }
