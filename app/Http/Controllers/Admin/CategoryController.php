@@ -393,6 +393,7 @@ class CategoryController extends BaseController
             'viva_images_banner5' => !empty($request->viva_images_banner5) ? $this->uploadService->upload_param($request->viva_images_banner5) : '',
             'viva_images_banner6' => !empty($request->viva_images_banner6) ? $this->uploadService->upload_param($request->viva_images_banner6) : '',
             'nispa_images_banner1' => !empty($request->nispa_images_banner1) ? $this->uploadService->upload_param($request->nispa_images_banner1) : '',
+            'nispa_images_banner_color' => !empty($request->nispa_images_banner_color) ? $this->uploadService->upload_param($request->nispa_images_banner_color) : '',
             'nispa_images_banner2' => !empty($request->nispa_images_banner2) ? $this->uploadService->upload_param($request->nispa_images_banner2) : '',
             'nispa_images_4' => !empty($request->nispa_images_4) ? $this->uploadService->upload_param($request->nispa_images_4) : '',
         ];
@@ -742,6 +743,7 @@ class CategoryController extends BaseController
             'viva_images_banner5' => !empty($request->viva_images_banner5) ? $this->uploadService->upload_param($request->viva_images_banner5) : $this->productRepositories->find($id)->viva_images_banner5,
             'viva_images_banner6' => !empty($request->viva_images_banner6) ? $this->uploadService->upload_param($request->viva_images_banner6) : $this->productRepositories->find($id)->viva_images_banner6,
             'nispa_images_banner1' => !empty($request->nispa_images_banner1) ? $this->uploadService->upload_param($request->nispa_images_banner1) : $this->productRepositories->find($id)->nispa_images_banner1,
+            'nispa_images_banner_color' => !empty($request->nispa_images_banner_color) ? $this->uploadService->upload_param($request->nispa_images_banner_color) : $this->productRepositories->find($id)->nispa_images_banner_color,
             'nispa_images_banner2' => !empty($request->nispa_images_banner2) ? $this->uploadService->upload_param($request->nispa_images_banner2) : $this->productRepositories->find($id)->nispa_images_banner2,
             'nispa_images_4' => !empty($request->nispa_images_4) ? $this->uploadService->upload_param($request->nispa_images_4) : $this->productRepositories->find($id)->nispa_images_4,
 

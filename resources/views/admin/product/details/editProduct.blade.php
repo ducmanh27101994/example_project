@@ -95,8 +95,8 @@
                                             <div class="form-group">
                                                 <label class="next-label">Tên sản phẩm</label>
                                                 <input required name="product_name" type="text"
-                                                    value="{{$product->product_name}}" id=""
-                                                    class="inputbox" placeholder="" style="width:100%;">
+                                                    value="{{$product->product_name}}" id="" class="inputbox"
+                                                    placeholder="" style="width:100%;">
                                             </div>
                                         </div>
 
@@ -104,36 +104,37 @@
                                             <div class="form-group">
                                                 <label class="next-label">Tiêu đề nhỏ(slogan)</label>
                                                 <input name="product_slogan" type="text"
-                                                    value="{{$product->product_slogan}}" id=""
-                                                    class="inputbox" placeholder="" style="width:100%;">
+                                                    value="{{$product->product_slogan}}" id="" class="inputbox"
+                                                    placeholder="" style="width:100%;">
                                             </div>
                                         </div>
 
                                         <div class="block_sp">
                                             <div class="form-group">
                                                 <input name="distance_traveled_title" type="text"
-                                                    value="{{$product->distance_traveled_title}}" id=""
-                                                    class="inputbox" placeholder="Quãng đường di chuyển" style="width:100%;">
+                                                    value="{{$product->distance_traveled_title}}" id="" class="inputbox"
+                                                    placeholder="Quãng đường di chuyển" style="width:100%;">
                                                 <input name="distance_traveled" type="text"
-                                                    value="{{$product->distance_traveled}}" id=""
-                                                    class="inputbox" placeholder="" style="width:100%;">
+                                                    value="{{$product->distance_traveled}}" id="" class="inputbox"
+                                                    placeholder="" style="width:100%;">
                                             </div>
                                         </div>
                                         <div class="block_sp">
                                             <div class="form-group">
                                                 <input name="maximum_speed_title" type="text"
-                                                    value="{{$product->maximum_speed_title}}" id=""
-                                                    class="inputbox" placeholder="Vận tốc lớn nhất" style="width:100%;">
+                                                    value="{{$product->maximum_speed_title}}" id="" class="inputbox"
+                                                    placeholder="Vận tốc lớn nhất" style="width:100%;">
                                                 <input name="maximum_speed" type="number"
-                                                    value="{{$product->maximum_speed}}" id=""
-                                                    class="inputbox" placeholder="" style="width:100%;">
+                                                    value="{{$product->maximum_speed}}" id="" class="inputbox"
+                                                    placeholder="" style="width:100%;">
                                             </div>
                                         </div>
                                         <div class="block_sp">
                                             <div class="form-group">
                                                 <input name="allowable_weight_to_carry_title" type="text"
                                                     value="{{$product->allowable_weight_to_carry_title  }}" id=""
-                                                    class="inputbox" placeholder="Khối lượng cho phép chở" style="width:100%;">
+                                                    class="inputbox" placeholder="Khối lượng cho phép chở"
+                                                    style="width:100%;">
                                                 <input name="allowable_weight_to_carry" type="text"
                                                     value="{{$product->allowable_weight_to_carry}}" id=""
                                                     class="inputbox" placeholder="" style="width:100%;">
@@ -905,9 +906,9 @@
                                                     </div>
                                                     <label class="next-label">Mô tả 1</label>
                                                     <input name="heidi_title_banner6" type="text"
-                                                        value="{{$product->heidi_title_banner6 ?? ''}}"
-                                                        id="" class="inputbox"
-                                                        placeholder="Perfectly Stealth 1" style="width:100%;">
+                                                        value="{{$product->heidi_title_banner6 ?? ''}}" id=""
+                                                        class="inputbox" placeholder="Perfectly Stealth 1"
+                                                        style="width:100%;">
                                                     <textarea name="heidi_desc_banner6" rows="5" cols="70"
                                                         id="txtkeyword" class="inputbox"
                                                         style="width: 100%; height:80px;">{{$product->heidi_desc_banner6 ?? ''}}</textarea>
@@ -929,9 +930,9 @@
                                                     </div>
                                                     <label class="next-label">Mô tả 2</label>
                                                     <input name="heidi_title_banner7" type="text"
-                                                        value="{{$product->heidi_title_banner7 ?? ''}}"
-                                                        id="" class="inputbox"
-                                                        placeholder="Perfectly Stealth 2" style="width:100%;">
+                                                        value="{{$product->heidi_title_banner7 ?? ''}}" id=""
+                                                        class="inputbox" placeholder="Perfectly Stealth 2"
+                                                        style="width:100%;">
                                                     <textarea name="heidi_desc_banner7" rows="5" cols="70"
                                                         id="txtkeyword" class="inputbox"
                                                         style="width: 100%; height:80px;">{{$product->heidi_desc_banner7 ?? ''}}</textarea>
@@ -953,9 +954,9 @@
                                                     </div>
                                                     <label class="next-label">Mô tả 3</label>
                                                     <input name="heidi_title_banner8" type="text"
-                                                        value="{{$product->heidi_title_banner8 ?? ''}}"
-                                                        id="" class="inputbox"
-                                                        placeholder="Perfectly Stealth 3" style="width:100%;">
+                                                        value="{{$product->heidi_title_banner8 ?? ''}}" id=""
+                                                        class="inputbox" placeholder="Perfectly Stealth 3"
+                                                        style="width:100%;">
                                                     <textarea name="heidi_desc_banner8" rows="5" cols="70"
                                                         id="txtkeyword" class="inputbox"
                                                         style="width: 100%; height:80px;">{{$product->heidi_desc_banner8 ?? ''}}</textarea>
@@ -977,9 +978,9 @@
                                                     </div>
                                                     <label class="next-label">Mô tả 4</label>
                                                     <input name="heidi_title_banner9" type="text"
-                                                        value="{{$product->heidi_title_banner9 ?? ''}}"
-                                                        id="" class="inputbox"
-                                                        placeholder="Perfectly Stealth 1" style="width:100%;">
+                                                        value="{{$product->heidi_title_banner9 ?? ''}}" id=""
+                                                        class="inputbox" placeholder="Perfectly Stealth 1"
+                                                        style="width:100%;">
                                                     <textarea name="heidi_desc_banner9" rows="5" cols="70"
                                                         id="txtkeyword" class="inputbox"
                                                         style="width: 100%; height:80px;">{{$product->heidi_desc_banner9 ?? ''}}</textarea>
@@ -1024,9 +1025,9 @@
                                                     </div>
                                                     <label class="next-label">Mô tả 1</label>
                                                     <input name="heidi_title_banner10" type="text"
-                                                        value="{{$product->heidi_title_banner10 ?? ''}}}"
-                                                        id="" class="inputbox"
-                                                        placeholder="Perfectly Stealth 1" style="width:100%;">
+                                                        value="{{$product->heidi_title_banner10 ?? ''}}}" id=""
+                                                        class="inputbox" placeholder="Perfectly Stealth 1"
+                                                        style="width:100%;">
                                                     <textarea name="heidi_desc_banner10" rows="5" cols="70"
                                                         id="txtkeyword" class="inputbox"
                                                         style="width: 100%; height:80px;">{{$product->heidi_desc_banner10 ?? ''}}</textarea>
@@ -1065,9 +1066,9 @@
                                                     </div>
                                                     <label class="next-label">Mô tả 2</label>
                                                     <input name="heidi_title_banner11" type="text"
-                                                        value="{{$product->heidi_title_banner11 ?? ''}}"
-                                                        id="" class="inputbox"
-                                                        placeholder="Perfectly Stealth 2" style="width:100%;">
+                                                        value="{{$product->heidi_title_banner11 ?? ''}}" id=""
+                                                        class="inputbox" placeholder="Perfectly Stealth 2"
+                                                        style="width:100%;">
                                                     <textarea name="heidi_desc_banner11" rows="5" cols="70"
                                                         id="txtkeyword" class="inputbox"
                                                         style="width: 100%; height:80px;">{{$product->heidi_desc_banner11 ?? ''}}</textarea>
@@ -1106,9 +1107,9 @@
                                                     </div>
                                                     <label class="next-label">Mô tả 3</label>
                                                     <input name="heidi_title_banner12" type="text"
-                                                        value="{{$product->heidi_title_banner12 ?? ''}}"
-                                                        id="" class="inputbox"
-                                                        placeholder="Perfectly Stealth 3" style="width:100%;">
+                                                        value="{{$product->heidi_title_banner12 ?? ''}}" id=""
+                                                        class="inputbox" placeholder="Perfectly Stealth 3"
+                                                        style="width:100%;">
                                                     <textarea name="heidi_desc_banner12" rows="5" cols="70"
                                                         id="txtkeyword" class="inputbox"
                                                         style="width: 100%; height:80px;">{{$product->heidi_desc_banner12 ?? ''}}</textarea>
@@ -1151,11 +1152,13 @@
                                         <div class="block_sp">
                                             <div class="form-group">
                                                 <label class="text-no-bold" data-bind="text: Title">Hình ảnh
-                                                xe(section 1) kt: 550x854</label>
-                                                <input type="file" name="heidi_images_banner1_mobile" class="pull-right" style="width:180px;">
+                                                    xe(section 1) kt: 550x854</label>
+                                                <input type="file" name="heidi_images_banner1_mobile" class="pull-right"
+                                                    style="width:180px;">
                                             </div>
                                             <div>
-                                                <img style="width: 180px; height: auto" src="{{$product->heidi_images_banner1_mobile ?? ''}}">
+                                                <img style="width: 180px; height: auto"
+                                                    src="{{$product->heidi_images_banner1_mobile ?? ''}}">
                                             </div>
                                         </div>
                                     </div>
@@ -1163,11 +1166,13 @@
                                         <div class="block_sp">
                                             <div class="form-group">
                                                 <label class="text-no-bold" data-bind="text: Title">Hình ảnh
-                                                xe(section 2) kt: 414x715</label>
-                                                <input type="file" name="heidi_images_banner3_mobile" class="pull-right" style="width:180px;">
+                                                    xe(section 2) kt: 414x715</label>
+                                                <input type="file" name="heidi_images_banner3_mobile" class="pull-right"
+                                                    style="width:180px;">
                                             </div>
                                             <div>
-                                                <img style="width: 180px; height: auto" src="{{$product->heidi_images_banner3_mobile ?? ''}}">
+                                                <img style="width: 180px; height: auto"
+                                                    src="{{$product->heidi_images_banner3_mobile ?? ''}}">
                                             </div>
                                         </div>
                                     </div>
@@ -1777,6 +1782,18 @@
                                                 src="{{ $product->nispa_images_banner1 ?? '' }}">
                                         </div>
                                     </div>
+                                    <div class="block_sp">
+                                        <div class="form-group">
+                                            <label class="text-no-bold" data-bind="text: Title">Hình ảnh background màu
+                                                sắc</label>
+                                            <input type="file" name="nispa_images_banner_color" id="flupload"
+                                                class="pull-right" style="width:180px;">
+                                        </div>
+                                        <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;">
+                                            <img style="width: 155px; height: auto"
+                                                src="{{ $product->nispa_images_banner_color ?? '' }}">
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="block_sp">
@@ -1959,8 +1976,8 @@
             allowedContent: true,
             removeFormatAttributes: '',
             on: {
-                instanceReady: function() {
-                    this.on('notificationShow', function(evt) {
+                instanceReady: function () {
+                    this.on('notificationShow', function (evt) {
                         if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                             evt.cancel();
                         }
@@ -1978,8 +1995,8 @@
             allowedContent: true,
             removeFormatAttributes: '',
             on: {
-                instanceReady: function() {
-                    this.on('notificationShow', function(evt) {
+                instanceReady: function () {
+                    this.on('notificationShow', function (evt) {
                         if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                             evt.cancel();
                         }
@@ -1997,8 +2014,8 @@
             allowedContent: true,
             removeFormatAttributes: '',
             on: {
-                instanceReady: function() {
-                    this.on('notificationShow', function(evt) {
+                instanceReady: function () {
+                    this.on('notificationShow', function (evt) {
                         if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                             evt.cancel();
                         }
@@ -2016,8 +2033,8 @@
             allowedContent: true,
             removeFormatAttributes: '',
             on: {
-                instanceReady: function() {
-                    this.on('notificationShow', function(evt) {
+                instanceReady: function () {
+                    this.on('notificationShow', function (evt) {
                         if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                             evt.cancel();
                         }
@@ -2035,8 +2052,8 @@
             allowedContent: true,
             removeFormatAttributes: '',
             on: {
-                instanceReady: function() {
-                    this.on('notificationShow', function(evt) {
+                instanceReady: function () {
+                    this.on('notificationShow', function (evt) {
                         if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                             evt.cancel();
                         }
@@ -2054,8 +2071,8 @@
             allowedContent: true,
             removeFormatAttributes: '',
             on: {
-                instanceReady: function() {
-                    this.on('notificationShow', function(evt) {
+                instanceReady: function () {
+                    this.on('notificationShow', function (evt) {
                         if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                             evt.cancel();
                         }
@@ -2073,8 +2090,8 @@
             allowedContent: true,
             removeFormatAttributes: '',
             on: {
-                instanceReady: function() {
-                    this.on('notificationShow', function(evt) {
+                instanceReady: function () {
+                    this.on('notificationShow', function (evt) {
                         if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                             evt.cancel();
                         }
@@ -2092,8 +2109,8 @@
             allowedContent: true,
             removeFormatAttributes: '',
             on: {
-                instanceReady: function() {
-                    this.on('notificationShow', function(evt) {
+                instanceReady: function () {
+                    this.on('notificationShow', function (evt) {
                         if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                             evt.cancel();
                         }
@@ -2111,8 +2128,8 @@
             allowedContent: true,
             removeFormatAttributes: '',
             on: {
-                instanceReady: function() {
-                    this.on('notificationShow', function(evt) {
+                instanceReady: function () {
+                    this.on('notificationShow', function (evt) {
                         if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                             evt.cancel();
                         }
@@ -2130,8 +2147,8 @@
             allowedContent: true,
             removeFormatAttributes: '',
             on: {
-                instanceReady: function() {
-                    this.on('notificationShow', function(evt) {
+                instanceReady: function () {
+                    this.on('notificationShow', function (evt) {
                         if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                             evt.cancel();
                         }
@@ -2149,8 +2166,8 @@
             allowedContent: true,
             removeFormatAttributes: '',
             on: {
-                instanceReady: function() {
-                    this.on('notificationShow', function(evt) {
+                instanceReady: function () {
+                    this.on('notificationShow', function (evt) {
                         if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                             evt.cancel();
                         }
@@ -2168,8 +2185,8 @@
             allowedContent: true,
             removeFormatAttributes: '',
             on: {
-                instanceReady: function() {
-                    this.on('notificationShow', function(evt) {
+                instanceReady: function () {
+                    this.on('notificationShow', function (evt) {
                         if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                             evt.cancel();
                         }
@@ -2187,8 +2204,8 @@
             allowedContent: true,
             removeFormatAttributes: '',
             on: {
-                instanceReady: function() {
-                    this.on('notificationShow', function(evt) {
+                instanceReady: function () {
+                    this.on('notificationShow', function (evt) {
                         if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                             evt.cancel();
                         }
@@ -2206,8 +2223,8 @@
             allowedContent: true,
             removeFormatAttributes: '',
             on: {
-                instanceReady: function() {
-                    this.on('notificationShow', function(evt) {
+                instanceReady: function () {
+                    this.on('notificationShow', function (evt) {
                         if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                             evt.cancel();
                         }
@@ -2225,8 +2242,8 @@
             allowedContent: true,
             removeFormatAttributes: '',
             on: {
-                instanceReady: function() {
-                    this.on('notificationShow', function(evt) {
+                instanceReady: function () {
+                    this.on('notificationShow', function (evt) {
                         if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                             evt.cancel();
                         }
@@ -2244,8 +2261,8 @@
             allowedContent: true,
             removeFormatAttributes: '',
             on: {
-                instanceReady: function() {
-                    this.on('notificationShow', function(evt) {
+                instanceReady: function () {
+                    this.on('notificationShow', function (evt) {
                         if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                             evt.cancel();
                         }
@@ -2263,8 +2280,8 @@
             allowedContent: true,
             removeFormatAttributes: '',
             on: {
-                instanceReady: function() {
-                    this.on('notificationShow', function(evt) {
+                instanceReady: function () {
+                    this.on('notificationShow', function (evt) {
                         if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                             evt.cancel();
                         }
@@ -2282,8 +2299,8 @@
             allowedContent: true,
             removeFormatAttributes: '',
             on: {
-                instanceReady: function() {
-                    this.on('notificationShow', function(evt) {
+                instanceReady: function () {
+                    this.on('notificationShow', function (evt) {
                         if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                             evt.cancel();
                         }
@@ -2301,8 +2318,8 @@
             allowedContent: true,
             removeFormatAttributes: '',
             on: {
-                instanceReady: function() {
-                    this.on('notificationShow', function(evt) {
+                instanceReady: function () {
+                    this.on('notificationShow', function (evt) {
                         if (evt.data.message.indexOf('4.22.1 ') !== -1) {
                             evt.cancel();
                         }

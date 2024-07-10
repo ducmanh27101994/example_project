@@ -1839,9 +1839,12 @@
                                                 <input type="file" name="nispa_images_banner1" id="flupload"
                                                     class="pull-right" style="width:180px;">
                                             </div>
-                                            <div
-                                                style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;">
-                                                <img style="width: 155px; height: auto" src="">
+                                        </div>
+                                        <div class="block_sp">
+                                            <div class="form-group">
+                                                <label class="text-no-bold" data-bind="text: Title">Hình ảnh background màu sắc</label>
+                                                <input type="file" name="nispa_images_banner_color" id="flupload"
+                                                    class="pull-right" style="width:180px;">
                                             </div>
                                         </div>
                                     </div>
