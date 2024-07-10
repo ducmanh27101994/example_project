@@ -2752,6 +2752,10 @@ button.owl-next {
     .text_box_image .pbgn-badge-value {
         font-size: 30px;
     }
+    
+    .logo-item[data-v-31312d37] img {
+        width: 70px;
+    }
 }
 
 @keyframes cursor {

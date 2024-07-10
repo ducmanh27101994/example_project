@@ -86,7 +86,7 @@
                     @media (max-width: 768px) {
                         .section-hero {
                             background: url('{{asset($value->avatar)}}'), linear-gradient(180deg, rgba(236, 236, 236, 0) 0%, #ECECEC 100%);
-                            background-size: 200%;
+                            background-size: 140%;
                             background-repeat: no-repeat;
                             background-position: bottom;
                             height: 520px !important;

@@ -114,6 +114,11 @@ $(document).ready(function () {
         loop: true,
         autoplay: true,
         smartSpeed: 650,
+        nav: true,
+        navText: [
+            '<i class="fa fa-caret-left" aria-hidden="true"></i>',
+            '<i class="fa fa-caret-right" aria-hidden="true"></i>',
+        ],
         responsive: {
             0: {
                 stagePadding: 0,
