@@ -341,9 +341,9 @@
     </section>
 
     <section id="section-gallery" class="section section-gallery progressive-image" data-component-list="Gallery">
-        <input id="gallery-toggle-01" type="radio" class="gallery-toggle d-none" name="gallery" checked>
-        <input id="gallery-toggle-02" type="radio" class="gallery-toggle d-none" name="gallery">
-        <input id="gallery-toggle-03" type="radio" class="gallery-toggle d-none" name="gallery">
+        <input type="radio" class="gallery-toggle d-none" name="gallery">
+        <input type="radio" class="gallery-toggle d-none" name="gallery">
+        <input type="radio" class="gallery-toggle d-none" name="gallery">
 
         <div class="gallery-header">
             <div class="gallery-header-content">

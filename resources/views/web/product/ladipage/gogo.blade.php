@@ -316,9 +316,15 @@ if ($product->product_price != 0) {
     </section>
 
     <section id="section-gallery" class="section section-gallery progressive-image" data-component-list="Gallery">
-        <input id="gallery-toggle-01" type="radio" class="gallery-toggle d-none" name="gallery" checked>
-        <input id="gallery-toggle-02" type="radio" class="gallery-toggle d-none" name="gallery">
-        <input id="gallery-toggle-03" type="radio" class="gallery-toggle d-none" name="gallery">
+
+    @if(!empty($gogo_images_banner13))
+                    @foreach($gogo_images_banner13 as $value)
+                    @php
+                        $isChecked = ($key === 0) ? 'checked' : ''; 
+                    @endphp
+                    <input type="radio" class="gallery-toggle d-none" name="gallery" {{$isChecked}}>
+                    @endforeach
+                @endif
 
         <!-- Nâng cấp chính bạn -->
         <div class="gallery-header">
