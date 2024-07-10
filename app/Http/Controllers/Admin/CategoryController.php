@@ -651,6 +651,7 @@ class CategoryController extends BaseController
             'actual_photo_title' => !empty($request->actual_photo_title) ? $request->actual_photo_title : '',
             'actual_photo_desc' => !empty($request->actual_photo_desc) ? $request->actual_photo_desc : '',
             'block_detail_image' => !empty($block_detail_image) ? $block_detail_image : '',
+            'block_dongco_image' => !empty($block_dongco_image) ? $block_dongco_image : '',
             'path' => !empty($request->product_name) ? $this->slugify($request->product_name) : '',
 
             //Hedi
