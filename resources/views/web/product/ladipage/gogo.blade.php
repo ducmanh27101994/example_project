@@ -44,7 +44,20 @@
                         <div class="breaking-wrap" style="padding: 0">
                             <div class="breaking-top d-flex justify-content-end">
                                 <div class="breaking-top__title-btn" style="margin-top: 0">
-                                    <span class="">{{number_format($product->product_price ?? 0)}} VNĐ</span>
+
+                                <?php
+
+if ($product->product_price != 0) {
+                        ?>
+                   <span class="">{{number_format($product->product_price ?? 0)}} VNĐ</span>
+
+                    <?php
+}
+
+                    
+                    ?>
+
+                                    
                                     <a href="/" class="add-to-cart-v3s btn-pdp btn btn-primary effect-apollo"
                                         data-pid="VF-ZFG-ESNA5LHH-REQ"><span>Mua Ngay</span></a>
                                 </div>

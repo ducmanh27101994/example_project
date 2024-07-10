@@ -69,8 +69,7 @@ if ($product->product_price != 0) {
                     <div class="top-main-btn js-aos" data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
 
                         <div class="top-btn">
-                            <a href="/" class="add-to-cart-v3s btn-pdp btn btn-primary effect-apollo"
-                                data-pid="VF-ZFG-ESNA5LHH-REQ"><span>Mua Ngay</span></a>
+                            <a href="/" class="add-to-cart-v3s btn-pdp btn btn-primary effect-apollo"><span>Mua Ngay</span></a>
                         </div>
                     </div>
 
