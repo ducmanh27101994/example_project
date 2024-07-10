@@ -361,11 +361,22 @@
                 @endif
             </div>
 
-            <div class="gallery-dots">
-                <button class="gallery-dot"></button>
-                <button class="gallery-dot"></button>
-                <button class="gallery-dot"></button>
+            <div class="gallery-dots hidden-xs hidden-sm">
+                @if(!empty($gogo_images_banner13))
+                    @foreach($gogo_images_banner13 as $value)
+                        <button class="gallery-dot"></button>
+                    @endforeach
+                @endif
             </div>
+
+            <div class="gallery-dots hidden-md hidden-lg">
+                @if(!empty($gogo_images_banner13_mobile))
+                    @foreach($gogo_images_banner13_mobile as $value)
+                        <button class="gallery-dot"></button>
+                    @endforeach
+                @endif
+            </div>
+
             <button class="gallery-close"></button>
             <button class="gallery-prev"></button>
             <button class="gallery-next"></button>
