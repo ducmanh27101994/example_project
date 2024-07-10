@@ -20,6 +20,7 @@
             .hero-background {
                 background: url('{{ $product->gogo_images_banner1 ?? '' }}') center / cover no-repeat;
             }
+
             @media (max-width: 1025px) {
                 .hero-background {
                     background: url('{{ $product->gogo_images_banner1_mobile ?? '' }}') center / cover no-repeat;
@@ -351,10 +352,8 @@
                 @if(!empty($gogo_images_banner13_mobile))
                     @foreach($gogo_images_banner13_mobile as $value)
                         <style>
-                            @media (min-aspect-ratio: 1/1) {
-                                .gallery-image--{{$value->id}} {
-                                    background-image: url("{{asset($value->images)}}")
-                                }
+                            .gallery-image--{{$value->id}} {
+                                background-image: url("{{asset($value->images)}}")
                             }
                         </style>
 
