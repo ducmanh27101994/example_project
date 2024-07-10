@@ -3258,4 +3258,7 @@
     .tinhnang-owl {
         padding: 20px 0px 10px 0px;
     }
+    .section-video svg {
+        width: 50px;
+    }
 }
