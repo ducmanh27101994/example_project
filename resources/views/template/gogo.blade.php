@@ -147,7 +147,7 @@
             </div>
         </div>
 
-        <div class="breaking-experience-tabs breaking-technology-bot">
+        <div class="breaking-experience-tabs breaking-experience-tabs_style breaking-technology-bot">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="tabexperience1" data-toggle="tab" href="javascript:void(0)"
@@ -451,7 +451,7 @@
             </div>
         </div>
 
-        <div class="breaking-experience-tabs breaking-technology-bot">
+        <div class="breaking-experience-tabs breaking-experience-tabs_style breaking-technology-bot">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="tienich1" data-toggle="tab" href="javascript:void(0)" role="tab"

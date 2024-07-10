@@ -235,7 +235,7 @@
             </div>
         </div>
 
-        <div class="breaking-experience-tabs">
+        <div class="breaking-experience-tabs breaking-experience-tabs_style">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="tienich1" data-toggle="tab" href="javascript:void(0)" role="tab"

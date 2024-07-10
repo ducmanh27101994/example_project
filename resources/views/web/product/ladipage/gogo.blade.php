@@ -146,7 +146,7 @@ if ($product->product_price != 0) {
 
         <!-- Section trải nghiệm niềm vui, cảm nhận sự an toàn -->
 
-        <div class="breaking-experience-tabs breaking-technology-bot">
+        <div class="breaking-experience-tabs_style breaking-experience-tabs breaking-technology-bot">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
 
                 <!-- tiêu đề mô tả -->
@@ -413,7 +413,7 @@ if ($product->product_price != 0) {
             </div>
         </div>
 
-        <div class="breaking-experience-tabs_tienich">
+        <div class="breaking-experience-tabs_style breaking-experience-tabs_tienich">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="tienich1" data-toggle="tab" href="javascript:void(0)" role="tab"

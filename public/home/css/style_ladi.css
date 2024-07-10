@@ -2208,11 +2208,11 @@
     text-transform: uppercase;
 }
 
-.breaking-experience-tabs {
+.breaking-experience-tabs_style {
     margin-top: 40px;
 }
 
-.breaking-experience-tabs .nav-tabs {
+.breaking-experience-tabs_style .nav-tabs {
     border-bottom: 2px solid #e5e5e5;
     display: flex;
     align-items: center;
@@ -2220,7 +2220,7 @@
     gap: 56px;
 }
 
-.breaking-experience-tabs .nav-tabs .nav-link {
+.breaking-experience-tabs_style .nav-tabs .nav-link {
     font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
@@ -2232,12 +2232,12 @@
     display: block;
 }
 
-.breaking-experience-tabs .nav-tabs .nav-link.active {
+.breaking-experience-tabs_style .nav-tabs .nav-link.active {
     color: #ed2025;
     border-bottom: 2px solid;
 }
 
-.breaking-experience-tabs .tab-content {
+.breaking-experience-tabs_style .tab-content {
     margin-top: 24px;
 }
 
@@ -2640,12 +2640,12 @@
         line-height: normal;
     }
 
-    .breaking-experience-tabs .nav-tabs .nav-link {
+    .breaking-experience-tabs_style .nav-tabs .nav-link {
         font-size: 14px;
         padding-left: 0;
     }
 
-    .breaking-experience-tabs .nav-tabs {
+    .breaking-experience-tabs_style .nav-tabs {
         gap: 15px;
         padding-right: 0;
         display: block;
