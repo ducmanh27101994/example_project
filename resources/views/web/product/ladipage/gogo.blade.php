@@ -413,7 +413,7 @@ if ($product->product_price != 0) {
             </div>
         </div>
 
-        <div class="breaking-experience-tabs breaking-technology-bot">
+        <div class="breaking-experience-tabs_tienich">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="tienich1" data-toggle="tab" href="javascript:void(0)" role="tab"
@@ -431,7 +431,7 @@ if ($product->product_price != 0) {
                     </a>
                 </li>
             </ul>
-            <div class="tab-content">
+            <div class="tab-content tab-content-tien_ich">
                 <div class="tab-pane show active tienich1" id="tienich1" role="tabpanel" aria-labelledby="tienich1">
                     <div class="tab-pane-info d-flex justify-content-center">
 

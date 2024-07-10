@@ -2086,6 +2086,7 @@
 
 .group-wrapper-func .func-item {
     position: relative;
+    text-align: center;
 }
 
 .group-wrapper-func .func-item::after {
@@ -2612,6 +2613,8 @@
     .feature-box-top-2-left-image-style img {
         float: none;
         margin-bottom: 15px;
+        width: auto;
+        height: auto;
     }
 
     .section-experience {
