@@ -7,7 +7,7 @@
 
 
 <main>
-    <section class="hero-section hero-gogo" style="min-height: unset">
+    <section class="hero-section">
         <div class="hero-main">
             <!-- Hình ảnh banner xe (section 1) -->
             <div class="hero-background">
