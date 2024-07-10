@@ -1214,7 +1214,7 @@
                                         <div class="block_sp">
                                             <div class="form-group">
                                                 <label class="text-no-bold" data-bind="text: Title">Hình ảnh
-                                                    banner màu sắc</label>
+                                                    banner màu sắc kt: 1440x879</label>
                                                 <input type="file" name="gogo_images_banner_color" id="" class="pull-right"
                                                     style="width:180px;">
                                             </div>
