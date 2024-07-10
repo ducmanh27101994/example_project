@@ -256,7 +256,7 @@ if ($product->product_price != 0) {
     </section>
 
     <!-- màu sắc -->
-    <section class="section section-color">
+    <section class="section section-color" style="background: #000 url({{ $product->gogo_images_banner_color ?? '' }}) no-repeat;background-size: cover;">
 
         <div class="head_color_title">
             <h2>Đa dạng màu sắc</h2>

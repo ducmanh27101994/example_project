@@ -1305,8 +1305,13 @@
                                                 <input type="file" name="gogo_images_banner1" id="" class="pull-right"
                                                     style="width:180px;">
                                             </div>
-                                            <div>
-                                                <img style="width: 180px; height: auto" src="">
+                                        </div>
+                                        <div class="block_sp">
+                                            <div class="form-group">
+                                                <label class="text-no-bold" data-bind="text: Title">Hình ảnh
+                                                    banner màu sắc</label>
+                                                <input type="file" name="gogo_images_banner_color" id="" class="pull-right"
+                                                    style="width:180px;">
                                             </div>
                                         </div>
                                     </div>
