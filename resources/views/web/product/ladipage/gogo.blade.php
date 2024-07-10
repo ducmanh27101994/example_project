@@ -309,7 +309,7 @@
             <div class="gallery-header-content">
                 <h3 class="gallery-title">{{$product->gogo_title_banner12 ?? ''}}</h3>
                 <p class="gallery-copy">{{$product->gogo_desc_banner12 ?? ''}}</p>
-                <button class="cta-button cta-button--gallery btn btn-button"><a href="#">
+                <button class="cta-button cta-button--gallery btn btn-button"><a>
                         Tìm hiểu ngay
                     </a></button>
             </div>
