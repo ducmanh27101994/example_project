@@ -2755,6 +2755,7 @@ button.owl-next {
 
     .logo-item[data-v-31312d37] img {
         width: 70px;
+        height: auto;
     }
     .menu_item_fixed_policy {
         border-top: 1px solid #fff;
