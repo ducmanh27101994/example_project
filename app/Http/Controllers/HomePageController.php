@@ -324,6 +324,12 @@ class HomePageController extends BaseController
             ->orderBy('id', 'asc')
             ->get();
 
+        $viva_gallery_mobile = DB::table('images_products')
+            ->where('product_id', '=', $product->id)
+            ->where('code', '=', 'viva_gallery_mobile')
+            ->orderBy('id', 'asc')
+            ->get();
+
         $nispa_tinhnang_image = DB::table('images_products')
             ->where('product_id', '=', $product->id)
             ->where('code', '=', 'nispa_tinhnang_image')
@@ -346,7 +352,7 @@ class HomePageController extends BaseController
         } elseif ($product->interface_type == 3) {
             return view('web.product.ladipage.gogo', compact('images360', 'color_image', 'icon_images', 'product', 'gogo_tinhnang_image', 'gogo_images_banner13', 'gogo_images_banner13_mobile', 'gogo_images_banner2_multi'));
         } elseif ($product->interface_type == 4) {
-            return view('web.product.ladipage.nispaviva', compact('viva_gallery', 'vehicle_detail_photos', 'viva_upload_video', 'product', 'color_image', 'icon_images', 'images360'));
+            return view('web.product.ladipage.nispaviva', compact('viva_gallery', 'viva_gallery_mobile', 'vehicle_detail_photos', 'viva_upload_video', 'product', 'color_image', 'icon_images', 'images360'));
         } elseif ($product->interface_type == 5) {
             return view('web.product.ladipage.x3', compact('nispa_gallery', 'nispa_tinhnang_image', 'product', 'color_image', 'icon_images', 'images360'));
         } else {

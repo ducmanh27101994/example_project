@@ -166,6 +166,10 @@
     .section-video svg {
         width: 40px;
     }
+
+    .hero-scooters-svg img {
+        margin-top: 50px;
+    }
 }
 
 @media (max-width: 768px) {

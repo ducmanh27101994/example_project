@@ -1853,6 +1853,33 @@
                                             </div>
                                         </div>
 
+                                        <hr>
+                                        <div class="col-sm-12 ">
+                                            <p class="ttg">Section gallery mobile</p>
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <div class="form-group"
+                                                        style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <!-- nhiều ảnh -->
+                                                                    <label class="text-no-bold"
+                                                                        data-bind="text: Title">Hình ảnh gallery mobile</label>
+                                                                    <input type="file" name="viva_gallery_mobile[]"
+                                                                        id="viva_gallery_mobile" class="pull-right"
+                                                                        style="width:180px;" multiple>
+                                                                </div>
+                                                                <div id="image-preview-9">
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
 
