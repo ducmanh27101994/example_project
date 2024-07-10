@@ -318,7 +318,7 @@ if ($product->product_price != 0) {
     <section id="section-gallery" class="section section-gallery progressive-image" data-component-list="Gallery">
 
     @if(!empty($gogo_images_banner13))
-                    @foreach($gogo_images_banner13 as $value)
+                    @foreach($gogo_images_banner13 as $key => $value)
                     @php
                         $isChecked = ($key === 0) ? 'checked' : ''; 
                     @endphp
