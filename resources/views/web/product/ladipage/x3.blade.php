@@ -18,6 +18,7 @@
             .hero-background {
                 background: url('{{ $product->nispa_images_banner1 ?? '' }}') center / cover no-repeat;
             }
+
             @media (max-width: 1025px) {
                 .hero-background {
                     background: url('{{ $product->nispa_images_banner1_mobile ?? '' }}') center / cover no-repeat;
@@ -91,7 +92,7 @@
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 aos-init aos-animate" data-aos="fade-up"
                     data-aos-duration="2000">
                     <div class="dong-co-xanh_text">
-                    {!! $product->dongco_content ?? '' !!}
+                        {!! $product->dongco_content ?? '' !!}
                         <!-- <div class="text_head">
                             <h2> ĐỘNG CƠ ĐỘC QUYỀN
                                 <br /> OSAKAR
@@ -204,10 +205,15 @@
         </div>
     </section>
 
-    <section id="section-gallery" class="section section-gallery progressive-image hidden" data-component-list="Gallery">
-        <input id="gallery-toggle-01" type="radio" class="gallery-toggle d-none" name="gallery" checked>
-        <input id="gallery-toggle-02" type="radio" class="gallery-toggle d-none" name="gallery">
-        <input id="gallery-toggle-03" type="radio" class="gallery-toggle d-none" name="gallery">
+    <section id="section-gallery" class="section section-gallery progressive-image" data-component-list="Gallery">
+        @if(!empty($nispa_gallery))
+            @foreach($nispa_gallery as $key => $value)
+                @php
+                    $isChecked = ($key === 0) ? 'checked' : ''; 
+                @endphp
+                <input type="radio" class="gallery-toggle d-none" name="gallery" {{$isChecked}}>
+            @endforeach
+        @endif
 
         <!-- Nâng cấp chính bạn -->
         <div class="gallery-header">
@@ -222,48 +228,65 @@
 
         <!-- Hình ảnh gallery -->
         <div class="gallery-container">
-            <div class="gallery-images">
-                <figure class="gallery-image gallery-image--01">
-                </figure>
-                <figure class="gallery-image gallery-image--02">
-                </figure>
-                <figure class="gallery-image gallery-image--03">
-                </figure>
+            <div class="gallery-images hidden-xs hidden-sm">
 
-                <style>
-                    .gallery-image--01 {
-                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-01-mobile@2x.jpg?v=v1")
-                    }
+                @if(!empty($nispa_gallery))
+                    @foreach($nispa_gallery as $value)
+                        <figure class="gallery-image gallery-image--{{$value->id}}">
+                        </figure>
+                    @endforeach
+                @endif
 
-                    .gallery-image--02 {
-                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-02-mobile@2x.jpg?v=v1")
-                    }
+                @if(!empty($nispa_gallery))
+                    @foreach($nispa_gallery as $value)
 
-                    .gallery-image--03 {
-                        background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-03-mobile@2x.jpg?v=v1")
-                    }
+                        <style>
+                            .gallery-image--{{$value->id}} {
+                                background-image: url("{{asset($value->images)}}")
+                            }
+                        </style>
 
-                    @media(min-aspect-ratio: 1/1) {
-                        .gallery-image--01 {
-                            background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-01@2x.jpg?v=v1")
-                        }
-
-                        .gallery-image--02 {
-                            background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-02@2x.jpg?v=v1")
-                        }
-
-                        .gallery-image--03 {
-                            background-image: url("//cdn.gogoro.com/resources/pages/smartscooter/viva/home/gallery/img-accessories-03@2x.jpg?v=v1")
-                        }
-                    }
-                </style>
-
+                    @endforeach
+                @endif
             </div>
-            <div class="gallery-dots">
-                <button class="gallery-dot"></button>
-                <button class="gallery-dot"></button>
-                <button class="gallery-dot"></button>
+
+            <div class="gallery-images hidden-md hiddem-lg">
+
+                @if(!empty($nispa_gallery_mobile))
+                    @foreach($nispa_gallery_mobile as $value)
+                        <figure class="gallery-image gallery-image--{{$value->id}}">
+                        </figure>
+                    @endforeach
+                @endif
+
+                @if(!empty($nispa_gallery_mobile))
+                    @foreach($nispa_gallery_mobile as $value)
+                        <style>
+                            .gallery-image--{{$value->id}} {
+                                background-image: url("{{asset($value->images)}}")
+                            }
+                        </style>
+
+                    @endforeach
+                @endif
             </div>
+
+            <div class="gallery-dots hidden-xs hidden-sm">
+                @if(!empty($nispa_gallery))
+                    @foreach($nispa_gallery as $value)
+                        <button class="gallery-dot"></button>
+                    @endforeach
+                @endif
+            </div>
+
+            <div class="gallery-dots hidden-md hidden-lg">
+                @if(!empty($nispa_gallery_mobile))
+                    @foreach($nispa_gallery_mobile as $value)
+                        <button class="gallery-dot"></button>
+                    @endforeach
+                @endif
+            </div>
+
             <button class="gallery-close"></button>
             <button class="gallery-prev"></button>
             <button class="gallery-next"></button>

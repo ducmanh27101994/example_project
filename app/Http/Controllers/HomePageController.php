@@ -342,6 +342,12 @@ class HomePageController extends BaseController
             ->orderBy('id', 'asc')
             ->get();
 
+        $nispa_gallery_mobile = DB::table('images_products')
+            ->where('product_id', '=', $product->id)
+            ->where('code', '=', 'nispa_gallery_mobile')
+            ->orderBy('id', 'asc')
+            ->get();
+
         $banner_details = DB::table('banner_ads')
             ->where('status', '=', 'active')
             ->where('code_ads', '=', 'chi-tiet-san-pham')
@@ -354,7 +360,7 @@ class HomePageController extends BaseController
         } elseif ($product->interface_type == 4) {
             return view('web.product.ladipage.nispaviva', compact('viva_gallery', 'viva_gallery_mobile', 'vehicle_detail_photos', 'viva_upload_video', 'product', 'color_image', 'icon_images', 'images360'));
         } elseif ($product->interface_type == 5) {
-            return view('web.product.ladipage.x3', compact('nispa_gallery', 'nispa_tinhnang_image', 'product', 'color_image', 'icon_images', 'images360'));
+            return view('web.product.ladipage.x3', compact('nispa_gallery', 'nispa_gallery_mobile', 'nispa_tinhnang_image', 'product', 'color_image', 'icon_images', 'images360'));
         } else {
             return view('web.product.detailsBasic', compact('images360', 'color_image', 'icon_images', 'product', 'feature_description', 'vehicle_detail_photos', 'actual_photo', 'banner_details'));
         }

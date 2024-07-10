@@ -1215,8 +1215,8 @@
                                             <div class="form-group">
                                                 <label class="text-no-bold" data-bind="text: Title">Hình ảnh
                                                     banner màu sắc kt: 1440x879</label>
-                                                <input type="file" name="gogo_images_banner_color" id="" class="pull-right"
-                                                    style="width:180px;">
+                                                <input type="file" name="gogo_images_banner_color" id=""
+                                                    class="pull-right" style="width:180px;">
                                             </div>
                                             <div>
                                                 <img style="width: 180px; height: auto"
@@ -1537,7 +1537,8 @@
                                             <div class="form-group">
                                                 <label class="text-no-bold" data-bind="text: Title">Hình ảnh
                                                     banner(section 1)</label>
-                                                <input type="file" name="gogo_images_banner1_mobile" id="" class="pull-right" style="width:180px;">
+                                                <input type="file" name="gogo_images_banner1_mobile" id=""
+                                                    class="pull-right" style="width:180px;">
                                             </div>
                                             <div>
                                                 <img style="width: 180px; height: auto"
@@ -2034,6 +2035,28 @@
                                         <div style="display: flex;gap: 10px;white-space: nowrap;overflow-y: hidden;">
                                             <img style="width: 155px; height: auto"
                                                 src="{{ $product->nispa_images_banner1_mobile ?? '' }}">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="form-group" style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <!-- nhiều ảnh -->
+                                                    <label class="text-no-bold" data-bind="text: Title">Hình
+                                                        ảnh gallery</label>
+                                                    <input type="file" name="nispa_gallery_mobile[]" id="nispa_gallery_mobile"
+                                                        class="pull-right" style="width:180px;" multiple>
+                                                </div>
+                                                <div id="image-preview-10">
+                                                    @if(!empty($nispa_gallery_mobile))
+                                                        @foreach($nispa_gallery_mobile as $value)
+                                                            <img style="width: 180px; height: auto" src="{{ $value->images }}">
+                                                        @endforeach
+                                                    @endif
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

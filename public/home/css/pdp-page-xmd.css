@@ -3911,6 +3911,7 @@ html {
 
     #pdp-parts-bike {
         padding-top: 0;
+        margin-bottom: 0 !important;
     }
 
     .parts-bike__head_text h2 {

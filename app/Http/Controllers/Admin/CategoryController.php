@@ -463,6 +463,9 @@ class CategoryController extends BaseController
                 $this->processImagesCreate($request->nispa_gallery, $product->id, 'nispa_gallery');
             }
 
+            if (!empty($request->nispa_gallery_mobile)) {
+                $this->processImagesCreate($request->nispa_gallery_mobile, $product->id, 'nispa_gallery_mobile');
+            }
 
         }
 
@@ -580,8 +583,14 @@ class CategoryController extends BaseController
             ->orderBy('id', 'asc')
             ->get();
 
+        $nispa_gallery_mobile = DB::table('images_products')
+            ->where('product_id', '=', $id)
+            ->where('code', '=', 'nispa_gallery_mobile')
+            ->orderBy('id', 'asc')
+            ->get();
 
-        return view('admin.product.details.editProduct', compact('viva_upload_video', 'viva_gallery', 'viva_gallery_mobile', 'nispa_tinhnang_image', 'nispa_gallery', 'gogo_tinhnang_image', 'gogo_images_banner13', 'gogo_images_banner13_mobile', 'gogo_images_banner2_multi', 'images360', 'color_image', 'icon_images', 'product', 'categoryProduct', 'feature_description', 'vehicle_detail_photos', 'actual_photo'));
+
+        return view('admin.product.details.editProduct', compact('viva_upload_video', 'viva_gallery', 'viva_gallery_mobile', 'nispa_tinhnang_image', 'nispa_gallery', 'nispa_gallery_mobile', 'gogo_tinhnang_image', 'gogo_images_banner13', 'gogo_images_banner13_mobile', 'gogo_images_banner2_multi', 'images360', 'color_image', 'icon_images', 'product', 'categoryProduct', 'feature_description', 'vehicle_detail_photos', 'actual_photo'));
 
     }
 
@@ -825,6 +834,9 @@ class CategoryController extends BaseController
 
             if (!empty($request->nispa_gallery)) {
                 $this->processImages($request->nispa_gallery, $product->id, 'nispa_gallery');
+            }
+            if (!empty($request->nispa_gallery_mobile)) {
+                $this->processImages($request->nispa_gallery_mobile, $product->id, 'nispa_gallery_mobile');
             }
 
         }
