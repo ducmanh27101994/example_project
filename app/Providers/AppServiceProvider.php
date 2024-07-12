@@ -34,7 +34,7 @@ class AppServiceProvider extends ServiceProvider
 
         $products_hot = DB::table('products')
             ->where('status', '=', 'active')
-            ->where('interface_type', '!=', 1)
+            ->where('new_product', '=', 'active')
             ->orderBy('created_at', 'desc')
             ->get();
 
