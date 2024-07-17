@@ -270,8 +270,7 @@
         </div>
         <div class="container">
             <div class="pbgn-partners-section">
-                <h3 class="typography-section-headline typography-section-headline--reduced text-center">Thương hiệu
-                    được cung cấp bởi <span class="d-inline-block">OSAKAR</span></h3>
+                <h3 class="typography-section-headline typography-section-headline--reduced text-center">Đối tác của<span class="d-inline-block">OSAKAR</span></h3>
                 <div class="pbgn-partners owl-carousel owl-theme">
                     @if(!empty($pbgn_partner))
                         @foreach($pbgn_partner as $value)
