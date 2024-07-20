@@ -2398,7 +2398,7 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    max-width: 400px;
+    max-width: 1012px;
     max-height: 200px;
 }
 
@@ -2409,6 +2409,7 @@
     top: 0;
     bottom: 0;
     margin: auto;
+    cursor: pointer;
 }
 
 .top-main-control .btn-arrow.button-prev {
@@ -2417,6 +2418,17 @@
 
 .top-main-control .btn-arrow.button-next {
     right: -50px;
+}
+
+@media (min-width: 1366px) {
+    .top-main-control .btn-arrow.button-prev {
+        right: -50px;
+        left: unset;
+    }
+
+    .top-main-control .btn-arrow.button-next {
+        right: -100px;
+    }
 }
 
 .top-main-control .btn-arrow:before {

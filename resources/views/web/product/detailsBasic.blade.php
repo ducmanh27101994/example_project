@@ -90,7 +90,7 @@ if ($product->product_price != 0) {
                 </div>
             </div>
             <div class="top-main-control js-aos" data-aos="fade-left" data-aos-delay="100" data-aos-duration="300">
-                <div class="mySliderTop" data-showitem="5">
+                <div class="mySliderTop" data-showitem="5" data-showitem-xs="6" data-showitem-sm="6">
                     <!-- icon màu sắc -->
                     @if(!empty($icon_images))
                         @foreach($icon_images as $value)

@@ -190,7 +190,7 @@
             </div>
         </div>
         <div class="top-main-control">
-            <div class="mySliderTop" data-showitem="8">
+            <div class="mySliderTop" data-showitem="10" data-showitem-xs="7" data-showitem-sm="9">
                 @if(!empty($icon_images))
                     @foreach($icon_images as $value)
                         <div class="item-myThumb">
@@ -472,8 +472,6 @@
     </div>
 </main>
 
-<script src="//cdnjs.cloudflare.com/ajax/libs/bodymovin/5.6.4/lottie.min.js"></script>
-<script src="//cdn.jsdelivr.net/npm/binary-toolbox@1.3.0"></script>
 <script src="{{ asset('home/js/ladi_heidi.js') }}"></script>
 <script defer type="text/javascript" src="{{ asset('home/js/pdp-page-xmd.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/@mladenilic/threesixty.js/dist/threesixty.js"></script>

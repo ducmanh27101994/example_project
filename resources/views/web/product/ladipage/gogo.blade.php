@@ -279,7 +279,7 @@ if ($product->product_price != 0) {
             </div>
         </div>
         <div class="top-main-control">
-            <div class="mySliderTop" data-showitem="7">
+            <div class="mySliderTop" data-showitem="10" data-showitem-xs="7" data-showitem-sm="9">
                 @if(!empty($icon_images))
                     @foreach($icon_images as $value)
                         <div class="item-myThumb">

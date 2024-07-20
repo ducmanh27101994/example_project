@@ -9,48 +9,49 @@ $(".breaking-slick").slick({
     fade: !0,
     prevArrow: $(".breaking-slick__button-prev"),
     nextArrow: $(".breaking-slick__button-next"),
-    focusOnSelect: !0
-})
+    focusOnSelect: !0,
+});
 
 $(document).ready(function () {
-    $('.mySliderTop').slick({
-        slidesToShow: 5,
-        asNavFor: '.myThumbSlider',
+    $(".mySliderTop").slick({
+        slidesToShow: $(".mySliderTop").attr("data-showitem"),
+        asNavFor: ".myThumbSlider",
         dots: false,
         arrows: true,
         centerMode: false,
         variableWidth: false,
-        centerPadding: '0',
+        centerPadding: false,
         cssEase: "linear",
         focusOnSelect: true,
-        prevArrow: $('.button-prev'),
-        nextArrow: $('.button-next'),
+        prevArrow: $(".button-prev"),
+        nextArrow: $(".button-next"),
         swipe: false,
-        responsive: [{
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 5
-            }
-        },
-        {
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 5
-            }
-        },
-        {
-            breakpoint: 480,
-            settings: {
-                slidesToShow: 6
-            }
-        }
-        ]
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: $(".mySliderTop").attr("data-showitem"),
+                },
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: $(".mySliderTop").attr("data-showitem-sm"),
+                },
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: $(".mySliderTop").attr("data-showitem-xs"),
+                },
+            },
+        ],
     });
-    $('.myThumbSlider').slick({
+    $(".myThumbSlider").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: false,
         fade: true,
-        asNavFor: '.mySliderTop'
+        asNavFor: ".mySliderTop",
     });
-})
+});
