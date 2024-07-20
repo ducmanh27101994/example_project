@@ -17,6 +17,7 @@
             .hero-background {
                 background: url('{{ $product->heidi_images_banner1 ?? '' }}') center / cover no-repeat;
             }
+
             @media (max-width: 1025px) {
                 .hero-background {
                     background: url('{{ $product->heidi_images_banner1_mobile ?? '' }}') center / cover no-repeat;
@@ -63,7 +64,8 @@
     </section>
 
     <section class="section section-break-a progressive-image hidden-md hidden-sm hidden-lg">
-        <img style="width: 100%" src="{{ $product->heidi_images_banner3_mobile ?? '' }}" alt="{{ $product->product_name ?? '' }}">
+        <img style="width: 100%" src="{{ $product->heidi_images_banner3_mobile ?? '' }}"
+            alt="{{ $product->product_name ?? '' }}">
     </section>
 
     <section class="section section-fast progressive-image">
@@ -162,7 +164,7 @@
             </div>
         </div>
         <div class="top-main-control">
-            <div class="mySliderTop" data-showitem="10" data-showitem-xs="7" data-showitem-sm="9">
+            <div class="mySliderTop" data-showitem="10" data-showitem-xs="6" data-showitem-sm="8">
                 @if(!empty($icon_images))
                     @foreach($icon_images as $value)
                         <div class="item-myThumb">
@@ -203,6 +205,17 @@
                 <div class="design-topic">
                     <div class="design-topic__image aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
                         <div class="image-design image-design--dashboard"></div>
+                        <style>
+                            .image-design--dashboard {
+                                background-image: url({{ $product->heidi_images_banner6 ?? '' }});
+                            }
+
+                            @media (max-width: 768px) {
+                                .image-design--dashboard {
+                                    background-size: contain;
+                                }
+                            }
+                        </style>
                     </div>
                     <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-left"
                         data-aos-duration="2000">
@@ -215,6 +228,17 @@
                 <div class="design-topic">
                     <div class="design-topic__image aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
                         <div class="image-design image-design--seat"></div>
+                        <style>
+                            .image-design--seat {
+                                background-image: url({{ $product->heidi_images_banner7 ?? '' }});
+                            }
+
+                            @media (max-width: 768px) {
+                                .image-design--seat {
+                                    background-size: contain;
+                                }
+                            }
+                        </style>
                     </div>
                     <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-right"
                         data-aos-duration="2000">
@@ -227,6 +251,17 @@
                 <div class="design-topic">
                     <div class="design-topic__image aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
                         <div class="image-design image-design--floor"></div>
+                        <style>
+                            .image-design--floor {
+                                background-image: url({{ $product->heidi_images_banner8 ?? '' }});
+                            }
+
+                            @media (max-width: 768px) {
+                                .image-design--floor {
+                                    background-size: contain;
+                                }
+                            }
+                        </style>
                     </div>
                     <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-left"
                         data-aos-duration="2000">
@@ -239,6 +274,17 @@
                 <div class="design-topic">
                     <div class="design-topic__image aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
                         <div class="image-design image-design--wheel"></div>
+                        <style>
+                            .image-design--wheel {
+                                background-image: url({{ $product->heidi_images_banner9 ?? '' }});
+                            }
+
+                            @media (max-width: 768px) {
+                                .image-design--wheel {
+                                    background-size: contain;
+                                }
+                            }
+                        </style>
                     </div>
                     <div class="design-topic__content aos-init aos-animate" data-aos="fade-up-right"
                         data-aos-duration="2000">

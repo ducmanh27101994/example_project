@@ -921,7 +921,7 @@
                                                     <div class="form-group">
                                                         <label class="text-no-bold" data-bind="text: Title">Hình ảnh
                                                             2</label>
-                                                        <input type="file" name="heidi_title_banner7" id="flupload"
+                                                        <input type="file" name="heidi_images_banner7" id="flupload"
                                                             class="pull-right" style="width:180px;">
                                                     </div>
                                                     <div>
