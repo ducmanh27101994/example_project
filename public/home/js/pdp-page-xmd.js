@@ -18,7 +18,7 @@ $(document).ready(function () {
         asNavFor: ".myThumbSlider",
         dots: false,
         arrows: true,
-        centerMode: false,
+        centerMode: true,
         variableWidth: false,
         centerPadding: false,
         cssEase: "linear",
