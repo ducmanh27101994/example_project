@@ -1381,7 +1381,7 @@
                                                     style="padding: 10px 10px;border: 1px solid #d4d4d4;">
                                                     <div class="form-group">
                                                         <label class="text-no-bold" data-bind="text: Title">tabs
-                                                            1</label>
+                                                            1 (kt: 826 x 826)</label>
                                                         <input type="file" name="gogo_images_banner4" id="flupload"
                                                             class="pull-right" style="width:180px;">
                                                     </div>
@@ -1401,7 +1401,7 @@
                                                     style="padding: 10px 10px;border: 1px solid #d4d4d4;">
                                                     <div class="form-group">
                                                         <label class="text-no-bold" data-bind="text: Title">tabs
-                                                            2</label>
+                                                            2 (kt: 826 x 826)</label>
                                                         <input type="file" name="gogo_images_banner5" id="flupload"
                                                             class="pull-right" style="width:180px;">
                                                     </div>
@@ -1429,7 +1429,7 @@
                                                     style="padding: 10px 10px;border: 1px solid #d4d4d4;">
                                                     <div class="form-group">
                                                         <label class="text-no-bold" data-bind="text: Title">tabs
-                                                            1</label>
+                                                            1 (kt: 908x551)</label>
                                                         <input type="file" name="gogo_images_banner6" id="flupload"
                                                             class="pull-right" style="width:180px;">
                                                     </div>
@@ -1449,7 +1449,7 @@
                                                     style="padding: 10px 10px;border: 1px solid #d4d4d4;">
                                                     <div class="form-group">
                                                         <label class="text-no-bold" data-bind="text: Title">tabs
-                                                            2</label>
+                                                            2 kt: 908x551</label>
                                                         <input type="file" name="gogo_images_banner7" id="flupload"
                                                             class="pull-right" style="width:180px;">
                                                     </div>
@@ -1469,7 +1469,7 @@
                                                     style="padding: 10px 10px;border: 1px solid #d4d4d4;">
                                                     <div class="form-group">
                                                         <label class="text-no-bold" data-bind="text: Title">tabs
-                                                            3</label>
+                                                            3 kt: 908x551</label>
                                                         <input type="file" name="gogo_images_banner8" id="flupload"
                                                             class="pull-right" style="width:180px;">
                                                     </div>
@@ -1489,7 +1489,7 @@
                                     <hr>
 
                                     <div class="col-sm-12 ">
-                                        <p class="ttg">Section tiện ích</p>
+                                        <p class="ttg">Section tiện ích (kt:891x627)</p>
                                         <div class="row">
                                             <div class="col-sm-4">
                                                 <div class="form-group"

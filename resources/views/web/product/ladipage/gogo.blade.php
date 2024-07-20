@@ -137,7 +137,7 @@ if ($product->product_price != 0) {
 
     <section class="section section-experience">
         <div class="container">
-            <div class="title-box-head text-center ">
+            <div class="title-box-head text-center aos-init aos-animate" data-aos="fade-up" data-aos-duration="2000">
                 <h2 class="text-uppercase">Trải nghiệm niềm vui, cảm nhận sự an toàn</h2>
                 <p>Cảm nhận sự an toàn qua những tính năng và thông báo chủ động, luôn bảo vệ bạn.</p>
                 <p>Công nghệ Osakar là những người bạn hiểu rõ nhất, như những người đồng hành đồng tâm.</p>
@@ -146,7 +146,7 @@ if ($product->product_price != 0) {
 
         <!-- Section trải nghiệm niềm vui, cảm nhận sự an toàn -->
 
-        <div class="breaking-experience-tabs_style breaking-experience-tabs breaking-technology-bot">
+        <div class="breaking-experience-tabs_style breaking-experience-tabs_trainghiem">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
 
                 <!-- tiêu đề mô tả -->
@@ -167,7 +167,7 @@ if ($product->product_price != 0) {
                     </a>
                 </li>
             </ul>
-            <div class="tab-content">
+            <div class="tab-content tab-content-trainghiem">
                 <!-- nội dung mô tả & ảnh -->
                 <div class="tab-pane show active tabexperience1" id="tabexperience1" role="tabpanel"
                     aria-labelledby="tabexperience1">

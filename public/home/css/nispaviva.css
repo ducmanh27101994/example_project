@@ -180,20 +180,21 @@
     }
 
     .hero-scooters-svg img {
-        margin-top: 50px;
+        margin-top: 30px;
     }
 }
 
 @media (max-width: 768px) {
     .hero-scooters {
-        width: 375px;
-        height: 302px;
+        width: 100%;
+        height: 332px;
         right: 0;
     }
 
     .hero-scooter {
         background-position: center;
-        background-size: contain;
+        background-size: cover;
+        left: 40px;
     }
 
     .hero-scooters-svg {

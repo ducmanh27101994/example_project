@@ -3261,4 +3261,8 @@
     .section-video svg {
         width: 50px;
     }
+    .feature-box-top-1-left-image img {
+        width: max-content;
+        height: auto;
+    }
 }

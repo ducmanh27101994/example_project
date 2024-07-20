@@ -66,6 +66,21 @@ $(document).ready(function () {
         });
     });
 
+    $(".breaking-experience-tabs_trainghiem .nav-tabs a").first().addClass("active");
+    $(".breaking-experience-tabs_trainghiem .nav-tabs a").click(function () {
+        $(".breaking-experience-tabs_trainghiem .nav-tabs a").removeClass("active");
+        var thisclass = $(this).attr("id");
+        console.log(thisclass);
+        $(this).addClass("active");
+        $(".tab-content-trainghiem>div").each(function () {
+            if ($(this).hasClass(thisclass)) {
+                $(this).fadeIn(800);
+            } else {
+                $(this).hide();
+            }
+        });
+    });
+
     $(".tab-buttons-slider span").first().addClass("active");
     $(".tab-content-slider>div").css({
         opacity: "0",
