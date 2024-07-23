@@ -342,6 +342,7 @@ class CategoryController extends BaseController
             //Gogo
             'gogo_slogan' => $request->gogo_slogan ?? '',
             'gogo_images_banner1' => !empty($request->gogo_images_banner1) ? $this->uploadService->upload_param($request->gogo_images_banner1) : '',
+            'gogo_images_banner1_mobile' => !empty($request->gogo_images_banner1_mobile) ? $this->uploadService->upload_param($request->gogo_images_banner1_mobile) : '',
             'gogo_images_banner_color' => !empty($request->gogo_images_banner_color) ? $this->uploadService->upload_param($request->gogo_images_banner_color) : '',
             'gogo_images_banner4' => !empty($request->gogo_images_banner4) ? $this->uploadService->upload_param($request->gogo_images_banner4) : '',
             'gogo_images_banner5' => !empty($request->gogo_images_banner5) ? $this->uploadService->upload_param($request->gogo_images_banner5) : '',
@@ -713,6 +714,7 @@ class CategoryController extends BaseController
             //Gogo
             'gogo_slogan' => $request->gogo_slogan ?? '',
             'gogo_images_banner1' => !empty($request->gogo_images_banner1) ? $this->uploadService->upload_param($request->gogo_images_banner1) : $this->productRepositories->find($id)->gogo_images_banner1,
+            'gogo_images_banner1_mobile' => !empty($request->gogo_images_banner1_mobile) ? $this->uploadService->upload_param($request->gogo_images_banner1_mobile) : $this->productRepositories->find($id)->gogo_images_banner1_mobile,
             'gogo_images_banner_color' => !empty($request->gogo_images_banner_color) ? $this->uploadService->upload_param($request->gogo_images_banner_color) : $this->productRepositories->find($id)->gogo_images_banner_color,
             'gogo_images_banner4' => !empty($request->gogo_images_banner4) ? $this->uploadService->upload_param($request->gogo_images_banner4) : $this->productRepositories->find($id)->gogo_images_banner4,
             'gogo_images_banner5' => !empty($request->gogo_images_banner5) ? $this->uploadService->upload_param($request->gogo_images_banner5) : $this->productRepositories->find($id)->gogo_images_banner5,
