@@ -283,7 +283,7 @@
             var results = regex.exec(location.search);
             return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
         }
-        $("near_cookie").on("click", function () {
+        $(".near_cookie").on("click", function () {
                 alert(getCookie('location'))
             });
     </script>

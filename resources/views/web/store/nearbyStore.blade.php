@@ -104,7 +104,7 @@
     </div>
     <script>
         $(document).ready(function () {
-            $("near_cookie").on("click", function () {
+            $(".near_cookie").on("click", function () {
                 alert(getCookie('location'))
             });
             $('#your_location').text(getCookie('location'))
