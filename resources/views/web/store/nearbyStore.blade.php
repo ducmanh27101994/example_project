@@ -107,6 +107,8 @@
             var queryString = window.location.search;
             var urlParams = new URLSearchParams(queryString);
 
+            alert(queryString, urlParams, $('#location').val(getCookie('location')), $('#your_location').text(getCookie('location')))
+
             if (!urlParams.has('your_location')) {
                 document.getElementById("formSearchLocation").submit();
             }
