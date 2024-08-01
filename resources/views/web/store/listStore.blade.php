@@ -180,9 +180,6 @@
             </div>
         </div>
     </div>
-    <div class="near_cookie">
-        get cookie
-    </div>
     <input type="hidden" id="hidden_link_province">
     <input type="hidden" id="hidden_link_district">
     <script>
@@ -283,99 +280,6 @@
             var results = regex.exec(location.search);
             return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
         }
-        $(".near_cookie").on("click", function () {
-            alert(getCookie('location'))
-        });
-
-        $(".gdpr-action--accept").on("click", function () {
-            $(".gdpr_cookie").addClass("gdpr-leave-active gdpr-leave-to");
-            getLocation();
-        });
-
-        $(".gdpr-action--reject").on("click", function () {
-            $(".gdpr_cookie").addClass("gdpr-leave-active gdpr-leave-to");
-        });
-
-        function getLocation() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(
-                    showPosition,
-                    handleLocationError
-                );
-            } else {
-                console.log("Trình duyệt không hỗ trợ Geolocation.");
-            }
-        }
-
-        function showPosition(position) {
-            const latitude = position.coords.latitude;
-            const longitude = position.coords.longitude;
-
-            const apiUrl = `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`;
-
-            $.ajax({
-                url: apiUrl,
-                type: "GET",
-                dataType: "json",
-                success: function (data) {
-                    let city = "";
-                    if (data.address.city === "Hà Nội") {
-                        city = "Thành Phố Hà Nội";
-                    } else if (data.address.city === "Hồ Chí Minh") {
-                        city = "Thành Phố Hồ Chí Minh";
-                    } else {
-                        city = data.address.state || data.address.city;
-                    }
-                    alert(city)
-                    setCookie("location", city, 10800);
-                },
-                error: function (error) {
-                    console.error("Lỗi khi lấy thông tin địa lý: ", error);
-                },
-            });
-        }
-
-        function handleLocationError(error) {
-            switch (error.code) {
-                case error.PERMISSION_DENIED:
-                    console.log(
-                        "Người dùng từ chối cung cấp vị trí. Hãy bật quyền truy cập trong cài đặt trình duyệt."
-                    );
-                    break;
-                case error.POSITION_UNAVAILABLE:
-                    console.log("Không thể xác định vị trí.");
-                    break;
-                case error.TIMEOUT:
-                    console.log("Yêu cầu vị trí đã hết thời gian.");
-                    break;
-                case error.UNKNOWN_ERROR:
-                    console.log("Đã xảy ra lỗi không xác định.");
-                    break;
-            }
-            // Hiển thị thông báo cho người dùng về lỗi.
-        }
-
-        function setCookie(cname, cvalue, exdays) {
-            var d = new Date();
-            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-            var expires = "expires=" + d.toUTCString();
-            var encodedValue = encodeURIComponent(cvalue); // Mã hóa giá trị của cookie
-            document.cookie = cname + "=" + encodedValue + "; " + expires + "; path=/";
-        }
-
-        // Hàm lấy Cookie
-        function getCookie(cname) {
-            var name = cname + "=";
-            var decodedCookie = decodeURIComponent(document.cookie); // Giải mã toàn bộ chuỗi cookie
-            var ca = decodedCookie.split(';');
-            for (var i = 0; i < ca.length; i++) {
-                var c = ca[i].trim();
-                if (c.indexOf(name) == 0) {
-                    return c.substring(name.length, c.length);
-                }
-            }
-            return "";
-        }
 
     </script>
 
@@ -413,7 +317,6 @@
             color: #000;
         }
     </style>
-
 </main>
 
 @endsection

@@ -632,18 +632,19 @@ function setCookie(cname, cvalue, exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
     var expires = "expires=" + d.toUTCString();
-    // Thêm ; path=/ để đặt path mặc định là /
-    document.cookie = cname + "=" + cvalue + "; " + expires + "; path=/";
+    var encodedValue = encodeURIComponent(cvalue); // Mã hóa giá trị của cookie
+    document.cookie = cname + "=" + encodedValue + "; " + expires + "; path=/";
 }
 
-// Hàm lấy Cookie
 function getCookie(cname) {
     var name = cname + "=";
-    var ca = document.cookie.split(";");
+    var decodedCookie = decodeURIComponent(document.cookie); // Giải mã toàn bộ chuỗi cookie
+    var ca = decodedCookie.split(';');
     for (var i = 0; i < ca.length; i++) {
-        var c = ca[i];
-        while (c.charAt(0) == " ") c = c.substring(1);
-        if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+        var c = ca[i].trim();
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
     }
     return "";
 }
