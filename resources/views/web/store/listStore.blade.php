@@ -326,6 +326,7 @@
                     } else {
                         city = data.address.state || data.address.city;
                     }
+                    alert(city)
                     setCookie("location", city, 10800);
                 },
                 error: function (error) {
