@@ -180,6 +180,9 @@
             </div>
         </div>
     </div>
+    <div class="near_cookie">
+                get cookie
+            </div>
     <input type="hidden" id="hidden_link_province">
     <input type="hidden" id="hidden_link_district">
     <script>
@@ -280,7 +283,9 @@
             var results = regex.exec(location.search);
             return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
         }
-
+        $("near_cookie").on("click", function () {
+                alert(getCookie('location'))
+            });
     </script>
 
 
@@ -317,6 +322,7 @@
             color: #000;
         }
     </style>
+    
 </main>
 
 @endsection

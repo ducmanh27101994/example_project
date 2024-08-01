@@ -10,8 +10,8 @@
                     <div class="text_box_image">
                         <h2>Mạng Lưới</h2>
                         <p>Hệ thống cửa hàng đại lý của Osakar sẵn sàng phục vụ Quý khách hàng tại hơn</p>
-                        @if(!empty($store_counter ))
-                            @foreach($store_counter  as $value)
+                        @if(!empty($store_counter))
+                            @foreach($store_counter as $value)
 
                                 {!! $value->detail !!}
 
@@ -97,10 +97,16 @@
             <div class="return_back_store">
                 <a href="/list-store/mien-bac" title="Quay lại">Quay lại</a>
             </div>
+            <div class="near_cookie">
+                get cookie
+            </div>
         </div>
     </div>
     <script>
         $(document).ready(function () {
+            $("near_cookie").on("click", function () {
+                alert(getCookie('location'))
+            });
             $('#your_location').text(getCookie('location'))
             $('#location').val(getCookie('location'))
 
