@@ -97,16 +97,10 @@
             <div class="return_back_store">
                 <a href="/list-store/mien-bac" title="Quay lại">Quay lại</a>
             </div>
-            <div class="near_cookie">
-                get cookie
-            </div>
         </div>
     </div>
     <script>
         $(document).ready(function () {
-            $(".near_cookie").on("click", function () {
-                alert(getCookie('location'))
-            });
             $('#your_location').text(getCookie('location'))
             $('#location').val(getCookie('location'))
 
