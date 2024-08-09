@@ -764,7 +764,7 @@ img {
 @media only screen and (min-width:1200px) {
     .top-main .top-main-control {
         position: absolute;
-        /* top: 32vw; */
+        top: 32vw;
         z-index: 9;
         width: 30%;
         right: 9.63542%;

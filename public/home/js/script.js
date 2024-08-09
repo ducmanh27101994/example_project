@@ -209,6 +209,11 @@ $(document).ready(function () {
         dots: false,
         loop: false,
         autoplay: false,
+        nav: true,
+        navText: [
+            '<i class="fa fa-caret-left" aria-hidden="true"></i>',
+            '<i class="fa fa-caret-right" aria-hidden="true"></i>',
+        ],
         smartSpeed: 650,
         stagePadding: parseInt(
             $("#container").css("margin-left")?.replace("px", ""),

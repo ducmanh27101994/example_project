@@ -317,7 +317,7 @@ if ($value->price_comparison != 0) {
             </div>
 
             <div class="text-center">
-                <a class="cta-link typewriter" href="/about-us" target="_blank">Về OSAKAR <img
+                        <a class="cta-link from-left-and-back" href="/about-us">Về OSAKAR <img
                         src="{{ asset('home/images/arrow-circle-right.png') }}" /></a>
             </div>
         </div>

@@ -2633,6 +2633,10 @@ button.owl-next {
     color: #ed2025;
 }
 
+.story-items-track button.owl-next {
+    right: 150px;
+}
+
 .escooter-swiper .swiper-wrapper button.owl-prev {
     position: absolute;
     left: -50px;
@@ -2762,11 +2766,14 @@ button.owl-next {
         padding-top: 15px;
     }
     .box-banner-sohoa {
-        padding: 24px 24px;
+        padding: 90px 24px;
     }
     .box-banner-sohoa .text-content h2 {
         font-size: 23px;
         line-height: 34px;
+    }
+    .story-items-track button.owl-next {
+        right: 50px;
     }
 }
 
