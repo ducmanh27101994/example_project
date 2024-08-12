@@ -21,7 +21,7 @@
 
     <meta http-equiv="x-dns-prefetch-control" content="on">
     <link rel="dns-prefetch" href="/">
-    <link rel="icon" href="{{ asset('home/images/logo.png') }}" type="image/x-icon" />
+    <link rel="icon" href="{{ asset('home/images/logo-favicon.png') }}" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
