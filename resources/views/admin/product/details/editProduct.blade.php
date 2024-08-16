@@ -891,6 +891,20 @@
                                     <div class="col-sm-12 ">
                                         <p class="ttg">Section Perfectly Stealth (kt ảnh: 570 × 386 px)</p>
                                         <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group"
+                                                    style="padding: 10px 10px;border: 1px solid #d4d4d4;">
+                                                    <label class="next-label">Tiêu đề</label>
+                                                    <input name="heidi_title_banner6_top" type="text"
+                                                        value="{{$product->heidi_title_banner6_top ?? ''}}" id=""
+                                                        class="inputbox" placeholder="Perfectly Stealth 1"
+                                                        style="width:100%;">
+                                                    <textarea name="heidi_desc_banner6_top" rows="5" cols="70"
+                                                        id="txtkeyword" class="inputbox"
+                                                        style="width: 100%; height:80px;">{{$product->heidi_desc_banner6_top ?? ''}}</textarea>
+
+                                                </div>
+                                            </div>
                                             <div class="col-sm-6">
                                                 <div class="form-group"
                                                     style="padding: 10px 10px;border: 1px solid #d4d4d4;">
@@ -2441,6 +2455,25 @@
             }
         });
         CKEDITOR.replace('describe_textarea_4', {
+            filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
+            filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
+            filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',
+            filebrowserUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files') }}',
+            filebrowserImageUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images') }}',
+            filebrowserFlashUploadUrl: '{{ asset('ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash') }}',
+            allowedContent: true,
+            removeFormatAttributes: '',
+            on: {
+                instanceReady: function () {
+                    this.on('notificationShow', function (evt) {
+                        if (evt.data.message.indexOf('4.22.1 ') !== -1) {
+                            evt.cancel();
+                        }
+                    });
+                }
+            }
+        });
+        CKEDITOR.replace('heidi_desc_banner6_top', {
             filebrowserBrowseUrl: '{{ asset('ckfinder/ckfinder.html') }}',
             filebrowserImageBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Images') }}',
             filebrowserFlashBrowseUrl: '{{ asset('ckfinder/ckfinder.html?type=Flash') }}',

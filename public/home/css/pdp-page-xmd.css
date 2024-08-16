@@ -3894,10 +3894,6 @@ html {
         background-size: cover;
     }
 
-    #pdp-breaking-technology .breaking-wrap .breaking-top__img.breaking-slick img {
-        transform: scale(2);
-    }
-
     .breaking-top__title-btn span small {
         display: none;
     }

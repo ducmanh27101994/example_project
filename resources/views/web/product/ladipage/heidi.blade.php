@@ -192,10 +192,12 @@
                         <div class="dash-line-top"></div>
                         <div class="dash-line-bottom"></div>
                     </div>
-                    <h3 class="section-title section-title--animation">Perfectly Stealth</h3>
-                    <p class="section-description">Every surface has been poured-over, polished, and crafted to
-                        elevate
-                        you beyond the everyday. Built for the few who are constantly seeking more.</p>
+                    <h3 class="section-title section-title--animation">
+                        {{$product->heidi_title_banner6_top ?? ''}}
+                    </h3>
+                    <p class="section-description">
+                        {{$product->heidi_desc_banner6_top ?? ''}}
+                    </p>
                 </div>
             </div>
 
