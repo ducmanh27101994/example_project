@@ -77,8 +77,7 @@ include_once (app_path() . '/helpers.php');
                                                         <div class="bike-info-item">
                                                             <span class="col-12 pl-0 title">Quãng đường</span>
                                                             <span class="col-12 subtitle">Lên tới
-                                                                {{$value->distance_traveled}} km/ 1 lần
-                                                                sạc</span>
+                                                                {{$value->distance_traveled}}</span>
                                                         </div>
                                                         <div class="bike-info-item">
                                                             <span class="col-12 pl-0 title">Tốc độ</span>
