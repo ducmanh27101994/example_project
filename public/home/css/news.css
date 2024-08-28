@@ -287,7 +287,7 @@
 }
 
 .typography-article-time {
-    font-size: 16px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: 28px;
@@ -314,7 +314,8 @@
 
 @media (min-width: 1260px) {
     .typography-article-title {
-        font-size: 20px;
+        font-size: 17px;
+        height: 50px;
     }
 }
 
@@ -541,8 +542,7 @@
 .article-item-image-wrapper {
     display: block;
     position: relative;
-    background: center/cover no-repeat
-        url("../images/image-loading.png");
+    background: center/cover no-repeat url("../images/image-loading.png");
     margin: 0 0 24px 0;
 }
 
@@ -569,7 +569,7 @@
 
 .article-item-badge {
     color: #ed2025;
-    font-size: 14px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
