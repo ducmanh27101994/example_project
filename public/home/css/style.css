@@ -2742,7 +2742,16 @@ button.owl-next {
 .pagination .page-item.active .page-link {
     color: #fff;
 }
-
+@media (min-width: 1200px) {
+    .products-items--related button.owl-next,
+    .article-items--related button.owl-next {
+        right: -50px;
+    }
+    .products-items--related button.owl-prev,
+    .article-items--related button.owl-prev {
+        left: -50px;
+    }
+}
 @media (max-width: 768px) {
     .video_intro iframe {
         height: 270px !important;
@@ -2774,6 +2783,14 @@ button.owl-next {
     }
     .story-items-track button.owl-next {
         right: 50px;
+    }
+    .products-items--related button.owl-next,
+    .article-items--related button.owl-next {
+        right: 0;
+    }
+    .products-items--related button.owl-prev,
+    .article-items--related button.owl-prev {
+        left: 0;
     }
 }
 

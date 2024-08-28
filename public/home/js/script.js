@@ -51,9 +51,13 @@ $(document).ready(function () {
         });
     });
 
-    $(".breaking-experience-tabs_tienich .nav-tabs a").first().addClass("active");
+    $(".breaking-experience-tabs_tienich .nav-tabs a")
+        .first()
+        .addClass("active");
     $(".breaking-experience-tabs_tienich .nav-tabs a").click(function () {
-        $(".breaking-experience-tabs_tienich .nav-tabs a").removeClass("active");
+        $(".breaking-experience-tabs_tienich .nav-tabs a").removeClass(
+            "active"
+        );
         var thisclass = $(this).attr("id");
         console.log(thisclass);
         $(this).addClass("active");
@@ -66,9 +70,13 @@ $(document).ready(function () {
         });
     });
 
-    $(".breaking-experience-tabs_trainghiem .nav-tabs a").first().addClass("active");
+    $(".breaking-experience-tabs_trainghiem .nav-tabs a")
+        .first()
+        .addClass("active");
     $(".breaking-experience-tabs_trainghiem .nav-tabs a").click(function () {
-        $(".breaking-experience-tabs_trainghiem .nav-tabs a").removeClass("active");
+        $(".breaking-experience-tabs_trainghiem .nav-tabs a").removeClass(
+            "active"
+        );
         var thisclass = $(this).attr("id");
         console.log(thisclass);
         $(this).addClass("active");
@@ -373,6 +381,11 @@ $(document).ready(function () {
         autoplay: false,
         autoplaySpeed: 650,
         smartSpeed: 650,
+        nav: true,
+        navText: [
+            '<i class="fa fa-caret-left" aria-hidden="true"></i>',
+            '<i class="fa fa-caret-right" aria-hidden="true"></i>',
+        ],
         responsiveClass: true,
         responsive: {
             0: {
@@ -403,6 +416,11 @@ $(document).ready(function () {
         autoplay: false,
         autoplaySpeed: 650,
         smartSpeed: 650,
+        nav: true,
+        navText: [
+            '<i class="fa fa-caret-left" aria-hidden="true"></i>',
+            '<i class="fa fa-caret-right" aria-hidden="true"></i>',
+        ],
         responsiveClass: true,
         responsive: {
             0: {
@@ -635,7 +653,7 @@ function handleLocationError(error) {
 
 function setCookie(cname, cvalue, exdays) {
     var d = new Date();
-    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+    d.setTime(d.getTime() + exdays * 24 * 60 * 60 * 1000);
     var expires = "expires=" + d.toUTCString();
     var encodedValue = encodeURIComponent(cvalue); // Mã hóa giá trị của cookie
     document.cookie = cname + "=" + encodedValue + "; " + expires + "; path=/";
@@ -644,7 +662,7 @@ function setCookie(cname, cvalue, exdays) {
 function getCookie(cname) {
     var name = cname + "=";
     var decodedCookie = decodeURIComponent(document.cookie); // Giải mã toàn bộ chuỗi cookie
-    var ca = decodedCookie.split(';');
+    var ca = decodedCookie.split(";");
     for (var i = 0; i < ca.length; i++) {
         var c = ca[i].trim();
         if (c.indexOf(name) == 0) {

@@ -724,7 +724,9 @@
 
 .single-article img {
     max-width: 100% !important;
-    height: auto;
+    height: auto !important;
+    width: auto !important;
+    margin: auto;
 }
 
 .single-article ul,

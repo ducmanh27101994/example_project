@@ -13,8 +13,8 @@
                         src="@if(!empty($blog->representative_image)){{$blog->representative_image}}@endif">
                     <div class="single-article-meta">
                         @php
-                        $timestamp = $blog->created_at;
-                        $formattedDate = \Carbon\Carbon::parse($timestamp)->isoFormat('MMMM DD, YYYY');
+                            $timestamp = $blog->created_at;
+                            $formattedDate = \Carbon\Carbon::parse($timestamp)->isoFormat('MMMM DD, YYYY');
                         @endphp
                         <time datetime="2023-11-29">{{$formattedDate}}</time>
                         <div class="single-article-share">
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                     <h1 class="single-article-title">@if(!empty($blog->news_headlines)){!! $blog->news_headlines
-                        !!}@endif</h1>
+                    !!}@endif</h1>
                 </header>
                 <div class="single-article-body">
                     @if(!empty($blog->detail)){!! $blog->detail !!}@endif
@@ -40,37 +40,37 @@
                 <h4 class="typography-article-section-title">Xe điện được đề xuất</h4>
                 <div class="products-items--related owl-carousel owl-theme">
                     @if(!empty($list_product))
-                    @foreach($list_product as $value)
-                    <div class="bike-item">
-                        <a href="{{route('details.basic', $value->path)}}" class="bike-img">
-                            <img class src="{{$value->representative_image}}" alt="Xe máy điện Theon" />
-                        </a>
-                        <div class="bike-item-content">
-                            <h2 class="bike-name">{{$value->product_name}} </h2>
-                            <div class="bike-info">
-                                <div class="bike-info-item">
-                                    <span class="col-12 pl-0 title">Quãng đường</span>
-                                    <span class="col-12 subtitle">Lên tới {{$value->distance_traveled}} km/ 1 lần
-                                        sạc</span>
+                        @foreach($list_product as $value)
+                            <div class="bike-item">
+                                <a href="{{route('details.basic', $value->path)}}" class="bike-img">
+                                    <img class src="{{$value->representative_image}}" alt="Xe máy điện Theon" />
+                                </a>
+                                <div class="bike-item-content">
+                                    <h2 class="bike-name">{{$value->product_name}} </h2>
+                                    <div class="bike-info">
+                                        <div class="bike-info-item">
+                                            <span class="col-12 pl-0 title">Quãng đường</span>
+                                            <span class="col-12 subtitle">Lên tới {{$value->distance_traveled}} km/ 1 lần
+                                                sạc</span>
+                                        </div>
+                                        <div class="bike-info-item">
+                                            <span class="col-12 pl-0 title">Tốc độ</span>
+                                            <span class="col-12 subtitle">Lên tới {{$value->maximum_speed}} km/h</span>
+                                        </div>
+                                    </div>
+                                    <div class="bike-price">Giá bán lẻ đề xuất
+                                        <p class="bike-price-sold">
+                                            <span class="new_price">{{number_format($value->product_price)}} VNĐ</span>
+
+                                        </p>
+                                    </div>
+                                    <div class="d-flex flex-wrap justify-content-between">
+                                        <a href="{{route('details.basic', $value->path)}}" class="view-detail col-lg-6">Xem chi
+                                            tiết</a>
+                                    </div>
                                 </div>
-                                <div class="bike-info-item">
-                                    <span class="col-12 pl-0 title">Tốc độ</span>
-                                    <span class="col-12 subtitle">Lên tới {{$value->maximum_speed}} km/h</span>
-                                </div>
                             </div>
-                            <div class="bike-price">Giá bán lẻ đề xuất
-                                <p class="bike-price-sold">
-                                    <span class="new_price">{{number_format($value->product_price)}} VNĐ</span>
-                                  
-                                </p>
-                            </div>
-                            <div class="d-flex flex-wrap justify-content-between">
-                                <a href="{{route('details.basic', $value->path)}}" class="view-detail col-lg-6">Xem chi
-                                    tiết</a>
-                            </div>
-                        </div>
-                    </div>
-                    @endforeach
+                        @endforeach
                     @endif
                 </div>
             </section>
@@ -80,27 +80,27 @@
                 <h4 class="typography-article-section-title">Tin tức khác</h4>
                 <div class="article-items article-items--related owl-carousel owl-theme">
                     @if(!empty($list_blog))
-                    @foreach($list_blog as $value)
-                    <article class="article-item">
-                        <a class="article-item-image-wrapper" href="{{route('page.blog',$value->slug)}}">
-                            <img alt="" src="{{ $value->representative_image }}">
-                        </a>
-                        <div class="article-item-meta">
-                            @php
-                            $timestamp = $value->created_at;
-                            $formattedDate = \Carbon\Carbon::parse($timestamp)->isoFormat('MMMM DD, YYYY');
-                            @endphp
-                            <time datetime="2023-11-29" class="article-item-date typography-article-time">
-                                {{$formattedDate}}
-                            </time>
-                            <span class="article-item-badge">{{ $value->category_title }}</span>
-                        </div>
-                        <a class="article-item-link" href="{{route('page.blog',$value->slug)}}">
-                            <h3 class="typography-article-title"> {!! $value->news_headlines !!} </h3>
-                        </a>
-                        <div class="typography-article-summary">{!! $value->describe !!}</div>
-                    </article>
-                    @endforeach
+                                    @foreach($list_blog as $value)
+                                                    <article class="article-item">
+                                                        <a class="article-item-image-wrapper" href="{{route('page.blog', $value->slug)}}">
+                                                            <img alt="" src="{{ $value->representative_image }}">
+                                                        </a>
+                                                        <div class="article-item-meta">
+                                                            @php
+                                                                $timestamp = $value->created_at;
+                                                                $formattedDate = \Carbon\Carbon::parse($timestamp)->isoFormat('MMMM DD, YYYY');
+                                                            @endphp
+                                                            <time datetime="2023-11-29" class="article-item-date typography-article-time">
+                                                                {{$formattedDate}}
+                                                            </time>
+                                                            <span class="article-item-badge">{{ $value->category_title }}</span>
+                                                        </div>
+                                                        <a class="article-item-link" href="{{route('page.blog', $value->slug)}}">
+                                                            <h3 class="typography-article-title"> {!! $value->news_headlines !!} </h3>
+                                                        </a>
+                                                        <div class="typography-article-summary">{!! $value->describe !!}</div>
+                                                    </article>
+                                    @endforeach
                     @endif
                 </div>
             </div>
@@ -220,6 +220,15 @@
                 flex-direction: column;
                 margin: 0 0;
                 align-items: unset;
+            }
+
+            .article-item {
+                margin: 0;
+            }
+
+            .article-items--related {
+                margin-right: 0;
+                margin-left: 0;
             }
         }
     </style>
