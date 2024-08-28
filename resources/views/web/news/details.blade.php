@@ -98,7 +98,7 @@
                         <a class="article-item-link" href="{{route('page.blog',$value->slug)}}">
                             <h3 class="typography-article-title"> {!! $value->news_headlines !!} </h3>
                         </a>
-                        <p class="typography-article-summary">{!! $value->describe !!}</p>
+                        <div class="typography-article-summary">{!! $value->describe !!}</div>
                     </article>
                     @endforeach
                     @endif
@@ -219,6 +219,7 @@
             .bike-item {
                 flex-direction: column;
                 margin: 0 0;
+                align-items: unset;
             }
         }
     </style>

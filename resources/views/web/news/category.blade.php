@@ -20,7 +20,8 @@
                                 {{$formattedDate}}
                             </time>
                             <h3 class="typography-article-title-enhanced">{!! $list_blog_one_hot_news->news_headlines !!}</h3>
-                            <div class="typography-article-summary">{!! $list_blog_one_hot_news->describe !!}
+                            <div class="typography-article-summary" style="color: #fff">
+                                {!! $list_blog_one_hot_news->describe !!}
                             </div>
                             <a class="cta-link" href="{{route('page.blog', $list_blog_one_hot_news->slug)}}">Xem thêm</a>
                         </div>
