@@ -542,7 +542,7 @@
     display: block;
     position: relative;
     background: center/cover no-repeat
-        url(//cdn.gogoro.com/resources/pages/news/img-news-placeholder@2x.jpg);
+        url("../images/image-loading.png");
     margin: 0 0 24px 0;
 }
 
