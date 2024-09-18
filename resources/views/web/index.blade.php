@@ -36,14 +36,23 @@
     <link rel="stylesheet" href="{{ asset('home/css/style.css') }}">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="google-site-verification" content="5RicnuKvgTHp7bvf5flvv06FleVsWq3wmbJzdCJ_bVs" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WVB1WK898Z"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-WVB1WK898Z');
+    </script>
 </head>
 
 <body>
     @if(request()->is('/'))
-    <header id="header" class="header sticky-jump">
-        @include('/web/skinpart/topbar')
-        @include('/web/skinpart/modal')
-    </header>
+        <header id="header" class="header sticky-jump">
+            @include('/web/skinpart/topbar')
+            @include('/web/skinpart/modal')
+        </header>
     @endif
     @include('/web/skinpart/menu')
     @yield('content')
@@ -72,8 +81,8 @@
         src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
     <script>
         var flags = document.getElementsByClassName('flag_link');
-        Array.prototype.forEach.call(flags, function(e) {
-            e.addEventListener('click', function() {
+        Array.prototype.forEach.call(flags, function (e) {
+            e.addEventListener('click', function () {
                 var lang = e.getAttribute('data-lang');
                 var languageSelect = document.querySelector("select.goog-te-combo");
                 languageSelect.value = lang;
@@ -81,7 +90,8 @@
             });
         });
     </script>
-    <a href="https://zalo.me/3413590899111168672" class="suntory-alo-phone suntory-alo-green" id="suntory-alo-phoneIcon" style="bottom: 10%; right: 0;">
+    <a href="https://zalo.me/3413590899111168672" class="suntory-alo-phone suntory-alo-green" id="suntory-alo-phoneIcon"
+        style="bottom: 10%; right: 0;">
         <div class="suntory-alo-ph-circle"></div>
         <div class="suntory-alo-ph-circle-fill"></div>
         <div class="suntory-alo-ph-img-circle"><i class="fa fa-phone"></i></div>
