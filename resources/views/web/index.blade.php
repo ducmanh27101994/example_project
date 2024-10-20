@@ -90,18 +90,68 @@
             });
         });
     </script>
-    <a href="https://zalo.me/3413590899111168672" class="suntory-alo-phone suntory-alo-green" id="suntory-alo-phoneIcon"
-        style="bottom: 10%; right: 0;">
-        <div class="suntory-alo-ph-circle"></div>
-        <div class="suntory-alo-ph-circle-fill"></div>
-        <div class="suntory-alo-ph-img-circle"><i class="fa fa-phone"></i></div>
-    </a>
-    <a href="https://zalo.me/3413590899111168672" class="hidden">
-        <i class="button-zalo" id="button-zalo-m">
-            <div class="button-zalo-main"></div>
-            <em></em>
-        </i>
-    </a>
+
+    <div id="sp2022" class="hidden-xs hidden-sm">
+        <ul>
+            <li>
+                <p class="ccall d-flex align-items-center " data-toggle="modal" data-target="#flipFlop">
+                    <img width="30" height="30" src="{{ asset('home/images/telephone.png') }}" alt="1900 0095"><span
+                        class="d-flex flex-column "><span>Gọi
+                            miễn phí</span><span class="cl_yellow animated infinite tada">1900 0095</span></span>
+                </p>
+            </li>
+            <li><a target="_blank" href="https://www.facebook.com/osakar.vn" rel="nofollow"
+                    class="cfb d-flex align-items-center">
+                    <img width="30" height="30" src="{{ asset('home/images/facebook.png') }}" alt="Chat FB"><span>Chat
+                        FB</span>
+                </a></li>
+            <li><a target="_blank" href="https://zalo.me/3413590899111168672" rel="nofollow"
+                    class="czalo d-flex align-items-center">
+                    <img width="30" height="30" src="{{ asset('home/images/zalo-icon.png') }}"
+                        alt="Chat Zalo"><span>Chat Zalo</span>
+                </a></li>
+            <li><a target="_blank" href="/list-store/mien-bac" rel="nofollow" class="cmap d-flex align-items-center">
+                    <img width="30" height="30" src="{{ asset('home/images/google-maps.png') }}"
+                        alt="Chỉ đường"><span>Chỉ đường</span>
+                </a></li>
+        </ul>
+    </div>
+
+    <ul class="list-footer-fixed hidden-md hidden-lg">
+        <li>
+            <p rel="nofollow" class="show-popup-call-center ccall d-flex align-items-center" data-toggle="modal"
+                data-target="#flipFlop">
+                <strong class="animated infinite tada delay-2s "
+                    style="color: #d20d14;line-height: 30px">1900 0095</strong>
+                <span>Gọi miễn phí</span>
+            </p>
+        </li>
+        <li>
+            <a target="_blank" rel="nofollow" class="cfb" href="https://www.facebook.com/osakar.vn">
+                <img width="30" height="30"
+                    src="{{ asset('home/images/icon-mobile-fb.png') }}"
+                    alt="message"></noscript>
+                <span>Nhắn tin</span>
+            </a>
+        </li>
+        <li>
+            <a target="_blank" rel="nofollow" class="czalo" href="https://zalo.me/3413590899111168672">
+                <img width="30" height="30"
+                    src="{{ asset('home/images/zalo-icon.png') }}"
+                    alt="zalo-chat">
+                <span>Chat Zalo</span>
+            </a>
+        </li>
+        <li>
+            <a href="/list-store/mien-bac" class="cmap show-popup-support-local">
+                <img width="30" height="30"
+                    src="{{ asset('home/images/google-maps.png') }}"
+                    alt="chi-duong">
+                <span>Chỉ đường</span>
+            </a>
+        </li>
+    </ul>
+
 </body>
 
 </html>

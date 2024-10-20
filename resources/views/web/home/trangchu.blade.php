@@ -275,6 +275,14 @@ if ($value->price_comparison != 0) {
         @endforeach
         @endif
 
+        <div>
+        <button type="submit" class="btn btn-button btn-reg-notion" style="position: relative" >
+        <a href="/list-store/mien-bac" style="color: #fff" target="_blank">Cửa hàng gần nhất</a>
+        </div>
+                  
+
+        
+
         <div class="pbgn-partners-section">
             <h3 class="typography-section-headline typography-section-headline--reduced">Đối tác của <span
                     class="d-inline-block">OSAKAR</span></h3>

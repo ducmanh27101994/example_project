@@ -3840,7 +3840,8 @@ body {
 
 @media only screen and (min-width: 1200px) {
     .cart .cart-bike .cart-bike-content .tab-right {
-        min-width: 510px;
+        width: 581px;
+        min-width: 581px;
         height: 100vh;
         overflow: scroll;
         box-shadow: 0 24px 54px rgba(0, 0, 0, 0.1);
