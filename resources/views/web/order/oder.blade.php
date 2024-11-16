@@ -12,7 +12,7 @@
 
 
 <div class="page v3s" data-action="CartBike-Show" data-querystring>
-    <h1 class="d-none">Mua xe m&aacute;y điện VinFast - C&oacute; hỗ trợ trả g&oacute;p - Thanh to&aacute;n dễ
+    <h1 class="d-none">Mua xe m&aacute;y điện Osakar - C&oacute; hỗ trợ trả g&oacute;p - Thanh to&aacute;n dễ
         d&agrave;ng, nhanh ch&oacute;ng</h1>
 
     <div class="cart " id="bookingModal">
@@ -42,7 +42,7 @@
 
                                             <li>
                                                 <a class="we-mega-menu-li" title=""
-                                                    href="https://vinfastauto.com/vn_vi/ve-chung-toi" target="">Giới
+                                                    href="/about-us" target="">Giới
                                                     thiệu</a>
                                             </li>
 
@@ -95,151 +95,8 @@
                                         </div>
                                         <div class="d-block d-lg-none display-mobile">
                                             <ul>
-                                                <li><a href="https://vinfastauto.com/vn_vi/ve-chung-toi">Giới thiệu</a>
+                                                <li><a href="/about-us">Giới thiệu</a>
                                                 </li>
-                                                <li class="submenu-expand">
-                                                    <div class="toggle-header">
-                                                        <a>Ô tô</a>
-                                                        <a class="view-all" href="/vn_vi/vinfast-cars-deposit.html">Xem
-                                                            tất cả</a>
-                                                        <div class="toggle-header-arrow"></div>
-                                                    </div>
-                                                    <ul>
-                                                        <li class="submenu-subheader">Động cơ điện</li>
-                                                        <li><a href="/vn_vi/dat-coc-xe-dien-vf3.html">VF 3</a></li>
-                                                        <li><a href="/vn_vi/dat-coc-xe-dien-vf5.html">VF 5 Plus</a></li>
-                                                        <li><a href="/vn_vi/dat-coc-xe-dien-vf6.html">VF 6</a></li>
-                                                        <li><a href="/vn_vi/dat-coc-xe-dien-vf7.html">VF 7</a></li>
-                                                        <li><a href="/vn_vi/dat-coc-xe-vf8.html">VF 8</a></li>
-                                                        <li><a href="/vn_vi/dat-coc-xe-vf9.html">VF 9</a></li>
-                                                        <li class="submenu-subheader">Động cơ xăng</li>
-                                                        <li><a href="/vn_vi/o-to-vinfast-fadil.html">Fadil</a></li>
-                                                        <li><a href="/vn_vi/o-to-vinfast-lux-a.html">Lux A2.0</a></li>
-                                                        <li><a href="/vn_vi/o-to-vinfast-lux-sa.html">Lux SA2.0</a></li>
-                                                        <li><a href="/vn_vi/o-to-vinfast-president.html">President</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li>
-                                                    <a href="/vn_vi/xe-may-dien-vinfast.html">Xe máy điện</a>
-                                                </li>
-                                                <li>
-                                                    <a href="/vn_vi/xe-dap-dien-drgnfly.html">VF DrgnFly eBike</a>
-                                                </li>
-                                                <li class="submenu-expand">
-                                                    <div class="toggle-header">
-                                                        <a>Dịch vụ hậu mãi</a>
-                                                        <a class="view-all" href="/vn_vi/dat-lich-dich-vu.html">Đặt
-                                                            lịch</a>
-                                                        <div class="toggle-header-arrow"></div>
-                                                    </div>
-                                                    <ul>
-                                                        <li class="submenu-subheader">Bảo hành &amp; Bảo dưỡng</li>
-                                                        <li><a href="https://vinfastauto.com/vn_vi/chinh-sach-bao-hanh">Thông
-                                                                tin bảo
-                                                                hành</a></li>
-                                                        <li><a href="https://vinfastauto.com/vn_vi/bao-duong-dinh-ky">Thông
-                                                                tin bảo
-                                                                dưỡng định kỳ</a></li>
-                                                        <li><a href="https://vinfastauto.com/vn_vi/dich-vu">Thông tin
-                                                                dịch vụ</a></li>
-                                                        <li class="submenu-subheader">Hướng dẫn sử dụng</li>
-                                                        <li><a href="https://vinfastauto.com/vn_vi/tai-lieu-tham-khao">Hướng
-                                                                dẫn sử dụng
-                                                                ô tô</a></li>
-                                                        <li><a
-                                                                href="https://vinfastauto.com/vn_vi/tai-lieu-xe-may-dien">Hướng
-                                                                dẫn sử
-                                                                dụng xe máy điện</a></li>
-                                                        <li><a href="https://storage.googleapis.com/vinfast-data-01/VF%20App_H%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20s%E1%BB%AD%20d%E1%BB%A5ng_v.1.2_2022.05.18.pdf"
-                                                                target="_blank">Hướng dẫn sử dụng VinFast App</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="submenu-expand">
-                                                    <div class="toggle-header">
-                                                        <a>Pin và trạm sạc</a>
-                                                        <div class="toggle-header-arrow"></div>
-                                                    </div>
-                                                    <ul>
-                                                        <li><a href="https://vinfastauto.com/vn_vi/pin-va-tram-sac">Pin
-                                                                và trạm sạc Ô tô
-                                                                điện</a></li>
-                                                        <li><a
-                                                                href="https://vinfastauto.com/vn_vi/dich-vu-pin-xe-may-dien">Pin
-                                                                và trạm
-                                                                sạc Xe máy điện</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="submenu-expand">
-                                                    <div class="toggle-header">
-                                                        <a>Tiện ích</a>
-                                                        <div class="toggle-header-arrow"></div>
-                                                    </div>
-                                                    <ul>
-                                                        <li><a href="/vn_vi/so-sanh-xe-vinfast">So sánh xe</a></li>
-                                                        <li><a href="/vn_vi/chi-phi-lan-banh">Dự toán chi phí lăn
-                                                                bánh</a></li>
-                                                        <li><a href="/vn_vi/du-toan-chi-phi-tra-gop">Dự toán vay trả
-                                                                góp</a></li>
-                                                        <li>
-                                                            <a href="/vn_vi/dat-lich-dich-vu-bao-duong.html">
-                                                                <p>Đặt lịch dịch vụ</p>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="submenu-expand">
-                                                    <div class="toggle-header">
-                                                        <a>Mua sắm</a>
-                                                        <div class="toggle-header-arrow"></div>
-                                                    </div>
-                                                    <ul>
-                                                        <li>
-                                                            <a href="/vn_vi/Parts">
-                                                                <p>Phụ kiện xe</p>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="submenu-expand">
-                                                    <div class="toggle-header">
-                                                        <a>Tin tức</a>
-                                                        <div class="toggle-header-arrow"></div>
-                                                    </div>
-                                                    <ul>
-                                                        <li><a href="https://vinfastauto.com/vn_vi/cong-ty">Công ty</a>
-                                                        </li>
-                                                        <li><a href="https://vinfastauto.com/vn_vi/cong-dong">Cộng
-                                                                đồng</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="submenu-expand">
-                                                    <div class="toggle-header">
-                                                        <a>Hỗ trợ</a>
-                                                        <div class="toggle-header-arrow"></div>
-                                                    </div>
-                                                    <ul>
-                                                        <li><a
-                                                                href="https://vinfastauto.com/vn_vi/tim-kiem-showroom-tram-sac">Tìm
-                                                                Showroom &amp; Trạm sạc</a></li>
-                                                        <li><a href="https://vinfastauto.com/vn_vi/cau-hoi-thuong-gap">Câu
-                                                                hỏi thường
-                                                                gặp</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="submenu-expand">
-                                                    <div class="toggle-header">
-                                                        <a>Thảo luận</a>
-                                                        <div class="toggle-header-arrow"></div>
-                                                    </div>
-                                                    <ul>
-                                                        <li><a href="https://vinfast.vn/" target="_blank">Cộng đồng
-                                                                VinFast Toàn cầu</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="mmb-dklt"><a href="/vn_vi/dang-ky-lai-thu.html">Đăng ký lái
-                                                        thử</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -248,7 +105,7 @@
                         </div>
                     </header>
 
-                    <div class="content-asset" style="padding-top: 70px;">
+                    <div class="content-asset content-asset-scroll" style="padding-top: 80px;">
 
                         <div class="content-asset">
                             <nav class="vf-bike-order__product-list">
@@ -274,7 +131,7 @@
                     </div>
                     <div class="tab-left-box" style="padding-top: 70px;">
                         <div class="v3s-product__img">
-                            <h5 data-modelid="Products-Scooter-EVO-200"
+                            <h5 data-modelid="{{$product->product_name ?? 0}}"
                                 class="v3s-product--name text-center text-nowrap">{{$product->product_name ?? 0}}
                             </h5>
                             <div class="v3s-product-item-0">
@@ -311,6 +168,20 @@
 
                 </div>
                 <div class="tab-right ">
+                    <header id="header" class="v3s-header hidden-md hidden-lg">
+                        <div class="v3s-header--bottom">
+                            <div class="d-flex align-items-center justify-content-between custom-group-user-mobile">
+                                <div class="v3s-header-mobile--left d-flex align-items-center justify-content-start">
+                                    <div class="logo">
+                                        <?php $url = $table_config_images->image_icon_right ?>
+                                        <img style="width: 50px" class="light-theme"
+                                            src="<?= !empty($url) ? $url : '' ?>" alt="Osakar" loading="lazy">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
                     <div class="tab-right-head">
                         <ul class="tab-right-step clear-initial-trail">
                             <li id="select-car-step" class="form-step active ">
@@ -333,54 +204,22 @@
                                 <nav class="vf-bike-order__product-list">
                                     <div class="bike-slider swiper-container">
                                         <ul class="vf-bike-order__container swiper-wrapper">
-                                            <li data-id="Products-Scooter-THEON-S" data-name="evo2000" data-pid="12"
-                                                class="add-to-cart-v3s swiper-slide">
-                                                <figure><img
-                                                        src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw04cebe7d/images/productScooter/Products-Scooter-THEON-S.png"
-                                                        alt="Xe máy điện VinFast Theon S">
-                                                    <figcaption>Theon S</figcaption>
-                                                </figure>
-                                            </li>
-                                            <li data-id="Products-Scooter-VENTO-S" data-name="evo2000" data-pid="123"
-                                                class="add-to-cart-v3s swiper-slide">
-                                                <figure><img
-                                                        src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw5875cb20/images/productScooter/Products-Scooter-VENTO-S.png"
-                                                        alt="Xe máy điện VinFast Vento S">
-                                                    <figcaption>Vento S</figcaption>
-                                                </figure>
-                                            </li>
-                                            <li data-id="Products-Scooter-FELIZ-S" data-name="evo2000" data-pid="1234"
-                                                class="add-to-cart-v3s swiper-slide">
-                                                <figure><img
-                                                        src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwa157998b/images/productScooter/Products-Scooter-FELIZ-S.png"
-                                                        alt="Xe máy điện VinFast Feliz S">
-                                                    <figcaption>Feliz S</figcaption>
-                                                </figure>
-                                            </li>
-                                            <li data-id="Products-Scooter-KLARA-S-2022" data-name="evo2000"
-                                                data-pid="12345" class="add-to-cart-v3s swiper-slide">
-                                                <figure><img
-                                                        src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw760d662e/images/productScooter/Products-Scooter-KLARA-S-2022.png"
-                                                        alt="Xe máy điện VinFast Klara S (2022)">
-                                                    <figcaption>Klara S (2022)</figcaption>
-                                                </figure>
-                                            </li>
-                                            <li data-id="Products-Scooter-EVO-200" data-name="evo2000" data-pid="123456"
-                                                class="add-to-cart-v3s swiper-slide">
-                                                <figure><img
-                                                        src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dw747ef047/images/productScooter/Products-Scooter-EVO200.png"
-                                                        alt="Xe máy điện VinFast Evo200">
-                                                    <figcaption>Evo200</figcaption>
-                                                </figure>
-                                            </li>
-                                            <li data-id="Products-Scooter-EVO-200-LITE" data-name="evo2000"
-                                                data-pid="1234567" class="add-to-cart-v3s swiper-slide">
-                                                <figure><img
-                                                        src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-app_vinfast_vn-Library/default/dwa5b930c1/images/productScooter/Products-Scooter-EVO200-LITE.png"
-                                                        alt="Xe máy điện VinFast Evo200 Lite">
-                                                    <figcaption>Evo200 Lite</figcaption>
-                                                </figure>
-                                            </li>
+
+                                            @if(!empty($color_image))
+                                                @foreach($color_image as $key => $value)
+
+                                                    <li data-id="color_image" data-name="evo2000" data-pid="{{$value->id}}"
+                                                        class="add-to-cart-v3s swiper-slide">
+                                                        <figure><img src="{{$value->images}}" alt="{{$value->id}}">
+                                                            <figcaption></figcaption>
+                                                        </figure>
+                                                    </li>
+
+                                                @endforeach
+                                            @endif
+
+
+
                                         </ul>
                                         <div class="swiper-button-next"></div>
                                         <div class="swiper-button-prev"></div>
@@ -391,14 +230,14 @@
                         </div>
                         <div class="tab-left-box">
                             <div class="v3s-product__img">
-                                <h5 data-modelid="Products-Scooter-EVO-200"
-                                    class="v3s-product--name text-center text-nowrap">Evo200</h5>
+                                <h5 data-modelid="{{$product->product_name ?? 0}}"
+                                    class="v3s-product--name text-center text-nowrap">{{$product->product_name ?? 0}}
+                                </h5>
                                 <div class="v3s-product-item-0">
                                     <div class="product-container">
-                                        <img class="product-item-REQ"
-                                            alt="Xe m&aacute;y điện VinFast Evo200 m&agrave;u đỏ đậm-đen"
-                                            title="Xe m&aacute;y điện VinFast Evo200 m&agrave;u đỏ đậm-đen"
-                                            src="https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_master/default/dw2c8dab24/images/EVO-200/REQ.png">
+                                        <img class="product-item-REQ" alt="{{$product->product_name ?? 0}}"
+                                            title="{{$product->product_name ?? 0}}"
+                                            src="{{$product->representative_image}}" >
                                     </div>
                                     <div class="tab-bike-left-info show-pc">
                                         <ul class="bike-info-list">
@@ -437,12 +276,12 @@
                         </div>
                     </div>
                     <div class="tab-right-box">
-                        <div class="select-car-step"
+                        <div class="select-car-step "
                             text-title="Xin mời Qu&yacute; kh&aacute;ch lựa chọn m&agrave;u xe, dịch vụ (nếu c&oacute;).">
                             <div class="html-slot-container">
                             </div>
-                            <div class="properties v3s-product--color pb-2" data-model="Products-Scooter-EVO-200"
-                                data-name="Evo200">
+                            <div class="properties v3s-product--color pb-2 hidden-xs hidden-sm"
+                                data-model="{{$product->product_name ?? 0}}" data-name="Evo200">
                                 <div class="d-flex justify-content-between align-items-center mb-4">
                                     <h3 class="font-18">Chọn m&agrave;u xe</h3>
                                     <span class="v3s-product--color-name"></span>
@@ -450,9 +289,9 @@
                                 <ul class="colorItemList bike slides">
                                     @if(!empty($color_image))
                                         @foreach($color_image as $key => $value)
-                                            <li class="slide-item" data-name="Đỏ Đậm-Đen" data-item="REQ"
+                                            <li class="slide-item" data-name="{{$product->product_name ?? 0}}" data-item="REQ"
                                                 data-pid="{{$value->id}}">
-                                                <img src="{{$value->images}}" alt="M&agrave;u xe VinFast Đỏ Đậm-Đen">
+                                                <img src="{{$value->images}}" alt="{{$product->product_name ?? 0}}">
                                             </li>
                                         @endforeach
                                     @endif
@@ -479,7 +318,6 @@
                         <div class="customer-informations-step tab-right-panel d-none" id="tab-info-client"
                             text-title="H&atilde;y nhập th&ocirc;ng tin chủ xe v&agrave; chọn showroom m&agrave; Qu&yacute; kh&aacute;ch muốn nhận xe.">
                             <form
-                                action="/on/demandware.store/Sites-app_vinfast_vn-Site/vi_VN/CheckoutServices-SubmitPayment"
                                 method="POST" name="dwfrm_billing" id="dwfrm_billing">
                                 <div class="vf-form">
                                     <input type="hidden" name="campaign" value>
@@ -496,7 +334,7 @@
                                                 pattern="([12]\d{3}-(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01]))" />
                                             <h3 class="col-12 group-title">Th&ocirc;ng tin Kh&aacute;ch h&agrave;ng
                                             </h3>
-                                            <div class="col-12 group-select-customer group-radio">
+                                            <div class="col-12 row group-select-customer group-radio">
                                                 <label class="col-auto small-header">Chủ sở hữu xe l&agrave;</label>
                                                 <div class="group-input col-6 col-md-auto">
                                                     <input name="dwfrm_billing_addressFields_customerType"
@@ -632,8 +470,6 @@
                                             <div class="col-12 mb-4">
                                                 <div class="form-label-group has-icon">
                                                     <input type="text" class="form-control email" id="email"
-                                                        data-not-exist="VinFast sẽ tạo t&agrave;i khoản v&agrave; gửi th&ocirc;ng tin đơn h&agrave;ng tới địa chỉ email n&agrave;y của Qu&yacute; kh&aacute;ch."
-                                                        data-exist="Qu&yacute; kh&aacute;ch đ&atilde; c&oacute; t&agrave;i khoản VinFast với email n&agrave;y. Th&ocirc;ng tin đơn h&agrave;ng sẽ được hiển thị trong t&agrave;i khoản của Qu&yacute; kh&aacute;ch."
                                                         placeholder="Email"
                                                         data-missing-error="Vui l&ograve;ng nhập email."
                                                         data-parse-error="Định dạng Email của Qu&yacute; kh&aacute;ch chưa đ&uacute;ng. Vui l&ograve;ng kiểm tra lại."
@@ -664,7 +500,7 @@
                                                         <li class="see-detail">Chính sách chương trình có thể thay
                                                             đổi mà không cần thông báo trước, chi tiết xem <a
                                                                 class="referral-file"
-                                                                href="https://vinfast.vn/bang-quyen-loi-thanh-vien-2023/"
+                                                                href="https://osakar.com.vn/dieu-khoan-chinh-sach"
                                                                 target="popup">tại đây</a>. Hoặc liên hệ <a
                                                                 href="tel:1900232389">hotline <span
                                                                     class="text-nowrap">1900 23 23 89</span></a>.
@@ -682,12 +518,11 @@
                                                         T&ocirc;i đ&atilde; đọc, hiểu r&otilde; v&agrave; x&aacute;c
                                                         nhận đồng &yacute; với to&agrave;n bộ nội dung
                                                         <a class="color-2EA2EB" target="&quot;_blank&quot;"
-                                                            href="https://shop.vinfastauto.com/on/demandware.static/-/Sites-vinfast_vn_navigation/default/dwecb0c78e/Document/VFEcom-Dieu khoan dat coc.pdf">
+                                                            href="https://osakar.com.vn/dieu-khoan-chinh-sach">
                                                             Điều khoản </a>
                                                         trong Thỏa Thuận Đặt Cọc tr&ecirc;n cũng như Ch&iacute;nh
                                                         S&aacute;ch Ưu Đ&atilde;i &aacute;p dụng tại thời điểm đặt
-                                                        mua xe &ocirc; t&ocirc; n&agrave;y tr&ecirc;n VinFast
-                                                        Online.
+                                                        mua xe &ocirc; t&ocirc; n&agrave;y tr&ecirc;n Osakar.
                                                     </label>
                                                 </div>
                                             </div>
@@ -700,15 +535,14 @@
                                                         <a class="color-2EA2EB" target="_blank"
                                                             href="/vn_vi/dieu-khoan-phap-ly.html?&dieu-kien-dieu-khoan">
                                                             Điều kiện &amp; Điều khoản </a>
-                                                        của VinFast Online
+                                                        của Osakar
                                                     </label>
                                                 </div>
                                             </div>
                                             <fieldset class="d-none address-selector-block">
                                                 <div class="form-group">
                                                     <select id="billingAddressSelector" name="addressSelector"
-                                                        class="addressSelector form-control"
-                                                        data-create-shipment-url="https://shop.vinfastauto.com/on/demandware.store/Sites-app_vinfast_vn-Site/vi_VN/Checkout-SetBillingAddress">
+                                                        class="addressSelector form-control">
                                                         <option value="new" data-first-name data-last-name data-address1
                                                             data-address2 data-city data-state-code data-country-code
                                                             data-postal-code data-phone>
@@ -776,24 +610,14 @@
                                                 <div class="form-label-group has-icon">
                                                     <select
                                                         class="select2-search select2-label-placeholder select2-empty"
-                                                        id="storeList" data-store-selected="false">
+                                                        id="storeList" data-store-selected="false"
+                                                        style="padding-left: 10px;">
                                                         @if(!empty($listStore))
                                                             @foreach($listStore as $value)
                                                                 <option value="{{$value->id}}">{{$value->title_store}}</option>
                                                             @endforeach
                                                         @endif
                                                     </select>
-                                                    <div class="icon">
-                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                                            xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M23.8587 0.0360413C23.4212 -0.16908 22.7743 0.564872 22.5556 0.64179C21.9022 0.775421 21.298 1.0975 20.8121 1.57125C19.9681 2.4366 14.6759 10.7152 13.4067 12.2536C12.729 13.0773 12.1745 13.8112 12.002 13.8112C11.8295 13.8112 11.2751 13.0773 10.5974 12.2536C9.32821 10.712 4.0299 2.4366 3.18893 1.57125C2.70296 1.0975 2.09881 0.775421 1.44539 0.64179C1.22668 0.564872 0.582867 -0.16908 0.142366 0.0360413C-0.1934 0.196292 0.170089 0.936652 0.170089 0.936652C0.32103 1.39817 2.16314 5.90767 4.00522 10.087C5.66869 13.8561 7.23354 17.106 7.84654 18.3752C10.3109 23.4648 11.6663 23.9936 11.9959 24C12.3255 24 13.6963 23.468 16.1452 18.3752C16.7613 17.0932 18.3262 13.8561 19.9896 10.087C21.8379 5.92046 23.6861 1.39817 23.8186 0.936652C23.8279 0.936652 24.1944 0.196292 23.8587 0.0360413ZM23.2425 1.08729C22.4324 2.04559 16.7028 14.4234 15.409 16.7118C14.1152 19.0002 12.4641 21.8398 12.0051 21.8398C11.5492 21.8174 9.91352 19.0098 8.61662 16.7118C7.31978 14.4138 1.58401 2.04559 0.773853 1.08729C0.561305 0.82768 0.03763 0.321289 0.22554 0.212318C0.499699 0.0552713 1.14967 0.811656 1.53164 0.914218C2.06633 0.999681 2.55842 1.26808 2.93016 1.67701C3.62323 2.36289 4.8955 4.52308 7.14419 8.01336C8.54889 10.1992 9.71942 11.8818 10.3756 12.7408C11.1919 13.8176 11.7556 14.3433 12.002 14.3433C12.2485 14.3433 12.8091 13.8272 13.6254 12.7408C14.2816 11.885 15.4521 10.2024 16.8568 8.01336C19.1055 4.52308 20.3747 2.36289 21.0739 1.67701C21.4452 1.26749 21.9375 0.998974 22.4725 0.914218C22.8606 0.811656 23.5044 0.0552713 23.7755 0.212318C23.9726 0.321289 23.4489 0.82768 23.2303 1.08729H23.2425Z"
-                                                                fill="#8A8A8A" />
-                                                            <path
-                                                                d="M21.9428 1.7606C21.6347 2.28622 20.4334 4.74127 18.8993 7.6386C17.1958 10.8789 15.1596 14.5422 14.753 15.2569C13.9922 16.5934 12.4766 18.8722 12.0022 18.8882C11.5309 18.869 10.0153 16.5934 9.25445 15.2538C8.85094 14.5422 6.82706 10.8789 5.11126 7.6386C3.57104 4.75409 2.35738 2.28622 2.0678 1.7606C1.77824 1.23497 1.86757 1.05549 2.46825 1.7606C3.36465 2.84069 5.51481 6.73157 5.51481 6.73157C5.51481 6.73157 9.22364 13.1673 9.80278 14.0198C10.3819 14.8724 11.5679 16.4653 11.996 16.4813C12.4304 16.4653 13.6441 14.8275 14.1924 14.0198C14.7407 13.2122 18.4865 6.73157 18.4865 6.73157C18.4865 6.73157 20.6428 2.8503 21.5392 1.77983C22.1399 1.05549 22.2354 1.1901 21.9428 1.7606Z"
-                                                                fill="#8A8A8A" />
-                                                        </svg>
-                                                    </div>
 
                                                 </div>
 
@@ -876,13 +700,13 @@
                                         <p>Địa chỉ email</p>
                                         <p class="email"></p>
                                         <p class="email-announcement"
-                                            text-email="VinFast sẽ tạo t&agrave;i khoản với địa chỉ email n&agrave;y.">
+                                            text-email="Osakar sẽ tạo t&agrave;i khoản với địa chỉ email n&agrave;y.">
                                         </p>
                                     </div>
                                     <div class="payment-info_item">
                                         <p>Showroom</p>
                                         <p class="showroom">
-                                            <span>VinFast Royal City, Hà Nội</span>
+                                            <span>Osakar Showroom, Hà Nội</span>
                                             <a class="map" href target="_blank">(Xem bản đồ)</a>
                                         </p>
                                     </div>
@@ -916,126 +740,6 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="d-none">
-                            <div class="icon-cart-mobile icon-show-detail-cart">
-                                <img src="/on/demandware.static/Sites-app_vinfast_vn-Site/-/default/dwfe44fac0/images/vfast/show_detail_cart.png"
-                                    alt class="show-detail-cart">
-                            </div>
-                            <div class="tab-right-box">
-                                <h2 class="title-product-order v3s-product--name display-none-mobile">EVO200</h2>
-                                <div class="display-none-mobile">
-                                    <ul class="custom-ul-right">
-                                        <li data-id="productSelected-colorName">
-                                            <span class="properties-item-label">M&agrave;u xe</span>
-                                            <span class="value d-none"></span>
-                                            <div class="properties-item-value color-code" id="colorSummary">
-                                                <span class="properties-item-color-code"
-                                                    style="background-color: #dd0000"></span>
-                                                </iselse>
-                                            </div>
-                                        </li>
-                                        <li data-id="productSelected-colorName">
-                                            <span class="properties-item-label">Chọn dịch vụ</span>
-                                            <span id="leasingServiceList" class="v3s-product--subname">
-                                                <div class="leasingService-item">
-                                                    <span class="font-weight-nomal">Thu&ecirc; Pin</span>
-                                                </div>
-                                                <div class="leasingService-item">
-                                                    <span class="font-weight-nomal"></span>
-                                                </div>
-                                            </span>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <ul class="not-payment-bank">
-                                    <li
-                                        class="justify-content-between align-items-center delivery-timing--date display-none-mobile d-none">
-                                        <span>Estimated Delivery</span>
-                                        <span class="payment-sum"><span class="value"></span></span>
-                                    </li>
-                                    <li class="justify-content-between align-items-center original-price-item">
-                                        <span class="font-weight-nomal">Gi&aacute; xe</span>
-                                        <span class="payment-sum finance-item--price-before-savings">
-                                            <span class="value font-weight-nomal">18.000.000</span> VNĐ
-                                        </span>
-                                    </li>
-                                    <li class="justify-content-between align-items-center display-none-mobile d-none"
-                                        data-id="templateCouponLineItem">
-                                        <span class="font-weight-nomal couponName">coupon.couponName</span>
-                                        <span
-                                            class="payment-sum font-13 font-weight-nomal couponValue">coupon.couponValue
-                                            VNĐ</span>
-                                    </li>
-                                    <li class="d-flex justify-content-between align-items-center border-b-none">
-                                        <span class="text-bold">Gi&aacute; trị đơn h&agrave;ng</span>
-                                        <span class="payment-sum finance-item--price-after-savings"><span
-                                                class="value">18.000.000</span> VNĐ</span>
-                                    </li>
-                                </ul>
-                                <div class="btn-wrapper btn-group-mobile">
-                                    <button type="button" class="button-booking-cancel display-mobile">
-                                        <img src="/on/demandware.static/Sites-app_vinfast_vn-Site/-/default/dw68b90dce/images/vfast/book_cancel.png"
-                                            alt class>
-                                    </button>
-                                    <button type="button" data-label-next="TIẾP THEO"
-                                        data-label-done="THANH TO&Aacute;N"
-                                        class="btn btn--full button-booking-next"></button>
-                                </div>
-                                <div class="js-booking-detail-success modal modal-box" role="dialog">
-                                    <div class="modal-dialog modal-lg" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <p class="title-detail-booking">Chi tiết đơn h&agrave;ng</p>
-                                                <button type="button" class="close-modal-booking"><span
-                                                        aria-hidden="true">&times;</span></button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <ul class="not-payment-bank">
-                                                    <li
-                                                        class="justify-content-between align-items-center delivery-timing--date d-none">
-                                                        <span>Estimated Delivery</span>
-                                                        <span class="payment-sum"><span class="value"></span></span>
-                                                    </li>
-                                                    <li class="d-flex justify-content-between align-items-center">
-                                                        <span>Gi&aacute; xe</span>
-                                                        <span class="payment-sum finance-item--price-before-savings">
-                                                            <span class="value font-weight-nomal">18.000.000</span>
-                                                            VNĐ
-                                                        </span>
-                                                    </li>
-                                                    <li
-                                                        class="justify-content-between align-items-center leasingService-item">
-                                                        <span class="font-weight-nomal">Thu&ecirc; pin cố
-                                                            định</span>
-                                                        <span class="payment-sum font-13 font-weight-nomal">
-                                                            0 VNĐ
-                                                        </span>
-                                                    </li>
-                                                    <li class="justify-content-between align-items-center d-none"
-                                                        data-id="templateCouponLineItemPopUp">
-                                                        <span
-                                                            class="font-weight-nomal couponName">coupon.couponName</span>
-                                                        <span
-                                                            class="payment-sum font-13 font-weight-nomal couponValue">coupon.couponValue
-                                                            VNĐ</span>
-                                                    </li>
-                                                    <li
-                                                        class="d-flex justify-content-between align-items-center border-top-color-1F2125">
-                                                        <span class="text-bold">Gi&aacute; trị đơn
-                                                            h&agrave;ng</span>
-                                                        <span
-                                                            class="payment-sum finance-item--price-after-savings"><span
-                                                                class="value font-22">18.000.000</span> VNĐ</span>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <input type="hidden" id="orderPriceValue" value="18000000">
-                                <input type="hidden" id="totalServicesPrice" name="totalServicesPrice" value="0">
-                            </div>
-                        </div>
                         <div class="modal fade" id="popupWarning">
                             <div class="modal-dialog popup-warning">
                                 <div class="modal-content">
@@ -1055,21 +759,20 @@
     </div>
 </div>
 <input type="hidden" id="id_product" value="{{$product->id}}">
-<input type="hidden" id="name_product" value="">
+<input type="hidden" id="name_product" value="{{$product->name}}">
 <input type="hidden" id="image_product" value="">
 <input type="hidden" id="color_product" value="">
 <input type="hidden" id="price_product" value="{{$product->price_product}}">
 
-<script type="text/javascript"
-    src="https://shop.vinfastauto.com/on/demandware.static/Sites-app_vinfast_vn-Site/-/vi_VN/v1715648410789/js.min/jquery-3.6.0.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script>
     $('.swiper-wrapper').slick({
         infinite: true,
-        slidesToShow: 7,
-        slidesToScroll: 7,
+        slidesToShow: 13,
+        slidesToScroll: 13,
         vertical: true,
         autoplay: true,
+        arrows: true,
         prevArrow: $('.prev'),
         nextArrow: $('.next'),
         responsive: [
@@ -1078,7 +781,7 @@
                 settings: {
                     slidesToShow: 4,
                     slidesToScroll: 2,
-                    infinite: true,
+                    infinite: false,
                     vertical: false,
                 }
             },

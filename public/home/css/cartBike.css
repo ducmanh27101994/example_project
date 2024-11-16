@@ -105,7 +105,7 @@
 }
 
 #bookingModal * {
-    font-family: mulish;
+    font-family: var(--font-family-base);
 }
 
 #bookingModal .modal-dialog {
@@ -3402,6 +3402,7 @@ body {
     img {
     max-width: 80%;
     height: auto;
+    margin: 0 auto 24px;
 }
 
 @media screen and (max-width: 1540px) {
@@ -3413,6 +3414,7 @@ body {
         .product-container
         img {
         max-width: 75%;
+        margin: 0 auto 24px;
     }
 }
 
@@ -3509,7 +3511,7 @@ body {
     font-weight: 1000;
     font-size: 21.33333vw;
     line-height: 171px;
-    color: #f0f3f3;
+    color: #ed2025;
     top: -36px;
     width: 100%;
     text-transform: uppercase;
@@ -3771,7 +3773,7 @@ body {
     }
 }
 
-.cart
+/* .cart
     .cart-bike
     .cart-bike-content
     .tab-left
@@ -3780,14 +3782,17 @@ body {
     .bike-slider
     .swiper-button-next {
     position: absolute;
-    bottom: -14px;
+    bottom: -30px;
     background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nNzgnIGhlaWdodD0nMTYnIHZpZXdCb3g9JzAgMCA3OCAxNicgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48cGF0aCBkPSdNMCAxM0MwIDE0LjY1NjkgMS4zNDMxNSAxNiAzIDE2SDc1Qzc2LjY1NjkgMTYgNzggMTQuNjU2OSA3OCAxM1YzQzc4IDEuMzQzMTUgNzYuNjU2OSAwIDc1IDBIM0MxLjM0MzE1IDAgMCAxLjM0MzE1IDAgM1YxM1onIGZpbGw9JyNGN0Y5RjknLz48cGF0aCBkPSdNNTguNSA2TDM5IDEwTDE5LjUgNicgc3Ryb2tlPScjMUYyMTI1JyBzdHJva2Utd2lkdGg9JzEuMicgc3Ryb2tlLWxpbmVjYXA9J3JvdW5kJyBzdHJva2UtbGluZWpvaW49J3JvdW5kJy8+PC9zdmc+Cg==) !important;
     width: 100%;
-    background-size: 60%;
+    height: 22px;
+    background-size: contain;
     top: auto;
     left: 0;
     right: 0;
-}
+    background-repeat: no-repeat;
+    cursor: pointer;
+} */
 
 .cart
     .cart-bike
@@ -3800,7 +3805,7 @@ body {
     pointer-events: auto;
 }
 
-.cart
+/* .cart
     .cart-bike
     .cart-bike-content
     .tab-left
@@ -3810,12 +3815,15 @@ body {
     .swiper-button-prev {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nNzgnIGhlaWdodD0nMTYnIHZpZXdCb3g9JzAgMCA3OCAxNicgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48cGF0aCBkPSdNMCAxM0MwIDE0LjY1NjkgMS4zNDMxNSAxNiAzIDE2SDc1Qzc2LjY1NjkgMTYgNzggMTQuNjU2OSA3OCAxM1YzQzc4IDEuMzQzMTUgNzYuNjU2OSAwIDc1IDBIM0MxLjM0MzE1IDAgMCAxLjM0MzE1IDAgM1YxM1onIGZpbGw9JyNGN0Y5RjknLz48cGF0aCBkPSdNMTkuNSAxMEwzOSA2TDU4LjUgMTAnIHN0cm9rZT0nIzNDM0MzQycgc3Ryb2tlLXdpZHRoPScxLjInIHN0cm9rZS1saW5lY2FwPSdyb3VuZCcgc3Ryb2tlLWxpbmVqb2luPSdyb3VuZCcvPjwvc3ZnPgo=) !important;
     position: absolute;
-    top: 1%;
+    top: 12%;
+    height: 22px;
     width: 100%;
-    background-size: 60%;
+    background-size: contain;
     left: 0;
     right: 0;
-}
+    background-repeat: no-repeat;
+    cursor: pointer;
+} */
 
 .cart
     .cart-bike
@@ -3876,7 +3884,7 @@ body {
 .cart .cart-bike .cart-bike-content .tab-right .sub-title {
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 150%;
     color: #3c3c3c;
     margin-bottom: 30px;
@@ -3959,7 +3967,7 @@ body {
 
 @media only screen and (max-width: 1199px) {
     .cart .cart-bike .cart-bike-content .tab-right-head ul li > h2 {
-        font-size: 12px;
+        font-size: 10px;
     }
 }
 
@@ -4845,7 +4853,7 @@ body {
     .billing-address
     .group-title {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 150%;
     margin-bottom: 24px;
 }
@@ -4908,7 +4916,7 @@ body {
     input {
     width: 16px;
     height: 16px;
-    margin-right: 14px;
+    margin-right: 5px;
     cursor: pointer;
     position: relative;
     top: auto;
@@ -4973,7 +4981,7 @@ body {
 
 .cart .cart-bike .cart-bike-content .tab-right-box .order-bill ul li span {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 150%;
     margin-bottom: 0;
 }
@@ -5199,7 +5207,7 @@ body {
 
 @media screen and (max-width: 1199px) {
     .cart .cart-bike .cart-bike-content .tab-right-box {
-        padding: 0 16px 40px;
+        padding: 0 16px 90px;
     }
 }
 
@@ -5588,7 +5596,7 @@ body {
 }
 
 .cart .cart-bike .group-radio label {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
 }
 
@@ -5714,7 +5722,6 @@ body {
 
     .cart .cart-bike .content-asset .vf-bike-order__product-list {
         width: 100%;
-        height: 100px;
     }
 
     .cart .cart-bike .content-asset .vf-bike-order__product-list .bike-slider {
@@ -9620,4 +9627,35 @@ body {
     right: 0;
     bottom: 0;
     top: 0;
+}
+
+.form-label-group input,
+.form-label-group label,
+.form-label-group select {
+    font-size: 14px !important;
+}
+
+.content-asset-scroll ul{
+    height: calc(100vh - 120px);
+    overflow: auto;
+}
+
+@media (max-width: 768px) {
+    #header {
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+    .cart .cart-bike .content-asset {
+        margin-bottom: 0;
+    }
+
+    .form-label-group input,
+    .form-label-group label,
+    .form-label-group select {
+        font-size: 12px !important;
+    }
+    .cart .cart-bike .cart-bike-content .tab-right {
+        padding-top: 70px;
+    }
 }
