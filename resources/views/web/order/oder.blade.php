@@ -129,7 +129,7 @@
                         </div>
 
                     </div>
-                    <div class="tab-left-box" style="padding-top: 70px;">
+                    <div class="tab-left-box" style="padding-top: 200px;">
                         <div class="v3s-product__img">
                             <h5 data-modelid="{{$product->product_name ?? 0}}"
                                 class="v3s-product--name text-center text-nowrap">{{$product->product_name ?? 0}}
@@ -138,7 +138,7 @@
                                 <div class="product-container">
                                     <img class="product-item-REQ" alt="{{$product->product_name ?? 0}}"
                                         title="{{$product->product_name ?? 0}}"
-                                        src="{{$product->representative_image}}">
+                                        src="{{$product->representative_image_product}}">
                                 </div>
                                 <div class="tab-bike-left-info show-pc">
                                     <ul class="bike-info-list">
@@ -237,7 +237,7 @@
                                     <div class="product-container">
                                         <img class="product-item-REQ" alt="{{$product->product_name ?? 0}}"
                                             title="{{$product->product_name ?? 0}}"
-                                            src="{{$product->representative_image}}" >
+                                            src="{{$product->representative_image_product}}" >
                                     </div>
                                     <div class="tab-bike-left-info show-pc">
                                         <ul class="bike-info-list">
@@ -280,7 +280,7 @@
                             text-title="Xin mời Qu&yacute; kh&aacute;ch lựa chọn m&agrave;u xe, dịch vụ (nếu c&oacute;).">
                             <div class="html-slot-container">
                             </div>
-                            <div class="properties v3s-product--color pb-2 hidden-xs hidden-sm"
+                            <div class="properties v3s-product--color pb-2"
                                 data-model="{{$product->product_name ?? 0}}" data-name="Evo200">
                                 <div class="d-flex justify-content-between align-items-center mb-4">
                                     <h3 class="font-18">Chọn m&agrave;u xe</h3>

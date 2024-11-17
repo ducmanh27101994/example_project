@@ -3362,6 +3362,8 @@ body {
     padding-top: 0;
     max-height: calc(100vh - 83px);
     position: relative;
+    flex: auto;
+    width: 1034px;
 }
 
 @media only screen and (min-width: 1199px) and (max-width: 1440px) {
@@ -3378,6 +3380,7 @@ body {
 
 .cart .cart-bike .cart-bike-content .tab-left-box {
     position: relative;
+    width: 100%;
 }
 
 .cart .cart-bike .cart-bike-content .tab-left-box .v3s-product-item-0 {
@@ -3401,7 +3404,7 @@ body {
     .product-container
     img {
     max-width: 80%;
-    height: auto;
+    height: 516px;
     margin: 0 auto 24px;
 }
 
@@ -3413,8 +3416,9 @@ body {
         .v3s-product-item-0
         .product-container
         img {
-        max-width: 75%;
+        max-width: 100%;
         margin: 0 auto 24px;
+        height: auto;
     }
 }
 
@@ -3504,15 +3508,15 @@ body {
 }
 
 .cart .cart-bike .cart-bike-content .tab-left-box .v3s-product--name {
-    /* position: absolute; */
+    position: absolute;
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
     font-weight: 1000;
     font-size: 21.33333vw;
     line-height: 171px;
-    color: #ed2025;
-    top: -36px;
+    color: #f0f3f3;
+    top: 100px;
     width: 100%;
     text-transform: uppercase;
 }
@@ -4258,6 +4262,7 @@ body {
     white-space: nowrap;
     overflow-y: scroll;
     padding-top: 8px;
+    padding-left: 8px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -4322,6 +4327,8 @@ body {
     height: 48px;
     margin-right: 30px;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -9635,9 +9642,13 @@ body {
     font-size: 14px !important;
 }
 
-.content-asset-scroll ul{
+.content-asset-scroll ul {
     height: calc(100vh - 120px);
     overflow: auto;
+}
+
+.content-asset-scroll ul::-webkit-scrollbar {
+    display: none;
 }
 
 @media (max-width: 768px) {
@@ -9657,5 +9668,8 @@ body {
     }
     .cart .cart-bike .cart-bike-content .tab-right {
         padding-top: 70px;
+    }
+    .cart .cart-bike .cart-bike-content .tab-left-box .v3s-product--name {
+        top: -50px;
     }
 }
