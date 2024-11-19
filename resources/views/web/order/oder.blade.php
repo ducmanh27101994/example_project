@@ -26,8 +26,10 @@
                                 <div class="v3s-header-mobile--left d-flex align-items-center justify-content-start">
                                     <div class="logo">
                                         <?php $url = $table_config_images->image_icon_right ?>
-                                        <img style="width: 50px" class="light-theme"
-                                            src="<?= !empty($url) ? $url : '' ?>" alt="Osakar" loading="lazy">
+                                        <a href="/">
+                                            <img style="width: 50px" class="light-theme"
+                                                src="<?= !empty($url) ? $url : '' ?>" alt="Osakar" loading="lazy">
+                                        </a>
                                         </a>
                                         <a class="d-block d-lg-none" href="/">
                                             <img style="width: 50px" class="dark-theme"
@@ -41,8 +43,7 @@
                                         <ul class="mega_menu_header mega-main-menu">
 
                                             <li>
-                                                <a class="we-mega-menu-li" title=""
-                                                    href="/about-us" target="">Giới
+                                                <a class="we-mega-menu-li" title="" href="/about-us" target="">Giới
                                                     thiệu</a>
                                             </li>
 
@@ -112,14 +113,17 @@
                                 <div class="bike-slider swiper-container" id="colorImage">
                                     <ul class="vf-bike-order__container swiper-wrapper">
                                         @if(!empty($color_image))
+                                            @php    $i = 0; @endphp
                                             @foreach($color_image as $key => $value)
-                                                <li data-id="color_image" data-name="evo2000" data-pid="{{$value->id}}"
+                                                <li data-id="color_image" data-name="evo2000" data-pid="{{$i}}"
                                                     class="add-to-cart-v3s swiper-slide">
                                                     <figure><img src="{{$value->images}}" alt="">
                                                         <figcaption></figcaption>
                                                     </figure>
                                                 </li>
+                                                @php        $i++; @endphp 
                                             @endforeach
+                                            
                                         @endif
                                     </ul>
                                     <div class="swiper-button-next"></div>
@@ -206,16 +210,18 @@
                                         <ul class="vf-bike-order__container swiper-wrapper">
 
                                             @if(!empty($color_image))
+                                                @php    $i = 0; @endphp
                                                 @foreach($color_image as $key => $value)
 
-                                                    <li data-id="color_image" data-name="evo2000" data-pid="{{$value->id}}"
+                                                    <li data-id="color_image" data-name="evo2000" data-pid="{{$i}}"
                                                         class="add-to-cart-v3s swiper-slide">
                                                         <figure><img src="{{$value->images}}" alt="{{$value->id}}">
                                                             <figcaption></figcaption>
                                                         </figure>
                                                     </li>
-
+@php        $i++; @endphp 
                                                 @endforeach
+                                                
                                             @endif
 
 
@@ -237,7 +243,7 @@
                                     <div class="product-container">
                                         <img class="product-item-REQ" alt="{{$product->product_name ?? 0}}"
                                             title="{{$product->product_name ?? 0}}"
-                                            src="{{$product->representative_image_product}}" >
+                                            src="{{$product->representative_image_product}}">
                                     </div>
                                     <div class="tab-bike-left-info show-pc">
                                         <ul class="bike-info-list">
@@ -280,19 +286,21 @@
                             text-title="Xin mời Qu&yacute; kh&aacute;ch lựa chọn m&agrave;u xe, dịch vụ (nếu c&oacute;).">
                             <div class="html-slot-container">
                             </div>
-                            <div class="properties v3s-product--color pb-2"
-                                data-model="{{$product->product_name ?? 0}}" data-name="Evo200">
+                            <div class="properties v3s-product--color pb-2" data-model="{{$product->product_name ?? 0}}"
+                                data-name="Evo200">
                                 <div class="d-flex justify-content-between align-items-center mb-4">
                                     <h3 class="font-18">Chọn m&agrave;u xe</h3>
                                     <span class="v3s-product--color-name"></span>
                                 </div>
                                 <ul class="colorItemList bike slides">
-                                    @if(!empty($color_image))
-                                        @foreach($color_image as $key => $value)
+                                    @if(!empty($icon_images))
+                                        @php    $i = 0; @endphp  <!-- Khởi tạo biến i -->
+                                        @foreach($icon_images as $key => $value)
                                             <li class="slide-item" data-name="{{$product->product_name ?? 0}}" data-item="REQ"
-                                                data-pid="{{$value->id}}">
+                                                data-pid="{{$i}}"> <!-- Thêm i vào data-pid -->
                                                 <img src="{{$value->images}}" alt="{{$product->product_name ?? 0}}">
                                             </li>
+                                            @php        $i++; @endphp  <!-- Tăng i lên 1 sau mỗi lần lặp -->
                                         @endforeach
                                     @endif
 
@@ -317,8 +325,7 @@
                         </div>
                         <div class="customer-informations-step tab-right-panel d-none" id="tab-info-client"
                             text-title="H&atilde;y nhập th&ocirc;ng tin chủ xe v&agrave; chọn showroom m&agrave; Qu&yacute; kh&aacute;ch muốn nhận xe.">
-                            <form
-                                method="POST" name="dwfrm_billing" id="dwfrm_billing">
+                            <form method="POST" name="dwfrm_billing" id="dwfrm_billing">
                                 <div class="vf-form">
                                     <input type="hidden" name="campaign" value>
                                     <div class="group-customer">
