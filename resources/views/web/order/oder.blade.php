@@ -106,10 +106,11 @@
                         </div>
                     </header>
 
-                    <div class="content-asset content-asset-scroll" style="padding-top: 80px;">
+                    <div class="hidden">
+                    <div class="content-asset content-asset-scroll " style="padding-top: 80px;">
 
-                        <div class="content-asset">
-                            <nav class="vf-bike-order__product-list">
+                        <div class="content-asset ">
+                            <nav class="vf-bike-order__product-list ">
                                 <div class="bike-slider swiper-container" id="colorImage">
                                     <ul class="vf-bike-order__container swiper-wrapper">
                                         @if(!empty($color_image))
@@ -132,6 +133,7 @@
                             </nav>
                         </div>
 
+                    </div>
                     </div>
                     <div class="tab-left-box" style="padding-top: 200px;">
                         <div class="v3s-product__img">
@@ -202,7 +204,7 @@
                             c&oacute;).</p>
                     </div>
                     <div class="infoBike-sp show-sp">
-                        <div class="content-asset">
+                        <div class="content-asset hidden">
 
                             <div class="content-asset">
                                 <nav class="vf-bike-order__product-list">
@@ -812,19 +814,20 @@
         ]
     });
 
-    $(".vf-bike-order__container li").on("click", function () {
-        var src = $(this).find('img').attr('src');
+    $(".colorItemList .slide-item").on("click", function () {
+        $(".colorItemList .slide-item").removeClass('active');
         var id = $(this).data('pid');
         var name = $(this).data('name');
         var _oid = $(this).data('id');
-        $('.product-item-REQ').attr('src', src);
-        $(".colorItemList .slide-item").each(function () {
+        $(this).addClass('active');
+        
+        $(".vf-bike-order__container li").each(function () {
             var color_id = $(this).data('pid');
-
+            var src = $(this).find('img').attr('src');
+            
             if (id === color_id) {
-                $(this).addClass('active');
-            } else {
-                $(this).removeClass('active');
+                $('.product-item-REQ').attr('src', src);
+                
             }
             $('#id_product').val(_oid);
             $('#name_product').val(name);
