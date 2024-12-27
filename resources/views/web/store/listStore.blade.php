@@ -188,7 +188,7 @@
             var districtDropdown = $('#district');
             // Load provinces into the province dropdown on page load
             $.ajax({
-                url: 'https://vapi.vnappmob.com/api/province/',
+                url: 'https://vapi.vnappmob.com/api/v2/province/',
                 method: 'GET',
                 dataType: 'json',
                 success: function (data) {
@@ -209,7 +209,7 @@
                 setCookie("location_id", $('#province option:selected').val(), 3600);
                 // Load districts based on the selected province
                 $.ajax({
-                    url: 'https://vapi.vnappmob.com/api/province/district/' + selectedProvinceCode || getUrlParameter('id'),
+                    url: 'https://vapi.vnappmob.com/api/v2/province/district/' + selectedProvinceCode || getUrlParameter('id'),
                     method: 'GET',
                     dataType: 'json',
                     success: function (result) {
@@ -256,7 +256,7 @@
                 var textDefault = districtParam.length === '' ? 'Chọn Quận/Huyện' : districtParam
 
                 $.ajax({
-                    url: 'https://vapi.vnappmob.com/api/province/district/' + getCookie('location_id'),
+                    url: 'https://vapi.vnappmob.com/api/v2/province/district/' + getCookie('location_id'),
                     method: 'GET',
                     dataType: 'json',
                     success: function (result) {
